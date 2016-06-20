@@ -1,0 +1,2735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B91F4BE2-5024-4012-A4A8-4E52E8609778}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKI_DichVuMatDat</RootNamespace>
+    <AssemblyName>BKI_DichVuMatDat</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>\\localhost\Users\tuyen\Desktop\DVMD_RELEASE_V2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://103.47.194.110:1234/</InstallUrl>
+    <TargetCulture>vi-VN</TargetCulture>
+    <ProductName>HRM_RELEASE</ProductName>
+    <PublisherName>TuyenNT</PublisherName>
+    <SuiteName>HRM_RELEASE</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8C8FEB56449BE8B0BC07FEC84EF3E6575C98BC02</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BKI_QLTTQuocAnh_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>paper1331.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common, Version=1.0.20031.116, Culture=neutral, PublicKeyToken=e272bb32d11b1948">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid, Version=2.5.20044.189, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic, Version=2.5.20044.189, Culture=neutral, PublicKeyToken=c9c7ad9c0a5706c9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input">
+      <HintPath>..\DLL\C1.Win.C1Input.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v14.1.Win, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.1.Win, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraReports.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1.Extensions, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\DLL\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>..\DLL\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>..\DLL\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.3.0.0, Culture=neutral">
+      <HintPath>..\DLL\Interop.Word.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SqlServer.Smo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SiSButton, Version=1.0.1494.35082, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\SiSButton.dll</HintPath>
+    </Reference>
+    <Reference Include="SiSMenu">
+      <HintPath>..\DLL\SiSMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Printing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationControl.cs" />
+    <Compile Include="BaoCao\F401_he_so_bao_cao_luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F401_he_so_bao_cao_luong.Designer.cs">
+      <DependentUpon>F401_he_so_bao_cao_luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f402_tong_hop_cham_cong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f402_tong_hop_cham_cong.Designer.cs">
+      <DependentUpon>f402_tong_hop_cham_cong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f403_bao_cao_hs_athk_bsl_le_tet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f403_bao_cao_hs_athk_bsl_le_tet.Designer.cs">
+      <DependentUpon>f403_bao_cao_hs_athk_bsl_le_tet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f405_bao_cao_thong_tin_tinh_luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f405_bao_cao_thong_tin_tinh_luong.Designer.cs">
+      <DependentUpon>f405_bao_cao_thong_tin_tinh_luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f410_bao_cao_so_luong_chat_luong_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f410_bao_cao_so_luong_chat_luong_lao_dong.Designer.cs">
+      <DependentUpon>f410_bao_cao_so_luong_chat_luong_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\F421_BAO_CAO_THONG_KE_TONG_HOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F421_BAO_CAO_THONG_KE_TONG_HOP.Designer.cs">
+      <DependentUpon>F421_BAO_CAO_THONG_KE_TONG_HOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.Designer.cs">
+      <DependentUpon>F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f492_quyet_toan_thue_TNCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f492_quyet_toan_thue_TNCN.Designer.cs">
+      <DependentUpon>f492_quyet_toan_thue_TNCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\frm419_bao_cao_thay_doi_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\frm419_bao_cao_thay_doi_cong_tac.Designer.cs">
+      <DependentUpon>frm419_bao_cao_thay_doi_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\frm418_bao_cao_bien_dong_hs_lns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\frm418_bao_cao_bien_dong_hs_lns.Designer.cs">
+      <DependentUpon>frm418_bao_cao_bien_dong_hs_lns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f489_rpt_qtt_ke_khai_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f489_rpt_qtt_ke_khai_detail.Designer.cs">
+      <DependentUpon>f489_rpt_qtt_ke_khai_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f495_thong_tin_chot_bang_luong_thang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f495_thong_tin_chot_bang_luong_thang.Designer.cs">
+      <DependentUpon>f495_thong_tin_chot_bang_luong_thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\ThuNhapKhac\f492_bao_cao_cac_he_so.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\ThuNhapKhac\f492_bao_cao_cac_he_so.Designer.cs">
+      <DependentUpon>f492_bao_cao_cac_he_so.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\TongHop\f400_rptth_phan_loai_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\TongHop\f400_rptth_phan_loai_lao_dong.Designer.cs">
+      <DependentUpon>f400_rptth_phan_loai_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMMON\FTP.cs" />
+    <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.Designer.cs">
+      <DependentUpon>msg003_hien_thi_danh_sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F110_dm_chuc_vu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F110_dm_chuc_vu.Designer.cs">
+      <DependentUpon>F110_dm_chuc_vu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F110_dm_chuc_vu_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F110_dm_chuc_vu_de.Designer.cs">
+      <DependentUpon>F110_dm_chuc_vu_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F153_dm_nguoi_bao_lanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F153_dm_nguoi_bao_lanh.Designer.cs">
+      <DependentUpon>F153_dm_nguoi_bao_lanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DTO_QUY_THU_NHAP_KHAC.cs" />
+    <Compile Include="BaoCao\f468_bao_cao_trang_thai_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f468_bao_cao_trang_thai_lao_dong.Designer.cs">
+      <DependentUpon>f468_bao_cao_trang_thai_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\DS_HT_BACKUP_HISTORY.cs" />
+    <Compile Include="HeThong\frm_backup_restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\frm_backup_restore.Designer.cs">
+      <DependentUpon>frm_backup_restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f299_chinh_lns_nhan_vien_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f299_chinh_lns_nhan_vien_de.Designer.cs">
+      <DependentUpon>f299_chinh_lns_nhan_vien_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f003_import_he_so_lns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f003_import_he_so_lns.Designer.cs">
+      <DependentUpon>f003_import_he_so_lns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f300_chinh_lns_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f300_chinh_lns_nhan_vien.Designer.cs">
+      <DependentUpon>f300_chinh_lns_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f314_dang_ky_giam_tru_nguoi_phu_thuoc_xls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f314_dang_ky_giam_tru_nguoi_phu_thuoc_xls.Designer.cs">
+      <DependentUpon>f314_dang_ky_giam_tru_nguoi_phu_thuoc_xls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f320_lap_hop_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f320_lap_hop_dong.Designer.cs">
+      <DependentUpon>f320_lap_hop_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f322_lap_hop_dong_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f322_lap_hop_dong_excel.Designer.cs">
+      <DependentUpon>f322_lap_hop_dong_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f325_lap_hop_dong_V2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f325_lap_hop_dong_V2.Designer.cs">
+      <DependentUpon>f325_lap_hop_dong_V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f326_in_hop_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f326_in_hop_dong.Designer.cs">
+      <DependentUpon>f326_in_hop_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f341_dat_he_so_lns_lcd_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f341_dat_he_so_lns_lcd_v2.Designer.cs">
+      <DependentUpon>f341_dat_he_so_lns_lcd_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f342_dat_he_so_lns_lcd_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f342_dat_he_so_lns_lcd_de.Designer.cs">
+      <DependentUpon>f342_dat_he_so_lns_lcd_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f351_quan_ly_cong_tac_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f351_quan_ly_cong_tac_de.Designer.cs">
+      <DependentUpon>f351_quan_ly_cong_tac_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f352_quan_ly_cong_tac_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f352_quan_ly_cong_tac_excel.Designer.cs">
+      <DependentUpon>f352_quan_ly_cong_tac_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f361_quan_ly_quyet_dinh_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f361_quan_ly_quyet_dinh_de.Designer.cs">
+      <DependentUpon>f361_quan_ly_quyet_dinh_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f364_quan_ly_cac_nhan_vien_co_luong_cung_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f364_quan_ly_cac_nhan_vien_co_luong_cung_de.Designer.cs">
+      <DependentUpon>f364_quan_ly_cac_nhan_vien_co_luong_cung_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f365_quan_ly_nhan_vien_co_luong_cung_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f365_quan_ly_nhan_vien_co_luong_cung_v2.Designer.cs">
+      <DependentUpon>f365_quan_ly_nhan_vien_co_luong_cung_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f367_quan_li_nv_ko_dong_bao_hiem_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f367_quan_li_nv_ko_dong_bao_hiem_v2.Designer.cs">
+      <DependentUpon>f367_quan_li_nv_ko_dong_bao_hiem_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f368_quan_ly_nv_ko_dong_bao_hiem_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f368_quan_ly_nv_ko_dong_bao_hiem_de.Designer.cs">
+      <DependentUpon>f368_quan_ly_nv_ko_dong_bao_hiem_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f396_tinh_phep_tieu_chuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f396_tinh_phep_tieu_chuan.Designer.cs">
+      <DependentUpon>f396_tinh_phep_tieu_chuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\F395_nhan_vien_phu_cap_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\F395_nhan_vien_phu_cap_de.designer.cs">
+      <DependentUpon>F395_nhan_vien_phu_cap_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\HopDong\f002_import_hop_dong_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\HopDong\f002_import_hop_dong_v2.Designer.cs">
+      <DependentUpon>f002_import_hop_dong_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f303_cac_khoan_tien_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f303_cac_khoan_tien_khac.Designer.cs">
+      <DependentUpon>f303_cac_khoan_tien_khac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f304_cac_khoan_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f304_cac_khoan_khac.Designer.cs">
+      <DependentUpon>f304_cac_khoan_khac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f409_rpt_bang_luong_nv_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f409_rpt_bang_luong_nv_v2.Designer.cs">
+      <DependentUpon>f409_rpt_bang_luong_nv_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f410_rpt_bang_luong_nv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f410_rpt_bang_luong_nv.Designer.cs">
+      <DependentUpon>f410_rpt_bang_luong_nv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f412_rpt_tong_hop_tt_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f412_rpt_tong_hop_tt_v2.Designer.cs">
+      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f413_rpt_tong_hop_thong_tin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\f413_rpt_tong_hop_thong_tin.Designer.cs">
+      <DependentUpon>f413_rpt_tong_hop_thong_tin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\F420_Bao_cao_nhan_su_theo_don_vi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F420_Bao_cao_nhan_su_theo_don_vi.Designer.cs">
+      <DependentUpon>F420_Bao_cao_nhan_su_theo_don_vi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f490_rpt_ke_khai_thu_nhap_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f490_rpt_ke_khai_thu_nhap_detail.Designer.cs">
+      <DependentUpon>f490_rpt_ke_khai_thu_nhap_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f490_rpt_ke_khai_thu_nhap_va_thue_thu_nhap_da_khau_tru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f490_rpt_ke_khai_thu_nhap_va_thue_thu_nhap_da_khau_tru.Designer.cs">
+      <DependentUpon>f490_rpt_ke_khai_thu_nhap_va_thue_thu_nhap_da_khau_tru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\F425_Bao_cao_nhan_su_tong_hop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F425_Bao_cao_nhan_su_tong_hop.Designer.cs">
+      <DependentUpon>F425_Bao_cao_nhan_su_tong_hop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f435_bao_cao_lao_dong_nuoc_ngoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f435_bao_cao_lao_dong_nuoc_ngoai.Designer.cs">
+      <DependentUpon>f435_bao_cao_lao_dong_nuoc_ngoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f445_bien_dong_luong_theo_thang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f445_bien_dong_luong_theo_thang.Designer.cs">
+      <DependentUpon>f445_bien_dong_luong_theo_thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f450_thong_tin_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f450_thong_tin_nhan_vien.Designer.cs">
+      <DependentUpon>f450_thong_tin_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f469_danh_sach_nhan_vien_bo_nhiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f469_danh_sach_nhan_vien_bo_nhiem.Designer.cs">
+      <DependentUpon>f469_danh_sach_nhan_vien_bo_nhiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f470_bao_cao_thong_ke_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f470_bao_cao_thong_ke_lao_dong.Designer.cs">
+      <DependentUpon>f470_bao_cao_thong_ke_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f471_bao_cao_qua_trinh_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f471_bao_cao_qua_trinh_cong_tac.Designer.cs">
+      <DependentUpon>f471_bao_cao_qua_trinh_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f480_bao_cao_thuong_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f480_bao_cao_thuong_khac.Designer.cs">
+      <DependentUpon>f480_bao_cao_thuong_khac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f481_bao_cao_thu_lao_hdqt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f481_bao_cao_thu_lao_hdqt.Designer.cs">
+      <DependentUpon>f481_bao_cao_thu_lao_hdqt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam.Designer.cs">
+      <DependentUpon>f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam_detail.Designer.cs">
+      <DependentUpon>f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\frm417_bao_cao_tang_giam_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\frm417_bao_cao_tang_giam_lao_dong.Designer.cs">
+      <DependentUpon>frm417_bao_cao_tang_giam_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\F_wait_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\F_wait_form.Designer.cs">
+      <DependentUpon>F_wait_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BKI_DVMDDataSet.cs">
+      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BKI_DVMDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="COMMON\CHRMCommon.cs" />
+    <Compile Include="COMMON\ExcuteFuntion.cs" />
+    <Compile Include="CONFIRM\msg001_confirm_tinh_bang_luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIRM\msg001_confirm_tinh_bang_luong.Designer.cs">
+      <DependentUpon>msg001_confirm_tinh_bang_luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONFIRM\msg002_confirm_luu_du_lieu_bang_luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIRM\msg002_confirm_luu_du_lieu_bang_luong.Designer.cs">
+      <DependentUpon>msg002_confirm_luu_du_lieu_bang_luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F101_dm_don_vi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F101_dm_don_vi.Designer.cs">
+      <DependentUpon>F101_dm_don_vi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F101_dm_don_vi_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F101_dm_don_vi_de.Designer.cs">
+      <DependentUpon>F101_dm_don_vi_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F102_dm_bao_hiem_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F102_dm_bao_hiem_de.Designer.cs">
+      <DependentUpon>F102_dm_bao_hiem_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F103_dm_he_so_luong_ns_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F103_dm_he_so_luong_ns_de.Designer.cs">
+      <DependentUpon>F103_dm_he_so_luong_ns_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F104_dm_loai_hop_dong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F104_dm_loai_hop_dong_de.Designer.cs">
+      <DependentUpon>F104_dm_loai_hop_dong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F105_dm_loai_ngay_cong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F105_dm_loai_ngay_cong_de.Designer.cs">
+      <DependentUpon>F105_dm_loai_ngay_cong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F106_dm_luong_che_do_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F106_dm_luong_che_do_de.Designer.cs">
+      <DependentUpon>F106_dm_luong_che_do_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F107_dm_phu_cap_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F107_dm_phu_cap_de.Designer.cs">
+      <DependentUpon>F107_dm_phu_cap_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F108_dm_tham_so.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F108_dm_tham_so.Designer.cs">
+      <DependentUpon>F108_dm_tham_so.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F102_dm_bao_hiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F102_dm_bao_hiem.Designer.cs">
+      <DependentUpon>F102_dm_bao_hiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F103_dm_he_so_luong_ns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F103_dm_he_so_luong_ns.Designer.cs">
+      <DependentUpon>F103_dm_he_so_luong_ns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F104_dm_loai_hop_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F104_dm_loai_hop_dong.Designer.cs">
+      <DependentUpon>F104_dm_loai_hop_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F105_dm_loai_ngay_cong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F105_dm_loai_ngay_cong.Designer.cs">
+      <DependentUpon>F105_dm_loai_ngay_cong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F106_dm_luong_che_do.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F106_dm_luong_che_do.Designer.cs">
+      <DependentUpon>F106_dm_luong_che_do.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F107_dm_phu_cap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F107_dm_phu_cap.Designer.cs">
+      <DependentUpon>F107_dm_phu_cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f108_dm_tham_so_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f108_dm_tham_so_de.Designer.cs">
+      <DependentUpon>f108_dm_tham_so_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F109_dm_thue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F109_dm_thue.Designer.cs">
+      <DependentUpon>F109_dm_thue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F109_dm_thue_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F109_dm_thue_de.Designer.cs">
+      <DependentUpon>F109_dm_thue_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F115_dm_thu_tu_don_vi_chuc_vu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F115_dm_thu_tu_don_vi_chuc_vu.Designer.cs">
+      <DependentUpon>F115_dm_thu_tu_don_vi_chuc_vu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F115_dm_thu_tu_don_vi_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F115_dm_thu_tu_don_vi_de.Designer.cs">
+      <DependentUpon>F115_dm_thu_tu_don_vi_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f150_danh_muc_nhan_su_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f150_danh_muc_nhan_su_v2.Designer.cs">
+      <DependentUpon>f150_danh_muc_nhan_su_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f151_Danh_sach_nhan_vien_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f151_Danh_sach_nhan_vien_master.Designer.cs">
+      <DependentUpon>f151_Danh_sach_nhan_vien_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F150_dm_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F150_dm_nhan_vien.Designer.cs">
+      <DependentUpon>F150_dm_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DTO_BANG_LUONG_V2.cs" />
+    <Compile Include="DTO\DTO_THONG_TIN_BANG_LUONG.cs" />
+    <Compile Include="DVMDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVMDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DVMDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVMDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DVMDDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVMDDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DVMDDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVMDDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\F152_DANH_SACH_NHAN_VIEN_EXCEL.CS">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\F152_DANH_SACH_NHAN_VIEN_EXCEL.Designer.CS">
+      <DependentUpon>F152_DANH_SACH_NHAN_VIEN_EXCEL.CS</DependentUpon>
+    </Compile>
+    <Compile Include="FormatControl\FormatControl.cs" />
+    <Compile Include="HeThong\collection.cs" />
+    <Compile Include="HeThong\f306_HT_USER_GROUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f306_HT_USER_GROUP_DE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f306_HT_USER_GROUP_DE.Designer.cs">
+      <DependentUpon>f306_HT_USER_GROUP_DE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f308_DOI_MAT_KHAU_NGUOI_SD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f308_DOI_MAT_KHAU_NGUOI_SD.designer.cs">
+      <DependentUpon>f308_DOI_MAT_KHAU_NGUOI_SD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f990_ht_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f992_phan_quyen_he_thong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f992_phan_quyen_he_thong_de.Designer.cs">
+      <DependentUpon>f992_phan_quyen_he_thong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f993_phan_quyen_he_thong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f994_phan_quyen_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f994_phan_quyen_detail.Designer.cs">
+      <DependentUpon>f994_phan_quyen_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f995_ht_phan_quyen_cho_nhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f995_ht_phan_quyen_cho_nhom.Designer.cs">
+      <DependentUpon>f995_ht_phan_quyen_cho_nhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f998_ht_nguoi_su_dung_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f999_ht_nguoi_su_dung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\Luong\TinhLuongQL.cs" />
+    <Compile Include="NghiepVu\NhanSu\f001_import_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f001_import_cong_tac.Designer.cs">
+      <DependentUpon>f001_import_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f309_quan_ly_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f309_quan_ly_cong_tac.Designer.cs">
+      <DependentUpon>f309_quan_ly_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f311_danh_sach_nhan_vien_theo_don_vi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f311_danh_sach_nhan_vien_theo_don_vi.Designer.cs">
+      <DependentUpon>f311_danh_sach_nhan_vien_theo_don_vi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f310_cap_nhat_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f310_cap_nhat_cong_tac.Designer.cs">
+      <DependentUpon>f310_cap_nhat_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f329_lap_hop_dong_v5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f329_lap_hop_dong_v5.Designer.cs">
+      <DependentUpon>f329_lap_hop_dong_v5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f330_lap_hop_dong_v5_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\NhanSu\f330_lap_hop_dong_v5_detail.Designer.cs">
+      <DependentUpon>f330_lap_hop_dong_v5_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f302_option_detail_calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f302_option_detail_calculate.Designer.cs">
+      <DependentUpon>f302_option_detail_calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f301_tinh_thu_nhap_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f301_tinh_thu_nhap_khac.Designer.cs">
+      <DependentUpon>f301_tinh_thu_nhap_khac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f303_gd_cham_cong_lam_them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f303_gd_cham_cong_lam_them.Designer.cs">
+      <DependentUpon>f303_gd_cham_cong_lam_them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f312_dang_ky_giam_tru_nguoi_phu_thuoc_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f312_dang_ky_giam_tru_nguoi_phu_thuoc_v2.Designer.cs">
+      <DependentUpon>f312_dang_ky_giam_tru_nguoi_phu_thuoc_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f313_dang_ky_giam_tru_nguoi_phu_thuoc_v2_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f313_dang_ky_giam_tru_nguoi_phu_thuoc_v2_details.Designer.cs">
+      <DependentUpon>f313_dang_ky_giam_tru_nguoi_phu_thuoc_v2_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f315_card_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f315_card_nhan_vien.Designer.cs">
+      <DependentUpon>f315_card_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f321_chi_tiet_hop_dong_da_ky_theo_thoi_gian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f321_chi_tiet_hop_dong_da_ky_theo_thoi_gian.Designer.cs">
+      <DependentUpon>f321_chi_tiet_hop_dong_da_ky_theo_thoi_gian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f330_len_luong_cho_nv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f330_len_luong_cho_nv.Designer.cs">
+      <DependentUpon>f330_len_luong_cho_nv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f340_dat_hs_lns_lcd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f340_dat_hs_lns_lcd.designer.cs">
+      <DependentUpon>f340_dat_hs_lns_lcd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f350_quan_ly_vi_tri_cong_tac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f350_quan_ly_vi_tri_cong_tac.Designer.cs">
+      <DependentUpon>f350_quan_ly_vi_tri_cong_tac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f304_tnk_ngoai_bang_luong_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f304_tnk_ngoai_bang_luong_detail.Designer.cs">
+      <DependentUpon>f304_tnk_ngoai_bang_luong_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f353_quan_ly_quy_tien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f353_quan_ly_quy_tien.Designer.cs">
+      <DependentUpon>f353_quan_ly_quy_tien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f354_danh_sach_quy_thuong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f354_danh_sach_quy_thuong_de.Designer.cs">
+      <DependentUpon>f354_danh_sach_quy_thuong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f356_bao_cao_trang_thai_lao_dong_cua_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f356_bao_cao_trang_thai_lao_dong_cua_nhan_vien.Designer.cs">
+      <DependentUpon>f356_bao_cao_trang_thai_lao_dong_cua_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f357_bao_cao_trang_thai_lao_dong_nhan_vien_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f357_bao_cao_trang_thai_lao_dong_nhan_vien_de.Designer.cs">
+      <DependentUpon>f357_bao_cao_trang_thai_lao_dong_nhan_vien_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f360_quan_ly_quyet_dinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f360_quan_ly_quyet_dinh.Designer.cs">
+      <DependentUpon>f360_quan_ly_quyet_dinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f363_quan_ly_cac_nhan_vien_co_luong_cung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f363_quan_ly_cac_nhan_vien_co_luong_cung.Designer.cs">
+      <DependentUpon>f363_quan_ly_cac_nhan_vien_co_luong_cung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f366_Quan_ly_nhan_vien_khong_dong_bao_hiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f366_Quan_ly_nhan_vien_khong_dong_bao_hiem.Designer.cs">
+      <DependentUpon>f366_Quan_ly_nhan_vien_khong_dong_bao_hiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f370_nhan_vien_loai_lao_dong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f370_nhan_vien_loai_lao_dong.Designer.cs">
+      <DependentUpon>f370_nhan_vien_loai_lao_dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f371_nhan_vien_loai_lao_dong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f371_nhan_vien_loai_lao_dong_de.Designer.cs">
+      <DependentUpon>f371_nhan_vien_loai_lao_dong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f372_nhan_vien_loai_lao_dong_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f372_nhan_vien_loai_lao_dong_excel.Designer.cs">
+      <DependentUpon>f372_nhan_vien_loai_lao_dong_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f381_thay_doi_he_so_luong_nang_suat_by_nhan_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f381_thay_doi_he_so_luong_nang_suat_by_nhan_vien.Designer.cs">
+      <DependentUpon>f381_thay_doi_he_so_luong_nang_suat_by_nhan_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\f392_ke_khai_bao_hiem_y_te.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\f392_ke_khai_bao_hiem_y_te.Designer.cs">
+      <DependentUpon>f392_ke_khai_bao_hiem_y_te.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\F394_gd_nhan_vien_phu_cap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\F394_gd_nhan_vien_phu_cap.Designer.cs">
+      <DependentUpon>F394_gd_nhan_vien_phu_cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f394_cham_cong_thang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f394_cham_cong_thang.Designer.cs">
+      <DependentUpon>f394_cham_cong_thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f394_cham_cong_thang_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\f394_cham_cong_thang_detail.Designer.cs">
+      <DependentUpon>f394_cham_cong_thang_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\F696_Cham_cong_xls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCong\F696_Cham_cong_xls.Designer.cs">
+      <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac.Designer.cs">
+      <DependentUpon>f355_tnk_chi_tiet_quy_thu_nhap_khac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac_detail.designer.cs">
+      <DependentUpon>f355_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f356_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\f356_tnk_chi_tiet_quy_thu_nhap_khac_detail.Designer.cs">
+      <DependentUpon>f356_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ThuNhapKhac\TnkQL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="f388_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f388_main.Designer.cs">
+      <DependentUpon>f388_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMMON\WinFormControls.cs" />
+    <Compile Include="COMMON\CHRM_BaseMessages210.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\ReportHelper.cs" />
+    <Compile Include="XtraReport\rptCommon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport\rptCommon.Designer.cs">
+      <DependentUpon>rptCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport\rptPhuThuoc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport\rptPhuThuoc.Designer.cs">
+      <DependentUpon>rptPhuThuoc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao\F421_BAO_CAO_THONG_KE_TONG_HOP.resx">
+      <DependentUpon>F421_BAO_CAO_THONG_KE_TONG_HOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f468_bao_cao_trang_thai_lao_dong.resx">
+      <DependentUpon>f468_bao_cao_trang_thai_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\f492_quyet_toan_thue_TNCN.resx">
+      <DependentUpon>f492_quyet_toan_thue_TNCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\frm419_bao_cao_thay_doi_cong_tac.resx">
+      <DependentUpon>frm419_bao_cao_thay_doi_cong_tac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\frm418_bao_cao_bien_dong_hs_lns.resx">
+      <DependentUpon>frm418_bao_cao_bien_dong_hs_lns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\f489_rpt_qtt_ke_khai_detail.resx">
+      <DependentUpon>f489_rpt_qtt_ke_khai_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\f495_thong_tin_chot_bang_luong_thang.resx">
+      <DependentUpon>f495_thong_tin_chot_bang_luong_thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F110_dm_chuc_vu.resx">
+      <DependentUpon>F110_dm_chuc_vu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F110_dm_chuc_vu_de.resx">
+      <DependentUpon>F110_dm_chuc_vu_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\TongHop\f400_rptth_phan_loai_lao_dong.resx">
+      <DependentUpon>f400_rptth_phan_loai_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\frm_backup_restore.resx">
+      <DependentUpon>frm_backup_restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f299_chinh_lns_nhan_vien_de.resx">
+      <DependentUpon>f299_chinh_lns_nhan_vien_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f003_import_he_so_lns.resx">
+      <DependentUpon>f003_import_he_so_lns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f300_chinh_lns_nhan_vien.resx">
+      <DependentUpon>f300_chinh_lns_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f320_lap_hop_dong.resx">
+      <DependentUpon>f320_lap_hop_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f325_lap_hop_dong_V2.resx">
+      <DependentUpon>f325_lap_hop_dong_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f326_in_hop_dong.resx">
+      <DependentUpon>f326_in_hop_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f361_quan_ly_quyet_dinh_de.resx">
+      <DependentUpon>f361_quan_ly_quyet_dinh_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\F395_nhan_vien_phu_cap_de.resx">
+      <DependentUpon>F395_nhan_vien_phu_cap_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f396_tinh_phep_tieu_chuan.resx">
+      <DependentUpon>f396_tinh_phep_tieu_chuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\HopDong\f002_import_hop_dong_v2.resx">
+      <DependentUpon>f002_import_hop_dong_v2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f001_import_cong_tac.resx">
+      <DependentUpon>f001_import_cong_tac.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f309_quan_ly_cong_tac.resx">
+      <DependentUpon>f309_quan_ly_cong_tac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f310_cap_nhat_cong_tac.resx">
+      <DependentUpon>f310_cap_nhat_cong_tac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f311_danh_sach_nhan_vien_theo_don_vi.resx">
+      <DependentUpon>f311_danh_sach_nhan_vien_theo_don_vi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.resx">
+      <DependentUpon>F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f329_lap_hop_dong_v5.resx">
+      <DependentUpon>f329_lap_hop_dong_v5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\NhanSu\f330_lap_hop_dong_v5_detail.resx">
+      <DependentUpon>f330_lap_hop_dong_v5_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac_detail.resx">
+      <DependentUpon>f355_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\rptCommon.resx">
+      <DependentUpon>rptCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport\rptPhuThuoc.resx">
+      <DependentUpon>rptPhuThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DVMDDataSet1.xsc">
+      <DependentUpon>DVMDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DVMDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DVMDDataSet1.xss">
+      <DependentUpon>DVMDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet2.xsc">
+      <DependentUpon>DVMDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DVMDDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DVMDDataSet2.xss">
+      <DependentUpon>DVMDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet3.xsc">
+      <DependentUpon>DVMDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DVMDDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DVMDDataSet3.xss">
+      <DependentUpon>DVMDDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\1425904361_23923.ico" />
+    <None Include="Resources\1425904406_289616.ico" />
+    <None Include="Resources\1425904521_438788.ico" />
+    <None Include="Resources\1425904521_4387881.ico" />
+    <None Include="Resources\1425904625_416404.ico" />
+    <None Include="Resources\1425904783_54524.ico" />
+    <None Include="Resources\1425904832_45433.ico" />
+    <None Include="Resources\1425904874_44824.ico" />
+    <None Include="Resources\1425904874_448241.ico" />
+    <None Include="Resources\1425905213_379332.ico" />
+    <None Include="Resources\1425905405_243979.ico" />
+    <None Include="Resources\1425905592_196740.ico" />
+    <None Include="Resources\1425905865_103845.ico" />
+    <None Include="Resources\1425905897_25350.ico" />
+    <None Include="Resources\1425905897_253501.ico" />
+    <None Include="Resources\1425906098_24333.ico" />
+    <None Include="Resources\1425906136_315167.ico" />
+    <None Include="Resources\1425906224_17014.ico" />
+    <None Include="Resources\1425912499_173055.ico" />
+    <None Include="Resources\1441439378_06.ico" />
+    <None Include="Resources\1441820610_23.ico" />
+    <None Include="Resources\1441820884_coin-delete.ico" />
+    <None Include="Resources\1444999351_banker.ico" />
+    <None Include="Resources\1447274005_calculator.ico" />
+    <None Include="Resources\1450117506_edit-clear.ico" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\male-user.png" />
+    <None Include="Resources\grid.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\dvmd_download.png" />
+    <None Include="Resources\dvmd_upload.png" />
+    <None Include="Resources\dvmd_info.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\trash1.png" />
+    <None Include="Resources\1459414125_Department.ico" />
+    <None Include="Resources\icoADD.ico" />
+    <None Include="Resources\icoADD1.ico" />
+    <None Include="Resources\add1.ico" />
+    <None Include="Resources\ADDD.png" />
+    <None Include="Resources\file_add.png" />
+    <None Include="Resources\file_edit.png" />
+    <None Include="Resources\file_delete.png" />
+    <None Include="Resources\file_search.png" />
+    <None Include="Resources\icoDLEXCEL.ico" />
+    <None Include="Resources\icoEXCEL.ico" />
+    <None Include="Resources\file_add1.png" />
+    <None Include="Resources\file_edit1.png" />
+    <None Include="Resources\file_delete1.png" />
+    <None Include="Resources\file_search1.png" />
+    <Content Include="vi\DevExpress.Charts.Designer.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Dashboard.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Dashboard.v14.1.Web.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Dashboard.v14.1.Win.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Data.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.DataAccess.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.DataAccess.v14.1.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.AuditTrail.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Chart.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.CloneObject.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Demos.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.FileAttachment.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.FileAttachment.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Kpi.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Objects.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.PivotChart.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.PivotChart.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.PivotChart.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.PivotGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Reports.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Reports.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Reports.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Scheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Scheduler.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Scheduler.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.ScriptRecorder.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.ScriptRecorder.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Security.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.StateMachine.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Validation.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Validation.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.ViewVariantsModule.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Workflow.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.ExpressApp.Workflow.Win.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Office.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Pdf.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.PivotGrid.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Printing.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.RichEdit.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Snap.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Snap.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Snap.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Spreadsheet.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Utils.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Utils.v14.1.UI.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.ASPxHtmlEditor.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.ASPxScheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.ASPxSpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.ASPxSpreadsheet.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.ASPxTreeList.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Web.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Charts.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Core.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Docking.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Gauges.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Grid.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.LayoutControl.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.NavBar.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.PdfViewer.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Printing.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.PropertyGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.ReportDesigner.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Ribbon.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.RichEdit.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.Scheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpf.SpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.Xpo.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraBars.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraCharts.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraCharts.v14.1.Wizard.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraEditors.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraGauges.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraGauges.v14.1.Presets.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraLayout.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraNavBar.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraPdfViewer.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraPivotGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraPrinting.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraReports.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraReports.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraReports.v14.1.Web.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraRichEdit.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraRichEdit.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraScheduler.v14.1.Core.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraScheduler.v14.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraScheduler.v14.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraScheduler.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraSpellChecker.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraSpreadsheet.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraTreeList.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraVerticalGrid.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="vi\DevExpress.XtraWizard.v14.1.resources.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\bao_cao.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\CommonMsg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\dang_ky.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\dang_nhap.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\danh_muc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\dau_gia.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\giao_dich.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\he_thong.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\ket_qua.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\lan_dau_gia.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\NumOfMessage.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\tuy_chon.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML_MESSAGE\UserMsg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Refresh.gif" />
+    <None Include="Resources\Modify.ico" />
+    <None Include="Resources\View.ico" />
+    <None Include="Resources\Save1.ico" />
+    <EmbeddedResource Include="BaoCao\F401_he_so_bao_cao_luong.resx">
+      <DependentUpon>F401_he_so_bao_cao_luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f402_tong_hop_cham_cong.resx">
+      <DependentUpon>f402_tong_hop_cham_cong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f403_bao_cao_hs_athk_bsl_le_tet.resx">
+      <DependentUpon>f403_bao_cao_hs_athk_bsl_le_tet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f405_bao_cao_thong_tin_tinh_luong.resx">
+      <DependentUpon>f405_bao_cao_thong_tin_tinh_luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f410_bao_cao_so_luong_chat_luong_lao_dong.resx">
+      <DependentUpon>f410_bao_cao_so_luong_chat_luong_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\ThuNhapKhac\f492_bao_cao_cac_he_so.resx">
+      <DependentUpon>f492_bao_cao_cac_he_so.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONFIRM\msg003_hien_thi_danh_sach.resx">
+      <DependentUpon>msg003_hien_thi_danh_sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F153_dm_nguoi_bao_lanh.resx">
+      <DependentUpon>F153_dm_nguoi_bao_lanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f314_dang_ky_giam_tru_nguoi_phu_thuoc_xls.resx">
+      <DependentUpon>f314_dang_ky_giam_tru_nguoi_phu_thuoc_xls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f322_lap_hop_dong_excel.resx">
+      <DependentUpon>f322_lap_hop_dong_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f341_dat_he_so_lns_lcd_v2.resx">
+      <DependentUpon>f341_dat_he_so_lns_lcd_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f342_dat_he_so_lns_lcd_de.resx">
+      <DependentUpon>f342_dat_he_so_lns_lcd_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f351_quan_ly_cong_tac_de.resx">
+      <DependentUpon>f351_quan_ly_cong_tac_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f352_quan_ly_cong_tac_excel.resx">
+      <DependentUpon>f352_quan_ly_cong_tac_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f364_quan_ly_cac_nhan_vien_co_luong_cung_de.resx">
+      <DependentUpon>f364_quan_ly_cac_nhan_vien_co_luong_cung_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f365_quan_ly_nhan_vien_co_luong_cung_v2.resx">
+      <DependentUpon>f365_quan_ly_nhan_vien_co_luong_cung_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f367_quan_li_nv_ko_dong_bao_hiem_v2.resx">
+      <DependentUpon>f367_quan_li_nv_ko_dong_bao_hiem_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f368_quan_ly_nv_ko_dong_bao_hiem_de.resx">
+      <DependentUpon>f368_quan_ly_nv_ko_dong_bao_hiem_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\Luong\f303_cac_khoan_tien_khac.resx">
+      <DependentUpon>f303_cac_khoan_tien_khac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\Luong\f409_rpt_bang_luong_nv_v2.resx">
+      <DependentUpon>f409_rpt_bang_luong_nv_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\Luong\f410_rpt_bang_luong_nv.resx">
+      <DependentUpon>f410_rpt_bang_luong_nv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\Luong\f412_rpt_tong_hop_tt_v2.resx">
+      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\Luong\f413_rpt_tong_hop_thong_tin.resx">
+      <DependentUpon>f413_rpt_tong_hop_thong_tin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\F420_Bao_cao_nhan_su_theo_don_vi.resx">
+      <DependentUpon>F420_Bao_cao_nhan_su_theo_don_vi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f490_rpt_ke_khai_thu_nhap_detail.resx">
+      <DependentUpon>f490_rpt_ke_khai_thu_nhap_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\f490_rpt_ke_khai_thu_nhap_va_thue_thu_nhap_da_khau_tru.resx">
+      <DependentUpon>f490_rpt_ke_khai_thu_nhap_va_thue_thu_nhap_da_khau_tru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\F425_Bao_cao_nhan_su_tong_hop.resx">
+      <DependentUpon>F425_Bao_cao_nhan_su_tong_hop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f435_bao_cao_lao_dong_nuoc_ngoai.resx">
+      <DependentUpon>f435_bao_cao_lao_dong_nuoc_ngoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f445_bien_dong_luong_theo_thang.resx">
+      <DependentUpon>f445_bien_dong_luong_theo_thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f450_thong_tin_nhan_vien.resx">
+      <DependentUpon>f450_thong_tin_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f469_danh_sach_nhan_vien_bo_nhiem.resx">
+      <DependentUpon>f469_danh_sach_nhan_vien_bo_nhiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f470_bao_cao_thong_ke_lao_dong.resx">
+      <DependentUpon>f470_bao_cao_thong_ke_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f471_bao_cao_qua_trinh_cong_tac.resx">
+      <DependentUpon>f471_bao_cao_qua_trinh_cong_tac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f480_bao_cao_thuong_khac.resx">
+      <DependentUpon>f480_bao_cao_thuong_khac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f481_bao_cao_thu_lao_hdqt.resx">
+      <DependentUpon>f481_bao_cao_thu_lao_hdqt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam.resx">
+      <DependentUpon>f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam_detail.resx">
+      <DependentUpon>f491_rpt_bao_cao_tong_hop_thu_nhap_theo_nam_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\frm417_bao_cao_tang_giam_lao_dong.resx">
+      <DependentUpon>frm417_bao_cao_tang_giam_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\F_wait_form.resx">
+      <DependentUpon>F_wait_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONFIRM\msg001_confirm_tinh_bang_luong.resx">
+      <DependentUpon>msg001_confirm_tinh_bang_luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONFIRM\msg002_confirm_luu_du_lieu_bang_luong.resx">
+      <DependentUpon>msg002_confirm_luu_du_lieu_bang_luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F101_dm_don_vi.resx">
+      <DependentUpon>F101_dm_don_vi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F101_dm_don_vi_de.resx">
+      <DependentUpon>F101_dm_don_vi_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F102_dm_bao_hiem_de.resx">
+      <DependentUpon>F102_dm_bao_hiem_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F103_dm_he_so_luong_ns_de.resx">
+      <DependentUpon>F103_dm_he_so_luong_ns_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F104_dm_loai_hop_dong_de.resx">
+      <DependentUpon>F104_dm_loai_hop_dong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F105_dm_loai_ngay_cong_de.resx">
+      <DependentUpon>F105_dm_loai_ngay_cong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F106_dm_luong_che_do_de.resx">
+      <DependentUpon>F106_dm_luong_che_do_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F107_dm_phu_cap_de.resx">
+      <DependentUpon>F107_dm_phu_cap_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F108_dm_tham_so.resx">
+      <DependentUpon>F108_dm_tham_so.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F102_dm_bao_hiem.resx">
+      <DependentUpon>F102_dm_bao_hiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F103_dm_he_so_luong_ns.resx">
+      <DependentUpon>F103_dm_he_so_luong_ns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F104_dm_loai_hop_dong.resx">
+      <DependentUpon>F104_dm_loai_hop_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F105_dm_loai_ngay_cong.resx">
+      <DependentUpon>F105_dm_loai_ngay_cong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F106_dm_luong_che_do.resx">
+      <DependentUpon>F106_dm_luong_che_do.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F107_dm_phu_cap.resx">
+      <DependentUpon>F107_dm_phu_cap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f108_dm_tham_so_de.resx">
+      <DependentUpon>f108_dm_tham_so_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F109_dm_thue.resx">
+      <DependentUpon>F109_dm_thue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F109_dm_thue_de.resx">
+      <DependentUpon>F109_dm_thue_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F115_dm_thu_tu_don_vi_chuc_vu.resx">
+      <DependentUpon>F115_dm_thu_tu_don_vi_chuc_vu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F115_dm_thu_tu_don_vi_de.resx">
+      <DependentUpon>F115_dm_thu_tu_don_vi_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f150_danh_muc_nhan_su_v2.resx">
+      <DependentUpon>f150_danh_muc_nhan_su_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f151_Danh_sach_nhan_vien_master.resx">
+      <DependentUpon>f151_Danh_sach_nhan_vien_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F150_dm_nhan_vien.resx">
+      <DependentUpon>F150_dm_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\F152_DANH_SACH_NHAN_VIEN_EXCEL.resx">
+      <DependentUpon>F152_DANH_SACH_NHAN_VIEN_EXCEL.CS</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f306_HT_USER_GROUP.resx">
+      <DependentUpon>f306_HT_USER_GROUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f306_HT_USER_GROUP_DE.resx">
+      <DependentUpon>f306_HT_USER_GROUP_DE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f308_DOI_MAT_KHAU_NGUOI_SD.resx">
+      <DependentUpon>f308_DOI_MAT_KHAU_NGUOI_SD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f990_ht_form.resx">
+      <DependentUpon>f990_ht_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f992_phan_quyen_he_thong_de.resx">
+      <DependentUpon>f992_phan_quyen_he_thong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f993_phan_quyen_he_thong.resx">
+      <DependentUpon>f993_phan_quyen_he_thong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f994_phan_quyen_detail.resx">
+      <DependentUpon>f994_phan_quyen_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f995_ht_phan_quyen_cho_nhom.resx">
+      <DependentUpon>f995_ht_phan_quyen_cho_nhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f998_ht_nguoi_su_dung_de.resx">
+      <DependentUpon>f998_ht_nguoi_su_dung_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f999_ht_nguoi_su_dung.resx">
+      <DependentUpon>f999_ht_nguoi_su_dung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f302_option_detail_calculate.resx">
+      <DependentUpon>f302_option_detail_calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f301_tinh_thu_nhap_khac.resx">
+      <DependentUpon>f301_tinh_thu_nhap_khac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCong\f303_gd_cham_cong_lam_them.resx">
+      <DependentUpon>f303_gd_cham_cong_lam_them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f312_dang_ky_giam_tru_nguoi_phu_thuoc_v2.resx">
+      <DependentUpon>f312_dang_ky_giam_tru_nguoi_phu_thuoc_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f313_dang_ky_giam_tru_nguoi_phu_thuoc_v2_details.resx">
+      <DependentUpon>f313_dang_ky_giam_tru_nguoi_phu_thuoc_v2_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f315_card_nhan_vien.resx">
+      <DependentUpon>f315_card_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f321_chi_tiet_hop_dong_da_ky_theo_thoi_gian.resx">
+      <DependentUpon>f321_chi_tiet_hop_dong_da_ky_theo_thoi_gian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f330_len_luong_cho_nv.resx">
+      <DependentUpon>f330_len_luong_cho_nv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f340_dat_hs_lns_lcd.resx">
+      <DependentUpon>f340_dat_hs_lns_lcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f350_quan_ly_vi_tri_cong_tac.resx">
+      <DependentUpon>f350_quan_ly_vi_tri_cong_tac.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f304_tnk_ngoai_bang_luong_detail.resx">
+      <DependentUpon>f304_tnk_ngoai_bang_luong_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f353_quan_ly_quy_tien.resx">
+      <DependentUpon>f353_quan_ly_quy_tien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f354_danh_sach_quy_thuong_de.resx">
+      <DependentUpon>f354_danh_sach_quy_thuong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f356_bao_cao_trang_thai_lao_dong_cua_nhan_vien.resx">
+      <DependentUpon>f356_bao_cao_trang_thai_lao_dong_cua_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f357_bao_cao_trang_thai_lao_dong_nhan_vien_de.resx">
+      <DependentUpon>f357_bao_cao_trang_thai_lao_dong_nhan_vien_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f360_quan_ly_quyet_dinh.resx">
+      <DependentUpon>f360_quan_ly_quyet_dinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f363_quan_ly_cac_nhan_vien_co_luong_cung.resx">
+      <DependentUpon>f363_quan_ly_cac_nhan_vien_co_luong_cung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f366_Quan_ly_nhan_vien_khong_dong_bao_hiem.resx">
+      <DependentUpon>f366_Quan_ly_nhan_vien_khong_dong_bao_hiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f370_nhan_vien_loai_lao_dong.resx">
+      <DependentUpon>f370_nhan_vien_loai_lao_dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f371_nhan_vien_loai_lao_dong_de.resx">
+      <DependentUpon>f371_nhan_vien_loai_lao_dong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f372_nhan_vien_loai_lao_dong_excel.resx">
+      <DependentUpon>f372_nhan_vien_loai_lao_dong_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f381_thay_doi_he_so_luong_nang_suat_by_nhan_vien.resx">
+      <DependentUpon>f381_thay_doi_he_so_luong_nang_suat_by_nhan_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\f392_ke_khai_bao_hiem_y_te.resx">
+      <DependentUpon>f392_ke_khai_bao_hiem_y_te.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\F394_gd_nhan_vien_phu_cap.resx">
+      <DependentUpon>F394_gd_nhan_vien_phu_cap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCong\f394_cham_cong_thang.resx">
+      <DependentUpon>f394_cham_cong_thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCong\f394_cham_cong_thang_detail.resx">
+      <DependentUpon>f394_cham_cong_thang_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCong\F696_Cham_cong_xls.resx">
+      <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f355_tnk_chi_tiet_quy_thu_nhap_khac.resx">
+      <DependentUpon>f355_tnk_chi_tiet_quy_thu_nhap_khac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ThuNhapKhac\f356_tnk_chi_tiet_quy_thu_nhap_khac_detail.resx">
+      <DependentUpon>f356_tnk_chi_tiet_quy_thu_nhap_khac_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f388_main.resx">
+      <DependentUpon>f388_main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_DVMDDataSet.xsc">
+      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_DVMDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_DVMDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_DVMDDataSet.xss">
+      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_QLTTQuocAnh_TemporaryKey.pfx" />
+    <None Include="DVMDDataSet.xsc">
+      <DependentUpon>DVMDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DVMDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DVMDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DVMDDataSet.xss">
+      <DependentUpon>DVMDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\add162.png" />
+    <None Include="Resources\mobile-phone.ico" />
+    <None Include="Resources\upload.ico" />
+    <None Include="Resources\sum.ico" />
+    <None Include="Resources\sum1.ico" />
+    <None Include="Resources\sync.ico" />
+    <Content Include="Template\ChamCong.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HeSoChatLuong.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ThuNhapKhac.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\CONG_TAC.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\DANH_SACH_NHAN_VIEN.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HOP_DONG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\LOAI_LAO_DONG_CUA_NHAN_VIEN.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\Template_Import_cac_khoan_tien_khac.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\DangKyPhuThuoc.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ChamCongLamThem.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HD THU VIEC.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HD_THU_VIEC.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HD_XAC_DINH_THOI_HAN.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HD_HOC_VIEC.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\HĐLĐ HOC NGHE.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\IMPORT_HOP_DONG.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\IMPORT_CONG_TAC.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\IMPORT_HE_SO_LNS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKI_QLTTQuocAnh.DS\BKI_DichVuMatDat.DS.csproj">
+      <Project>{4AEBA63F-E5B5-4D0C-B1B5-E6BCB13E1B5A}</Project>
+      <Name>BKI_DichVuMatDat.DS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BKI_QLTTQuocAnh.US\BKI_DichVuMatDat.US.csproj">
+      <Project>{CAFDA83F-D091-49BF-816F-F7A7A72C68EC}</Project>
+      <Name>BKI_DichVuMatDat.US</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">
+      <Project>{73CA732C-2CFB-4A14-B0B9-F43763B1C2F3}</Project>
+      <Name>IPBusinessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCommon\IPCommon.vbproj">
+      <Project>{2A74F1D1-C0EE-41FE-A708-A83B285ACCF2}</Project>
+      <Name>IPCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPData\IPData.vbproj">
+      <Project>{9ACEDD70-FDA2-44D8-A004-3A7EAF86A954}</Project>
+      <Name>IPData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPException\IPException.vbproj">
+      <Project>{B73156C2-7034-4DEA-A308-5E1782FF8DB4}</Project>
+      <Name>IPException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPSystemAdmin\IPSystemAdmin.vbproj">
+      <Project>{455CD3A5-79BA-480A-B9BD-D4A7DDA397A8}</Project>
+      <Name>IPSystemAdmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
+      <Project>{B490EA92-2990-4CBB-B58B-12901AFCCCB5}</Project>
+      <Name>IPUserService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPWordReport\IPWordReport.vbproj">
+      <Project>{0adf180c-9644-4b81-abb6-93fee0c11a01}</Project>
+      <Name>IPWordReport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Security-Secrecy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-User-Group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Soft-Scraps-User-Group1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ampeross-Qetto-2-Settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-2-Man.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Household-Room.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designbolts-Monsters-University-Monsters-Character-Young-Mikes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Users-Enter-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designbolts-Monsters-University-Monsters-Character-Young-Mikes1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Ios7-Household-Room1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo luyen thi V4.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Benjigarner-Softdimension-Excel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.CodeParser.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.DataAccess.v14.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Map.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Mvvm.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Charts.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Core.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Docking.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Grid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Grid.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Layout.v14.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Printing.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.PropertyGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpf.Ribbon.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v14.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGauges.v14.1.Presets">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraWizard.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Diagnostics.STrace">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Dmf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SmoMetadataProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Management.SqlParser">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.RegSvrEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.ServiceBrokerEnum">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon doi password .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon phan quyen .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon nhom nhan vien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon user .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon backup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon bang luong nv .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon bang luong theo don vi .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon bao hiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cac thang da chot bang luong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cham cong tu excel .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cham cong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon chuyen trang thai lao dong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon dat he so LNS .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon doi password 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon don vi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon he so bo sung .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon he so chat luong xlsx .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon he so chat luong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon he so luong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon lap hop dong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon len luong cho nhan vien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon loai hop dong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon loai lao dong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon loai ngay cong .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon luong che do .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon nhan vien ko bao hiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon nhan vien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon nhom nhan vien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon phan quyen 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon phu cap .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly luong cung .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly quyet dinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly thu nhap khac .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly thu nhap khac xlsx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly thuong theo he so .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quan ly vi tri cong tac .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon quyet toan thue nam .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon tham so .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon thong ke nhan su theo don vi .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon thong ke tong hop .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon thue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon user 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-plane%281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper133.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper133%281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+    <None Include="Resources\forward.ico" />
+    <None Include="Resources\edit-clear.png" />
+    <None Include="Resources\brush_24.png" />
+    <None Include="Resources\delete_24.png" />
+    <Content Include="paper1331.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".ico">
+      <Visible>False</Visible>
+      <Description>IconPM</Description>
+      <Progid>Icon2</Progid>
+      <DefaultIcon>paper1331.ico</DefaultIcon>
+    </FileAssociation>
+    <FileAssociation Include=".Icon">
+      <Visible>False</Visible>
+      <Description>Icon</Description>
+      <Progid>Icon</Progid>
+      <DefaultIcon>paper1331.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

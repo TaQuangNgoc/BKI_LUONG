@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAFDA83F-D091-49BF-816F-F7A7A72C68EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKI_DichVuMatDat.US</RootNamespace>
+    <AssemblyName>BKI_DichVuMatDat.US</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CConstantValues.cs" />
+    <Compile Include="CHelperCore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="US_BAO_CAO_THAM_SO_BANG_LUONG.cs" />
+    <Compile Include="US_BT_DM_DON_VI_DE_LAM_BAO_CAO_DAC_TRUNG.cs" />
+    <Compile Include="US_CM_DM_TU_DIEN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="US_CM_THU_TU_DON_VI.cs" />
+    <Compile Include="US_DM_BAO_HIEM.cs" />
+    <Compile Include="US_DM_CHUC_VU.cs" />
+    <Compile Include="US_DM_DON_VI.cs" />
+    <Compile Include="US_DM_HE_SO_LUONG_NS.cs" />
+    <Compile Include="US_DM_LOAI_HOP_DONG.cs" />
+    <Compile Include="US_DM_LOAI_NGAY_CONG.cs" />
+    <Compile Include="US_DM_LUONG_CHE_DO.cs" />
+    <Compile Include="US_DM_NHAN_VIEN.cs" />
+    <Compile Include="US_DM_PHU_CAP.cs" />
+    <Compile Include="US_DM_THAM_SO.cs" />
+    <Compile Include="US_DM_THUE.cs" />
+    <Compile Include="US_DM_TRANG_THAI_LD.cs" />
+    <Compile Include="US_GD_CAC_KHOAN_TIEN_KHAC.cs" />
+    <Compile Include="US_GD_CHAM_CONG.cs" />
+    <Compile Include="US_GD_CHAM_CONG_LAM_THEM.cs" />
+    <Compile Include="US_GD_CHOT_BANG_LUONG.cs" />
+    <Compile Include="US_GD_CONG_TAC.cs" />
+    <Compile Include="US_GD_HE_SO_CHAT_LUONG.cs" />
+    <Compile Include="US_GD_HE_SO_LNS.cs" />
+    <Compile Include="US_GD_HOP_DONG.cs" />
+    <Compile Include="US_GD_HS_BO_SUNG_AN_TOAN_HANG_KHONG.cs" />
+    <Compile Include="US_GD_HS_LNS_LCD.cs" />
+    <Compile Include="US_GD_KHONG_DONG_BAO_HIEM.cs" />
+    <Compile Include="US_GD_LOAI_LAO_DONG.cs" />
+    <Compile Include="US_GD_LUONG_CHE_DO.cs" />
+    <Compile Include="US_GD_LUONG_CUNG.cs" />
+    <Compile Include="US_GD_MA_TRA_CUU_NHAN_VIEN.cs" />
+    <Compile Include="US_GD_NHAN_VIEN_PHU_CAP.cs" />
+    <Compile Include="US_GD_PHU_THUOC.cs" />
+    <Compile Include="US_GD_PHU_THUOC_DETAILS.cs" />
+    <Compile Include="US_GD_QUYET_DINH.cs" />
+    <Compile Include="US_GD_QUY_THU_NHAP_KHAC.cs" />
+    <Compile Include="US_GD_QUY_TIEN_THUONG.cs" />
+    <Compile Include="US_GD_THANG_DA_GIAM_TRU.cs" />
+    <Compile Include="US_GD_THU_NHAP_KHAC.cs" />
+    <Compile Include="US_GD_TIEN_THUONG_NHAN_VIEN.cs" />
+    <Compile Include="US_GD_TRANG_THAI_LAO_DONG.cs" />
+    <Compile Include="US_HT_BACKUP_HISTORY.cs" />
+    <Compile Include="US_HT_FORM.cs" />
+    <Compile Include="US_HT_NHOM_NGUOI_SU_DUNG.cs" />
+    <Compile Include="US_HT_PHAN_QUYEN_CHO_NHOM.cs" />
+    <Compile Include="US_HT_PHAN_QUYEN_DETAIL.cs" />
+    <Compile Include="US_HT_PHAN_QUYEN_HE_THONG.cs" />
+    <Compile Include="US_HT_USER_GROUP.cs" />
+    <Compile Include="US_RPT_CHOT_BANG_LUONG.cs" />
+    <Compile Include="US_RPT_LUONG.cs" />
+    <Compile Include="US_RPT_LUONG_V2.cs" />
+    <Compile Include="US_RPT_SO_LUONG_CHAT_LUONG_NHAN_VIEN.cs" />
+    <Compile Include="US_RPT_THONG_TIN_TONG_HOP.cs" />
+    <Compile Include="US_RPT_THONG_TIN_TONG_HOP_V2.cs" />
+    <Compile Include="US_V_DM_CHUC_VU.cs" />
+    <Compile Include="US_V_DM_DON_VI.cs" />
+    <Compile Include="US_V_DM_DON_VI_2.cs" />
+    <Compile Include="US_V_DM_HE_SO_LUONG_NS.cs" />
+    <Compile Include="US_V_DM_LAO_DONG_NUOC_NGOAI.cs" />
+    <Compile Include="US_V_DM_LOAI_HOP_DONG.cs" />
+    <Compile Include="US_V_DM_LOAI_NGAY_CONG.cs" />
+    <Compile Include="US_V_DM_LUONG_CHE_DO.cs" />
+    <Compile Include="US_V_DM_NHAN_VIEN.cs" />
+    <Compile Include="US_V_DM_NHAN_VIEN_3.cs" />
+    <Compile Include="US_V_DM_NHAN_VIEN_4.cs" />
+    <Compile Include="US_V_DM_PHU_CAP.cs" />
+    <Compile Include="US_V_DM_PHU_CAP_HDH.cs" />
+    <Compile Include="US_V_DM_TRANG_THAI_LAO_DONG.cs" />
+    <Compile Include="US_V_F320_DANH_SACH_HOP_DONG_DA_KY_THEO_THOI_GIAN.cs" />
+    <Compile Include="US_V_F320_LAP_HOP_DONG.cs" />
+    <Compile Include="US_V_F320_THONG_TIN_CHI_TIET_DANH_SACH_HOP_DONG_DA_KY_THEO_THOI_GIAN.cs" />
+    <Compile Include="US_V_F330_LEN_LUONG_CHO_NV.cs" />
+    <Compile Include="US_V_F340_DAT_HS_LNS.cs" />
+    <Compile Include="US_V_F340_DAT_LCD.cs" />
+    <Compile Include="US_V_F356_BAO_CAO_TRANG_THAI_LAO_DONG_CUA_NHAN_VIEN.cs" />
+    <Compile Include="US_V_F395_QUAN_LY_PHU_CAP_NHAN_VIEN.cs" />
+    <Compile Include="US_V_F405_BAO_CAO_THONG_TIN_TINH_LUONG.cs" />
+    <Compile Include="US_V_F410_BAO_CAO_SO_LUONG_CHAT_LUONG_NHAN_VIEN.cs" />
+    <Compile Include="US_V_F419_BAO_CAO_HS_LNS_LCD_NHAN_VIEN_THEO_THANG.cs" />
+    <Compile Include="US_V_F419_BAO_CAO_HS_LNS_NHAN_VIEN_THEO_THANG.cs" />
+    <Compile Include="US_V_F419_BAO_CAO_LCD_NHAN_VIEN_THEO_THANG.cs" />
+    <Compile Include="US_V_F460_DANH_SACH_NHAN_VIEN_DANG_HOAT_DONG_O_CONG_TY.cs" />
+    <Compile Include="US_V_F468_BAO_CAO_TRANG_THAI_LAO_DONG_THEO_THANG.cs" />
+    <Compile Include="US_V_GD_CONG_TAC.cs" />
+    <Compile Include="US_V_GD_CONG_TAC_2.cs" />
+    <Compile Include="US_V_GD_HE_SO_LNS.cs" />
+    <Compile Include="US_V_GD_HOP_DONG_4.cs" />
+    <Compile Include="US_V_GD_HOP_DONG_V3.cs" />
+    <Compile Include="US_V_GD_KHONG_DONG_BAO_HIEM.cs" />
+    <Compile Include="US_V_GD_KHONG_HE_SO_LNS.cs" />
+    <Compile Include="US_V_GD_LOAI_LAO_DONG.cs" />
+    <Compile Include="US_V_GD_LUONG_CUNG.cs" />
+    <Compile Include="US_V_GD_MA_TRA_CUU_NHAN_VIEN.cs" />
+    <Compile Include="US_V_GD_NHAN_VIEN_PHU_CAP.cs" />
+    <Compile Include="US_V_GD_NHAN_VIEN_PHU_CAP_V2.cs" />
+    <Compile Include="US_V_GD_PHU_THUOC_DETAILS_V2.cs" />
+    <Compile Include="US_V_GD_QUYET_DINH.cs" />
+    <Compile Include="US_V_GD_QUY_TIEN_THUONG.cs" />
+    <Compile Include="US_V_GD_THU_NHAP_KHAC_2.cs" />
+    <Compile Include="US_V_HT_CONTROL_IN_FORM.cs" />
+    <Compile Include="US_V_HT_NGUOI_SU_DUNG.cs" />
+    <Compile Include="US_V_PRT_DANH_SACH_NHAN_VIEN_CON_HAN_HOP_DONG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="US_V_RPT_LUONG_V2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKI_QLTTQuocAnh.DS\BKI_DichVuMatDat.DS.csproj">
+      <Project>{4AEBA63F-E5B5-4D0C-B1B5-E6BCB13E1B5A}</Project>
+      <Name>BKI_DichVuMatDat.DS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">
+      <Project>{73CA732C-2CFB-4A14-B0B9-F43763B1C2F3}</Project>
+      <Name>IPBusinessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCommon\IPCommon.vbproj">
+      <Project>{2A74F1D1-C0EE-41FE-A708-A83B285ACCF2}</Project>
+      <Name>IPCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPData\IPData.vbproj">
+      <Project>{9ACEDD70-FDA2-44D8-A004-3A7EAF86A954}</Project>
+      <Name>IPData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPException\IPException.vbproj">
+      <Project>{B73156C2-7034-4DEA-A308-5E1782FF8DB4}</Project>
+      <Name>IPException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPSystemAdmin\IPSystemAdmin.vbproj">
+      <Project>{455CD3A5-79BA-480A-B9BD-D4A7DDA397A8}</Project>
+      <Name>IPSystemAdmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
+      <Project>{B490EA92-2990-4CBB-B58B-12901AFCCCB5}</Project>
+      <Name>IPUserService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
