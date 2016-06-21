@@ -1,6 +1,6 @@
 ﻿namespace BKI_DichVuMatDat
 {
-    partial class FORM_MAU
+    partial class FORM_MENU
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@
             this.panel2.Size = new System.Drawing.Size(417, 451);
             this.panel2.TabIndex = 1;
             // 
-            // FORM_MAU
+            // FORM_MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +96,7 @@
             this.ClientSize = new System.Drawing.Size(685, 451);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "FORM_MAU";
+            this.Name = "FORM_MENU";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class FORM_MAU : Form
+    public partial class FORM_MENU : Form
     {
         TreeNode CAI_DAT_THAM_SO = new TreeNode("Cài đặt tham số");
         TreeNode NHAP_LIEU = new TreeNode("Nhập liệu");
@@ -36,7 +36,7 @@ namespace BKI_DichVuMatDat
         TreeNode THEO_THOI_GIAN = new TreeNode("Theo thời gian");
         TreeNode THEO_NGAY = new TreeNode("Theo ngày");
 
-        public FORM_MAU()
+        public FORM_MENU()
         {
             InitializeComponent();
             Init_tree_view();

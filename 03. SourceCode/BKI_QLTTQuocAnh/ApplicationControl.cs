@@ -7,7 +7,7 @@ using IP.Core.IPSystemAdmin;
 using IP.Core.IPBusinessService;
 using IP.Core.IPUserService;
 using BKI_DichVuMatDat;
-//using Form_menu;
+//using FORM_MENU;
 
 using BKI_DichVuMatDat.CONFIRM;
 
@@ -33,7 +33,7 @@ namespace BKI_DichVuMatDat
            
             try
             {
-                FORM_MAU v_f = new FORM_MAU();
+                FORM_MENU v_f = new FORM_MENU();
                 v_f.ShowDialog();
                 // The following line provides localization for the application's user interface. 
                 //System.Threading.Thread.CurrentThread.CurrentUICulture =

@@ -418,6 +418,10 @@
     <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.Designer.cs">
       <DependentUpon>msg003_hien_thi_danh_sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORM_MAU.cs" />
+    <Compile Include="FORM_MAU.designer.cs">
+      <DependentUpon>FORM_MAU.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM_MENU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -568,6 +572,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\THAM_SO_KHAC.resx">
       <DependentUpon>THAM_SO_KHAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM_MAU.resx">
+      <DependentUpon>FORM_MAU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_MENU.resx">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
