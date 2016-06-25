@@ -96,6 +96,15 @@ namespace BKI_DichVuMatDat
                 form.Close();
             }
             TreeViewHitTestInfo info = treeView1.HitTest(treeView1.PointToClient(Cursor.Position));
+
+
+            if (info.Node == CAI_DAT_THAM_SO  )
+            {
+                BKI_DichVuMatDat.CAI_DAT.FORM_CHO_CAI_DAT v_f = new BKI_DichVuMatDat.CAI_DAT.FORM_CHO_CAI_DAT();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
             if (info.Node == CAC_HINH_THUC_TINH_LUONG)
             {     
                 CAC_HINH_THUC_TINH_LUONG v_f = new CAC_HINH_THUC_TINH_LUONG();        
