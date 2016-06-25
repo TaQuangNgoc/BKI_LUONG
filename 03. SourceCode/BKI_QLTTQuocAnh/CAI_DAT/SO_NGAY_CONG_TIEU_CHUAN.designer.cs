@@ -50,14 +50,19 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -70,7 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -123,9 +127,9 @@
             this.groupBox4.Controls.Add(this.panel5);
             this.groupBox4.Controls.Add(this.panel4);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox4.Location = new System.Drawing.Point(3, 129);
+            this.groupBox4.Location = new System.Drawing.Point(3, 178);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(878, 307);
+            this.groupBox4.Size = new System.Drawing.Size(878, 258);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Cấu hình tùy chỉnh";
@@ -136,7 +140,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 180);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(872, 124);
+            this.panel5.Size = new System.Drawing.Size(872, 75);
             this.panel5.TabIndex = 9;
             // 
             // gridControl1
@@ -146,7 +150,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(872, 124);
+            this.gridControl1.Size = new System.Drawing.Size(872, 75);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -263,7 +267,9 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.groupBox2);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.textBox1);
@@ -273,32 +279,41 @@
             this.panel4.Size = new System.Drawing.Size(872, 158);
             this.panel4.TabIndex = 8;
             // 
-            // groupBox2
+            // button4
             // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(31, 47);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(727, 53);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
+            this.button4.Location = new System.Drawing.Point(338, 71);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 30);
+            this.button4.TabIndex = 15;
+            this.button4.Text = "Xóa";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // button5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(427, 18);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Note: Số loại nhân viên phụ thuộc vào số ngày công tiêu chuẩn.";
+            this.button5.Location = new System.Drawing.Point(170, 71);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(67, 30);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Sửa";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(31, 71);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 30);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Thêm";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 18);
+            this.label1.Location = new System.Drawing.Point(26, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 18);
+            this.label1.Size = new System.Drawing.Size(127, 18);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Số loại nhân viên của công ty";
+            this.label1.Text = "Tên loại nhân viên";
             // 
             // label5
             // 
@@ -311,43 +326,79 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(281, 15);
+            this.textBox1.Location = new System.Drawing.Point(170, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 26);
+            this.textBox1.Size = new System.Drawing.Size(235, 26);
             this.textBox1.TabIndex = 6;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.radioButton1);
             this.groupBox3.Controls.Add(this.radioButton2);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.Location = new System.Drawing.Point(3, 22);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(878, 107);
+            this.groupBox3.Size = new System.Drawing.Size(878, 156);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(171, 77);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(91, 26);
+            this.textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(545, 32);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(91, 26);
+            this.textBox2.TabIndex = 2;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(34, 25);
+            this.radioButton1.Location = new System.Drawing.Point(32, 78);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(121, 22);
+            this.radioButton1.Size = new System.Drawing.Size(100, 22);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mặc định là 26";
+            this.radioButton1.Text = "Mặc định là";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(34, 61);
+            this.radioButton2.Location = new System.Drawing.Point(32, 114);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(90, 22);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Tùy chỉnh";
             this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(29, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(493, 18);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Cài đặt số ngày công tiêu chuẩn cho từng tháng của nhân viên trong năm";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(294, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 18);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "ngày";
             // 
             // label3
             // 
@@ -411,8 +462,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -448,13 +497,18 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
     }
 }

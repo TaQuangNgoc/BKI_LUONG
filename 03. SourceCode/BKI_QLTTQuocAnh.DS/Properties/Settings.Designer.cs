@@ -370,5 +370,16 @@ namespace BKI_DichVuMatDat.DS.Properties {
                 return ((string)(this["DVMDConnectionString6"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-B1TDDMF\\SQLEXPRESS;Initial Catalog=BKI_LUONG;User ID=sa;Passw" +
+            "ord=sa")]
+        public string BKI_LUONGConnectionString {
+            get {
+                return ((string)(this["BKI_LUONGConnectionString"]));
+            }
+        }
     }
 }

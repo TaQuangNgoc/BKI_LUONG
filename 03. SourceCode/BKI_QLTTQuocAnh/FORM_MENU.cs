@@ -17,7 +17,7 @@ namespace BKI_DichVuMatDat
         TreeNode BAO_CAO = new TreeNode("Báo cáo");
         //NODE CỦA CỦA CÀI ĐẶT THAM SỐ
         TreeNode CAC_HINH_THUC_TINH_LUONG = new TreeNode("Các hình thức tính lương");
-        TreeNode MA_NHAN_VIEN = new TreeNode("Mã nhân viên");
+       
         TreeNode CHAM_CONG_THEO_TG = new TreeNode("Chấm công theo thời gian");
         TreeNode SO_NGAY_CONG_TIEU_CHUAN = new TreeNode("Số ngày công tiêu chuẩn");
         TreeNode DANH_MUC = new TreeNode("Danh Mục");
@@ -57,12 +57,12 @@ namespace BKI_DichVuMatDat
             //node Cài đặt tham số
             //ADD CÁC HÌNH THỨC TÍNH LƯƠNG
             treeView1.Nodes[0].Nodes.Add(CAC_HINH_THUC_TINH_LUONG);
-            treeView1.Nodes[0].Nodes.Add(MA_NHAN_VIEN);
+           
             //ADD CHẤM CÔNG THEO THỜI GIAN
             treeView1.Nodes[0].Nodes.Add(CHAM_CONG_THEO_TG);
-            treeView1.Nodes[0].Nodes[2].Nodes.Add(DANH_MUC);
-            treeView1.Nodes[0].Nodes[2].Nodes.Add(SO_NGAY_CONG_TIEU_CHUAN);
-            treeView1.Nodes[0].Nodes[2].Nodes.Add(THAM_SO_KHAC);
+            treeView1.Nodes[0].Nodes[1].Nodes.Add(DANH_MUC);
+            treeView1.Nodes[0].Nodes[1].Nodes.Add(SO_NGAY_CONG_TIEU_CHUAN);
+            treeView1.Nodes[0].Nodes[1].Nodes.Add(THAM_SO_KHAC);
             treeView1.ItemHeight = 35;
 
             //node Nhập liệu
@@ -117,14 +117,6 @@ namespace BKI_DichVuMatDat
             if (info.Node == DANH_MUC)
             {
                 THAM_SO_CHAM_CONG_THOI_GIAN v_f = new THAM_SO_CHAM_CONG_THOI_GIAN();
-                v_f.TopLevel = false;
-                panel2.Controls.Add(v_f);
-                ShowForm(v_f);
-            }
-
-            if (info.Node == MA_NHAN_VIEN)
-            {
-                MA_NHAN_VIEN v_f = new MA_NHAN_VIEN();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);
