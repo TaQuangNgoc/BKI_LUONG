@@ -17,6 +17,17 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
         }
 
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+               
+            {
+                e.Handled = true;
+            }
+
+          
+        }
+
        
     }
 }

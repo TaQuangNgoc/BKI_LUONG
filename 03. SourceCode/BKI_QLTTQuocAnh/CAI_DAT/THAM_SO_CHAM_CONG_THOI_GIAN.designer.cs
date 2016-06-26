@@ -177,6 +177,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -429,6 +430,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(152, 26);
             this.textBox4.TabIndex = 10;
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label3
             // 
@@ -481,6 +483,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(152, 26);
             this.textBox3.TabIndex = 7;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // button5
             // 
@@ -702,6 +705,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(146, 26);
             this.textBox7.TabIndex = 3;
+            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // tabPage3
             // 
@@ -864,6 +868,7 @@
             this.groupBox5.Controls.Add(this.textBox8);
             this.groupBox5.Controls.Add(this.radioButton4);
             this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.label34);
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.textBox10);
@@ -890,6 +895,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(128, 26);
             this.textBox8.TabIndex = 1;
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // radioButton4
             // 
@@ -907,13 +913,13 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(120, 53);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(174, 26);
+            this.comboBox2.Size = new System.Drawing.Size(183, 26);
             this.comboBox2.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(253, 18);
+            this.label4.Location = new System.Drawing.Point(266, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 18);
             this.label4.TabIndex = 0;
@@ -932,8 +938,10 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(120, 103);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(174, 26);
+            this.textBox10.Size = new System.Drawing.Size(128, 26);
             this.textBox10.TabIndex = 2;
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.textBox10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // textBox11
             // 
@@ -1192,6 +1200,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(147, 26);
             this.textBox13.TabIndex = 12;
+            this.textBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label16
             // 
@@ -1361,6 +1370,8 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(187, 26);
             this.textBox15.TabIndex = 7;
+            this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.textBox15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // button15
             // 
@@ -1413,6 +1424,8 @@
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(187, 26);
             this.textBox16.TabIndex = 9;
+            this.textBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.textBox16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // textBox18
             // 
@@ -1420,6 +1433,8 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(187, 26);
             this.textBox18.TabIndex = 16;
+            this.textBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.textBox18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // textBox17
             // 
@@ -1427,6 +1442,7 @@
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(144, 26);
             this.textBox17.TabIndex = 9;
+            this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label24
             // 
@@ -1516,6 +1532,7 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(174, 26);
             this.textBox21.TabIndex = 1;
+            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // textBox19
             // 
@@ -1523,6 +1540,7 @@
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(174, 26);
             this.textBox19.TabIndex = 1;
+            this.textBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // radioButton3
             // 
@@ -1611,6 +1629,8 @@
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(174, 26);
             this.textBox20.TabIndex = 2;
+            this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.textBox20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // panel2
             // 
@@ -1644,6 +1664,15 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(266, 106);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(37, 18);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "VND";
             // 
             // THAM_SO_CHAM_CONG_THOI_GIAN
             // 
@@ -1867,5 +1896,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label34;
     }
 }

@@ -20,6 +20,40 @@ namespace BKI_DichVuMatDat
             tabControl1.Appearance = TabAppearance.Buttons;
         }
 
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
+        {
+            TextBox textbox = (TextBox)sender;
+            try
+            {
+               
+                System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+                double valueBefore = Double.Parse(textbox.Text, System.Globalization.NumberStyles.AllowThousands);
+                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);       
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Nhập chẵn số tiền!");
+                textbox.Text = "";
+            }
+
+        }
+
         
       
         

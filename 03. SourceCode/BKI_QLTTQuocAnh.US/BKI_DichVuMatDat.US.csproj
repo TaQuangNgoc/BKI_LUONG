@@ -53,6 +53,7 @@
     <Compile Include="US_GD_LOAI_NV_NGAY_LV_TIEU_CHUAN.cs" />
     <Compile Include="US_GD_LUONG.cs" />
     <Compile Include="US_GD_LUONG_MOT_NGAY.cs" />
+    <Compile Include="US_GD_NHAN_VIEN_HINH_THUC_TINH_LUONG.cs" />
     <Compile Include="US_GD_NHAN_VIEN_PHU_CAP.cs" />
     <Compile Include="US_GD_PHAN_TRAM_LUONG.cs" />
     <Compile Include="US_GD_PHU_THUOC.cs" />
