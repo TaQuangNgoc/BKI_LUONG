@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="BKI_DichVuMatDat.exe.manifest" size="117727">
+    <dependentAssembly dependencyType="install" codebase="BKI_DichVuMatDat.exe.manifest" size="117725">
       <assemblyIdentity name="BKI_DichVuMatDat.exe" version="1.0.0.17" publicKeyToken="0000000000000000" language="vi-VN" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zDsuIm3NzpMz6nQFecc3VlEo22dDUNmnqzFF+iNrJ0E=</dsig:DigestValue>
+        <dsig:DigestValue>OcdPFtYwHqB5c2LqN/Km9jiqgS7p51ckRESe4QJQoSo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

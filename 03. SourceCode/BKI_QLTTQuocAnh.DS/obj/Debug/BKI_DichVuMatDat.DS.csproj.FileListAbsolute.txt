@@ -10,3 +10,9 @@ C:\Users\Ta Quang Ngoc\Desktop\dvmd_v3\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\b
 C:\Users\Ta Quang Ngoc\Desktop\dvmd_v3\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.csprojResolveAssemblyReference.cache
 C:\Users\Ta Quang Ngoc\Desktop\dvmd_v3\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.dll
 C:\Users\Ta Quang Ngoc\Desktop\dvmd_v3\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.pdb
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\bin\Debug\BKI_DichVuMatDat.DS.dll.config
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\bin\Debug\BKI_DichVuMatDat.DS.dll
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\bin\Debug\BKI_DichVuMatDat.DS.pdb
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.csprojResolveAssemblyReference.cache
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.dll
+C:\Users\Ta Quang Ngoc\Desktop\BKI_LUONG\trunk\03. SourceCode\BKI_QLTTQuocAnh.DS\obj\Debug\BKI_DichVuMatDat.DS.pdb

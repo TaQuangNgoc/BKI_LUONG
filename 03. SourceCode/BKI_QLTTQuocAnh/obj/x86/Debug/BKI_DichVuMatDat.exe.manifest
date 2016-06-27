@@ -48,38 +48,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.exe" size="2711552">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.exe" size="2417152">
       <assemblyIdentity name="BKI_DichVuMatDat" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>40sT6x/e9tqnH07+TV+b7uXeDHdU3v0gNEOzZDM/TrQ=</dsig:DigestValue>
+        <dsig:DigestValue>fM/fKPy8gbXbesSkTcP3zo3szM9/HhO5OeHsym6bFCg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.DS.dll" size="3482112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.DS.dll" size="477696">
       <assemblyIdentity name="BKI_DichVuMatDat.DS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8QB415sx89u/cwRYiLN21MA/qWg8pfXTAI9Ltsommrk=</dsig:DigestValue>
+        <dsig:DigestValue>zpY2uitMyV6CuJ1lLO96c7PF7ZMo2IA3v9HvxbwC9Fc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.US.dll" size="509440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BKI_DichVuMatDat.US.dll" size="61952">
       <assemblyIdentity name="BKI_DichVuMatDat.US" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1jjZt2bMNq6gVlzSJ8dGWSPePBoH9WK+fm+3OKhYc+M=</dsig:DigestValue>
+        <dsig:DigestValue>B4c1thU/yHEkH9XAcWK9RIj74OIX/CRvein7RQod/54=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -817,13 +817,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IP.Core.IPWordReport.dll" size="21504">
-      <assemblyIdentity name="IP.Core.IPWordReport" version="1.0.6003.18784" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="IP.Core.IPWordReport" version="1.0.6022.36144" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F7BuBe1zMoVDqxae1hTAzL7bPE4v6DxZdn9CVShhcGg=</dsig:DigestValue>
+        <dsig:DigestValue>FikNT6eWtE5frlpm8JhEJGHy679Gcrh9ryKmDD5jJgM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1067,13 +1067,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="BKI_DichVuMatDat.exe.config" size="5054">
+  <file name="BKI_DichVuMatDat.exe.config" size="5052">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DAA9Plfg9w2VGr+Ygc7iFqlbXFTkCNJ04g5EvDh4OpI=</dsig:DigestValue>
+      <dsig:DigestValue>lsvlmW+OiAbJrbwqAw2AXHY18k8yvmzteqmYmyD1m6M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="paper1331.ico" size="370070">
