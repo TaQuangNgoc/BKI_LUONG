@@ -484,5 +484,14 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@ID_HINH_THUC_TINH_LUONG", v_id_hinh_thuc);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void non_active_hinh_thuc_tinh_luong(decimal m_id_nhan_vien)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_non_active_hinh_thuc_tinh_luong");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }

@@ -64,6 +64,10 @@
             this.m_grb_phu_cap = new System.Windows.Forms.GroupBox();
             this.m_grc_phu_cap = new DevExpress.XtraGrid.GridControl();
             this.m_grv_phu_cap = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel8 = new System.Windows.Forms.Panel();
             this.m_cbo_loai_phu_cap = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -81,7 +85,7 @@
             this.m_grb_doan_phi = new System.Windows.Forms.GroupBox();
             this.m_chb_doan_phi = new System.Windows.Forms.CheckBox();
             this.m_grb_loai_nv = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.m_cbo_loai_nhan_vien = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.m_grb_phan_tram_luong = new System.Windows.Forms.GroupBox();
             this.m_grc_phan_tram = new DevExpress.XtraGrid.GridControl();
@@ -150,10 +154,6 @@
             this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -512,9 +512,9 @@
             this.m_grb_phu_cap.Controls.Add(this.m_grc_phu_cap);
             this.m_grb_phu_cap.Controls.Add(this.panel8);
             this.m_grb_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grb_phu_cap.Location = new System.Drawing.Point(0, 460);
+            this.m_grb_phu_cap.Location = new System.Drawing.Point(0, 428);
             this.m_grb_phu_cap.Name = "m_grb_phu_cap";
-            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 108);
+            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 140);
             this.m_grb_phu_cap.TabIndex = 15;
             this.m_grb_phu_cap.TabStop = false;
             this.m_grb_phu_cap.Text = "CÁC LOẠI PHỤ CẤP ĐƯỢC HƯỞNG";
@@ -529,7 +529,7 @@
             this.m_grc_phu_cap.Location = new System.Drawing.Point(732, 19);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(296, 86);
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(296, 118);
             this.m_grc_phu_cap.TabIndex = 17;
             this.m_grc_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap});
@@ -543,6 +543,38 @@
             this.gridColumn11});
             this.m_grv_phu_cap.GridControl = this.m_grc_phu_cap;
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
+            this.m_grv_phu_cap.OptionsBehavior.Editable = false;
+            this.m_grv_phu_cap.Click += new System.EventHandler(this.m_grv_phu_cap_Click);
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "ID PHỤ CẤP";
+            this.gridColumn8.FieldName = "ID_PHU_CAP";
+            this.gridColumn8.Name = "gridColumn8";
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "TÊN PHỤ CẤP";
+            this.gridColumn9.FieldName = "TEN_PHU_CAP";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 0;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "TỪ THÁNG";
+            this.gridColumn10.FieldName = "THANG";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 1;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "NĂM";
+            this.gridColumn11.FieldName = "NAM";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 2;
             // 
             // panel8
             // 
@@ -558,7 +590,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 19);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(729, 86);
+            this.panel8.Size = new System.Drawing.Size(729, 118);
             this.panel8.TabIndex = 16;
             // 
             // m_cbo_loai_phu_cap
@@ -586,6 +618,7 @@
             this.m_btn_xoa_phu_cap.TabIndex = 4;
             this.m_btn_xoa_phu_cap.Text = "Xóa";
             this.m_btn_xoa_phu_cap.UseVisualStyleBackColor = true;
+            this.m_btn_xoa_phu_cap.Click += new System.EventHandler(this.m_btn_xoa_phu_cap_Click);
             // 
             // m_txt_nam
             // 
@@ -603,6 +636,7 @@
             this.m_btn_sua_phu_cap.TabIndex = 4;
             this.m_btn_sua_phu_cap.Text = "Sửa";
             this.m_btn_sua_phu_cap.UseVisualStyleBackColor = true;
+            this.m_btn_sua_phu_cap.Click += new System.EventHandler(this.m_btn_sua_phu_cap_Click);
             // 
             // m_txt_thang
             // 
@@ -620,6 +654,7 @@
             this.m_btn_them_phu_cap.TabIndex = 4;
             this.m_btn_them_phu_cap.Text = "Thêm";
             this.m_btn_them_phu_cap.UseVisualStyleBackColor = true;
+            this.m_btn_them_phu_cap.Click += new System.EventHandler(this.m_btn_them_phu_cap_Click);
             // 
             // label18
             // 
@@ -645,7 +680,7 @@
             this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label10);
             this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label15);
             this.m_grb_nguoi_phu_thuoc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_nguoi_phu_thuoc.Location = new System.Drawing.Point(0, 412);
+            this.m_grb_nguoi_phu_thuoc.Location = new System.Drawing.Point(0, 380);
             this.m_grb_nguoi_phu_thuoc.Name = "m_grb_nguoi_phu_thuoc";
             this.m_grb_nguoi_phu_thuoc.Size = new System.Drawing.Size(1031, 48);
             this.m_grb_nguoi_phu_thuoc.TabIndex = 19;
@@ -681,7 +716,7 @@
             // 
             this.m_grb_doan_phi.Controls.Add(this.m_chb_doan_phi);
             this.m_grb_doan_phi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_doan_phi.Location = new System.Drawing.Point(0, 370);
+            this.m_grb_doan_phi.Location = new System.Drawing.Point(0, 338);
             this.m_grb_doan_phi.Name = "m_grb_doan_phi";
             this.m_grb_doan_phi.Size = new System.Drawing.Size(1031, 42);
             this.m_grb_doan_phi.TabIndex = 18;
@@ -700,23 +735,23 @@
             // 
             // m_grb_loai_nv
             // 
-            this.m_grb_loai_nv.Controls.Add(this.comboBox1);
+            this.m_grb_loai_nv.Controls.Add(this.m_cbo_loai_nhan_vien);
             this.m_grb_loai_nv.Controls.Add(this.label19);
             this.m_grb_loai_nv.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_loai_nv.Location = new System.Drawing.Point(0, 311);
+            this.m_grb_loai_nv.Location = new System.Drawing.Point(0, 294);
             this.m_grb_loai_nv.Name = "m_grb_loai_nv";
-            this.m_grb_loai_nv.Size = new System.Drawing.Size(1031, 59);
+            this.m_grb_loai_nv.Size = new System.Drawing.Size(1031, 44);
             this.m_grb_loai_nv.TabIndex = 17;
             this.m_grb_loai_nv.TabStop = false;
             this.m_grb_loai_nv.Text = "LOẠI NHÂN VIÊN";
             // 
-            // comboBox1
+            // m_cbo_loai_nhan_vien
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 26);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 24);
-            this.comboBox1.TabIndex = 13;
+            this.m_cbo_loai_nhan_vien.FormattingEnabled = true;
+            this.m_cbo_loai_nhan_vien.Location = new System.Drawing.Point(151, 26);
+            this.m_cbo_loai_nhan_vien.Name = "m_cbo_loai_nhan_vien";
+            this.m_cbo_loai_nhan_vien.Size = new System.Drawing.Size(167, 24);
+            this.m_cbo_loai_nhan_vien.TabIndex = 13;
             // 
             // label19
             // 
@@ -734,7 +769,7 @@
             this.m_grb_phan_tram_luong.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_grb_phan_tram_luong.Location = new System.Drawing.Point(0, 192);
             this.m_grb_phan_tram_luong.Name = "m_grb_phan_tram_luong";
-            this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 119);
+            this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 102);
             this.m_grb_phan_tram_luong.TabIndex = 14;
             this.m_grb_phan_tram_luong.TabStop = false;
             this.m_grb_phan_tram_luong.Text = "PHẦN TRĂM LƯƠNG ĐƯỢC HƯỞNG";
@@ -749,7 +784,7 @@
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 19);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
-            this.m_grc_phan_tram.Size = new System.Drawing.Size(296, 97);
+            this.m_grc_phan_tram.Size = new System.Drawing.Size(296, 80);
             this.m_grc_phan_tram.TabIndex = 16;
             this.m_grc_phan_tram.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phan_tram});
@@ -804,7 +839,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(3, 19);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(729, 97);
+            this.panel7.Size = new System.Drawing.Size(729, 80);
             this.panel7.TabIndex = 15;
             // 
             // m_txt_ti_le
@@ -1405,38 +1440,6 @@
             this.m_cb_luong_theo_san_pham.Text = "Lương theo sản phẩm";
             this.m_cb_luong_theo_san_pham.UseVisualStyleBackColor = true;
             // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "ID LOẠI PHỤ CẤP";
-            this.gridColumn8.FieldName = "ID_LOAI_PHU_CAP";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 0;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "TÊN PHỤ CẤP";
-            this.gridColumn9.FieldName = "TEN_PHU_CAP";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 1;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.Caption = "TỪ NGÀY";
-            this.gridColumn10.FieldName = "TU_NGAY";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 2;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.Caption = "ĐẾN NGÀY";
-            this.gridColumn11.FieldName = "DEN_NGAY";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 3;
-            // 
             // THEM_MOI_NHAN_VIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1614,7 +1617,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox m_cbo_loai_nhan_vien;
         private System.Windows.Forms.Label label19;
         private DevExpress.XtraGrid.Columns.GridColumn LOAI_LUONG;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;

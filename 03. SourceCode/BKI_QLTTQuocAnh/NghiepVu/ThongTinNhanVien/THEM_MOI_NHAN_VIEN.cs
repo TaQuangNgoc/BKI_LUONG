@@ -26,6 +26,19 @@ namespace BKI_DichVuMatDat
             format_beauty();
             active_checkbox_hinh_thuc_tinh_luong();
             load_data_to_combobox_loai_phu_cap();
+            load_data_to_combobox_loai_nhan_vien();
+        }
+
+        private void load_data_to_combobox_loai_nhan_vien()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            //  v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=5");
+            v_us.FillDatasetCBO(v_ds, "CM_DM_TU_DIEN", "ID", "TEN", "WHERE ID_LOAI_TU_DIEN=21");
+            m_cbo_loai_nhan_vien.DataSource = v_ds.Tables[0];
+            m_cbo_loai_nhan_vien.DisplayMember = "TEN";
+            m_cbo_loai_nhan_vien.ValueMember = "ID";
         }
 
         private void load_data_to_combobox_loai_phu_cap()
@@ -142,8 +155,32 @@ namespace BKI_DichVuMatDat
         {
             luu_thong_tin_chung();
             gan_cac_hinh_thuc_tinh_luong();
+            luu_cac_hinh_thuc_duoc_tick();
             luu_thong_tin_luong_theo_thoi_gian();
             luu_thong_tin_luong_khac();
+        }
+
+        private void luu_cac_hinh_thuc_duoc_tick()
+        {
+            List<decimal> ListActive = new List<decimal>();
+            if (m_cb_luong_theo_thoi_gian.Checked == true)
+                ListActive.Add(1);
+            if (m_cb_luong_ngay.Checked == true)
+                ListActive.Add(2);
+            if (m_cb_luong_theo_san_pham.Checked == true)
+                ListActive.Add(3);
+            if (m_cb_luong_khoan.Checked == true)
+                ListActive.Add(4);
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.non_active_hinh_thuc_tinh_luong(m_id_nhan_vien);
+            if (ListActive.Count > 0)
+            {
+                for (int i = 0; i < ListActive.Count; i++)
+                {
+                   
+                     v_us.active_hinh_thuc_tinh_luong(m_id_nhan_vien, ListActive[i]);
+                }
+            }
         }
 
         private void luu_thong_tin_luong_khac()
@@ -152,6 +189,52 @@ namespace BKI_DichVuMatDat
         }
 
         private void luu_thong_tin_luong_theo_thoi_gian()
+        {
+           //LƯU LNS, LCD
+            luu_lns_lcd();
+            luu_ti_le_phan_tram();
+            luu_loai_nv();
+            luu_phai_dong_doan_phi();
+            luu_nguoi_phu_thuoc();
+            luu_phu_cap();
+        }
+
+        private void luu_lns_lcd()
+        {
+            for (int i = 0; i < m_grv_luong.SelectedRowsCount; i++)
+            {
+                var v_dr= m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
+                US_GD_LUONG v_us = new US_GD_LUONG();
+                v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
+                v_us.dcID_LOAI_LUONG =decimal.Parse(v_dr["ID_LOAI_LUONG"].ToString());
+                v_us.dcSO_TIEN = decimal.Parse(v_dr["SO_TIEN"].ToString().Replace(",", "").ToString());
+                v_us.datTU_NGAY = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+                if (v_dr["DEN_NGAY"].ToString() != "")
+                    v_us.datDEN_NGAY = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+            }
+        }
+
+        private void luu_ti_le_phan_tram()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void luu_loai_nv()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void luu_phai_dong_doan_phi()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void luu_nguoi_phu_thuoc()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void luu_phu_cap()
         {
             throw new NotImplementedException();
         }
@@ -419,6 +502,41 @@ namespace BKI_DichVuMatDat
             m_txt_ti_le.Text = "";
         }
 
+        private void m_btn_them_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
+            dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue,m_cbo_loai_phu_cap.Text,m_txt_thang.Text,m_txt_nam.Text);        
+            m_grc_phu_cap.DataSource = dt;
+            m_txt_thang.Text = "";
+            m_txt_nam.Text = "";
+         }
+
+        private void m_grv_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
+            m_txt_thang.Text = v_dr["THANG"].ToString();
+            m_txt_nam.Text = v_dr["NAM"].ToString();
+            tabControl1.TabPages[1].HorizontalScroll.Value = 0;
+        }
+
+        private void m_btn_sua_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            v_dr["ID_PHU_CAP"] = m_cbo_loai_phu_cap.SelectedValue;
+            v_dr["TEN_PHU_CAP"] = m_cbo_loai_phu_cap.Text;
+            v_dr["THANG"] = m_txt_thang.Text;
+            v_dr["NAM"] = m_txt_nam.Text;
+        }
+
+        private void m_btn_xoa_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            v_dr.Delete();
+            m_txt_thang.Text = "";
+            m_txt_nam.Text = "";
+        }
     }
 
 }
