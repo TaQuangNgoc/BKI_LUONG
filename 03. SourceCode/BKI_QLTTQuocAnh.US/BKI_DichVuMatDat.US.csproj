@@ -56,7 +56,7 @@
     <Compile Include="US_GD_NHAN_VIEN_HINH_THUC_TINH_LUONG.cs" />
     <Compile Include="US_GD_NHAN_VIEN_PHU_CAP.cs" />
     <Compile Include="US_GD_PHAN_TRAM_LUONG.cs" />
-    <Compile Include="US_GD_PHU_THUOC.cs" />
+    <Compile Include="US_GD_SO_LUONG_PHU_THUOC.cs" />
     <Compile Include="US_HT_FORM.cs" />
     <Compile Include="US_HT_NHOM_NGUOI_SU_DUNG.cs" />
     <Compile Include="US_HT_PHAN_QUYEN_CHO_NHOM.cs" />

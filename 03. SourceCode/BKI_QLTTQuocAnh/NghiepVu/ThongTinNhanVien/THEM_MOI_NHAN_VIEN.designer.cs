@@ -137,19 +137,22 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_luong_ngay = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_luong_ngay = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.m_txt_so_tien_luong_ngay = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.m_btn_them_luong_ngay = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.m_btn_sua_luong_ngay = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.m_btn_xoa_luong_ngay = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.m_dtp_tu_ngay_luong_ngay = new System.Windows.Forms.DateTimePicker();
-            this.m_txt_tien_luong_ngay = new System.Windows.Forms.TextBox();
-            this.m_dtp_luong_ngay_den_ngay = new System.Windows.Forms.DateTimePicker();
+            this.m_dtp_den_ngay_luong_ngay = new System.Windows.Forms.DateTimePicker();
             this.panel11 = new System.Windows.Forms.Panel();
             this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
@@ -188,8 +191,8 @@
             this.groupBox7.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.SuspendLayout();
@@ -1021,7 +1024,7 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "ID LOẠI LƯƠNG";
-            this.gridColumn1.FieldName = "ID";
+            this.gridColumn1.FieldName = "ID_LOAI_LUONG";
             this.gridColumn1.Name = "gridColumn1";
             // 
             // panel6
@@ -1265,7 +1268,7 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.gridControl1);
+            this.groupBox9.Controls.Add(this.m_grc_luong_ngay);
             this.groupBox9.Controls.Add(this.panel12);
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox9.Location = new System.Drawing.Point(3, 75);
@@ -1275,40 +1278,79 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Cài đặt lương ngày";
             // 
-            // gridControl1
+            // m_grc_luong_ngay
             // 
-            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(578, 22);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(444, 206);
-            this.gridControl1.TabIndex = 18;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.m_grc_luong_ngay.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_luong_ngay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_luong_ngay.Location = new System.Drawing.Point(578, 22);
+            this.m_grc_luong_ngay.MainView = this.m_grv_luong_ngay;
+            this.m_grc_luong_ngay.Name = "m_grc_luong_ngay";
+            this.m_grc_luong_ngay.Size = new System.Drawing.Size(444, 206);
+            this.m_grc_luong_ngay.TabIndex = 18;
+            this.m_grc_luong_ngay.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_luong_ngay});
             // 
-            // gridView1
+            // m_grv_luong_ngay
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.m_grv_luong_ngay.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn12,
+            this.gridColumn13,
+            this.gridColumn14});
+            this.m_grv_luong_ngay.GridControl = this.m_grc_luong_ngay;
+            this.m_grv_luong_ngay.Name = "m_grv_luong_ngay";
+            this.m_grv_luong_ngay.OptionsBehavior.Editable = false;
+            this.m_grv_luong_ngay.Click += new System.EventHandler(this.m_grv_luong_ngay_Click);
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.Caption = "SỐ TIỀN";
+            this.gridColumn12.FieldName = "SO_TIEN";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 0;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "TỪ NGÀY";
+            this.gridColumn13.FieldName = "TU_NGAY";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 1;
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.Caption = "ĐẾN NGÀY";
+            this.gridColumn14.FieldName = "DEN_NGAY";
+            this.gridColumn14.Name = "gridColumn14";
+            this.gridColumn14.Visible = true;
+            this.gridColumn14.VisibleIndex = 2;
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.m_txt_so_tien_luong_ngay);
             this.panel12.Controls.Add(this.label16);
-            this.panel12.Controls.Add(this.button3);
+            this.panel12.Controls.Add(this.m_btn_them_luong_ngay);
             this.panel12.Controls.Add(this.label22);
-            this.panel12.Controls.Add(this.button4);
+            this.panel12.Controls.Add(this.m_btn_sua_luong_ngay);
             this.panel12.Controls.Add(this.label24);
-            this.panel12.Controls.Add(this.button5);
+            this.panel12.Controls.Add(this.m_btn_xoa_luong_ngay);
             this.panel12.Controls.Add(this.label17);
             this.panel12.Controls.Add(this.m_dtp_tu_ngay_luong_ngay);
-            this.panel12.Controls.Add(this.m_txt_tien_luong_ngay);
-            this.panel12.Controls.Add(this.m_dtp_luong_ngay_den_ngay);
+            this.panel12.Controls.Add(this.m_dtp_den_ngay_luong_ngay);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel12.Location = new System.Drawing.Point(3, 22);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(575, 206);
             this.panel12.TabIndex = 17;
+            // 
+            // m_txt_so_tien_luong_ngay
+            // 
+            this.m_txt_so_tien_luong_ngay.Location = new System.Drawing.Point(117, 15);
+            this.m_txt_so_tien_luong_ngay.Name = "m_txt_so_tien_luong_ngay";
+            this.m_txt_so_tien_luong_ngay.Size = new System.Drawing.Size(153, 26);
+            this.m_txt_so_tien_luong_ngay.TabIndex = 17;
+            this.m_txt_so_tien_luong_ngay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.m_txt_so_tien_luong_ngay.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // label16
             // 
@@ -1319,14 +1361,15 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Số tiền";
             // 
-            // button3
+            // m_btn_them_luong_ngay
             // 
-            this.button3.Location = new System.Drawing.Point(43, 142);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 30);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.m_btn_them_luong_ngay.Location = new System.Drawing.Point(43, 142);
+            this.m_btn_them_luong_ngay.Name = "m_btn_them_luong_ngay";
+            this.m_btn_them_luong_ngay.Size = new System.Drawing.Size(67, 30);
+            this.m_btn_them_luong_ngay.TabIndex = 14;
+            this.m_btn_them_luong_ngay.Text = "Thêm";
+            this.m_btn_them_luong_ngay.UseVisualStyleBackColor = true;
+            this.m_btn_them_luong_ngay.Click += new System.EventHandler(this.m_btn_them_luong_ngay_Click);
             // 
             // label22
             // 
@@ -1337,14 +1380,15 @@
             this.label22.TabIndex = 0;
             this.label22.Text = "Từ ngày";
             // 
-            // button4
+            // m_btn_sua_luong_ngay
             // 
-            this.button4.Location = new System.Drawing.Point(203, 142);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 30);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Sửa";
-            this.button4.UseVisualStyleBackColor = true;
+            this.m_btn_sua_luong_ngay.Location = new System.Drawing.Point(203, 142);
+            this.m_btn_sua_luong_ngay.Name = "m_btn_sua_luong_ngay";
+            this.m_btn_sua_luong_ngay.Size = new System.Drawing.Size(67, 30);
+            this.m_btn_sua_luong_ngay.TabIndex = 15;
+            this.m_btn_sua_luong_ngay.Text = "Sửa";
+            this.m_btn_sua_luong_ngay.UseVisualStyleBackColor = true;
+            this.m_btn_sua_luong_ngay.Click += new System.EventHandler(this.m_btn_sua_luong_ngay_Click);
             // 
             // label24
             // 
@@ -1355,14 +1399,15 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "Đến ngày";
             // 
-            // button5
+            // m_btn_xoa_luong_ngay
             // 
-            this.button5.Location = new System.Drawing.Point(390, 142);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 30);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Xóa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.m_btn_xoa_luong_ngay.Location = new System.Drawing.Point(390, 142);
+            this.m_btn_xoa_luong_ngay.Name = "m_btn_xoa_luong_ngay";
+            this.m_btn_xoa_luong_ngay.Size = new System.Drawing.Size(67, 30);
+            this.m_btn_xoa_luong_ngay.TabIndex = 16;
+            this.m_btn_xoa_luong_ngay.Text = "Xóa";
+            this.m_btn_xoa_luong_ngay.UseVisualStyleBackColor = true;
+            this.m_btn_xoa_luong_ngay.Click += new System.EventHandler(this.m_btn_xoa_luong_ngay_Click);
             // 
             // label17
             // 
@@ -1382,24 +1427,15 @@
             this.m_dtp_tu_ngay_luong_ngay.Size = new System.Drawing.Size(153, 26);
             this.m_dtp_tu_ngay_luong_ngay.TabIndex = 13;
             // 
-            // m_txt_tien_luong_ngay
+            // m_dtp_den_ngay_luong_ngay
             // 
-            this.m_txt_tien_luong_ngay.Location = new System.Drawing.Point(117, 15);
-            this.m_txt_tien_luong_ngay.Name = "m_txt_tien_luong_ngay";
-            this.m_txt_tien_luong_ngay.Size = new System.Drawing.Size(153, 26);
-            this.m_txt_tien_luong_ngay.TabIndex = 5;
-            this.m_txt_tien_luong_ngay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.m_txt_tien_luong_ngay.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
-            // m_dtp_luong_ngay_den_ngay
-            // 
-            this.m_dtp_luong_ngay_den_ngay.CustomFormat = "dd/MM/yyyy";
-            this.m_dtp_luong_ngay_den_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dtp_luong_ngay_den_ngay.Location = new System.Drawing.Point(390, 78);
-            this.m_dtp_luong_ngay_den_ngay.Name = "m_dtp_luong_ngay_den_ngay";
-            this.m_dtp_luong_ngay_den_ngay.ShowCheckBox = true;
-            this.m_dtp_luong_ngay_den_ngay.Size = new System.Drawing.Size(155, 26);
-            this.m_dtp_luong_ngay_den_ngay.TabIndex = 13;
+            this.m_dtp_den_ngay_luong_ngay.CustomFormat = "dd/MM/yyyy";
+            this.m_dtp_den_ngay_luong_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dtp_den_ngay_luong_ngay.Location = new System.Drawing.Point(390, 78);
+            this.m_dtp_den_ngay_luong_ngay.Name = "m_dtp_den_ngay_luong_ngay";
+            this.m_dtp_den_ngay_luong_ngay.ShowCheckBox = true;
+            this.m_dtp_den_ngay_luong_ngay.Size = new System.Drawing.Size(155, 26);
+            this.m_dtp_den_ngay_luong_ngay.TabIndex = 13;
             // 
             // panel11
             // 
@@ -1496,8 +1532,8 @@
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -1564,8 +1600,7 @@
         private System.Windows.Forms.CheckBox m_cb_luong_ngay;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.DateTimePicker m_dtp_tu_ngay_luong_ngay;
-        private System.Windows.Forms.DateTimePicker m_dtp_luong_ngay_den_ngay;
-        private System.Windows.Forms.TextBox m_txt_tien_luong_ngay;
+        private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_luong_ngay;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label22;
@@ -1607,12 +1642,12 @@
         private System.Windows.Forms.CheckBox m_cb_doan_phi;
         private System.Windows.Forms.GroupBox m_grb_doan_phi;
         private System.Windows.Forms.Panel panel11;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl m_grc_luong_ngay;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_luong_ngay;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button m_btn_them_luong_ngay;
+        private System.Windows.Forms.Button m_btn_sua_luong_ngay;
+        private System.Windows.Forms.Button m_btn_xoa_luong_ngay;
         private System.Windows.Forms.GroupBox m_grb_nguoi_phu_thuoc;
         private System.Windows.Forms.NumericUpDown m_nud_phu_thuoc;
         private System.Windows.Forms.Label label10;
@@ -1631,5 +1666,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private System.Windows.Forms.TextBox m_txt_so_tien_luong_ngay;
     }
 }

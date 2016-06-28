@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DS_GD_PHU_THUOC" targetNamespace="http://tempuri.org/DS_GD_PHU_THUOC.xsd" xmlns:mstns="http://tempuri.org/DS_GD_PHU_THUOC.xsd" xmlns="http://tempuri.org/DS_GD_PHU_THUOC.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DS_GD_SO_LUONG_PHU_THUOC" targetNamespace="http://tempuri.org/DS_GD_SO_LUONG_PHU_THUOC.xsd" xmlns:mstns="http://tempuri.org/DS_GD_SO_LUONG_PHU_THUOC.xsd" xmlns="http://tempuri.org/DS_GD_SO_LUONG_PHU_THUOC.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -68,7 +68,7 @@ SELECT ID, ID_NHAN_VIEN, SO_LUONG FROM GD_SO_LUONG_PHU_THUOC WHERE (ID = @ID)</C
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DS_GD_PHU_THUOC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_GD_PHU_THUOC" msprop:Generator_UserDSName="DS_GD_PHU_THUOC">
+  <xs:element name="DS_GD_SO_LUONG_PHU_THUOC" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_GD_SO_LUONG_PHU_THUOC" msprop:Generator_UserDSName="DS_GD_SO_LUONG_PHU_THUOC">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="GD_SO_LUONG_PHU_THUOC" msprop:Generator_TableClassName="GD_SO_LUONG_PHU_THUOCDataTable" msprop:Generator_TableVarName="tableGD_SO_LUONG_PHU_THUOC" msprop:Generator_TablePropName="GD_SO_LUONG_PHU_THUOC" msprop:Generator_RowDeletingName="GD_SO_LUONG_PHU_THUOCRowDeleting" msprop:Generator_RowChangingName="GD_SO_LUONG_PHU_THUOCRowChanging" msprop:Generator_RowEvHandlerName="GD_SO_LUONG_PHU_THUOCRowChangeEventHandler" msprop:Generator_RowDeletedName="GD_SO_LUONG_PHU_THUOCRowDeleted" msprop:Generator_UserTableName="GD_SO_LUONG_PHU_THUOC" msprop:Generator_RowChangedName="GD_SO_LUONG_PHU_THUOCRowChanged" msprop:Generator_RowEvArgName="GD_SO_LUONG_PHU_THUOCRowChangeEvent" msprop:Generator_RowClassName="GD_SO_LUONG_PHU_THUOCRow">
