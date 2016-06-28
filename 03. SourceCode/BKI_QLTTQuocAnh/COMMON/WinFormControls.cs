@@ -226,7 +226,7 @@ namespace BKI_DichVuMatDat
                 if (item.ColumnName.StartsWith("4"))
                 {
                     var v_name_value = int.Parse(item.ColumnName.Trim());
-                    var v_str_name = (new DateTime(1899, 12, 31).AddDays(v_name_value)).ToString("dd/MM/yyyy");
+                    var v_str_name = (new DateTime(1899, 12, 31).AddDays(v_name_value)).ToString("MM/dd/yyyy");
                     item.ColumnName = v_str_name;
                 }
             }

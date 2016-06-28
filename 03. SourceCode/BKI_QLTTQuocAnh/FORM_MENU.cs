@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 
 namespace BKI_DichVuMatDat
 {
@@ -146,6 +147,29 @@ namespace BKI_DichVuMatDat
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);
             }
+
+            if (info.Node == SUA_NHAN_VIEN)
+            {
+                SEARCH_NHAN_VIEN v_f = new SEARCH_NHAN_VIEN();
+                decimal m_open_form_thong_tin=-1;
+                decimal m_id_nhan_vien = -1;
+                //-1 là đóng, 1 là mở
+                v_f.Show_for_search(ref m_open_form_thong_tin, ref m_id_nhan_vien);
+                if (m_open_form_thong_tin == 1)
+                {
+                    THEM_MOI_NHAN_VIEN v_form = new THEM_MOI_NHAN_VIEN();
+                    v_form.TopLevel = false;
+                    panel2.Controls.Add(v_form);
+                    ShowForUpdateForm(v_form, m_id_nhan_vien);
+                }
+            }
+        }
+
+        private void ShowForUpdateForm(BKI_DichVuMatDat.THEM_MOI_NHAN_VIEN v_f, decimal m_id_nhan_vien)
+        {
+            v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            v_f.Dock = DockStyle.Fill;
+            v_f.ShowForUpdateInform(m_id_nhan_vien);
         }
 
       

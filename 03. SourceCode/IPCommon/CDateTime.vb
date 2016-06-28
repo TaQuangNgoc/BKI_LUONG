@@ -6,10 +6,10 @@ Public Class CDateTime
     Private Shared m_obj_culture As New System.Globalization.CultureInfo("vi-VN", True)
 
     Public Shared Function GetDateFormatString() As String
-        Return "dd/MM/yyyy"
+        Return "MM/dd/yyyy"
     End Function
     Public Shared Function isValidDateString(ByVal i_strDate As String, _
-                        Optional ByVal i_strFormat As String = "dd/MM/yyyy") As Boolean
+                        Optional ByVal i_strFormat As String = "MM/dd/yyyy") As Boolean
         Try
             If i_strFormat <> "" Then
                 Str2Date(i_strDate, i_strFormat)
@@ -27,7 +27,7 @@ Public Class CDateTime
 
     'Chuyển từ xâu sang ngày với định dạng cho trước
     Public Shared Function Str2Date(ByVal i_strDate As String _
-                    , Optional ByVal i_strFormat As String = "dd/MM/yyyy") As DateTime
+                    , Optional ByVal i_strFormat As String = "MM/dd/yyyy") As DateTime
         Dim v_format As New System.Globalization.CultureInfo("vi-VN")
         Dim v_myDateTime As System.DateTime
 

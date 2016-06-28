@@ -63,7 +63,7 @@ Public Class CIPConvert
     End Function
 
     Public Shared Function ToStr(ByVal i_dat_Input As DateTime) As String
-        Return Convert.ToString(i_dat_Input, m_obj_culture.DateTimeFormat).Format("{0:dd/MM/yyyy}", i_dat_Input)
+        Return Convert.ToString(i_dat_Input, m_obj_culture.DateTimeFormat).Format("{0:MM/dd/yyyy}", i_dat_Input)
     End Function
 
     Public Shared Function ToStr(ByVal i_dat_Input As DateTime, ByVal i_str_format As String) As String
@@ -201,7 +201,7 @@ Public Class CIPConvert
     End Function
 
     Public Shared Function get_default_date_format() As String
-        Return "dd/MM/yyyy"
+        Return "MM/dd/yyyy"
     End Function
 #End Region
 

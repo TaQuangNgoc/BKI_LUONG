@@ -19,6 +19,7 @@ namespace BKI_DichVuMatDat
     public partial class THEM_MOI_NHAN_VIEN : Form
     {
         decimal m_id_nhan_vien;
+        DataEntryFormMode m_e = new DataEntryFormMode();
         public THEM_MOI_NHAN_VIEN()
         {
             InitializeComponent();
@@ -158,6 +159,7 @@ namespace BKI_DichVuMatDat
             luu_cac_hinh_thuc_duoc_tick();
             luu_thong_tin_luong_theo_thoi_gian();
             luu_thong_tin_luong_khac();
+            MessageBox.Show("Lưu thành công thông tin nhân viên!");
         }
 
         private void luu_cac_hinh_thuc_duoc_tick()
@@ -376,9 +378,9 @@ namespace BKI_DichVuMatDat
             {
                
                 if( m_dtp_den_ngay_lns.Checked==true)
-                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("dd/MM/yyyy"), m_dtp_den_ngay_lns.Value.ToString("dd/MM/yyyy"), 760);
+                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lns.Value.ToString("MM/dd/yyyy"), 760);
                 else
-                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("dd/MM/yyyy"), "",760);
+                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), "",760);
                 m_grc_luong.DataSource = dt;
                 m_txt_lns.Text = "";
                 
@@ -386,9 +388,9 @@ namespace BKI_DichVuMatDat
             if (m_txt_lcd.Text != "")
             {
                 if (m_dtp_den_ngay_lcd.Checked == true)
-                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("dd/MM/yyyy"), m_dtp_den_ngay_lcd.Value.ToString("dd/MM/yyyy"),761);
+                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lcd.Value.ToString("MM/dd/yyyy"),761);
                 else
-                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("dd/MM/yyyy"), "",761);
+                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), "",761);
                 m_grc_luong.DataSource = dt;
                 m_txt_lcd.Text = "";
 
@@ -401,10 +403,10 @@ namespace BKI_DichVuMatDat
             if (v_dr["ID"].ToString() == "760")
             {
                 v_dr["SO_TIEN"] = m_txt_lns.Text;
-                v_dr["TU_NGAY"] = m_dtp_tu_ngay_lns.Value.ToString("dd/MM/yyyy");
+                v_dr["TU_NGAY"] = m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy");
                 if (m_dtp_den_ngay_lns.Checked == true)
                 {
-                    v_dr["DEN_NGAY"] = m_dtp_den_ngay_lns.Value.ToString("dd/MM/yyyy");
+                    v_dr["DEN_NGAY"] = m_dtp_den_ngay_lns.Value.ToString("MM/dd/yyyy");
                 }
                 else
                 {
@@ -415,10 +417,10 @@ namespace BKI_DichVuMatDat
             if (v_dr["ID"].ToString() == "761")
             {
                 v_dr["SO_TIEN"] = m_txt_lcd.Text;
-                v_dr["TU_NGAY"] = m_dtp_tu_ngay_lcd.Value.ToString("dd/MM/yyyy");
+                v_dr["TU_NGAY"] = m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy");
                 if (m_dtp_den_ngay_lcd.Checked == true)
                 {
-                    v_dr["DEN_NGAY"] = m_dtp_den_ngay_lcd.Value.ToString("dd/MM/yyyy");
+                    v_dr["DEN_NGAY"] = m_dtp_den_ngay_lcd.Value.ToString("MM/dd/yyyy");
                 }
                 else
                 {
@@ -434,9 +436,9 @@ namespace BKI_DichVuMatDat
             {
                 m_txt_lns.Text = v_dr["SO_TIEN"].ToString();
                 m_txt_lcd.Text = "";
-                m_dtp_tu_ngay_lns.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+                m_dtp_tu_ngay_lns.Value = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
              if(   v_dr["DEN_NGAY"].ToString()!="")
-                 m_dtp_den_ngay_lns.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                 m_dtp_den_ngay_lns.Value = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
              else
              {
                  m_dtp_den_ngay_lns.Checked = false;
@@ -447,9 +449,9 @@ namespace BKI_DichVuMatDat
             {
                 m_txt_lcd.Text = v_dr["SO_TIEN"].ToString();
                 m_txt_lns.Text = "";
-                m_dtp_tu_ngay_lcd.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+                m_dtp_tu_ngay_lcd.Value = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
                 if (v_dr["DEN_NGAY"].ToString() != "")
-                    m_dtp_den_ngay_lcd.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                    m_dtp_den_ngay_lcd.Value = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
                 else
                 {
                     m_dtp_den_ngay_lcd.Checked = false;
@@ -476,9 +478,9 @@ namespace BKI_DichVuMatDat
             {
 
                 if (m_dtp_den_ngay_ti_le.Checked == true)
-                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("dd/MM/yyyy"), m_dtp_den_ngay_ti_le.Value.ToString("dd/MM/yyyy"));
+                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_ti_le.Value.ToString("MM/dd/yyyy"));
                 else
-                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("dd/MM/yyyy"), "");
+                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), "");
                 m_grc_phan_tram.DataSource = dt;
                 m_txt_ti_le.Text = "";
 
@@ -491,14 +493,14 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
 
             v_dr["TI_LE"] = m_txt_ti_le.Text;
-            v_dr["TU_NGAY"] = m_dtp_tu_ngay_ti_le.Value.ToString("dd/MM/yyyy");
+            v_dr["TU_NGAY"] = m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy");
             if (m_dtp_den_ngay_ti_le.Checked == true)
             {
-                v_dr["DEN_NGAY"] = m_dtp_den_ngay_ti_le.Value.ToString("dd/MM/yyyy");
+                v_dr["DEN_NGAY"] = m_dtp_den_ngay_ti_le.Value.ToString("MM/dd/yyyy");
             }
             else
             {
-                v_dr["DEN_NGAY"] = "";
+                v_dr["DEN_NGAY"] = System.Convert.DBNull;
             }
         }
 
@@ -507,9 +509,10 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
            
                 m_txt_ti_le.Text = v_dr["TI_LE"].ToString();
-                m_dtp_tu_ngay_ti_le.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+
+                m_dtp_tu_ngay_ti_le.Value = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
              if(   v_dr["DEN_NGAY"].ToString()!="")
-                 m_dtp_den_ngay_ti_le.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                 m_dtp_den_ngay_ti_le.Value = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
              else
              {
                  m_dtp_den_ngay_ti_le.Checked = false;
@@ -569,9 +572,9 @@ namespace BKI_DichVuMatDat
             {
 
                 if (m_dtp_den_ngay_ti_le.Checked == true)
-                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"), m_dtp_den_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"));
+                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_luong_ngay.Value.ToString("MM/dd/yyyy"));
                 else
-                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"), "");
+                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("MM/dd/yyyy"), "");
                 m_grc_luong_ngay.DataSource = dt;
                 m_txt_so_tien_luong_ngay.Text = "";
 
@@ -583,9 +586,9 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
 
             m_txt_so_tien_luong_ngay.Text = v_dr["SO_TIEN"].ToString();
-            m_dtp_tu_ngay_luong_ngay.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+            m_dtp_tu_ngay_luong_ngay.Value = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
             if (v_dr["DEN_NGAY"].ToString() != "")
-                m_dtp_den_ngay_luong_ngay.Value = IP.Core.IPCommon.CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                m_dtp_den_ngay_luong_ngay.Value = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
             else
             {
                 m_dtp_den_ngay_luong_ngay.Checked = false;
@@ -598,10 +601,10 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
 
             v_dr["SO_TIEN"] = m_txt_so_tien_luong_ngay.Text;
-            v_dr["TU_NGAY"] = m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy");
+            v_dr["TU_NGAY"] = m_dtp_tu_ngay_luong_ngay.Value.ToString("MM/dd/yyyy");
             if (m_dtp_den_ngay_luong_ngay.Checked == true)
             {
-                v_dr["DEN_NGAY"] = m_dtp_den_ngay_luong_ngay.Value.ToString("dd/MM/yyyy");
+                v_dr["DEN_NGAY"] = m_dtp_den_ngay_luong_ngay.Value.ToString("MM/dd/yyyy");
             }
             else
             {
@@ -614,6 +617,57 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
             v_dr.Delete();
             m_txt_so_tien_luong_ngay.Text = "";
+        }
+
+        internal void ShowForUpdateInform(decimal m_id_nhan_vien)
+        {
+            this.m_id_nhan_vien = m_id_nhan_vien;
+            hien_thong_tin_chung();
+         //   hien_thong_tin_ve_luong();
+            hien_ti_le_phan_tram_luong();
+          //  hien_phu_cap();
+            this.Show();
+        }
+
+        private void hien_phu_cap()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds,"SELECT * FROM" );
+        }
+
+    
+       
+
+        private void hien_ti_le_phan_tram_luong()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "SELECT PHAN_TRAM_LUONG_DUOC_HUONG*100 AS TI_LE, TU_NGAY,DEN_NGAY FROM GD_PHAN_TRAM_LUONG WHERE ID_NHAN_VIEN="+ m_id_nhan_vien);
+            m_grc_phan_tram.DataSource = v_ds.Tables[0];
+        }
+
+        private void hien_thong_tin_ve_luong()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void hien_thong_tin_chung()
+        {
+            US_DM_NHAN_VIEN v_us = new US_DM_NHAN_VIEN(m_id_nhan_vien);
+            m_txt_ho_dem.Text = v_us.strHO_DEM;
+            m_txt_ten.Text = v_us.strTEN;
+            m_txt_ma_nhan_vien.Text = v_us.strMA_NV;
+            m_dtp_ngay_sinh.Value = v_us.datNGAY_SINH;
+            m_txt_sdt.Text = v_us.strSDT;
+            m_txt_email.Text = v_us.strEMAIL;
+            if (v_us.strPHAI_DONG_DOAN_PHI != "")
+                m_cb_doan_phi.Checked = true;
+            if (v_us.dcLOAI_NHAN_VIEN.ToString() != "")
+                m_cbo_loai_nhan_vien.SelectedValue = v_us.dcLOAI_NHAN_VIEN;
+
         }
     }
 

@@ -230,7 +230,7 @@ Public Class frmSearchDate
 
     'Chuyển từ xâu sang ngày với định dạng cho trước
     Private Function Str2Date(ByVal i_strDate As String _
-                    , Optional ByVal i_strFormat As String = "dd/MM/yyyy") As DateTime
+                    , Optional ByVal i_strFormat As String = "MM/dd/yyyy") As DateTime
         Dim v_format As New System.Globalization.CultureInfo("vi-VN", True)
         Dim v_myDateTime As System.DateTime
 
