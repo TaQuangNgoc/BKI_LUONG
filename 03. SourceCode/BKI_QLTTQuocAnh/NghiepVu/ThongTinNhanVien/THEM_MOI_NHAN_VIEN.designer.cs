@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.m_btn_luu = new System.Windows.Forms.Button();
             this.m_btn_thoat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -136,7 +136,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.m_group_cai_dat_luong_ngay = new System.Windows.Forms.GroupBox();
             this.m_grc_luong_ngay = new DevExpress.XtraGrid.GridControl();
             this.m_grv_luong_ngay = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -190,7 +190,7 @@
             this.tabPage3.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.m_group_cai_dat_luong_ngay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).BeginInit();
             this.panel12.SuspendLayout();
@@ -526,9 +526,9 @@
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode4});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(732, 19);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -781,9 +781,9 @@
             // 
             this.m_grc_phan_tram.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phan_tram.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_phan_tram.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 19);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
@@ -806,6 +806,8 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "TỈ LỆ";
+            this.gridColumn5.DisplayFormat.FormatString = "n0";
+            this.gridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn5.FieldName = "TI_LE";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -963,9 +965,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode2});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
@@ -1255,7 +1257,7 @@
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.groupBox9);
+            this.groupBox10.Controls.Add(this.m_group_cai_dat_luong_ngay);
             this.groupBox10.Controls.Add(this.panel11);
             this.groupBox10.Controls.Add(this.m_cb_luong_khoan);
             this.groupBox10.Controls.Add(this.m_cb_luong_theo_san_pham);
@@ -1266,17 +1268,17 @@
             this.groupBox10.TabIndex = 11;
             this.groupBox10.TabStop = false;
             // 
-            // groupBox9
+            // m_group_cai_dat_luong_ngay
             // 
-            this.groupBox9.Controls.Add(this.m_grc_luong_ngay);
-            this.groupBox9.Controls.Add(this.panel12);
-            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox9.Location = new System.Drawing.Point(3, 75);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(1025, 231);
-            this.groupBox9.TabIndex = 10;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Cài đặt lương ngày";
+            this.m_group_cai_dat_luong_ngay.Controls.Add(this.m_grc_luong_ngay);
+            this.m_group_cai_dat_luong_ngay.Controls.Add(this.panel12);
+            this.m_group_cai_dat_luong_ngay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_group_cai_dat_luong_ngay.Location = new System.Drawing.Point(3, 75);
+            this.m_group_cai_dat_luong_ngay.Name = "m_group_cai_dat_luong_ngay";
+            this.m_group_cai_dat_luong_ngay.Size = new System.Drawing.Size(1025, 231);
+            this.m_group_cai_dat_luong_ngay.TabIndex = 10;
+            this.m_group_cai_dat_luong_ngay.TabStop = false;
+            this.m_group_cai_dat_luong_ngay.Text = "Cài đặt lương ngày";
             // 
             // m_grc_luong_ngay
             // 
@@ -1455,6 +1457,7 @@
             this.m_cb_luong_ngay.TabIndex = 0;
             this.m_cb_luong_ngay.Text = "Lương ngày";
             this.m_cb_luong_ngay.UseVisualStyleBackColor = true;
+            this.m_cb_luong_ngay.CheckedChanged += new System.EventHandler(this.m_cb_luong_ngay_CheckedChanged);
             // 
             // m_cb_luong_khoan
             // 
@@ -1486,6 +1489,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "THEM_MOI_NHAN_VIEN";
             this.Text = "THEM_MOI_NHAN_VIEN";
+            this.Load += new System.EventHandler(this.THEM_MOI_NHAN_VIEN_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1531,7 +1535,7 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
+            this.m_group_cai_dat_luong_ngay.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).EndInit();
             this.panel12.ResumeLayout(false);
@@ -1596,7 +1600,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox m_group_cai_dat_luong_ngay;
         private System.Windows.Forms.CheckBox m_cb_luong_ngay;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.DateTimePicker m_dtp_tu_ngay_luong_ngay;
