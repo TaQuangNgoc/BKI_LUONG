@@ -79,11 +79,11 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.m_grb_nguoi_phu_thuoc = new System.Windows.Forms.GroupBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.m_nud_phu_thuoc = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.m_grb_doan_phi = new System.Windows.Forms.GroupBox();
-            this.m_chb_doan_phi = new System.Windows.Forms.CheckBox();
+            this.m_cb_doan_phi = new System.Windows.Forms.CheckBox();
             this.m_grb_loai_nv = new System.Windows.Forms.GroupBox();
             this.m_cbo_loai_nhan_vien = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -171,7 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_phu_cap)).BeginInit();
             this.panel8.SuspendLayout();
             this.m_grb_nguoi_phu_thuoc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_nud_phu_thuoc)).BeginInit();
             this.m_grb_doan_phi.SuspendLayout();
             this.m_grb_loai_nv.SuspendLayout();
             this.m_grb_phan_tram_luong.SuspendLayout();
@@ -676,7 +676,7 @@
             // 
             // m_grb_nguoi_phu_thuoc
             // 
-            this.m_grb_nguoi_phu_thuoc.Controls.Add(this.numericUpDown1);
+            this.m_grb_nguoi_phu_thuoc.Controls.Add(this.m_nud_phu_thuoc);
             this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label10);
             this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label15);
             this.m_grb_nguoi_phu_thuoc.Dock = System.Windows.Forms.DockStyle.Top;
@@ -687,12 +687,12 @@
             this.m_grb_nguoi_phu_thuoc.TabStop = false;
             this.m_grb_nguoi_phu_thuoc.Text = "NGƯỜI PHỤ THUỘC";
             // 
-            // numericUpDown1
+            // m_nud_phu_thuoc
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(151, 25);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(118, 23);
-            this.numericUpDown1.TabIndex = 18;
+            this.m_nud_phu_thuoc.Location = new System.Drawing.Point(151, 25);
+            this.m_nud_phu_thuoc.Name = "m_nud_phu_thuoc";
+            this.m_nud_phu_thuoc.Size = new System.Drawing.Size(118, 23);
+            this.m_nud_phu_thuoc.TabIndex = 18;
             // 
             // label10
             // 
@@ -714,7 +714,7 @@
             // 
             // m_grb_doan_phi
             // 
-            this.m_grb_doan_phi.Controls.Add(this.m_chb_doan_phi);
+            this.m_grb_doan_phi.Controls.Add(this.m_cb_doan_phi);
             this.m_grb_doan_phi.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_grb_doan_phi.Location = new System.Drawing.Point(0, 338);
             this.m_grb_doan_phi.Name = "m_grb_doan_phi";
@@ -723,15 +723,15 @@
             this.m_grb_doan_phi.TabStop = false;
             this.m_grb_doan_phi.Text = "ĐOÀN PHÍ CÔNG ĐOÀN";
             // 
-            // m_chb_doan_phi
+            // m_cb_doan_phi
             // 
-            this.m_chb_doan_phi.AutoSize = true;
-            this.m_chb_doan_phi.Location = new System.Drawing.Point(21, 22);
-            this.m_chb_doan_phi.Name = "m_chb_doan_phi";
-            this.m_chb_doan_phi.Size = new System.Drawing.Size(201, 20);
-            this.m_chb_doan_phi.TabIndex = 15;
-            this.m_chb_doan_phi.Text = "Phải đóng Đoàn phí công đoàn";
-            this.m_chb_doan_phi.UseVisualStyleBackColor = true;
+            this.m_cb_doan_phi.AutoSize = true;
+            this.m_cb_doan_phi.Location = new System.Drawing.Point(21, 22);
+            this.m_cb_doan_phi.Name = "m_cb_doan_phi";
+            this.m_cb_doan_phi.Size = new System.Drawing.Size(201, 20);
+            this.m_cb_doan_phi.TabIndex = 15;
+            this.m_cb_doan_phi.Text = "Phải đóng Đoàn phí công đoàn";
+            this.m_cb_doan_phi.UseVisualStyleBackColor = true;
             // 
             // m_grb_loai_nv
             // 
@@ -1473,7 +1473,7 @@
             this.panel8.PerformLayout();
             this.m_grb_nguoi_phu_thuoc.ResumeLayout(false);
             this.m_grb_nguoi_phu_thuoc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_nud_phu_thuoc)).EndInit();
             this.m_grb_doan_phi.ResumeLayout(false);
             this.m_grb_doan_phi.PerformLayout();
             this.m_grb_loai_nv.ResumeLayout(false);
@@ -1604,7 +1604,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox m_grb_loai_nv;
-        private System.Windows.Forms.CheckBox m_chb_doan_phi;
+        private System.Windows.Forms.CheckBox m_cb_doan_phi;
         private System.Windows.Forms.GroupBox m_grb_doan_phi;
         private System.Windows.Forms.Panel panel11;
         private DevExpress.XtraGrid.GridControl gridControl1;
@@ -1614,7 +1614,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox m_grb_nguoi_phu_thuoc;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown m_nud_phu_thuoc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox m_cbo_loai_nhan_vien;

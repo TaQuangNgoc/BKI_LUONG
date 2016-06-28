@@ -191,12 +191,15 @@ namespace BKI_DichVuMatDat
         private void luu_thong_tin_luong_theo_thoi_gian()
         {
            //LƯU LNS, LCD
-            luu_lns_lcd();
-            luu_ti_le_phan_tram();
-            luu_loai_nv();
-            luu_phai_dong_doan_phi();
-            luu_nguoi_phu_thuoc();
-            luu_phu_cap();
+            if (m_cb_luong_theo_thoi_gian.Checked == true)
+            {
+                luu_lns_lcd();
+                luu_ti_le_phan_tram();
+                luu_loai_nv();
+                luu_phai_dong_doan_phi();
+                luu_nguoi_phu_thuoc();
+                luu_phu_cap();
+            }
         }
 
         private void luu_lns_lcd()
@@ -211,32 +214,64 @@ namespace BKI_DichVuMatDat
                 v_us.datTU_NGAY = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                 if (v_dr["DEN_NGAY"].ToString() != "")
                     v_us.datDEN_NGAY = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                v_us.Insert();
             }
         }
 
         private void luu_ti_le_phan_tram()
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < m_grv_phan_tram.SelectedRowsCount; i++)
+            {
+                var v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
+                US_GD_PHAN_TRAM_LUONG v_us = new US_GD_PHAN_TRAM_LUONG();
+                v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
+                v_us.dcPHAN_TRAM_LUONG_DUOC_HUONG = decimal.Parse(v_dr["TI_LE"].ToString());
+                v_us.datTU_NGAY = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
+                if (v_dr["DEN_NGAY"].ToString() != "")
+                    v_us.datDEN_NGAY = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
+                v_us.Insert();
+            }
         }
 
         private void luu_loai_nv()
         {
-            throw new NotImplementedException();
+            decimal id_loai_nhan_vien = decimal.Parse(m_cbo_loai_nhan_vien.SelectedValue.ToString());
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.UpdateLoaiNhanVien(m_id_nhan_vien, id_loai_nhan_vien);
         }
 
         private void luu_phai_dong_doan_phi()
         {
-            throw new NotImplementedException();
+            if (m_cb_doan_phi.Checked == true)
+            {
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                v_us.UpdatePhaiDongDoanPhi(m_id_nhan_vien);
+            }
         }
 
         private void luu_nguoi_phu_thuoc()
         {
-            throw new NotImplementedException();
+            if (m_nud_phu_thuoc.Value != 0)
+            {
+                US_GD_PHU_THUOC v_us = new US_GD_PHU_THUOC();
+                v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
+                v_us.dcSO_LUONG = decimal.Parse(m_nud_phu_thuoc.Value.ToString());
+                v_us.Insert();
+            }
         }
 
         private void luu_phu_cap()
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < m_grv_phu_cap.SelectedRowsCount; i++)
+            {
+                var v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+                US_GD_NHAN_VIEN_PHU_CAP v_us = new US_GD_NHAN_VIEN_PHU_CAP();
+                v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
+                v_us.dcID_PHU_CAP =decimal.Parse(v_dr["ID_PHU_CAP"].ToString());
+                v_us.dcNAM = decimal.Parse(v_dr["NAM"].ToString());
+                v_us.dcTHANG = decimal.Parse(v_dr["THANG"].ToString());
+                v_us.Insert();
+            }
         }
 
         private void gan_cac_hinh_thuc_tinh_luong()

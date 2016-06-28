@@ -493,5 +493,34 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void UpdateLoaiNhanVien(decimal m_id_nhan_vien, decimal id_loai_nhan_vien)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_update_loai_nhan_vien");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
+            v_cstore.addDecimalInputParam("@ID_LOAI_NHAN_VIEN", id_loai_nhan_vien);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void UpdatePhaiDongDoanPhi(decimal m_id_nhan_vien)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_update_phai_dong_doan_phi");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void InsertSoLuongPhuThuoc(decimal m_id_nhan_vien, decimal p)
+        {
+
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_update_phai_dong_doan_phi");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }
