@@ -99,6 +99,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -177,7 +178,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -231,7 +231,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -339,6 +339,7 @@
             this.gridColumn4});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
@@ -452,6 +453,7 @@
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(38, 247);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 30);
@@ -470,6 +472,7 @@
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(166, 247);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(67, 30);
@@ -487,6 +490,7 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(293, 247);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(67, 30);
@@ -572,6 +576,7 @@
             this.gridColumn7});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn5
             // 
@@ -640,6 +645,7 @@
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(296, 195);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(67, 30);
@@ -658,6 +664,7 @@
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(169, 195);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(67, 30);
@@ -676,6 +683,7 @@
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(45, 195);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(67, 30);
@@ -772,6 +780,7 @@
             this.gridColumn13});
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn8
             // 
@@ -916,6 +925,15 @@
             this.comboBox2.Size = new System.Drawing.Size(183, 26);
             this.comboBox2.TabIndex = 6;
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(266, 106);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(37, 18);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "VND";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -989,6 +1007,7 @@
             // 
             // button9
             // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Location = new System.Drawing.Point(303, 394);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(67, 30);
@@ -998,6 +1017,7 @@
             // 
             // button11
             // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Location = new System.Drawing.Point(47, 394);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(67, 30);
@@ -1007,6 +1027,7 @@
             // 
             // button10
             // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Location = new System.Drawing.Point(167, 394);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(67, 30);
@@ -1076,6 +1097,7 @@
             this.gridColumn16});
             this.gridView4.GridControl = this.gridControl4;
             this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn14
             // 
@@ -1153,6 +1175,7 @@
             // 
             // button12
             // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Location = new System.Drawing.Point(294, 194);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(67, 30);
@@ -1169,6 +1192,7 @@
             // 
             // button13
             // 
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Location = new System.Drawing.Point(170, 194);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(67, 30);
@@ -1187,6 +1211,7 @@
             // 
             // button14
             // 
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Location = new System.Drawing.Point(44, 194);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(67, 30);
@@ -1273,6 +1298,7 @@
             this.gridColumn19});
             this.gridView5.GridControl = this.gridControl5;
             this.gridView5.Name = "gridView5";
+            this.gridView5.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn17
             // 
@@ -1375,6 +1401,7 @@
             // 
             // button15
             // 
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Location = new System.Drawing.Point(290, 257);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(67, 30);
@@ -1393,6 +1420,7 @@
             // 
             // button16
             // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Location = new System.Drawing.Point(170, 257);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(67, 30);
@@ -1411,6 +1439,7 @@
             // 
             // button17
             // 
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Location = new System.Drawing.Point(58, 257);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(67, 30);
@@ -1634,7 +1663,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1665,15 +1694,6 @@
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(266, 106);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(37, 18);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "VND";
-            // 
             // THAM_SO_CHAM_CONG_THOI_GIAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1682,6 +1702,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Text = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.panel1.ResumeLayout(false);
