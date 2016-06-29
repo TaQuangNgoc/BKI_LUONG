@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat
 {
@@ -42,7 +43,7 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
             Init_tree_view();
             this.WindowState = FormWindowState.Maximized;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
            
         }
 
@@ -81,6 +82,17 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_NGAY);
 
+            treeView1.ImageList = m_img_list;
+
+            CAI_DAT_THAM_SO.ImageIndex = 4;
+            CAI_DAT_THAM_SO.SelectedImageIndex = 4;
+            BAO_CAO.ImageIndex = 3;
+            BAO_CAO.SelectedImageIndex = 3;
+            NHAP_LIEU.ImageIndex = 5;
+            NHAP_LIEU.SelectedImageIndex = 5;
+
+            
+            
         }
 
         private void ShowForm(Form v_f)
@@ -172,8 +184,29 @@ namespace BKI_DichVuMatDat
             v_f.ShowForUpdateInform(m_id_nhan_vien);
         }
 
-      
+        private void m_cmd_exit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var v_result = XtraMessageBox.Show("Bạn có muốn đăng xuất khỏi phần mềm tính lương?", "Thông báo", MessageBoxButtons.OKCancel);
+                if (v_result == System.Windows.Forms.DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }
+            catch (Exception v_e)
+            {
+                XtraMessageBox.Show(v_e.Message);
+            }
+        }
 
-
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (e.Node == CAI_DAT_THAM_SO || e.Node == NHAP_LIEU || e.Node == BAO_CAO)
+            {
+                return;
+            }
+            e.Node.SelectedImageIndex = 6;
+        }
     }
 }
