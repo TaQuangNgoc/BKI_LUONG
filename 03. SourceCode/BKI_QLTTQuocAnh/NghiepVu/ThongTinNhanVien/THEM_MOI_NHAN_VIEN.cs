@@ -163,7 +163,7 @@ namespace BKI_DichVuMatDat
         }
 
         private void text_box_format_numeric(object sender, KeyPressEventArgs e)
-        {
+       {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
                 (e.KeyChar != '.'))
             {
@@ -263,9 +263,10 @@ namespace BKI_DichVuMatDat
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM DM_NHAN_VIEN WHERE MA_NV='"+ m_txt_ma_nhan_vien.Text+ "'");
-            if (v_ds.Tables[0].Rows.Count>0)
+            //trạng thái thêm, và bảng >0 dòng, trạng thái sửa, và dòng 0 khác với ma_nv thì cảnh báo
+            if ((v_ds.Tables[0].Rows.Count>0 && m_e== DataEntryFormMode.InsertDataState)||(m_e==DataEntryFormMode.UpdateDataState && m_id_nhan_vien==decimal.Parse(v_ds.Tables[0].Rows[0]["ID"].ToString())))
             {
-                MessageBox.Show("Đã tồn tại mã nhân viên"+ m_txt_ma_nhan_vien.Text);
+                MessageBox.Show("Đã tồn tại mã nhân viên "+ m_txt_ma_nhan_vien.Text);
                 return false;
             }
             return true;
@@ -581,28 +582,63 @@ namespace BKI_DichVuMatDat
         {
             DataTable dt = new DataTable();
             Convert_gridcontrol_to_datatable(m_grv_luong, dt);
-            //760 LÀ LNS, 761 LÀ LCD
-            if (m_txt_lns.Text != "")
+            if (m_txt_lcd.Text == "" && m_txt_lns.Text == "")
             {
-               
-                if( m_dtp_den_ngay_lns.Checked==true)
-                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lns.Value.ToString("MM/dd/yyyy"), 760);
-                else
-                    dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), "",760);
-                m_grc_luong.DataSource = dt;
-                m_txt_lns.Text = "";
-                
+                MessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!");
             }
-            if (m_txt_lcd.Text != "")
+            else
             {
-                if (m_dtp_den_ngay_lcd.Checked == true)
-                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lcd.Value.ToString("MM/dd/yyyy"),761);
-                else
-                    dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), "",761);
-                m_grc_luong.DataSource = dt;
-                m_txt_lcd.Text = "";
+                if (m_txt_lns.Text != "")
+                {
+                    if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 760, m_dtp_tu_ngay_lns.Value))
+                    {
+                        if (m_dtp_den_ngay_lns.Checked == true)
+                            dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lns.Value.ToString("MM/dd/yyyy"), 760);
+                        else
+                            dt.Rows.Add("Lương năng suất", m_txt_lns.Text, m_dtp_tu_ngay_lns.Value.ToString("MM/dd/yyyy"), System.Convert.DBNull, 760);
+                        m_grc_luong.DataSource = dt;
+                        m_txt_lns.Text = "";
+                    }
 
+                }
+                if (m_txt_lcd.Text != "")
+                {
+                    if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 761, m_dtp_tu_ngay_lcd.Value))
+                    {
+                        if (m_dtp_den_ngay_lcd.Checked == true)
+                            dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_lcd.Value.ToString("MM/dd/yyyy"), 761);
+                        else
+                            dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, m_dtp_tu_ngay_lcd.Value.ToString("MM/dd/yyyy"), System.Convert.DBNull, 761);
+                        m_grc_luong.DataSource = dt;
+                        m_txt_lcd.Text = "";
+                    }
+
+                }
+               
+              
             }
+            //760 LÀ LNS, 761 LÀ LCD
+           
+           
+          
+        }
+
+        private bool check_ngay_thang_is_ok(DataTable dt, string ten_truong_filter, int gia_tri_filter, DateTime tu_ngay)
+        {
+            DataRow v_dr = dt.Select(ten_truong_filter + " =" + gia_tri_filter).LastOrDefault();
+            if (v_dr == null)
+                return true;
+            else if( v_dr["DEN_NGAY"].ToString()=="")
+            {
+                MessageBox.Show("Bạn phải đổi Đến ngày của mốc thời gian trước về một thời điểm xác định.");
+                return false;
+            }
+              
+            else if
+                ((Convert.ToDateTime(v_dr["DEN_NGAY"].ToString()).AddDays(1)) < tu_ngay)
+                return true;
+            MessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+            return false;
         }
 
         private void m_btn_sua_luong_Click(object sender, EventArgs e)
@@ -689,17 +725,19 @@ namespace BKI_DichVuMatDat
         {
             DataTable dt = new DataTable();
             Convert_gridcontrol_to_datatable(m_grv_phan_tram, dt);
-           
-            if (m_txt_ti_le.Text!="")
+
+            if (m_txt_ti_le.Text != "")
             {
+                if (check_ngay_thang_is_ok(dt, "TI_LE !", 0, m_dtp_tu_ngay_ti_le.Value))
+                {
+                    if (m_dtp_den_ngay_ti_le.Checked == true)
+                        dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_ti_le.Value.ToString("MM/dd/yyyy"));
+                    else
+                        dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), System.Convert.DBNull);
+                    m_grc_phan_tram.DataSource = dt;
+                    m_txt_ti_le.Text = "";
 
-                if (m_dtp_den_ngay_ti_le.Checked == true)
-                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), m_dtp_den_ngay_ti_le.Value.ToString("MM/dd/yyyy"));
-                else
-                    dt.Rows.Add(m_txt_ti_le.Text, m_dtp_tu_ngay_ti_le.Value.ToString("MM/dd/yyyy"), "");
-                m_grc_phan_tram.DataSource = dt;
-                m_txt_ti_le.Text = "";
-
+                }
             }
 
         }
