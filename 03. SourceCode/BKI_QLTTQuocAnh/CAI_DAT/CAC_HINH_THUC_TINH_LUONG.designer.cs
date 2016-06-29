@@ -31,13 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_theo_thoi_gian = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_theo_doanh_thu = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.m_btn_luu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,76 +68,76 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.checkBox1);
-            this.panel3.Controls.Add(this.checkBox5);
-            this.panel3.Controls.Add(this.checkBox2);
-            this.panel3.Controls.Add(this.checkBox3);
-            this.panel3.Controls.Add(this.checkBox4);
+            this.panel3.Controls.Add(this.m_cb_luong_theo_thoi_gian);
+            this.panel3.Controls.Add(this.m_cb_luong_theo_doanh_thu);
+            this.panel3.Controls.Add(this.m_cb_luong_ngay);
+            this.panel3.Controls.Add(this.m_cb_luong_theo_san_pham);
+            this.panel3.Controls.Add(this.m_cb_luong_khoan);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(526, 290);
             this.panel3.TabIndex = 5;
             // 
-            // checkBox1
+            // m_cb_luong_theo_thoi_gian
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(28, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(187, 22);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Tính lương theo thời gian";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.m_cb_luong_theo_thoi_gian.AutoSize = true;
+            this.m_cb_luong_theo_thoi_gian.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_luong_theo_thoi_gian.Location = new System.Drawing.Point(28, 23);
+            this.m_cb_luong_theo_thoi_gian.Name = "m_cb_luong_theo_thoi_gian";
+            this.m_cb_luong_theo_thoi_gian.Size = new System.Drawing.Size(187, 22);
+            this.m_cb_luong_theo_thoi_gian.TabIndex = 0;
+            this.m_cb_luong_theo_thoi_gian.Text = "Tính lương theo thời gian";
+            this.m_cb_luong_theo_thoi_gian.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // m_cb_luong_theo_doanh_thu
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(28, 182);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(197, 22);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.Text = "Tính lương theo doanh thu";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.m_cb_luong_theo_doanh_thu.AutoSize = true;
+            this.m_cb_luong_theo_doanh_thu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_luong_theo_doanh_thu.Location = new System.Drawing.Point(28, 182);
+            this.m_cb_luong_theo_doanh_thu.Name = "m_cb_luong_theo_doanh_thu";
+            this.m_cb_luong_theo_doanh_thu.Size = new System.Drawing.Size(197, 22);
+            this.m_cb_luong_theo_doanh_thu.TabIndex = 0;
+            this.m_cb_luong_theo_doanh_thu.Text = "Tính lương theo doanh thu";
+            this.m_cb_luong_theo_doanh_thu.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // m_cb_luong_ngay
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(28, 60);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(163, 22);
-            this.checkBox2.TabIndex = 0;
-            this.checkBox2.Text = "Tính lương theo ngày";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.m_cb_luong_ngay.AutoSize = true;
+            this.m_cb_luong_ngay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_luong_ngay.Location = new System.Drawing.Point(28, 60);
+            this.m_cb_luong_ngay.Name = "m_cb_luong_ngay";
+            this.m_cb_luong_ngay.Size = new System.Drawing.Size(163, 22);
+            this.m_cb_luong_ngay.TabIndex = 0;
+            this.m_cb_luong_ngay.Text = "Tính lương theo ngày";
+            this.m_cb_luong_ngay.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // m_cb_luong_theo_san_pham
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(28, 144);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(140, 22);
-            this.checkBox4.TabIndex = 0;
-            this.checkBox4.Text = "Tính lương khoán";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.m_cb_luong_theo_san_pham.AutoSize = true;
+            this.m_cb_luong_theo_san_pham.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_luong_theo_san_pham.Location = new System.Drawing.Point(28, 102);
+            this.m_cb_luong_theo_san_pham.Name = "m_cb_luong_theo_san_pham";
+            this.m_cb_luong_theo_san_pham.Size = new System.Drawing.Size(197, 22);
+            this.m_cb_luong_theo_san_pham.TabIndex = 0;
+            this.m_cb_luong_theo_san_pham.Text = "Tính lương theo sản phẩm";
+            this.m_cb_luong_theo_san_pham.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // m_cb_luong_khoan
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(28, 102);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(197, 22);
-            this.checkBox3.TabIndex = 0;
-            this.checkBox3.Text = "Tính lương theo sản phẩm";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.m_cb_luong_khoan.AutoSize = true;
+            this.m_cb_luong_khoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_luong_khoan.Location = new System.Drawing.Point(28, 144);
+            this.m_cb_luong_khoan.Name = "m_cb_luong_khoan";
+            this.m_cb_luong_khoan.Size = new System.Drawing.Size(140, 22);
+            this.m_cb_luong_khoan.TabIndex = 0;
+            this.m_cb_luong_khoan.Text = "Tính lương khoán";
+            this.m_cb_luong_khoan.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 343);
@@ -145,16 +145,17 @@
             this.panel2.Size = new System.Drawing.Size(526, 46);
             this.panel2.TabIndex = 4;
             // 
-            // button2
+            // m_btn_luu
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(348, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 46);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Location = new System.Drawing.Point(348, 0);
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Size = new System.Drawing.Size(89, 46);
+            this.m_btn_luu.TabIndex = 0;
+            this.m_btn_luu.Text = "Lưu";
+            this.m_btn_luu.UseVisualStyleBackColor = true;
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // button1
             // 
@@ -191,13 +192,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox m_cb_luong_theo_doanh_thu;
+        private System.Windows.Forms.CheckBox m_cb_luong_khoan;
+        private System.Windows.Forms.CheckBox m_cb_luong_theo_san_pham;
+        private System.Windows.Forms.CheckBox m_cb_luong_ngay;
+        private System.Windows.Forms.CheckBox m_cb_luong_theo_thoi_gian;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button m_btn_luu;
         private System.Windows.Forms.Button button1;
     }
 }

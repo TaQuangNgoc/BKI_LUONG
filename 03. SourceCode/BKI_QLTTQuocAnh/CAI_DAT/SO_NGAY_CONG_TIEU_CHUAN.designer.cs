@@ -322,9 +322,10 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(26, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(518, 18);
+            this.label5.Size = new System.Drawing.Size(656, 18);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Đặt số ngày công tiêu chuẩn của mỗi tháng tương ứng với từng loại nhân viên";
+            this.label5.Text = "Điền số ngày công tiêu chuẩn của mỗi tháng tương ứng với từng loại nhân viên vào " +
+    "bảng dưới đây:";
             // 
             // textBox1
             // 

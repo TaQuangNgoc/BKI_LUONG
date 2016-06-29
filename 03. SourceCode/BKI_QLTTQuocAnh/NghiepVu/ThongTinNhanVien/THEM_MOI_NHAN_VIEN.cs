@@ -121,7 +121,7 @@ namespace BKI_DichVuMatDat
         {
             tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount, 40);
-            tabControl1.Appearance = TabAppearance.Buttons;
+          //  tabControl1.Appearance = TabAppearance.Buttons;
             lblNoteTab1.MaximumSize = new Size(groupBoxNoteTab1.Width - 10, 0);
             lblNoteTab1.AutoSize = true;
 

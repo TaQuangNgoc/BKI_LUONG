@@ -383,6 +383,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIcons.resx">
       <DependentUpon>frmIcons.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSearchDate.resx">
       <DependentUpon>frmSearchDate.vb</DependentUpon>

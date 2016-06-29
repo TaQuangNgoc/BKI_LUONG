@@ -17,7 +17,7 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
             tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount, 40);
-            tabControl1.Appearance = TabAppearance.Buttons;
+           // tabControl1.Appearance = TabAppearance.FlatButtons;
         }
 
         private void text_box_format_numeric(object sender, KeyPressEventArgs e)

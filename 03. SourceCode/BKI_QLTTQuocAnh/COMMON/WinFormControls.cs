@@ -522,5 +522,35 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void active_hinh_thuc_tinh_luong_cho_cong_ty(decimal v_id_hinh_thuc)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_active_hinh_thuc_tinh_luong_cho_cong_ty");          
+            v_cstore.addDecimalInputParam("@ID_HINH_THUC_TINH_LUONG", v_id_hinh_thuc);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void non_active_hinh_thuc_tinh_luong_cua_cong_ty()
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_non_active_hinh_thuc_tinh_luong_cua_cong_ty");
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void UpdateThamSoKhac(decimal Giam_tru_gia_canh, decimal Giam_tru_phu_thuoc, decimal Luong_toi_thieu_quy_dinh, decimal Luong_toi_thieu_vung, decimal So_thang_tinh_bhxh)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_update_tham_so_khac");
+            v_cstore.addDecimalInputParam("@Giam_tru_gia_canh", Giam_tru_gia_canh);
+            v_cstore.addDecimalInputParam("@Giam_tru_phu_thuoc", Giam_tru_phu_thuoc);
+            v_cstore.addDecimalInputParam("@Luong_toi_thieu_quy_dinh", Luong_toi_thieu_quy_dinh);
+            v_cstore.addDecimalInputParam("@Luong_toi_thieu_vung", Luong_toi_thieu_vung);
+            v_cstore.addDecimalInputParam("@So_thang_tinh_bhxh", So_thang_tinh_bhxh);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }
