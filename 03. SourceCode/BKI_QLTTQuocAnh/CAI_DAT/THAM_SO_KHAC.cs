@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,16 @@ namespace BKI_DichVuMatDat
         {
             InitializeComponent();
             load_du_lieu();
+            m_txt_giam_tru_gia_canh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            m_txt_giam_tru_phu_thuoc.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            m_txt_luong_toi_thieu_quy_dinh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            m_txt_luong_toi_thieu_vung.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            m_txt_so_thang_tinh_bhxh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
         }
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
-            TextBox textbox = (TextBox)sender;
+            TextEdit textbox = (TextEdit)sender;
             try
             {
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
@@ -39,9 +45,17 @@ namespace BKI_DichVuMatDat
 
         private void text_box_format_numeric_not_contain_point(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            try
             {
-                e.Handled = true;
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (Exception v_e)
+            {
+                
+                throw v_e;
             }
         }
 
