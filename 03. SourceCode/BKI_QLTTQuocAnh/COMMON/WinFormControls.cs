@@ -22,6 +22,7 @@ using Microsoft.Office.Interop;
 using System.Reflection;
 using DevExpress.XtraEditors;
 using System.Linq;
+using DevExpress.XtraGrid.Columns;
 
 namespace BKI_DichVuMatDat
 {
@@ -52,6 +53,24 @@ namespace BKI_DichVuMatDat
             TRANG_THAI_LAO_DONG,
             DM_CA_HOC
         }
+
+        public static void Convert_gridcontrol_to_datatable(GridView gridview, DataTable datatable)
+        {
+            foreach (GridColumn column in gridview.Columns)
+            {
+                datatable.Columns.Add(column.FieldName, column.ColumnType);
+            }
+            for (int i = 0; i < gridview.DataRowCount; i++)
+            {
+                DataRow row = datatable.NewRow();
+                foreach (GridColumn column in gridview.Columns)
+                {
+                    row[column.FieldName] = gridview.GetRowCellValue(i, column);
+                }
+                datatable.Rows.Add(row);
+            }
+        }
+
 
       
 
@@ -550,6 +569,14 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@Luong_toi_thieu_quy_dinh", Luong_toi_thieu_quy_dinh);
             v_cstore.addDecimalInputParam("@Luong_toi_thieu_vung", Luong_toi_thieu_vung);
             v_cstore.addDecimalInputParam("@So_thang_tinh_bhxh", So_thang_tinh_bhxh);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+       
+        internal void LayDuLieuSoNgayCongTieuChuan(DataSet v_ds, decimal nam)
+        {
+
+            CStoredProc v_cstore = new CStoredProc("pr_lay_du_lieu_so_ngay_cong_tieu_chuan");
+            v_cstore.addDecimalInputParam("@NAM", nam);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
     } 

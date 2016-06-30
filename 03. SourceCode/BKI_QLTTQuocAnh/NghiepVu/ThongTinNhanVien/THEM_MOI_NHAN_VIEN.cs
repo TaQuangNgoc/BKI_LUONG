@@ -561,27 +561,11 @@ namespace BKI_DichVuMatDat
             }
         }
 
-        private void Convert_gridcontrol_to_datatable(GridView gridview, DataTable datatable)
-        {
-            foreach (GridColumn column in gridview.Columns)
-            {
-                datatable.Columns.Add(column.FieldName, column.ColumnType);
-            }
-            for (int i = 0; i < gridview.DataRowCount; i++)
-            {
-                DataRow row = datatable.NewRow();
-                foreach (GridColumn column in gridview.Columns)
-                {
-                    row[column.FieldName] = gridview.GetRowCellValue(i, column);
-                }
-                datatable.Rows.Add(row);
-            }
-        }
-
+       
         private void m_btn_them_luong_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            Convert_gridcontrol_to_datatable(m_grv_luong, dt);
+            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_luong, dt);
             if (m_txt_lcd.Text == "" && m_txt_lns.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!");
@@ -724,7 +708,7 @@ namespace BKI_DichVuMatDat
         private void m_btn_them_phan_tram_luong_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            Convert_gridcontrol_to_datatable(m_grv_phan_tram, dt);
+            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phan_tram, dt);
 
             if (m_txt_ti_le.Text != "")
             {
@@ -792,7 +776,7 @@ namespace BKI_DichVuMatDat
         private void m_btn_them_phu_cap_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
+            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
             dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue,m_cbo_loai_phu_cap.Text,m_txt_thang.Text,m_txt_nam.Text);        
             m_grc_phu_cap.DataSource = dt;
             m_txt_thang.Text = "";
@@ -828,7 +812,7 @@ namespace BKI_DichVuMatDat
         private void m_btn_them_luong_ngay_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            Convert_gridcontrol_to_datatable(m_grv_luong_ngay, dt);
+            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_luong_ngay, dt);
 
             if (m_txt_so_tien_luong_ngay.Text != "")
             {
