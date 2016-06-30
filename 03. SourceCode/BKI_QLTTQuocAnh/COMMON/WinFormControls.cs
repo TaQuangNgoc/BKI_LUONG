@@ -590,11 +590,6 @@ namespace BKI_DichVuMatDat
         }
 
 
-        internal void UpdateSoNgayTieuChuanTuyChon(decimal id_loai_ngay_cong, DataRow v_dr)
-        {
-           
-        }
-
         internal void UpdateSoNgayTieuChuanTuyChon(decimal id_loai_ngay_cong, DataRow v_dr, decimal nam)
         {
             DataSet v_ds = new DataSet();
@@ -609,7 +604,8 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@THANG_5", decimal.Parse(v_dr["THANG_5"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_6", decimal.Parse(v_dr["THANG_6"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_7", decimal.Parse(v_dr["THANG_7"].ToString()));
-            v_cstore.addDecimalInputParam("@THANG_8", decimal.Parse(v_dr["THANG_9"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_8", decimal.Parse(v_dr["THANG_8"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_9", decimal.Parse(v_dr["THANG_9"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_10", decimal.Parse(v_dr["THANG_10"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_11", decimal.Parse(v_dr["THANG_11"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_12", decimal.Parse(v_dr["THANG_12"].ToString()));

@@ -191,6 +191,7 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv.GetDataRow(m_grv.FocusedRowHandle);
             v_dr.Delete();
             m_txt_ten_loai_nhan_vien.Text = "";
+            MessageBox.Show("Nhấn nút Lưu để Lưu lại kết quả vừa thực hiện!");
         }
 
         private void m_btn_luu_Click(object sender, EventArgs e)
@@ -208,12 +209,14 @@ namespace BKI_DichVuMatDat
                 {
                     them_du_lieu_cho_cac_loai_nv_tuy_chon();
                 }
+                MessageBox.Show("Lưu dữ liệu thành công!");
             }
         }
 
         private void them_du_lieu_cho_cac_loai_nv_tuy_chon()
         {
             luu_cac_loai_nv_tuy_chon();
+          
         }
 
         private void luu_cac_loai_nv_tuy_chon()
@@ -229,6 +232,7 @@ namespace BKI_DichVuMatDat
                 v_us.Insert();
                 luu_so_ngay_cua_tung_loai(v_us.dcID, v_dr);
             }
+
         }
 
         private void luu_so_ngay_cua_tung_loai(decimal id_loai_ngay_cong, DataRow v_dr)
@@ -242,7 +246,7 @@ namespace BKI_DichVuMatDat
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "DELETE FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=21 AND ID!=21");
+            v_us.FillDatasetWithQuery(v_ds, "DELETE FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=21 AND ID!=777");
         }
 
         private void them_du_lieu_cho_ngay_mac_dinh()
