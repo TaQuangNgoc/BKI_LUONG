@@ -262,9 +262,9 @@ namespace BKI_DichVuMatDat
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM DM_NHAN_VIEN WHERE MA_NV='"+ m_txt_ma_nhan_vien.Text+ "'");
+            v_us.FillDatasetWithQuery(v_ds, "SELECT ID FROM DM_NHAN_VIEN WHERE MA_NV='"+ m_txt_ma_nhan_vien.Text+ "'");
             //trạng thái thêm, và bảng >0 dòng, trạng thái sửa, và dòng 0 khác với ma_nv thì cảnh báo
-            if ((v_ds.Tables[0].Rows.Count>0 && m_e== DataEntryFormMode.InsertDataState)||(m_e==DataEntryFormMode.UpdateDataState && m_id_nhan_vien==decimal.Parse(v_ds.Tables[0].Rows[0]["ID"].ToString())))
+            if ((v_ds.Tables[0].Rows.Count>0 && m_e== DataEntryFormMode.InsertDataState)||(m_e==DataEntryFormMode.UpdateDataState && m_id_nhan_vien!= decimal.Parse(v_ds.Tables[0].Rows[0]["ID"].ToString())))
             {
                 MessageBox.Show("Đã tồn tại mã nhân viên "+ m_txt_ma_nhan_vien.Text);
                 return false;
@@ -699,6 +699,7 @@ namespace BKI_DichVuMatDat
 
         private void m_btn_xoa_luong_Click(object sender, EventArgs e)
         {
+           
             DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
             v_dr.Delete();
             m_txt_lcd.Text = "";

@@ -574,10 +574,20 @@ namespace BKI_DichVuMatDat
        
         internal void LayDuLieuSoNgayCongTieuChuan(DataSet v_ds, decimal nam)
         {
-
             CStoredProc v_cstore = new CStoredProc("pr_lay_du_lieu_so_ngay_cong_tieu_chuan");
             v_cstore.addDecimalInputParam("@NAM", nam);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void InsertSoNgayCongTieuChuanChoMacDinh(decimal nam, decimal ngay)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_insert_so_ngay_lvtc_cho_mac_dinh");
+            v_cstore.addDecimalInputParam("@NAM", nam);
+            v_cstore.addDecimalInputParam("@NGAY", ngay);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
     } 
 }

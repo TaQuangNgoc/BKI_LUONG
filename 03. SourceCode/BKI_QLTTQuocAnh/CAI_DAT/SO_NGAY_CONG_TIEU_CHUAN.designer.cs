@@ -111,7 +111,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(884, 472);
+            this.panel3.Size = new System.Drawing.Size(884, 490);
             this.panel3.TabIndex = 5;
             // 
             // m_group_cau_hinh
@@ -122,7 +122,7 @@
             this.m_group_cau_hinh.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_group_cau_hinh.Location = new System.Drawing.Point(0, 168);
             this.m_group_cau_hinh.Name = "m_group_cau_hinh";
-            this.m_group_cau_hinh.Size = new System.Drawing.Size(884, 304);
+            this.m_group_cau_hinh.Size = new System.Drawing.Size(884, 322);
             this.m_group_cau_hinh.TabIndex = 10;
             this.m_group_cau_hinh.TabStop = false;
             this.m_group_cau_hinh.Text = "Cấu hình tùy chỉnh";
@@ -133,7 +133,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 180);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(878, 121);
+            this.panel5.Size = new System.Drawing.Size(878, 139);
             this.panel5.TabIndex = 9;
             // 
             // m_grc
@@ -143,10 +143,11 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(878, 121);
+            this.m_grc.Size = new System.Drawing.Size(878, 139);
             this.m_grc.TabIndex = 7;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
+            this.m_grc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_grv
             // 
@@ -167,10 +168,12 @@
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.m_grv.Click += new System.EventHandler(this.m_grv_Click);
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Loại nhân viên";
+            this.gridColumn1.FieldName = "TEN";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -178,6 +181,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Tháng 1";
+            this.gridColumn2.FieldName = "THANG_1";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -185,6 +189,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Tháng 2";
+            this.gridColumn3.FieldName = "THANG_2";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -192,6 +197,7 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Tháng 3";
+            this.gridColumn4.FieldName = "THANG_3";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
@@ -199,6 +205,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Tháng 4";
+            this.gridColumn5.FieldName = "THANG_4";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
@@ -206,6 +213,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Tháng 5";
+            this.gridColumn6.FieldName = "THANG_5";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
@@ -213,6 +221,7 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Tháng 6";
+            this.gridColumn7.FieldName = "THANG_6";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
@@ -220,6 +229,7 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Tháng 7";
+            this.gridColumn8.FieldName = "THANG_7";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
@@ -227,6 +237,7 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Tháng 8";
+            this.gridColumn9.FieldName = "THANG_8";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 8;
@@ -234,6 +245,7 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Tháng 9";
+            this.gridColumn10.FieldName = "THANG_9";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 9;
@@ -241,6 +253,7 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "Tháng 10";
+            this.gridColumn11.FieldName = "THANG_10";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 10;
@@ -248,6 +261,7 @@
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Tháng 11";
+            this.gridColumn12.FieldName = "THANG_11";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 11;
@@ -255,6 +269,7 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "Tháng 12";
+            this.gridColumn13.FieldName = "THANG_12";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 12;
@@ -299,6 +314,7 @@
             this.m_btn_xoa.Size = new System.Drawing.Size(98, 43);
             this.m_btn_xoa.TabIndex = 8;
             this.m_btn_xoa.Text = "Xóa";
+            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
             // m_btn_them
             // 
@@ -359,6 +375,7 @@
             this.m_txt_ngay_mac_dinh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ngay_mac_dinh.Size = new System.Drawing.Size(234, 26);
             this.m_txt_ngay_mac_dinh.TabIndex = 3;
+            this.m_txt_ngay_mac_dinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_rd_mac_dinh
             // 
@@ -370,6 +387,7 @@
             this.m_rd_mac_dinh.TabStop = true;
             this.m_rd_mac_dinh.Text = "Mặc định là";
             this.m_rd_mac_dinh.UseVisualStyleBackColor = true;
+            this.m_rd_mac_dinh.CheckedChanged += new System.EventHandler(this.m_rd_mac_dinh_CheckedChanged);
             // 
             // m_rd_tuy_chinh
             // 
@@ -412,6 +430,7 @@
             this.m_txt_nam.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_nam.Size = new System.Drawing.Size(234, 26);
             this.m_txt_nam.TabIndex = 4;
+            this.m_txt_nam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_btn_tiep_tuc
             // 
@@ -447,7 +466,7 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 525);
+            this.panel2.Location = new System.Drawing.Point(0, 543);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(884, 52);
             this.panel2.TabIndex = 4;
@@ -470,12 +489,13 @@
             this.m_btn_luu.Size = new System.Drawing.Size(112, 52);
             this.m_btn_luu.TabIndex = 9;
             this.m_btn_luu.Text = "Lưu";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // SO_NGAY_CONG_TIEU_CHUAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 577);
+            this.ClientSize = new System.Drawing.Size(884, 595);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
