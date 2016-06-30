@@ -589,5 +589,31 @@ namespace BKI_DichVuMatDat
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
+
+        internal void UpdateSoNgayTieuChuanTuyChon(decimal id_loai_ngay_cong, DataRow v_dr)
+        {
+           
+        }
+
+        internal void UpdateSoNgayTieuChuanTuyChon(decimal id_loai_ngay_cong, DataRow v_dr, decimal nam)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_insert_du_lieu_so_ngay_cong_tieu_chuan_tuy_chon");
+            v_cstore.addDecimalInputParam("@ID_LOAI_NHAN_VIEN", id_loai_ngay_cong);
+            v_cstore.addDecimalInputParam("@NAM", nam);
+            v_cstore.addDecimalInputParam("@THANG_1", decimal.Parse(v_dr["THANG_1"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_2", decimal.Parse(v_dr["THANG_2"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_3", decimal.Parse(v_dr["THANG_3"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_4", decimal.Parse(v_dr["THANG_4"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_5", decimal.Parse(v_dr["THANG_5"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_6", decimal.Parse(v_dr["THANG_6"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_7", decimal.Parse(v_dr["THANG_7"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_8", decimal.Parse(v_dr["THANG_9"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_10", decimal.Parse(v_dr["THANG_10"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_11", decimal.Parse(v_dr["THANG_11"].ToString()));
+            v_cstore.addDecimalInputParam("@THANG_12", decimal.Parse(v_dr["THANG_12"].ToString()));
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }

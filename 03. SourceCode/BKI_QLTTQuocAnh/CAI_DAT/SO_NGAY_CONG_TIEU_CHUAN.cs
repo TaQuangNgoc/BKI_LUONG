@@ -214,20 +214,27 @@ namespace BKI_DichVuMatDat
         private void them_du_lieu_cho_cac_loai_nv_tuy_chon()
         {
             luu_cac_loai_nv_tuy_chon();
-            luu_so_ngay_cua_tung_loai();
-        }
-
-        private void luu_so_ngay_cua_tung_loai()
-        {
-            throw new NotImplementedException();
         }
 
         private void luu_cac_loai_nv_tuy_chon()
         {
             for (int i = 0; i < m_grv.DataRowCount; i++)
             {
-                
+                DataRow v_dr= m_grv.GetDataRow(i);
+                US_CM_DM_TU_DIEN v_us = new US_CM_DM_TU_DIEN();
+                v_us.dcID_LOAI_TU_DIEN = 21;
+                v_us.strMA_TU_DIEN = "LOAI_" + (i + 1);
+                v_us.strTEN = v_dr["TEN"].ToString();
+                v_us.strTEN_NGAN = "LOAI_" + (i + 1);
+                v_us.Insert();
+                luu_so_ngay_cua_tung_loai(v_us.dcID, v_dr);
             }
+        }
+
+        private void luu_so_ngay_cua_tung_loai(decimal id_loai_ngay_cong, DataRow v_dr)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.UpdateSoNgayTieuChuanTuyChon(id_loai_ngay_cong, v_dr, decimal.Parse(m_txt_nam.Text));
         }
 
         private void xoa_du_lieu_cac_hinh_thuc_tuy_chon_cu_neu_co()

@@ -46,6 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CDBNames.cs" />
+    <Compile Include="DS_CM_DM_TU_DIEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_NHAN_VIEN.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,6 +138,17 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="ClassDiagram1.cd" />
+    <None Include="DS_CM_DM_TU_DIEN.xsc">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CM_DM_TU_DIEN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xss">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
     <None Include="DS_DM_NHAN_VIEN.xsc">
       <DependentUpon>DS_DM_NHAN_VIEN.xsd</DependentUpon>
     </None>
