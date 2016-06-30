@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CAC_HINH_THUC_TINH_LUONG));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -146,21 +145,20 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.Blue;
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
             this.m_btn_luu.Appearance.Options.UseFont = true;
             this.m_btn_luu.Appearance.Options.UseForeColor = true;
-            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_luu.Image")));
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(414, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(383, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(112, 46);
-            this.m_btn_luu.TabIndex = 10;
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
+            this.m_btn_luu.TabIndex = 14;
             this.m_btn_luu.Text = "Lưu";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
