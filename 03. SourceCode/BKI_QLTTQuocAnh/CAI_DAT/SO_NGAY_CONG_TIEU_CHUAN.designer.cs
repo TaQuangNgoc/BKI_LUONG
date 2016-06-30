@@ -345,9 +345,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(293, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 18);
+            this.label4.Size = new System.Drawing.Size(93, 18);
             this.label4.TabIndex = 2;
-            this.label4.Text = "ngày";
+            this.label4.Text = "ngày / tháng";
             // 
             // panel6
             // 
