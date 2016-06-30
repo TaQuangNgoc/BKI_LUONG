@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CAC_HINH_THUC_TINH_LUONG));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,8 +38,7 @@
             this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_luu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -136,9 +136,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.m_btn_luu);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 343);
             this.panel2.Name = "panel2";
@@ -147,26 +146,23 @@
             // 
             // m_btn_luu
             // 
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.Blue;
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.m_btn_luu.Appearance.Options.UseBackColor = true;
+            this.m_btn_luu.Appearance.Options.UseFont = true;
+            this.m_btn_luu.Appearance.Options.UseForeColor = true;
+            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Location = new System.Drawing.Point(348, 0);
+            this.m_btn_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_luu.Image")));
+            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_luu.Location = new System.Drawing.Point(414, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(89, 46);
-            this.m_btn_luu.TabIndex = 0;
+            this.m_btn_luu.Size = new System.Drawing.Size(112, 46);
+            this.m_btn_luu.TabIndex = 10;
             this.m_btn_luu.Text = "Lưu";
-            this.m_btn_luu.UseVisualStyleBackColor = true;
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(437, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // CAC_HINH_THUC_TINH_LUONG
             // 
@@ -198,7 +194,6 @@
         private System.Windows.Forms.CheckBox m_cb_luong_ngay;
         private System.Windows.Forms.CheckBox m_cb_luong_theo_thoi_gian;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button m_btn_luu;
-        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
     }
 }

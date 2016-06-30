@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(THAM_SO_CHAM_CONG_THOI_GIAN));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,19 +45,12 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -68,16 +62,10 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -96,21 +84,14 @@
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -123,14 +104,8 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -147,15 +122,8 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -163,8 +131,6 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -174,10 +140,44 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit15 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit16 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit17 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit19 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit21 = new DevExpress.XtraEditors.TextEdit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -227,6 +227,27 @@
             this.panel15.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -380,19 +401,19 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.textEdit4);
+            this.groupBox8.Controls.Add(this.textEdit3);
+            this.groupBox8.Controls.Add(this.textEdit1);
+            this.groupBox8.Controls.Add(this.textEdit2);
+            this.groupBox8.Controls.Add(this.simpleButton3);
+            this.groupBox8.Controls.Add(this.simpleButton2);
+            this.groupBox8.Controls.Add(this.simpleButton1);
             this.groupBox8.Controls.Add(this.label13);
             this.groupBox8.Controls.Add(this.label1);
-            this.groupBox8.Controls.Add(this.textBox4);
             this.groupBox8.Controls.Add(this.label3);
             this.groupBox8.Controls.Add(this.label14);
-            this.groupBox8.Controls.Add(this.button3);
             this.groupBox8.Controls.Add(this.label6);
-            this.groupBox8.Controls.Add(this.button4);
-            this.groupBox8.Controls.Add(this.textBox3);
-            this.groupBox8.Controls.Add(this.button5);
             this.groupBox8.Controls.Add(this.label7);
-            this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox8.Location = new System.Drawing.Point(0, 0);
             this.groupBox8.Name = "groupBox8";
@@ -400,17 +421,10 @@
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(166, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 26);
-            this.textBox1.TabIndex = 5;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(336, 179);
+            this.label13.Location = new System.Drawing.Point(371, 186);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(28, 18);
             this.label13.TabIndex = 11;
@@ -425,18 +439,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã ngày công";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(166, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 26);
-            this.textBox4.TabIndex = 10;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 75);
+            this.label3.Location = new System.Drawing.Point(46, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 18);
             this.label3.TabIndex = 0;
@@ -451,68 +457,23 @@
             this.label14.TabIndex = 9;
             this.label14.Text = "% LCD";
             // 
-            // button3
-            // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(38, 247);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 30);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(336, 125);
+            this.label6.Location = new System.Drawing.Point(371, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 18);
             this.label6.TabIndex = 8;
             this.label6.Text = "% ";
             // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(166, 247);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 30);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Sửa";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(166, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 26);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
-            // button5
-            // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(293, 247);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Xóa";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(46, 125);
+            this.label7.Location = new System.Drawing.Point(46, 131);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 18);
             this.label7.TabIndex = 6;
             this.label7.Text = "% LNS";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(166, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 26);
-            this.textBox2.TabIndex = 5;
             // 
             // tabPage2
             // 
@@ -610,29 +571,22 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.textBox5);
+            this.groupBox9.Controls.Add(this.textEdit7);
+            this.groupBox9.Controls.Add(this.textEdit6);
+            this.groupBox9.Controls.Add(this.textEdit5);
+            this.groupBox9.Controls.Add(this.simpleButton5);
+            this.groupBox9.Controls.Add(this.simpleButton6);
+            this.groupBox9.Controls.Add(this.simpleButton7);
             this.groupBox9.Controls.Add(this.label8);
-            this.groupBox9.Controls.Add(this.button6);
             this.groupBox9.Controls.Add(this.label9);
-            this.groupBox9.Controls.Add(this.button7);
             this.groupBox9.Controls.Add(this.label10);
-            this.groupBox9.Controls.Add(this.button8);
-            this.groupBox9.Controls.Add(this.textBox6);
             this.groupBox9.Controls.Add(this.label11);
-            this.groupBox9.Controls.Add(this.textBox7);
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox9.Location = new System.Drawing.Point(0, 0);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(422, 262);
             this.groupBox9.TabIndex = 13;
             this.groupBox9.TabStop = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(169, 30);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(194, 26);
-            this.textBox5.TabIndex = 2;
             // 
             // label8
             // 
@@ -643,34 +597,14 @@
             this.label8.TabIndex = 1;
             this.label8.Text = "Mã loại làm thêm";
             // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(296, 195);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(67, 30);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Xóa";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(42, 81);
+            this.label9.Location = new System.Drawing.Point(42, 86);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 18);
             this.label9.TabIndex = 1;
             this.label9.Text = "Tên loại làm thêm";
-            // 
-            // button7
-            // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(169, 195);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(67, 30);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Sửa";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -681,39 +615,14 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "% LNS";
             // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(45, 195);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(67, 30);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Thêm";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(169, 78);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(194, 26);
-            this.textBox6.TabIndex = 2;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(339, 135);
+            this.label11.Location = new System.Drawing.Point(388, 135);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(28, 18);
             this.label11.TabIndex = 4;
             this.label11.Text = "% ";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(169, 132);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(146, 26);
-            this.textBox7.TabIndex = 3;
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // tabPage3
             // 
@@ -835,17 +744,17 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.textEdit11);
+            this.groupBox10.Controls.Add(this.textEdit10);
+            this.groupBox10.Controls.Add(this.simpleButton8);
+            this.groupBox10.Controls.Add(this.simpleButton9);
+            this.groupBox10.Controls.Add(this.simpleButton10);
             this.groupBox10.Controls.Add(this.label17);
             this.groupBox10.Controls.Add(this.label12);
             this.groupBox10.Controls.Add(this.groupBox5);
-            this.groupBox10.Controls.Add(this.textBox11);
             this.groupBox10.Controls.Add(this.checkBox3);
             this.groupBox10.Controls.Add(this.checkBox1);
             this.groupBox10.Controls.Add(this.checkBox2);
-            this.groupBox10.Controls.Add(this.textBox9);
-            this.groupBox10.Controls.Add(this.button9);
-            this.groupBox10.Controls.Add(this.button11);
-            this.groupBox10.Controls.Add(this.button10);
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox10.Location = new System.Drawing.Point(0, 0);
             this.groupBox10.Name = "groupBox10";
@@ -873,14 +782,14 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.textEdit9);
+            this.groupBox5.Controls.Add(this.textEdit8);
             this.groupBox5.Controls.Add(this.radioButton1);
-            this.groupBox5.Controls.Add(this.textBox8);
             this.groupBox5.Controls.Add(this.radioButton4);
             this.groupBox5.Controls.Add(this.comboBox2);
             this.groupBox5.Controls.Add(this.label34);
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.textBox10);
             this.groupBox5.Location = new System.Drawing.Point(47, 114);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(330, 143);
@@ -898,14 +807,6 @@
             this.radioButton1.Text = "Tỉ lệ";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(120, 15);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(128, 26);
-            this.textBox8.TabIndex = 1;
-            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -920,7 +821,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(120, 53);
+            this.comboBox2.Location = new System.Drawing.Point(120, 59);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(183, 26);
             this.comboBox2.TabIndex = 6;
@@ -946,27 +847,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 56);
+            this.label5.Location = new System.Drawing.Point(21, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Của tiền";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(120, 103);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(128, 26);
-            this.textBox10.TabIndex = 2;
-            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.textBox10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(167, 32);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(210, 26);
-            this.textBox11.TabIndex = 13;
             // 
             // checkBox3
             // 
@@ -997,43 +882,6 @@
             this.checkBox2.TabIndex = 17;
             this.checkBox2.Text = "Phụ thuộc số ngày đi làm";
             this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(167, 76);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(210, 26);
-            this.textBox9.TabIndex = 11;
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(303, 394);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(67, 30);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Xóa";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(47, 394);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(67, 30);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "Thêm";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(167, 394);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(67, 30);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Sửa";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
@@ -1131,15 +979,15 @@
             // 
             // groupBox11
             // 
+            this.groupBox11.Controls.Add(this.textEdit14);
+            this.groupBox11.Controls.Add(this.textEdit13);
+            this.groupBox11.Controls.Add(this.textEdit12);
+            this.groupBox11.Controls.Add(this.simpleButton11);
+            this.groupBox11.Controls.Add(this.simpleButton12);
+            this.groupBox11.Controls.Add(this.simpleButton13);
             this.groupBox11.Controls.Add(this.label15);
-            this.groupBox11.Controls.Add(this.textBox12);
             this.groupBox11.Controls.Add(this.label19);
-            this.groupBox11.Controls.Add(this.button12);
-            this.groupBox11.Controls.Add(this.textBox14);
-            this.groupBox11.Controls.Add(this.button13);
             this.groupBox11.Controls.Add(this.label18);
-            this.groupBox11.Controls.Add(this.button14);
-            this.groupBox11.Controls.Add(this.textBox13);
             this.groupBox11.Controls.Add(this.label16);
             this.groupBox11.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox11.Location = new System.Drawing.Point(0, 0);
@@ -1157,48 +1005,14 @@
             this.label15.TabIndex = 6;
             this.label15.Text = "Mã bảo hiểm";
             // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(170, 30);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(191, 26);
-            this.textBox12.TabIndex = 7;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(41, 78);
+            this.label19.Location = new System.Drawing.Point(41, 81);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 18);
             this.label19.TabIndex = 9;
             this.label19.Text = "Tên bảo hiểm";
-            // 
-            // button12
-            // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(294, 194);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(67, 30);
-            this.button12.TabIndex = 14;
-            this.button12.Text = "Xóa";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(170, 75);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(191, 26);
-            this.textBox14.TabIndex = 10;
-            // 
-            // button13
-            // 
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(170, 194);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(67, 30);
-            this.button13.TabIndex = 15;
-            this.button13.Text = "Sửa";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // label18
             // 
@@ -1209,28 +1023,10 @@
             this.label18.TabIndex = 11;
             this.label18.Text = "% LCD";
             // 
-            // button14
-            // 
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(44, 194);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(67, 30);
-            this.button14.TabIndex = 16;
-            this.button14.Text = "Thêm";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(170, 126);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(147, 26);
-            this.textBox13.TabIndex = 12;
-            this.textBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(337, 129);
+            this.label16.Location = new System.Drawing.Point(377, 129);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(28, 18);
             this.label16.TabIndex = 13;
@@ -1332,19 +1128,19 @@
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.textEdit18);
+            this.groupBox12.Controls.Add(this.textEdit17);
+            this.groupBox12.Controls.Add(this.textEdit16);
+            this.groupBox12.Controls.Add(this.textEdit15);
+            this.groupBox12.Controls.Add(this.simpleButton14);
+            this.groupBox12.Controls.Add(this.simpleButton15);
+            this.groupBox12.Controls.Add(this.simpleButton16);
             this.groupBox12.Controls.Add(this.label28);
             this.groupBox12.Controls.Add(this.label27);
             this.groupBox12.Controls.Add(this.label25);
             this.groupBox12.Controls.Add(this.label20);
-            this.groupBox12.Controls.Add(this.textBox15);
-            this.groupBox12.Controls.Add(this.button15);
             this.groupBox12.Controls.Add(this.label21);
-            this.groupBox12.Controls.Add(this.button16);
             this.groupBox12.Controls.Add(this.label22);
-            this.groupBox12.Controls.Add(this.button17);
-            this.groupBox12.Controls.Add(this.textBox16);
-            this.groupBox12.Controls.Add(this.textBox18);
-            this.groupBox12.Controls.Add(this.textBox17);
             this.groupBox12.Controls.Add(this.label24);
             this.groupBox12.Controls.Add(this.label23);
             this.groupBox12.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1357,7 +1153,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(363, 76);
+            this.label28.Location = new System.Drawing.Point(362, 81);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(37, 18);
             this.label28.TabIndex = 6;
@@ -1366,7 +1162,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(363, 187);
+            this.label27.Location = new System.Drawing.Point(362, 185);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(37, 18);
             this.label27.TabIndex = 6;
@@ -1375,7 +1171,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(363, 29);
+            this.label25.Location = new System.Drawing.Point(362, 29);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(37, 18);
             this.label25.TabIndex = 6;
@@ -1390,93 +1186,28 @@
             this.label20.TabIndex = 6;
             this.label20.Text = "Chặn dưới";
             // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(170, 26);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(187, 26);
-            this.textBox15.TabIndex = 7;
-            this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.textBox15.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
-            // button15
-            // 
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(290, 257);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(67, 30);
-            this.button15.TabIndex = 17;
-            this.button15.Text = "Xóa";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(46, 76);
+            this.label21.Location = new System.Drawing.Point(46, 81);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 18);
             this.label21.TabIndex = 8;
             this.label21.Text = "Chặn trên";
             // 
-            // button16
-            // 
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(170, 257);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 30);
-            this.button16.TabIndex = 18;
-            this.button16.Text = "Sửa";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(55, 131);
+            this.label22.Location = new System.Drawing.Point(46, 133);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(35, 18);
             this.label22.TabIndex = 8;
             this.label22.Text = "Tỉ lệ";
             // 
-            // button17
-            // 
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(58, 257);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(67, 30);
-            this.button17.TabIndex = 19;
-            this.button17.Text = "Thêm";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(170, 73);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(187, 26);
-            this.textBox16.TabIndex = 9;
-            this.textBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.textBox16.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(170, 184);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(187, 26);
-            this.textBox18.TabIndex = 16;
-            this.textBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.textBox18.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(170, 128);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(144, 26);
-            this.textBox17.TabIndex = 9;
-            this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(46, 187);
+            this.label24.Location = new System.Drawing.Point(46, 185);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(49, 18);
             this.label24.TabIndex = 15;
@@ -1485,7 +1216,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(333, 131);
+            this.label23.Location = new System.Drawing.Point(362, 133);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(28, 18);
             this.label23.TabIndex = 14;
@@ -1524,9 +1255,10 @@
             // 
             // groupBox20
             // 
+            this.groupBox20.Controls.Add(this.textEdit21);
+            this.groupBox20.Controls.Add(this.textEdit20);
+            this.groupBox20.Controls.Add(this.textEdit19);
             this.groupBox20.Controls.Add(this.radioButton2);
-            this.groupBox20.Controls.Add(this.textBox21);
-            this.groupBox20.Controls.Add(this.textBox19);
             this.groupBox20.Controls.Add(this.radioButton3);
             this.groupBox20.Controls.Add(this.comboBox1);
             this.groupBox20.Controls.Add(this.comboBox3);
@@ -1536,7 +1268,6 @@
             this.groupBox20.Controls.Add(this.label33);
             this.groupBox20.Controls.Add(this.label26);
             this.groupBox20.Controls.Add(this.label31);
-            this.groupBox20.Controls.Add(this.textBox20);
             this.groupBox20.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox20.Location = new System.Drawing.Point(0, 0);
             this.groupBox20.Name = "groupBox20";
@@ -1554,22 +1285,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Tỉ lệ";
             this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(132, 53);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(174, 26);
-            this.textBox21.TabIndex = 1;
-            this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(132, 15);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(174, 26);
-            this.textBox19.TabIndex = 1;
-            this.textBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // radioButton3
             // 
@@ -1593,7 +1308,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(487, 56);
+            this.comboBox3.Location = new System.Drawing.Point(487, 59);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(174, 26);
             this.comboBox3.TabIndex = 6;
@@ -1601,7 +1316,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(325, 22);
+            this.label29.Location = new System.Drawing.Point(325, 18);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(28, 18);
             this.label29.TabIndex = 0;
@@ -1610,7 +1325,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(325, 59);
+            this.label30.Location = new System.Drawing.Point(325, 62);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(28, 18);
             this.label30.TabIndex = 0;
@@ -1628,7 +1343,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(325, 108);
+            this.label33.Location = new System.Drawing.Point(325, 106);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(37, 18);
             this.label33.TabIndex = 0;
@@ -1637,7 +1352,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(377, 59);
+            this.label26.Location = new System.Drawing.Point(377, 62);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(61, 18);
             this.label26.TabIndex = 0;
@@ -1646,53 +1361,500 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(21, 56);
+            this.label31.Location = new System.Drawing.Point(21, 62);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(102, 18);
             this.label31.TabIndex = 0;
             this.label31.Text = "Lớn nhất bằng\r\n";
             // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(132, 103);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(174, 26);
-            this.textBox20.TabIndex = 2;
-            this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
-            this.textBox20.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.simpleButton4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 578);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(961, 53);
             this.panel2.TabIndex = 4;
             // 
-            // button2
+            // simpleButton4
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(783, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 53);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.simpleButton4.Appearance.BackColor2 = System.Drawing.Color.Blue;
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton4.Appearance.Options.UseBackColor = true;
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Appearance.Options.UseForeColor = true;
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
+            this.simpleButton4.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton4.Location = new System.Drawing.Point(849, 0);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(112, 53);
+            this.simpleButton4.TabIndex = 10;
+            this.simpleButton4.Text = "Lưu";
             // 
-            // button1
+            // simpleButton2
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(872, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 53);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton2.Location = new System.Drawing.Point(273, 241);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton2.TabIndex = 13;
+            this.simpleButton2.Text = "Xóa";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton1.Location = new System.Drawing.Point(49, 241);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton1.TabIndex = 12;
+            this.simpleButton1.Text = "Thêm";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
+            this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton3.Location = new System.Drawing.Point(161, 241);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton3.TabIndex = 14;
+            this.simpleButton3.Text = "Sửa";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton5.Appearance.Options.UseBackColor = true;
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton5.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.Image")));
+            this.simpleButton5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton5.Location = new System.Drawing.Point(161, 193);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton5.TabIndex = 17;
+            this.simpleButton5.Text = "Sửa";
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.simpleButton6.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton6.Appearance.Options.UseBackColor = true;
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.Appearance.Options.UseForeColor = true;
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton6.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.Image")));
+            this.simpleButton6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton6.Location = new System.Drawing.Point(277, 193);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton6.TabIndex = 16;
+            this.simpleButton6.Text = "Xóa";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton7.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton7.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.Image")));
+            this.simpleButton7.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton7.Location = new System.Drawing.Point(45, 193);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton7.TabIndex = 15;
+            this.simpleButton7.Text = "Thêm";
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton8.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton8.Appearance.Options.UseBackColor = true;
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton8.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.Image")));
+            this.simpleButton8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton8.Location = new System.Drawing.Point(169, 396);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton8.TabIndex = 21;
+            this.simpleButton8.Text = "Sửa";
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.simpleButton9.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton9.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton9.Appearance.Options.UseBackColor = true;
+            this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.Appearance.Options.UseForeColor = true;
+            this.simpleButton9.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton9.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.Image")));
+            this.simpleButton9.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton9.Location = new System.Drawing.Point(291, 396);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton9.TabIndex = 20;
+            this.simpleButton9.Text = "Xóa";
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton10.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton10.Appearance.Options.UseBackColor = true;
+            this.simpleButton10.Appearance.Options.UseFont = true;
+            this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton10.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.Image")));
+            this.simpleButton10.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton10.Location = new System.Drawing.Point(47, 396);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton10.TabIndex = 19;
+            this.simpleButton10.Text = "Thêm";
+            // 
+            // simpleButton11
+            // 
+            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton11.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton11.Appearance.Options.UseBackColor = true;
+            this.simpleButton11.Appearance.Options.UseFont = true;
+            this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton11.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.Image")));
+            this.simpleButton11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton11.Location = new System.Drawing.Point(159, 193);
+            this.simpleButton11.Name = "simpleButton11";
+            this.simpleButton11.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton11.TabIndex = 17;
+            this.simpleButton11.Text = "Sửa";
+            // 
+            // simpleButton12
+            // 
+            this.simpleButton12.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.simpleButton12.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton12.Appearance.Options.UseBackColor = true;
+            this.simpleButton12.Appearance.Options.UseFont = true;
+            this.simpleButton12.Appearance.Options.UseForeColor = true;
+            this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton12.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton12.Image")));
+            this.simpleButton12.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton12.Location = new System.Drawing.Point(274, 193);
+            this.simpleButton12.Name = "simpleButton12";
+            this.simpleButton12.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton12.TabIndex = 16;
+            this.simpleButton12.Text = "Xóa";
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton13.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton13.Appearance.Options.UseBackColor = true;
+            this.simpleButton13.Appearance.Options.UseFont = true;
+            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton13.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.Image")));
+            this.simpleButton13.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton13.Location = new System.Drawing.Point(44, 193);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton13.TabIndex = 15;
+            this.simpleButton13.Text = "Thêm";
+            // 
+            // simpleButton14
+            // 
+            this.simpleButton14.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton14.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton14.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton14.Appearance.Options.UseBackColor = true;
+            this.simpleButton14.Appearance.Options.UseFont = true;
+            this.simpleButton14.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton14.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton14.Image")));
+            this.simpleButton14.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton14.Location = new System.Drawing.Point(181, 253);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton14.TabIndex = 19;
+            this.simpleButton14.Text = "Sửa";
+            // 
+            // simpleButton15
+            // 
+            this.simpleButton15.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.simpleButton15.Appearance.BackColor2 = System.Drawing.Color.Gray;
+            this.simpleButton15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton15.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.simpleButton15.Appearance.Options.UseBackColor = true;
+            this.simpleButton15.Appearance.Options.UseFont = true;
+            this.simpleButton15.Appearance.Options.UseForeColor = true;
+            this.simpleButton15.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton15.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.Image")));
+            this.simpleButton15.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton15.Location = new System.Drawing.Point(313, 253);
+            this.simpleButton15.Name = "simpleButton15";
+            this.simpleButton15.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton15.TabIndex = 18;
+            this.simpleButton15.Text = "Xóa";
+            // 
+            // simpleButton16
+            // 
+            this.simpleButton16.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.simpleButton16.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.simpleButton16.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton16.Appearance.Options.UseBackColor = true;
+            this.simpleButton16.Appearance.Options.UseFont = true;
+            this.simpleButton16.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton16.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton16.Image")));
+            this.simpleButton16.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton16.Location = new System.Drawing.Point(49, 253);
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton16.TabIndex = 17;
+            this.simpleButton16.Text = "Thêm";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(166, 25);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit2.Size = new System.Drawing.Size(194, 26);
+            this.textEdit2.TabIndex = 15;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(166, 76);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit1.Size = new System.Drawing.Size(194, 26);
+            this.textEdit1.TabIndex = 16;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(166, 127);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit3.Properties.Appearance.Options.UseFont = true;
+            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit3.Size = new System.Drawing.Size(194, 26);
+            this.textEdit3.TabIndex = 17;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(165, 178);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit4.Properties.Appearance.Options.UseFont = true;
+            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit4.Size = new System.Drawing.Size(194, 26);
+            this.textEdit4.TabIndex = 18;
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Location = new System.Drawing.Point(183, 29);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit5.Properties.Appearance.Options.UseFont = true;
+            this.textEdit5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit5.Size = new System.Drawing.Size(180, 26);
+            this.textEdit5.TabIndex = 18;
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.Location = new System.Drawing.Point(183, 77);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit6.Properties.Appearance.Options.UseFont = true;
+            this.textEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit6.Size = new System.Drawing.Size(180, 26);
+            this.textEdit6.TabIndex = 19;
+            // 
+            // textEdit7
+            // 
+            this.textEdit7.Location = new System.Drawing.Point(183, 131);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit7.Properties.Appearance.Options.UseFont = true;
+            this.textEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit7.Size = new System.Drawing.Size(180, 26);
+            this.textEdit7.TabIndex = 20;
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.Location = new System.Drawing.Point(120, 102);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit8.Properties.Appearance.Options.UseFont = true;
+            this.textEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit8.Size = new System.Drawing.Size(140, 26);
+            this.textEdit8.TabIndex = 22;
+            // 
+            // textEdit9
+            // 
+            this.textEdit9.Location = new System.Drawing.Point(120, 14);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit9.Properties.Appearance.Options.UseFont = true;
+            this.textEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit9.Size = new System.Drawing.Size(140, 26);
+            this.textEdit9.TabIndex = 23;
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.Location = new System.Drawing.Point(167, 75);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit10.Properties.Appearance.Options.UseFont = true;
+            this.textEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit10.Size = new System.Drawing.Size(183, 26);
+            this.textEdit10.TabIndex = 22;
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(167, 31);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit11.Properties.Appearance.Options.UseFont = true;
+            this.textEdit11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit11.Size = new System.Drawing.Size(183, 26);
+            this.textEdit11.TabIndex = 23;
+            // 
+            // textEdit12
+            // 
+            this.textEdit12.Location = new System.Drawing.Point(171, 29);
+            this.textEdit12.Name = "textEdit12";
+            this.textEdit12.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit12.Properties.Appearance.Options.UseFont = true;
+            this.textEdit12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit12.Size = new System.Drawing.Size(194, 26);
+            this.textEdit12.TabIndex = 18;
+            // 
+            // textEdit13
+            // 
+            this.textEdit13.Location = new System.Drawing.Point(171, 77);
+            this.textEdit13.Name = "textEdit13";
+            this.textEdit13.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit13.Properties.Appearance.Options.UseFont = true;
+            this.textEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit13.Size = new System.Drawing.Size(194, 26);
+            this.textEdit13.TabIndex = 19;
+            // 
+            // textEdit14
+            // 
+            this.textEdit14.Location = new System.Drawing.Point(171, 125);
+            this.textEdit14.Name = "textEdit14";
+            this.textEdit14.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit14.Properties.Appearance.Options.UseFont = true;
+            this.textEdit14.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit14.Size = new System.Drawing.Size(194, 26);
+            this.textEdit14.TabIndex = 20;
+            // 
+            // textEdit15
+            // 
+            this.textEdit15.Location = new System.Drawing.Point(150, 25);
+            this.textEdit15.Name = "textEdit15";
+            this.textEdit15.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit15.Properties.Appearance.Options.UseFont = true;
+            this.textEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit15.Size = new System.Drawing.Size(194, 26);
+            this.textEdit15.TabIndex = 20;
+            // 
+            // textEdit16
+            // 
+            this.textEdit16.Location = new System.Drawing.Point(150, 77);
+            this.textEdit16.Name = "textEdit16";
+            this.textEdit16.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit16.Properties.Appearance.Options.UseFont = true;
+            this.textEdit16.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit16.Size = new System.Drawing.Size(194, 26);
+            this.textEdit16.TabIndex = 21;
+            // 
+            // textEdit17
+            // 
+            this.textEdit17.Location = new System.Drawing.Point(150, 129);
+            this.textEdit17.Name = "textEdit17";
+            this.textEdit17.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit17.Properties.Appearance.Options.UseFont = true;
+            this.textEdit17.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit17.Size = new System.Drawing.Size(194, 26);
+            this.textEdit17.TabIndex = 22;
+            // 
+            // textEdit18
+            // 
+            this.textEdit18.Location = new System.Drawing.Point(150, 181);
+            this.textEdit18.Name = "textEdit18";
+            this.textEdit18.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit18.Properties.Appearance.Options.UseFont = true;
+            this.textEdit18.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit18.Size = new System.Drawing.Size(194, 26);
+            this.textEdit18.TabIndex = 23;
+            // 
+            // textEdit19
+            // 
+            this.textEdit19.Location = new System.Drawing.Point(132, 14);
+            this.textEdit19.Name = "textEdit19";
+            this.textEdit19.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit19.Properties.Appearance.Options.UseFont = true;
+            this.textEdit19.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit19.Size = new System.Drawing.Size(178, 26);
+            this.textEdit19.TabIndex = 16;
+            // 
+            // textEdit20
+            // 
+            this.textEdit20.Location = new System.Drawing.Point(132, 58);
+            this.textEdit20.Name = "textEdit20";
+            this.textEdit20.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit20.Properties.Appearance.Options.UseFont = true;
+            this.textEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit20.Size = new System.Drawing.Size(178, 26);
+            this.textEdit20.TabIndex = 17;
+            // 
+            // textEdit21
+            // 
+            this.textEdit21.Location = new System.Drawing.Point(132, 102);
+            this.textEdit21.Name = "textEdit21";
+            this.textEdit21.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.textEdit21.Properties.Appearance.Options.UseFont = true;
+            this.textEdit21.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.textEdit21.Size = new System.Drawing.Size(178, 26);
+            this.textEdit21.TabIndex = 18;
             // 
             // THAM_SO_CHAM_CONG_THOI_GIAN
             // 
@@ -1762,6 +1924,27 @@
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1781,13 +1964,8 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
@@ -1798,41 +1976,24 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
@@ -1847,15 +2008,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox6;
         private DevExpress.XtraGrid.GridControl gridControl5;
@@ -1863,17 +2018,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox9;
@@ -1905,8 +2053,6 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -1916,7 +2062,43 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label34;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.SimpleButton simpleButton14;
+        private DevExpress.XtraEditors.SimpleButton simpleButton15;
+        private DevExpress.XtraEditors.SimpleButton simpleButton16;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit textEdit10;
+        private DevExpress.XtraEditors.TextEdit textEdit9;
+        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit textEdit14;
+        private DevExpress.XtraEditors.TextEdit textEdit13;
+        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.TextEdit textEdit18;
+        private DevExpress.XtraEditors.TextEdit textEdit17;
+        private DevExpress.XtraEditors.TextEdit textEdit16;
+        private DevExpress.XtraEditors.TextEdit textEdit15;
+        private DevExpress.XtraEditors.TextEdit textEdit21;
+        private DevExpress.XtraEditors.TextEdit textEdit20;
+        private DevExpress.XtraEditors.TextEdit textEdit19;
     }
 }
