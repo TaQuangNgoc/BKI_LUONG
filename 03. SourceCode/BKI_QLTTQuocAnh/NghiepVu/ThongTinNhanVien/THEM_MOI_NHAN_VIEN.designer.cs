@@ -39,10 +39,27 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.m_grb_phu_cap = new System.Windows.Forms.GroupBox();
+            this.m_grc_phu_cap = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_phu_cap = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cbo_loai_phu_cap = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.m_nud_phu_thuoc = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.m_cb_doan_phi = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBoxNoteTab1 = new System.Windows.Forms.GroupBox();
-            this.lblNoteTab1 = new System.Windows.Forms.Label();
             this.m_dtp_ngay_bat_dau_lv = new System.Windows.Forms.DateTimePicker();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -60,29 +77,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_grb_phu_cap = new System.Windows.Forms.GroupBox();
-            this.m_grc_phu_cap = new DevExpress.XtraGrid.GridControl();
-            this.m_grv_phu_cap = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cbo_loai_phu_cap = new System.Windows.Forms.ComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.m_txt_nam = new System.Windows.Forms.TextBox();
-            this.m_txt_thang = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.m_grb_nguoi_phu_thuoc = new System.Windows.Forms.GroupBox();
-            this.m_nud_phu_thuoc = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.m_grb_doan_phi = new System.Windows.Forms.GroupBox();
-            this.m_cb_doan_phi = new System.Windows.Forms.CheckBox();
             this.m_grb_loai_nv = new System.Windows.Forms.GroupBox();
             this.m_cbo_loai_nhan_vien = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -156,25 +150,24 @@
             this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
             this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            this.groupBoxNoteTab1.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.m_grb_phu_cap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_phu_cap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_phu_cap)).BeginInit();
             this.panel8.SuspendLayout();
-            this.m_grb_nguoi_phu_thuoc.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nud_phu_thuoc)).BeginInit();
-            this.m_grb_doan_phi.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.m_grb_loai_nv.SuspendLayout();
             this.m_grb_phan_tram_luong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_phan_tram)).BeginInit();
@@ -282,6 +275,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.m_grb_phu_cap);
             this.groupBox1.Controls.Add(this.groupBox15);
             this.groupBox1.Controls.Add(this.groupBox14);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -293,224 +287,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ĐIỀN ĐẦY ĐỦ THÔNG TIN NHÂN VIÊN";
             // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.label14);
-            this.groupBox15.Controls.Add(this.groupBoxNoteTab1);
-            this.groupBox15.Controls.Add(this.m_dtp_ngay_bat_dau_lv);
-            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox15.Location = new System.Drawing.Point(3, 237);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(1031, 350);
-            this.groupBox15.TabIndex = 15;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "THÔNG TIN BỔ SUNG";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(59, 48);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 18);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Ngày vào làm";
-            // 
-            // groupBoxNoteTab1
-            // 
-            this.groupBoxNoteTab1.Controls.Add(this.lblNoteTab1);
-            this.groupBoxNoteTab1.Location = new System.Drawing.Point(62, 96);
-            this.groupBoxNoteTab1.Name = "groupBoxNoteTab1";
-            this.groupBoxNoteTab1.Size = new System.Drawing.Size(741, 123);
-            this.groupBoxNoteTab1.TabIndex = 13;
-            this.groupBoxNoteTab1.TabStop = false;
-            // 
-            // lblNoteTab1
-            // 
-            this.lblNoteTab1.AutoSize = true;
-            this.lblNoteTab1.Location = new System.Drawing.Point(6, 35);
-            this.lblNoteTab1.Name = "lblNoteTab1";
-            this.lblNoteTab1.Size = new System.Drawing.Size(637, 36);
-            this.lblNoteTab1.TabIndex = 9;
-            this.lblNoteTab1.Text = "Note: Những nhân viên cần quan tâm đến việc đóng BHXH mới cần điền trường thông t" +
-    "inh này.\r\nKhi thay đổi hợp đồng của nhân viên, cần thay đổi Ngày vào làm cho phù" +
-    " hợp.";
-            // 
-            // m_dtp_ngay_bat_dau_lv
-            // 
-            this.m_dtp_ngay_bat_dau_lv.CustomFormat = "MM/dd/yyyy";
-            this.m_dtp_ngay_bat_dau_lv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dtp_ngay_bat_dau_lv.Location = new System.Drawing.Point(198, 42);
-            this.m_dtp_ngay_bat_dau_lv.Name = "m_dtp_ngay_bat_dau_lv";
-            this.m_dtp_ngay_bat_dau_lv.ShowCheckBox = true;
-            this.m_dtp_ngay_bat_dau_lv.Size = new System.Drawing.Size(194, 26);
-            this.m_dtp_ngay_bat_dau_lv.TabIndex = 7;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.label27);
-            this.groupBox14.Controls.Add(this.label28);
-            this.groupBox14.Controls.Add(this.label26);
-            this.groupBox14.Controls.Add(this.label1);
-            this.groupBox14.Controls.Add(this.label3);
-            this.groupBox14.Controls.Add(this.m_dtp_ngay_sinh);
-            this.groupBox14.Controls.Add(this.label7);
-            this.groupBox14.Controls.Add(this.m_txt_email);
-            this.groupBox14.Controls.Add(this.m_txt_ten);
-            this.groupBox14.Controls.Add(this.m_txt_sdt);
-            this.groupBox14.Controls.Add(this.m_txt_ma_nhan_vien);
-            this.groupBox14.Controls.Add(this.m_txt_ho_dem);
-            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox14.Location = new System.Drawing.Point(3, 22);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(1031, 215);
-            this.groupBox14.TabIndex = 14;
-            this.groupBox14.TabStop = false;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(450, 33);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(96, 18);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Mã nhân viên";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(454, 157);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(41, 18);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Email";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(454, 95);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(92, 18);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Số điện thoại";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Họ đệm";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 18);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tên ";
-            // 
-            // m_dtp_ngay_sinh
-            // 
-            this.m_dtp_ngay_sinh.CustomFormat = "MM/dd/yyyy";
-            this.m_dtp_ngay_sinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dtp_ngay_sinh.Location = new System.Drawing.Point(196, 154);
-            this.m_dtp_ngay_sinh.Name = "m_dtp_ngay_sinh";
-            this.m_dtp_ngay_sinh.Size = new System.Drawing.Size(194, 26);
-            this.m_dtp_ngay_sinh.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(59, 157);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 18);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Ngày sinh";
-            // 
-            // m_txt_email
-            // 
-            this.m_txt_email.Location = new System.Drawing.Point(576, 154);
-            this.m_txt_email.Name = "m_txt_email";
-            this.m_txt_email.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_email.TabIndex = 6;
-            // 
-            // m_txt_ten
-            // 
-            this.m_txt_ten.Location = new System.Drawing.Point(196, 95);
-            this.m_txt_ten.Name = "m_txt_ten";
-            this.m_txt_ten.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ten.TabIndex = 2;
-            // 
-            // m_txt_sdt
-            // 
-            this.m_txt_sdt.Location = new System.Drawing.Point(576, 95);
-            this.m_txt_sdt.Name = "m_txt_sdt";
-            this.m_txt_sdt.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_sdt.TabIndex = 5;
-            this.m_txt_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
-            // 
-            // m_txt_ma_nhan_vien
-            // 
-            this.m_txt_ma_nhan_vien.Location = new System.Drawing.Point(576, 30);
-            this.m_txt_ma_nhan_vien.Name = "m_txt_ma_nhan_vien";
-            this.m_txt_ma_nhan_vien.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ma_nhan_vien.TabIndex = 4;
-            // 
-            // m_txt_ho_dem
-            // 
-            this.m_txt_ho_dem.Location = new System.Drawing.Point(196, 30);
-            this.m_txt_ho_dem.Name = "m_txt_ho_dem";
-            this.m_txt_ho_dem.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ho_dem.TabIndex = 1;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1043, 613);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "LƯƠNG THEO THỜI GIAN";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.panel4);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1037, 607);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.m_grb_phu_cap);
-            this.panel4.Controls.Add(this.m_grb_nguoi_phu_thuoc);
-            this.panel4.Controls.Add(this.m_grb_doan_phi);
-            this.panel4.Controls.Add(this.m_grb_loai_nv);
-            this.panel4.Controls.Add(this.m_grb_phan_tram_luong);
-            this.panel4.Controls.Add(this.m_grb_thong_tin_ve_luong);
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 19);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1031, 585);
-            this.panel4.TabIndex = 15;
-            // 
             // m_grb_phu_cap
             // 
             this.m_grb_phu_cap.Controls.Add(this.m_grc_phu_cap);
             this.m_grb_phu_cap.Controls.Add(this.panel8);
             this.m_grb_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grb_phu_cap.Location = new System.Drawing.Point(0, 579);
+            this.m_grb_phu_cap.Location = new System.Drawing.Point(3, 343);
             this.m_grb_phu_cap.Name = "m_grb_phu_cap";
-            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 6);
-            this.m_grb_phu_cap.TabIndex = 15;
+            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 244);
+            this.m_grb_phu_cap.TabIndex = 22;
             this.m_grb_phu_cap.TabStop = false;
             this.m_grb_phu_cap.Text = "CÁC LOẠI PHỤ CẤP ĐƯỢC HƯỞNG";
             // 
@@ -521,10 +306,10 @@
             gridLevelNode1.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.m_grc_phu_cap.Location = new System.Drawing.Point(732, 19);
+            this.m_grc_phu_cap.Location = new System.Drawing.Point(648, 22);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(296, 0);
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(380, 219);
             this.m_grc_phu_cap.TabIndex = 17;
             this.m_grc_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap});
@@ -540,7 +325,6 @@
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
             this.m_grv_phu_cap.OptionsBehavior.Editable = false;
             this.m_grv_phu_cap.OptionsView.ShowGroupPanel = false;
-            this.m_grv_phu_cap.Click += new System.EventHandler(this.m_grv_phu_cap_Click);
             // 
             // gridColumn8
             // 
@@ -574,19 +358,19 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.dateTimePicker2);
+            this.panel8.Controls.Add(this.dateTimePicker1);
             this.panel8.Controls.Add(this.simpleButton4);
             this.panel8.Controls.Add(this.simpleButton5);
             this.panel8.Controls.Add(this.simpleButton6);
             this.panel8.Controls.Add(this.m_cbo_loai_phu_cap);
             this.panel8.Controls.Add(this.label36);
-            this.panel8.Controls.Add(this.m_txt_nam);
-            this.panel8.Controls.Add(this.m_txt_thang);
             this.panel8.Controls.Add(this.label18);
             this.panel8.Controls.Add(this.label23);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(3, 19);
+            this.panel8.Location = new System.Drawing.Point(3, 22);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(729, 0);
+            this.panel8.Size = new System.Drawing.Size(645, 219);
             this.panel8.TabIndex = 16;
             // 
             // simpleButton4
@@ -600,12 +384,11 @@
             this.simpleButton4.Appearance.Options.UseForeColor = true;
             this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton4.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton4.Location = new System.Drawing.Point(307, 52);
+            this.simpleButton4.Location = new System.Drawing.Point(305, 132);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(89, 43);
             this.simpleButton4.TabIndex = 35;
             this.simpleButton4.Text = "Sửa";
-            this.simpleButton4.Click += new System.EventHandler(this.m_btn_sua_phu_cap_Click);
             // 
             // simpleButton5
             // 
@@ -618,12 +401,11 @@
             this.simpleButton5.Appearance.Options.UseForeColor = true;
             this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton5.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton5.Location = new System.Drawing.Point(419, 52);
+            this.simpleButton5.Location = new System.Drawing.Point(417, 132);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(86, 43);
             this.simpleButton5.TabIndex = 34;
             this.simpleButton5.Text = "Xóa";
-            this.simpleButton5.Click += new System.EventHandler(this.m_btn_xoa_phu_cap_Click);
             // 
             // simpleButton6
             // 
@@ -636,129 +418,277 @@
             this.simpleButton6.Appearance.Options.UseForeColor = true;
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton6.Location = new System.Drawing.Point(195, 52);
+            this.simpleButton6.Location = new System.Drawing.Point(193, 132);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(89, 43);
             this.simpleButton6.TabIndex = 33;
             this.simpleButton6.Text = "Thêm";
-            this.simpleButton6.Click += new System.EventHandler(this.m_btn_them_phu_cap_Click);
             // 
             // m_cbo_loai_phu_cap
             // 
             this.m_cbo_loai_phu_cap.FormattingEnabled = true;
-            this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(148, 15);
+            this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(193, 16);
             this.m_cbo_loai_phu_cap.Name = "m_cbo_loai_phu_cap";
-            this.m_cbo_loai_phu_cap.Size = new System.Drawing.Size(167, 24);
+            this.m_cbo_loai_phu_cap.Size = new System.Drawing.Size(194, 26);
             this.m_cbo_loai_phu_cap.TabIndex = 13;
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(15, 19);
+            this.label36.Location = new System.Drawing.Point(56, 19);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(80, 16);
+            this.label36.Size = new System.Drawing.Size(90, 18);
             this.label36.TabIndex = 0;
             this.label36.Text = "Loại phụ cấp";
-            // 
-            // m_txt_nam
-            // 
-            this.m_txt_nam.Location = new System.Drawing.Point(594, 16);
-            this.m_txt_nam.Name = "m_txt_nam";
-            this.m_txt_nam.Size = new System.Drawing.Size(113, 23);
-            this.m_txt_nam.TabIndex = 5;
-            this.m_txt_nam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
-            // 
-            // m_txt_thang
-            // 
-            this.m_txt_thang.Location = new System.Drawing.Point(412, 17);
-            this.m_txt_thang.Name = "m_txt_thang";
-            this.m_txt_thang.Size = new System.Drawing.Size(107, 23);
-            this.m_txt_thang.TabIndex = 5;
-            this.m_txt_thang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(346, 20);
+            this.label18.Location = new System.Drawing.Point(59, 71);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(60, 16);
+            this.label18.Size = new System.Drawing.Size(69, 18);
             this.label18.TabIndex = 0;
             this.label18.Text = "Từ tháng";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(549, 19);
+            this.label23.Location = new System.Drawing.Point(344, 74);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(34, 16);
+            this.label23.Size = new System.Drawing.Size(76, 18);
             this.label23.TabIndex = 0;
-            this.label23.Text = "Năm";
+            this.label23.Text = "Đến tháng";
             // 
-            // m_grb_nguoi_phu_thuoc
+            // groupBox15
             // 
-            this.m_grb_nguoi_phu_thuoc.Controls.Add(this.m_nud_phu_thuoc);
-            this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label10);
-            this.m_grb_nguoi_phu_thuoc.Controls.Add(this.label15);
-            this.m_grb_nguoi_phu_thuoc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_nguoi_phu_thuoc.Location = new System.Drawing.Point(0, 515);
-            this.m_grb_nguoi_phu_thuoc.Name = "m_grb_nguoi_phu_thuoc";
-            this.m_grb_nguoi_phu_thuoc.Size = new System.Drawing.Size(1031, 64);
-            this.m_grb_nguoi_phu_thuoc.TabIndex = 19;
-            this.m_grb_nguoi_phu_thuoc.TabStop = false;
-            this.m_grb_nguoi_phu_thuoc.Text = "NGƯỜI PHỤ THUỘC";
+            this.groupBox15.Controls.Add(this.m_nud_phu_thuoc);
+            this.groupBox15.Controls.Add(this.label10);
+            this.groupBox15.Controls.Add(this.label15);
+            this.groupBox15.Controls.Add(this.m_cb_doan_phi);
+            this.groupBox15.Controls.Add(this.label14);
+            this.groupBox15.Controls.Add(this.m_dtp_ngay_bat_dau_lv);
+            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox15.Location = new System.Drawing.Point(3, 202);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(1031, 141);
+            this.groupBox15.TabIndex = 15;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "THÔNG TIN BỔ SUNG";
             // 
             // m_nud_phu_thuoc
             // 
-            this.m_nud_phu_thuoc.Location = new System.Drawing.Point(151, 25);
+            this.m_nud_phu_thuoc.Location = new System.Drawing.Point(196, 35);
             this.m_nud_phu_thuoc.Name = "m_nud_phu_thuoc";
-            this.m_nud_phu_thuoc.Size = new System.Drawing.Size(118, 23);
-            this.m_nud_phu_thuoc.TabIndex = 18;
+            this.m_nud_phu_thuoc.Size = new System.Drawing.Size(118, 26);
+            this.m_nud_phu_thuoc.TabIndex = 21;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(285, 27);
+            this.label10.Location = new System.Drawing.Point(347, 37);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 16);
-            this.label10.TabIndex = 16;
+            this.label10.Size = new System.Drawing.Size(43, 18);
+            this.label10.TabIndex = 19;
             this.label10.Text = "người";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(18, 27);
+            this.label15.Location = new System.Drawing.Point(59, 43);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(119, 16);
-            this.label15.TabIndex = 17;
+            this.label15.Size = new System.Drawing.Size(134, 18);
+            this.label15.TabIndex = 20;
             this.label15.Text = "Số lượng phụ thuộc";
-            // 
-            // m_grb_doan_phi
-            // 
-            this.m_grb_doan_phi.Controls.Add(this.m_cb_doan_phi);
-            this.m_grb_doan_phi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_doan_phi.Location = new System.Drawing.Point(0, 462);
-            this.m_grb_doan_phi.Name = "m_grb_doan_phi";
-            this.m_grb_doan_phi.Size = new System.Drawing.Size(1031, 53);
-            this.m_grb_doan_phi.TabIndex = 18;
-            this.m_grb_doan_phi.TabStop = false;
-            this.m_grb_doan_phi.Text = "ĐOÀN PHÍ CÔNG ĐOÀN";
             // 
             // m_cb_doan_phi
             // 
             this.m_cb_doan_phi.AutoSize = true;
-            this.m_cb_doan_phi.Location = new System.Drawing.Point(21, 22);
+            this.m_cb_doan_phi.Location = new System.Drawing.Point(457, 36);
             this.m_cb_doan_phi.Name = "m_cb_doan_phi";
-            this.m_cb_doan_phi.Size = new System.Drawing.Size(201, 20);
-            this.m_cb_doan_phi.TabIndex = 15;
+            this.m_cb_doan_phi.Size = new System.Drawing.Size(227, 22);
+            this.m_cb_doan_phi.TabIndex = 16;
             this.m_cb_doan_phi.Text = "Phải đóng Đoàn phí công đoàn";
             this.m_cb_doan_phi.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(59, 93);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(99, 18);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Ngày vào làm";
+            // 
+            // m_dtp_ngay_bat_dau_lv
+            // 
+            this.m_dtp_ngay_bat_dau_lv.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_ngay_bat_dau_lv.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dtp_ngay_bat_dau_lv.Location = new System.Drawing.Point(196, 87);
+            this.m_dtp_ngay_bat_dau_lv.Name = "m_dtp_ngay_bat_dau_lv";
+            this.m_dtp_ngay_bat_dau_lv.ShowCheckBox = true;
+            this.m_dtp_ngay_bat_dau_lv.Size = new System.Drawing.Size(194, 26);
+            this.m_dtp_ngay_bat_dau_lv.TabIndex = 7;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.label27);
+            this.groupBox14.Controls.Add(this.label28);
+            this.groupBox14.Controls.Add(this.label26);
+            this.groupBox14.Controls.Add(this.label1);
+            this.groupBox14.Controls.Add(this.label3);
+            this.groupBox14.Controls.Add(this.m_dtp_ngay_sinh);
+            this.groupBox14.Controls.Add(this.label7);
+            this.groupBox14.Controls.Add(this.m_txt_email);
+            this.groupBox14.Controls.Add(this.m_txt_ten);
+            this.groupBox14.Controls.Add(this.m_txt_sdt);
+            this.groupBox14.Controls.Add(this.m_txt_ma_nhan_vien);
+            this.groupBox14.Controls.Add(this.m_txt_ho_dem);
+            this.groupBox14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox14.Location = new System.Drawing.Point(3, 22);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(1031, 180);
+            this.groupBox14.TabIndex = 14;
+            this.groupBox14.TabStop = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(450, 33);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(96, 18);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Mã nhân viên";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(454, 133);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 18);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Email";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(454, 80);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(92, 18);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Số điện thoại";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(59, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Họ đệm";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(59, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 18);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên ";
+            // 
+            // m_dtp_ngay_sinh
+            // 
+            this.m_dtp_ngay_sinh.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_ngay_sinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dtp_ngay_sinh.Location = new System.Drawing.Point(196, 127);
+            this.m_dtp_ngay_sinh.Name = "m_dtp_ngay_sinh";
+            this.m_dtp_ngay_sinh.Size = new System.Drawing.Size(194, 26);
+            this.m_dtp_ngay_sinh.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(59, 133);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 18);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Ngày sinh";
+            // 
+            // m_txt_email
+            // 
+            this.m_txt_email.Location = new System.Drawing.Point(576, 130);
+            this.m_txt_email.Name = "m_txt_email";
+            this.m_txt_email.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_email.TabIndex = 6;
+            // 
+            // m_txt_ten
+            // 
+            this.m_txt_ten.Location = new System.Drawing.Point(196, 77);
+            this.m_txt_ten.Name = "m_txt_ten";
+            this.m_txt_ten.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ten.TabIndex = 2;
+            // 
+            // m_txt_sdt
+            // 
+            this.m_txt_sdt.Location = new System.Drawing.Point(576, 77);
+            this.m_txt_sdt.Name = "m_txt_sdt";
+            this.m_txt_sdt.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_sdt.TabIndex = 5;
+            this.m_txt_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
+            // 
+            // m_txt_ma_nhan_vien
+            // 
+            this.m_txt_ma_nhan_vien.Location = new System.Drawing.Point(576, 27);
+            this.m_txt_ma_nhan_vien.Name = "m_txt_ma_nhan_vien";
+            this.m_txt_ma_nhan_vien.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ma_nhan_vien.TabIndex = 4;
+            // 
+            // m_txt_ho_dem
+            // 
+            this.m_txt_ho_dem.Location = new System.Drawing.Point(196, 30);
+            this.m_txt_ho_dem.Name = "m_txt_ho_dem";
+            this.m_txt_ho_dem.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ho_dem.TabIndex = 1;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1043, 596);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "LƯƠNG THEO THỜI GIAN";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel4);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1037, 590);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.m_grb_loai_nv);
+            this.panel4.Controls.Add(this.m_grb_phan_tram_luong);
+            this.panel4.Controls.Add(this.m_grb_thong_tin_ve_luong);
+            this.panel4.Controls.Add(this.panel10);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 19);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1031, 568);
+            this.panel4.TabIndex = 15;
             // 
             // m_grb_loai_nv
             // 
             this.m_grb_loai_nv.Controls.Add(this.m_cbo_loai_nhan_vien);
             this.m_grb_loai_nv.Controls.Add(this.label19);
             this.m_grb_loai_nv.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_loai_nv.Location = new System.Drawing.Point(0, 393);
+            this.m_grb_loai_nv.Location = new System.Drawing.Point(0, 479);
             this.m_grb_loai_nv.Name = "m_grb_loai_nv";
             this.m_grb_loai_nv.Size = new System.Drawing.Size(1031, 69);
             this.m_grb_loai_nv.TabIndex = 17;
@@ -770,7 +700,7 @@
             this.m_cbo_loai_nhan_vien.FormattingEnabled = true;
             this.m_cbo_loai_nhan_vien.Location = new System.Drawing.Point(151, 26);
             this.m_cbo_loai_nhan_vien.Name = "m_cbo_loai_nhan_vien";
-            this.m_cbo_loai_nhan_vien.Size = new System.Drawing.Size(167, 24);
+            this.m_cbo_loai_nhan_vien.Size = new System.Drawing.Size(257, 24);
             this.m_cbo_loai_nhan_vien.TabIndex = 13;
             // 
             // label19
@@ -787,9 +717,9 @@
             this.m_grb_phan_tram_luong.Controls.Add(this.m_grc_phan_tram);
             this.m_grb_phan_tram_luong.Controls.Add(this.panel7);
             this.m_grb_phan_tram_luong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_grb_phan_tram_luong.Location = new System.Drawing.Point(0, 233);
+            this.m_grb_phan_tram_luong.Location = new System.Drawing.Point(0, 274);
             this.m_grb_phan_tram_luong.Name = "m_grb_phan_tram_luong";
-            this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 160);
+            this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 205);
             this.m_grb_phan_tram_luong.TabIndex = 14;
             this.m_grb_phan_tram_luong.TabStop = false;
             this.m_grb_phan_tram_luong.Text = "PHẦN TRĂM LƯƠNG ĐƯỢC HƯỞNG";
@@ -804,7 +734,7 @@
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 19);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
-            this.m_grc_phan_tram.Size = new System.Drawing.Size(296, 138);
+            this.m_grc_phan_tram.Size = new System.Drawing.Size(296, 183);
             this.m_grc_phan_tram.TabIndex = 16;
             this.m_grc_phan_tram.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phan_tram});
@@ -834,6 +764,8 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "TỪ NGÀY";
+            this.gridColumn6.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn6.FieldName = "TU_NGAY";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -842,6 +774,8 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "ĐẾN NGÀY";
+            this.gridColumn7.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn7.FieldName = "DEN_NGAY";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
@@ -862,7 +796,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(3, 19);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(729, 138);
+            this.panel7.Size = new System.Drawing.Size(729, 183);
             this.panel7.TabIndex = 15;
             // 
             // simpleButton1
@@ -876,9 +810,9 @@
             this.simpleButton1.Appearance.Options.UseForeColor = true;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton1.Location = new System.Drawing.Point(307, 73);
+            this.simpleButton1.Location = new System.Drawing.Point(315, 77);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton1.Size = new System.Drawing.Size(90, 43);
             this.simpleButton1.TabIndex = 32;
             this.simpleButton1.Text = "Sửa";
             this.simpleButton1.Click += new System.EventHandler(this.m_btn_sua_phan_tram_luong_Click);
@@ -894,9 +828,9 @@
             this.simpleButton2.Appearance.Options.UseForeColor = true;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton2.Location = new System.Drawing.Point(419, 73);
+            this.simpleButton2.Location = new System.Drawing.Point(432, 77);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton2.Size = new System.Drawing.Size(87, 43);
             this.simpleButton2.TabIndex = 31;
             this.simpleButton2.Text = "Xóa";
             this.simpleButton2.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
@@ -912,7 +846,7 @@
             this.simpleButton3.Appearance.Options.UseForeColor = true;
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton3.Location = new System.Drawing.Point(195, 73);
+            this.simpleButton3.Location = new System.Drawing.Point(195, 77);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(89, 43);
             this.simpleButton3.TabIndex = 30;
@@ -923,7 +857,7 @@
             // 
             this.m_txt_ti_le.Location = new System.Drawing.Point(148, 20);
             this.m_txt_ti_le.Name = "m_txt_ti_le";
-            this.m_txt_ti_le.Size = new System.Drawing.Size(118, 23);
+            this.m_txt_ti_le.Size = new System.Drawing.Size(136, 23);
             this.m_txt_ti_le.TabIndex = 5;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -939,7 +873,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(346, 25);
+            this.label33.Location = new System.Drawing.Point(346, 23);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(59, 16);
             this.label33.TabIndex = 0;
@@ -951,7 +885,7 @@
             this.m_dtp_tu_ngay_ti_le.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_tu_ngay_ti_le.Location = new System.Drawing.Point(411, 20);
             this.m_dtp_tu_ngay_ti_le.Name = "m_dtp_tu_ngay_ti_le";
-            this.m_dtp_tu_ngay_ti_le.Size = new System.Drawing.Size(107, 23);
+            this.m_dtp_tu_ngay_ti_le.Size = new System.Drawing.Size(108, 23);
             this.m_dtp_tu_ngay_ti_le.TabIndex = 12;
             // 
             // label32
@@ -967,7 +901,7 @@
             // 
             this.m_dtp_den_ngay_ti_le.CustomFormat = "MM/dd/yyyy";
             this.m_dtp_den_ngay_ti_le.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dtp_den_ngay_ti_le.Location = new System.Drawing.Point(594, 20);
+            this.m_dtp_den_ngay_ti_le.Location = new System.Drawing.Point(593, 20);
             this.m_dtp_den_ngay_ti_le.Name = "m_dtp_den_ngay_ti_le";
             this.m_dtp_den_ngay_ti_le.ShowCheckBox = true;
             this.m_dtp_den_ngay_ti_le.Size = new System.Drawing.Size(113, 23);
@@ -976,7 +910,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(275, 25);
+            this.label34.Location = new System.Drawing.Point(290, 23);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(20, 16);
             this.label34.TabIndex = 0;
@@ -989,7 +923,7 @@
             this.m_grb_thong_tin_ve_luong.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_grb_thong_tin_ve_luong.Location = new System.Drawing.Point(0, 40);
             this.m_grb_thong_tin_ve_luong.Name = "m_grb_thong_tin_ve_luong";
-            this.m_grb_thong_tin_ve_luong.Size = new System.Drawing.Size(1031, 193);
+            this.m_grb_thong_tin_ve_luong.Size = new System.Drawing.Size(1031, 234);
             this.m_grb_thong_tin_ve_luong.TabIndex = 12;
             this.m_grb_thong_tin_ve_luong.TabStop = false;
             this.m_grb_thong_tin_ve_luong.Text = "THÔNG TIN VỀ LƯƠNG";
@@ -1000,7 +934,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(732, 19);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(296, 171);
+            this.panel5.Size = new System.Drawing.Size(296, 212);
             this.panel5.TabIndex = 15;
             // 
             // m_grc_luong
@@ -1013,7 +947,7 @@
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
-            this.m_grc_luong.Size = new System.Drawing.Size(296, 171);
+            this.m_grc_luong.Size = new System.Drawing.Size(296, 212);
             this.m_grc_luong.TabIndex = 0;
             this.m_grc_luong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_luong});
@@ -1053,6 +987,8 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "TỪ NGÀY";
+            this.gridColumn3.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn3.FieldName = "TU_NGAY";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -1061,6 +997,8 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "ĐẾN NGÀY";
+            this.gridColumn4.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn4.FieldName = "DEN_NGAY";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -1094,7 +1032,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel6.Location = new System.Drawing.Point(3, 19);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(729, 171);
+            this.panel6.Size = new System.Drawing.Size(729, 212);
             this.panel6.TabIndex = 14;
             // 
             // simpleButton11
@@ -1108,7 +1046,7 @@
             this.simpleButton11.Appearance.Options.UseForeColor = true;
             this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton11.Location = new System.Drawing.Point(307, 110);
+            this.simpleButton11.Location = new System.Drawing.Point(315, 110);
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(89, 43);
             this.simpleButton11.TabIndex = 29;
@@ -1135,9 +1073,9 @@
             this.simpleButton12.Appearance.Options.UseForeColor = true;
             this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton12.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton12.Location = new System.Drawing.Point(419, 110);
+            this.simpleButton12.Location = new System.Drawing.Point(431, 110);
             this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(86, 43);
+            this.simpleButton12.Size = new System.Drawing.Size(88, 43);
             this.simpleButton12.TabIndex = 28;
             this.simpleButton12.Text = "Xóa";
             this.simpleButton12.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
@@ -1307,7 +1245,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1043, 613);
+            this.tabPage3.Size = new System.Drawing.Size(1043, 596);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CÁC LOẠI LƯƠNG KHÁC";
             // 
@@ -1318,7 +1256,7 @@
             this.groupBox7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(3, 3);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1037, 607);
+            this.groupBox7.Size = new System.Drawing.Size(1037, 590);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             // 
@@ -1331,7 +1269,7 @@
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox10.Location = new System.Drawing.Point(3, 22);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1031, 582);
+            this.groupBox10.Size = new System.Drawing.Size(1031, 565);
             this.groupBox10.TabIndex = 11;
             this.groupBox10.TabStop = false;
             // 
@@ -1383,6 +1321,8 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "TỪ NGÀY";
+            this.gridColumn13.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn13.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn13.FieldName = "TU_NGAY";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
@@ -1391,6 +1331,8 @@
             // gridColumn14
             // 
             this.gridColumn14.Caption = "ĐẾN NGÀY";
+            this.gridColumn14.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.gridColumn14.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn14.FieldName = "DEN_NGAY";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.Visible = true;
@@ -1572,6 +1514,24 @@
             this.m_cb_luong_theo_san_pham.Text = "Lương theo sản phẩm";
             this.m_cb_luong_theo_san_pham.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "MM/dd/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(193, 68);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(118, 26);
+            this.dateTimePicker1.TabIndex = 36;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "MM/dd/yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(454, 68);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(118, 26);
+            this.dateTimePicker2.TabIndex = 37;
+            // 
             // THEM_MOI_NHAN_VIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1590,25 +1550,19 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
-            this.groupBoxNoteTab1.ResumeLayout(false);
-            this.groupBoxNoteTab1.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.m_grb_phu_cap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_phu_cap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_phu_cap)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.m_grb_nguoi_phu_thuoc.ResumeLayout(false);
-            this.m_grb_nguoi_phu_thuoc.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_nud_phu_thuoc)).EndInit();
-            this.m_grb_doan_phi.ResumeLayout(false);
-            this.m_grb_doan_phi.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.m_grb_loai_nv.ResumeLayout(false);
             this.m_grb_loai_nv.PerformLayout();
             this.m_grb_phan_tram_luong.ResumeLayout(false);
@@ -1657,7 +1611,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label lblNoteTab1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox m_grb_thong_tin_ve_luong;
         private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_lns;
@@ -1669,12 +1622,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox m_grb_phan_tram_luong;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.GroupBox m_grb_phu_cap;
-        private System.Windows.Forms.TextBox m_txt_nam;
-        private System.Windows.Forms.TextBox m_txt_thang;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox m_cbo_loai_phu_cap;
         private System.Windows.Forms.TextBox m_txt_lcd;
         private System.Windows.Forms.DateTimePicker m_dtp_tu_ngay_lcd;
         private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_lcd;
@@ -1693,7 +1640,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.CheckBox m_cb_luong_khoan;
         private System.Windows.Forms.CheckBox m_cb_luong_theo_san_pham;
-        private System.Windows.Forms.GroupBox groupBoxNoteTab1;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
@@ -1709,10 +1655,6 @@
         private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_ti_le;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private DevExpress.XtraGrid.GridControl m_grc_phu_cap;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_phu_cap;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label36;
         private DevExpress.XtraGrid.GridControl m_grc_phan_tram;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_phan_tram;
         private System.Windows.Forms.Panel panel7;
@@ -1725,16 +1667,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox m_grb_loai_nv;
-        private System.Windows.Forms.CheckBox m_cb_doan_phi;
-        private System.Windows.Forms.GroupBox m_grb_doan_phi;
         private System.Windows.Forms.Panel panel11;
         private DevExpress.XtraGrid.GridControl m_grc_luong_ngay;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_luong_ngay;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.GroupBox m_grb_nguoi_phu_thuoc;
-        private System.Windows.Forms.NumericUpDown m_nud_phu_thuoc;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox m_cbo_loai_nhan_vien;
         private System.Windows.Forms.Label label19;
         private DevExpress.XtraGrid.Columns.GridColumn LOAI_LUONG;
@@ -1745,10 +1681,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
@@ -1757,14 +1689,32 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_sua_luong_ngay;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong_ngay;
         private DevExpress.XtraEditors.SimpleButton m_btn_them_luong_ngay;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private System.Windows.Forms.CheckBox m_cb_doan_phi;
+        private System.Windows.Forms.GroupBox m_grb_phu_cap;
+        private DevExpress.XtraGrid.GridControl m_grc_phu_cap;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_phu_cap;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private System.Windows.Forms.Panel panel8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private System.Windows.Forms.ComboBox m_cbo_loai_phu_cap;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.NumericUpDown m_nud_phu_thuoc;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
