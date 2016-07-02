@@ -36,7 +36,15 @@ namespace BKI_DichVuMatDat
 
         //NODE CON CỦA CHẤM CÔNG TỪ EXCEL
         TreeNode THEO_THOI_GIAN = new TreeNode("Theo thời gian");
+        TreeNode LAM_THEM_THEO_THOI_GIAN = new TreeNode("Làm thêm theo thời gian");
         TreeNode THEO_NGAY = new TreeNode("Theo ngày");
+        TreeNode THEO_SAN_PHAM = new TreeNode("Theo sản phẩm");
+
+        //NODE CON CỦA THEO SẢN PHẨM
+        TreeNode DANH_MUC_SAN_PHAM = new TreeNode("Danh mục sản phẩm");
+        TreeNode DON_GIA_SAN_PHAM = new TreeNode("Đơn giá sản phẩm");
+        TreeNode CHAM_CONG_SAN_PHAM = new TreeNode("Chấm công theo sản phẩm");
+
 
         public FORM_MENU()
         {
