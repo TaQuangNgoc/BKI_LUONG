@@ -88,7 +88,14 @@ namespace BKI_DichVuMatDat
             //NODE CHAM CÔNG TỪ EXCEL
 
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_THOI_GIAN);
+            treeView1.Nodes[1].Nodes[1].Nodes.Add(LAM_THEM_THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_NGAY);
+            treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_SAN_PHAM);
+
+            //NODE CON CỦA THEO SẢN PHẨM
+            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DANH_MUC_SAN_PHAM);
+            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DON_GIA_SAN_PHAM);
+            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(CHAM_CONG_SAN_PHAM);
 
             treeView1.ImageList = m_img_list;
 
