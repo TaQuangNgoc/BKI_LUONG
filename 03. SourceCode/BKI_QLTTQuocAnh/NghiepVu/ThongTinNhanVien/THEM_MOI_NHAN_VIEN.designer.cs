@@ -47,8 +47,8 @@
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.m_dtp_den_ngay_phu_cap = new System.Windows.Forms.DateTimePicker();
+            this.m_dtp_tu_ngay_phu_cap = new System.Windows.Forms.DateTimePicker();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
@@ -89,9 +89,9 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_sua_phan_tram_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_xoa_phan_tram_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_them_phan_tram_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_txt_ti_le = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -109,11 +109,11 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_sua_luong = new DevExpress.XtraEditors.SimpleButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_them_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_dtp_tu_ngay_lcd = new System.Windows.Forms.DateTimePicker();
             this.m_dtp_tu_ngay_lns = new System.Windows.Forms.DateTimePicker();
             this.m_dtp_den_ngay_lcd = new System.Windows.Forms.DateTimePicker();
@@ -306,10 +306,10 @@
             gridLevelNode1.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.m_grc_phu_cap.Location = new System.Drawing.Point(648, 22);
+            this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 22);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(380, 219);
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(457, 219);
             this.m_grc_phu_cap.TabIndex = 17;
             this.m_grc_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap});
@@ -325,6 +325,7 @@
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
             this.m_grv_phu_cap.OptionsBehavior.Editable = false;
             this.m_grv_phu_cap.OptionsView.ShowGroupPanel = false;
+            this.m_grv_phu_cap.Click += new System.EventHandler(this.m_grv_phu_cap_Click);
             // 
             // gridColumn8
             // 
@@ -343,6 +344,8 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "TỪ THÁNG";
+            this.gridColumn10.DisplayFormat.FormatString = "MM/yyyy";
+            this.gridColumn10.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn10.FieldName = "TU_NGAY";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
@@ -351,6 +354,8 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "ĐẾN THÁNG";
+            this.gridColumn11.DisplayFormat.FormatString = "MM/yyyy";
+            this.gridColumn11.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn11.FieldName = "DEN_NGAY";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
@@ -358,8 +363,8 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.dateTimePicker2);
-            this.panel8.Controls.Add(this.dateTimePicker1);
+            this.panel8.Controls.Add(this.m_dtp_den_ngay_phu_cap);
+            this.panel8.Controls.Add(this.m_dtp_tu_ngay_phu_cap);
             this.panel8.Controls.Add(this.simpleButton4);
             this.panel8.Controls.Add(this.simpleButton5);
             this.panel8.Controls.Add(this.simpleButton6);
@@ -370,26 +375,26 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 22);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(645, 219);
+            this.panel8.Size = new System.Drawing.Size(568, 219);
             this.panel8.TabIndex = 16;
             // 
-            // dateTimePicker2
+            // m_dtp_den_ngay_phu_cap
             // 
-            this.dateTimePicker2.CustomFormat = "MM/yyyy";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(454, 68);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(118, 26);
-            this.dateTimePicker2.TabIndex = 37;
+            this.m_dtp_den_ngay_phu_cap.CustomFormat = "MM/yyyy";
+            this.m_dtp_den_ngay_phu_cap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dtp_den_ngay_phu_cap.Location = new System.Drawing.Point(417, 68);
+            this.m_dtp_den_ngay_phu_cap.Name = "m_dtp_den_ngay_phu_cap";
+            this.m_dtp_den_ngay_phu_cap.Size = new System.Drawing.Size(118, 26);
+            this.m_dtp_den_ngay_phu_cap.TabIndex = 37;
             // 
-            // dateTimePicker1
+            // m_dtp_tu_ngay_phu_cap
             // 
-            this.dateTimePicker1.CustomFormat = "MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(193, 68);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(118, 26);
-            this.dateTimePicker1.TabIndex = 36;
+            this.m_dtp_tu_ngay_phu_cap.CustomFormat = "MM/yyyy";
+            this.m_dtp_tu_ngay_phu_cap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.m_dtp_tu_ngay_phu_cap.Location = new System.Drawing.Point(149, 68);
+            this.m_dtp_tu_ngay_phu_cap.Name = "m_dtp_tu_ngay_phu_cap";
+            this.m_dtp_tu_ngay_phu_cap.Size = new System.Drawing.Size(131, 26);
+            this.m_dtp_tu_ngay_phu_cap.TabIndex = 36;
             // 
             // simpleButton4
             // 
@@ -404,9 +409,10 @@
             this.simpleButton4.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.simpleButton4.Location = new System.Drawing.Point(305, 132);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton4.Size = new System.Drawing.Size(82, 43);
             this.simpleButton4.TabIndex = 35;
             this.simpleButton4.Text = "Sửa";
+            this.simpleButton4.Click += new System.EventHandler(this.m_btn_sua_phu_cap_Click);
             // 
             // simpleButton5
             // 
@@ -424,6 +430,7 @@
             this.simpleButton5.Size = new System.Drawing.Size(86, 43);
             this.simpleButton5.TabIndex = 34;
             this.simpleButton5.Text = "Xóa";
+            this.simpleButton5.Click += new System.EventHandler(this.m_btn_xoa_phu_cap_Click);
             // 
             // simpleButton6
             // 
@@ -438,16 +445,17 @@
             this.simpleButton6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.simpleButton6.Location = new System.Drawing.Point(193, 132);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(89, 43);
+            this.simpleButton6.Size = new System.Drawing.Size(87, 43);
             this.simpleButton6.TabIndex = 33;
             this.simpleButton6.Text = "Thêm";
+            this.simpleButton6.Click += new System.EventHandler(this.m_btn_them_phu_cap_Click);
             // 
             // m_cbo_loai_phu_cap
             // 
             this.m_cbo_loai_phu_cap.FormattingEnabled = true;
-            this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(193, 16);
+            this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(152, 16);
             this.m_cbo_loai_phu_cap.Name = "m_cbo_loai_phu_cap";
-            this.m_cbo_loai_phu_cap.Size = new System.Drawing.Size(194, 26);
+            this.m_cbo_loai_phu_cap.Size = new System.Drawing.Size(383, 26);
             this.m_cbo_loai_phu_cap.TabIndex = 13;
             // 
             // label36
@@ -471,7 +479,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(344, 74);
+            this.label23.Location = new System.Drawing.Point(311, 71);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(76, 18);
             this.label23.TabIndex = 0;
@@ -521,7 +529,7 @@
             // m_cb_doan_phi
             // 
             this.m_cb_doan_phi.AutoSize = true;
-            this.m_cb_doan_phi.Location = new System.Drawing.Point(457, 36);
+            this.m_cb_doan_phi.Location = new System.Drawing.Point(571, 33);
             this.m_cb_doan_phi.Name = "m_cb_doan_phi";
             this.m_cb_doan_phi.Size = new System.Drawing.Size(227, 22);
             this.m_cb_doan_phi.TabIndex = 16;
@@ -571,7 +579,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(450, 33);
+            this.label27.Location = new System.Drawing.Point(568, 25);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(96, 18);
             this.label27.TabIndex = 0;
@@ -580,7 +588,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(454, 133);
+            this.label28.Location = new System.Drawing.Point(568, 133);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(41, 18);
             this.label28.TabIndex = 0;
@@ -589,7 +597,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(454, 80);
+            this.label26.Location = new System.Drawing.Point(568, 77);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(92, 18);
             this.label26.TabIndex = 0;
@@ -633,7 +641,7 @@
             // 
             // m_txt_email
             // 
-            this.m_txt_email.Location = new System.Drawing.Point(576, 130);
+            this.m_txt_email.Location = new System.Drawing.Point(689, 130);
             this.m_txt_email.Name = "m_txt_email";
             this.m_txt_email.Size = new System.Drawing.Size(194, 26);
             this.m_txt_email.TabIndex = 6;
@@ -647,7 +655,7 @@
             // 
             // m_txt_sdt
             // 
-            this.m_txt_sdt.Location = new System.Drawing.Point(576, 77);
+            this.m_txt_sdt.Location = new System.Drawing.Point(689, 77);
             this.m_txt_sdt.Name = "m_txt_sdt";
             this.m_txt_sdt.Size = new System.Drawing.Size(194, 26);
             this.m_txt_sdt.TabIndex = 5;
@@ -655,7 +663,7 @@
             // 
             // m_txt_ma_nhan_vien
             // 
-            this.m_txt_ma_nhan_vien.Location = new System.Drawing.Point(576, 27);
+            this.m_txt_ma_nhan_vien.Location = new System.Drawing.Point(689, 25);
             this.m_txt_ma_nhan_vien.Name = "m_txt_ma_nhan_vien";
             this.m_txt_ma_nhan_vien.Size = new System.Drawing.Size(194, 26);
             this.m_txt_ma_nhan_vien.TabIndex = 4;
@@ -801,9 +809,9 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.simpleButton1);
-            this.panel7.Controls.Add(this.simpleButton2);
-            this.panel7.Controls.Add(this.simpleButton3);
+            this.panel7.Controls.Add(this.m_btn_sua_phan_tram_luong);
+            this.panel7.Controls.Add(this.m_btn_xoa_phan_tram_luong);
+            this.panel7.Controls.Add(this.m_btn_them_phan_tram_luong);
             this.panel7.Controls.Add(this.m_txt_ti_le);
             this.panel7.Controls.Add(this.label35);
             this.panel7.Controls.Add(this.label33);
@@ -817,59 +825,59 @@
             this.panel7.Size = new System.Drawing.Size(729, 183);
             this.panel7.TabIndex = 15;
             // 
-            // simpleButton1
+            // m_btn_sua_phan_tram_luong
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton1.Location = new System.Drawing.Point(315, 77);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(90, 43);
-            this.simpleButton1.TabIndex = 32;
-            this.simpleButton1.Text = "Sửa";
-            this.simpleButton1.Click += new System.EventHandler(this.m_btn_sua_phan_tram_luong_Click);
+            this.m_btn_sua_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_phan_tram_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_sua_phan_tram_luong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_sua_phan_tram_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_sua_phan_tram_luong.Appearance.Options.UseFont = true;
+            this.m_btn_sua_phan_tram_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_sua_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_sua_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_sua_phan_tram_luong.Location = new System.Drawing.Point(315, 77);
+            this.m_btn_sua_phan_tram_luong.Name = "m_btn_sua_phan_tram_luong";
+            this.m_btn_sua_phan_tram_luong.Size = new System.Drawing.Size(90, 43);
+            this.m_btn_sua_phan_tram_luong.TabIndex = 32;
+            this.m_btn_sua_phan_tram_luong.Text = "Sửa";
+            this.m_btn_sua_phan_tram_luong.Click += new System.EventHandler(this.m_btn_sua_phan_tram_luong_Click);
             // 
-            // simpleButton2
+            // m_btn_xoa_phan_tram_luong
             // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton2.Location = new System.Drawing.Point(432, 77);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(87, 43);
-            this.simpleButton2.TabIndex = 31;
-            this.simpleButton2.Text = "Xóa";
-            this.simpleButton2.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
+            this.m_btn_xoa_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_xoa_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_xoa_phan_tram_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_xoa_phan_tram_luong.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_xoa_phan_tram_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_xoa_phan_tram_luong.Appearance.Options.UseFont = true;
+            this.m_btn_xoa_phan_tram_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_xoa_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_xoa_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_xoa_phan_tram_luong.Location = new System.Drawing.Point(432, 77);
+            this.m_btn_xoa_phan_tram_luong.Name = "m_btn_xoa_phan_tram_luong";
+            this.m_btn_xoa_phan_tram_luong.Size = new System.Drawing.Size(87, 43);
+            this.m_btn_xoa_phan_tram_luong.TabIndex = 31;
+            this.m_btn_xoa_phan_tram_luong.Text = "Xóa";
+            this.m_btn_xoa_phan_tram_luong.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
             // 
-            // simpleButton3
+            // m_btn_them_phan_tram_luong
             // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton3.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton3.Location = new System.Drawing.Point(195, 77);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(89, 43);
-            this.simpleButton3.TabIndex = 30;
-            this.simpleButton3.Text = "Thêm";
-            this.simpleButton3.Click += new System.EventHandler(this.m_btn_them_phan_tram_luong_Click);
+            this.m_btn_them_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_phan_tram_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_them_phan_tram_luong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_them_phan_tram_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_them_phan_tram_luong.Appearance.Options.UseFont = true;
+            this.m_btn_them_phan_tram_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_them_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_them_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_them_phan_tram_luong.Location = new System.Drawing.Point(195, 77);
+            this.m_btn_them_phan_tram_luong.Name = "m_btn_them_phan_tram_luong";
+            this.m_btn_them_phan_tram_luong.Size = new System.Drawing.Size(89, 43);
+            this.m_btn_them_phan_tram_luong.TabIndex = 30;
+            this.m_btn_them_phan_tram_luong.Text = "Thêm";
+            this.m_btn_them_phan_tram_luong.Click += new System.EventHandler(this.m_btn_them_phan_tram_luong_Click);
             // 
             // m_txt_ti_le
             // 
@@ -899,7 +907,7 @@
             // 
             // m_dtp_tu_ngay_ti_le
             // 
-            this.m_dtp_tu_ngay_ti_le.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_tu_ngay_ti_le.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_ti_le.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_tu_ngay_ti_le.Location = new System.Drawing.Point(411, 20);
             this.m_dtp_tu_ngay_ti_le.Name = "m_dtp_tu_ngay_ti_le";
@@ -917,7 +925,7 @@
             // 
             // m_dtp_den_ngay_ti_le
             // 
-            this.m_dtp_den_ngay_ti_le.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_den_ngay_ti_le.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_den_ngay_ti_le.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_den_ngay_ti_le.Location = new System.Drawing.Point(593, 20);
             this.m_dtp_den_ngay_ti_le.Name = "m_dtp_den_ngay_ti_le";
@@ -1030,11 +1038,11 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.simpleButton11);
+            this.panel6.Controls.Add(this.m_btn_sua_luong);
             this.panel6.Controls.Add(this.label8);
-            this.panel6.Controls.Add(this.simpleButton12);
+            this.panel6.Controls.Add(this.m_btn_xoa_luong);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.simpleButton13);
+            this.panel6.Controls.Add(this.m_btn_them_luong);
             this.panel6.Controls.Add(this.m_dtp_tu_ngay_lcd);
             this.panel6.Controls.Add(this.m_dtp_tu_ngay_lns);
             this.panel6.Controls.Add(this.m_dtp_den_ngay_lcd);
@@ -1053,23 +1061,23 @@
             this.panel6.Size = new System.Drawing.Size(729, 212);
             this.panel6.TabIndex = 14;
             // 
-            // simpleButton11
+            // m_btn_sua_luong
             // 
-            this.simpleButton11.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton11.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton11.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton11.Appearance.Options.UseBackColor = true;
-            this.simpleButton11.Appearance.Options.UseFont = true;
-            this.simpleButton11.Appearance.Options.UseForeColor = true;
-            this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton11.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton11.Location = new System.Drawing.Point(315, 110);
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(89, 43);
-            this.simpleButton11.TabIndex = 29;
-            this.simpleButton11.Text = "Sửa";
-            this.simpleButton11.Click += new System.EventHandler(this.m_btn_sua_luong_Click);
+            this.m_btn_sua_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_sua_luong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_sua_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_sua_luong.Appearance.Options.UseFont = true;
+            this.m_btn_sua_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_sua_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_sua_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_sua_luong.Location = new System.Drawing.Point(315, 110);
+            this.m_btn_sua_luong.Name = "m_btn_sua_luong";
+            this.m_btn_sua_luong.Size = new System.Drawing.Size(89, 43);
+            this.m_btn_sua_luong.TabIndex = 29;
+            this.m_btn_sua_luong.Text = "Sửa";
+            this.m_btn_sua_luong.Click += new System.EventHandler(this.m_btn_sua_luong_Click);
             // 
             // label8
             // 
@@ -1080,23 +1088,23 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Lương chế độ( LCD)";
             // 
-            // simpleButton12
+            // m_btn_xoa_luong
             // 
-            this.simpleButton12.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.simpleButton12.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.simpleButton12.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton12.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton12.Appearance.Options.UseBackColor = true;
-            this.simpleButton12.Appearance.Options.UseFont = true;
-            this.simpleButton12.Appearance.Options.UseForeColor = true;
-            this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton12.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton12.Location = new System.Drawing.Point(431, 110);
-            this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(88, 43);
-            this.simpleButton12.TabIndex = 28;
-            this.simpleButton12.Text = "Xóa";
-            this.simpleButton12.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
+            this.m_btn_xoa_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_xoa_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_xoa_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_xoa_luong.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_xoa_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_xoa_luong.Appearance.Options.UseFont = true;
+            this.m_btn_xoa_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_xoa_luong.Location = new System.Drawing.Point(431, 110);
+            this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
+            this.m_btn_xoa_luong.Size = new System.Drawing.Size(88, 43);
+            this.m_btn_xoa_luong.TabIndex = 28;
+            this.m_btn_xoa_luong.Text = "Xóa";
+            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // label5
             // 
@@ -1107,27 +1115,27 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Lương năng suất( LNS)";
             // 
-            // simpleButton13
+            // m_btn_them_luong
             // 
-            this.simpleButton13.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton13.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton13.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton13.Appearance.ForeColor = System.Drawing.Color.White;
-            this.simpleButton13.Appearance.Options.UseBackColor = true;
-            this.simpleButton13.Appearance.Options.UseFont = true;
-            this.simpleButton13.Appearance.Options.UseForeColor = true;
-            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton13.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton13.Location = new System.Drawing.Point(195, 110);
-            this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(89, 43);
-            this.simpleButton13.TabIndex = 27;
-            this.simpleButton13.Text = "Thêm";
-            this.simpleButton13.Click += new System.EventHandler(this.m_btn_them_luong_Click);
+            this.m_btn_them_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_them_luong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_them_luong.Appearance.Options.UseBackColor = true;
+            this.m_btn_them_luong.Appearance.Options.UseFont = true;
+            this.m_btn_them_luong.Appearance.Options.UseForeColor = true;
+            this.m_btn_them_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_them_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_them_luong.Location = new System.Drawing.Point(195, 110);
+            this.m_btn_them_luong.Name = "m_btn_them_luong";
+            this.m_btn_them_luong.Size = new System.Drawing.Size(89, 43);
+            this.m_btn_them_luong.TabIndex = 27;
+            this.m_btn_them_luong.Text = "Thêm";
+            this.m_btn_them_luong.Click += new System.EventHandler(this.m_btn_them_luong_Click);
             // 
             // m_dtp_tu_ngay_lcd
             // 
-            this.m_dtp_tu_ngay_lcd.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_tu_ngay_lcd.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lcd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_tu_ngay_lcd.Location = new System.Drawing.Point(410, 48);
             this.m_dtp_tu_ngay_lcd.Name = "m_dtp_tu_ngay_lcd";
@@ -1136,7 +1144,7 @@
             // 
             // m_dtp_tu_ngay_lns
             // 
-            this.m_dtp_tu_ngay_lns.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_tu_ngay_lns.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lns.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_tu_ngay_lns.Location = new System.Drawing.Point(410, 3);
             this.m_dtp_tu_ngay_lns.Name = "m_dtp_tu_ngay_lns";
@@ -1145,7 +1153,7 @@
             // 
             // m_dtp_den_ngay_lcd
             // 
-            this.m_dtp_den_ngay_lcd.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_den_ngay_lcd.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lcd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_den_ngay_lcd.Location = new System.Drawing.Point(593, 48);
             this.m_dtp_den_ngay_lcd.Name = "m_dtp_den_ngay_lcd";
@@ -1155,7 +1163,7 @@
             // 
             // m_dtp_den_ngay_lns
             // 
-            this.m_dtp_den_ngay_lns.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_den_ngay_lns.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lns.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_den_ngay_lns.Location = new System.Drawing.Point(593, 3);
             this.m_dtp_den_ngay_lns.Name = "m_dtp_den_ngay_lns";
@@ -1689,12 +1697,12 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_sua_luong_ngay;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong_ngay;
         private DevExpress.XtraEditors.SimpleButton m_btn_them_luong_ngay;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.SimpleButton m_btn_sua_phan_tram_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_phan_tram_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_them_phan_tram_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_sua_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_them_luong;
         private System.Windows.Forms.CheckBox m_cb_doan_phi;
         private System.Windows.Forms.GroupBox m_grb_phu_cap;
         private DevExpress.XtraGrid.GridControl m_grc_phu_cap;
@@ -1714,7 +1722,7 @@
         private System.Windows.Forms.NumericUpDown m_nud_phu_thuoc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_phu_cap;
+        private System.Windows.Forms.DateTimePicker m_dtp_tu_ngay_phu_cap;
     }
 }

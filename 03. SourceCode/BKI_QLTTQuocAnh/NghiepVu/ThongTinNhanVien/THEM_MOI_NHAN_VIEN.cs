@@ -451,10 +451,14 @@ namespace BKI_DichVuMatDat
 
         private void luu_phai_dong_doan_phi()
         {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             if (m_cb_doan_phi.Checked == true)
+            {           
+                v_us.UpdatePhaiDongDoanPhi(m_id_nhan_vien,"Y");
+            }
+            else
             {
-                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-                v_us.UpdatePhaiDongDoanPhi(m_id_nhan_vien);
+                v_us.UpdatePhaiDongDoanPhi(m_id_nhan_vien, "N");
             }
         }
 
@@ -477,10 +481,22 @@ namespace BKI_DichVuMatDat
                 US_GD_NHAN_VIEN_PHU_CAP v_us = new US_GD_NHAN_VIEN_PHU_CAP();
                 v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
                 v_us.dcID_PHU_CAP =decimal.Parse(v_dr["ID_PHU_CAP"].ToString());
-                v_us.dcNAM = decimal.Parse(v_dr["NAM"].ToString());
-                v_us.dcTHANG = decimal.Parse(v_dr["THANG"].ToString());
+                v_us.datTU_NGAY = get_ngay_dau_thang(v_dr["TU_NGAY"].ToString());
+                v_us.datDEN_NGAY = get_ngay_cuoi_thang(v_dr["DEN_NGAY"].ToString());
                 v_us.Insert();
             }
+        }
+
+        private DateTime get_ngay_cuoi_thang(string date)
+        {
+            DateTime dateTime = Convert.ToDateTime(date);
+            return new DateTime(dateTime.Year, dateTime.Month, DateTime.DaysInMonth(dateTime.Year,dateTime.Month));
+        }
+
+        private DateTime get_ngay_dau_thang(string date)
+        {
+            DateTime dateTime = Convert.ToDateTime(date);
+            return new DateTime(dateTime.Year, dateTime.Month, 1);
         }
 
         private void Insert_gan_cac_hinh_thuc_tinh_luong()
@@ -768,40 +784,52 @@ namespace BKI_DichVuMatDat
             m_txt_ti_le.Text = "";
         }
 
-        //private void m_btn_them_phu_cap_Click(object sender, EventArgs e)
-        //{
-        //    DataTable dt = new DataTable();
-        //    WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
-        //   // dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue,m_cbo_loai_phu_cap.Text,m_txt_thang.Text,m_txt_nam.Text);        
-        //    m_grc_phu_cap.DataSource = dt;
-           
-        // }
+        //phụ cấp
 
-        //private void m_grv_phu_cap_Click(object sender, EventArgs e)
-        //{
-        //    DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-        //    m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
-        //    m_txt_thang.Text = v_dr["THANG"].ToString();
-        //    m_txt_nam.Text = v_dr["NAM"].ToString();
-        //    tabControl1.TabPages[1].HorizontalScroll.Value = 0;
-        //}
+        private void m_btn_them_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
+            dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, m_dtp_tu_ngay_phu_cap.Value.ToString("MM/yyyy"), m_dtp_den_ngay_phu_cap.Value.ToString("MM/yyyy"));        
+            m_grc_phu_cap.DataSource = dt;
 
-        //private void m_btn_sua_phu_cap_Click(object sender, EventArgs e)
-        //{
-        //    DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-        //    v_dr["ID_PHU_CAP"] = m_cbo_loai_phu_cap.SelectedValue;
-        //    v_dr["TEN_PHU_CAP"] = m_cbo_loai_phu_cap.Text;
-        //    v_dr["THANG"] = m_txt_thang.Text;
-        //    v_dr["NAM"] = m_txt_nam.Text;
-        //}
+        }
 
-        //private void m_btn_xoa_phu_cap_Click(object sender, EventArgs e)
-        //{
-        //    DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-        //    v_dr.Delete();
-        //    m_txt_thang.Text = "";
-        //    m_txt_nam.Text = "";
-        //}
+        private void m_grv_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
+            m_dtp_tu_ngay_phu_cap.Value = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+            if (v_dr["DEN_NGAY"].ToString() != "")
+                m_dtp_den_ngay_phu_cap.Value = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+            else
+            {
+                m_dtp_den_ngay_phu_cap.Checked = false;
+            }
+          
+        }
+
+        private void m_btn_sua_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            v_dr["ID_PHU_CAP"] = m_cbo_loai_phu_cap.SelectedValue;
+            v_dr["TEN_PHU_CAP"] = m_cbo_loai_phu_cap.Text;
+            v_dr["TU_NGAY"] = m_dtp_tu_ngay_phu_cap.Value.ToString("MM/yyyy");
+            if (m_dtp_den_ngay_phu_cap.Checked == true)
+            {
+                v_dr["DEN_NGAY"] = m_dtp_den_ngay_phu_cap.Value.ToString("MM/yyyy");
+            }
+            else
+            {
+                v_dr["DEN_NGAY"] = System.Convert.DBNull;
+            }
+        }
+
+        private void m_btn_xoa_phu_cap_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+            v_dr.Delete();
+        }
 
         private void m_btn_them_luong_ngay_Click(object sender, EventArgs e)
         {

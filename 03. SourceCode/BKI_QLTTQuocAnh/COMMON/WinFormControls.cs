@@ -523,15 +523,6 @@ namespace BKI_DichVuMatDat
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
-        internal void UpdatePhaiDongDoanPhi(decimal m_id_nhan_vien)
-        {
-            DataSet v_ds = new DataSet();
-            v_ds.Tables.Add(new DataTable());
-            CStoredProc v_cstore = new CStoredProc("pr_update_phai_dong_doan_phi");
-            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
-            v_cstore.fillDataSetByCommand(this, v_ds);
-        }
-
         internal void InsertSoLuongPhuThuoc(decimal m_id_nhan_vien, decimal p)
         {
 
@@ -609,6 +600,16 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@THANG_10", decimal.Parse(v_dr["THANG_10"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_11", decimal.Parse(v_dr["THANG_11"].ToString()));
             v_cstore.addDecimalInputParam("@THANG_12", decimal.Parse(v_dr["THANG_12"].ToString()));
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void UpdatePhaiDongDoanPhi(decimal m_id_nhan_vien, string CO_YN)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            CStoredProc v_cstore = new CStoredProc("pr_update_phai_dong_doan_phi");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", m_id_nhan_vien);
+            v_cstore.addNVarcharInputParam("@CO_YN", CO_YN);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
     } 
