@@ -119,6 +119,7 @@ namespace BKI_DichVuMatDat
 
         private void format_beauty()
         {
+            tabControl1.Appearance = TabAppearance.FlatButtons;
             tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount, 40);
             //NGÀY BẮT ĐẦU VÀO LÀM BAN ĐẦU CHO CHECKBOX LÀ UNCHECK
