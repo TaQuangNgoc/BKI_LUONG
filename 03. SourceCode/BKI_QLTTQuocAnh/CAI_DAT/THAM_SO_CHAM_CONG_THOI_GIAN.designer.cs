@@ -37,8 +37,8 @@ namespace BKI_DichVuMatDat
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_ngay_cong = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_ngay_cong = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -185,8 +185,8 @@ namespace BKI_DichVuMatDat
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ngay_cong)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -333,7 +333,7 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.gridControl1);
+            this.groupBox7.Controls.Add(this.m_grc_ngay_cong);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Location = new System.Drawing.Point(0, 0);
             this.groupBox7.Name = "groupBox7";
@@ -341,36 +341,37 @@ namespace BKI_DichVuMatDat
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             // 
-            // gridControl1
+            // m_grc_ngay_cong
             // 
-            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(3, 22);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(514, 438);
-            this.gridControl1.TabIndex = 3;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.m_grc_ngay_cong.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_ngay_cong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_ngay_cong.Location = new System.Drawing.Point(3, 22);
+            this.m_grc_ngay_cong.MainView = this.m_grv_ngay_cong;
+            this.m_grc_ngay_cong.Name = "m_grc_ngay_cong";
+            this.m_grc_ngay_cong.Size = new System.Drawing.Size(514, 438);
+            this.m_grc_ngay_cong.TabIndex = 3;
+            this.m_grc_ngay_cong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_ngay_cong});
             // 
-            // gridView1
+            // m_grv_ngay_cong
             // 
-            this.gridView1.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridView1.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridView1.Appearance.Row.Options.UseFont = true;
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_ngay_cong.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_ngay_cong.Appearance.Row.Options.UseFont = true;
+            this.m_grv_ngay_cong.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.m_grv_ngay_cong.GridControl = this.m_grc_ngay_cong;
+            this.m_grv_ngay_cong.Name = "m_grv_ngay_cong";
+            this.m_grv_ngay_cong.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Mã ngày công";
+            this.gridColumn1.FieldName = "MA_NGAY_CONG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -378,6 +379,7 @@ namespace BKI_DichVuMatDat
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Tên ngày công";
+            this.gridColumn2.FieldName = "TEN_NGAY_CONG";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -385,6 +387,7 @@ namespace BKI_DichVuMatDat
             // gridColumn3
             // 
             this.gridColumn3.Caption = "% LNS";
+            this.gridColumn3.FieldName = "TI_LE_LNS";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -392,6 +395,7 @@ namespace BKI_DichVuMatDat
             // gridColumn4
             // 
             this.gridColumn4.Caption = "%LCD";
+            this.gridColumn4.FieldName = "TI_LE_LCD";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
@@ -1901,8 +1905,8 @@ namespace BKI_DichVuMatDat
             this.groupBox1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ngay_cong)).EndInit();
             this.panel4.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
@@ -1990,8 +1994,8 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl m_grc_ngay_cong;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ngay_cong;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;

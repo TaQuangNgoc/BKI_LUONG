@@ -17,7 +17,17 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
             tabControl1.SizeMode = TabSizeMode.Fixed;
             tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount, 40);
+            load_du_lieu_vao_bang_loai_ngay_cong();
            // tabControl1.Appearance = TabAppearance.FlatButtons;
+        }
+
+        private void load_du_lieu_vao_bang_loai_ngay_cong()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithTableName(v_ds, "DM_LOAI_NGAY_CONG");
+            m_grc_ngay_cong.DataSource = v_ds.Tables[0];
         }
 
         private void text_box_format_numeric(object sender, KeyPressEventArgs e)
