@@ -29,10 +29,11 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.m_grc_phu_cap = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -45,10 +46,10 @@ namespace BKI_DichVuMatDat
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_lcd_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_lns_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_ngay_cong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ma_ngay_cong = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -62,8 +63,8 @@ namespace BKI_DichVuMatDat
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_loai_lam_them_gio = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_lam_them_gio = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -83,8 +84,8 @@ namespace BKI_DichVuMatDat
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_loai_phu_cap = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_phu_cap = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -116,8 +117,8 @@ namespace BKI_DichVuMatDat
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.gridControl4 = new DevExpress.XtraGrid.GridControl();
-            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_bao_hiem = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_bao_hiem = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -137,8 +138,8 @@ namespace BKI_DichVuMatDat
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.gridControl5 = new DevExpress.XtraGrid.GridControl();
-            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grc_thue = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_thue = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -180,7 +181,7 @@ namespace BKI_DichVuMatDat
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.m_grc_phu_cap.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -189,16 +190,16 @@ namespace BKI_DichVuMatDat
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ngay_cong)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd_loai_ngay_cong.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns_loai_ngay_cong.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_ngay_cong.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_ngay_cong.Properties)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_lam_them_gio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_lam_them_gio)).BeginInit();
             this.panel6.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
@@ -208,8 +209,8 @@ namespace BKI_DichVuMatDat
             this.groupBox3.SuspendLayout();
             this.panel9.SuspendLayout();
             this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_phu_cap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_phu_cap)).BeginInit();
             this.panel8.SuspendLayout();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
@@ -221,8 +222,8 @@ namespace BKI_DichVuMatDat
             this.groupBox4.SuspendLayout();
             this.panel11.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_bao_hiem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_bao_hiem)).BeginInit();
             this.panel10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
@@ -232,8 +233,8 @@ namespace BKI_DichVuMatDat
             this.groupBox6.SuspendLayout();
             this.panel13.SuspendLayout();
             this.groupBox17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_thue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_thue)).BeginInit();
             this.panel12.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).BeginInit();
@@ -274,28 +275,28 @@ namespace BKI_DichVuMatDat
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.tabControl1);
+            this.panel3.Controls.Add(this.m_grc_phu_cap);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(961, 525);
             this.panel3.TabIndex = 5;
             // 
-            // tabControl1
+            // m_grc_phu_cap
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(961, 525);
-            this.tabControl1.TabIndex = 0;
+            this.m_grc_phu_cap.Controls.Add(this.tabPage1);
+            this.m_grc_phu_cap.Controls.Add(this.tabPage2);
+            this.m_grc_phu_cap.Controls.Add(this.tabPage3);
+            this.m_grc_phu_cap.Controls.Add(this.tabPage4);
+            this.m_grc_phu_cap.Controls.Add(this.tabPage5);
+            this.m_grc_phu_cap.Controls.Add(this.tabPage6);
+            this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_phu_cap.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grc_phu_cap.Location = new System.Drawing.Point(0, 0);
+            this.m_grc_phu_cap.Name = "m_grc_phu_cap";
+            this.m_grc_phu_cap.SelectedIndex = 0;
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(961, 525);
+            this.m_grc_phu_cap.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -411,10 +412,10 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textEdit4);
-            this.groupBox8.Controls.Add(this.textEdit3);
-            this.groupBox8.Controls.Add(this.textEdit1);
-            this.groupBox8.Controls.Add(this.textEdit2);
+            this.groupBox8.Controls.Add(this.m_txt_lcd_loai_ngay_cong);
+            this.groupBox8.Controls.Add(this.m_txt_lns_loai_ngay_cong);
+            this.groupBox8.Controls.Add(this.m_txt_ten_ngay_cong);
+            this.groupBox8.Controls.Add(this.m_txt_ma_ngay_cong);
             this.groupBox8.Controls.Add(this.simpleButton3);
             this.groupBox8.Controls.Add(this.simpleButton2);
             this.groupBox8.Controls.Add(this.simpleButton1);
@@ -431,45 +432,45 @@ namespace BKI_DichVuMatDat
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             // 
-            // textEdit4
+            // m_txt_lcd_loai_ngay_cong
             // 
-            this.textEdit4.Location = new System.Drawing.Point(165, 178);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit4.Size = new System.Drawing.Size(194, 26);
-            this.textEdit4.TabIndex = 18;
+            this.m_txt_lcd_loai_ngay_cong.Location = new System.Drawing.Point(165, 178);
+            this.m_txt_lcd_loai_ngay_cong.Name = "m_txt_lcd_loai_ngay_cong";
+            this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_lcd_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_lcd_loai_ngay_cong.TabIndex = 18;
             // 
-            // textEdit3
+            // m_txt_lns_loai_ngay_cong
             // 
-            this.textEdit3.Location = new System.Drawing.Point(166, 127);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit3.Size = new System.Drawing.Size(194, 26);
-            this.textEdit3.TabIndex = 17;
+            this.m_txt_lns_loai_ngay_cong.Location = new System.Drawing.Point(166, 127);
+            this.m_txt_lns_loai_ngay_cong.Name = "m_txt_lns_loai_ngay_cong";
+            this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_lns_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_lns_loai_ngay_cong.TabIndex = 17;
             // 
-            // textEdit1
+            // m_txt_ten_ngay_cong
             // 
-            this.textEdit1.Location = new System.Drawing.Point(166, 76);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit1.Size = new System.Drawing.Size(194, 26);
-            this.textEdit1.TabIndex = 16;
+            this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(166, 76);
+            this.m_txt_ten_ngay_cong.Name = "m_txt_ten_ngay_cong";
+            this.m_txt_ten_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_ten_ngay_cong.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ten_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ten_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ten_ngay_cong.TabIndex = 16;
             // 
-            // textEdit2
+            // m_txt_ma_ngay_cong
             // 
-            this.textEdit2.Location = new System.Drawing.Point(166, 25);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit2.Size = new System.Drawing.Size(194, 26);
-            this.textEdit2.TabIndex = 15;
+            this.m_txt_ma_ngay_cong.Location = new System.Drawing.Point(166, 25);
+            this.m_txt_ma_ngay_cong.Name = "m_txt_ma_ngay_cong";
+            this.m_txt_ma_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_ma_ngay_cong.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ma_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ma_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ma_ngay_cong.TabIndex = 15;
             // 
             // simpleButton3
             // 
@@ -521,6 +522,7 @@ namespace BKI_DichVuMatDat
             this.simpleButton1.Size = new System.Drawing.Size(89, 43);
             this.simpleButton1.TabIndex = 12;
             this.simpleButton1.Text = "Thêm";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // label13
             // 
@@ -557,6 +559,7 @@ namespace BKI_DichVuMatDat
             this.label14.Size = new System.Drawing.Size(54, 18);
             this.label14.TabIndex = 9;
             this.label14.Text = "% LCD";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label6
             // 
@@ -610,7 +613,7 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.gridControl2);
+            this.groupBox14.Controls.Add(this.m_grc_loai_lam_them_gio);
             this.groupBox14.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox14.Location = new System.Drawing.Point(0, 0);
             this.groupBox14.Name = "groupBox14";
@@ -618,35 +621,39 @@ namespace BKI_DichVuMatDat
             this.groupBox14.TabIndex = 14;
             this.groupBox14.TabStop = false;
             // 
-            // gridControl2
+            // m_grc_loai_lam_them_gio
             // 
-            this.gridControl2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(3, 22);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(513, 237);
-            this.gridControl2.TabIndex = 8;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode2.RelationName = "Level1";
+            this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode2});
+            this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 22);
+            this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
+            this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
+            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(513, 237);
+            this.m_grc_loai_lam_them_gio.TabIndex = 8;
+            this.m_grc_loai_lam_them_gio.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_lam_them_gio});
             // 
-            // gridView2
+            // m_grv_lam_them_gio
             // 
-            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView2.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView2.Appearance.Row.Options.UseFont = true;
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_lam_them_gio.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_lam_them_gio.Appearance.Row.Options.UseFont = true;
+            this.m_grv_lam_them_gio.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn5,
             this.gridColumn6,
             this.gridColumn7});
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.m_grv_lam_them_gio.GridControl = this.m_grc_loai_lam_them_gio;
+            this.m_grv_lam_them_gio.Name = "m_grv_lam_them_gio";
+            this.m_grv_lam_them_gio.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Mã loại làm thêm";
+            this.gridColumn5.FieldName = "MA_LAM_THEM";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 0;
@@ -654,6 +661,7 @@ namespace BKI_DichVuMatDat
             // gridColumn6
             // 
             this.gridColumn6.Caption = "Tên loại làm thêm";
+            this.gridColumn6.FieldName = "TEN_LOAI_LAM_THEM";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 1;
@@ -661,6 +669,7 @@ namespace BKI_DichVuMatDat
             // gridColumn7
             // 
             this.gridColumn7.Caption = "% LNS";
+            this.gridColumn7.FieldName = "TI_LE";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 2;
@@ -844,7 +853,7 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.gridControl3);
+            this.groupBox15.Controls.Add(this.m_grc_loai_phu_cap);
             this.groupBox15.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox15.Location = new System.Drawing.Point(0, 0);
             this.groupBox15.Name = "groupBox15";
@@ -852,38 +861,39 @@ namespace BKI_DichVuMatDat
             this.groupBox15.TabIndex = 21;
             this.groupBox15.TabStop = false;
             // 
-            // gridControl3
+            // m_grc_loai_phu_cap
             // 
-            this.gridControl3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl3.Location = new System.Drawing.Point(3, 22);
-            this.gridControl3.MainView = this.gridView3;
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(513, 435);
-            this.gridControl3.TabIndex = 19;
-            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView3});
+            this.m_grc_loai_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_loai_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_loai_phu_cap.Location = new System.Drawing.Point(3, 22);
+            this.m_grc_loai_phu_cap.MainView = this.m_grv_phu_cap;
+            this.m_grc_loai_phu_cap.Name = "m_grc_loai_phu_cap";
+            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(513, 435);
+            this.m_grc_loai_phu_cap.TabIndex = 19;
+            this.m_grc_loai_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_phu_cap});
             // 
-            // gridView3
+            // m_grv_phu_cap
             // 
-            this.gridView3.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView3.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView3.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView3.Appearance.Row.Options.UseFont = true;
-            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_phu_cap.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_phu_cap.Appearance.Row.Options.UseFont = true;
+            this.m_grv_phu_cap.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn8,
             this.gridColumn9,
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13});
-            this.gridView3.GridControl = this.gridControl3;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsView.ShowGroupPanel = false;
+            this.m_grv_phu_cap.GridControl = this.m_grc_loai_phu_cap;
+            this.m_grv_phu_cap.Name = "m_grv_phu_cap";
+            this.m_grv_phu_cap.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Tên phụ cấp";
+            this.gridColumn8.FieldName = "TEN_PHU_CAP";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 0;
@@ -891,6 +901,7 @@ namespace BKI_DichVuMatDat
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Đối tượng hưởng";
+            this.gridColumn9.FieldName = "DOI_TUONG_HUONG_PHU_CAP";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 1;
@@ -898,6 +909,7 @@ namespace BKI_DichVuMatDat
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Tỉ lệ";
+            this.gridColumn10.FieldName = "TI_LE";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 2;
@@ -905,6 +917,7 @@ namespace BKI_DichVuMatDat
             // gridColumn11
             // 
             this.gridColumn11.Caption = "Của tiền";
+            this.gridColumn11.FieldName = "TEN";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 3;
@@ -912,6 +925,7 @@ namespace BKI_DichVuMatDat
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Số tiền";
+            this.gridColumn12.FieldName = "SO_TIEN";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 4;
@@ -919,6 +933,7 @@ namespace BKI_DichVuMatDat
             // gridColumn13
             // 
             this.gridColumn13.Caption = "Phụ thuộc số ngày đi làm";
+            this.gridColumn13.FieldName = "PHU_THUOC_SO_NGAY_DI_LAM";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 5;
@@ -1198,7 +1213,7 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.gridControl4);
+            this.groupBox16.Controls.Add(this.m_grc_bao_hiem);
             this.groupBox16.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox16.Location = new System.Drawing.Point(0, 0);
             this.groupBox16.Name = "groupBox16";
@@ -1206,35 +1221,36 @@ namespace BKI_DichVuMatDat
             this.groupBox16.TabIndex = 20;
             this.groupBox16.TabStop = false;
             // 
-            // gridControl4
+            // m_grc_bao_hiem
             // 
-            this.gridControl4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl4.Location = new System.Drawing.Point(3, 22);
-            this.gridControl4.MainView = this.gridView4;
-            this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(513, 242);
-            this.gridControl4.TabIndex = 17;
-            this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView4});
+            this.m_grc_bao_hiem.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_bao_hiem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_bao_hiem.Location = new System.Drawing.Point(3, 22);
+            this.m_grc_bao_hiem.MainView = this.m_grv_bao_hiem;
+            this.m_grc_bao_hiem.Name = "m_grc_bao_hiem";
+            this.m_grc_bao_hiem.Size = new System.Drawing.Size(513, 242);
+            this.m_grc_bao_hiem.TabIndex = 17;
+            this.m_grc_bao_hiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_bao_hiem});
             // 
-            // gridView4
+            // m_grv_bao_hiem
             // 
-            this.gridView4.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView4.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView4.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView4.Appearance.Row.Options.UseFont = true;
-            this.gridView4.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_bao_hiem.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.Row.Options.UseFont = true;
+            this.m_grv_bao_hiem.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn14,
             this.gridColumn15,
             this.gridColumn16});
-            this.gridView4.GridControl = this.gridControl4;
-            this.gridView4.Name = "gridView4";
-            this.gridView4.OptionsView.ShowGroupPanel = false;
+            this.m_grv_bao_hiem.GridControl = this.m_grc_bao_hiem;
+            this.m_grv_bao_hiem.Name = "m_grv_bao_hiem";
+            this.m_grv_bao_hiem.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn14
             // 
             this.gridColumn14.Caption = "Mã loại bảo hiểm";
+            this.gridColumn14.FieldName = "MA_BH";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.Visible = true;
             this.gridColumn14.VisibleIndex = 0;
@@ -1242,6 +1258,7 @@ namespace BKI_DichVuMatDat
             // gridColumn15
             // 
             this.gridColumn15.Caption = "Tên loại bảo hiểm";
+            this.gridColumn15.FieldName = "TEN_BH";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
             this.gridColumn15.VisibleIndex = 1;
@@ -1249,6 +1266,7 @@ namespace BKI_DichVuMatDat
             // gridColumn16
             // 
             this.gridColumn16.Caption = "% LCD";
+            this.gridColumn16.FieldName = "TI_LE";
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.Visible = true;
             this.gridColumn16.VisibleIndex = 2;
@@ -1432,7 +1450,7 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.gridControl5);
+            this.groupBox17.Controls.Add(this.m_grc_thue);
             this.groupBox17.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox17.Location = new System.Drawing.Point(0, 0);
             this.groupBox17.Name = "groupBox17";
@@ -1440,31 +1458,31 @@ namespace BKI_DichVuMatDat
             this.groupBox17.TabIndex = 22;
             this.groupBox17.TabStop = false;
             // 
-            // gridControl5
+            // m_grc_thue
             // 
-            this.gridControl5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl5.Location = new System.Drawing.Point(3, 22);
-            this.gridControl5.MainView = this.gridView5;
-            this.gridControl5.Name = "gridControl5";
-            this.gridControl5.Size = new System.Drawing.Size(513, 301);
-            this.gridControl5.TabIndex = 20;
-            this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView5});
+            this.m_grc_thue.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_thue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_thue.Location = new System.Drawing.Point(3, 22);
+            this.m_grc_thue.MainView = this.m_grv_thue;
+            this.m_grc_thue.Name = "m_grc_thue";
+            this.m_grc_thue.Size = new System.Drawing.Size(513, 301);
+            this.m_grc_thue.TabIndex = 20;
+            this.m_grc_thue.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_thue});
             // 
-            // gridView5
+            // m_grv_thue
             // 
-            this.gridView5.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView5.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView5.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.gridView5.Appearance.Row.Options.UseFont = true;
-            this.gridView5.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_thue.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_thue.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_thue.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_thue.Appearance.Row.Options.UseFont = true;
+            this.m_grv_thue.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn17,
             this.gridColumn18,
             this.gridColumn19});
-            this.gridView5.GridControl = this.gridControl5;
-            this.gridView5.Name = "gridView5";
-            this.gridView5.OptionsView.ShowGroupPanel = false;
+            this.m_grv_thue.GridControl = this.m_grc_thue;
+            this.m_grv_thue.Name = "m_grv_thue";
+            this.m_grv_thue.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn17
             // 
@@ -1900,7 +1918,7 @@ namespace BKI_DichVuMatDat
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.m_grc_phu_cap.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1910,16 +1928,16 @@ namespace BKI_DichVuMatDat
             this.panel4.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd_loai_ngay_cong.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns_loai_ngay_cong.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_ngay_cong.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_ngay_cong.Properties)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_lam_them_gio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_lam_them_gio)).EndInit();
             this.panel6.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -1930,8 +1948,8 @@ namespace BKI_DichVuMatDat
             this.groupBox3.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_phu_cap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_phu_cap)).EndInit();
             this.panel8.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
@@ -1945,8 +1963,8 @@ namespace BKI_DichVuMatDat
             this.groupBox4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_bao_hiem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_bao_hiem)).EndInit();
             this.panel10.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
@@ -1957,8 +1975,8 @@ namespace BKI_DichVuMatDat
             this.groupBox6.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.groupBox17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_thue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_thue)).EndInit();
             this.panel12.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
@@ -1985,7 +2003,7 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl m_grc_phu_cap;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
@@ -2001,8 +2019,8 @@ namespace BKI_DichVuMatDat
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.GridControl m_grc_loai_lam_them_gio;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_lam_them_gio;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
@@ -2024,8 +2042,8 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox2;
-        private DevExpress.XtraGrid.GridControl gridControl3;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.GridControl m_grc_loai_phu_cap;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_phu_cap;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
@@ -2033,8 +2051,8 @@ namespace BKI_DichVuMatDat
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private System.Windows.Forms.GroupBox groupBox4;
-        private DevExpress.XtraGrid.GridControl gridControl4;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
+        private DevExpress.XtraGrid.GridControl m_grc_bao_hiem;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_bao_hiem;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
@@ -2043,8 +2061,8 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox6;
-        private DevExpress.XtraGrid.GridControl gridControl5;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private DevExpress.XtraGrid.GridControl m_grc_thue;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_thue;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn18;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn19;
@@ -2093,10 +2111,10 @@ namespace BKI_DichVuMatDat
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit m_txt_lcd_loai_ngay_cong;
+        private DevExpress.XtraEditors.TextEdit m_txt_lns_loai_ngay_cong;
+        private DevExpress.XtraEditors.TextEdit m_txt_ten_ngay_cong;
+        private DevExpress.XtraEditors.TextEdit m_txt_ma_ngay_cong;
         private DevExpress.XtraEditors.TextEdit textEdit7;
         private DevExpress.XtraEditors.TextEdit textEdit6;
         private DevExpress.XtraEditors.TextEdit textEdit5;

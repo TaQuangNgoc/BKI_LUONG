@@ -15,10 +15,41 @@ namespace BKI_DichVuMatDat
         public THAM_SO_CHAM_CONG_THOI_GIAN()
         {
             InitializeComponent();
-            tabControl1.SizeMode = TabSizeMode.Fixed;
-            tabControl1.ItemSize = new Size(tabControl1.Width / tabControl1.TabCount, 40);
+            m_grc_phu_cap.SizeMode = TabSizeMode.Fixed;
+            m_grc_phu_cap.ItemSize = new Size(m_grc_phu_cap.Width / m_grc_phu_cap.TabCount, 40);
             load_du_lieu_vao_bang_loai_ngay_cong();
+            load_du_lieu_vao_bang_Lam_them_gio();
+            load_du_lieu_vao_bang_phu_cap();
+            load_du_lieu_vao_bang_bao_hiem();
+
            // tabControl1.Appearance = TabAppearance.FlatButtons;
+        }
+
+        private void load_du_lieu_vao_bang_bao_hiem()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithTableName(v_ds, "DM_BAO_HIEM");
+            m_grc_bao_hiem.DataSource = v_ds.Tables[0];
+        }
+
+        private void load_du_lieu_vao_bang_phu_cap()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithTableName(v_ds, "V_DM_PHU_CAP");
+           m_grc_loai_phu_cap.DataSource = v_ds.Tables[0];
+        }
+
+        private void load_du_lieu_vao_bang_Lam_them_gio()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithTableName(v_ds, "DM_TI_LE_LAM_THEM");
+            m_grc_loai_lam_them_gio.DataSource = v_ds.Tables[0];
         }
 
         private void load_du_lieu_vao_bang_loai_ngay_cong()
@@ -61,6 +92,17 @@ namespace BKI_DichVuMatDat
                 MessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            
 
         }
 
