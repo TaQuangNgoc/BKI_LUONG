@@ -164,7 +164,9 @@
             this.Controls.Add(this.m_txt_ma_san_pham);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DANH_MUC_SAN_PHAM_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH_MUC_SAN_PHAM_DETAIL";
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_san_pham.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_san_pham.Properties)).EndInit();

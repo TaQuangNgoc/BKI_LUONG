@@ -269,7 +269,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1043, 596);
+            this.tabPage1.Size = new System.Drawing.Size(1043, 378);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "THÔNG TIN CHUNG";
             // 
@@ -282,7 +282,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1037, 590);
+            this.groupBox1.Size = new System.Drawing.Size(1037, 372);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ĐIỀN ĐẦY ĐỦ THÔNG TIN NHÂN VIÊN";
@@ -294,7 +294,7 @@
             this.m_grb_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_grb_phu_cap.Location = new System.Drawing.Point(3, 343);
             this.m_grb_phu_cap.Name = "m_grb_phu_cap";
-            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 244);
+            this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 26);
             this.m_grb_phu_cap.TabIndex = 22;
             this.m_grb_phu_cap.TabStop = false;
             this.m_grb_phu_cap.Text = "CÁC LOẠI PHỤ CẤP ĐƯỢC HƯỞNG";
@@ -309,7 +309,7 @@
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 22);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(457, 219);
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(457, 1);
             this.m_grc_phu_cap.TabIndex = 17;
             this.m_grc_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap});
@@ -375,7 +375,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 22);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(568, 219);
+            this.panel8.Size = new System.Drawing.Size(568, 1);
             this.panel8.TabIndex = 16;
             // 
             // m_dtp_den_ngay_phu_cap
@@ -1271,7 +1271,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1043, 596);
+            this.tabPage3.Size = new System.Drawing.Size(1043, 378);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CÁC LOẠI LƯƠNG KHÁC";
             // 
@@ -1282,7 +1282,7 @@
             this.groupBox7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(3, 3);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1037, 590);
+            this.groupBox7.Size = new System.Drawing.Size(1037, 372);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             // 
@@ -1295,7 +1295,7 @@
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox10.Location = new System.Drawing.Point(3, 22);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1031, 565);
+            this.groupBox10.Size = new System.Drawing.Size(1031, 347);
             this.groupBox10.TabIndex = 11;
             this.groupBox10.TabStop = false;
             // 
@@ -1332,6 +1332,7 @@
             this.m_grv_luong_ngay.GridControl = this.m_grc_luong_ngay;
             this.m_grv_luong_ngay.Name = "m_grv_luong_ngay";
             this.m_grv_luong_ngay.OptionsBehavior.Editable = false;
+            this.m_grv_luong_ngay.OptionsView.ShowGroupPanel = false;
             this.m_grv_luong_ngay.Click += new System.EventHandler(this.m_grv_luong_ngay_Click);
             // 
             // gridColumn12

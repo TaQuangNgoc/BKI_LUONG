@@ -45,5 +45,10 @@ namespace BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien
             m_open_form_thong_tin = this.m_open_form_thong_tin;
             m_id_nhan_vien = this.m_id_nhan_vien;
         }
+
+        private void m_btn_xoa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
