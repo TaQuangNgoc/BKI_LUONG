@@ -434,6 +434,18 @@
     <Compile Include="FORM_MENU.designer.cs">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM.Designer.cs">
+      <DependentUpon>DANH_MUC_SAN_PHAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.Designer.cs">
+      <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -493,6 +505,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_MENU.resx">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM.resx">
+      <DependentUpon>DANH_MUC_SAN_PHAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.resx">
+      <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.resx">
       <DependentUpon>SEARCH_NHAN_VIEN.cs</DependentUpon>

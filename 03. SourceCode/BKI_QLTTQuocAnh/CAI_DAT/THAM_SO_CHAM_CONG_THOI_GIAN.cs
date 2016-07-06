@@ -15,8 +15,8 @@ namespace BKI_DichVuMatDat
         public THAM_SO_CHAM_CONG_THOI_GIAN()
         {
             InitializeComponent();
-            m_grc_phu_cap.SizeMode = TabSizeMode.Fixed;
-            m_grc_phu_cap.ItemSize = new Size(m_grc_phu_cap.Width / m_grc_phu_cap.TabCount, 40);
+            tab_Control1.SizeMode = TabSizeMode.Fixed;
+            tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
             load_du_lieu_vao_bang_loai_ngay_cong();
             load_du_lieu_vao_bang_Lam_them_gio();
             load_du_lieu_vao_bang_phu_cap();

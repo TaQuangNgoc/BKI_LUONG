@@ -51,6 +51,7 @@
     </Compile>
     <Compile Include="US_CM_DM_TU_DIEN.cs" />
     <Compile Include="US_DM_NHAN_VIEN.cs" />
+    <Compile Include="US_DM_SAN_PHAM.cs" />
     <Compile Include="US_GD_LOAI_NV_NGAY_LV_TIEU_CHUAN.cs" />
     <Compile Include="US_GD_LUONG.cs" />
     <Compile Include="US_GD_LUONG_MOT_NGAY.cs" />

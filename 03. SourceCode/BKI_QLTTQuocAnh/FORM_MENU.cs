@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BKI_DichVuMatDat.NghiepVu.ChamCongSanPham;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
 
@@ -42,7 +43,6 @@ namespace BKI_DichVuMatDat
 
         //NODE CON CỦA THEO SẢN PHẨM
         TreeNode DANH_MUC_SAN_PHAM = new TreeNode("Danh mục sản phẩm");
-        TreeNode DON_GIA_SAN_PHAM = new TreeNode("Đơn giá sản phẩm");
         TreeNode CHAM_CONG_SAN_PHAM = new TreeNode("Chấm công theo sản phẩm");
 
 
@@ -94,7 +94,6 @@ namespace BKI_DichVuMatDat
 
             //NODE CON CỦA THEO SẢN PHẨM
             treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DANH_MUC_SAN_PHAM);
-            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DON_GIA_SAN_PHAM);
             treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(CHAM_CONG_SAN_PHAM);
 
             treeView1.ImageList = m_img_list;
@@ -189,6 +188,15 @@ namespace BKI_DichVuMatDat
                     panel2.Controls.Add(v_form);
                     ShowForUpdateForm(v_form, m_id_nhan_vien);
                 }
+            }
+
+
+            if (info.Node == DANH_MUC_SAN_PHAM)
+            {
+                BKI_DichVuMatDat.NghiepVu.ChamCongSanPham.DANH_MUC_SAN_PHAM v_f = new DANH_MUC_SAN_PHAM();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
             }
         }
 

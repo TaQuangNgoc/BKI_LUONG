@@ -29,11 +29,11 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.m_grc_phu_cap = new System.Windows.Forms.TabControl();
+            this.tab_Control1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -181,7 +181,7 @@ namespace BKI_DichVuMatDat
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.m_grc_phu_cap.SuspendLayout();
+            this.tab_Control1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -275,28 +275,28 @@ namespace BKI_DichVuMatDat
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.m_grc_phu_cap);
+            this.panel3.Controls.Add(this.tab_Control1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(961, 525);
             this.panel3.TabIndex = 5;
             // 
-            // m_grc_phu_cap
+            // tab_Control1
             // 
-            this.m_grc_phu_cap.Controls.Add(this.tabPage1);
-            this.m_grc_phu_cap.Controls.Add(this.tabPage2);
-            this.m_grc_phu_cap.Controls.Add(this.tabPage3);
-            this.m_grc_phu_cap.Controls.Add(this.tabPage4);
-            this.m_grc_phu_cap.Controls.Add(this.tabPage5);
-            this.m_grc_phu_cap.Controls.Add(this.tabPage6);
-            this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_phu_cap.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_grc_phu_cap.Location = new System.Drawing.Point(0, 0);
-            this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.SelectedIndex = 0;
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(961, 525);
-            this.m_grc_phu_cap.TabIndex = 0;
+            this.tab_Control1.Controls.Add(this.tabPage1);
+            this.tab_Control1.Controls.Add(this.tabPage2);
+            this.tab_Control1.Controls.Add(this.tabPage3);
+            this.tab_Control1.Controls.Add(this.tabPage4);
+            this.tab_Control1.Controls.Add(this.tabPage5);
+            this.tab_Control1.Controls.Add(this.tabPage6);
+            this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_Control1.Location = new System.Drawing.Point(0, 0);
+            this.tab_Control1.Name = "tab_Control1";
+            this.tab_Control1.SelectedIndex = 0;
+            this.tab_Control1.Size = new System.Drawing.Size(961, 525);
+            this.tab_Control1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -625,9 +625,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 22);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -1918,7 +1918,7 @@ namespace BKI_DichVuMatDat
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.m_grc_phu_cap.ResumeLayout(false);
+            this.tab_Control1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -2003,7 +2003,7 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl m_grc_phu_cap;
+        private System.Windows.Forms.TabControl tab_Control1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
