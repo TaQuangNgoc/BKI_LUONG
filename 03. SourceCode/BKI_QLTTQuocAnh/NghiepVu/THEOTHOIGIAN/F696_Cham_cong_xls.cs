@@ -120,7 +120,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_ds_nhan_vien = new DS_DM_NHAN_VIEN();
-            v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=1 AND CO_YN='Y'");
+            v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=1 AND CO_YN='Y')");
         }
 
         private void LayDuLieuLoaiNgayCong()
@@ -196,14 +196,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private bool checkBangChamCong()
         {
-            if (m_grv.Columns[m_grv.Columns.Count - 1].GetCaption().ToString().ToUpper() != "HSK")
-            {
-                XtraMessageBox.Show("Bạn chưa nhập hệ số chất lượng. \nVui lòng kiểm tra lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-            else if (check_he_so_chat_luong_sai())
-                return false;
-            else if (check_ma_nv_duplicate())
+           if (check_ma_nv_duplicate())
                 return false;
             else if (check_ma_nv_trong())
                 return false;
@@ -249,22 +242,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             return false;
         }
 
-        private bool check_he_so_chat_luong_sai()
-        {
-            for (int i = 0; i < m_grv.RowCount; i++)
-            {
-                var v_dr = m_grv.GetDataRow(i);
-                decimal v_dc_he_so_k;
-                if (v_dr[v_dr.Table.Columns.Count - 1].ToString().Trim() != "" && !decimal.TryParse(v_dr[v_dr.Table.Columns.Count - 1].ToString().Trim(), out v_dc_he_so_k))
-                {
-                    string v_str = "Vui lòng kiểm tra lại hệ số chất lượng của nhân viên '" + v_dr[0].ToString() + "'";
-                    XtraMessageBox.Show(v_str, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private bool check_ngay_cong_ko_ton_tai()
         {
             for (int i = 0; i < m_grv.RowCount; i++)
@@ -274,22 +251,14 @@ namespace BKI_DichVuMatDat.NghiepVu
                 {
                     if (v_dr[j].ToString().Trim() != "")
                     {
-                        if (v_dr[j].ToString().Trim().Length >= 3)
-                        {
-                            DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().Substring(2).ToUpper() + "'");
+                       
+                            DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
                             if (v_dr_cham_cong.Count() == 0)
                             {
                                 string v_str_error = "Không tồn tại mã ngày công '" + v_dr[j].ToString() + "'\nVui lòng kiểm tra lại!";
                                 XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return true;
                             }
-                        }
-                        else
-                        {
-                            string v_str_error_1 = "Không tồn tại mã ngày công '" + v_dr[j].ToString() + "'\nVui lòng kiểm tra lại!";
-                            XtraMessageBox.Show(v_str_error_1, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return true;
-                        }
                     }
                 }
             }
@@ -318,13 +287,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Luu du lieu vao db
 
         private void m_bgwk_DoWork(object sender, DoWorkEventArgs e)
-        {
+        { 
             BackgroundWorker worker = sender as BackgroundWorker;
             m_us_gd_cham_cong.BeginTransaction();
             for (int i = 0; i < m_grv.RowCount; i++)
             {
                 luuChamCong(m_grv.GetDataRow(i));
-                worker.ReportProgress((i + 1) * 100 / m_grv.RowCount);
+                 worker.ReportProgress((i + 1) * 100 / m_grv.RowCount);
             }
             m_us_gd_cham_cong.CommitTransaction();
         }
@@ -373,13 +342,13 @@ namespace BKI_DichVuMatDat.NghiepVu
                     //v_us.datNGAY_CHAM_CONG = new DateTime(int.Parse(m_txt_nam.Text), v_thang_cham_cong, v_ngay_cham_cong);
                     int nam = Convert.ToInt16(m_dat_chon_thang.DateTime.Year);
                     v_us.strDA_XOA = "N";
-                    v_us.strNGUOI_LAP = CAppContext_201.getCurrentUserName();
+                    v_us.strNGUOI_LAP = "";
                     v_us.datNGAY_LAP = DateTime.Now;
                     v_us.datNGAY_CHAM_CONG = new DateTime(nam, v_thang_cham_cong, v_ngay_cham_cong);
                     if (ip_dataRow[i].ToString().Trim() == "")
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
                     else
-                        v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString().Substring(2));
+                        v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
                     v_us.UseTransOfUSObject(m_us_gd_cham_cong);
                     v_us.Insert();
                 }
@@ -412,29 +381,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         }
 
 
-        void m_txt_nam_EditValueChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                set_trang_thai_cham_cong();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
-        void m_txt_thang_EditValueChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                set_trang_thai_cham_cong();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
+       
 
         private void F696_Cham_cong_xls_Load(object sender, EventArgs e)
         {
@@ -521,6 +468,11 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
         }
         #endregion
+
+        private void m_dat_chon_thang_EditValueChanged(object sender, EventArgs e)
+        {
+            set_trang_thai_cham_cong();
+        }
 
        
     }

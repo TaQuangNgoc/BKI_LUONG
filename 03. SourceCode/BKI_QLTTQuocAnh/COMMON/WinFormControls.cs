@@ -221,6 +221,12 @@ namespace BKI_DichVuMatDat
                 ExcelAdapter.Fill(dt);
             }
             con.Close();
+            for (int i = dt.Rows.Count - 1; i >= 0; i--)
+            {
+                var v_dr = dt.Rows[i];
+                if (v_dr[0].ToString() == "")
+                    dt.Rows.Remove(v_dr);
+            }
             format_data_header(dt);
             ip_grc.DataSource = dt;
         }
