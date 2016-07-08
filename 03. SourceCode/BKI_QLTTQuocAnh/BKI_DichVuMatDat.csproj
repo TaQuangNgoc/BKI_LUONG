@@ -446,6 +446,12 @@
     <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.Designer.cs">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.Designer.cs">
+      <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -511,6 +517,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.resx">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.resx">
+      <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.resx">
       <DependentUpon>SEARCH_NHAN_VIEN.cs</DependentUpon>
@@ -1578,7 +1587,6 @@
     <Folder Include="BaoCao\Luong\" />
     <Folder Include="BaoCao\TongHop\" />
     <Folder Include="FormatControl\" />
-    <Folder Include="NghiepVu\ChamCong\" />
     <Folder Include="NghiepVu\Luong\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -34,8 +34,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         }
         private void set_initial_form_load()
         {
-            //m_txt_thang.Text = DateTime.Now.Month.ToString();
-            //m_txt_nam.Text = DateTime.Now.Year.ToString();
             m_dat_chon_thang.EditValue = DateTime.Now;
             set_trang_thai_cham_cong();
             set_define_events();
@@ -73,9 +71,6 @@ namespace BKI_DichVuMatDat.NghiepVu
                     v_c.ColumnName = i.ToString("dd/MM");
                     v_ds.Tables[0].Columns.Add(v_c);
                 }
-                var v_c_hsk = new DataColumn();
-                v_c_hsk.ColumnName = "HSK";
-                v_ds.Tables[0].Columns.Add(v_c_hsk);
                 m_grc.DataSource = v_ds.Tables[0];
                 format_gridview();
                 SaveXLSX(ip_file_name, targetPath);
@@ -100,7 +95,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             m_grv.Columns.Clear();
             splashScreenManager1.ShowWaitForm();
             WinFormControls.load_xls_to_gridview(ip_path, m_grc);
-            CHRMCommon.make_stt_indicator(m_grv);
+            WinFormControls.make_stt_indicator(m_grv);
             format_gridview();
             splashScreenManager1.CloseWaitForm();
         }
@@ -122,10 +117,10 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Lay du lieu tu db
         private void LayDuLieuNhanVien()
         {
-            US_DM_NHAN_VIEN v_us_nv = new US_DM_NHAN_VIEN();
-            m_ds_nhan_vien.EnforceConstraints = false;
+
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_ds_nhan_vien = new DS_DM_NHAN_VIEN();
-            v_us_nv.FillDataset(m_ds_nhan_vien);
+            v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=1 AND CO_YN='Y'");
         }
 
         private void LayDuLieuLoaiNgayCong()
@@ -156,14 +151,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         #endregion
 
         #region Kiem tra du lieu tren grid
-        private bool check_bang_luong_da_chot(string ip_thang, string ip_nam)
-        {
-            US_RPT_CHOT_BANG_LUONG v_us = new US_RPT_CHOT_BANG_LUONG();
-            if (v_us.IsLockBangLuong(decimal.Parse(ip_thang), decimal.Parse(ip_nam)))
-                return true;
-            else return false;
-        }
-
         private bool check_cham_cong_hop_le()
         {
             LayDuLieuLoaiNgayCong();
@@ -309,20 +296,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             return false;
         }
 
-        //private void get_lst_ngay_cong_ko_ton_tai(string ip_str_ngay_cong)
-        //{
-        //    if (ip_str_ngay_cong.Trim() != "" && !m_list_ngay_cong_ko_ton_tai.Contains(ip_str_ngay_cong))
-        //    {
-        //        if (ip_str_ngay_cong.Trim().Length >=3)
-        //        {
-        //            DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + ip_str_ngay_cong.Substring(2).ToUpper() + "'");
-        //            if (v_dr_cham_cong.Count() != 0)
-        //                return;
-        //        }
-        //        m_list_ngay_cong_ko_ton_tai.Add(ip_str_ngay_cong);
-        //    } 
-        //}
-
         private bool check_ma_nv_ko_ton_tai()
         {
             for (int i = 0; i < m_grv.RowCount; i++)
@@ -376,7 +349,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             xoa_du_lieu_cham_cong_cu(get_nhan_vien_by_ma_nv(ip_dataRow[0].ToString()));
             insert_gd_cham_cong(ip_dataRow);
-            insert_gd_he_so_chat_luong(ip_dataRow);
+          
         }
 
         private void xoa_du_lieu_cham_cong_cu(decimal ip_dc_id_nv)
@@ -417,31 +390,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
         }
 
-        private void insert_gd_he_so_chat_luong(DataRow ip_dataRow)
-        {
-            try
-            {
-                US_GD_HE_SO_CHAT_LUONG v_us_hsk = new US_GD_HE_SO_CHAT_LUONG();
-                if (ip_dataRow[ip_dataRow.Table.Columns.Count - 1] != DBNull.Value)
-                    v_us_hsk.dcHE_SO_K = Convert.ToDecimal(ip_dataRow[ip_dataRow.Table.Columns.Count - 1]);
-                else
-                    v_us_hsk.dcHE_SO_K = 0;
-                v_us_hsk.dcID_NHAN_VIEN = get_nhan_vien_by_ma_nv(ip_dataRow[0].ToString());
-                //v_us_hsk.dcTHANG = CIPConvert.ToDecimal(m_txt_thang.Text);
-                //v_us_hsk.dcNAM = CIPConvert.ToDecimal(m_txt_nam.Text);
-                v_us_hsk.dcTHANG = CIPConvert.ToDecimal(m_dat_chon_thang.DateTime.Month.ToString());
-                v_us_hsk.dcNAM = CIPConvert.ToDecimal(m_dat_chon_thang.DateTime.Year.ToString());
-                v_us_hsk.datNGAY_LAP = DateTime.Now.Date;
-                v_us_hsk.strDA_XOA = "N";
-                v_us_hsk.strNGUOI_LAP = CAppContext_201.getCurrentUserName();
-                v_us_hsk.UseTransOfUSObject(m_us_gd_cham_cong);
-                v_us_hsk.Insert();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
 
         private void set_trang_thai_cham_cong()
         {
@@ -460,32 +408,9 @@ namespace BKI_DichVuMatDat.NghiepVu
             this.Load += F696_Cham_cong_xls_Load;
             //m_txt_thang.EditValueChanged += m_txt_thang_EditValueChanged;
             //m_txt_nam.EditValueChanged += m_txt_nam_EditValueChanged;
-            m_cmd_tong_hop_cham_cong.Click += m_cmd_tong_hop_cham_cong_Click;
+           
         }
 
-        void m_cmd_tong_hop_cham_cong_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //if (int.Parse(m_txt_thang.Text) <= 0 || int.Parse(m_txt_thang.Text) > 12 || int.Parse(m_txt_nam.Text) < 0)
-                //{
-                //    XtraMessageBox.Show("Vui lòng nhập tháng và năm chấm công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    return;
-                //}
-                if (m_dat_chon_thang.EditValue == null)
-                {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng chấm công");
-                    return;
-                }
-                //BaoCao.f402_tong_hop_cham_cong v_f = new BaoCao.f402_tong_hop_cham_cong(m_txt_thang.Text, m_txt_nam.Text);
-                BaoCao.f402_tong_hop_cham_cong v_f = new BaoCao.f402_tong_hop_cham_cong(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString());
-                v_f.Show();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
 
         void m_txt_nam_EditValueChanged(object sender, EventArgs e)
         {
@@ -536,10 +461,10 @@ namespace BKI_DichVuMatDat.NghiepVu
                 {
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
                 }
-                else if(check_bang_luong_da_chot(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString()))
-                {
-                    CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
-                }
+                //else if(check_bang_luong_da_chot(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString()))
+                //{
+                //    CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
+                //}
                 else if (m_bgwk.IsBusy)
                     m_bgwk.CancelAsync();
                 else if (check_cham_cong_hop_le())

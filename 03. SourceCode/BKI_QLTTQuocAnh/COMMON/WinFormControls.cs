@@ -71,7 +71,17 @@ namespace BKI_DichVuMatDat
             }
         }
 
+        public static void make_stt_indicator(DevExpress.XtraGrid.Views.Grid.GridView ip_grv)
+        {
+            ip_grv.IndicatorWidth = 50;
+            ip_grv.CustomDrawRowIndicator += ip_grv_CustomDrawRowIndicator;
+        }
 
+        private static void ip_grv_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
       
 
         public static void load_data_to_auto_complete_source(string ip_str_table_name, string ip_str_column_name, TextBox ip_txt)

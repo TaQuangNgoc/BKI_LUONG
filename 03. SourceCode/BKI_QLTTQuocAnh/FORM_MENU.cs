@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BKI_DichVuMatDat.NghiepVu;
 using BKI_DichVuMatDat.NghiepVu.ChamCongSanPham;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
@@ -189,6 +190,16 @@ namespace BKI_DichVuMatDat
                     ShowForUpdateForm(v_form, m_id_nhan_vien);
                 }
             }
+
+
+            if (info.Node == THEO_THOI_GIAN)
+            {
+                F696_Cham_cong_xls v_f = new F696_Cham_cong_xls();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
 
 
             if (info.Node == DANH_MUC_SAN_PHAM)

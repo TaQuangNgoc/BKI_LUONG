@@ -56,11 +56,11 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
                 var v_count = m_grv_san_pham.SelectedRowsCount;
                 if (v_count == 0)
                 {
-                    MessageBox.Show("Bạn phải chọn ngạch mới có thể cập nhật!");
+                    MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
                 }
                 else if (v_count > 1)
                 {
-                    MessageBox.Show("Vui lòng chỉ lựa chọn 1 ngạch để cập nhật!");
+                    MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
                 }
                 else
                 {
@@ -100,5 +100,7 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+     
     }
 }
