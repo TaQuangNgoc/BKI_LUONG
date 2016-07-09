@@ -5,35 +5,41 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using IP.Core.IPCommon;
 using BKI_DichVuMatDat.US;
 using BKI_DichVuMatDat.DS;
+using DevExpress.XtraVerticalGrid.Rows;
 using BKI_DichVuMatDat.DS.CDBNames;
-using IP.Core.IPCommon;
-using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
-using System.IO;
-using Excel = Microsoft.Office.Interop.Excel;
-using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Base;
-using DevExpress.XtraGrid.Columns;
-using IP.Core.IPSystemAdmin;
-using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
+using DevExpress.XtraEditors.Controls;
 
-namespace BKI_DichVuMatDat.NghiepVu
+namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 {
-    public partial class F696_Cham_cong_xls : Form
+    public partial class LAM_THEM_THEO_THOI_GIAN : Form
     {
         #region Public Interface
-        public F696_Cham_cong_xls()
+        public LAM_THEM_THEO_THOI_GIAN()
         {
             InitializeComponent();
-            //FormatControl.SetVisibleSimpleButton(this);
             this.m_grv.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(WinFormControls.m_grv_PopupMenuShowing);
             this.m_grv.OptionsPrint.AutoWidth = false;
+            fill_data_to_sle();
             set_initial_form_load();
         }
-        private void set_initial_form_load()
+
+        private void fill_data_to_sle()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            DataTable v_dt = new DataTable();
+            v_ds.Tables.Add(v_dt);
+            v_us.FillDatasetWithTableName(v_ds, "DM_TI_LE_LAM_THEM");
+            m_sle_loai_lam_them.Properties.DataSource = v_ds.Tables[0];
+            m_sle_loai_lam_them.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
+        }
+         private void set_initial_form_load()
         {
             m_dat_chon_thang.EditValue = DateTime.Now;
             set_trang_thai_cham_cong();
@@ -128,7 +134,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             WinFormControls.make_stt_indicator(m_grv);
             for (int i = 0; i < 3; i++)
             {
-                m_grv.Columns[i].Fixed = FixedStyle.Left;
+                m_grv.Columns[i].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             }      
             format_gridview();
             splashScreenManager1.CloseWaitForm();
@@ -338,7 +344,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
             else return "";
         }
-
         #endregion
 
         #region Luu du lieu vao db
@@ -432,8 +437,13 @@ namespace BKI_DichVuMatDat.NghiepVu
             m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
             m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
             this.Load += F696_Cham_cong_xls_Load;
+            //m_txt_thang.EditValueChanged += m_txt_thang_EditValueChanged;
+            //m_txt_nam.EditValueChanged += m_txt_nam_EditValueChanged;
            
         }
+
+
+       
 
         private void F696_Cham_cong_xls_Load(object sender, EventArgs e)
         {
@@ -511,6 +521,9 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             try
             {
+                //if (int.Parse(m_txt_thang.Text) <= 0 || int.Parse(m_txt_thang.Text) > 12 || int.Parse(m_txt_nam.Text) < 0)
+                //    XtraMessageBox.Show("Vui lòng nhập tháng và năm chấm công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //else tao_file_mau("Chấm công tháng " + m_txt_thang.Text + "-" + m_txt_nam.Text + ".xls");
                 if (m_dat_chon_thang.EditValue == null)
                 {
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm!");

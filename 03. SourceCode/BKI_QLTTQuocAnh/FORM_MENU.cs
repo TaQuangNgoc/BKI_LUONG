@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.NghiepVu;
 using BKI_DichVuMatDat.NghiepVu.ChamCongSanPham;
+using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
 
@@ -199,6 +200,15 @@ namespace BKI_DichVuMatDat
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);
             }
+
+            if (info.Node == LAM_THEM_THEO_THOI_GIAN)
+            {
+                BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN.LAM_THEM_THEO_THOI_GIAN v_f = new LAM_THEM_THEO_THOI_GIAN();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
 
 
 
