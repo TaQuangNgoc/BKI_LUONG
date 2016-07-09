@@ -67,9 +67,9 @@
             this.panel2.Controls.Add(this.m_pn);
             this.panel2.Controls.Add(this.m_grc);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 131);
+            this.panel2.Location = new System.Drawing.Point(0, 123);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(878, 252);
+            this.panel2.Size = new System.Drawing.Size(878, 260);
             this.panel2.TabIndex = 1;
             // 
             // m_pn
@@ -114,7 +114,7 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(878, 252);
+            this.m_grc.Size = new System.Drawing.Size(878, 260);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -146,7 +146,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 53);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(878, 78);
+            this.panel7.Size = new System.Drawing.Size(878, 70);
             this.panel7.TabIndex = 3;
             // 
             // m_cmd_mo_file_mau
@@ -159,11 +159,10 @@
             this.m_cmd_mo_file_mau.Appearance.Options.UseFont = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
             this.m_cmd_mo_file_mau.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_cmd_mo_file_mau.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_mo_file_mau.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(531, 0);
+            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(531, 6);
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
-            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(236, 78);
+            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(236, 50);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
             // 
@@ -171,17 +170,19 @@
             // 
             this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.Maroon;
             this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_chon_du_lieu.Appearance.BorderColor = System.Drawing.Color.White;
             this.m_cmd_chon_du_lieu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBackColor = true;
+            this.m_cmd_chon_du_lieu.Appearance.Options.UseBorderColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseFont = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseForeColor = true;
             this.m_cmd_chon_du_lieu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_cmd_chon_du_lieu.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_chon_du_lieu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(280, 0);
+            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(280, 6);
             this.m_cmd_chon_du_lieu.Name = "m_cmd_chon_du_lieu";
-            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(251, 78);
+            this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
+            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(251, 50);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
             this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU CHẤM CÔNG";
             // 
@@ -195,7 +196,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(280, 78);
+            this.panelControl1.Size = new System.Drawing.Size(280, 70);
             this.panelControl1.TabIndex = 1;
             // 
             // m_dat_chon_thang
@@ -229,7 +230,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(28, 85);
+            this.labelControl2.Location = new System.Drawing.Point(28, 20);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(0, 13);
             this.labelControl2.TabIndex = 19;
@@ -238,7 +239,7 @@
             // 
             this.m_lbl_trang_thai_cham_cong.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl_trang_thai_cham_cong.Appearance.ForeColor = System.Drawing.Color.ForestGreen;
-            this.m_lbl_trang_thai_cham_cong.Location = new System.Drawing.Point(27, 64);
+            this.m_lbl_trang_thai_cham_cong.Location = new System.Drawing.Point(27, 50);
             this.m_lbl_trang_thai_cham_cong.Name = "m_lbl_trang_thai_cham_cong";
             this.m_lbl_trang_thai_cham_cong.Size = new System.Drawing.Size(0, 14);
             this.m_lbl_trang_thai_cham_cong.TabIndex = 3;

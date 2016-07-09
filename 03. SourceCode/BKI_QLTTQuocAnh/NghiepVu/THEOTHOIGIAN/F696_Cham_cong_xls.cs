@@ -18,6 +18,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Columns;
 using IP.Core.IPSystemAdmin;
+using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
@@ -98,10 +99,32 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Load excel to grid
         private void load_data_2_grid(string ip_path)
         {
-            m_grv.Columns.Clear();
+            bool lua_chon_1 = true;
+            LUA_CHON v_f = new LUA_CHON();
+            v_f.showForOption(ref lua_chon_1);
             splashScreenManager1.ShowWaitForm();
+            m_grv.Columns.Clear();
             WinFormControls.load_xls_to_gridview_co_ghi_chu(ip_path, m_grc);
+            if (lua_chon_1 == false)
+            {
+                DataTable dt = new DataTable();
+                WinFormControls.Convert_gridcontrol_to_datatable(m_grv, dt);
+                LayDuLieuNhanVien();
+                for (int i = 0; i < m_ds_nhan_vien.Tables[0].Rows.Count; i++)
+                {
+                    String ma_nv = m_ds_nhan_vien.Tables[0].Rows[i]["MA_NV"].ToString();
+                    bool contains = dt.AsEnumerable().Any(row => ma_nv == row.Field<String>("MA_NV"));
+                    if (!contains)
+                    {
+                        dt.Rows.Add(m_ds_nhan_vien.Tables[0].Rows[i]["MA_NV"].ToString(), m_ds_nhan_vien.Tables[0].Rows[i]["HO_DEM"].ToString(), m_ds_nhan_vien.Tables[0].Rows[i]["TEN"].ToString());
+                    }
+                    
+                }
+                m_grc.DataSource = dt;
+
+            }
             m_grv.Columns["Ghi chú"].Visible = false;
+           
             WinFormControls.make_stt_indicator(m_grv);
             for (int i = 0; i < 3; i++)
             {
@@ -127,8 +150,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         #region Lay du lieu tu db
         private void LayDuLieuNhanVien()
-        {
-
+        {  
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_ds_nhan_vien = new DS_DM_NHAN_VIEN();
             v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=1 AND CO_YN='Y')");
@@ -243,13 +265,26 @@ namespace BKI_DichVuMatDat.NghiepVu
             {
                 if (v_dr[j].ToString().Trim() != "")
                 {
-
-                    DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
-                    if (v_dr_cham_cong.Count() == 0)
+                    bool trung_loi = false;               
+                    for (int k = 3; k < j; k++)
+                        {
+                            if (v_dr[k].ToString().Trim() == v_dr[j].ToString().Trim())
+                                trung_loi = true;
+                        }
+                    if (j == 3)
                     {
-                        trang_thai = false;
-                        v_dr["Ghi chú"] +=v_dr[j].ToString()+": "+   get_text_by_enum(Loi.MaNgayCongKhongTonTai);
-                    }
+                        trung_loi = false;
+                    }      
+                     if (trung_loi == false)
+                        {
+                            DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
+                            if (v_dr_cham_cong.Count() == 0)
+                            {
+                                trang_thai = false;
+                                v_dr["Ghi chú"] += v_dr[j].ToString() + ": " + get_text_by_enum(Loi.MaNgayCongKhongTonTai);
+                            }
+                        }
+                    
                 }
             }
         }
@@ -569,7 +604,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                 //else tao_file_mau("Chấm công tháng " + m_txt_thang.Text + "-" + m_txt_nam.Text + ".xls");
                 if (m_dat_chon_thang.EditValue == null)
                 {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm");
+                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm!");
                 }
                 else
                 {
