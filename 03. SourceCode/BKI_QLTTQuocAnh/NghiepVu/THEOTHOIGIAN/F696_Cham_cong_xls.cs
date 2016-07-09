@@ -45,6 +45,12 @@ namespace BKI_DichVuMatDat.NghiepVu
         DataSet m_ds_ngay_cong = new DataSet();
         DataSet m_ds_nhan_vien = new DataSet();
         int m_so_nv_da_cham_cong = 0;
+        public enum Loi { 
+            DuplicateMaNV,
+            TrongMaNV,
+            MaNVKhongTonTai,
+            MaNgayCongKhongTonTai
+        }
         #endregion
 
         #region Private Methods
@@ -94,8 +100,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             m_grv.Columns.Clear();
             splashScreenManager1.ShowWaitForm();
-            WinFormControls.load_xls_to_gridview(ip_path, m_grc);
+            WinFormControls.load_xls_to_gridview_co_ghi_chu(ip_path, m_grc);
+            m_grv.Columns["Ghi chú"].Visible = false;
             WinFormControls.make_stt_indicator(m_grv);
+            for (int i = 0; i < 3; i++)
+            {
+                m_grv.Columns[i].Fixed = FixedStyle.Left;
+            }      
             format_gridview();
             splashScreenManager1.CloseWaitForm();
         }
@@ -196,91 +207,185 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private bool checkBangChamCong()
         {
-           if (check_ma_nv_duplicate())
-                return false;
-            else if (check_ma_nv_trong())
-                return false;
-            else if (check_ma_nv_ko_ton_tai())
-                return false;
-            else if (check_ngay_cong_ko_ton_tai())
-                return false;
-            return true;
-
-        }
-
-        private bool check_ma_nv_trong()
-        {
+            bool trang_thai = true;
             for (int i = 0; i < m_grv.RowCount; i++)
             {
                 var v_dr = m_grv.GetDataRow(i);
-                if (v_dr["MA_NV"].ToString() == "")
-                {
-                    string v_str_error = "Dòng số " + (i+2) + " trong file excel trống mã nhân viên.\nVui lòng kiểm tra lại!";
-                    XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return true;
-                }
+                check_ma_nv_duplicate(v_dr, ref trang_thai);
+                check_ma_nv_trong(v_dr, ref trang_thai);
+                check_ma_nv_ko_ton_tai(v_dr, ref trang_thai);
+                check_ngay_cong_ko_ton_tai(v_dr, ref trang_thai);
             }
-            return false;
+            if (trang_thai == false)
+            {
+                m_grv.Columns["Ghi chú"].Visible = true;
+                m_grc.DataSource = m_grv;
+                m_grv.Columns["Ghi chú"].Width = 200;
+                XtraMessageBox.Show("Thông tin up lên chưa chính xác. \n Vui lòng đọc cột ghi chú(cột cuối cùng để điều chỉnh lại thông tin trước khi nhập!","Thông báo");
+                
+            }
+            return trang_thai;
+           //if (check_ma_nv_duplicate())
+           //     return false;
+           // else if (check_ma_nv_trong())
+           //     return false;
+           // else if (check_ma_nv_ko_ton_tai())
+           //     return false;
+           // else if (check_ngay_cong_ko_ton_tai())
+           //     return false;
+           // return true;
+
         }
 
-        private bool check_ma_nv_duplicate()
+        private void check_ngay_cong_ko_ton_tai(DataRow v_dr, ref bool trang_thai)
+        {
+            for (int j = 3; j < m_grv.Columns.Count - 1; j++)
+            {
+                if (v_dr[j].ToString().Trim() != "")
+                {
+
+                    DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
+                    if (v_dr_cham_cong.Count() == 0)
+                    {
+                        trang_thai = false;
+                        v_dr["Ghi chú"] +=v_dr[j].ToString()+": "+   get_text_by_enum(Loi.MaNgayCongKhongTonTai);
+                    }
+                }
+            }
+        }
+
+        private void check_ma_nv_ko_ton_tai(DataRow v_dr, ref bool trang_thai)
+        {
+            DataRow[] v_dr_1_nv = m_ds_nhan_vien.Tables[0].Select("MA_NV = '" + v_dr[0].ToString() + "'");
+            if (v_dr_1_nv.Count() == 0)
+            {
+                trang_thai = false;
+                v_dr["Ghi chú"]+=  get_text_by_enum(Loi.MaNVKhongTonTai);
+               
+            }
+        }
+
+        private void check_ma_nv_trong(DataRow v_dr, ref bool trang_thai)
+        {
+            if (v_dr["MA_NV"].ToString() == "")
+            {
+                trang_thai = false;
+                v_dr["Ghi chú"] += get_text_by_enum(Loi.TrongMaNV);
+            }
+        }
+
+        private void check_ma_nv_duplicate(DataRow v_dr, ref bool trang_thai)
         {
             DataTable v_dt = new DataTable();
             v_dt.Columns.Add();
             for (int i = 0; i < m_grv.RowCount; i++)
             {
-                var v_dr = m_grv.GetDataRow(i);
-                v_dt.Rows.Add(v_dr[0]);
+                var v_drow = m_grv.GetDataRow(i);
+                v_dt.Rows.Add(v_drow[0]);
             }
-            var duplicate = v_dt.AsEnumerable().GroupBy(r => r[0]).Where(gr => gr.Count() > 1);
-            if (duplicate.Any())
+            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["MA_NV"].ToString()).ToList().Count;
+            if (v_count > 1)
             {
-                string v_str = "Mã nhân viên '" + string.Join(",", duplicate.Select(dupl => dupl.Key)) + "' đang bị trùng. \nVui lòng kiểm tra lại!";
-                XtraMessageBox.Show(v_str, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return true;
+                trang_thai = false;
+                v_dr["Ghi chú"] += get_text_by_enum(Loi.DuplicateMaNV);
+                string a = v_dr["Ghi chú"].ToString();
             }
-            return false;
         }
 
-        private bool check_ngay_cong_ko_ton_tai()
+        private string get_text_by_enum(Loi loi)
         {
-            for (int i = 0; i < m_grv.RowCount; i++)
+            if (loi == Loi.DuplicateMaNV)
             {
-                var v_dr = m_grv.GetDataRow(i);
-                for (int j = 3; j < m_grv.Columns.Count - 1; j++)
-                {
-                    if (v_dr[j].ToString().Trim() != "")
-                    {
+                return "Trùng mã nhân viên; ";
+            }
+            if (loi == Loi.TrongMaNV)
+            {
+                return "Trống mã nhân viên; ";
+            }
+            if (loi == Loi.MaNVKhongTonTai)
+            {
+                return "Mã nhân viên không tồn tại hoặc nhân viên này không có hình thức tính lương theo thời gian; ";
+            }
+            if (loi == Loi.MaNgayCongKhongTonTai)
+            {
+                return " Mã ngày công này không tồn tại; ";
+            }
+            else return "";
+        }
+
+        //private bool check_ma_nv_trong()
+        //{
+        //    for (int i = 0; i < m_grv.RowCount; i++)
+        //    {
+        //        var v_dr = m_grv.GetDataRow(i);
+        //        if (v_dr["MA_NV"].ToString() == "")
+        //        {
+        //            string v_str_error = "Dòng số " + (i+2) + " trong file excel trống mã nhân viên.\nVui lòng kiểm tra lại!";
+        //            XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
+
+        //private bool check_ma_nv_duplicate()
+        //{
+        //    DataTable v_dt = new DataTable();
+        //    v_dt.Columns.Add();
+        //    for (int i = 0; i < m_grv.RowCount; i++)
+        //    {
+        //        var v_dr = m_grv.GetDataRow(i);
+        //        v_dt.Rows.Add(v_dr[0]);
+        //    }
+        //    var duplicate = v_dt.AsEnumerable().GroupBy(r => r[0]).Where(gr => gr.Count() > 1);
+        //    if (duplicate.Any())
+        //    {
+        //        string v_str = "Mã nhân viên '" + string.Join(",", duplicate.Select(dupl => dupl.Key)) + "' đang bị trùng. \nVui lòng kiểm tra lại!";
+        //        XtraMessageBox.Show(v_str, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+        //private bool check_ngay_cong_ko_ton_tai()
+        //{
+        //    for (int i = 0; i < m_grv.RowCount; i++)
+        //    {
+        //        var v_dr = m_grv.GetDataRow(i);
+        //        for (int j = 3; j < m_grv.Columns.Count - 1; j++)
+        //        {
+        //            if (v_dr[j].ToString().Trim() != "")
+        //            {
                        
-                            DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
-                            if (v_dr_cham_cong.Count() == 0)
-                            {
-                                string v_str_error = "Không tồn tại mã ngày công '" + v_dr[j].ToString() + "'\nVui lòng kiểm tra lại!";
-                                XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return true;
-                            }
-                    }
-                }
-            }
-            return false;
-        }
+        //                    DataRow[] v_dr_cham_cong = m_ds_ngay_cong.Tables[0].Select("MA_NGAY_CONG = '" + v_dr[j].ToString().ToUpper() + "'");
+        //                    if (v_dr_cham_cong.Count() == 0)
+        //                    {
+        //                        string v_str_error = "Không tồn tại mã ngày công '" + v_dr[j].ToString() + "'\nVui lòng kiểm tra lại!";
+        //                        XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                        return true;
+        //                    }
+        //            }
+        //        }
+        //    }
+        //    return false;
+        //}
 
-        private bool check_ma_nv_ko_ton_tai()
-        {
-            for (int i = 0; i < m_grv.RowCount; i++)
-            {
-                var v_dr = m_grv.GetDataRow(i);
-                DataRow[] v_dr_1_nv = m_ds_nhan_vien.Tables[0].Select("MA_NV = '" + v_dr[0].ToString() + "'");
-                if (v_dr_1_nv.Count() == 0)
-                {
-                    string v_str_error = "Không tồn tại mã nhân viên '" + v_dr[0].ToString() + "'\nVui lòng kiểm tra lại!";
-                    XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return true;
-                }
-            }
-            return false;
+        //private bool check_ma_nv_ko_ton_tai()
+        //{
+        //    for (int i = 0; i < m_grv.RowCount; i++)
+        //    {
+        //        var v_dr = m_grv.GetDataRow(i);
+        //        DataRow[] v_dr_1_nv = m_ds_nhan_vien.Tables[0].Select("MA_NV = '" + v_dr[0].ToString() + "'");
+        //        if (v_dr_1_nv.Count() == 0)
+        //        {
+        //            string v_str_error = "Không tồn tại mã nhân viên '" + v_dr[0].ToString() + "'\nVui lòng kiểm tra lại!";
+        //            XtraMessageBox.Show(v_str_error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //            return true;
+        //        }
+        //    }
+        //    return false;
 
-        }
+        //}
 
         #endregion
 
@@ -407,7 +512,16 @@ namespace BKI_DichVuMatDat.NghiepVu
                 if (m_dat_chon_thang.EditValue == null)
                 {
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
+                    return;
                 }
+                string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
+               
+                if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
+                {
+                    XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo");
+                    return;
+                }
+                
                 //else if(check_bang_luong_da_chot(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString()))
                 //{
                 //    CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
