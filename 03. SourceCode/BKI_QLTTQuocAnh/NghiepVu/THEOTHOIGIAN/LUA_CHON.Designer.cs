@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.m_rd_load_dung = new System.Windows.Forms.RadioButton();
             this.m_rd_load_them = new System.Windows.Forms.RadioButton();
+            this.m_rd_load_dung = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
@@ -52,6 +52,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chọn 1 trong các options sau";
             // 
+            // m_rd_load_them
+            // 
+            this.m_rd_load_them.AutoSize = true;
+            this.m_rd_load_them.Location = new System.Drawing.Point(33, 65);
+            this.m_rd_load_them.Name = "m_rd_load_them";
+            this.m_rd_load_them.Size = new System.Drawing.Size(663, 58);
+            this.m_rd_load_them.TabIndex = 1;
+            this.m_rd_load_them.TabStop = true;
+            this.m_rd_load_them.Text = "\r\nLoad dữ liệu từ file lên, danh sách chấm công được bổ sung thêm những người cũn" +
+    "g có hình thức\r\n chấm công này nhưng không có tên trong file, để có thể chỉnh sử" +
+    "a trực tiếp trên màn hình.";
+            this.m_rd_load_them.UseVisualStyleBackColor = true;
+            // 
             // m_rd_load_dung
             // 
             this.m_rd_load_dung.AutoSize = true;
@@ -62,19 +75,6 @@
             this.m_rd_load_dung.TabStop = true;
             this.m_rd_load_dung.Text = "Chỉ load dữ liệu từ file lên.";
             this.m_rd_load_dung.UseVisualStyleBackColor = true;
-            // 
-            // m_rd_load_them
-            // 
-            this.m_rd_load_them.AutoSize = true;
-            this.m_rd_load_them.Location = new System.Drawing.Point(33, 65);
-            this.m_rd_load_them.Name = "m_rd_load_them";
-            this.m_rd_load_them.Size = new System.Drawing.Size(693, 58);
-            this.m_rd_load_them.TabIndex = 1;
-            this.m_rd_load_them.TabStop = true;
-            this.m_rd_load_them.Text = "\r\nLoad dữ liệu từ file lên, danh sách chấm công được bổ sung thêm những người cũn" +
-    "g có hình thức\r\n chấm công theo thời gian nhưng không có tên trong file, để có t" +
-    "hể chỉnh sửa trực tiếp trên màn hình.";
-            this.m_rd_load_them.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 

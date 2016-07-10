@@ -623,7 +623,7 @@
             // 
             // m_dtp_ngay_sinh
             // 
-            this.m_dtp_ngay_sinh.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_ngay_sinh.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_ngay_sinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_ngay_sinh.Location = new System.Drawing.Point(196, 127);
             this.m_dtp_ngay_sinh.Name = "m_dtp_ngay_sinh";
@@ -1484,7 +1484,7 @@
             // 
             // m_dtp_tu_ngay_luong_ngay
             // 
-            this.m_dtp_tu_ngay_luong_ngay.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_tu_ngay_luong_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_luong_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_tu_ngay_luong_ngay.Location = new System.Drawing.Point(117, 78);
             this.m_dtp_tu_ngay_luong_ngay.Name = "m_dtp_tu_ngay_luong_ngay";
@@ -1493,7 +1493,7 @@
             // 
             // m_dtp_den_ngay_luong_ngay
             // 
-            this.m_dtp_den_ngay_luong_ngay.CustomFormat = "MM/dd/yyyy";
+            this.m_dtp_den_ngay_luong_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dtp_den_ngay_luong_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dtp_den_ngay_luong_ngay.Location = new System.Drawing.Point(390, 78);
             this.m_dtp_den_ngay_luong_ngay.Name = "m_dtp_den_ngay_luong_ngay";

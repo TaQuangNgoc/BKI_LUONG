@@ -434,6 +434,12 @@
     <Compile Include="FORM_MENU.designer.cs">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\CHAM_CONG_THEO_SAN_PHAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\CHAM_CONG_THEO_SAN_PHAM.Designer.cs">
+      <DependentUpon>CHAM_CONG_THEO_SAN_PHAM.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -445,6 +451,12 @@
     </Compile>
     <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.Designer.cs">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.Designer.cs">
+      <DependentUpon>CHAM_CONG_THEO_NGAY.cs</DependentUpon>
     </Compile>
     <Compile Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.cs">
       <SubType>Form</SubType>
@@ -524,11 +536,17 @@
     <EmbeddedResource Include="FORM_MENU.resx">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCongSanPham\CHAM_CONG_THEO_SAN_PHAM.resx">
+      <DependentUpon>CHAM_CONG_THEO_SAN_PHAM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM.resx">
       <DependentUpon>DANH_MUC_SAN_PHAM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.resx">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.resx">
+      <DependentUpon>CHAM_CONG_THEO_NGAY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.resx">
       <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>
@@ -1605,7 +1623,6 @@
     <Folder Include="BaoCao\Luong\" />
     <Folder Include="BaoCao\TongHop\" />
     <Folder Include="FormatControl\" />
-    <Folder Include="NghiepVu\Luong\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

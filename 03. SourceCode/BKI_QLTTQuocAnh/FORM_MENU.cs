@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BKI_DichVuMatDat.NghiepVu;
 using BKI_DichVuMatDat.NghiepVu.ChamCongSanPham;
 using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
+using BKI_DichVuMatDat.NghiepVu.THEONGAY;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
 
@@ -27,7 +28,7 @@ namespace BKI_DichVuMatDat
         TreeNode SO_NGAY_CONG_TIEU_CHUAN = new TreeNode("Số ngày công tiêu chuẩn");
         TreeNode DANH_MUC = new TreeNode("Danh Mục");
         TreeNode THAM_SO_KHAC = new TreeNode("Tham số khác");
-
+        TreeNode DANH_MUC_SAN_PHAM = new TreeNode("Chấm công theo sản phẩm");
         //NODE CON CỦA NHẬP LIỆU
         TreeNode THONG_TIN_NHAN_VIEN = new TreeNode("Thông tin nhân viên");    
         TreeNode CHAM_CONG_TU_EXCEL = new TreeNode("Chấm công từ excel");
@@ -41,11 +42,12 @@ namespace BKI_DichVuMatDat
         TreeNode THEO_THOI_GIAN = new TreeNode("Theo thời gian");
         TreeNode LAM_THEM_THEO_THOI_GIAN = new TreeNode("Làm thêm theo thời gian");
         TreeNode THEO_NGAY = new TreeNode("Theo ngày");
-        TreeNode THEO_SAN_PHAM = new TreeNode("Theo sản phẩm");
+       
 
         //NODE CON CỦA THEO SẢN PHẨM
-        TreeNode DANH_MUC_SAN_PHAM = new TreeNode("Danh mục sản phẩm");
-        TreeNode CHAM_CONG_SAN_PHAM = new TreeNode("Chấm công theo sản phẩm");
+        
+        TreeNode CHAM_CONG_SAN_PHAM = new TreeNode(" Theo sản phẩm");
+        TreeNode CHAM_CONG_LAM_THEM_SAN_PHAM = new TreeNode("Làm thêm theo sản phẩm");
 
 
         public FORM_MENU()
@@ -75,6 +77,7 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[0].Nodes[1].Nodes.Add(DANH_MUC);
             treeView1.Nodes[0].Nodes[1].Nodes.Add(SO_NGAY_CONG_TIEU_CHUAN);
             treeView1.Nodes[0].Nodes[1].Nodes.Add(THAM_SO_KHAC);
+            treeView1.Nodes[0].Nodes.Add(DANH_MUC_SAN_PHAM);
             treeView1.ItemHeight = 35;
 
             //node Nhập liệu
@@ -92,11 +95,12 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(LAM_THEM_THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_NGAY);
-            treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_SAN_PHAM);
+            treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_SAN_PHAM);
+            treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_LAM_THEM_SAN_PHAM);
 
             //NODE CON CỦA THEO SẢN PHẨM
-            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DANH_MUC_SAN_PHAM);
-            treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(CHAM_CONG_SAN_PHAM);
+           // treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DANH_MUC_SAN_PHAM);
+          
 
             treeView1.ImageList = m_img_list;
 
@@ -203,7 +207,23 @@ namespace BKI_DichVuMatDat
 
             if (info.Node == LAM_THEM_THEO_THOI_GIAN)
             {
-                BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN.LAM_THEM_THEO_THOI_GIAN v_f = new LAM_THEM_THEO_THOI_GIAN();
+                BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN.LAM_THEM_THEO_THOI_GIAN v_f = new BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN.LAM_THEM_THEO_THOI_GIAN();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                 ShowForm(v_f);
+            }
+
+            if (info.Node == THEO_NGAY)
+            {
+                CHAM_CONG_THEO_NGAY v_f = new CHAM_CONG_THEO_NGAY();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
+            if (info.Node == CHAM_CONG_SAN_PHAM)
+            {
+                BKI_DichVuMatDat.NghiepVu.ChamCongSanPham.CHAM_CONG_THEO_SAN_PHAM v_f = new CHAM_CONG_THEO_SAN_PHAM();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);

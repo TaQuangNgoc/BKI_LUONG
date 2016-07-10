@@ -662,5 +662,52 @@ namespace BKI_DichVuMatDat
             v_cstore.addNVarcharInputParam("@CO_YN", CO_YN);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void FillDatasetChamCongLamThem(DataSet v_ds, string thang, string nam, decimal id_loai_lam_them)
+        {
+            CStoredProc v_cstore = new CStoredProc("pr_GET_DU_LIEU_CHAM_CONG_LAM_THEM");
+            v_cstore.addDecimalInputParam("@thang", CIPConvert.ToDecimal(thang));
+            v_cstore.addDecimalInputParam("@nam", CIPConvert.ToDecimal(nam));
+            v_cstore.addDecimalInputParam("@id_loai_lam_them", id_loai_lam_them);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void FillDatasetChamCongTheoIdHinhThuc(DataSet v_ds, string thang, string nam, decimal id_hinh_thuc)
+        {
+            CStoredProc v_cstore = new CStoredProc("pr_GET_DU_LIEU_CHAM_CONG");
+            v_cstore.addDecimalInputParam("@thang", CIPConvert.ToDecimal(thang));
+            v_cstore.addDecimalInputParam("@nam", CIPConvert.ToDecimal(nam));
+            v_cstore.addDecimalInputParam("@id_hinh_thuc", id_hinh_thuc);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void FillDatasetChamCongTheoSanPham(DataSet v_ds, string thang, string nam)
+        {
+
+            CStoredProc v_cstore = new CStoredProc("pr_GET_DU_LIEU_CHAM_CONG_THEO_SAN_PHAM");
+            v_cstore.addDecimalInputParam("@thang", CIPConvert.ToDecimal(thang));
+            v_cstore.addDecimalInputParam("@nam", CIPConvert.ToDecimal(nam));
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void xoaDuLieuChamCongByID(decimal ip_dc_id_nv, string ip_str_thang, string ip_str_nam, decimal id_hinh_thuc)
+        {
+            CStoredProc v_cstore = new CStoredProc("pr_XOA_DU_LIEU_CHAM_CONG");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", ip_dc_id_nv);
+            v_cstore.addDecimalInputParam("@THANG", CIPConvert.ToDecimal(ip_str_thang));
+            v_cstore.addDecimalInputParam("@NAM", CIPConvert.ToDecimal(ip_str_nam));
+            v_cstore.addDecimalInputParam("@ID_HINH_THUC", CIPConvert.ToDecimal(id_hinh_thuc));
+            v_cstore.ExecuteCommand(this);
+        }
+
+        internal void xoaDuLieuChamCongSanPham(decimal ip_dc_id_nv, string ip_str_thang, string ip_str_nam)
+        {
+            CStoredProc v_cstore = new CStoredProc("pr_XOA_DU_LIEU_CHAM_CONG_SAN_PHAM");
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", ip_dc_id_nv);
+            v_cstore.addDecimalInputParam("@THANG", CIPConvert.ToDecimal(ip_str_thang));
+            v_cstore.addDecimalInputParam("@NAM", CIPConvert.ToDecimal(ip_str_nam));
+           
+            v_cstore.ExecuteCommand(this);
+        }
     } 
 }

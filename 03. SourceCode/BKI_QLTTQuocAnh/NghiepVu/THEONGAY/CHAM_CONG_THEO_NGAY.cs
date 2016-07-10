@@ -18,14 +18,16 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Columns;
 using IP.Core.IPSystemAdmin;
+using BKI_DichVuMatDat.NghiepVu.THEONGAY;
 using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 
-namespace BKI_DichVuMatDat.NghiepVu
+
+namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
 {
-    public partial class F696_Cham_cong_xls : Form
+    public partial class CHAM_CONG_THEO_NGAY : Form
     {
-        #region Public Interface
-        public F696_Cham_cong_xls()
+         #region Public Interface
+        public CHAM_CONG_THEO_NGAY()
         {
             InitializeComponent();
             //FormatControl.SetVisibleSimpleButton(this);
@@ -154,7 +156,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         {  
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_ds_nhan_vien = new DS_DM_NHAN_VIEN();
-            v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=1 AND CO_YN='Y')");
+            v_us.FillDatasetWithQuery(m_ds_nhan_vien, "SELECT * FROM DM_NHAN_VIEN WHERE ID IN ( SELECT ID_NHAN_VIEN FROM GD_NHAN_VIEN_HINH_THUC_TINH_LUONG WHERE ID_HINH_THUC_TINH_LUONG=2 AND CO_YN='Y')");
         }
 
         private void LayDuLieuLoaiNgayCong()
@@ -191,7 +193,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             LayDuLieuNhanVien();
             if (!checkBangChamCong())
                 return false;
-            int v_so_nv_da_cham_cong = check_db_da_cham_cong();
+            decimal v_so_nv_da_cham_cong = get_so_luong_cham_cong();
             if (v_so_nv_da_cham_cong != 0)
             {
                 string v_str_confirm = "Hiện có " + v_so_nv_da_cham_cong + "/" + m_grv.RowCount + " nhân viên trong bảng chấm công đã có dữ liệu. \nBạn có muốn xóa dữ liệu cũ của những nhân viên này và nhập lại?";
@@ -207,7 +209,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            v_us.FillDatasetChamCongTheoIdHinhThuc(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(), 1);
+            v_us.FillDatasetChamCongTheoIdHinhThuc(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(), 2);
             return decimal.Parse(v_ds.Tables[0].Rows[0]["SO_LUONG"].ToString());
         }
 
@@ -383,7 +385,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             //v_us.xoa_du_lieu_cham_cong(ip_dc_id_nv, m_txt_thang.Text, m_txt_nam.Text);
-            v_us.xoaDuLieuChamCongByID(ip_dc_id_nv, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),1);
+            v_us.xoaDuLieuChamCongByID(ip_dc_id_nv, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),2);
         }
 
         private void insert_gd_cham_cong(DataRow ip_dataRow)
@@ -437,14 +439,6 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void F696_Cham_cong_xls_Load(object sender, EventArgs e)
         {
-            try
-            {
-                set_trang_thai_cham_cong();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
 
         }
 
@@ -517,7 +511,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                 }
                 else
                 {
-                    tao_file_mau("Chấm công tháng " + m_dat_chon_thang.DateTime.Month.ToString() + "-" + m_dat_chon_thang.DateTime.Year.ToString() + ".xls");
+                    tao_file_mau("Chấm công theo ngày trong tháng " + m_dat_chon_thang.DateTime.Month.ToString() + "-" + m_dat_chon_thang.DateTime.Year.ToString() + ".xls");
                 }
             }
             catch (Exception v_e)
@@ -527,11 +521,10 @@ namespace BKI_DichVuMatDat.NghiepVu
         }
         #endregion
 
-        private void m_dat_chon_thang_EditValueChanged(object sender, EventArgs e)
+        private void m_dat_chon_thang_EditValueChanged_1(object sender, EventArgs e)
         {
             set_trang_thai_cham_cong();
         }
 
-       
     }
 }

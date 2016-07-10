@@ -300,5 +300,7 @@ namespace BKI_DichVuMatDat.US
             v_cstore.addDecimalInputParam("@id_nhan_vien", ip_id_nhan_vien);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+       
     }
 }

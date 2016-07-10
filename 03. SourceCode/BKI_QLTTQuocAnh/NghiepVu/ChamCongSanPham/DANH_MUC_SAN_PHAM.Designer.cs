@@ -66,6 +66,7 @@
             this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tab_Control1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_san_pham)).BeginInit();
@@ -88,6 +89,7 @@
             // 
             this.tab_Control1.Controls.Add(this.tabPage5);
             this.tab_Control1.Controls.Add(this.tabPage6);
+            this.tab_Control1.Controls.Add(this.tabPage1);
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_Control1.Location = new System.Drawing.Point(0, 53);
@@ -160,7 +162,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 27);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1038, 425);
+            this.tabPage6.Size = new System.Drawing.Size(915, 425);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ĐƠN GIÁ SẢN PHẨM";
             // 
@@ -171,7 +173,7 @@
             this.m_grc_luong_ngay.Location = new System.Drawing.Point(610, 3);
             this.m_grc_luong_ngay.MainView = this.m_grv_luong_ngay;
             this.m_grc_luong_ngay.Name = "m_grc_luong_ngay";
-            this.m_grc_luong_ngay.Size = new System.Drawing.Size(425, 419);
+            this.m_grc_luong_ngay.Size = new System.Drawing.Size(302, 419);
             this.m_grc_luong_ngay.TabIndex = 18;
             this.m_grc_luong_ngay.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_luong_ngay});
@@ -442,9 +444,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 19);
+            this.label2.Size = new System.Drawing.Size(409, 19);
             this.label2.TabIndex = 1;
-            this.label2.Text = "THÔNG TIN SẢN PHẨM";
+            this.label2.Text = "CÀI ĐẶT THAM SỐ CHẤM CÔNG THEO SẢN PHẨM";
             // 
             // panel2
             // 
@@ -515,6 +517,16 @@
             this.m_btn_xoa.Text = "XÓA";
             this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(915, 425);
+            this.tabPage1.TabIndex = 6;
+            this.tabPage1.Text = "DANH MỤC TỈ LỆ LÀM THÊM";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // DANH_MUC_SAN_PHAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -583,5 +595,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private System.Windows.Forms.TextBox m_txt_so_tien_luong_ngay;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }

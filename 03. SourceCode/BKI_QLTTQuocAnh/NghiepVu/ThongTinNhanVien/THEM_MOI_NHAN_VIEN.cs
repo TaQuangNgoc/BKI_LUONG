@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
+using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
@@ -842,10 +843,14 @@ namespace BKI_DichVuMatDat
                 if (m_dtp_den_ngay_ti_le.Checked == true)
                     dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"), m_dtp_den_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"));
                 else
-                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"), "");
+                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, m_dtp_tu_ngay_luong_ngay.Value.ToString("dd/MM/yyyy"), System.Convert.DBNull);
                 m_grc_luong_ngay.DataSource = dt;
                 m_txt_so_tien_luong_ngay.Text = "";
 
+            }
+            else
+            {
+                XtraMessageBox.Show("Nhập số tiền!");
             }
         }
 
@@ -861,7 +866,7 @@ namespace BKI_DichVuMatDat
             {
                 m_dtp_den_ngay_luong_ngay.Checked = false;
             }
-            tabControl1.TabPages[2].HorizontalScroll.Value = 0;
+           
         }
 
         private void m_btn_sua_luong_ngay_Click(object sender, EventArgs e)
