@@ -20,17 +20,17 @@ namespace BKI_DichVuMatDat.DS {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DS_DM_LOAI_NGAY_CONG")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DS_DM_TI_LE_LAM_THEM")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DS_DM_LOAI_NGAY_CONG : global::System.Data.DataSet {
+    public partial class DS_DM_TI_LE_LAM_THEM : global::System.Data.DataSet {
         
-        private DM_LOAI_NGAY_CONGDataTable tableDM_LOAI_NGAY_CONG;
+        private DM_TI_LE_LAM_THEMDataTable tableDM_TI_LE_LAM_THEM;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DS_DM_LOAI_NGAY_CONG() {
+        public DS_DM_TI_LE_LAM_THEM() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BKI_DichVuMatDat.DS {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DS_DM_LOAI_NGAY_CONG(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DS_DM_TI_LE_LAM_THEM(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace BKI_DichVuMatDat.DS {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DM_LOAI_NGAY_CONG"] != null)) {
-                    base.Tables.Add(new DM_LOAI_NGAY_CONGDataTable(ds.Tables["DM_LOAI_NGAY_CONG"]));
+                if ((ds.Tables["DM_TI_LE_LAM_THEM"] != null)) {
+                    base.Tables.Add(new DM_TI_LE_LAM_THEMDataTable(ds.Tables["DM_TI_LE_LAM_THEM"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BKI_DichVuMatDat.DS {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DM_LOAI_NGAY_CONGDataTable DM_LOAI_NGAY_CONG {
+        public DM_TI_LE_LAM_THEMDataTable DM_TI_LE_LAM_THEM {
             get {
-                return this.tableDM_LOAI_NGAY_CONG;
+                return this.tableDM_TI_LE_LAM_THEM;
             }
         }
         
@@ -127,7 +127,7 @@ namespace BKI_DichVuMatDat.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DS_DM_LOAI_NGAY_CONG cln = ((DS_DM_LOAI_NGAY_CONG)(base.Clone()));
+            DS_DM_TI_LE_LAM_THEM cln = ((DS_DM_TI_LE_LAM_THEM)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace BKI_DichVuMatDat.DS {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DM_LOAI_NGAY_CONG"] != null)) {
-                    base.Tables.Add(new DM_LOAI_NGAY_CONGDataTable(ds.Tables["DM_LOAI_NGAY_CONG"]));
+                if ((ds.Tables["DM_TI_LE_LAM_THEM"] != null)) {
+                    base.Tables.Add(new DM_TI_LE_LAM_THEMDataTable(ds.Tables["DM_TI_LE_LAM_THEM"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BKI_DichVuMatDat.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDM_LOAI_NGAY_CONG = ((DM_LOAI_NGAY_CONGDataTable)(base.Tables["DM_LOAI_NGAY_CONG"]));
+            this.tableDM_TI_LE_LAM_THEM = ((DM_TI_LE_LAM_THEMDataTable)(base.Tables["DM_TI_LE_LAM_THEM"]));
             if ((initTable == true)) {
-                if ((this.tableDM_LOAI_NGAY_CONG != null)) {
-                    this.tableDM_LOAI_NGAY_CONG.InitVars();
+                if ((this.tableDM_TI_LE_LAM_THEM != null)) {
+                    this.tableDM_TI_LE_LAM_THEM.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace BKI_DichVuMatDat.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DS_DM_LOAI_NGAY_CONG";
+            this.DataSetName = "DS_DM_TI_LE_LAM_THEM";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DS_DM_LOAI_NGAY_CONG.xsd";
+            this.Namespace = "http://tempuri.org/DS_DM_TI_LE_LAM_THEM.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDM_LOAI_NGAY_CONG = new DM_LOAI_NGAY_CONGDataTable();
-            base.Tables.Add(this.tableDM_LOAI_NGAY_CONG);
+            this.tableDM_TI_LE_LAM_THEM = new DM_TI_LE_LAM_THEMDataTable();
+            base.Tables.Add(this.tableDM_TI_LE_LAM_THEM);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeDM_LOAI_NGAY_CONG() {
+        private bool ShouldSerializeDM_TI_LE_LAM_THEM() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace BKI_DichVuMatDat.DS {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DS_DM_LOAI_NGAY_CONG ds = new DS_DM_LOAI_NGAY_CONG();
+            DS_DM_TI_LE_LAM_THEM ds = new DS_DM_TI_LE_LAM_THEM();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,27 @@ namespace BKI_DichVuMatDat.DS {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void DM_LOAI_NGAY_CONGRowChangeEventHandler(object sender, DM_LOAI_NGAY_CONGRowChangeEvent e);
+        public delegate void DM_TI_LE_LAM_THEMRowChangeEventHandler(object sender, DM_TI_LE_LAM_THEMRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DM_LOAI_NGAY_CONGDataTable : global::System.Data.TypedTableBase<DM_LOAI_NGAY_CONGRow> {
+        public partial class DM_TI_LE_LAM_THEMDataTable : global::System.Data.TypedTableBase<DM_TI_LE_LAM_THEMRow> {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnMA_NGAY_CONG;
+            private global::System.Data.DataColumn columnMA_LAM_THEM;
             
-            private global::System.Data.DataColumn columnTEN_NGAY_CONG;
+            private global::System.Data.DataColumn columnTI_LE;
             
-            private global::System.Data.DataColumn columnTI_LE_LNS;
-            
-            private global::System.Data.DataColumn columnTI_LE_LCD;
+            private global::System.Data.DataColumn columnTEN_LOAI_LAM_THEM;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGDataTable() {
-                this.TableName = "DM_LOAI_NGAY_CONG";
+            public DM_TI_LE_LAM_THEMDataTable() {
+                this.TableName = "DM_TI_LE_LAM_THEM";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +298,7 @@ namespace BKI_DichVuMatDat.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DM_LOAI_NGAY_CONGDataTable(global::System.Data.DataTable table) {
+            internal DM_TI_LE_LAM_THEMDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,7 +315,7 @@ namespace BKI_DichVuMatDat.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected DM_LOAI_NGAY_CONGDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DM_TI_LE_LAM_THEMDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -332,33 +330,25 @@ namespace BKI_DichVuMatDat.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn MA_NGAY_CONGColumn {
+            public global::System.Data.DataColumn MA_LAM_THEMColumn {
                 get {
-                    return this.columnMA_NGAY_CONG;
+                    return this.columnMA_LAM_THEM;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TEN_NGAY_CONGColumn {
+            public global::System.Data.DataColumn TI_LEColumn {
                 get {
-                    return this.columnTEN_NGAY_CONG;
+                    return this.columnTI_LE;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TI_LE_LNSColumn {
+            public global::System.Data.DataColumn TEN_LOAI_LAM_THEMColumn {
                 get {
-                    return this.columnTI_LE_LNS;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TI_LE_LCDColumn {
-                get {
-                    return this.columnTI_LE_LCD;
+                    return this.columnTEN_LOAI_LAM_THEM;
                 }
             }
             
@@ -373,56 +363,55 @@ namespace BKI_DichVuMatDat.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRow this[int index] {
+            public DM_TI_LE_LAM_THEMRow this[int index] {
                 get {
-                    return ((DM_LOAI_NGAY_CONGRow)(this.Rows[index]));
+                    return ((DM_TI_LE_LAM_THEMRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DM_LOAI_NGAY_CONGRowChangeEventHandler DM_LOAI_NGAY_CONGRowChanging;
+            public event DM_TI_LE_LAM_THEMRowChangeEventHandler DM_TI_LE_LAM_THEMRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DM_LOAI_NGAY_CONGRowChangeEventHandler DM_LOAI_NGAY_CONGRowChanged;
+            public event DM_TI_LE_LAM_THEMRowChangeEventHandler DM_TI_LE_LAM_THEMRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DM_LOAI_NGAY_CONGRowChangeEventHandler DM_LOAI_NGAY_CONGRowDeleting;
+            public event DM_TI_LE_LAM_THEMRowChangeEventHandler DM_TI_LE_LAM_THEMRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event DM_LOAI_NGAY_CONGRowChangeEventHandler DM_LOAI_NGAY_CONGRowDeleted;
+            public event DM_TI_LE_LAM_THEMRowChangeEventHandler DM_TI_LE_LAM_THEMRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddDM_LOAI_NGAY_CONGRow(DM_LOAI_NGAY_CONGRow row) {
+            public void AddDM_TI_LE_LAM_THEMRow(DM_TI_LE_LAM_THEMRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRow AddDM_LOAI_NGAY_CONGRow(string MA_NGAY_CONG, string TEN_NGAY_CONG, decimal TI_LE_LNS, decimal TI_LE_LCD) {
-                DM_LOAI_NGAY_CONGRow rowDM_LOAI_NGAY_CONGRow = ((DM_LOAI_NGAY_CONGRow)(this.NewRow()));
+            public DM_TI_LE_LAM_THEMRow AddDM_TI_LE_LAM_THEMRow(string MA_LAM_THEM, decimal TI_LE, string TEN_LOAI_LAM_THEM) {
+                DM_TI_LE_LAM_THEMRow rowDM_TI_LE_LAM_THEMRow = ((DM_TI_LE_LAM_THEMRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        MA_NGAY_CONG,
-                        TEN_NGAY_CONG,
-                        TI_LE_LNS,
-                        TI_LE_LCD};
-                rowDM_LOAI_NGAY_CONGRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDM_LOAI_NGAY_CONGRow);
-                return rowDM_LOAI_NGAY_CONGRow;
+                        MA_LAM_THEM,
+                        TI_LE,
+                        TEN_LOAI_LAM_THEM};
+                rowDM_TI_LE_LAM_THEMRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDM_TI_LE_LAM_THEMRow);
+                return rowDM_TI_LE_LAM_THEMRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRow FindByID(decimal ID) {
-                return ((DM_LOAI_NGAY_CONGRow)(this.Rows.Find(new object[] {
+            public DM_TI_LE_LAM_THEMRow FindByID(decimal ID) {
+                return ((DM_TI_LE_LAM_THEMRow)(this.Rows.Find(new object[] {
                             ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DM_LOAI_NGAY_CONGDataTable cln = ((DM_LOAI_NGAY_CONGDataTable)(base.Clone()));
+                DM_TI_LE_LAM_THEMDataTable cln = ((DM_TI_LE_LAM_THEMDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -430,17 +419,16 @@ namespace BKI_DichVuMatDat.DS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DM_LOAI_NGAY_CONGDataTable();
+                return new DM_TI_LE_LAM_THEMDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnMA_NGAY_CONG = base.Columns["MA_NGAY_CONG"];
-                this.columnTEN_NGAY_CONG = base.Columns["TEN_NGAY_CONG"];
-                this.columnTI_LE_LNS = base.Columns["TI_LE_LNS"];
-                this.columnTI_LE_LCD = base.Columns["TI_LE_LCD"];
+                this.columnMA_LAM_THEM = base.Columns["MA_LAM_THEM"];
+                this.columnTI_LE = base.Columns["TI_LE"];
+                this.columnTEN_LOAI_LAM_THEM = base.Columns["TEN_LOAI_LAM_THEM"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -448,14 +436,12 @@ namespace BKI_DichVuMatDat.DS {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnMA_NGAY_CONG = new global::System.Data.DataColumn("MA_NGAY_CONG", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMA_NGAY_CONG);
-                this.columnTEN_NGAY_CONG = new global::System.Data.DataColumn("TEN_NGAY_CONG", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTEN_NGAY_CONG);
-                this.columnTI_LE_LNS = new global::System.Data.DataColumn("TI_LE_LNS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTI_LE_LNS);
-                this.columnTI_LE_LCD = new global::System.Data.DataColumn("TI_LE_LCD", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTI_LE_LCD);
+                this.columnMA_LAM_THEM = new global::System.Data.DataColumn("MA_LAM_THEM", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMA_LAM_THEM);
+                this.columnTI_LE = new global::System.Data.DataColumn("TI_LE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTI_LE);
+                this.columnTEN_LOAI_LAM_THEM = new global::System.Data.DataColumn("TEN_LOAI_LAM_THEM", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTEN_LOAI_LAM_THEM);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -464,38 +450,34 @@ namespace BKI_DichVuMatDat.DS {
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
-                this.columnMA_NGAY_CONG.AllowDBNull = false;
-                this.columnMA_NGAY_CONG.MaxLength = 15;
-                this.columnTEN_NGAY_CONG.AllowDBNull = false;
-                this.columnTEN_NGAY_CONG.MaxLength = 35;
-                this.columnTI_LE_LNS.AllowDBNull = false;
-                this.columnTI_LE_LCD.AllowDBNull = false;
+                this.columnMA_LAM_THEM.MaxLength = 50;
+                this.columnTEN_LOAI_LAM_THEM.MaxLength = 250;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRow NewDM_LOAI_NGAY_CONGRow() {
-                return ((DM_LOAI_NGAY_CONGRow)(this.NewRow()));
+            public DM_TI_LE_LAM_THEMRow NewDM_TI_LE_LAM_THEMRow() {
+                return ((DM_TI_LE_LAM_THEMRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DM_LOAI_NGAY_CONGRow(builder);
+                return new DM_TI_LE_LAM_THEMRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DM_LOAI_NGAY_CONGRow);
+                return typeof(DM_TI_LE_LAM_THEMRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DM_LOAI_NGAY_CONGRowChanged != null)) {
-                    this.DM_LOAI_NGAY_CONGRowChanged(this, new DM_LOAI_NGAY_CONGRowChangeEvent(((DM_LOAI_NGAY_CONGRow)(e.Row)), e.Action));
+                if ((this.DM_TI_LE_LAM_THEMRowChanged != null)) {
+                    this.DM_TI_LE_LAM_THEMRowChanged(this, new DM_TI_LE_LAM_THEMRowChangeEvent(((DM_TI_LE_LAM_THEMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -503,8 +485,8 @@ namespace BKI_DichVuMatDat.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DM_LOAI_NGAY_CONGRowChanging != null)) {
-                    this.DM_LOAI_NGAY_CONGRowChanging(this, new DM_LOAI_NGAY_CONGRowChangeEvent(((DM_LOAI_NGAY_CONGRow)(e.Row)), e.Action));
+                if ((this.DM_TI_LE_LAM_THEMRowChanging != null)) {
+                    this.DM_TI_LE_LAM_THEMRowChanging(this, new DM_TI_LE_LAM_THEMRowChangeEvent(((DM_TI_LE_LAM_THEMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -512,8 +494,8 @@ namespace BKI_DichVuMatDat.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DM_LOAI_NGAY_CONGRowDeleted != null)) {
-                    this.DM_LOAI_NGAY_CONGRowDeleted(this, new DM_LOAI_NGAY_CONGRowChangeEvent(((DM_LOAI_NGAY_CONGRow)(e.Row)), e.Action));
+                if ((this.DM_TI_LE_LAM_THEMRowDeleted != null)) {
+                    this.DM_TI_LE_LAM_THEMRowDeleted(this, new DM_TI_LE_LAM_THEMRowChangeEvent(((DM_TI_LE_LAM_THEMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -521,14 +503,14 @@ namespace BKI_DichVuMatDat.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DM_LOAI_NGAY_CONGRowDeleting != null)) {
-                    this.DM_LOAI_NGAY_CONGRowDeleting(this, new DM_LOAI_NGAY_CONGRowChangeEvent(((DM_LOAI_NGAY_CONGRow)(e.Row)), e.Action));
+                if ((this.DM_TI_LE_LAM_THEMRowDeleting != null)) {
+                    this.DM_TI_LE_LAM_THEMRowDeleting(this, new DM_TI_LE_LAM_THEMRowChangeEvent(((DM_TI_LE_LAM_THEMRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveDM_LOAI_NGAY_CONGRow(DM_LOAI_NGAY_CONGRow row) {
+            public void RemoveDM_TI_LE_LAM_THEMRow(DM_TI_LE_LAM_THEMRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -537,7 +519,7 @@ namespace BKI_DichVuMatDat.DS {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DS_DM_LOAI_NGAY_CONG ds = new DS_DM_LOAI_NGAY_CONG();
+                DS_DM_TI_LE_LAM_THEM ds = new DS_DM_TI_LE_LAM_THEM();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -555,7 +537,7 @@ namespace BKI_DichVuMatDat.DS {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DM_LOAI_NGAY_CONGDataTable";
+                attribute2.FixedValue = "DM_TI_LE_LAM_THEMDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -599,70 +581,110 @@ namespace BKI_DichVuMatDat.DS {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DM_LOAI_NGAY_CONGRow : global::System.Data.DataRow {
+        public partial class DM_TI_LE_LAM_THEMRow : global::System.Data.DataRow {
             
-            private DM_LOAI_NGAY_CONGDataTable tableDM_LOAI_NGAY_CONG;
+            private DM_TI_LE_LAM_THEMDataTable tableDM_TI_LE_LAM_THEM;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal DM_LOAI_NGAY_CONGRow(global::System.Data.DataRowBuilder rb) : 
+            internal DM_TI_LE_LAM_THEMRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDM_LOAI_NGAY_CONG = ((DM_LOAI_NGAY_CONGDataTable)(this.Table));
+                this.tableDM_TI_LE_LAM_THEM = ((DM_TI_LE_LAM_THEMDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public decimal ID {
                 get {
-                    return ((decimal)(this[this.tableDM_LOAI_NGAY_CONG.IDColumn]));
+                    return ((decimal)(this[this.tableDM_TI_LE_LAM_THEM.IDColumn]));
                 }
                 set {
-                    this[this.tableDM_LOAI_NGAY_CONG.IDColumn] = value;
+                    this[this.tableDM_TI_LE_LAM_THEM.IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string MA_NGAY_CONG {
+            public string MA_LAM_THEM {
                 get {
-                    return ((string)(this[this.tableDM_LOAI_NGAY_CONG.MA_NGAY_CONGColumn]));
+                    try {
+                        return ((string)(this[this.tableDM_TI_LE_LAM_THEM.MA_LAM_THEMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MA_LAM_THEM\' in table \'DM_TI_LE_LAM_THEM\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableDM_LOAI_NGAY_CONG.MA_NGAY_CONGColumn] = value;
+                    this[this.tableDM_TI_LE_LAM_THEM.MA_LAM_THEMColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TEN_NGAY_CONG {
+            public decimal TI_LE {
                 get {
-                    return ((string)(this[this.tableDM_LOAI_NGAY_CONG.TEN_NGAY_CONGColumn]));
+                    try {
+                        return ((decimal)(this[this.tableDM_TI_LE_LAM_THEM.TI_LEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TI_LE\' in table \'DM_TI_LE_LAM_THEM\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableDM_LOAI_NGAY_CONG.TEN_NGAY_CONGColumn] = value;
+                    this[this.tableDM_TI_LE_LAM_THEM.TI_LEColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal TI_LE_LNS {
+            public string TEN_LOAI_LAM_THEM {
                 get {
-                    return ((decimal)(this[this.tableDM_LOAI_NGAY_CONG.TI_LE_LNSColumn]));
+                    try {
+                        return ((string)(this[this.tableDM_TI_LE_LAM_THEM.TEN_LOAI_LAM_THEMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TEN_LOAI_LAM_THEM\' in table \'DM_TI_LE_LAM_THEM\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableDM_LOAI_NGAY_CONG.TI_LE_LNSColumn] = value;
+                    this[this.tableDM_TI_LE_LAM_THEM.TEN_LOAI_LAM_THEMColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal TI_LE_LCD {
-                get {
-                    return ((decimal)(this[this.tableDM_LOAI_NGAY_CONG.TI_LE_LCDColumn]));
-                }
-                set {
-                    this[this.tableDM_LOAI_NGAY_CONG.TI_LE_LCDColumn] = value;
-                }
+            public bool IsMA_LAM_THEMNull() {
+                return this.IsNull(this.tableDM_TI_LE_LAM_THEM.MA_LAM_THEMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMA_LAM_THEMNull() {
+                this[this.tableDM_TI_LE_LAM_THEM.MA_LAM_THEMColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTI_LENull() {
+                return this.IsNull(this.tableDM_TI_LE_LAM_THEM.TI_LEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTI_LENull() {
+                this[this.tableDM_TI_LE_LAM_THEM.TI_LEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTEN_LOAI_LAM_THEMNull() {
+                return this.IsNull(this.tableDM_TI_LE_LAM_THEM.TEN_LOAI_LAM_THEMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTEN_LOAI_LAM_THEMNull() {
+                this[this.tableDM_TI_LE_LAM_THEM.TEN_LOAI_LAM_THEMColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -670,22 +692,22 @@ namespace BKI_DichVuMatDat.DS {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class DM_LOAI_NGAY_CONGRowChangeEvent : global::System.EventArgs {
+        public class DM_TI_LE_LAM_THEMRowChangeEvent : global::System.EventArgs {
             
-            private DM_LOAI_NGAY_CONGRow eventRow;
+            private DM_TI_LE_LAM_THEMRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRowChangeEvent(DM_LOAI_NGAY_CONGRow row, global::System.Data.DataRowAction action) {
+            public DM_TI_LE_LAM_THEMRowChangeEvent(DM_TI_LE_LAM_THEMRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DM_LOAI_NGAY_CONGRow Row {
+            public DM_TI_LE_LAM_THEMRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -701,7 +723,7 @@ namespace BKI_DichVuMatDat.DS {
         }
     }
 }
-namespace BKI_DichVuMatDat.DS.DS_DM_LOAI_NGAY_CONGTableAdapters {
+namespace BKI_DichVuMatDat.DS.DS_DM_TI_LE_LAM_THEMTableAdapters {
     
     
     /// <summary>
@@ -713,7 +735,7 @@ namespace BKI_DichVuMatDat.DS.DS_DM_LOAI_NGAY_CONGTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DM_LOAI_NGAY_CONGTableAdapter : global::System.ComponentModel.Component {
+    public partial class DM_TI_LE_LAM_THEMTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -727,7 +749,7 @@ namespace BKI_DichVuMatDat.DS.DS_DM_LOAI_NGAY_CONGTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DM_LOAI_NGAY_CONGTableAdapter() {
+        public DM_TI_LE_LAM_THEMTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -824,48 +846,47 @@ namespace BKI_DichVuMatDat.DS.DS_DM_LOAI_NGAY_CONGTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DM_LOAI_NGAY_CONG";
+            tableMapping.DataSetTable = "DM_TI_LE_LAM_THEM";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("MA_NGAY_CONG", "MA_NGAY_CONG");
-            tableMapping.ColumnMappings.Add("TEN_NGAY_CONG", "TEN_NGAY_CONG");
-            tableMapping.ColumnMappings.Add("TI_LE_LNS", "TI_LE_LNS");
-            tableMapping.ColumnMappings.Add("TI_LE_LCD", "TI_LE_LCD");
+            tableMapping.ColumnMappings.Add("MA_LAM_THEM", "MA_LAM_THEM");
+            tableMapping.ColumnMappings.Add("TI_LE", "TI_LE");
+            tableMapping.ColumnMappings.Add("TEN_LOAI_LAM_THEM", "TEN_LOAI_LAM_THEM");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[DM_LOAI_NGAY_CONG] WHERE (([ID] = @Original_ID) AND ([MA_NGAY_" +
-                "CONG] = @Original_MA_NGAY_CONG) AND ([TEN_NGAY_CONG] = @Original_TEN_NGAY_CONG) " +
-                "AND ([TI_LE_LNS] = @Original_TI_LE_LNS) AND ([TI_LE_LCD] = @Original_TI_LE_LCD))" +
-                "";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[DM_TI_LE_LAM_THEM] WHERE (([ID] = @Original_ID) AND ((@IsNull_MA_LAM_THEM = 1 AND [MA_LAM_THEM] IS NULL) OR ([MA_LAM_THEM] = @Original_MA_LAM_THEM)) AND ((@IsNull_TI_LE = 1 AND [TI_LE] IS NULL) OR ([TI_LE] = @Original_TI_LE)) AND ((@IsNull_TEN_LOAI_LAM_THEM = 1 AND [TEN_LOAI_LAM_THEM] IS NULL) OR ([TEN_LOAI_LAM_THEM] = @Original_TEN_LOAI_LAM_THEM)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MA_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_NGAY_CONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TEN_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_NGAY_CONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE_LNS", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LNS", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE_LCD", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LCD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MA_LAM_THEM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MA_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TI_LE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TI_LE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[DM_LOAI_NGAY_CONG] ([MA_NGAY_CONG], [TEN_NGAY_CONG], [TI_LE_LNS], [TI_LE_LCD]) VALUES (@MA_NGAY_CONG, @TEN_NGAY_CONG, @TI_LE_LNS, @TI_LE_LCD);
-SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_CONG WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[DM_TI_LE_LAM_THEM] ([MA_LAM_THEM], [TI_LE], [TEN_LOAI_LAM_THEM" +
+                "]) VALUES (@MA_LAM_THEM, @TI_LE, @TEN_LOAI_LAM_THEM);\r\nSELECT ID, MA_LAM_THEM, T" +
+                "I_LE, TEN_LOAI_LAM_THEM FROM DM_TI_LE_LAM_THEM WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_NGAY_CONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_NGAY_CONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE_LNS", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LNS", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE_LCD", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LCD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[DM_LOAI_NGAY_CONG] SET [MA_NGAY_CONG] = @MA_NGAY_CONG, [TEN_NGAY_CONG] = @TEN_NGAY_CONG, [TI_LE_LNS] = @TI_LE_LNS, [TI_LE_LCD] = @TI_LE_LCD WHERE (([ID] = @Original_ID) AND ([MA_NGAY_CONG] = @Original_MA_NGAY_CONG) AND ([TEN_NGAY_CONG] = @Original_TEN_NGAY_CONG) AND ([TI_LE_LNS] = @Original_TI_LE_LNS) AND ([TI_LE_LCD] = @Original_TI_LE_LCD));
-SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_CONG WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[DM_TI_LE_LAM_THEM] SET [MA_LAM_THEM] = @MA_LAM_THEM, [TI_LE] = @TI_LE, [TEN_LOAI_LAM_THEM] = @TEN_LOAI_LAM_THEM WHERE (([ID] = @Original_ID) AND ((@IsNull_MA_LAM_THEM = 1 AND [MA_LAM_THEM] IS NULL) OR ([MA_LAM_THEM] = @Original_MA_LAM_THEM)) AND ((@IsNull_TI_LE = 1 AND [TI_LE] IS NULL) OR ([TI_LE] = @Original_TI_LE)) AND ((@IsNull_TEN_LOAI_LAM_THEM = 1 AND [TEN_LOAI_LAM_THEM] IS NULL) OR ([TEN_LOAI_LAM_THEM] = @Original_TEN_LOAI_LAM_THEM)));
+SELECT ID, MA_LAM_THEM, TI_LE, TEN_LOAI_LAM_THEM FROM DM_TI_LE_LAM_THEM WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_NGAY_CONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_NGAY_CONG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE_LNS", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LNS", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE_LCD", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LCD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TI_LE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MA_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_NGAY_CONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TEN_NGAY_CONG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_NGAY_CONG", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE_LNS", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LNS", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE_LCD", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE_LCD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MA_LAM_THEM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MA_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_LAM_THEM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TI_LE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TI_LE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TI_LE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 2, "TI_LE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TEN_LOAI_LAM_THEM", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_LOAI_LAM_THEM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -882,8 +903,7 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM dbo.DM_LOAI_NGA" +
-                "Y_CONG";
+            this._commandCollection[0].CommandText = "SELECT ID, MA_LAM_THEM, TI_LE, TEN_LOAI_LAM_THEM FROM dbo.DM_TI_LE_LAM_THEM";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -891,7 +911,7 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DS_DM_LOAI_NGAY_CONG.DM_LOAI_NGAY_CONGDataTable dataTable) {
+        public virtual int Fill(DS_DM_TI_LE_LAM_THEM.DM_TI_LE_LAM_THEMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -904,9 +924,9 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DS_DM_LOAI_NGAY_CONG.DM_LOAI_NGAY_CONGDataTable GetData() {
+        public virtual DS_DM_TI_LE_LAM_THEM.DM_TI_LE_LAM_THEMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DS_DM_LOAI_NGAY_CONG.DM_LOAI_NGAY_CONGDataTable dataTable = new DS_DM_LOAI_NGAY_CONG.DM_LOAI_NGAY_CONGDataTable();
+            DS_DM_TI_LE_LAM_THEM.DM_TI_LE_LAM_THEMDataTable dataTable = new DS_DM_TI_LE_LAM_THEM.DM_TI_LE_LAM_THEMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -914,15 +934,15 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_DM_LOAI_NGAY_CONG.DM_LOAI_NGAY_CONGDataTable dataTable) {
+        public virtual int Update(DS_DM_TI_LE_LAM_THEM.DM_TI_LE_LAM_THEMDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DS_DM_LOAI_NGAY_CONG dataSet) {
-            return this.Adapter.Update(dataSet, "DM_LOAI_NGAY_CONG");
+        public virtual int Update(DS_DM_TI_LE_LAM_THEM dataSet) {
+            return this.Adapter.Update(dataSet, "DM_TI_LE_LAM_THEM");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -944,22 +964,32 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_ID, string Original_MA_NGAY_CONG, string Original_TEN_NGAY_CONG, decimal Original_TI_LE_LNS, decimal Original_TI_LE_LCD) {
+        public virtual int Delete(decimal Original_ID, string Original_MA_LAM_THEM, global::System.Nullable<decimal> Original_TI_LE, string Original_TEN_LOAI_LAM_THEM) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_ID));
-            if ((Original_MA_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("Original_MA_NGAY_CONG");
+            if ((Original_MA_LAM_THEM == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_MA_NGAY_CONG));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_MA_LAM_THEM));
             }
-            if ((Original_TEN_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("Original_TEN_NGAY_CONG");
+            if ((Original_TI_LE.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((decimal)(Original_TI_LE.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_TEN_NGAY_CONG));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((decimal)(Original_TI_LE_LNS));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((decimal)(Original_TI_LE_LCD));
+            if ((Original_TEN_LOAI_LAM_THEM == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_TEN_LOAI_LAM_THEM));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -980,21 +1010,25 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string MA_NGAY_CONG, string TEN_NGAY_CONG, decimal TI_LE_LNS, decimal TI_LE_LCD) {
-            if ((MA_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("MA_NGAY_CONG");
+        public virtual int Insert(string MA_LAM_THEM, global::System.Nullable<decimal> TI_LE, string TEN_LOAI_LAM_THEM) {
+            if ((MA_LAM_THEM == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(MA_NGAY_CONG));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(MA_LAM_THEM));
             }
-            if ((TEN_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("TEN_NGAY_CONG");
+            if ((TI_LE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(TI_LE.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(TEN_NGAY_CONG));
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(TI_LE_LNS));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(TI_LE_LCD));
+            if ((TEN_LOAI_LAM_THEM == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TEN_LOAI_LAM_THEM));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1015,37 +1049,51 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string MA_NGAY_CONG, string TEN_NGAY_CONG, decimal TI_LE_LNS, decimal TI_LE_LCD, decimal Original_ID, string Original_MA_NGAY_CONG, string Original_TEN_NGAY_CONG, decimal Original_TI_LE_LNS, decimal Original_TI_LE_LCD, decimal ID) {
-            if ((MA_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("MA_NGAY_CONG");
+        public virtual int Update(string MA_LAM_THEM, global::System.Nullable<decimal> TI_LE, string TEN_LOAI_LAM_THEM, decimal Original_ID, string Original_MA_LAM_THEM, global::System.Nullable<decimal> Original_TI_LE, string Original_TEN_LOAI_LAM_THEM, decimal ID) {
+            if ((MA_LAM_THEM == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(MA_NGAY_CONG));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(MA_LAM_THEM));
             }
-            if ((TEN_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("TEN_NGAY_CONG");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(TEN_NGAY_CONG));
-            }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(TI_LE_LNS));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(TI_LE_LCD));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(Original_ID));
-            if ((Original_MA_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("Original_MA_NGAY_CONG");
+            if ((TI_LE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(TI_LE.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_MA_NGAY_CONG));
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Original_TEN_NGAY_CONG == null)) {
-                throw new global::System.ArgumentNullException("Original_TEN_NGAY_CONG");
+            if ((TEN_LOAI_LAM_THEM == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_TEN_NGAY_CONG));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(TEN_LOAI_LAM_THEM));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(Original_TI_LE_LNS));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(Original_TI_LE_LCD));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(ID));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Original_ID));
+            if ((Original_MA_LAM_THEM == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_MA_LAM_THEM));
+            }
+            if ((Original_TI_LE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(Original_TI_LE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Original_TEN_LOAI_LAM_THEM == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_TEN_LOAI_LAM_THEM));
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(ID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1066,8 +1114,8 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string MA_NGAY_CONG, string TEN_NGAY_CONG, decimal TI_LE_LNS, decimal TI_LE_LCD, decimal Original_ID, string Original_MA_NGAY_CONG, string Original_TEN_NGAY_CONG, decimal Original_TI_LE_LNS, decimal Original_TI_LE_LCD) {
-            return this.Update(MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD, Original_ID, Original_MA_NGAY_CONG, Original_TEN_NGAY_CONG, Original_TI_LE_LNS, Original_TI_LE_LCD, Original_ID);
+        public virtual int Update(string MA_LAM_THEM, global::System.Nullable<decimal> TI_LE, string TEN_LOAI_LAM_THEM, decimal Original_ID, string Original_MA_LAM_THEM, global::System.Nullable<decimal> Original_TI_LE, string Original_TEN_LOAI_LAM_THEM) {
+            return this.Update(MA_LAM_THEM, TI_LE, TEN_LOAI_LAM_THEM, Original_ID, Original_MA_LAM_THEM, Original_TI_LE, Original_TEN_LOAI_LAM_THEM, Original_ID);
         }
     }
     
@@ -1083,7 +1131,7 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         
         private UpdateOrderOption _updateOrder;
         
-        private DM_LOAI_NGAY_CONGTableAdapter _dM_LOAI_NGAY_CONGTableAdapter;
+        private DM_TI_LE_LAM_THEMTableAdapter _dM_TI_LE_LAM_THEMTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1105,12 +1153,12 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public DM_LOAI_NGAY_CONGTableAdapter DM_LOAI_NGAY_CONGTableAdapter {
+        public DM_TI_LE_LAM_THEMTableAdapter DM_TI_LE_LAM_THEMTableAdapter {
             get {
-                return this._dM_LOAI_NGAY_CONGTableAdapter;
+                return this._dM_TI_LE_LAM_THEMTableAdapter;
             }
             set {
-                this._dM_LOAI_NGAY_CONGTableAdapter = value;
+                this._dM_TI_LE_LAM_THEMTableAdapter = value;
             }
         }
         
@@ -1133,9 +1181,9 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._dM_LOAI_NGAY_CONGTableAdapter != null) 
-                            && (this._dM_LOAI_NGAY_CONGTableAdapter.Connection != null))) {
-                    return this._dM_LOAI_NGAY_CONGTableAdapter.Connection;
+                if (((this._dM_TI_LE_LAM_THEMTableAdapter != null) 
+                            && (this._dM_TI_LE_LAM_THEMTableAdapter.Connection != null))) {
+                    return this._dM_TI_LE_LAM_THEMTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1150,7 +1198,7 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
+                if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1162,14 +1210,14 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DS_DM_LOAI_NGAY_CONG dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DS_DM_TI_LE_LAM_THEM dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DM_LOAI_NGAY_CONG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DM_TI_LE_LAM_THEM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dM_LOAI_NGAY_CONGTableAdapter.Update(updatedRows));
+                    result = (result + this._dM_TI_LE_LAM_THEMTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1181,13 +1229,13 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DS_DM_LOAI_NGAY_CONG dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DS_DM_TI_LE_LAM_THEM dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DM_LOAI_NGAY_CONG.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DM_TI_LE_LAM_THEM.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dM_LOAI_NGAY_CONGTableAdapter.Update(addedRows));
+                    result = (result + this._dM_TI_LE_LAM_THEMTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1199,13 +1247,13 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DS_DM_LOAI_NGAY_CONG dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DS_DM_TI_LE_LAM_THEM dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.DM_LOAI_NGAY_CONG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.DM_TI_LE_LAM_THEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dM_LOAI_NGAY_CONGTableAdapter.Update(deletedRows));
+                    result = (result + this._dM_TI_LE_LAM_THEMTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1241,15 +1289,15 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DS_DM_LOAI_NGAY_CONG dataSet) {
+        public virtual int UpdateAll(DS_DM_TI_LE_LAM_THEM dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._dM_LOAI_NGAY_CONGTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._dM_LOAI_NGAY_CONGTableAdapter.Connection) == false))) {
+            if (((this._dM_TI_LE_LAM_THEMTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._dM_TI_LE_LAM_THEMTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1285,13 +1333,13 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
-                    revertConnections.Add(this._dM_LOAI_NGAY_CONGTableAdapter, this._dM_LOAI_NGAY_CONGTableAdapter.Connection);
-                    this._dM_LOAI_NGAY_CONGTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._dM_LOAI_NGAY_CONGTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._dM_LOAI_NGAY_CONGTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._dM_LOAI_NGAY_CONGTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._dM_LOAI_NGAY_CONGTableAdapter.Adapter);
+                if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
+                    revertConnections.Add(this._dM_TI_LE_LAM_THEMTableAdapter, this._dM_TI_LE_LAM_THEMTableAdapter.Connection);
+                    this._dM_TI_LE_LAM_THEMTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dM_TI_LE_LAM_THEMTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dM_TI_LE_LAM_THEMTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._dM_TI_LE_LAM_THEMTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dM_TI_LE_LAM_THEMTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1352,9 +1400,9 @@ SELECT ID, MA_NGAY_CONG, TEN_NGAY_CONG, TI_LE_LNS, TI_LE_LCD FROM DM_LOAI_NGAY_C
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._dM_LOAI_NGAY_CONGTableAdapter != null)) {
-                    this._dM_LOAI_NGAY_CONGTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dM_LOAI_NGAY_CONGTableAdapter]));
-                    this._dM_LOAI_NGAY_CONGTableAdapter.Transaction = null;
+                if ((this._dM_TI_LE_LAM_THEMTableAdapter != null)) {
+                    this._dM_TI_LE_LAM_THEMTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dM_TI_LE_LAM_THEMTableAdapter]));
+                    this._dM_TI_LE_LAM_THEMTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

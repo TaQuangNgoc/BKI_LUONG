@@ -51,6 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_BAO_HIEM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_BAO_HIEM.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_LOAI_NGAY_CONG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,10 +66,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_NHAN_VIEN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_PHU_CAP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_PHU_CAP.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_SAN_PHAM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_SAN_PHAM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_THUE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_THUE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_TI_LE_LAM_THEM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_GD_CHAM_CONG.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,6 +161,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_HT_USER_GROUP.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_PHU_CAP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PHU_CAP.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_RPT_LUONG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -169,6 +194,17 @@
     <None Include="DS_CM_DM_TU_DIEN.xss">
       <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
     </None>
+    <None Include="DS_DM_BAO_HIEM.xsc">
+      <DependentUpon>DS_DM_BAO_HIEM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_BAO_HIEM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_BAO_HIEM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_BAO_HIEM.xss">
+      <DependentUpon>DS_DM_BAO_HIEM.xsd</DependentUpon>
+    </None>
     <None Include="DS_DM_LOAI_NGAY_CONG.xsc">
       <DependentUpon>DS_DM_LOAI_NGAY_CONG.xsd</DependentUpon>
     </None>
@@ -191,6 +227,17 @@
     <None Include="DS_DM_NHAN_VIEN.xss">
       <DependentUpon>DS_DM_NHAN_VIEN.xsd</DependentUpon>
     </None>
+    <None Include="DS_DM_PHU_CAP.xsc">
+      <DependentUpon>DS_DM_PHU_CAP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_PHU_CAP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_PHU_CAP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_PHU_CAP.xss">
+      <DependentUpon>DS_DM_PHU_CAP.xsd</DependentUpon>
+    </None>
     <None Include="DS_DM_SAN_PHAM.xsc">
       <DependentUpon>DS_DM_SAN_PHAM.xsd</DependentUpon>
     </None>
@@ -201,6 +248,28 @@
     </None>
     <None Include="DS_DM_SAN_PHAM.xss">
       <DependentUpon>DS_DM_SAN_PHAM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THUE.xsc">
+      <DependentUpon>DS_DM_THUE.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THUE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_THUE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_THUE.xss">
+      <DependentUpon>DS_DM_THUE.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM.xsc">
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_TI_LE_LAM_THEM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM.xss">
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM.xsd</DependentUpon>
     </None>
     <None Include="DS_GD_CHAM_CONG.xsc">
       <DependentUpon>DS_GD_CHAM_CONG.xsd</DependentUpon>
@@ -366,6 +435,17 @@
     </None>
     <None Include="DS_HT_USER_GROUP.xss">
       <DependentUpon>DS_HT_USER_GROUP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PHU_CAP.xsc">
+      <DependentUpon>DS_PHU_CAP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PHU_CAP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PHU_CAP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_PHU_CAP.xss">
+      <DependentUpon>DS_PHU_CAP.xsd</DependentUpon>
     </None>
     <None Include="DS_RPT_LUONG.xsc">
       <DependentUpon>DS_RPT_LUONG.xsd</DependentUpon>

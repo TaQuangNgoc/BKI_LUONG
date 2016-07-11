@@ -71,7 +71,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>paper1331.ico</ApplicationIcon>
@@ -363,6 +363,36 @@
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.designer.cs">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.Designer.cs">
+      <DependentUpon>BAO_HIEM_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.Designer.cs">
+      <DependentUpon>LAM_THEM_GIO_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\LOAI_NGAY_CONG_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\LOAI_NGAY_CONG_DETAIL.Designer.cs">
+      <DependentUpon>LOAI_NGAY_CONG_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.Designer.cs">
+      <DependentUpon>PHU_CAP_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\THUE_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\THUE_DETAIL.Designer.cs">
+      <DependentUpon>THUE_DETAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\FORM_CHO_CAI_DAT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -517,6 +547,21 @@
     </Compile>
     <EmbeddedResource Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.resx">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.resx">
+      <DependentUpon>BAO_HIEM_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.resx">
+      <DependentUpon>LAM_THEM_GIO_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\LOAI_NGAY_CONG_DETAIL.resx">
+      <DependentUpon>LOAI_NGAY_CONG_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.resx">
+      <DependentUpon>PHU_CAP_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\THUE_DETAIL.resx">
+      <DependentUpon>THUE_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\FORM_CHO_CAI_DAT.resx">
       <DependentUpon>FORM_CHO_CAI_DAT.cs</DependentUpon>
