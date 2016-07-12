@@ -158,5 +158,20 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             if (m_rd_so_tien.Checked == false) m_txt_so_tien.Enabled = false;
             else m_txt_so_tien.Enabled = true;
         }
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+
+        }
+
+        private void m_btn_xoa_luong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

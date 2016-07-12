@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textEdit14 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_lcd = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_bao_hiem = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ma_bao_hiem = new DevExpress.XtraEditors.TextEdit();
             this.label15 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_bao_hiem.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_bao_hiem.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,6 +88,7 @@
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa_luong.TabIndex = 29;
             this.m_btn_xoa_luong.Text = "THOÁT";
+            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // m_btn_luu
             // 
@@ -103,6 +107,7 @@
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // panel2
             // 
@@ -115,35 +120,36 @@
             this.panel2.Size = new System.Drawing.Size(440, 53);
             this.panel2.TabIndex = 60;
             // 
-            // textEdit14
+            // m_txt_lcd
             // 
-            this.textEdit14.Location = new System.Drawing.Point(173, 233);
-            this.textEdit14.Name = "textEdit14";
-            this.textEdit14.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit14.Properties.Appearance.Options.UseFont = true;
-            this.textEdit14.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit14.Size = new System.Drawing.Size(194, 26);
-            this.textEdit14.TabIndex = 67;
+            this.m_txt_lcd.Location = new System.Drawing.Point(173, 233);
+            this.m_txt_lcd.Name = "m_txt_lcd";
+            this.m_txt_lcd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_lcd.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_lcd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lcd.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_lcd.TabIndex = 67;
+            this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
-            // textEdit13
+            // m_txt_ten_bao_hiem
             // 
-            this.textEdit13.Location = new System.Drawing.Point(173, 185);
-            this.textEdit13.Name = "textEdit13";
-            this.textEdit13.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit13.Properties.Appearance.Options.UseFont = true;
-            this.textEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit13.Size = new System.Drawing.Size(194, 26);
-            this.textEdit13.TabIndex = 66;
+            this.m_txt_ten_bao_hiem.Location = new System.Drawing.Point(173, 185);
+            this.m_txt_ten_bao_hiem.Name = "m_txt_ten_bao_hiem";
+            this.m_txt_ten_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_ten_bao_hiem.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ten_bao_hiem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ten_bao_hiem.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ten_bao_hiem.TabIndex = 66;
             // 
-            // textEdit12
+            // m_txt_ma_bao_hiem
             // 
-            this.textEdit12.Location = new System.Drawing.Point(173, 137);
-            this.textEdit12.Name = "textEdit12";
-            this.textEdit12.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit12.Properties.Appearance.Options.UseFont = true;
-            this.textEdit12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit12.Size = new System.Drawing.Size(194, 26);
-            this.textEdit12.TabIndex = 65;
+            this.m_txt_ma_bao_hiem.Location = new System.Drawing.Point(173, 137);
+            this.m_txt_ma_bao_hiem.Name = "m_txt_ma_bao_hiem";
+            this.m_txt_ma_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_ma_bao_hiem.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ma_bao_hiem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ma_bao_hiem.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ma_bao_hiem.TabIndex = 65;
             // 
             // label15
             // 
@@ -190,9 +196,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 397);
-            this.Controls.Add(this.textEdit14);
-            this.Controls.Add(this.textEdit13);
-            this.Controls.Add(this.textEdit12);
+            this.Controls.Add(this.m_txt_lcd);
+            this.Controls.Add(this.m_txt_ten_bao_hiem);
+            this.Controls.Add(this.m_txt_ma_bao_hiem);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -205,9 +211,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_bao_hiem.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_bao_hiem.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,12 +227,13 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.TextEdit textEdit14;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.TextEdit m_txt_lcd;
+        private DevExpress.XtraEditors.TextEdit m_txt_ten_bao_hiem;
+        private DevExpress.XtraEditors.TextEdit m_txt_ma_bao_hiem;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
+        private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
     }
 }

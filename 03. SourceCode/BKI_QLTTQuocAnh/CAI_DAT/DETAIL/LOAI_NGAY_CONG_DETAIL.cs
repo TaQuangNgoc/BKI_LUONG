@@ -108,6 +108,17 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_txt_lns_loai_ngay_cong.Text = v_us.dcTI_LE_LNS.ToString();
         }
 
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) )
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+           
+        }
+
         
     }
 }

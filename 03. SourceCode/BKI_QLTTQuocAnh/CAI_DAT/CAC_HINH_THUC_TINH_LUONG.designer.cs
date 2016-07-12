@@ -50,7 +50,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 53);
+            this.panel1.Size = new System.Drawing.Size(474, 53);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -75,7 +75,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(526, 290);
+            this.panel3.Size = new System.Drawing.Size(474, 290);
             this.panel3.TabIndex = 5;
             // 
             // m_cb_luong_theo_thoi_gian
@@ -140,7 +140,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 343);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(526, 46);
+            this.panel2.Size = new System.Drawing.Size(474, 46);
             this.panel2.TabIndex = 4;
             // 
             // m_btn_luu
@@ -155,7 +155,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(383, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(331, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
             this.m_btn_luu.TabIndex = 14;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 389);
+            this.ClientSize = new System.Drawing.Size(474, 389);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

@@ -150,7 +150,7 @@ namespace BKI_DichVuMatDat
                     case "tab_thue":
                         THUE_DETAIL v_f_thue = new THUE_DETAIL();
                         v_f_thue.dislay_for_insert();
-                        load_du_lieu_vao_bang_loai_ngay_cong();
+                        load_du_lieu_vao_bang_thue();
                         break;
                     
                     default:
@@ -177,6 +177,12 @@ namespace BKI_DichVuMatDat
                     case "tab_lamthemgio":
                         lam_them_gio_delete();
                         break;
+                    case "tab_baohiem":
+                        bao_hiem_delete();
+                        break;
+                    case "tab_thue":
+                       thue_delete();
+                        break;
                         
                     default:
                         break;
@@ -187,6 +193,34 @@ namespace BKI_DichVuMatDat
             {
                 
                 throw;
+            }
+        }
+
+        private void thue_delete()
+        {
+            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            if (dialogresult == DialogResult.Yes)
+            {
+                DataRow v_dr = m_grv_thue.GetDataRow(m_grv_thue.FocusedRowHandle);
+                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                US_DM_THUE v_us = new US_DM_THUE(v_id);
+                v_us.Delete();
+                MessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                load_du_lieu_vao_bang_thue();
+            }
+        }
+
+        private void bao_hiem_delete()
+        {
+            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            if (dialogresult == DialogResult.Yes)
+            {
+                DataRow v_dr = m_grv_bao_hiem.GetDataRow(m_grv_bao_hiem.FocusedRowHandle);
+                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                US_DM_BAO_HIEM v_us = new US_DM_BAO_HIEM(v_id);
+                v_us.Delete();
+                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_BH"] + " !");
+                load_du_lieu_vao_bang_bao_hiem();
             }
         }
 
@@ -234,10 +268,10 @@ namespace BKI_DichVuMatDat
                         phu_cap_update();
                         break;
                     case "tab_baohiem":
-                       //bap_hiem_update();
+                       bao_hiem_update();
                         break;
                     case "tab_thue":
-                       //thue_update();
+                       thue_update();
                         break;
 
 
@@ -250,6 +284,48 @@ namespace BKI_DichVuMatDat
             catch (Exception v_e)
             {
                 CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void thue_update()
+        {
+            var v_count_thue = m_grv_thue.SelectedRowsCount;
+            if (v_count_thue == 0)
+            {
+                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+            }
+            else if (v_count_thue > 1)
+            {
+                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+            }
+            else
+            {
+                DataRow v_dr = m_grv_thue.GetDataRow(m_grv_thue.FocusedRowHandle);
+                US_DM_THUE v_us = new US_DM_THUE(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                THUE_DETAIL v_f = new THUE_DETAIL();
+                v_f.dislay_for_update(v_us);
+                load_du_lieu_vao_bang_thue();
+            }
+        }
+
+        private void bao_hiem_update()
+        {
+            var v_count_bao_hiem = m_grv_bao_hiem.SelectedRowsCount;
+            if (v_count_bao_hiem == 0)
+            {
+                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+            }
+            else if (v_count_bao_hiem > 1)
+            {
+                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+            }
+            else
+            {
+                DataRow v_dr = m_grv_bao_hiem.GetDataRow(m_grv_bao_hiem.FocusedRowHandle);
+                US_DM_BAO_HIEM v_us = new US_DM_BAO_HIEM(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                BAO_HIEM_DETAIL v_f = new BAO_HIEM_DETAIL();
+                v_f.dislay_for_update(v_us);
+                load_du_lieu_vao_bang_bao_hiem();
             }
         }
 

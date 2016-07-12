@@ -33,10 +33,10 @@
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textEdit18 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit17 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit16 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit15 = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_bu_tru = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ti_le = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_chantren = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_chanduoi = new DevExpress.XtraEditors.TextEdit();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -48,10 +48,10 @@
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_bu_tru.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_chantren.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_chanduoi.Properties)).BeginInit();
             this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,7 @@
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // m_btn_xoa_luong
             // 
@@ -111,6 +112,7 @@
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa_luong.TabIndex = 29;
             this.m_btn_xoa_luong.Text = "THOÁT";
+            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // panel2
             // 
@@ -123,124 +125,133 @@
             this.panel2.Size = new System.Drawing.Size(554, 53);
             this.panel2.TabIndex = 69;
             // 
-            // textEdit18
+            // m_txt_bu_tru
             // 
-            this.textEdit18.Location = new System.Drawing.Point(150, 181);
-            this.textEdit18.Name = "textEdit18";
-            this.textEdit18.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit18.Properties.Appearance.Options.UseFont = true;
-            this.textEdit18.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit18.Size = new System.Drawing.Size(194, 26);
-            this.textEdit18.TabIndex = 23;
+            this.m_txt_bu_tru.Location = new System.Drawing.Point(150, 181);
+            this.m_txt_bu_tru.Name = "m_txt_bu_tru";
+            this.m_txt_bu_tru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_bu_tru.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_bu_tru.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_bu_tru.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_bu_tru.TabIndex = 23;
             // 
-            // textEdit17
+            // m_txt_ti_le
             // 
-            this.textEdit17.Location = new System.Drawing.Point(150, 129);
-            this.textEdit17.Name = "textEdit17";
-            this.textEdit17.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit17.Properties.Appearance.Options.UseFont = true;
-            this.textEdit17.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit17.Size = new System.Drawing.Size(194, 26);
-            this.textEdit17.TabIndex = 22;
+            this.m_txt_ti_le.Location = new System.Drawing.Point(150, 129);
+            this.m_txt_ti_le.Name = "m_txt_ti_le";
+            this.m_txt_ti_le.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_ti_le.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ti_le.TabIndex = 22;
+            this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
-            // textEdit16
+            // m_txt_chantren
             // 
-            this.textEdit16.Location = new System.Drawing.Point(150, 77);
-            this.textEdit16.Name = "textEdit16";
-            this.textEdit16.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit16.Properties.Appearance.Options.UseFont = true;
-            this.textEdit16.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit16.Size = new System.Drawing.Size(194, 26);
-            this.textEdit16.TabIndex = 21;
+            this.m_txt_chantren.Location = new System.Drawing.Point(150, 77);
+            this.m_txt_chantren.Name = "m_txt_chantren";
+            this.m_txt_chantren.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_chantren.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_chantren.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_chantren.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_chantren.TabIndex = 21;
             // 
-            // textEdit15
+            // m_txt_chanduoi
             // 
-            this.textEdit15.Location = new System.Drawing.Point(150, 25);
-            this.textEdit15.Name = "textEdit15";
-            this.textEdit15.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit15.Properties.Appearance.Options.UseFont = true;
-            this.textEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit15.Size = new System.Drawing.Size(194, 26);
-            this.textEdit15.TabIndex = 20;
+            this.m_txt_chanduoi.Location = new System.Drawing.Point(150, 25);
+            this.m_txt_chanduoi.Name = "m_txt_chanduoi";
+            this.m_txt_chanduoi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_txt_chanduoi.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_chanduoi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_chanduoi.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_chanduoi.TabIndex = 20;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(362, 81);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(30, 13);
+            this.label28.Size = new System.Drawing.Size(37, 18);
             this.label28.TabIndex = 6;
             this.label28.Text = "VND";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(362, 185);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(30, 13);
+            this.label27.Size = new System.Drawing.Size(37, 18);
             this.label27.TabIndex = 6;
             this.label27.Text = "VND";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(362, 29);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(30, 13);
+            this.label25.Size = new System.Drawing.Size(37, 18);
             this.label25.TabIndex = 6;
             this.label25.Text = "VND";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(46, 29);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(55, 13);
+            this.label20.Size = new System.Drawing.Size(73, 18);
             this.label20.TabIndex = 6;
             this.label20.Text = "Chặn dưới";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(46, 81);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(53, 13);
+            this.label21.Size = new System.Drawing.Size(72, 18);
             this.label21.TabIndex = 8;
             this.label21.Text = "Chặn trên";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(46, 133);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(27, 13);
+            this.label22.Size = new System.Drawing.Size(35, 18);
             this.label22.TabIndex = 8;
             this.label22.Text = "Tỉ lệ";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(46, 185);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(35, 13);
+            this.label24.Size = new System.Drawing.Size(49, 18);
             this.label24.TabIndex = 15;
             this.label24.Text = "Bù trừ";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(362, 133);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(18, 13);
+            this.label23.Size = new System.Drawing.Size(28, 18);
             this.label23.TabIndex = 14;
             this.label23.Text = "% ";
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.textEdit18);
-            this.groupBox12.Controls.Add(this.textEdit17);
-            this.groupBox12.Controls.Add(this.textEdit16);
-            this.groupBox12.Controls.Add(this.textEdit15);
+            this.groupBox12.Controls.Add(this.m_txt_bu_tru);
+            this.groupBox12.Controls.Add(this.m_txt_ti_le);
+            this.groupBox12.Controls.Add(this.m_txt_chantren);
+            this.groupBox12.Controls.Add(this.m_txt_chanduoi);
             this.groupBox12.Controls.Add(this.label28);
             this.groupBox12.Controls.Add(this.label27);
             this.groupBox12.Controls.Add(this.label25);
@@ -270,10 +281,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_bu_tru.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_chantren.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_chanduoi.Properties)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
@@ -287,10 +298,10 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.TextEdit textEdit18;
-        private DevExpress.XtraEditors.TextEdit textEdit17;
-        private DevExpress.XtraEditors.TextEdit textEdit16;
-        private DevExpress.XtraEditors.TextEdit textEdit15;
+        private DevExpress.XtraEditors.TextEdit m_txt_bu_tru;
+        private DevExpress.XtraEditors.TextEdit m_txt_ti_le;
+        private DevExpress.XtraEditors.TextEdit m_txt_chantren;
+        private DevExpress.XtraEditors.TextEdit m_txt_chanduoi;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label25;

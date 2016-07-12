@@ -130,6 +130,7 @@
             this.m_txt_lcd_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
             this.m_txt_lcd_loai_ngay_cong.TabIndex = 39;
+            this.m_txt_lcd_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_lns_loai_ngay_cong
             // 
@@ -140,6 +141,7 @@
             this.m_txt_lns_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
             this.m_txt_lns_loai_ngay_cong.TabIndex = 38;
+            this.m_txt_lns_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_ngay_cong
             // 

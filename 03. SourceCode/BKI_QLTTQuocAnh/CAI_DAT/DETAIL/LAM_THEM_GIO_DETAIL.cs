@@ -106,5 +106,20 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_txt_ten_loai_lamthem.Text = v_us.strTEN_LOAI_LAM_THEM;
             m_txt_lns.Text = v_us.dcTI_LE.ToString();
         }
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+
+        }
+
+        private void m_btn_xoa_luong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

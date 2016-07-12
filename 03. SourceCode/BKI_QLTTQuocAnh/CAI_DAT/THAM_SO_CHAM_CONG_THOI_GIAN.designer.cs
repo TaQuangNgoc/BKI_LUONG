@@ -29,7 +29,7 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -217,6 +217,8 @@ namespace BKI_DichVuMatDat
             this.gridColumn4});
             this.m_grv_ngay_cong.GridControl = this.m_grc_ngay_cong;
             this.m_grv_ngay_cong.Name = "m_grv_ngay_cong";
+            this.m_grv_ngay_cong.OptionsBehavior.Editable = false;
+            this.m_grv_ngay_cong.OptionsSelection.MultiSelect = true;
             this.m_grv_ngay_cong.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
@@ -249,7 +251,7 @@ namespace BKI_DichVuMatDat
             this.gridColumn4.FieldName = "TI_LE_LCD";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 0;
+            this.gridColumn4.VisibleIndex = 3;
             // 
             // gridView6
             // 
@@ -271,9 +273,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -295,6 +297,7 @@ namespace BKI_DichVuMatDat
             this.gridColumn7});
             this.m_grv_lam_them_gio.GridControl = this.m_grc_loai_lam_them_gio;
             this.m_grv_lam_them_gio.Name = "m_grv_lam_them_gio";
+            this.m_grv_lam_them_gio.OptionsBehavior.Editable = false;
             this.m_grv_lam_them_gio.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn5
@@ -365,6 +368,7 @@ namespace BKI_DichVuMatDat
             this.gridColumn13});
             this.m_grv_phu_cap.GridControl = this.m_grc_loai_phu_cap;
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
+            this.m_grv_phu_cap.OptionsBehavior.Editable = false;
             this.m_grv_phu_cap.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn8
@@ -467,6 +471,7 @@ namespace BKI_DichVuMatDat
             this.gridColumn16});
             this.m_grv_bao_hiem.GridControl = this.m_grc_bao_hiem;
             this.m_grv_bao_hiem.Name = "m_grv_bao_hiem";
+            this.m_grv_bao_hiem.OptionsBehavior.Editable = false;
             this.m_grv_bao_hiem.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn14
@@ -546,6 +551,7 @@ namespace BKI_DichVuMatDat
             this.gridColumn20});
             this.m_grv_thue.GridControl = this.m_grc_thue;
             this.m_grv_thue.Name = "m_grv_thue";
+            this.m_grv_thue.OptionsBehavior.Editable = false;
             this.m_grv_thue.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn17

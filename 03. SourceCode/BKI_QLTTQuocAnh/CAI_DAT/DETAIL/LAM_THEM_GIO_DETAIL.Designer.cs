@@ -115,6 +115,7 @@
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa_luong.TabIndex = 29;
             this.m_btn_xoa_luong.Text = "THOÁT";
+            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // m_txt_lns
             // 
@@ -125,6 +126,7 @@
             this.m_txt_lns.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lns.Size = new System.Drawing.Size(180, 26);
             this.m_txt_lns.TabIndex = 30;
+            this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_loai_lamthem
             // 
