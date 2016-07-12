@@ -205,6 +205,7 @@
             this.m_txt_so_tien.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_so_tien.Size = new System.Drawing.Size(140, 26);
             this.m_txt_so_tien.TabIndex = 22;
+            this.m_txt_so_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_rd_ti_le
             // 
@@ -315,6 +316,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PHU_CAP_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PHU_CAP_DETAIL";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

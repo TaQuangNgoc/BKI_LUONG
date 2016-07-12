@@ -29,7 +29,7 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -273,9 +273,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -406,6 +406,8 @@ namespace BKI_DichVuMatDat
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Số tiền";
+            this.gridColumn12.DisplayFormat.FormatString = "n0";
+            this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "SO_TIEN";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
@@ -557,6 +559,8 @@ namespace BKI_DichVuMatDat
             // gridColumn17
             // 
             this.gridColumn17.Caption = "Chặn dưới";
+            this.gridColumn17.DisplayFormat.FormatString = "n0";
+            this.gridColumn17.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn17.FieldName = "CHAN_DUOI";
             this.gridColumn17.Name = "gridColumn17";
             this.gridColumn17.Visible = true;
@@ -565,6 +569,8 @@ namespace BKI_DichVuMatDat
             // gridColumn18
             // 
             this.gridColumn18.Caption = "Chặn trên";
+            this.gridColumn18.DisplayFormat.FormatString = "n0";
+            this.gridColumn18.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn18.FieldName = "CHAN_TREN";
             this.gridColumn18.Name = "gridColumn18";
             this.gridColumn18.Visible = true;
@@ -581,6 +587,8 @@ namespace BKI_DichVuMatDat
             // gridColumn20
             // 
             this.gridColumn20.Caption = "Bù trừ";
+            this.gridColumn20.DisplayFormat.FormatString = "n0";
+            this.gridColumn20.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn20.FieldName = "BU_TRU";
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.Visible = true;

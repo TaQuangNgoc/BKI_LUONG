@@ -173,6 +173,9 @@ namespace BKI_DichVuMatDat
                     case "tab_thue":
                        thue_delete();
                         break;
+                    case "tab_phucap":
+                        phucap_delete();
+                        break;
                         
                     default:
                         break;
@@ -185,6 +188,21 @@ namespace BKI_DichVuMatDat
                 throw;
             }
         }
+
+        private void phucap_delete()
+        {
+            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            if (dialogresult == DialogResult.Yes)
+            {
+                DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                US_DM_PHU_CAP v_us = new US_DM_PHU_CAP(v_id);
+                v_us.Delete();
+                MessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                load_du_lieu_vao_bang_phu_cap();
+            }
+        }
+            
 
         private void thue_delete()
         {

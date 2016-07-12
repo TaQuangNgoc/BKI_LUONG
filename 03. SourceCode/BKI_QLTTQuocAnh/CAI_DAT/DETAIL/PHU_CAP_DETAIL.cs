@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
@@ -50,7 +51,19 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
         private void us_to_form(US_DM_PHU_CAP v_us)
         {
-            
+            m_txt_ten_phucap.Text = v_us.strTEN_PHU_CAP;
+            m_txt_doi_tuong_huong.Text = v_us.strDOI_TUONG_HUONG_PHU_CAP;
+            m_txt_ti_le.Text = v_us.dcTI_LE.ToString();
+            m_cb_cua_tien.SelectedValue = v_us.dcID_TIEN_TI_LE_PHU_CAP.ToString();
+            m_txt_so_tien.Text = v_us.dcSO_TIEN.ToString();
+            if (m_us.strGIAM_TRU_THUE_YN =="Y") m_checkb_duocgiamtruthue.Checked =true;
+            else m_checkb_duocgiamtruthue.Checked = false;
+            if (m_us.strPHU_THUOC_SO_NGAY_DI_LAM_YN == "Y") m_checkb_phuthuoc_songaydilam.Checked = true;
+            else m_checkb_phuthuoc_songaydilam.Checked = false;
+
+            if (m_us.strDONG_BAO_HIEM_YN == "Y") m_checkb_tinhvaokhoanphaidong_bhxh.Checked = true;
+            else m_checkb_tinhvaokhoanphaidong_bhxh.Checked = false;
+       
         }
 
         private void m_btn_luu_Click(object sender, EventArgs e)
@@ -72,10 +85,10 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                             MessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
-                        catch (Exception v_e)
+                        catch (Exception )
                         {
                             //  MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
-                            throw v_e;
+                            MessageBox.Show("mã phụ cấp đã tồn tại. Bạn vui lòng nhập lại thông tin!");
 
                         }
 
@@ -133,6 +146,24 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         private bool is_check_not_ok()
         {
             return true;
+        }
+        private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
+        {
+            TextEdit textbox = (TextEdit)sender;
+            try
+            {
+                System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+                double valueBefore = Double.Parse(textbox.Text, System.Globalization.NumberStyles.AllowThousands);
+                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);
+                textbox.Select(textbox.Text.Length, 0);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nhập chẵn số tiền!");
+                textbox.Text = "";
+            }
+
         }
 
         private void m_rd_ti_le_CheckedChanged(object sender, EventArgs e)

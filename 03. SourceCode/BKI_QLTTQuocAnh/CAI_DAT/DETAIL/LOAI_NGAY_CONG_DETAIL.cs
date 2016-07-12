@@ -47,11 +47,10 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                             MessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
-                        catch (Exception v_e)
+                        catch (Exception )
                         {
                           //  MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
-                            throw v_e;
-
+                            MessageBox.Show("mã loại ngày công đã tồn tại. Bạn vui lòng nhập lại thông tin!");
                         }
 
                     }

@@ -171,6 +171,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "CAC_HINH_THUC_TINH_LUONG";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CAC_HINH_THUC_TINH_LUONG";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
