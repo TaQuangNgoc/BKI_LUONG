@@ -13,6 +13,7 @@ using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 using BKI_DichVuMatDat.NghiepVu.THEONGAY;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
+using BKI_DichVuMatDat.CAI_DAT;
 
 namespace BKI_DichVuMatDat
 {
@@ -149,7 +150,7 @@ namespace BKI_DichVuMatDat
 
             if (info.Node == SO_NGAY_CONG_TIEU_CHUAN)
             {
-                SO_NGAY_CONG_TIEU_CHUAN v_f = new SO_NGAY_CONG_TIEU_CHUAN();
+                NGAY_CONG_TIEU_CHUAN v_f = new NGAY_CONG_TIEU_CHUAN();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);

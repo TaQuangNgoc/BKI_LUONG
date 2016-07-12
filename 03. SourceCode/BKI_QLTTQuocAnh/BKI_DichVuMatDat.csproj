@@ -399,6 +399,12 @@
     <Compile Include="CAI_DAT\FORM_CHO_CAI_DAT.Designer.cs">
       <DependentUpon>FORM_CHO_CAI_DAT.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.Designer.cs">
+      <DependentUpon>NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\SO_NGAY_CONG_TIEU_CHUAN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -565,6 +571,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\FORM_CHO_CAI_DAT.resx">
       <DependentUpon>FORM_CHO_CAI_DAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.resx">
+      <DependentUpon>NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\SO_NGAY_CONG_TIEU_CHUAN.resx">
       <DependentUpon>SO_NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>

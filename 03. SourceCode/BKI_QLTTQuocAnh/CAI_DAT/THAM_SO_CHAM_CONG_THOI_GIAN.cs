@@ -110,16 +110,6 @@ namespace BKI_DichVuMatDat
 
         }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void m_btn_them_Click(object sender, EventArgs e)
         {
