@@ -18,6 +18,8 @@ namespace BKI_DichVuMatDat.NghiepVu
 {
     public partial class CAC_LOAI_TIEN_KHAC : Form
     {
+        bool phai_dong_bao_hiem = false;
+        bool giam_tru_thue = false;
         #region Public Interface
         public CAC_LOAI_TIEN_KHAC()
         {
@@ -47,8 +49,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         #endregion
 
         #region Members
-        US_GD_CHAM_CONG m_us_gd_cham_cong = new US_GD_CHAM_CONG();
-        DataSet m_ds_ngay_cong = new DataSet();
+      
         DataSet m_ds_nhan_vien = new DataSet();
        
         public enum Loi { 
@@ -278,13 +279,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void m_bgwk_DoWork(object sender, DoWorkEventArgs e)
         { 
             BackgroundWorker worker = sender as BackgroundWorker;
-            m_us_gd_cham_cong.BeginTransaction();
+           
             for (int i = 0; i < m_grv.RowCount; i++)
             {
                 luuChamCong(m_grv.GetDataRow(i));
                  worker.ReportProgress((i + 1) * 100 / m_grv.RowCount);
             }
-            m_us_gd_cham_cong.CommitTransaction();
+          
         }
 
         private void m_bgwk_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -310,9 +311,32 @@ namespace BKI_DichVuMatDat.NghiepVu
           
         }
 
-        private void insert_gd_so_tien_khac(DataRow ip_dataRow)
+        private void insert_gd_so_tien_khac(DataRow v_dr)
         {
-            
+            US_GD_CAC_LOAI_TIEN_KHAC v_us = new US_GD_CAC_LOAI_TIEN_KHAC();
+            v_us.dcID_LOAI_TIEN_KHAC = decimal.Parse(m_sle_loai_tien.EditValue.ToString());
+            v_us.dcID_NHAN_VIEN = get_nhan_vien_by_ma_nv(v_dr["MA_NV"].ToString());
+            v_us.dcTHANG = decimal.Parse(v_dr["THANG"].ToString());
+            v_us.dcNAM = decimal.Parse(v_dr["NAM"].ToString());
+            v_us.dcSO_TIEN = decimal.Parse(v_dr["SO_TIEN"].ToString());
+            v_us.strLI_DO = "";
+            v_us.strDA_XOA = "N";
+            if (phai_dong_bao_hiem == true)
+                v_us.strDONG_BAO_HIEM_YN = "Y";
+            else
+            {
+                v_us.strDONG_BAO_HIEM_YN = "N";
+            }
+            if (giam_tru_thue==true)
+            {
+                v_us.strGIAM_TRU_THUE_YN = "Y";
+            }
+            else
+            {
+                v_us.strGIAM_TRU_THUE_YN = "N";
+            }
+            v_us.Insert();
+
         }
 
        
@@ -394,12 +418,6 @@ namespace BKI_DichVuMatDat.NghiepVu
                 }
                 string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
                
-                if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
-                {
-                    XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo");
-                    return;
-                }
-               
                 if (m_sle_loai_tien.Text=="")
                 {
                     XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. /nVui lòng kiểm tra lại thông tin!", "Thông báo");
@@ -414,6 +432,9 @@ namespace BKI_DichVuMatDat.NghiepVu
                     m_bgwk.CancelAsync();
                 else if (check_cham_cong_hop_le())
                 {
+                   
+                    THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC v_f = new THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC();
+                    v_f.displayForBoSungThongTin(ref phai_dong_bao_hiem, giam_tru_thue);
                     this.m_pn.Visible = true;
                     this.m_prb.Visible = true;
                     this.m_cmd_nhap_cham_cong.Text = "Đang lưu chấm công ...";

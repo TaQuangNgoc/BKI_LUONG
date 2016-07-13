@@ -50,6 +50,9 @@ namespace BKI_DichVuMatDat
         TreeNode CHAM_CONG_SAN_PHAM = new TreeNode(" Theo sản phẩm");
         TreeNode CHAM_CONG_LAM_THEM_SAN_PHAM = new TreeNode("Làm thêm theo sản phẩm");
 
+        //NODE CON CỦA BÁO CÁO
+        TreeNode BANG_LUONG = new TreeNode("BẢNG LƯƠNG THÁNG");
+
 
         public FORM_MENU()
         {
@@ -102,6 +105,9 @@ namespace BKI_DichVuMatDat
 
             //NODE CON CỦA THEO SẢN PHẨM
            // treeView1.Nodes[1].Nodes[1].Nodes[3].Nodes.Add(DANH_MUC_SAN_PHAM);
+
+            //NODE CON CỦA BÁO CÁO
+            treeView1.Nodes[2].Nodes.Add(BANG_LUONG);
           
 
             treeView1.ImageList = m_img_list;
@@ -242,6 +248,14 @@ namespace BKI_DichVuMatDat
             if (info.Node == CAC_LOAI_TIEN_KHAC)
             {
                 BKI_DichVuMatDat.NghiepVu.CAC_LOAI_TIEN_KHAC v_f = new NghiepVu.CAC_LOAI_TIEN_KHAC();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
+            if (info.Node == BANG_LUONG)
+            {
+                BKI_DichVuMatDat.BaoCao.Luong.BANG_LUONG v_f = new BaoCao.Luong.BANG_LUONG();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);

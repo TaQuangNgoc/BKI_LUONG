@@ -721,5 +721,15 @@ namespace BKI_DichVuMatDat
             v_cstore.addDecimalInputParam("@SO_TIEN", CIPConvert.ToDecimal(ip_dataRow["SO_TIEN"].ToString()));
             v_cstore.ExecuteCommand(this);
         }
+
+        internal void LoadBangLuongThang(DataSet v_ds, decimal thang, decimal nam)
+        {
+            CStoredProc v_cstore = new CStoredProc("PR_RPT_BANG_LUONG");
+           
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", 4);
+            v_cstore.addDecimalInputParam("@THANG", thang);
+            v_cstore.addDecimalInputParam("@NAM",nam);
+            v_cstore.fillDataSetByCommand(this,v_ds);
+        }
     } 
 }
