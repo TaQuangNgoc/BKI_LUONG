@@ -61,6 +61,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_LOAI_NGAY_CONG.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_LOAI_NHAN_VIEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_LOAI_NHAN_VIEN.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_NHAN_VIEN.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -215,6 +220,17 @@
     </None>
     <None Include="DS_DM_LOAI_NGAY_CONG.xss">
       <DependentUpon>DS_DM_LOAI_NGAY_CONG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_NHAN_VIEN.xsc">
+      <DependentUpon>DS_DM_LOAI_NHAN_VIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_NHAN_VIEN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_LOAI_NHAN_VIEN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_LOAI_NHAN_VIEN.xss">
+      <DependentUpon>DS_DM_LOAI_NHAN_VIEN.xsd</DependentUpon>
     </None>
     <None Include="DS_DM_NHAN_VIEN.xsc">
       <DependentUpon>DS_DM_NHAN_VIEN.xsd</DependentUpon>

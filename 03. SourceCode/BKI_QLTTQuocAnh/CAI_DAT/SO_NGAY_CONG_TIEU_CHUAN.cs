@@ -30,9 +30,7 @@ namespace BKI_DichVuMatDat
                
             {
                 e.Handled = true;
-            }
-
-          
+            }    
         }
 
         private void m_btn_tiep_tuc_Click(object sender, EventArgs e)

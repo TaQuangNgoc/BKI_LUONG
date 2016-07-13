@@ -635,7 +635,7 @@ namespace BKI_DichVuMatDat
         {
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            CStoredProc v_cstore = new CStoredProc("pr_insert_du_lieu_so_ngay_cong_tieu_chuan_tuy_chon");
+            CStoredProc v_cstore = new CStoredProc("pr_insert_du_lieu_so_ngay_cong_tieu_chuan");
             v_cstore.addDecimalInputParam("@ID_LOAI_NHAN_VIEN", id_loai_ngay_cong);
             v_cstore.addDecimalInputParam("@NAM", nam);
             v_cstore.addDecimalInputParam("@THANG_1", decimal.Parse(v_dr["THANG_1"].ToString()));

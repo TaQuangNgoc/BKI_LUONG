@@ -52,6 +52,7 @@
     <Compile Include="US_CM_DM_TU_DIEN.cs" />
     <Compile Include="US_DM_BAO_HIEM.cs" />
     <Compile Include="US_DM_LOAI_NGAY_CONG.cs" />
+    <Compile Include="US_DM_LOAI_NHAN_VIEN.cs" />
     <Compile Include="US_DM_NHAN_VIEN.cs" />
     <Compile Include="US_DM_PHU_CAP.cs" />
     <Compile Include="US_DM_SAN_PHAM.cs" />
