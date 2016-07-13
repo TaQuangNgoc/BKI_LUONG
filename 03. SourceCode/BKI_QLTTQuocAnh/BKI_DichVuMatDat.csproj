@@ -494,6 +494,12 @@
     <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.Designer.cs">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_TI_LE_LAM_THEM_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\ChamCongSanPham\DANH_MUC_TI_LE_LAM_THEM_DETAIL.Designer.cs">
+      <DependentUpon>DANH_MUC_TI_LE_LAM_THEM_DETAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -607,6 +613,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_SAN_PHAM_DETAIL.resx">
       <DependentUpon>DANH_MUC_SAN_PHAM_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\ChamCongSanPham\DANH_MUC_TI_LE_LAM_THEM_DETAIL.resx">
+      <DependentUpon>DANH_MUC_TI_LE_LAM_THEM_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.resx">
       <DependentUpon>CHAM_CONG_THEO_NGAY.cs</DependentUpon>

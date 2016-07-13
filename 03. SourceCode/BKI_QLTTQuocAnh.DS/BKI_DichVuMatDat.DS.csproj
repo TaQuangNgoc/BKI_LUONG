@@ -91,6 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_TI_LE_LAM_THEM.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_GD_CAC_LOAI_TIEN_KHAC.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -291,6 +296,17 @@
     </None>
     <None Include="DS_DM_TI_LE_LAM_THEM.xss">
       <DependentUpon>DS_DM_TI_LE_LAM_THEM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xsc">
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xss">
+      <DependentUpon>DS_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.xsd</DependentUpon>
     </None>
     <None Include="DS_GD_CAC_LOAI_TIEN_KHAC.xsc">
       <DependentUpon>DS_GD_CAC_LOAI_TIEN_KHAC.xsd</DependentUpon>
