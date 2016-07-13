@@ -37,9 +37,9 @@
             this.m_txt_ten_loai_lamthem = new DevExpress.XtraEditors.TextEdit();
             this.m_txt_ma_loai_lamthem = new DevExpress.XtraEditors.TextEdit();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns.Properties)).BeginInit();
@@ -83,9 +83,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(45, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(311, 19);
+            this.label2.Size = new System.Drawing.Size(416, 19);
             this.label2.TabIndex = 1;
-            this.label2.Text = "THÔNG TIN CHI TIẾT LÀM THÊM GIỜ";
+            this.label2.Text = "THÔNG TIN CHI TIẾT DANH MỤC TỈ LỆ LÀM THÊM";
             // 
             // panel2
             // 
@@ -158,6 +158,26 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Mã loại làm thêm";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(62, 215);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 18);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "%LNS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(410, 211);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(28, 18);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "% ";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -167,26 +187,6 @@
             this.label9.Size = new System.Drawing.Size(126, 18);
             this.label9.TabIndex = 25;
             this.label9.Text = "Tên loại làm thêm";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(62, 215);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 18);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "% LNS";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(408, 211);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(28, 18);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "% ";
             // 
             // LAM_THEM_GIO_DETAIL
             // 
@@ -228,8 +228,8 @@
         private DevExpress.XtraEditors.TextEdit m_txt_ten_loai_lamthem;
         private DevExpress.XtraEditors.TextEdit m_txt_ma_loai_lamthem;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
     }
 }

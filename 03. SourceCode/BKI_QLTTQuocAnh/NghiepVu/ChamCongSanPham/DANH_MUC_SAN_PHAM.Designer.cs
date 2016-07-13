@@ -30,12 +30,12 @@
         {
             this.cM_DM_TU_DIENTableAdapter1 = new IP.Core.IPData.DS_CM_DM_TU_DIENTableAdapters.CM_DM_TU_DIENTableAdapter();
             this.tab_Control1 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tab_danhmucsanpham = new System.Windows.Forms.TabPage();
             this.m_grc_san_pham = new DevExpress.XtraGrid.GridControl();
             this.m_grv_san_pham = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tab_dongiasanpham = new System.Windows.Forms.TabPage();
             this.m_grc_luong_ngay = new DevExpress.XtraGrid.GridControl();
             this.m_grv_luong_ngay = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -60,23 +60,31 @@
             this.m_btn_them_luong_ngay = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa_luong_ngay = new DevExpress.XtraEditors.SimpleButton();
             this.m_dtp_den_ngay_luong_ngay = new System.Windows.Forms.DateTimePicker();
+            this.tab_danhmuctilelamthem = new System.Windows.Forms.TabPage();
+            this.m_grc_danh_muc_ti_le_lam_them = new DevExpress.XtraGrid.GridControl();
+            this.m_grv_danh_muc_ti_le_lam_them = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tab_Control1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.tab_danhmucsanpham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_san_pham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_san_pham)).BeginInit();
-            this.tabPage6.SuspendLayout();
+            this.tab_dongiasanpham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
+            this.tab_danhmuctilelamthem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_danh_muc_ti_le_lam_them)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_danh_muc_ti_le_lam_them)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -87,9 +95,9 @@
             // 
             // tab_Control1
             // 
-            this.tab_Control1.Controls.Add(this.tabPage5);
-            this.tab_Control1.Controls.Add(this.tabPage6);
-            this.tab_Control1.Controls.Add(this.tabPage1);
+            this.tab_Control1.Controls.Add(this.tab_danhmucsanpham);
+            this.tab_Control1.Controls.Add(this.tab_dongiasanpham);
+            this.tab_Control1.Controls.Add(this.tab_danhmuctilelamthem);
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_Control1.Location = new System.Drawing.Point(0, 53);
@@ -98,16 +106,16 @@
             this.tab_Control1.Size = new System.Drawing.Size(923, 456);
             this.tab_Control1.TabIndex = 1;
             // 
-            // tabPage5
+            // tab_danhmucsanpham
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.White;
-            this.tabPage5.Controls.Add(this.m_grc_san_pham);
-            this.tabPage5.Location = new System.Drawing.Point(4, 27);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(915, 425);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "DANH MỤC SẢN PHẨM";
+            this.tab_danhmucsanpham.BackColor = System.Drawing.Color.White;
+            this.tab_danhmucsanpham.Controls.Add(this.m_grc_san_pham);
+            this.tab_danhmucsanpham.Location = new System.Drawing.Point(4, 27);
+            this.tab_danhmucsanpham.Name = "tab_danhmucsanpham";
+            this.tab_danhmucsanpham.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_danhmucsanpham.Size = new System.Drawing.Size(915, 425);
+            this.tab_danhmucsanpham.TabIndex = 4;
+            this.tab_danhmucsanpham.Text = "DANH MỤC SẢN PHẨM";
             // 
             // m_grc_san_pham
             // 
@@ -154,17 +162,17 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
             // 
-            // tabPage6
+            // tab_dongiasanpham
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.White;
-            this.tabPage6.Controls.Add(this.m_grc_luong_ngay);
-            this.tabPage6.Controls.Add(this.panel12);
-            this.tabPage6.Location = new System.Drawing.Point(4, 27);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(915, 425);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "ĐƠN GIÁ SẢN PHẨM";
+            this.tab_dongiasanpham.BackColor = System.Drawing.Color.White;
+            this.tab_dongiasanpham.Controls.Add(this.m_grc_luong_ngay);
+            this.tab_dongiasanpham.Controls.Add(this.panel12);
+            this.tab_dongiasanpham.Location = new System.Drawing.Point(4, 27);
+            this.tab_dongiasanpham.Name = "tab_dongiasanpham";
+            this.tab_dongiasanpham.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_dongiasanpham.Size = new System.Drawing.Size(915, 425);
+            this.tab_dongiasanpham.TabIndex = 5;
+            this.tab_dongiasanpham.Text = "ĐƠN GIÁ SẢN PHẨM";
             // 
             // m_grc_luong_ngay
             // 
@@ -427,6 +435,71 @@
             this.m_dtp_den_ngay_luong_ngay.Size = new System.Drawing.Size(155, 26);
             this.m_dtp_den_ngay_luong_ngay.TabIndex = 13;
             // 
+            // tab_danhmuctilelamthem
+            // 
+            this.tab_danhmuctilelamthem.Controls.Add(this.m_grc_danh_muc_ti_le_lam_them);
+            this.tab_danhmuctilelamthem.Location = new System.Drawing.Point(4, 27);
+            this.tab_danhmuctilelamthem.Name = "tab_danhmuctilelamthem";
+            this.tab_danhmuctilelamthem.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_danhmuctilelamthem.Size = new System.Drawing.Size(915, 425);
+            this.tab_danhmuctilelamthem.TabIndex = 6;
+            this.tab_danhmuctilelamthem.Text = "DANH MỤC TỈ LỆ LÀM THÊM";
+            this.tab_danhmuctilelamthem.UseVisualStyleBackColor = true;
+            // 
+            // m_grc_danh_muc_ti_le_lam_them
+            // 
+            this.m_grc_danh_muc_ti_le_lam_them.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_danh_muc_ti_le_lam_them.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_danh_muc_ti_le_lam_them.Location = new System.Drawing.Point(3, 3);
+            this.m_grc_danh_muc_ti_le_lam_them.MainView = this.m_grv_danh_muc_ti_le_lam_them;
+            this.m_grc_danh_muc_ti_le_lam_them.Name = "m_grc_danh_muc_ti_le_lam_them";
+            this.m_grc_danh_muc_ti_le_lam_them.Size = new System.Drawing.Size(909, 419);
+            this.m_grc_danh_muc_ti_le_lam_them.TabIndex = 0;
+            this.m_grc_danh_muc_ti_le_lam_them.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_danh_muc_ti_le_lam_them});
+            // 
+            // m_grv_danh_muc_ti_le_lam_them
+            // 
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButtonActive.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButtonActive.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn8,
+            this.gridColumn9,
+            this.gridColumn10});
+            this.m_grv_danh_muc_ti_le_lam_them.GridControl = this.m_grc_danh_muc_ti_le_lam_them;
+            this.m_grv_danh_muc_ti_le_lam_them.Name = "m_grv_danh_muc_ti_le_lam_them";
+            this.m_grv_danh_muc_ti_le_lam_them.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Mã làm thêm";
+            this.gridColumn8.FieldName = "MA_LAM_THEM";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 0;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Tỉ lệ";
+            this.gridColumn9.FieldName = "TI_LE";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 1;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "Tên loại làm thêm";
+            this.gridColumn10.FieldName = "TEN_LOAI_LAM_THEM";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 2;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
@@ -517,16 +590,6 @@
             this.m_btn_xoa.Text = "XÓA";
             this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(915, 425);
-            this.tabPage1.TabIndex = 6;
-            this.tabPage1.Text = "DANH MỤC TỈ LỆ LÀM THÊM";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
             // DANH_MUC_SAN_PHAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -538,16 +601,19 @@
             this.Name = "DANH_MUC_SAN_PHAM";
             this.Text = "DANH_MUC_SAN_PHAM";
             this.tab_Control1.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
+            this.tab_danhmucsanpham.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_san_pham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_san_pham)).EndInit();
-            this.tabPage6.ResumeLayout(false);
+            this.tab_dongiasanpham.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_luong_ngay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_luong_ngay)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
+            this.tab_danhmuctilelamthem.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_danh_muc_ti_le_lam_them)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_danh_muc_ti_le_lam_them)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -559,8 +625,8 @@
 
         private IP.Core.IPData.DS_CM_DM_TU_DIENTableAdapters.CM_DM_TU_DIENTableAdapter cM_DM_TU_DIENTableAdapter1;
         private System.Windows.Forms.TabControl tab_Control1;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tab_danhmucsanpham;
+        private System.Windows.Forms.TabPage tab_dongiasanpham;
         private DevExpress.XtraGrid.GridControl m_grc_san_pham;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_san_pham;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -595,6 +661,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private System.Windows.Forms.TextBox m_txt_so_tien_luong_ngay;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tab_danhmuctilelamthem;
+        private DevExpress.XtraGrid.GridControl m_grc_danh_muc_ti_le_lam_them;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_danh_muc_ti_le_lam_them;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
     }
 }

@@ -64,6 +64,7 @@
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // panel1
             // 
@@ -114,6 +115,7 @@
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa_luong.TabIndex = 29;
             this.m_btn_xoa_luong.Text = "THOÁT";
+            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click_1);
             // 
             // m_txt_lns
             // 
@@ -149,11 +151,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(62, 215);
+            this.label10.Location = new System.Drawing.Point(71, 215);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 18);
+            this.label10.Size = new System.Drawing.Size(35, 18);
             this.label10.TabIndex = 42;
-            this.label10.Text = "% LNS";
+            this.label10.Text = "Tỉ lệ";
             // 
             // m_txt_ma_loai_lamthem
             // 
