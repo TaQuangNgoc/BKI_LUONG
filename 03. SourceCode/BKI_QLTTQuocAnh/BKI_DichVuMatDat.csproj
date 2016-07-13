@@ -470,6 +470,12 @@
     <Compile Include="FORM_MENU.designer.cs">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\CAC_LOAI_TIEN_KHAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\CAC_LOAI_TIEN_KHAC.Designer.cs">
+      <DependentUpon>CAC_LOAI_TIEN_KHAC.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\ChamCongSanPham\CHAM_CONG_THEO_SAN_PHAM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -589,6 +595,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_MENU.resx">
       <DependentUpon>FORM_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\CAC_LOAI_TIEN_KHAC.resx">
+      <DependentUpon>CAC_LOAI_TIEN_KHAC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ChamCongSanPham\CHAM_CONG_THEO_SAN_PHAM.resx">
       <DependentUpon>CHAM_CONG_THEO_SAN_PHAM.cs</DependentUpon>

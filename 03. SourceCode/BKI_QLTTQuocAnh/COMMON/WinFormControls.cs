@@ -709,5 +709,17 @@ namespace BKI_DichVuMatDat
            
             v_cstore.ExecuteCommand(this);
         }
+
+      
+        internal void InsertSoTienKhac(decimal id_loai_tien, DataRow ip_dataRow)
+        {
+           CStoredProc v_cstore = new CStoredProc("pr_insert_so_tien_khac");
+           v_cstore.addDecimalInputParam("@ID_LOAI_TIEN", id_loai_tien);
+            v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", ip_dataRow["MA_NV"].ToString());
+            v_cstore.addDecimalInputParam("@THANG", CIPConvert.ToDecimal(ip_dataRow["THANG"].ToString()));
+            v_cstore.addDecimalInputParam("@NAM", CIPConvert.ToDecimal(ip_dataRow["NAM"].ToString()));
+            v_cstore.addDecimalInputParam("@SO_TIEN", CIPConvert.ToDecimal(ip_dataRow["SO_TIEN"].ToString()));
+            v_cstore.ExecuteCommand(this);
+        }
     } 
 }
