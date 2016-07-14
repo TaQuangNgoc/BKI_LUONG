@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using IP.Core.IPCommon;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
@@ -110,6 +111,7 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 
         private void danh_muc_ti_le_lam_them_update()
         {
+            
             var v_count = m_grv_danh_muc_ti_le_lam_them.SelectedRowsCount;
             if (v_count == 0)
             {
@@ -186,18 +188,27 @@ private void danh_muc_san_pham_update()
 
         private void danh_muc_ti_le_lam_them_delete()
         {
-
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            try
             {
-                DataRow v_dr = m_grv_danh_muc_ti_le_lam_them.GetDataRow(m_grv_danh_muc_ti_le_lam_them.FocusedRowHandle);
-                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
-                US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM v_us = new US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM(v_id);
-                v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
-                load_du_lieu_vao_bang_danh_muc_ti_le_lam_them();
-            }
+
+                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    DataRow v_dr = m_grv_danh_muc_ti_le_lam_them.GetDataRow(m_grv_danh_muc_ti_le_lam_them.FocusedRowHandle);
+                    decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                    US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM v_us = new US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM(v_id);
+                    v_us.Delete();
+                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
+                    load_du_lieu_vao_bang_danh_muc_ti_le_lam_them();
+                }
                 
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! ");
+            }
+
         }
 
         private void danh_muc_san_pham_delete()

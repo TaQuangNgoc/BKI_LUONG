@@ -1,5 +1,6 @@
 ﻿using BKI_DichVuMatDat.CAI_DAT.DETAIL;
 using BKI_DichVuMatDat.US;
+using DevExpress.XtraEditors;
 using IP.Core.IPCommon;
 using System;
 using System.Collections.Generic;
@@ -20,15 +21,28 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
             tab_Control1.SizeMode = TabSizeMode.Fixed;
             tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
-            load_du_lieu_vao_bang_loai_ngay_cong();
-            load_du_lieu_vao_bang_Lam_them_gio();
-            load_du_lieu_vao_bang_phu_cap();
-           
-            load_du_lieu_vao_bang_bao_hiem();
-            load_du_lieu_vao_bang_thue();
+            
 
 
            // tabControl1.Appearance = TabAppearance.FlatButtons;
+        }
+        private void THAM_SO_CHAM_CONG_THOI_GIAN_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                load_du_lieu_vao_bang_loai_ngay_cong();
+                load_du_lieu_vao_bang_Lam_them_gio();
+                load_du_lieu_vao_bang_phu_cap();
+
+                load_du_lieu_vao_bang_bao_hiem();
+                load_du_lieu_vao_bang_thue();
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("ngọc bo bo xin kích chào quý khách!");
+            }
+           
         }
 
 
@@ -191,7 +205,9 @@ namespace BKI_DichVuMatDat
 
         private void phucap_delete()
         {
-            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            try
+            {
+DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
             if (dialogresult == DialogResult.Yes)
             {
                 DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
@@ -201,6 +217,13 @@ namespace BKI_DichVuMatDat
                 MessageBox.Show("Đã xóa thành công sản phẩm " + " !");
                 load_du_lieu_vao_bang_phu_cap();
             }
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! ");
+                
+            }
+            
         }
             
 
@@ -234,30 +257,48 @@ namespace BKI_DichVuMatDat
 
         private void lam_them_gio_delete()
         {
-            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
-            if (dialogresult == DialogResult.Yes)
+            try
             {
-                DataRow v_dr = m_grv_lam_them_gio.GetDataRow(m_grv_lam_them_gio.FocusedRowHandle);
-                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
-                US_DM_TI_LE_LAM_THEM v_us = new US_DM_TI_LE_LAM_THEM(v_id);
-                v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
-                load_du_lieu_vao_bang_Lam_them_gio();
+                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                if (dialogresult == DialogResult.Yes)
+                {
+                    DataRow v_dr = m_grv_lam_them_gio.GetDataRow(m_grv_lam_them_gio.FocusedRowHandle);
+                    decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                    US_DM_TI_LE_LAM_THEM v_us = new US_DM_TI_LE_LAM_THEM(v_id);
+                    v_us.Delete();
+                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
+                    load_du_lieu_vao_bang_Lam_them_gio();
+                }
             }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! ");
+            }
+            
         }
 
         private void loại_ngay_cong_delete()
         {
-            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
-            if (dialogresult == DialogResult.Yes)
+            try
             {
-                DataRow v_dr = m_grv_ngay_cong.GetDataRow(m_grv_ngay_cong.FocusedRowHandle);
-                decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
-                US_DM_LOAI_NGAY_CONG v_us = new US_DM_LOAI_NGAY_CONG(v_id);
-                v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_NGAY_CONG"] + " !");
-                load_du_lieu_vao_bang_loai_ngay_cong();
+                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                if (dialogresult == DialogResult.Yes)
+                {
+                    DataRow v_dr = m_grv_ngay_cong.GetDataRow(m_grv_ngay_cong.FocusedRowHandle);
+                    decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                    US_DM_LOAI_NGAY_CONG v_us = new US_DM_LOAI_NGAY_CONG(v_id);
+                    v_us.Delete();
+                    MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_NGAY_CONG"] + " !");
+                    load_du_lieu_vao_bang_loai_ngay_cong();
+                }
             }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! "  );
+                
+            }
+            
         }
 
         private void m_btn_sua_Click(object sender, EventArgs e)
@@ -399,6 +440,8 @@ namespace BKI_DichVuMatDat
                 load_du_lieu_vao_bang_loai_ngay_cong();
             }
         }
+
+      
 
         
       

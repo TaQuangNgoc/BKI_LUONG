@@ -29,7 +29,7 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -273,9 +273,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -854,6 +854,7 @@ namespace BKI_DichVuMatDat
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Text = "THAM_SO_CHAM_CONG_THOI_GIAN";
+            this.Load += new System.EventHandler(this.THAM_SO_CHAM_CONG_THOI_GIAN_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
