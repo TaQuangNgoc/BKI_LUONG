@@ -37,6 +37,8 @@
             this.m_grc = new DevExpress.XtraGrid.GridControl();
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -52,9 +54,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.m_btn_tiep_tuc = new DevExpress.XtraEditors.SimpleButton();
             this.m_txt_nam = new DevExpress.XtraEditors.TextEdit();
             this.label6 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tab_danhmucloainhanvien = new System.Windows.Forms.TabPage();
             this.m_grc_loai_nv = new DevExpress.XtraGrid.GridControl();
             this.m_grv_loai_nv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -69,9 +72,6 @@
             this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn18 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_btn_tiep_tuc = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.tab_so_ngay_cong_tieu_chuan.SuspendLayout();
             this.m_group_cau_hinh.SuspendLayout();
@@ -81,7 +81,7 @@
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.tab_danhmucloainhanvien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).BeginInit();
             this.m_group_cai_dat.SuspendLayout();
@@ -197,6 +197,18 @@
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 0;
             this.gridColumn3.Width = 120;
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "MÃ LOẠI NHÂN VIÊN";
+            this.gridColumn17.FieldName = "MA_LOAI_NHAN_VIEN";
+            this.gridColumn17.Name = "gridColumn17";
+            // 
+            // gridColumn18
+            // 
+            this.gridColumn18.Caption = "ID LOẠI NHÂN VIÊN";
+            this.gridColumn18.FieldName = "ID_LOAI_NHAN_VIEN";
+            this.gridColumn18.Name = "gridColumn18";
             // 
             // gridColumn4
             // 
@@ -336,6 +348,24 @@
             this.panel6.Size = new System.Drawing.Size(909, 71);
             this.panel6.TabIndex = 12;
             // 
+            // m_btn_tiep_tuc
+            // 
+            this.m_btn_tiep_tuc.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_tiep_tuc.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_tiep_tuc.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_tiep_tuc.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_tiep_tuc.Appearance.Options.UseBackColor = true;
+            this.m_btn_tiep_tuc.Appearance.Options.UseFont = true;
+            this.m_btn_tiep_tuc.Appearance.Options.UseForeColor = true;
+            this.m_btn_tiep_tuc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_tiep_tuc.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_tiep_tuc.Location = new System.Drawing.Point(410, 16);
+            this.m_btn_tiep_tuc.Name = "m_btn_tiep_tuc";
+            this.m_btn_tiep_tuc.Size = new System.Drawing.Size(203, 46);
+            this.m_btn_tiep_tuc.TabIndex = 32;
+            this.m_btn_tiep_tuc.Text = "TIẾP TỤC";
+            this.m_btn_tiep_tuc.Click += new System.EventHandler(this.m_btn_tiep_tuc_Click);
+            // 
             // m_txt_nam
             // 
             this.m_txt_nam.Location = new System.Drawing.Point(170, 27);
@@ -356,17 +386,17 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Chọn năm";
             // 
-            // tabPage5
+            // tab_danhmucloainhanvien
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.White;
-            this.tabPage5.Controls.Add(this.m_grc_loai_nv);
-            this.tabPage5.Controls.Add(this.m_group_cai_dat);
-            this.tabPage5.Location = new System.Drawing.Point(4, 27);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(915, 357);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "DANH MỤC LOẠI NHÂN VIÊN";
+            this.tab_danhmucloainhanvien.BackColor = System.Drawing.Color.White;
+            this.tab_danhmucloainhanvien.Controls.Add(this.m_grc_loai_nv);
+            this.tab_danhmucloainhanvien.Controls.Add(this.m_group_cai_dat);
+            this.tab_danhmucloainhanvien.Location = new System.Drawing.Point(4, 27);
+            this.tab_danhmucloainhanvien.Name = "tab_danhmucloainhanvien";
+            this.tab_danhmucloainhanvien.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_danhmucloainhanvien.Size = new System.Drawing.Size(915, 357);
+            this.tab_danhmucloainhanvien.TabIndex = 4;
+            this.tab_danhmucloainhanvien.Text = "DANH MỤC LOẠI NHÂN VIÊN";
             // 
             // m_grc_loai_nv
             // 
@@ -441,7 +471,7 @@
             // 
             // tab_Control1
             // 
-            this.tab_Control1.Controls.Add(this.tabPage5);
+            this.tab_Control1.Controls.Add(this.tab_danhmucloainhanvien);
             this.tab_Control1.Controls.Add(this.tab_so_ngay_cong_tieu_chuan);
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -492,6 +522,7 @@
             this.m_btn_them.Size = new System.Drawing.Size(143, 53);
             this.m_btn_them.TabIndex = 30;
             this.m_btn_them.Text = "THÊM";
+            this.m_btn_them.Click += new System.EventHandler(this.m_btn_them_Click);
             // 
             // m_btn_sua
             // 
@@ -510,6 +541,7 @@
             this.m_btn_sua.Size = new System.Drawing.Size(143, 53);
             this.m_btn_sua.TabIndex = 15;
             this.m_btn_sua.Text = "SỬA";
+            this.m_btn_sua.Click += new System.EventHandler(this.m_btn_sua_Click);
             // 
             // m_btn_xoa
             // 
@@ -528,6 +560,7 @@
             this.m_btn_xoa.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa.TabIndex = 29;
             this.m_btn_xoa.Text = "XÓA";
+            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
             // m_btn_luu
             // 
@@ -547,36 +580,6 @@
             this.m_btn_luu.TabIndex = 31;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
-            // 
-            // gridColumn17
-            // 
-            this.gridColumn17.Caption = "MÃ LOẠI NHÂN VIÊN";
-            this.gridColumn17.FieldName = "MA_LOAI_NHAN_VIEN";
-            this.gridColumn17.Name = "gridColumn17";
-            // 
-            // gridColumn18
-            // 
-            this.gridColumn18.Caption = "ID LOẠI NHÂN VIÊN";
-            this.gridColumn18.FieldName = "ID_LOAI_NHAN_VIEN";
-            this.gridColumn18.Name = "gridColumn18";
-            // 
-            // m_btn_tiep_tuc
-            // 
-            this.m_btn_tiep_tuc.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_tiep_tuc.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_tiep_tuc.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_tiep_tuc.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_tiep_tuc.Appearance.Options.UseBackColor = true;
-            this.m_btn_tiep_tuc.Appearance.Options.UseFont = true;
-            this.m_btn_tiep_tuc.Appearance.Options.UseForeColor = true;
-            this.m_btn_tiep_tuc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_tiep_tuc.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_tiep_tuc.Location = new System.Drawing.Point(410, 16);
-            this.m_btn_tiep_tuc.Name = "m_btn_tiep_tuc";
-            this.m_btn_tiep_tuc.Size = new System.Drawing.Size(203, 46);
-            this.m_btn_tiep_tuc.TabIndex = 32;
-            this.m_btn_tiep_tuc.Text = "TIẾP TỤC";
-            this.m_btn_tiep_tuc.Click += new System.EventHandler(this.m_btn_tiep_tuc_Click);
             // 
             // NGAY_CONG_TIEU_CHUAN
             // 
@@ -600,7 +603,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).EndInit();
-            this.tabPage5.ResumeLayout(false);
+            this.tab_danhmucloainhanvien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).EndInit();
             this.m_group_cai_dat.ResumeLayout(false);
@@ -619,7 +622,7 @@
         private System.Windows.Forms.Panel panel1;
         private IP.Core.IPData.DS_CM_DM_TU_DIENTableAdapters.CM_DM_TU_DIENTableAdapter cM_DM_TU_DIENTableAdapter1;
         private System.Windows.Forms.TabPage tab_so_ngay_cong_tieu_chuan;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tab_danhmucloainhanvien;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private System.Windows.Forms.TabControl tab_Control1;
         private System.Windows.Forms.GroupBox m_group_cai_dat;

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
+using IP.Core.IPCommon;
 
 namespace BKI_DichVuMatDat.CAI_DAT
 {
@@ -302,6 +303,71 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 }
             }
             return true;
+        }
+
+        private void m_btn_them_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
+                {
+                    
+                        DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f_danh_muc_loai_nhan_vien = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                        v_f_danh_muc_loai_nhan_vien.dislay_for_insert();
+                        load_data_to_grid_loai_nhan_vien();
+                }
+                       
+                }
+
+            
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_btn_sua_Click(object sender, EventArgs e)
+        {
+            if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
+            {
+                var v_count_loai_nhan_vien= m_grv_loai_nv.SelectedRowsCount;
+                if (v_count_loai_nhan_vien == 0)
+                {
+                    MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                }
+                else if (v_count_loai_nhan_vien > 1)
+                {
+                    MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                }
+                else
+                {
+                    DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
+                    US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                    DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                    v_f.dislay_for_update(v_us);
+                    load_data_to_grid_loai_nhan_vien();
+                }
+            }
+        }
+
+        private void m_btn_xoa_Click(object sender, EventArgs e)
+        {
+            
+            if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
+            {
+
+                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                if (dialogresult == DialogResult.Yes)
+                {
+                    DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
+                    decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                    US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(v_id);
+                    v_us.Delete();
+                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_NHAN_VIEN"] + " !");
+                    load_data_to_grid_loai_nhan_vien();
+                }
+            }
         }
 
 
