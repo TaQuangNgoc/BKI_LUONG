@@ -128,6 +128,7 @@
             this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_lcd_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lcd_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
             this.m_txt_lcd_loai_ngay_cong.TabIndex = 39;
             this.m_txt_lcd_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -139,6 +140,7 @@
             this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_lns_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lns_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
             this.m_txt_lns_loai_ngay_cong.TabIndex = 38;
             this.m_txt_lns_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -242,6 +244,7 @@
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LOAI_NGAY_CONG_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOAI_NGAY_CONG_DETAIL";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

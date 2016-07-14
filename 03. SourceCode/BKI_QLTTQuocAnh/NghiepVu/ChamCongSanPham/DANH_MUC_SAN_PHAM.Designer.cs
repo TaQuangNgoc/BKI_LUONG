@@ -140,6 +140,7 @@
             this.gridColumn2});
             this.m_grv_san_pham.GridControl = this.m_grc_san_pham;
             this.m_grv_san_pham.Name = "m_grv_san_pham";
+            this.m_grv_san_pham.OptionsBehavior.Editable = false;
             this.m_grv_san_pham.OptionsFind.AlwaysVisible = true;
             this.m_grv_san_pham.OptionsFind.FindDelay = 100;
             this.m_grv_san_pham.OptionsFind.FindNullPrompt = "Nhập từ khóa để tìm kiếm...";
@@ -468,12 +469,17 @@
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Options.UseFont = true;
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.Row.Options.UseFont = true;
             this.m_grv_danh_muc_ti_le_lam_them.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn8,
             this.gridColumn9,
             this.gridColumn10});
             this.m_grv_danh_muc_ti_le_lam_them.GridControl = this.m_grc_danh_muc_ti_le_lam_them;
             this.m_grv_danh_muc_ti_le_lam_them.Name = "m_grv_danh_muc_ti_le_lam_them";
+            this.m_grv_danh_muc_ti_le_lam_them.OptionsBehavior.Editable = false;
             this.m_grv_danh_muc_ti_le_lam_them.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn8
@@ -487,6 +493,7 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Tỉ lệ";
+            this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn9.FieldName = "TI_LE";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;

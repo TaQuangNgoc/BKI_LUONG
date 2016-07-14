@@ -62,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 53);
+            this.panel1.Size = new System.Drawing.Size(476, 53);
             this.panel1.TabIndex = 68;
             // 
             // label2
@@ -88,9 +88,9 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(295, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(217, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 49);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
@@ -107,9 +107,9 @@
             this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_xoa_luong.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_luong.Location = new System.Drawing.Point(438, 0);
+            this.m_btn_xoa_luong.Location = new System.Drawing.Point(360, 0);
             this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
-            this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
+            this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 49);
             this.m_btn_xoa_luong.TabIndex = 29;
             this.m_btn_xoa_luong.Text = "THOÁT";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
@@ -120,57 +120,65 @@
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_xoa_luong);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 389);
+            this.panel2.Location = new System.Drawing.Point(0, 335);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(554, 53);
+            this.panel2.Size = new System.Drawing.Size(476, 49);
             this.panel2.TabIndex = 69;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // m_txt_bu_tru
             // 
-            this.m_txt_bu_tru.Location = new System.Drawing.Point(150, 181);
+            this.m_txt_bu_tru.Location = new System.Drawing.Point(143, 194);
             this.m_txt_bu_tru.Name = "m_txt_bu_tru";
             this.m_txt_bu_tru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_bu_tru.Properties.Appearance.Options.UseFont = true;
             this.m_txt_bu_tru.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_bu_tru.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_bu_tru.Size = new System.Drawing.Size(194, 26);
             this.m_txt_bu_tru.TabIndex = 23;
+            this.m_txt_bu_tru.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_ti_le
             // 
-            this.m_txt_ti_le.Location = new System.Drawing.Point(150, 129);
+            this.m_txt_ti_le.Location = new System.Drawing.Point(143, 142);
             this.m_txt_ti_le.Name = "m_txt_ti_le";
             this.m_txt_ti_le.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ti_le.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le.Size = new System.Drawing.Size(194, 26);
             this.m_txt_ti_le.TabIndex = 22;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_chantren
             // 
-            this.m_txt_chantren.Location = new System.Drawing.Point(150, 77);
+            this.m_txt_chantren.Location = new System.Drawing.Point(143, 90);
             this.m_txt_chantren.Name = "m_txt_chantren";
             this.m_txt_chantren.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_chantren.Properties.Appearance.Options.UseFont = true;
             this.m_txt_chantren.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_chantren.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_chantren.Size = new System.Drawing.Size(194, 26);
             this.m_txt_chantren.TabIndex = 21;
+            this.m_txt_chantren.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_chanduoi
             // 
-            this.m_txt_chanduoi.Location = new System.Drawing.Point(150, 25);
+            this.m_txt_chanduoi.Location = new System.Drawing.Point(143, 38);
             this.m_txt_chanduoi.Name = "m_txt_chanduoi";
             this.m_txt_chanduoi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_chanduoi.Properties.Appearance.Options.UseFont = true;
             this.m_txt_chanduoi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_chanduoi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_chanduoi.Size = new System.Drawing.Size(194, 26);
             this.m_txt_chanduoi.TabIndex = 20;
+            this.m_txt_chanduoi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(362, 81);
+            this.label28.Location = new System.Drawing.Point(355, 94);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(37, 18);
             this.label28.TabIndex = 6;
@@ -180,7 +188,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(362, 185);
+            this.label27.Location = new System.Drawing.Point(355, 198);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(37, 18);
             this.label27.TabIndex = 6;
@@ -190,7 +198,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(362, 29);
+            this.label25.Location = new System.Drawing.Point(355, 42);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(37, 18);
             this.label25.TabIndex = 6;
@@ -200,7 +208,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(46, 29);
+            this.label20.Location = new System.Drawing.Point(39, 42);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(73, 18);
             this.label20.TabIndex = 6;
@@ -210,7 +218,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(46, 81);
+            this.label21.Location = new System.Drawing.Point(39, 94);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(72, 18);
             this.label21.TabIndex = 8;
@@ -220,7 +228,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(46, 133);
+            this.label22.Location = new System.Drawing.Point(39, 146);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(35, 18);
             this.label22.TabIndex = 8;
@@ -230,7 +238,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(46, 185);
+            this.label24.Location = new System.Drawing.Point(39, 198);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(49, 18);
             this.label24.TabIndex = 15;
@@ -240,7 +248,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(362, 133);
+            this.label23.Location = new System.Drawing.Point(355, 146);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(28, 18);
             this.label23.TabIndex = 14;
@@ -260,10 +268,10 @@
             this.groupBox12.Controls.Add(this.label22);
             this.groupBox12.Controls.Add(this.label24);
             this.groupBox12.Controls.Add(this.label23);
-            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox12.Location = new System.Drawing.Point(0, 53);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(554, 326);
+            this.groupBox12.Size = new System.Drawing.Size(476, 282);
             this.groupBox12.TabIndex = 70;
             this.groupBox12.TabStop = false;
             // 
@@ -271,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 442);
+            this.ClientSize = new System.Drawing.Size(476, 384);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);

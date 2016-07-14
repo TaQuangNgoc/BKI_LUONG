@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
@@ -86,40 +87,10 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 
 
 
-        internal void dislay_for_update(US_DM_TI_LE_LAM_THEM v_us)
-        {
-
-            m_e_form_mode = DataEntryFormMode.UpdateDataState;
-            us_to_form(v_us);
-            this.ShowDialog();
-        }
-
-        private void us_to_form(US_DM_TI_LE_LAM_THEM v_us)
-        {
-            m_txt_ma_loai_lamthem.Text = v_us.strMA_LAM_THEM;
-            m_txt_ten_loai_lamthem.Text = v_us.strTEN_LOAI_LAM_THEM;
-            m_txt_lns.Text = v_us.dcTI_LE.ToString();
-        }
-        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-
-            // only allow one decimal point
-
-        }
-
-        private void m_btn_xoa_luong_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         internal void dislay_for_update(US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM v_us)
         {
+
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
-            m_us = v_us;
             us_to_form(v_us);
             this.ShowDialog();
         }
@@ -130,7 +101,29 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
             m_txt_ten_loai_lamthem.Text = v_us.strTEN_LOAI_LAM_THEM;
             m_txt_lns.Text = v_us.dcTI_LE.ToString();
         }
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
 
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+        private void m_btn_xoa_luong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
+        
+
+        
         private void m_btn_xoa_luong_Click_1(object sender, EventArgs e)
         {
             this.Close();

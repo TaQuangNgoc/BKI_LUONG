@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
@@ -31,7 +32,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             try
             {
-                if (m_txt_chanduoi.Text==""|| m_txt_chantren.Text==""|| m_txt_ti_le.Text==""|| m_txt_bu_tru.Text=="")
+                if (m_txt_chanduoi.Text == "" || m_txt_chantren.Text == "" || m_txt_ti_le.Text == "" || m_txt_bu_tru.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 }
@@ -78,22 +79,13 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
         private void form_to_us()
         {
-            m_us.dcCHAN_DUOI =Convert.ToDecimal(m_txt_chanduoi.Text);
+            m_us.dcCHAN_DUOI = Convert.ToDecimal(m_txt_chanduoi.Text);
             m_us.dcCHAN_TREN = Convert.ToDecimal(m_txt_chantren.Text);
             m_us.dcTI_LE = Convert.ToDecimal(m_txt_ti_le.Text);
             m_us.dcBU_TRU = Convert.ToDecimal(m_txt_bu_tru.Text);
 
         }
-        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
 
-            // only allow one decimal point
-
-        }
 
         internal void dislay_for_update(US_DM_THUE v_us)
         {
@@ -115,5 +107,42 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             this.Close();
         }
+        private void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
+        {
+            TextEdit textbox = (TextEdit)sender;
+            try
+            {
+                System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+                double valueBefore = Double.Parse(textbox.Text, System.Globalization.NumberStyles.AllowThousands);
+                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);
+                textbox.Select(textbox.Text.Length, 0);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nhập chẵn số tiền!");
+                textbox.Text = "";
+            }
+        }
+
     }
 }

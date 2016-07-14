@@ -119,18 +119,19 @@
             // 
             // m_txt_lns
             // 
-            this.m_txt_lns.Location = new System.Drawing.Point(203, 207);
+            this.m_txt_lns.Location = new System.Drawing.Point(187, 207);
             this.m_txt_lns.Name = "m_txt_lns";
             this.m_txt_lns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_lns.Properties.Appearance.Options.UseFont = true;
             this.m_txt_lns.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns.Size = new System.Drawing.Size(180, 26);
             this.m_txt_lns.TabIndex = 30;
             this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_loai_lamthem
             // 
-            this.m_txt_ten_loai_lamthem.Location = new System.Drawing.Point(203, 153);
+            this.m_txt_ten_loai_lamthem.Location = new System.Drawing.Point(187, 153);
             this.m_txt_ten_loai_lamthem.Name = "m_txt_ten_loai_lamthem";
             this.m_txt_ten_loai_lamthem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ten_loai_lamthem.Properties.Appearance.Options.UseFont = true;
@@ -140,7 +141,7 @@
             // 
             // m_txt_ma_loai_lamthem
             // 
-            this.m_txt_ma_loai_lamthem.Location = new System.Drawing.Point(203, 105);
+            this.m_txt_ma_loai_lamthem.Location = new System.Drawing.Point(187, 105);
             this.m_txt_ma_loai_lamthem.Name = "m_txt_ma_loai_lamthem";
             this.m_txt_ma_loai_lamthem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ma_loai_lamthem.Properties.Appearance.Options.UseFont = true;
@@ -152,7 +153,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(62, 109);
+            this.label8.Location = new System.Drawing.Point(46, 109);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 18);
             this.label8.TabIndex = 24;
@@ -162,7 +163,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(62, 215);
+            this.label10.Location = new System.Drawing.Point(46, 215);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 18);
             this.label10.TabIndex = 26;
@@ -172,7 +173,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(410, 211);
+            this.label11.Location = new System.Drawing.Point(394, 211);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(28, 18);
             this.label11.TabIndex = 27;
@@ -182,7 +183,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(62, 162);
+            this.label9.Location = new System.Drawing.Point(46, 162);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 18);
             this.label9.TabIndex = 25;
@@ -204,8 +205,10 @@
             this.Controls.Add(this.label8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LAM_THEM_GIO_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LAM_THEM_GIO_DETAIL";
             this.Load += new System.EventHandler(this.LAM_THEM_GIO_DETAIL_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

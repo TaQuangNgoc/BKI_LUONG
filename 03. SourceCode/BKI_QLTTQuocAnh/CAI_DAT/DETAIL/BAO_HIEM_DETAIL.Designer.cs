@@ -115,25 +115,26 @@
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_xoa_luong);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 344);
+            this.panel2.Location = new System.Drawing.Point(0, 277);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(440, 53);
             this.panel2.TabIndex = 60;
             // 
             // m_txt_lcd
             // 
-            this.m_txt_lcd.Location = new System.Drawing.Point(173, 233);
+            this.m_txt_lcd.Location = new System.Drawing.Point(153, 202);
             this.m_txt_lcd.Name = "m_txt_lcd";
             this.m_txt_lcd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_lcd.Properties.Appearance.Options.UseFont = true;
             this.m_txt_lcd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd.Size = new System.Drawing.Size(194, 26);
             this.m_txt_lcd.TabIndex = 67;
             this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_bao_hiem
             // 
-            this.m_txt_ten_bao_hiem.Location = new System.Drawing.Point(173, 185);
+            this.m_txt_ten_bao_hiem.Location = new System.Drawing.Point(153, 154);
             this.m_txt_ten_bao_hiem.Name = "m_txt_ten_bao_hiem";
             this.m_txt_ten_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ten_bao_hiem.Properties.Appearance.Options.UseFont = true;
@@ -143,7 +144,7 @@
             // 
             // m_txt_ma_bao_hiem
             // 
-            this.m_txt_ma_bao_hiem.Location = new System.Drawing.Point(173, 137);
+            this.m_txt_ma_bao_hiem.Location = new System.Drawing.Point(153, 106);
             this.m_txt_ma_bao_hiem.Name = "m_txt_ma_bao_hiem";
             this.m_txt_ma_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ma_bao_hiem.Properties.Appearance.Options.UseFont = true;
@@ -155,7 +156,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(43, 141);
+            this.label15.Location = new System.Drawing.Point(23, 110);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(93, 18);
             this.label15.TabIndex = 61;
@@ -165,7 +166,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(43, 189);
+            this.label19.Location = new System.Drawing.Point(23, 158);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 18);
             this.label19.TabIndex = 62;
@@ -175,7 +176,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(43, 237);
+            this.label18.Location = new System.Drawing.Point(23, 206);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(54, 18);
             this.label18.TabIndex = 63;
@@ -185,7 +186,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(379, 237);
+            this.label16.Location = new System.Drawing.Point(359, 206);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(28, 18);
             this.label16.TabIndex = 64;
@@ -195,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 397);
+            this.ClientSize = new System.Drawing.Size(440, 330);
             this.Controls.Add(this.m_txt_lcd);
             this.Controls.Add(this.m_txt_ten_bao_hiem);
             this.Controls.Add(this.m_txt_ma_bao_hiem);
@@ -207,6 +208,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BAO_HIEM_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BAO_HIEM_DETAIL";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

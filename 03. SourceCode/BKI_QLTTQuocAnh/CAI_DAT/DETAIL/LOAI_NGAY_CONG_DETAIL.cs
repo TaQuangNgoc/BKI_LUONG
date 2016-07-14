@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.US;
 using BKI_DichVuMatDat.DS;
+using DevExpress.XtraEditors;
 
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
@@ -109,15 +110,18 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
         private void text_box_format_numeric(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) )
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }
 
             // only allow one decimal point
-           
+            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
-
         
     }
 }

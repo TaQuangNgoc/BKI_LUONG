@@ -65,6 +65,7 @@
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            this.m_btn_luu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // panel1
             // 
@@ -124,8 +125,10 @@
             this.m_txt_lns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_lns.Properties.Appearance.Options.UseFont = true;
             this.m_txt_lns.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns.Size = new System.Drawing.Size(180, 26);
             this.m_txt_lns.TabIndex = 46;
+            this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label11
             // 
@@ -201,7 +204,9 @@
             this.Controls.Add(this.m_txt_ma_loai_lamthem);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DANH_MUC_TI_LE_LAM_THEM_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH_MUC_TI_LE_LAM_THEM_DETAIL";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

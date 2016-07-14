@@ -70,7 +70,7 @@
             this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_xoa_luong.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_luong.Location = new System.Drawing.Point(482, 0);
+            this.m_btn_xoa_luong.Location = new System.Drawing.Point(445, 0);
             this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
             this.m_btn_xoa_luong.TabIndex = 29;
@@ -94,9 +94,9 @@
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_xoa_luong);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 455);
+            this.panel2.Location = new System.Drawing.Point(0, 463);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 53);
+            this.panel2.Size = new System.Drawing.Size(561, 53);
             this.panel2.TabIndex = 50;
             // 
             // m_btn_luu
@@ -111,7 +111,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(339, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(302, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 15;
@@ -125,34 +125,34 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 53);
+            this.panel1.Size = new System.Drawing.Size(561, 53);
             this.panel1.TabIndex = 49;
             // 
             // m_txt_ten_phucap
             // 
-            this.m_txt_ten_phucap.Location = new System.Drawing.Point(266, 79);
+            this.m_txt_ten_phucap.Location = new System.Drawing.Point(181, 85);
             this.m_txt_ten_phucap.Name = "m_txt_ten_phucap";
             this.m_txt_ten_phucap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_ten_phucap.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ten_phucap.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ten_phucap.Size = new System.Drawing.Size(183, 26);
+            this.m_txt_ten_phucap.Size = new System.Drawing.Size(275, 26);
             this.m_txt_ten_phucap.TabIndex = 58;
             // 
             // m_txt_doi_tuong_huong
             // 
-            this.m_txt_doi_tuong_huong.Location = new System.Drawing.Point(266, 123);
+            this.m_txt_doi_tuong_huong.Location = new System.Drawing.Point(181, 129);
             this.m_txt_doi_tuong_huong.Name = "m_txt_doi_tuong_huong";
             this.m_txt_doi_tuong_huong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_txt_doi_tuong_huong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_doi_tuong_huong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_doi_tuong_huong.Size = new System.Drawing.Size(183, 26);
+            this.m_txt_doi_tuong_huong.Size = new System.Drawing.Size(275, 26);
             this.m_txt_doi_tuong_huong.TabIndex = 57;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(143, 83);
+            this.label17.Location = new System.Drawing.Point(58, 89);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(91, 18);
             this.label17.TabIndex = 52;
@@ -162,7 +162,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(143, 127);
+            this.label12.Location = new System.Drawing.Point(58, 133);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(117, 18);
             this.label12.TabIndex = 51;
@@ -179,9 +179,9 @@
             this.groupBox5.Controls.Add(this.label4);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(146, 162);
+            this.groupBox5.Location = new System.Drawing.Point(61, 168);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(330, 143);
+            this.groupBox5.Size = new System.Drawing.Size(395, 143);
             this.groupBox5.TabIndex = 56;
             this.groupBox5.TabStop = false;
             // 
@@ -192,6 +192,7 @@
             this.m_txt_ti_le.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_txt_ti_le.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le.Size = new System.Drawing.Size(140, 26);
             this.m_txt_ti_le.TabIndex = 23;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -203,6 +204,7 @@
             this.m_txt_so_tien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_txt_so_tien.Properties.Appearance.Options.UseFont = true;
             this.m_txt_so_tien.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_so_tien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_so_tien.Size = new System.Drawing.Size(140, 26);
             this.m_txt_so_tien.TabIndex = 22;
             this.m_txt_so_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -270,7 +272,7 @@
             // 
             this.m_checkb_duocgiamtruthue.AutoSize = true;
             this.m_checkb_duocgiamtruthue.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_checkb_duocgiamtruthue.Location = new System.Drawing.Point(146, 399);
+            this.m_checkb_duocgiamtruthue.Location = new System.Drawing.Point(61, 405);
             this.m_checkb_duocgiamtruthue.Name = "m_checkb_duocgiamtruthue";
             this.m_checkb_duocgiamtruthue.Size = new System.Drawing.Size(155, 22);
             this.m_checkb_duocgiamtruthue.TabIndex = 53;
@@ -281,7 +283,7 @@
             // 
             this.m_checkb_tinhvaokhoanphaidong_bhxh.AutoSize = true;
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_checkb_tinhvaokhoanphaidong_bhxh.Location = new System.Drawing.Point(146, 360);
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Location = new System.Drawing.Point(61, 366);
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Name = "m_checkb_tinhvaokhoanphaidong_bhxh";
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Size = new System.Drawing.Size(240, 22);
             this.m_checkb_tinhvaokhoanphaidong_bhxh.TabIndex = 54;
@@ -292,7 +294,7 @@
             // 
             this.m_checkb_phuthuoc_songaydilam.AutoSize = true;
             this.m_checkb_phuthuoc_songaydilam.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_checkb_phuthuoc_songaydilam.Location = new System.Drawing.Point(146, 321);
+            this.m_checkb_phuthuoc_songaydilam.Location = new System.Drawing.Point(61, 327);
             this.m_checkb_phuthuoc_songaydilam.Name = "m_checkb_phuthuoc_songaydilam";
             this.m_checkb_phuthuoc_songaydilam.Size = new System.Drawing.Size(193, 22);
             this.m_checkb_phuthuoc_songaydilam.TabIndex = 55;
@@ -303,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 508);
+            this.ClientSize = new System.Drawing.Size(561, 516);
             this.Controls.Add(this.m_txt_ten_phucap);
             this.Controls.Add(this.m_txt_doi_tuong_huong);
             this.Controls.Add(this.label17);
