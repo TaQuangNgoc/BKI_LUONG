@@ -1744,7 +1744,6 @@
     </FileAssociation>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BaoCao\Luong\" />
     <Folder Include="BaoCao\TongHop\" />
     <Folder Include="FormatControl\" />
   </ItemGroup>
