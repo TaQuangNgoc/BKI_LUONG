@@ -357,6 +357,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationControl.cs" />
+    <Compile Include="BaoCao\Luong\TinhLuongQL.cs" />
     <Compile Include="BaoCao\SplashScreen1.cs" />
     <Compile Include="BaoCao\SplashScreen1.Designer.cs">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
