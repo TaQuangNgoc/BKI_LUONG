@@ -23,6 +23,7 @@ using System.Reflection;
 using DevExpress.XtraEditors;
 using System.Linq;
 using DevExpress.XtraGrid.Columns;
+using System.Data.SqlClient;
 
 namespace BKI_DichVuMatDat
 {
@@ -724,12 +725,46 @@ namespace BKI_DichVuMatDat
 
         internal void LoadBangLuongThang(DataSet v_ds, decimal thang, decimal nam)
         {
-            CStoredProc v_cstore = new CStoredProc("PR_RPT_BANG_LUONG");
-           
+            CStoredProc v_cstore = new CStoredProc("PR_RPT_BANG_LUONG"); 
             v_cstore.addDecimalInputParam("@ID_NHAN_VIEN", 4);
             v_cstore.addDecimalInputParam("@THANG", thang);
             v_cstore.addDecimalInputParam("@NAM",nam);
             v_cstore.fillDataSetByCommand(this,v_ds);
+        }
+
+        internal void HienThiBangLuong(DataSet v_ds, decimal thang, decimal nam)
+        {
+
+            CStoredProc v_cstore = new CStoredProc("pr_load_du_lieu_bang_luong_thang");
+            v_cstore.addDecimalInputParam("@THANG", thang);
+            v_cstore.addDecimalInputParam("@NAM", nam);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void LayTrangThaiBangLuong(decimal ip_dc_thang
+                                                   , decimal ip_dc_nam
+                                                   , out decimal op_sl_nv_can_tinh_luong
+                                                   , out decimal op_sl_nv_da_tinh_luong
+                                                   , out bool op_bol_co_du_lieu_chua
+                                                   , out bool op_bol_chot_bang_luong)
+        {
+            op_sl_nv_can_tinh_luong = 0;
+            op_sl_nv_da_tinh_luong = 0;
+
+            CStoredProc v_sp = new CStoredProc("pr_TL_trang_thai_bang_luong_Get");
+            v_sp.addDecimalInputParam("@ip_i_thang", ip_dc_thang);
+            v_sp.addDecimalInputParam("@ip_i_nam", ip_dc_nam);
+
+            SqlParameter v_para_all = v_sp.addDecimalOutputParam("@op_i_tong_so_nhan_vien_can_tinh", 0);
+            SqlParameter v_para_da_tinh = v_sp.addDecimalOutputParam("@op_i_so_luong_nhan_vien_da_tinh", 0);
+            SqlParameter v_para_co_du_lieu_chua = v_sp.addNVarcharOutputParam("@op_str_co_du_lieu_chua", "");
+            SqlParameter v_para_chot_bang_luong = v_sp.addNVarcharOutputParam("@op_str_chot_bang_luong", "");
+            v_sp.ExecuteCommand(this);
+
+            op_sl_nv_can_tinh_luong = CIPConvert.ToDecimal(v_para_all.Value);
+            op_sl_nv_da_tinh_luong = CIPConvert.ToDecimal(v_para_da_tinh.Value);
+            op_bol_co_du_lieu_chua = v_para_co_du_lieu_chua.Value.ToString() == "Y" ? true : false;
+            op_bol_chot_bang_luong = v_para_chot_bang_luong.Value.ToString() == "Y" ? true : false;
         }
     } 
 }

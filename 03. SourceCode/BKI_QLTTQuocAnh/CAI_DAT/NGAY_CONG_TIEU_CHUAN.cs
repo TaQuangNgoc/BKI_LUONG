@@ -312,9 +312,9 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
                 {
                     
-                        DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f_danh_muc_loai_nhan_vien = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
-                        v_f_danh_muc_loai_nhan_vien.dislay_for_insert();
-                        load_data_to_grid_loai_nhan_vien();
+                        //DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f_danh_muc_loai_nhan_vien = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                        //v_f_danh_muc_loai_nhan_vien.dislay_for_insert();
+                        //load_data_to_grid_loai_nhan_vien();
                 }
                        
                 }
@@ -344,9 +344,9 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 {
                     DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
                     US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                    DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
-                    v_f.dislay_for_update(v_us);
-                    load_data_to_grid_loai_nhan_vien();
+                    //DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                    //v_f.dislay_for_update(v_us);
+                    //load_data_to_grid_loai_nhan_vien();
                 }
             }
         }

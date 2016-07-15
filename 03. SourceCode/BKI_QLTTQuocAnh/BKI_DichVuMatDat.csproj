@@ -363,6 +363,23 @@
     <Compile Include="BaoCao\Luong\BANG_LUONG.Designer.cs">
       <DependentUpon>BANG_LUONG.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.designer.cs">
+      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\TinhLuongQL.cs" />
+    <Compile Include="BKI_LUONGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BKI_LUONGDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,6 +446,7 @@
     <Compile Include="CAI_DAT\THAM_SO_KHAC.designer.cs">
       <DependentUpon>THAM_SO_KHAC.cs</DependentUpon>
     </Compile>
+    <Compile Include="COMMON\CHRMCommon.cs" />
     <Compile Include="COMMON\FTP.cs" />
     <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.cs">
       <SubType>Form</SubType>
@@ -436,6 +454,9 @@
     <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.Designer.cs">
       <DependentUpon>msg003_hien_thi_danh_sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_BANG_LUONG_V2.cs" />
+    <Compile Include="DTO\DTO_QUY_THU_NHAP_KHAC.cs" />
+    <Compile Include="DTO\DTO_THONG_TIN_BANG_LUONG.cs" />
     <Compile Include="FORM_MAU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -578,6 +599,9 @@
     <EmbeddedResource Include="BaoCao\Luong\BANG_LUONG.resx">
       <DependentUpon>BANG_LUONG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.resx">
+      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.resx">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
     </EmbeddedResource>
@@ -662,6 +686,28 @@
     <EmbeddedResource Include="XtraReport\rptPhuThuoc.resx">
       <DependentUpon>rptPhuThuoc.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BKI_LUONGDataSet.xsc">
+      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet.xss">
+      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet1.xsc">
+      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet1.xss">
+      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\1425904361_23923.ico" />
     <None Include="Resources\1425904406_289616.ico" />
     <None Include="Resources\1425904521_438788.ico" />

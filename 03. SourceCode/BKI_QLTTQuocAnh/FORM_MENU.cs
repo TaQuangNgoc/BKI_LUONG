@@ -255,7 +255,8 @@ namespace BKI_DichVuMatDat
 
             if (info.Node == BANG_LUONG)
             {
-                BKI_DichVuMatDat.BaoCao.Luong.BANG_LUONG v_f = new BaoCao.Luong.BANG_LUONG();
+                panel1.Visible = false;
+                BKI_DichVuMatDat.BaoCao.f412_rpt_tong_hop_tt_v2 v_f= new BaoCao.f412_rpt_tong_hop_tt_v2();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);

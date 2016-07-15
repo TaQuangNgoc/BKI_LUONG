@@ -30,8 +30,8 @@ namespace BKI_DichVuMatDat.DTO
             decimal v_dc_so_luong_nhan_vien_da_tinh;
             bool v_bol_co_du_lieu_chua;
             bool v_bol_chot_bang_luong;
-            US_RPT_LUONG_V2 v_us_luong_v2 = new US_RPT_LUONG_V2();
-            v_us_luong_v2.LayTrangThaiBangLuong(THANG
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.LayTrangThaiBangLuong(THANG
                                                         , NAM
                                                         , out v_dc_so_luong_nhan_vien_can_tinh
                                                         , out v_dc_so_luong_nhan_vien_da_tinh
