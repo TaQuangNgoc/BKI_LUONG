@@ -1277,10 +1277,6 @@
       <Project>{B490EA92-2990-4CBB-B58B-12901AFCCCB5}</Project>
       <Name>IPUserService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IPWordReport\IPWordReport.vbproj">
-      <Project>{0adf180c-9644-4b81-abb6-93fee0c11a01}</Project>
-      <Name>IPWordReport</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close-2.ico" />
