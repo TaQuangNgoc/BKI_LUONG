@@ -357,19 +357,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationControl.cs" />
-    <Compile Include="BaoCao\Luong\BANG_LUONG.cs">
-      <SubType>Form</SubType>
+    <Compile Include="BaoCao\SplashScreen1.cs" />
+    <Compile Include="BaoCao\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaoCao\Luong\BANG_LUONG.Designer.cs">
-      <DependentUpon>BANG_LUONG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.designer.cs">
-      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaoCao\Luong\TinhLuongQL.cs" />
     <Compile Include="BKI_LUONGDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -596,11 +587,8 @@
     <Compile Include="XtraReport\rptPhuThuoc.Designer.cs">
       <DependentUpon>rptPhuThuoc.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCao\Luong\BANG_LUONG.resx">
-      <DependentUpon>BANG_LUONG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.resx">
-      <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    <EmbeddedResource Include="BaoCao\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.resx">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
@@ -1756,6 +1744,7 @@
     </FileAssociation>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BaoCao\Luong\" />
     <Folder Include="BaoCao\TongHop\" />
     <Folder Include="FormatControl\" />
   </ItemGroup>
