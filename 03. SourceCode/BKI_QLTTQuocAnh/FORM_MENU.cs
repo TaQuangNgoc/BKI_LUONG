@@ -30,6 +30,7 @@ namespace BKI_DichVuMatDat
         TreeNode DANH_MUC = new TreeNode("Danh Mục");
         TreeNode THAM_SO_KHAC = new TreeNode("Tham số khác");
         TreeNode DANH_MUC_SAN_PHAM = new TreeNode("Chấm công theo sản phẩm");
+        TreeNode DANG_NHAP_HE_THONG = new TreeNode("Đăng nhập hệ thống");
         //NODE CON CỦA NHẬP LIỆU
         TreeNode THONG_TIN_NHAN_VIEN = new TreeNode("Thông tin nhân viên");    
         TreeNode CHAM_CONG_TU_EXCEL = new TreeNode("Chấm công từ excel");
@@ -82,6 +83,7 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[0].Nodes[1].Nodes.Add(SO_NGAY_CONG_TIEU_CHUAN);
             treeView1.Nodes[0].Nodes[1].Nodes.Add(THAM_SO_KHAC);
             treeView1.Nodes[0].Nodes.Add(DANH_MUC_SAN_PHAM);
+            treeView1.Nodes[0].Nodes.Add(DANG_NHAP_HE_THONG);
             treeView1.ItemHeight = 35;
 
             //node Nhập liệu
@@ -142,6 +144,13 @@ namespace BKI_DichVuMatDat
             if (info.Node == CAI_DAT_THAM_SO  )
             {
                 BKI_DichVuMatDat.CAI_DAT.FORM_CHO_CAI_DAT v_f = new BKI_DichVuMatDat.CAI_DAT.FORM_CHO_CAI_DAT();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+            if (info.Node == DANG_NHAP_HE_THONG)
+            {
+                BKI_DichVuMatDat.CAI_DAT.DANG_NHAP_HE_THONG v_f = new BKI_DichVuMatDat.CAI_DAT.DANG_NHAP_HE_THONG();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);

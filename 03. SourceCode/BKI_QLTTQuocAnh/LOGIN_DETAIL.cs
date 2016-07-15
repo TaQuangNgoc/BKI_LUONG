@@ -46,6 +46,46 @@ namespace BKI_DichVuMatDat
 
 
 
+        }
+
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void m_txt_username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void m_txt_password_TextChanged(object sender, EventArgs e)
+        {
+
         }    
                 
             

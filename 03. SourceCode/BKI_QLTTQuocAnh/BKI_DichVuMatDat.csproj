@@ -392,6 +392,12 @@
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.designer.cs">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\DANG_NHAP_HE_THONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DANG_NHAP_HE_THONG.Designer.cs">
+      <DependentUpon>DANG_NHAP_HE_THONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,6 +409,12 @@
     </Compile>
     <Compile Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.Designer.cs">
       <DependentUpon>BAO_HIEM_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.Designer.cs">
+      <DependentUpon>DANG_NHAP_HE_THONG_DETAIL.cs</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.cs">
       <SubType>Form</SubType>
@@ -627,11 +639,17 @@
     <EmbeddedResource Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.resx">
       <DependentUpon>CAC_HINH_THUC_TINH_LUONG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DANG_NHAP_HE_THONG.resx">
+      <DependentUpon>DANG_NHAP_HE_THONG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.resx">
       <DependentUpon>DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.resx">
       <DependentUpon>BAO_HIEM_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.resx">
+      <DependentUpon>DANG_NHAP_HE_THONG_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.resx">
       <DependentUpon>LAM_THEM_GIO_DETAIL.cs</DependentUpon>
