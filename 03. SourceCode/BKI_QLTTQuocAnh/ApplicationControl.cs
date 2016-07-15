@@ -10,6 +10,7 @@ using BKI_DichVuMatDat;
 //using FORM_MENU;
 
 using BKI_DichVuMatDat.CONFIRM;
+using System.Data;
 
 
 namespace BKI_DichVuMatDat
@@ -33,8 +34,14 @@ namespace BKI_DichVuMatDat
            
             try
             {
-                FORM_MENU v_f = new FORM_MENU();
+                //FORM_MENU v_f = new FORM_MENU();
+                LOGIN_DETAIL v_f = new LOGIN_DETAIL();
+
+
                 v_f.ShowDialog();
+               
+
+               // m_grc_ngay_cong.DataSource = v_ds.Tables[0];
                 // The following line provides localization for the application's user interface. 
                 //System.Threading.Thread.CurrentThread.CurrentUICulture =
                 //    new System.Globalization.CultureInfo("vi-VN");

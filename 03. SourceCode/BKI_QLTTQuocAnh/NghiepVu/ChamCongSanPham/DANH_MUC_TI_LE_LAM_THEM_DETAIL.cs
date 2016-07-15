@@ -91,6 +91,7 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
         {
 
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
+            m_us = v_us;
             us_to_form(v_us);
             this.ShowDialog();
         }
