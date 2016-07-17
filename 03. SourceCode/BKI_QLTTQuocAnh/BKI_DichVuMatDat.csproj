@@ -357,6 +357,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationControl.cs" />
+    <Compile Include="BaoCao\Luong\F401_he_so_bao_cao_luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\F401_he_so_bao_cao_luong.designer.cs">
+      <DependentUpon>F401_he_so_bao_cao_luong.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaoCao\Luong\f409_rpt_bang_luong_nv_v2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -368,6 +374,12 @@
     </Compile>
     <Compile Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.designer.cs">
       <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.Designer.cs">
+      <DependentUpon>NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs</DependentUpon>
     </Compile>
     <Compile Include="BaoCao\Luong\TinhLuongQL.cs" />
     <Compile Include="BaoCao\SplashScreen1.cs">
@@ -385,6 +397,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BKI_LUONGDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BKI_LUONGDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BKI_LUONGDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.cs">
       <SubType>Form</SubType>
@@ -627,11 +654,17 @@
     <Compile Include="XtraReport\rptPhuThuoc.Designer.cs">
       <DependentUpon>rptPhuThuoc.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaoCao\Luong\F401_he_so_bao_cao_luong.resx">
+      <DependentUpon>F401_he_so_bao_cao_luong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\Luong\f409_rpt_bang_luong_nv_v2.resx">
       <DependentUpon>f409_rpt_bang_luong_nv_v2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.resx">
       <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.resx">
+      <DependentUpon>NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
@@ -753,6 +786,39 @@
     </None>
     <None Include="BKI_LUONGDataSet1.xss">
       <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet2.xsc">
+      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet2.xss">
+      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet3.xsc">
+      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet3.xss">
+      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet4.xsc">
+      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet4.xss">
+      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Resources\1425904361_23923.ico" />
     <None Include="Resources\1425904406_289616.ico" />

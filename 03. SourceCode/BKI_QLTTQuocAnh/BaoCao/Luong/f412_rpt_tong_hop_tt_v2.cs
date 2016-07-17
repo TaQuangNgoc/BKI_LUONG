@@ -71,18 +71,7 @@ namespace BKI_DichVuMatDat.BaoCao
         }
         private bool isValidInputDate()
         {
-            //if(m_txt_thang.EditValue == null || m_txt_nam.EditValue == null)
-            //{
-            //    return false;
-            //}
-            //if(Convert.ToDecimal(m_txt_thang.EditValue) <= 0 || Convert.ToDecimal(m_txt_thang.EditValue) > 12)
-            //{
-            //    return false;
-            //}
-            //if(Convert.ToDecimal(m_txt_nam.EditValue) <= 2014 || Convert.ToDecimal(m_txt_nam.EditValue) > 9999)
-            //{
-            //    return false;
-            //}
+          
             if(m_dat_thang.EditValue == null)
             {
                 return false;
@@ -265,8 +254,8 @@ namespace BKI_DichVuMatDat.BaoCao
                     XtraMessageBox.Show("Bảng lương đã được chốt, bạn không được soạn thảo bảng lương. (Nếu muốn soạn thảo lại, cần bỏ chốt bảng lương)!", "CẢNH BÁO", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     return;
                 }
-              //  f409_rpt_bang_luong_nv_v2 v_frm = new f409_rpt_bang_luong_nv_v2();
-             //   v_frm.Display(lay_thang(), lay_nam());
+                f409_rpt_bang_luong_nv_v2 v_frm = new f409_rpt_bang_luong_nv_v2();
+                v_frm.Display(lay_thang(), lay_nam());
                 hien_thi_thong_tin_bang_luong();
                 load_data_2_grid();
             }

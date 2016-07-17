@@ -62,6 +62,7 @@
     <Compile Include="US_GD_CAC_LOAI_TIEN_KHAC.cs" />
     <Compile Include="US_GD_CHAM_CONG.cs" />
     <Compile Include="US_GD_CHAM_CONG_LAM_THEM.cs" />
+    <Compile Include="US_GD_KHONG_CHAM_LUONG_THANG.cs" />
     <Compile Include="US_GD_LOAI_NV_NGAY_LV_TIEU_CHUAN.cs" />
     <Compile Include="US_GD_LUONG.cs" />
     <Compile Include="US_GD_LUONG_MOT_NGAY.cs" />
