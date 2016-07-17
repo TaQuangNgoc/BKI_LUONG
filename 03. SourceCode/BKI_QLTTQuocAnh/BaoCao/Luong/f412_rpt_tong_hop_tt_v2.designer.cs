@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f412_rpt_tong_hop_tt_v2));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -37,7 +38,7 @@
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection = new DevExpress.Utils.ImageCollection();
+            this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.m_cmd_delete_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_luu_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tinh_lai_nhan_vien = new DevExpress.XtraEditors.SimpleButton();
@@ -94,12 +95,14 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.m_lbl_thang = new DevExpress.XtraEditors.LabelControl();
             this.bKI_DVMDDataSet = new BKI_DichVuMatDat.BKI_DVMDDataSet();
-            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource();
+            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
-            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource();
+            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rPT_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.bkI_LUONGDataSet11 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
             this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -122,6 +125,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -345,7 +349,7 @@
             this.repositoryItemMemoEdit1,
             this.repoBtnXoaLuong,
             this.repositoryItemTextEditTien});
-            this.m_grc_tong_hop.Size = new System.Drawing.Size(985, 380);
+            this.m_grc_tong_hop.Size = new System.Drawing.Size(985, 334);
             this.m_grc_tong_hop.TabIndex = 11;
             this.m_grc_tong_hop.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_adv_tong_hop});
@@ -964,12 +968,42 @@
             // 
             this.rpT_LUONGTableAdapter1.ClearBeforeFill = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.m_btn_thoat);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 439);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(985, 46);
+            this.panel2.TabIndex = 14;
+            // 
+            // m_btn_thoat
+            // 
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(869, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
+            this.m_btn_thoat.TabIndex = 30;
+            this.m_btn_thoat.Text = "Thoát";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
+            // 
             // f412_rpt_tong_hop_tt_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 485);
             this.Controls.Add(this.m_grc_tong_hop);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.m_panel);
             this.Controls.Add(this.panel1);
@@ -1000,6 +1034,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1076,5 +1111,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
     }
 }

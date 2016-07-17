@@ -328,6 +328,11 @@ namespace BKI_DichVuMatDat.BaoCao
             }
         }
 
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         
     }
 }

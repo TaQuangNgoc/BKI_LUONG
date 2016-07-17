@@ -55,6 +55,9 @@ namespace BKI_DichVuMatDat.BaoCao
             m_txt_nam.EditValue = ip_dc_nam;
             m_txt_thang.Enabled = false;
             m_txt_nam.Enabled = false;
+         //   this.TopMost = true;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
             this.ShowDialog();
         }
         #endregion
@@ -723,6 +726,11 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             BKI_DichVuMatDat.BaoCao.Luong.NHAN_VIEN_KHONG_CHAM_CONG_THANG v_f = new Luong.NHAN_VIEN_KHONG_CHAM_CONG_THANG();
             v_f.hienThiDanhSach(lay_thang(), lay_nam());
+        }
+
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
        

@@ -52,7 +52,7 @@ namespace BKI_DichVuMatDat
         TreeNode CHAM_CONG_LAM_THEM_SAN_PHAM = new TreeNode("Làm thêm theo sản phẩm");
 
         //NODE CON CỦA BÁO CÁO
-        TreeNode BANG_LUONG = new TreeNode("BẢNG LƯƠNG THÁNG");
+        TreeNode BANG_LUONG = new TreeNode("Bảng lương");
 
 
         public FORM_MENU()
@@ -266,9 +266,17 @@ namespace BKI_DichVuMatDat
             {
                 panel1.Visible = false;
                 BKI_DichVuMatDat.BaoCao.f412_rpt_tong_hop_tt_v2 v_f= new BaoCao.f412_rpt_tong_hop_tt_v2();
-                v_f.TopLevel = false;
-                panel2.Controls.Add(v_f);
-                ShowForm(v_f);
+                //v_f.TopLevel = false;
+                //panel2.Controls.Add(v_f);
+                //v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                //v_f.Dock = DockStyle.Fill;
+                //v_f.Show();
+              //  v_f.TopMost = true;
+                v_f.FormBorderStyle = FormBorderStyle.None;
+                v_f.WindowState = FormWindowState.Maximized;
+                v_f.ShowDialog();
+               // ShowForm(v_f);
+                panel1.Visible = true;
             }
         }
 
