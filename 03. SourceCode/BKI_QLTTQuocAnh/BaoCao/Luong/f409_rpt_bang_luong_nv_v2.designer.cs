@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f409_rpt_bang_luong_nv_v2));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.MA_NV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -44,14 +39,16 @@
             this.m_txt_thang = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_thong_bao = new DevExpress.XtraEditors.LabelControl();
+            this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
             this.m_cmd_export_excel = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.imageCollection = new DevExpress.Utils.ImageCollection();
             this.m_bgwk = new System.ComponentModel.BackgroundWorker();
             this.spreadsheetBarController1 = new DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController();
             this.splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_luu_du_lieu = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tinh_bang_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_khong_tinh_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_kiem_tra_du_lieu = new DevExpress.XtraEditors.SimpleButton();
             this.m_grc_main = new DevExpress.XtraGrid.GridControl();
             this.m_grv_main = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
@@ -97,15 +94,12 @@
             this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.repoBtnXoaLuong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.m_btn_khong_tinh_luong = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_thang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -119,7 +113,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.gridControl1);
             this.panel1.Controls.Add(this.panelControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -128,37 +121,9 @@
             this.panel1.Size = new System.Drawing.Size(1257, 87);
             this.panel1.TabIndex = 0;
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl1.Location = new System.Drawing.Point(1031, 6);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(214, 80);
-            this.gridControl1.TabIndex = 4;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.gridControl1.Visible = false;
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.MA_NV});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
-            // MA_NV
-            // 
-            this.MA_NV.Caption = "Mã NV không có trong phần mềm";
-            this.MA_NV.FieldName = "MA_NV";
-            this.MA_NV.Name = "MA_NV";
-            this.MA_NV.Visible = true;
-            this.MA_NV.VisibleIndex = 0;
-            // 
             // panelControl1
             // 
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.m_prb);
             this.panelControl1.Controls.Add(this.m_lbl_trang_thai_bang_luong);
             this.panelControl1.Controls.Add(this.m_lbl_so_luong_nv_tinh_luong);
             this.panelControl1.Controls.Add(this.labelControl2);
@@ -171,16 +136,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(941, 77);
             this.panelControl1.TabIndex = 0;
-            // 
-            // m_prb
-            // 
-            this.m_prb.Location = new System.Drawing.Point(404, 32);
-            this.m_prb.Name = "m_prb";
-            this.m_prb.Properties.ShowTitle = true;
-            this.m_prb.ShowProgressInTaskBar = true;
-            this.m_prb.Size = new System.Drawing.Size(605, 34);
-            this.m_prb.TabIndex = 9;
-            this.m_prb.Visible = false;
             // 
             // m_lbl_trang_thai_bang_luong
             // 
@@ -261,6 +216,16 @@
             this.m_lbl_thong_bao.TabIndex = 3;
             this.m_lbl_thong_bao.Text = "Bảng lương phần mềm đã có dữ liệu ";
             // 
+            // m_prb
+            // 
+            this.m_prb.Location = new System.Drawing.Point(322, 308);
+            this.m_prb.Name = "m_prb";
+            this.m_prb.Properties.ShowTitle = true;
+            this.m_prb.ShowProgressInTaskBar = true;
+            this.m_prb.Size = new System.Drawing.Size(605, 34);
+            this.m_prb.TabIndex = 9;
+            this.m_prb.Visible = false;
+            // 
             // m_cmd_export_excel
             // 
             this.m_cmd_export_excel.Dock = System.Windows.Forms.DockStyle.Right;
@@ -336,6 +301,20 @@
             this.m_cmd_tinh_bang_luong.Text = "Bước 3: Soạn thảo bảng lương";
             this.m_cmd_tinh_bang_luong.ToolTip = "Tính toán dữ liệu lương của nhân viên (Việc này chưa lưu vào bảng lương phần mềm)" +
     "";
+            // 
+            // m_btn_khong_tinh_luong
+            // 
+            this.m_btn_khong_tinh_luong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_btn_khong_tinh_luong.ImageIndex = 5;
+            this.m_btn_khong_tinh_luong.ImageList = this.imageCollection;
+            this.m_btn_khong_tinh_luong.Location = new System.Drawing.Point(197, 2);
+            this.m_btn_khong_tinh_luong.Name = "m_btn_khong_tinh_luong";
+            this.m_btn_khong_tinh_luong.Size = new System.Drawing.Size(230, 29);
+            this.m_btn_khong_tinh_luong.TabIndex = 16;
+            this.m_btn_khong_tinh_luong.Text = "Bước 2: Chọn NV không được tính lương";
+            this.m_btn_khong_tinh_luong.ToolTip = "Tính toán dữ liệu lương của nhân viên (Việc này chưa lưu vào bảng lương phần mềm)" +
+    "";
+            this.m_btn_khong_tinh_luong.Click += new System.EventHandler(this.m_btn_khong_tinh_luong_Click);
             // 
             // m_cmd_kiem_tra_du_lieu
             // 
@@ -458,7 +437,6 @@
             this.m_grv_main.Name = "m_grv_main";
             this.m_grv_main.OptionsBehavior.AutoExpandAllGroups = true;
             this.m_grv_main.OptionsBehavior.CopyToClipboardWithColumnHeaders = false;
-            this.m_grv_main.OptionsBehavior.ReadOnly = true;
             this.m_grv_main.OptionsFind.AlwaysVisible = true;
             this.m_grv_main.OptionsFind.FindDelay = 100;
             this.m_grv_main.OptionsFind.FindNullPrompt = "Tìm kiếm...";
@@ -912,7 +890,7 @@
             // repoBtnXoaLuong
             // 
             this.repoBtnXoaLuong.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.repoBtnXoaLuong.Name = "repoBtnXoaLuong";
             this.repoBtnXoaLuong.ReadOnly = true;
             this.repoBtnXoaLuong.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -926,25 +904,12 @@
             this.repositoryItemTextEditTien.Mask.UseMaskAsDisplayFormat = true;
             this.repositoryItemTextEditTien.Name = "repositoryItemTextEditTien";
             // 
-            // m_btn_khong_tinh_luong
-            // 
-            this.m_btn_khong_tinh_luong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_btn_khong_tinh_luong.ImageIndex = 5;
-            this.m_btn_khong_tinh_luong.ImageList = this.imageCollection;
-            this.m_btn_khong_tinh_luong.Location = new System.Drawing.Point(197, 2);
-            this.m_btn_khong_tinh_luong.Name = "m_btn_khong_tinh_luong";
-            this.m_btn_khong_tinh_luong.Size = new System.Drawing.Size(230, 29);
-            this.m_btn_khong_tinh_luong.TabIndex = 16;
-            this.m_btn_khong_tinh_luong.Text = "Bước 2: Chọn NV không được tính lương";
-            this.m_btn_khong_tinh_luong.ToolTip = "Tính toán dữ liệu lương của nhân viên (Việc này chưa lưu vào bảng lương phần mềm)" +
-    "";
-            this.m_btn_khong_tinh_luong.Click += new System.EventHandler(this.m_btn_khong_tinh_luong_Click);
-            // 
             // f409_rpt_bang_luong_nv_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1257, 521);
+            this.Controls.Add(this.m_prb);
             this.Controls.Add(this.m_grc_main);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panel1);
@@ -953,14 +918,12 @@
             this.Text = "F409 - SOẠN THẢO bảng lương";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_thang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -988,9 +951,6 @@
         private DevExpress.Utils.ImageCollection imageCollection;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn MA_NV;
         private DevExpress.XtraEditors.SimpleButton m_cmd_export_excel;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.SimpleButton m_cmd_kiem_tra_du_lieu;

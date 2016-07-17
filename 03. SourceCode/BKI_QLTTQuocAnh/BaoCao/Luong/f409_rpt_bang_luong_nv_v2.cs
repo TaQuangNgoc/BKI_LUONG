@@ -622,16 +622,7 @@ namespace BKI_DichVuMatDat.BaoCao
 
         }
       
-        private void open_file_excel_created(string ip_str_file_name)
-        {
-            var process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = ip_str_file_name;
-            process.StartInfo.Verb = "Open";
-            process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
-            process.Start();
-        }
-       
-
+     
         private void save_data(ENUM_CONFIRM_LUU_BANG_LUONG ip_confirm_save)
         {
             SplashScreenManager.ShowForm(this, typeof(SplashScreen1), true, true, false);
