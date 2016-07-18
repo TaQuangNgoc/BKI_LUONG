@@ -225,6 +225,11 @@
         52whXWSTDGjlAUAMv0x5nBJQiv8X8KYh53JljDEbrfWJ3Y2IO3EAAAAASUVORK5CYIIL
 </value>
   </data>
+  <data name="m_cmd_chot_bang_luong.ToolTip" xml:space="preserve">
+    <value>Chốt bảng lương chỉ thực hiện khi đã chắc chắn về dữ liệu lương tháng. 
+Phải chốt lương để dữ liệu về các tham số( lương tối thiểu vùng, giảm trừ gia cảnh...)
+được cố định tại thời điểm chốt.</value>
+  </data>
   <metadata name="m_bgwk.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

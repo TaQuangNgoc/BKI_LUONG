@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f412_rpt_tong_hop_tt_v2));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_dat_thang = new DevExpress.XtraEditors.DateEdit();
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_huy_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_delete_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_luu_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tinh_lai_nhan_vien = new DevExpress.XtraEditors.SimpleButton();
@@ -196,6 +197,7 @@
             // panelControl1
             // 
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl1.Controls.Add(this.m_btn_huy_chot_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_chot_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_delete_luong);
             this.panelControl1.Controls.Add(this.m_cmd_luu_bang_luong);
@@ -208,19 +210,21 @@
             this.panelControl1.Size = new System.Drawing.Size(992, 26);
             this.panelControl1.TabIndex = 25;
             // 
-            // m_cmd_chot_bang_luong
+            // m_btn_huy_chot_bang_luong
             // 
-            this.m_cmd_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_chot_bang_luong.ImageIndex = 2;
-            this.m_cmd_chot_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(451, 0);
-            this.m_cmd_chot_bang_luong.Name = "m_cmd_chot_bang_luong";
-            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(139, 26);
-            this.m_cmd_chot_bang_luong.TabIndex = 24;
-            this.m_cmd_chot_bang_luong.Text = "3. CHỐT BẢNG LƯƠNG";
-            this.m_cmd_chot_bang_luong.ToolTip = "Chốt bảng lương chỉ thực hiện khi đã chắc chắn về dữ liệu lương tháng" +
-    ". ";
-            this.m_cmd_chot_bang_luong.Click += new System.EventHandler(this.m_cmd_chot_bang_luong_Click);
+            this.m_btn_huy_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_btn_huy_chot_bang_luong.Image = global::BKI_DichVuMatDat.Properties.Resources.delete_24;
+            this.m_btn_huy_chot_bang_luong.ImageIndex = 2;
+            this.m_btn_huy_chot_bang_luong.ImageList = this.imageCollection;
+            this.m_btn_huy_chot_bang_luong.Location = new System.Drawing.Point(590, 0);
+            this.m_btn_huy_chot_bang_luong.Name = "m_btn_huy_chot_bang_luong";
+            this.m_btn_huy_chot_bang_luong.Size = new System.Drawing.Size(202, 26);
+            this.m_btn_huy_chot_bang_luong.TabIndex = 25;
+            this.m_btn_huy_chot_bang_luong.Text = "3.1. HỦY CHỐT BẢNG LƯƠNG";
+            this.m_btn_huy_chot_bang_luong.ToolTip = "Hủy chốt bảng lương có thể ảnh lưởng đến kết quả tính lương lần sau.\r\nChú ý  nếu " +
+    "muốn chốt lại bảng lương cần điều chỉnh các tham số hệ thống cho phù hợp với thờ" +
+    "i điểm tính lương.";
+            this.m_btn_huy_chot_bang_luong.Click += new System.EventHandler(this.m_btn_huy_chot_bang_luong_Click);
             // 
             // imageCollection
             // 
@@ -238,6 +242,19 @@
             this.imageCollection.Images.SetKeyName(10, "list.png");
             this.imageCollection.Images.SetKeyName(11, "eye.png");
             this.imageCollection.Images.SetKeyName(12, "note.png");
+            // 
+            // m_cmd_chot_bang_luong
+            // 
+            this.m_cmd_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_chot_bang_luong.ImageIndex = 2;
+            this.m_cmd_chot_bang_luong.ImageList = this.imageCollection;
+            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(451, 0);
+            this.m_cmd_chot_bang_luong.Name = "m_cmd_chot_bang_luong";
+            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(139, 26);
+            this.m_cmd_chot_bang_luong.TabIndex = 24;
+            this.m_cmd_chot_bang_luong.Text = "3. CHỐT BẢNG LƯƠNG";
+            this.m_cmd_chot_bang_luong.ToolTip = resources.GetString("m_cmd_chot_bang_luong.ToolTip");
+            this.m_cmd_chot_bang_luong.Click += new System.EventHandler(this.m_cmd_chot_bang_luong_Click);
             // 
             // m_cmd_delete_luong
             // 
@@ -900,7 +917,7 @@
             // repoBtnXoaLuong
             // 
             this.repoBtnXoaLuong.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
             this.repoBtnXoaLuong.Name = "repoBtnXoaLuong";
             this.repoBtnXoaLuong.ReadOnly = true;
             this.repoBtnXoaLuong.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -1113,5 +1130,6 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_huy_chot_bang_luong;
     }
 }

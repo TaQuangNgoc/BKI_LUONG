@@ -822,5 +822,13 @@ namespace BKI_DichVuMatDat
             v_sp.addDecimalInputParam("@NAM", nam);
             v_sp.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void HuyChotBangLuong(decimal thang, decimal nam)
+        {
+            CStoredProc v_sp = new CStoredProc("PR_HUY_CHOT_BANG_LUONG");
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);
+            v_sp.ExecuteCommand(this);
+        }
     } 
 }
