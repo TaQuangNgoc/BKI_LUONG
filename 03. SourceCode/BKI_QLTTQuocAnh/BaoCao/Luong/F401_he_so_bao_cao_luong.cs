@@ -101,5 +101,10 @@ namespace BKI_DichVuMatDat.BaoCao
             }
         }      
         #endregion Events        
+
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

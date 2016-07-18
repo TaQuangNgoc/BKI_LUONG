@@ -191,6 +191,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_PHU_CAP.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_RPT_CHOT_BANG_LUONG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RPT_CHOT_BANG_LUONG.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_RPT_LUONG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -526,6 +531,17 @@
     </None>
     <None Include="DS_PHU_CAP.xss">
       <DependentUpon>DS_PHU_CAP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_RPT_CHOT_BANG_LUONG.xsc">
+      <DependentUpon>DS_RPT_CHOT_BANG_LUONG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_RPT_CHOT_BANG_LUONG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RPT_CHOT_BANG_LUONG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_RPT_CHOT_BANG_LUONG.xss">
+      <DependentUpon>DS_RPT_CHOT_BANG_LUONG.xsd</DependentUpon>
     </None>
     <None Include="DS_RPT_LUONG.xsc">
       <DependentUpon>DS_RPT_LUONG.xsd</DependentUpon>

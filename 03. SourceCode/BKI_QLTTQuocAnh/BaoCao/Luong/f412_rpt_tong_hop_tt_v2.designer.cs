@@ -92,8 +92,6 @@
             this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.repoBtnXoaLuong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.m_lbl_thang = new DevExpress.XtraEditors.LabelControl();
             this.bKI_DVMDDataSet = new BKI_DichVuMatDat.BKI_DVMDDataSet();
             this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
@@ -103,6 +101,8 @@
             this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -118,14 +118,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMDDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKIDVMDDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -133,10 +132,10 @@
             this.panel1.Controls.Add(this.panelControl2);
             this.panel1.Controls.Add(this.panelControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 53);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(985, 82);
+            this.panel1.Size = new System.Drawing.Size(1002, 88);
             this.panel1.TabIndex = 7;
             // 
             // panelControl2
@@ -148,7 +147,7 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl2.Location = new System.Drawing.Point(5, 5);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(975, 40);
+            this.panelControl2.Size = new System.Drawing.Size(992, 52);
             this.panelControl2.TabIndex = 26;
             // 
             // m_dat_thang
@@ -204,9 +203,9 @@
             this.panelControl1.Controls.Add(this.m_cmd_soan_thao_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_view);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(5, 45);
+            this.panelControl1.Location = new System.Drawing.Point(5, 57);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(975, 32);
+            this.panelControl1.Size = new System.Drawing.Size(992, 26);
             this.panelControl1.TabIndex = 25;
             // 
             // m_cmd_chot_bang_luong
@@ -216,7 +215,7 @@
             this.m_cmd_chot_bang_luong.ImageList = this.imageCollection;
             this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(451, 0);
             this.m_cmd_chot_bang_luong.Name = "m_cmd_chot_bang_luong";
-            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(139, 32);
+            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(139, 26);
             this.m_cmd_chot_bang_luong.TabIndex = 24;
             this.m_cmd_chot_bang_luong.Text = "3. CHỐT BẢNG LƯƠNG";
             this.m_cmd_chot_bang_luong.ToolTip = "Chốt bảng lương chỉ thực hiện khi đã chắc chắn về dữ liệu lương tháng" +
@@ -247,7 +246,7 @@
             this.m_cmd_delete_luong.ImageList = this.imageCollection;
             this.m_cmd_delete_luong.Location = new System.Drawing.Point(323, 0);
             this.m_cmd_delete_luong.Name = "m_cmd_delete_luong";
-            this.m_cmd_delete_luong.Size = new System.Drawing.Size(128, 32);
+            this.m_cmd_delete_luong.Size = new System.Drawing.Size(128, 26);
             this.m_cmd_delete_luong.TabIndex = 23;
             this.m_cmd_delete_luong.Text = "2.1. XÓA LƯƠNG";
             this.m_cmd_delete_luong.Click += new System.EventHandler(this.m_cmd_delete_luong_Click);
@@ -257,9 +256,9 @@
             this.m_cmd_luu_bang_luong.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_luu_bang_luong.ImageIndex = 1;
             this.m_cmd_luu_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_luu_bang_luong.Location = new System.Drawing.Point(874, 0);
+            this.m_cmd_luu_bang_luong.Location = new System.Drawing.Point(891, 0);
             this.m_cmd_luu_bang_luong.Name = "m_cmd_luu_bang_luong";
-            this.m_cmd_luu_bang_luong.Size = new System.Drawing.Size(101, 32);
+            this.m_cmd_luu_bang_luong.Size = new System.Drawing.Size(101, 26);
             this.m_cmd_luu_bang_luong.TabIndex = 22;
             this.m_cmd_luu_bang_luong.Text = "Trích xuất";
             this.m_cmd_luu_bang_luong.Click += new System.EventHandler(this.m_cmd_luu_bang_luong_Click);
@@ -271,7 +270,7 @@
             this.m_cmd_tinh_lai_nhan_vien.ImageList = this.imageCollection;
             this.m_cmd_tinh_lai_nhan_vien.Location = new System.Drawing.Point(195, 0);
             this.m_cmd_tinh_lai_nhan_vien.Name = "m_cmd_tinh_lai_nhan_vien";
-            this.m_cmd_tinh_lai_nhan_vien.Size = new System.Drawing.Size(128, 32);
+            this.m_cmd_tinh_lai_nhan_vien.Size = new System.Drawing.Size(128, 26);
             this.m_cmd_tinh_lai_nhan_vien.TabIndex = 19;
             this.m_cmd_tinh_lai_nhan_vien.Text = "2. TÍNH LẠI LƯƠNG";
             this.m_cmd_tinh_lai_nhan_vien.Click += new System.EventHandler(this.m_cmd_tinh_lai_nhan_vien_Click);
@@ -283,7 +282,7 @@
             this.m_cmd_soan_thao_bang_luong.ImageList = this.imageCollection;
             this.m_cmd_soan_thao_bang_luong.Location = new System.Drawing.Point(88, 0);
             this.m_cmd_soan_thao_bang_luong.Name = "m_cmd_soan_thao_bang_luong";
-            this.m_cmd_soan_thao_bang_luong.Size = new System.Drawing.Size(107, 32);
+            this.m_cmd_soan_thao_bang_luong.Size = new System.Drawing.Size(107, 26);
             this.m_cmd_soan_thao_bang_luong.TabIndex = 13;
             this.m_cmd_soan_thao_bang_luong.Text = "1. SOẠN THẢO";
             this.m_cmd_soan_thao_bang_luong.Click += new System.EventHandler(this.m_cmd_soan_thao_bang_luong_Click);
@@ -295,7 +294,7 @@
             this.m_cmd_view.ImageList = this.imageCollection;
             this.m_cmd_view.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_view.Name = "m_cmd_view";
-            this.m_cmd_view.Size = new System.Drawing.Size(88, 32);
+            this.m_cmd_view.Size = new System.Drawing.Size(88, 26);
             this.m_cmd_view.TabIndex = 10;
             this.m_cmd_view.Text = "XEM";
             this.m_cmd_view.Click += new System.EventHandler(this.m_cmd_view_Click);
@@ -342,14 +341,14 @@
             // 
             this.m_grc_tong_hop.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_tong_hop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 105);
+            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 141);
             this.m_grc_tong_hop.MainView = this.m_adv_tong_hop;
             this.m_grc_tong_hop.Name = "m_grc_tong_hop";
             this.m_grc_tong_hop.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemMemoEdit1,
             this.repoBtnXoaLuong,
             this.repositoryItemTextEditTien});
-            this.m_grc_tong_hop.Size = new System.Drawing.Size(985, 334);
+            this.m_grc_tong_hop.Size = new System.Drawing.Size(1002, 298);
             this.m_grc_tong_hop.TabIndex = 11;
             this.m_grc_tong_hop.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_adv_tong_hop});
@@ -915,26 +914,6 @@
             this.repositoryItemTextEditTien.Mask.UseMaskAsDisplayFormat = true;
             this.repositoryItemTextEditTien.Name = "repositoryItemTextEditTien";
             // 
-            // panelControl3
-            // 
-            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl3.Controls.Add(this.m_lbl_thang);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(0, 82);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(985, 23);
-            this.panelControl3.TabIndex = 13;
-            // 
-            // m_lbl_thang
-            // 
-            this.m_lbl_thang.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.m_lbl_thang.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_lbl_thang.Location = new System.Drawing.Point(0, 0);
-            this.m_lbl_thang.Name = "m_lbl_thang";
-            this.m_lbl_thang.Size = new System.Drawing.Size(619, 23);
-            this.m_lbl_thang.TabIndex = 0;
-            this.m_lbl_thang.Text = "...";
-            // 
             // bKI_DVMDDataSet
             // 
             this.bKI_DVMDDataSet.DataSetName = "BKI_DVMDDataSet";
@@ -975,7 +954,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 439);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(985, 46);
+            this.panel2.Size = new System.Drawing.Size(1002, 46);
             this.panel2.TabIndex = 14;
             // 
             // m_btn_thoat
@@ -990,23 +969,44 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(869, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(886, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
             this.m_btn_thoat.TabIndex = 30;
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1002, 53);
+            this.panel3.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TỔNG HỢP BẢNG LƯƠNG THÁNG";
+            // 
             // f412_rpt_tong_hop_tt_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 485);
+            this.ClientSize = new System.Drawing.Size(1002, 485);
             this.Controls.Add(this.m_grc_tong_hop);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelControl3);
-            this.Controls.Add(this.m_panel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.m_panel);
             this.Name = "f412_rpt_tong_hop_tt_v2";
             this.Text = "F412 - Tổng hợp dữ liệu lương";
             this.Load += new System.EventHandler(this.f413_rpt_tong_hop_thong_tin_Load);
@@ -1027,14 +1027,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMDDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKIDVMDDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1058,8 +1058,6 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_soan_thao_bang_luong;
         private DevExpress.XtraEditors.SimpleButton m_cmd_view;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.LabelControl m_lbl_thang;
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu_bang_luong;
         private DevExpress.XtraEditors.SimpleButton m_cmd_tinh_lai_nhan_vien;
         private DevExpress.XtraEditors.DateEdit m_dat_thang;
@@ -1113,5 +1111,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
     }
 }

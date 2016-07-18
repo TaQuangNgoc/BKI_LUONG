@@ -413,6 +413,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BKI_LUONGDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -819,6 +824,17 @@
     </None>
     <None Include="BKI_LUONGDataSet4.xss">
       <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet5.xsc">
+      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BKI_LUONGDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BKI_LUONGDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BKI_LUONGDataSet5.xss">
+      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Resources\1425904361_23923.ico" />
     <None Include="Resources\1425904406_289616.ico" />

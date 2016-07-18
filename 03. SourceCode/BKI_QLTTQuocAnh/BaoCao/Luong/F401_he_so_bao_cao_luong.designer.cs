@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F401_he_so_bao_cao_luong));
-            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.m_gd_tham_so_bang_luong_thang = new DevExpress.XtraGrid.GridControl();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.pRGETTHAMSOBANGLUONGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet3 = new BKI_DichVuMatDat.BKI_LUONGDataSet3();
-            this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.img_DVMD = new DevExpress.Utils.ImageCollection(this.components);
+            this.bKI_LUONGDataSet2 = new BKI_DichVuMatDat.BKI_LUONGDataSet2();
+            this.pRGETTHAMSOBANGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet2TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHO_DEM = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -53,75 +54,37 @@
             this.colPHAI_DONG_DOAN_PHI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHAI_DONG_BAO_HIEM = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
+            this.m_gd_tham_so_bang_luong_thang = new DevExpress.XtraGrid.GridControl();
+            this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_lbl_tieu_de_form = new DevExpress.XtraEditors.LabelControl();
-            this.m_txt_search = new System.Windows.Forms.TextBox();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.img_DVMD = new DevExpress.Utils.ImageCollection(this.components);
-            this.bKI_LUONGDataSet2 = new BKI_DichVuMatDat.BKI_LUONGDataSet2();
-            this.pRGETTHAMSOBANGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet2TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
-            this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).BeginInit();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.bKI_LUONGDataSet5 = new BKI_DichVuMatDat.BKI_LUONGDataSet5();
+            this.pRGETTHAMSOBANGLUONGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
+            this.colID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMA_NV1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHO_DEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTEN1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDA_CHAM_CONG1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCO_LNS1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCO_LUONG_CD1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPHAI_DONG_DOAN_PHI1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPHAI_DONG_BAO_HIEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSO_LUONG_PHU_THUOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Controls.Add(this.panelControl1);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(389, 286, 250, 350);
-            this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1188, 526);
-            this.layoutControl1.TabIndex = 0;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl1.Controls.Add(this.m_gd_tham_so_bang_luong_thang);
-            this.panelControl1.Controls.Add(this.panel2);
-            this.panelControl1.Location = new System.Drawing.Point(12, 12);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1164, 502);
-            this.panelControl1.TabIndex = 4;
-            // 
-            // m_gd_tham_so_bang_luong_thang
-            // 
-            this.m_gd_tham_so_bang_luong_thang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_gd_tham_so_bang_luong_thang.DataSource = this.pRGETTHAMSOBANGLUONGBindingSource1;
-            this.m_gd_tham_so_bang_luong_thang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_gd_tham_so_bang_luong_thang.Location = new System.Drawing.Point(2, 44);
-            this.m_gd_tham_so_bang_luong_thang.MainView = this.m_grv;
-            this.m_gd_tham_so_bang_luong_thang.Name = "m_gd_tham_so_bang_luong_thang";
-            this.m_gd_tham_so_bang_luong_thang.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemCheckEdit1,
-            this.repositoryItemCheckEdit2});
-            this.m_gd_tham_so_bang_luong_thang.Size = new System.Drawing.Size(1160, 456);
-            this.m_gd_tham_so_bang_luong_thang.TabIndex = 0;
-            this.m_gd_tham_so_bang_luong_thang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv});
             // 
             // pRGETTHAMSOBANGLUONGBindingSource1
             // 
@@ -133,36 +96,38 @@
             this.bKI_LUONGDataSet3.DataSetName = "BKI_LUONGDataSet3";
             this.bKI_LUONGDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // m_grv
+            // img_DVMD
             // 
-            this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID,
-            this.colMA_NV,
-            this.colHO_DEM,
-            this.colTEN,
-            this.colDA_CHAM_CONG,
-            this.colCO_LNS,
-            this.colCO_LUONG_CD,
-            this.colPHAI_DONG_DOAN_PHI,
-            this.colPHAI_DONG_BAO_HIEM,
-            this.colSO_LUONG_PHU_THUOC});
-            this.m_grv.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2,
-            styleFormatCondition3,
-            styleFormatCondition4,
-            styleFormatCondition5,
-            styleFormatCondition6,
-            styleFormatCondition7});
-            this.m_grv.GridControl = this.m_gd_tham_so_bang_luong_thang;
-            this.m_grv.Name = "m_grv";
-            this.m_grv.OptionsBehavior.Editable = false;
-            this.m_grv.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
-            this.m_grv.OptionsBehavior.ReadOnly = true;
-            this.m_grv.OptionsView.ColumnAutoWidth = false;
-            this.m_grv.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
-            this.m_grv.OptionsView.ShowFooter = true;
-            this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.img_DVMD.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("img_DVMD.ImageStream")));
+            this.img_DVMD.Images.SetKeyName(0, "Excel-icon.png");
+            this.img_DVMD.Images.SetKeyName(1, "excel-xls-icon.png");
+            this.img_DVMD.Images.SetKeyName(2, "exit-16.ico");
+            this.img_DVMD.Images.SetKeyName(3, "image.png");
+            this.img_DVMD.Images.SetKeyName(4, "Microsoft Excel.png");
+            this.img_DVMD.Images.SetKeyName(5, "calculator.png");
+            this.img_DVMD.Images.SetKeyName(6, "diskette.png");
+            this.img_DVMD.Images.SetKeyName(7, "file_add.png");
+            this.img_DVMD.Images.SetKeyName(8, "file_delete.png");
+            this.img_DVMD.Images.SetKeyName(9, "file_edit.png");
+            this.img_DVMD.Images.SetKeyName(10, "file_search.png");
+            // 
+            // bKI_LUONGDataSet2
+            // 
+            this.bKI_LUONGDataSet2.DataSetName = "BKI_LUONGDataSet2";
+            this.bKI_LUONGDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pRGETTHAMSOBANGLUONGBindingSource
+            // 
+            this.pRGETTHAMSOBANGLUONGBindingSource.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
+            this.pRGETTHAMSOBANGLUONGBindingSource.DataSource = this.bKI_LUONGDataSet2;
+            // 
+            // pR_GET_THAM_SO_BANG_LUONGTableAdapter
+            // 
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter.ClearBeforeFill = true;
+            // 
+            // pR_GET_THAM_SO_BANG_LUONGTableAdapter1
+            // 
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1.ClearBeforeFill = true;
             // 
             // colID
             // 
@@ -249,154 +214,226 @@
             this.colSO_LUONG_PHU_THUOC.Visible = true;
             this.colSO_LUONG_PHU_THUOC.VisibleIndex = 8;
             // 
-            // repositoryItemCheckEdit1
+            // m_gd_tham_so_bang_luong_thang
             // 
-            this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
-            this.repositoryItemCheckEdit1.ReadOnly = true;
-            this.repositoryItemCheckEdit1.ValueChecked = "1";
-            this.repositoryItemCheckEdit1.ValueUnchecked = "0";
+            this.m_gd_tham_so_bang_luong_thang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_gd_tham_so_bang_luong_thang.DataSource = this.pRGETTHAMSOBANGLUONGBindingSource2;
+            this.m_gd_tham_so_bang_luong_thang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_gd_tham_so_bang_luong_thang.Location = new System.Drawing.Point(0, 57);
+            this.m_gd_tham_so_bang_luong_thang.MainView = this.m_grv;
+            this.m_gd_tham_so_bang_luong_thang.Name = "m_gd_tham_so_bang_luong_thang";
+            this.m_gd_tham_so_bang_luong_thang.Size = new System.Drawing.Size(1154, 468);
+            this.m_gd_tham_so_bang_luong_thang.TabIndex = 2;
+            this.m_gd_tham_so_bang_luong_thang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv});
             // 
-            // repositoryItemCheckEdit2
+            // m_grv
             // 
-            this.repositoryItemCheckEdit2.AutoHeight = false;
-            this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
+            this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID1,
+            this.colMA_NV1,
+            this.colHO_DEM1,
+            this.colTEN1,
+            this.colDA_CHAM_CONG1,
+            this.colCO_LNS1,
+            this.colCO_LUONG_CD1,
+            this.colPHAI_DONG_DOAN_PHI1,
+            this.colPHAI_DONG_BAO_HIEM1,
+            this.colSO_LUONG_PHU_THUOC1});
+            this.m_grv.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
+            styleFormatCondition8,
+            styleFormatCondition9,
+            styleFormatCondition10,
+            styleFormatCondition11,
+            styleFormatCondition12,
+            styleFormatCondition13,
+            styleFormatCondition14});
+            this.m_grv.GridControl = this.m_gd_tham_so_bang_luong_thang;
+            this.m_grv.Name = "m_grv";
+            this.m_grv.OptionsBehavior.Editable = false;
+            this.m_grv.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
+            this.m_grv.OptionsBehavior.ReadOnly = true;
+            this.m_grv.OptionsView.ColumnAutoWidth = false;
+            this.m_grv.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
+            this.m_grv.OptionsView.ShowFooter = true;
+            this.m_grv.OptionsView.ShowGroupPanel = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1154, 57);
+            this.panel3.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RÀ SOÁT DỮ LIỆU NHÂN VIÊN TRONG THÁNG ĐỂ TÍNH LƯƠNG";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.m_lbl_tieu_de_form);
-            this.panel2.Controls.Add(this.m_txt_search);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.m_btn_thoat);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 525);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1160, 42);
-            this.panel2.TabIndex = 23;
+            this.panel2.Size = new System.Drawing.Size(1154, 41);
+            this.panel2.TabIndex = 17;
             // 
-            // m_lbl_tieu_de_form
+            // m_btn_thoat
             // 
-            this.m_lbl_tieu_de_form.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_lbl_tieu_de_form.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.m_lbl_tieu_de_form.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.m_lbl_tieu_de_form.Location = new System.Drawing.Point(3, 7);
-            this.m_lbl_tieu_de_form.Name = "m_lbl_tieu_de_form";
-            this.m_lbl_tieu_de_form.Size = new System.Drawing.Size(497, 19);
-            this.m_lbl_tieu_de_form.TabIndex = 21;
-            this.m_lbl_tieu_de_form.Text = "KIỂM TRA DỮ LIỆU TÍNH LƯƠNG NHÂN VIÊN  TRONG THÁNG";
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(1038, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 41);
+            this.m_btn_thoat.TabIndex = 30;
+            this.m_btn_thoat.Text = "Thoát";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
-            // m_txt_search
+            // bKI_LUONGDataSet5
             // 
-            this.m_txt_search.Location = new System.Drawing.Point(641, 9);
-            this.m_txt_search.Name = "m_txt_search";
-            this.m_txt_search.Size = new System.Drawing.Size(318, 20);
-            this.m_txt_search.TabIndex = 2;
-            this.m_txt_search.Visible = false;
+            this.bKI_LUONGDataSet5.DataSetName = "BKI_LUONGDataSet5";
+            this.bKI_LUONGDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // layoutControlGroup1
+            // pRGETTHAMSOBANGLUONGBindingSource2
             // 
-            this.layoutControlGroup1.CustomizationFormText = "Root";
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1188, 526);
-            this.layoutControlGroup1.Text = "Root";
-            this.layoutControlGroup1.TextVisible = false;
+            this.pRGETTHAMSOBANGLUONGBindingSource2.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
+            this.pRGETTHAMSOBANGLUONGBindingSource2.DataSource = this.bKI_LUONGDataSet5;
             // 
-            // layoutControlItem1
+            // pR_GET_THAM_SO_BANG_LUONGTableAdapter2
             // 
-            this.layoutControlItem1.Control = this.panelControl1;
-            this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1168, 506);
-            this.layoutControlItem1.Text = "layoutControlItem1";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2.ClearBeforeFill = true;
             // 
-            // img_DVMD
+            // colID1
             // 
-            this.img_DVMD.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("img_DVMD.ImageStream")));
-            this.img_DVMD.Images.SetKeyName(0, "Excel-icon.png");
-            this.img_DVMD.Images.SetKeyName(1, "excel-xls-icon.png");
-            this.img_DVMD.Images.SetKeyName(2, "exit-16.ico");
-            this.img_DVMD.Images.SetKeyName(3, "image.png");
-            this.img_DVMD.Images.SetKeyName(4, "Microsoft Excel.png");
-            this.img_DVMD.Images.SetKeyName(5, "calculator.png");
-            this.img_DVMD.Images.SetKeyName(6, "diskette.png");
-            this.img_DVMD.Images.SetKeyName(7, "file_add.png");
-            this.img_DVMD.Images.SetKeyName(8, "file_delete.png");
-            this.img_DVMD.Images.SetKeyName(9, "file_edit.png");
-            this.img_DVMD.Images.SetKeyName(10, "file_search.png");
+            this.colID1.FieldName = "ID";
+            this.colID1.Name = "colID1";
+            this.colID1.OptionsColumn.ReadOnly = true;
             // 
-            // bKI_LUONGDataSet2
+            // colMA_NV1
             // 
-            this.bKI_LUONGDataSet2.DataSetName = "BKI_LUONGDataSet2";
-            this.bKI_LUONGDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.colMA_NV1.FieldName = "MA_NV";
+            this.colMA_NV1.Name = "colMA_NV1";
+            this.colMA_NV1.Visible = true;
+            this.colMA_NV1.VisibleIndex = 0;
             // 
-            // pRGETTHAMSOBANGLUONGBindingSource
+            // colHO_DEM1
             // 
-            this.pRGETTHAMSOBANGLUONGBindingSource.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
-            this.pRGETTHAMSOBANGLUONGBindingSource.DataSource = this.bKI_LUONGDataSet2;
+            this.colHO_DEM1.FieldName = "HO_DEM";
+            this.colHO_DEM1.Name = "colHO_DEM1";
+            this.colHO_DEM1.Visible = true;
+            this.colHO_DEM1.VisibleIndex = 1;
             // 
-            // pR_GET_THAM_SO_BANG_LUONGTableAdapter
+            // colTEN1
             // 
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter.ClearBeforeFill = true;
+            this.colTEN1.FieldName = "TEN";
+            this.colTEN1.Name = "colTEN1";
+            this.colTEN1.Visible = true;
+            this.colTEN1.VisibleIndex = 2;
             // 
-            // pR_GET_THAM_SO_BANG_LUONGTableAdapter1
+            // colDA_CHAM_CONG1
             // 
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1.ClearBeforeFill = true;
+            this.colDA_CHAM_CONG1.FieldName = "DA_CHAM_CONG";
+            this.colDA_CHAM_CONG1.Name = "colDA_CHAM_CONG1";
+            this.colDA_CHAM_CONG1.OptionsColumn.ReadOnly = true;
+            this.colDA_CHAM_CONG1.Visible = true;
+            this.colDA_CHAM_CONG1.VisibleIndex = 3;
+            // 
+            // colCO_LNS1
+            // 
+            this.colCO_LNS1.FieldName = "CO_LNS";
+            this.colCO_LNS1.Name = "colCO_LNS1";
+            this.colCO_LNS1.OptionsColumn.ReadOnly = true;
+            this.colCO_LNS1.Visible = true;
+            this.colCO_LNS1.VisibleIndex = 4;
+            // 
+            // colCO_LUONG_CD1
+            // 
+            this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
+            this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
+            this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
+            this.colCO_LUONG_CD1.Visible = true;
+            this.colCO_LUONG_CD1.VisibleIndex = 5;
+            // 
+            // colPHAI_DONG_DOAN_PHI1
+            // 
+            this.colPHAI_DONG_DOAN_PHI1.FieldName = "PHAI_DONG_DOAN_PHI";
+            this.colPHAI_DONG_DOAN_PHI1.Name = "colPHAI_DONG_DOAN_PHI1";
+            this.colPHAI_DONG_DOAN_PHI1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_DOAN_PHI1.Visible = true;
+            this.colPHAI_DONG_DOAN_PHI1.VisibleIndex = 6;
+            // 
+            // colPHAI_DONG_BAO_HIEM1
+            // 
+            this.colPHAI_DONG_BAO_HIEM1.FieldName = "PHAI_DONG_BAO_HIEM";
+            this.colPHAI_DONG_BAO_HIEM1.Name = "colPHAI_DONG_BAO_HIEM1";
+            this.colPHAI_DONG_BAO_HIEM1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_BAO_HIEM1.Visible = true;
+            this.colPHAI_DONG_BAO_HIEM1.VisibleIndex = 7;
+            // 
+            // colSO_LUONG_PHU_THUOC1
+            // 
+            this.colSO_LUONG_PHU_THUOC1.FieldName = "SO_LUONG_PHU_THUOC";
+            this.colSO_LUONG_PHU_THUOC1.Name = "colSO_LUONG_PHU_THUOC1";
+            this.colSO_LUONG_PHU_THUOC1.OptionsColumn.ReadOnly = true;
+            this.colSO_LUONG_PHU_THUOC1.Visible = true;
+            this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
             // 
             // F401_he_so_bao_cao_luong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 526);
-            this.Controls.Add(this.layoutControl1);
+            this.ClientSize = new System.Drawing.Size(1154, 566);
+            this.Controls.Add(this.m_gd_tham_so_bang_luong_thang);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F401_he_so_bao_cao_luong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F401 - Rà soát dữ liệu nhân viên trong tháng để tính lương";
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
-            this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraGrid.GridControl m_gd_tham_so_bang_luong_thang;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraEditors.LabelControl m_lbl_tieu_de_form;
-        private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
-        private System.Windows.Forms.TextBox m_txt_search;
         private DevExpress.Utils.ImageCollection img_DVMD;
         private BKI_LUONGDataSet2 bKI_LUONGDataSet2;
         private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource;
         private BKI_LUONGDataSet2TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_grv;
         private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource1;
         private BKI_LUONGDataSet3 bKI_LUONGDataSet3;
+        private BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter1;
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colMA_NV;
         private DevExpress.XtraGrid.Columns.GridColumn colHO_DEM;
@@ -407,6 +444,24 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_DOAN_PHI;
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_BAO_HIEM;
         private DevExpress.XtraGrid.Columns.GridColumn colSO_LUONG_PHU_THUOC;
-        private BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter1;
+        private DevExpress.XtraGrid.GridControl m_gd_tham_so_bang_luong_thang;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
+        private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource2;
+        private BKI_LUONGDataSet5 bKI_LUONGDataSet5;
+        private DevExpress.XtraGrid.Columns.GridColumn colID1;
+        private DevExpress.XtraGrid.Columns.GridColumn colMA_NV1;
+        private DevExpress.XtraGrid.Columns.GridColumn colHO_DEM1;
+        private DevExpress.XtraGrid.Columns.GridColumn colTEN1;
+        private DevExpress.XtraGrid.Columns.GridColumn colDA_CHAM_CONG1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCO_LNS1;
+        private DevExpress.XtraGrid.Columns.GridColumn colCO_LUONG_CD1;
+        private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_DOAN_PHI1;
+        private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_BAO_HIEM1;
+        private DevExpress.XtraGrid.Columns.GridColumn colSO_LUONG_PHU_THUOC1;
+        private BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter2;
     }
 }

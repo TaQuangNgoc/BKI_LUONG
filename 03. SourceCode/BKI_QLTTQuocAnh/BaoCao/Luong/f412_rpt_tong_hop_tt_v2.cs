@@ -52,7 +52,7 @@ namespace BKI_DichVuMatDat.BaoCao
             v_us.HienThiBangLuong(v_ds, lay_thang(), lay_nam());
             m_grc_tong_hop.DataSource = v_ds.Tables[0];
             m_grc_tong_hop.RefreshDataSource();
-            m_lbl_thang.Text = "Dữ liệu tháng " + lay_thang().ToString() + "/" + lay_nam().ToString();
+           
             format_grid_columns_width();
         }
 

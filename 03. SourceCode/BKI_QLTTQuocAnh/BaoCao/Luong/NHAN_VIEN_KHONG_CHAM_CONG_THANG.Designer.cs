@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NHAN_VIEN_KHONG_CHAM_CONG_THANG));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             this.pRGETTHAMSOBANGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet2 = new BKI_DichVuMatDat.BKI_LUONGDataSet2();
@@ -222,7 +222,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 53);
+            this.panel1.Size = new System.Drawing.Size(593, 53);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -242,9 +242,9 @@
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_thoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 487);
+            this.panel2.Location = new System.Drawing.Point(0, 526);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 46);
+            this.panel2.Size = new System.Drawing.Size(593, 46);
             this.panel2.TabIndex = 5;
             // 
             // m_btn_luu
@@ -259,7 +259,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(349, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(334, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
             this.m_btn_luu.TabIndex = 14;
@@ -278,7 +278,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(492, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(477, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
             this.m_btn_thoat.TabIndex = 30;
@@ -296,7 +296,7 @@
             this.m_grc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
             this.repositoryItemCheckEdit2});
-            this.m_grc.Size = new System.Drawing.Size(608, 434);
+            this.m_grc.Size = new System.Drawing.Size(593, 473);
             this.m_grc.TabIndex = 6;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -320,13 +320,13 @@
             this.colTEN1,
             this.colKHONG_CHAM_LUONG_THANG});
             this.m_grv.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2,
-            styleFormatCondition3,
-            styleFormatCondition4,
-            styleFormatCondition5,
-            styleFormatCondition6,
-            styleFormatCondition7});
+            styleFormatCondition8,
+            styleFormatCondition9,
+            styleFormatCondition10,
+            styleFormatCondition11,
+            styleFormatCondition12,
+            styleFormatCondition13,
+            styleFormatCondition14});
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsView.ColumnAutoWidth = false;
@@ -389,7 +389,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 533);
+            this.ClientSize = new System.Drawing.Size(593, 572);
             this.Controls.Add(this.m_grc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

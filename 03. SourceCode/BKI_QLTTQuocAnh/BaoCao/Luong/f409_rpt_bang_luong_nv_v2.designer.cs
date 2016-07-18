@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f409_rpt_bang_luong_nv_v2));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
@@ -97,6 +97,8 @@
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -113,16 +115,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panelControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 53);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(1257, 87);
+            this.panel1.Size = new System.Drawing.Size(1257, 85);
             this.panel1.TabIndex = 0;
             // 
             // panelControl1
@@ -138,7 +141,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(5, 5);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(941, 77);
+            this.panelControl1.Size = new System.Drawing.Size(941, 75);
             this.panelControl1.TabIndex = 0;
             // 
             // m_lbl_trang_thai_bang_luong
@@ -272,11 +275,11 @@
             // 
             this.panelControl2.Controls.Add(this.m_cmd_luu_du_lieu);
             this.panelControl2.Controls.Add(this.m_cmd_tinh_bang_luong);
-            this.panelControl2.Controls.Add(this.m_btn_khong_tinh_luong);
             this.panelControl2.Controls.Add(this.m_cmd_kiem_tra_du_lieu);
+            this.panelControl2.Controls.Add(this.m_btn_khong_tinh_luong);
             this.panelControl2.Controls.Add(this.m_cmd_export_excel);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 87);
+            this.panelControl2.Location = new System.Drawing.Point(0, 138);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1257, 33);
             this.panelControl2.TabIndex = 10;
@@ -311,11 +314,11 @@
             this.m_btn_khong_tinh_luong.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_btn_khong_tinh_luong.ImageIndex = 5;
             this.m_btn_khong_tinh_luong.ImageList = this.imageCollection;
-            this.m_btn_khong_tinh_luong.Location = new System.Drawing.Point(197, 2);
+            this.m_btn_khong_tinh_luong.Location = new System.Drawing.Point(2, 2);
             this.m_btn_khong_tinh_luong.Name = "m_btn_khong_tinh_luong";
             this.m_btn_khong_tinh_luong.Size = new System.Drawing.Size(230, 29);
             this.m_btn_khong_tinh_luong.TabIndex = 16;
-            this.m_btn_khong_tinh_luong.Text = "Bước 2: Chọn NV không được tính lương";
+            this.m_btn_khong_tinh_luong.Text = "Bước 1: Chọn NV không được tính lương";
             this.m_btn_khong_tinh_luong.ToolTip = "Tính toán dữ liệu lương của nhân viên (Việc này chưa lưu vào bảng lương phần mềm)" +
     "";
             this.m_btn_khong_tinh_luong.Click += new System.EventHandler(this.m_btn_khong_tinh_luong_Click);
@@ -325,25 +328,26 @@
             this.m_cmd_kiem_tra_du_lieu.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_kiem_tra_du_lieu.ImageIndex = 13;
             this.m_cmd_kiem_tra_du_lieu.ImageList = this.imageCollection;
-            this.m_cmd_kiem_tra_du_lieu.Location = new System.Drawing.Point(2, 2);
+            this.m_cmd_kiem_tra_du_lieu.Location = new System.Drawing.Point(232, 2);
             this.m_cmd_kiem_tra_du_lieu.Name = "m_cmd_kiem_tra_du_lieu";
             this.m_cmd_kiem_tra_du_lieu.Size = new System.Drawing.Size(195, 29);
             this.m_cmd_kiem_tra_du_lieu.TabIndex = 8;
-            this.m_cmd_kiem_tra_du_lieu.Text = "Bước 1: Rà soát dữ liệu tính lương";
+            this.m_cmd_kiem_tra_du_lieu.Text = "Bước 2: Rà soát dữ liệu tính lương";
             this.m_cmd_kiem_tra_du_lieu.ToolTip = "Chốt bảng lương chỉ thực hiện khi đã chắc chắn về dữ liệu lương tháng" +
     ". ";
             // 
             // m_grc_main
             // 
             this.m_grc_main.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_main.Location = new System.Drawing.Point(0, 120);
+            this.m_grc_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_main.Location = new System.Drawing.Point(0, 171);
             this.m_grc_main.MainView = this.m_grv_main;
             this.m_grc_main.Name = "m_grc_main";
             this.m_grc_main.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemMemoEdit1,
             this.repoBtnXoaLuong,
             this.repositoryItemTextEditTien});
-            this.m_grc_main.Size = new System.Drawing.Size(1257, 361);
+            this.m_grc_main.Size = new System.Drawing.Size(1257, 304);
             this.m_grc_main.TabIndex = 12;
             this.m_grc_main.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_main});
@@ -893,7 +897,7 @@
             // repoBtnXoaLuong
             // 
             this.repoBtnXoaLuong.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.repoBtnXoaLuong.Name = "repoBtnXoaLuong";
             this.repoBtnXoaLuong.ReadOnly = true;
             this.repoBtnXoaLuong.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -936,16 +940,38 @@
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1257, 53);
+            this.panel3.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SOẠN THẢO BẢNG LƯƠNG THÁNG";
+            // 
             // f409_rpt_bang_luong_nv_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1257, 521);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.m_prb);
             this.Controls.Add(this.m_grc_main);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.m_prb);
             this.Name = "f409_rpt_bang_luong_nv_v2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F409 - SOẠN THẢO bảng lương";
@@ -967,6 +993,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1036,8 +1064,10 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repoBtnXoaLuong;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEditTien;
         private DevExpress.XtraEditors.SimpleButton m_btn_khong_tinh_luong;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
     }
 }

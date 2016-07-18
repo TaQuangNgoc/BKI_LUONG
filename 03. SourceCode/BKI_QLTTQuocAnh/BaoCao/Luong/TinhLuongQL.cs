@@ -163,15 +163,14 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
         
         public void ChotBangLuongThang(decimal ip_dc_thang, decimal ip_dc_nam)
         {
-           
-            //US_RPT_CHOT_BANG_LUONG v_us_rpt_chot_bang_luong = new US_RPT_CHOT_BANG_LUONG();
-            //if(v_us_rpt_chot_bang_luong.IsLockBangLuong(ip_dc_thang, ip_dc_nam))
-            //{
-            //    XtraMessageBox.Show("Bảng lương đã được chốt!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    return;
-            //}
-            //v_us_rpt_chot_bang_luong.LockBangLuongThang(ip_dc_thang, ip_dc_nam, CAppContext_201.getCurrentUserName());
-            //XtraMessageBox.Show("Đã chốt bảng lương tháng thành công! ", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            US_RPT_CHOT_BANG_LUONG v_us_rpt_chot_bang_luong = new US_RPT_CHOT_BANG_LUONG();
+            if (v_us_rpt_chot_bang_luong.IsLockBangLuong(ip_dc_thang, ip_dc_nam))
+            {
+                XtraMessageBox.Show("Bảng lương đã được chốt!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            v_us_rpt_chot_bang_luong.LockBangLuongThang(ip_dc_thang, ip_dc_nam);
+            XtraMessageBox.Show("Đã chốt bảng lương tháng thành công! ", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void XoaToanBoBangLuong(decimal ip_dc_thang, decimal ip_dc_nam)
         {

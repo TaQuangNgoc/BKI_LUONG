@@ -31,7 +31,7 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
         {
             for (int i = 0; i < m_grv.Columns.Count; i++)
             {
-                m_grv.Columns[i].Width = 120;
+                m_grv.Columns[i].Width = 130;
             }
         }
 
