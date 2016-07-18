@@ -34,10 +34,15 @@
             this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
             this.m_grc = new DevExpress.XtraGrid.GridControl();
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_lbl = new DevExpress.XtraEditors.LabelControl();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.m_btn_hien_thi = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_mo_file_mau = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_chon_du_lieu = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -52,6 +57,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2.SuspendLayout();
             this.m_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
@@ -75,7 +81,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 144);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1045, 244);
+            this.panel2.Size = new System.Drawing.Size(1174, 244);
             this.panel2.TabIndex = 14;
             // 
             // m_pn
@@ -120,13 +126,19 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(1045, 244);
+            this.m_grc.Size = new System.Drawing.Size(1174, 244);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
             // 
             // m_grv
             // 
+            this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn3,
+            this.gridColumn5,
+            this.gridColumn8,
+            this.gridColumn6});
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsBehavior.Editable = false;
@@ -135,6 +147,38 @@
             this.m_grv.OptionsView.ColumnAutoWidth = false;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "MÃ NHÂN VIÊN";
+            this.gridColumn1.FieldName = "MA_NV";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "HỌ ĐỆM";
+            this.gridColumn3.FieldName = "HO_DEM";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 1;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "TÊN";
+            this.gridColumn5.FieldName = "TEN";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 2;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "SỐ TIỀN";
+            this.gridColumn8.FieldName = "SO_TIEN";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 3;
             // 
             // m_lbl
             // 
@@ -161,14 +205,33 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.m_btn_hien_thi);
             this.panel7.Controls.Add(this.m_cmd_mo_file_mau);
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
             this.panel7.Controls.Add(this.panelControl1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 53);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1045, 91);
+            this.panel7.Size = new System.Drawing.Size(1174, 91);
             this.panel7.TabIndex = 15;
+            // 
+            // m_btn_hien_thi
+            // 
+            this.m_btn_hien_thi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_hien_thi.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_hien_thi.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_hien_thi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_hien_thi.Appearance.Options.UseBackColor = true;
+            this.m_btn_hien_thi.Appearance.Options.UseFont = true;
+            this.m_btn_hien_thi.Appearance.Options.UseForeColor = true;
+            this.m_btn_hien_thi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_hien_thi.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_hien_thi.Location = new System.Drawing.Point(436, 15);
+            this.m_btn_hien_thi.Name = "m_btn_hien_thi";
+            this.m_btn_hien_thi.Size = new System.Drawing.Size(208, 60);
+            this.m_btn_hien_thi.TabIndex = 33;
+            this.m_btn_hien_thi.Text = "HIỂN THỊ DỮ LIỆU ĐÃ NHẬP";
+            this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);
             // 
             // m_cmd_mo_file_mau
             // 
@@ -181,9 +244,9 @@
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
             this.m_cmd_mo_file_mau.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_mo_file_mau.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(732, 15);
+            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(838, 15);
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
-            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(231, 60);
+            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(165, 60);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
             // 
@@ -200,12 +263,12 @@
             this.m_cmd_chon_du_lieu.Appearance.Options.UseForeColor = true;
             this.m_cmd_chon_du_lieu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_chon_du_lieu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(483, 15);
+            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(640, 15);
             this.m_cmd_chon_du_lieu.Name = "m_cmd_chon_du_lieu";
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
-            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(252, 60);
+            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(202, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
-            this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU ";
+            this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU MỚI";
             // 
             // panelControl1
             // 
@@ -218,7 +281,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(477, 91);
+            this.panelControl1.Size = new System.Drawing.Size(430, 91);
             this.panelControl1.TabIndex = 1;
             // 
             // m_sle_loai_tien
@@ -296,7 +359,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 388);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1045, 53);
+            this.panel3.Size = new System.Drawing.Size(1174, 53);
             this.panel3.TabIndex = 17;
             // 
             // m_cmd_nhap_cham_cong
@@ -311,7 +374,7 @@
             this.m_cmd_nhap_cham_cong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_nhap_cham_cong.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_nhap_cham_cong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_nhap_cham_cong.Location = new System.Drawing.Point(835, 0);
+            this.m_cmd_nhap_cham_cong.Location = new System.Drawing.Point(964, 0);
             this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
@@ -335,14 +398,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1045, 53);
+            this.panel1.Size = new System.Drawing.Size(1174, 53);
             this.panel1.TabIndex = 16;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "NGÀY NHẬP";
+            this.gridColumn6.FieldName = "NGAY_NHAP";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 4;
             // 
             // CAC_LOAI_TIEN_KHAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 441);
+            this.ClientSize = new System.Drawing.Size(1174, 441);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
@@ -395,7 +466,13 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_nhap_cham_cong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
 
     }
 }
