@@ -698,6 +698,7 @@ namespace BKI_DichVuMatDat
             this.m_rd_ti_le_doan_phi.TabStop = true;
             this.m_rd_ti_le_doan_phi.Text = "Tỉ lệ";
             this.m_rd_ti_le_doan_phi.UseVisualStyleBackColor = true;
+            this.m_rd_ti_le_doan_phi.CheckedChanged += new System.EventHandler(this.m_rd_ti_le_doan_phi_CheckedChanged);
             // 
             // m_rd_so_tien_doan_phi
             // 
@@ -709,13 +710,14 @@ namespace BKI_DichVuMatDat
             this.m_rd_so_tien_doan_phi.TabStop = true;
             this.m_rd_so_tien_doan_phi.Text = "Số tiền";
             this.m_rd_so_tien_doan_phi.UseVisualStyleBackColor = true;
+            this.m_rd_so_tien_doan_phi.CheckedChanged += new System.EventHandler(this.m_rd_so_tien_doan_phi_CheckedChanged);
             // 
             // m_cb_cua_tien
             // 
             this.m_cb_cua_tien.FormattingEnabled = true;
             this.m_cb_cua_tien.Location = new System.Drawing.Point(487, 15);
             this.m_cb_cua_tien.Name = "m_cb_cua_tien";
-            this.m_cb_cua_tien.Size = new System.Drawing.Size(174, 26);
+            this.m_cb_cua_tien.Size = new System.Drawing.Size(279, 26);
             this.m_cb_cua_tien.TabIndex = 6;
             this.m_cb_cua_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_cb_cua_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -725,7 +727,7 @@ namespace BKI_DichVuMatDat
             this.m_cb_cua_tien_lon_nhat.FormattingEnabled = true;
             this.m_cb_cua_tien_lon_nhat.Location = new System.Drawing.Point(487, 59);
             this.m_cb_cua_tien_lon_nhat.Name = "m_cb_cua_tien_lon_nhat";
-            this.m_cb_cua_tien_lon_nhat.Size = new System.Drawing.Size(174, 26);
+            this.m_cb_cua_tien_lon_nhat.Size = new System.Drawing.Size(279, 26);
             this.m_cb_cua_tien_lon_nhat.TabIndex = 6;
             this.m_cb_cua_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_cb_cua_tien_lon_nhat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -815,6 +817,7 @@ namespace BKI_DichVuMatDat
             this.m_btn_luu.TabIndex = 34;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Visible = false;
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // m_btn_them
             // 

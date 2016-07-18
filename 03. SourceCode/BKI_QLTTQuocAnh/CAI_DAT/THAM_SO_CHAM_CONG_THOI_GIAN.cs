@@ -99,7 +99,7 @@ namespace BKI_DichVuMatDat
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
@@ -107,17 +107,17 @@ namespace BKI_DichVuMatDat
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
-            TextBox textbox = (TextBox)sender;
+            TextEdit textbox = (TextEdit)sender;
             try
             {
-               
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
                 double valueBefore = Double.Parse(textbox.Text, System.Globalization.NumberStyles.AllowThousands);
-                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);       
+                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);
+                textbox.Select(textbox.Text.Length, 0);
+
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
@@ -463,26 +463,126 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
 
         private void load_data_to_tab_doan_phi()
         {
-            
+            load_data_to_cb_cua_tien();
+            load_data_to_cb_cua_tien_lon_nhat();
+            fill_du_lieu_to_tab_doan_phi();
+            m_rd_so_tien_change();
+            m_rd_ti_le_change();
         }
 
-      
+        private void fill_du_lieu_to_tab_doan_phi()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM DM_DOAN_PHI");
+            if (v_ds.Tables[0].Rows.Count>0)
+            {
+                if (decimal.Parse(v_ds.Tables[0].Rows[0]["TI_LE"].ToString()) != 0)
+                {
+                    m_rd_ti_le_doan_phi.Checked = true;
+                    m_cb_cua_tien.SelectedValue = int.Parse(v_ds.Tables[0].Rows[0]["CUA_TIEN"].ToString());
+                    m_cb_cua_tien_lon_nhat.SelectedValue = int.Parse(v_ds.Tables[0].Rows[0]["CUA_TIEN_LON_NHAT"].ToString());
+                    m_txt_ti_le_doan_phi.Text = v_ds.Tables[0].Rows[0]["TI_LE"].ToString();
+                    m_txt_ti_le_tien_lon_nhat.Text = v_ds.Tables[0].Rows[0]["TI_LE_LON_NHAT_BANG"].ToString();
+                }
+                else
+                {
+                    m_rd_so_tien_doan_phi.Checked = true;
+                    m_txt_so_tien_doan_phi.Text = v_ds.Tables[0].Rows[0]["SO_TIEN"].ToString();
+                }
+            }
+        }
 
-        
-      
-        
-        
+        private void load_data_to_cb_cua_tien_lon_nhat()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=24");
+            m_cb_cua_tien_lon_nhat.DataSource = v_ds.Tables[0];
+            m_cb_cua_tien_lon_nhat.DisplayMember = "TEN";
+            m_cb_cua_tien_lon_nhat.ValueMember = "ID";
+        }
 
+        private void load_data_to_cb_cua_tien()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=23");
+            m_cb_cua_tien.DataSource = v_ds.Tables[0];
+            m_cb_cua_tien.DisplayMember = "TEN";
+            m_cb_cua_tien.ValueMember = "ID";
+           // .DataSource = v_ds.Tables[0];
+        }
 
-       
-        
-       
-        
-       
+        private void m_btn_luu_Click(object sender, EventArgs e)
+        {
+            decimal ti_le,cua_tien,ti_le_max,cua_tien_max,so_tien;
+            if (m_rd_ti_le_doan_phi.Checked == true)
+            {
+                 ti_le =decimal.Parse(m_txt_ti_le_doan_phi.Text);
+                 cua_tien = (decimal)m_cb_cua_tien.SelectedValue;
+                 ti_le_max =decimal.Parse(m_txt_ti_le_tien_lon_nhat.Text);
+                 cua_tien_max = (decimal)m_cb_cua_tien_lon_nhat.SelectedValue;
+                so_tien=0;
+                
+            }
+            else
+            {
+                ti_le = 0;
+                cua_tien = 790;
+                ti_le_max = 0;
+                cua_tien_max = 791;
+                so_tien = decimal.Parse(m_txt_so_tien_doan_phi.Text);
+            }
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.UpdateDoanPhi(ti_le, cua_tien, ti_le_max, cua_tien_max, so_tien);
+            XtraMessageBox.Show("Lưu thành công!","Thông báo");
+        }
 
+        private void m_rd_ti_le_doan_phi_CheckedChanged(object sender, EventArgs e)
+        {
+            m_rd_ti_le_change();
+        }
 
-       
-      
+        private void m_rd_ti_le_change()
+        {
+            if (m_rd_ti_le_doan_phi.Checked == true)
+            {
+                m_txt_ti_le_doan_phi.Enabled = true;
+                m_cb_cua_tien.Enabled = true;
+                m_txt_ti_le_tien_lon_nhat.Enabled = true;
+                m_cb_cua_tien_lon_nhat.Enabled = true;
+            }
+            else
+            {
+                m_txt_ti_le_doan_phi.Enabled = false;
+                m_cb_cua_tien.Enabled = false;
+                m_txt_ti_le_tien_lon_nhat.Enabled = false;
+                m_cb_cua_tien_lon_nhat.Enabled = false;
+            }
+        }
+
+        private void m_rd_so_tien_doan_phi_CheckedChanged(object sender, EventArgs e)
+        {
+            m_rd_so_tien_change();
+           
+        }
+
+        private void m_rd_so_tien_change()
+        {
+            if (m_rd_so_tien_doan_phi.Checked == true)
+            {
+                m_txt_so_tien_doan_phi.Enabled = true;
+            }
+            else
+            {
+                m_txt_so_tien_doan_phi.Enabled = false;
+            }
+        }
+    
      
     }
 }

@@ -839,5 +839,17 @@ namespace BKI_DichVuMatDat
             v_sp.addDecimalInputParam("@ID_LOAI_TIEN_KHAC", id_loai_tien);
             v_sp.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void UpdateDoanPhi(decimal ti_le, decimal cua_tien, decimal ti_le_max, decimal cua_tien_max, decimal so_tien)
+        {
+            CStoredProc v_sp = new CStoredProc("PR_UPDATE_DM_DOAN_PHI");
+            v_sp.addDecimalInputParam("@TI_lE", ti_le);
+            v_sp.addDecimalInputParam("@CUA_TIEN", cua_tien);
+            v_sp.addDecimalInputParam("@TI_LE_LON_NHAT_BANG", ti_le_max);
+            v_sp.addDecimalInputParam("@CUA_TIEN_LON_NHAT", cua_tien_max);
+            v_sp.addDecimalInputParam("@so_tien", so_tien);
+           
+            v_sp.ExecuteCommand(this);
+        }
     } 
 }
