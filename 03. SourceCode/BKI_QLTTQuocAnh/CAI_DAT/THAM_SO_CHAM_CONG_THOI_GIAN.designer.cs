@@ -29,7 +29,7 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -80,13 +80,13 @@ namespace BKI_DichVuMatDat
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.textEdit21 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit19 = new DevExpress.XtraEditors.TextEdit();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.m_txt_so_tien_doan_phi = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ti_le_tien_lon_nhat = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ti_le_doan_phi = new DevExpress.XtraEditors.TextEdit();
+            this.m_rd_ti_le_doan_phi = new System.Windows.Forms.RadioButton();
+            this.m_rd_so_tien_doan_phi = new System.Windows.Forms.RadioButton();
+            this.m_cb_cua_tien = new System.Windows.Forms.ComboBox();
+            this.m_cb_cua_tien_lon_nhat = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -94,6 +94,7 @@ namespace BKI_DichVuMatDat
             this.label26 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
@@ -126,9 +127,9 @@ namespace BKI_DichVuMatDat
             this.groupBox13.SuspendLayout();
             this.panel15.SuspendLayout();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,6 +179,7 @@ namespace BKI_DichVuMatDat
             this.tab_Control1.SelectedIndex = 0;
             this.tab_Control1.Size = new System.Drawing.Size(961, 525);
             this.tab_Control1.TabIndex = 0;
+            this.tab_Control1.SelectedIndexChanged += new System.EventHandler(this.tab_Control1_SelectedIndexChanged);
             // 
             // tab_loaingaycong
             // 
@@ -273,9 +275,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -601,7 +603,7 @@ namespace BKI_DichVuMatDat
             // 
             // tab_doanphi
             // 
-            this.tab_doanphi.BackColor = System.Drawing.Color.Maroon;
+            this.tab_doanphi.BackColor = System.Drawing.Color.White;
             this.tab_doanphi.Controls.Add(this.groupBox13);
             this.tab_doanphi.Location = new System.Drawing.Point(4, 27);
             this.tab_doanphi.Name = "tab_doanphi";
@@ -632,13 +634,13 @@ namespace BKI_DichVuMatDat
             // 
             // groupBox20
             // 
-            this.groupBox20.Controls.Add(this.textEdit21);
-            this.groupBox20.Controls.Add(this.textEdit20);
-            this.groupBox20.Controls.Add(this.textEdit19);
-            this.groupBox20.Controls.Add(this.radioButton2);
-            this.groupBox20.Controls.Add(this.radioButton3);
-            this.groupBox20.Controls.Add(this.comboBox1);
-            this.groupBox20.Controls.Add(this.comboBox3);
+            this.groupBox20.Controls.Add(this.m_txt_so_tien_doan_phi);
+            this.groupBox20.Controls.Add(this.m_txt_ti_le_tien_lon_nhat);
+            this.groupBox20.Controls.Add(this.m_txt_ti_le_doan_phi);
+            this.groupBox20.Controls.Add(this.m_rd_ti_le_doan_phi);
+            this.groupBox20.Controls.Add(this.m_rd_so_tien_doan_phi);
+            this.groupBox20.Controls.Add(this.m_cb_cua_tien);
+            this.groupBox20.Controls.Add(this.m_cb_cua_tien_lon_nhat);
             this.groupBox20.Controls.Add(this.label29);
             this.groupBox20.Controls.Add(this.label30);
             this.groupBox20.Controls.Add(this.label32);
@@ -652,73 +654,81 @@ namespace BKI_DichVuMatDat
             this.groupBox20.TabIndex = 18;
             this.groupBox20.TabStop = false;
             // 
-            // textEdit21
+            // m_txt_so_tien_doan_phi
             // 
-            this.textEdit21.Location = new System.Drawing.Point(132, 102);
-            this.textEdit21.Name = "textEdit21";
-            this.textEdit21.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit21.Properties.Appearance.Options.UseFont = true;
-            this.textEdit21.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit21.Size = new System.Drawing.Size(178, 26);
-            this.textEdit21.TabIndex = 18;
+            this.m_txt_so_tien_doan_phi.Location = new System.Drawing.Point(132, 102);
+            this.m_txt_so_tien_doan_phi.Name = "m_txt_so_tien_doan_phi";
+            this.m_txt_so_tien_doan_phi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_so_tien_doan_phi.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_so_tien_doan_phi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_so_tien_doan_phi.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_so_tien_doan_phi.TabIndex = 18;
+            this.m_txt_so_tien_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.m_txt_so_tien_doan_phi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
-            // textEdit20
+            // m_txt_ti_le_tien_lon_nhat
             // 
-            this.textEdit20.Location = new System.Drawing.Point(132, 58);
-            this.textEdit20.Name = "textEdit20";
-            this.textEdit20.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit20.Properties.Appearance.Options.UseFont = true;
-            this.textEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit20.Size = new System.Drawing.Size(178, 26);
-            this.textEdit20.TabIndex = 17;
+            this.m_txt_ti_le_tien_lon_nhat.Location = new System.Drawing.Point(132, 58);
+            this.m_txt_ti_le_tien_lon_nhat.Name = "m_txt_ti_le_tien_lon_nhat";
+            this.m_txt_ti_le_tien_lon_nhat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_ti_le_tien_lon_nhat.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ti_le_tien_lon_nhat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le_tien_lon_nhat.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_ti_le_tien_lon_nhat.TabIndex = 17;
+            this.m_txt_ti_le_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
-            // textEdit19
+            // m_txt_ti_le_doan_phi
             // 
-            this.textEdit19.Location = new System.Drawing.Point(132, 14);
-            this.textEdit19.Name = "textEdit19";
-            this.textEdit19.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.textEdit19.Properties.Appearance.Options.UseFont = true;
-            this.textEdit19.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.textEdit19.Size = new System.Drawing.Size(178, 26);
-            this.textEdit19.TabIndex = 16;
+            this.m_txt_ti_le_doan_phi.Location = new System.Drawing.Point(132, 14);
+            this.m_txt_ti_le_doan_phi.Name = "m_txt_ti_le_doan_phi";
+            this.m_txt_ti_le_doan_phi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_txt_ti_le_doan_phi.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_ti_le_doan_phi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le_doan_phi.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_ti_le_doan_phi.TabIndex = 16;
+            this.m_txt_ti_le_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
-            // radioButton2
+            // m_rd_ti_le_doan_phi
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 16);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(53, 22);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tỉ lệ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.m_rd_ti_le_doan_phi.AutoSize = true;
+            this.m_rd_ti_le_doan_phi.Location = new System.Drawing.Point(6, 16);
+            this.m_rd_ti_le_doan_phi.Name = "m_rd_ti_le_doan_phi";
+            this.m_rd_ti_le_doan_phi.Size = new System.Drawing.Size(53, 22);
+            this.m_rd_ti_le_doan_phi.TabIndex = 5;
+            this.m_rd_ti_le_doan_phi.TabStop = true;
+            this.m_rd_ti_le_doan_phi.Text = "Tỉ lệ";
+            this.m_rd_ti_le_doan_phi.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // m_rd_so_tien_doan_phi
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 104);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(70, 22);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Số tiền";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.m_rd_so_tien_doan_phi.AutoSize = true;
+            this.m_rd_so_tien_doan_phi.Location = new System.Drawing.Point(6, 104);
+            this.m_rd_so_tien_doan_phi.Name = "m_rd_so_tien_doan_phi";
+            this.m_rd_so_tien_doan_phi.Size = new System.Drawing.Size(70, 22);
+            this.m_rd_so_tien_doan_phi.TabIndex = 5;
+            this.m_rd_so_tien_doan_phi.TabStop = true;
+            this.m_rd_so_tien_doan_phi.Text = "Số tiền";
+            this.m_rd_so_tien_doan_phi.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // m_cb_cua_tien
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(487, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 26);
-            this.comboBox1.TabIndex = 6;
+            this.m_cb_cua_tien.FormattingEnabled = true;
+            this.m_cb_cua_tien.Location = new System.Drawing.Point(487, 15);
+            this.m_cb_cua_tien.Name = "m_cb_cua_tien";
+            this.m_cb_cua_tien.Size = new System.Drawing.Size(174, 26);
+            this.m_cb_cua_tien.TabIndex = 6;
+            this.m_cb_cua_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.m_cb_cua_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
-            // comboBox3
+            // m_cb_cua_tien_lon_nhat
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(487, 59);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(174, 26);
-            this.comboBox3.TabIndex = 6;
+            this.m_cb_cua_tien_lon_nhat.FormattingEnabled = true;
+            this.m_cb_cua_tien_lon_nhat.Location = new System.Drawing.Point(487, 59);
+            this.m_cb_cua_tien_lon_nhat.Name = "m_cb_cua_tien_lon_nhat";
+            this.m_cb_cua_tien_lon_nhat.Size = new System.Drawing.Size(174, 26);
+            this.m_cb_cua_tien_lon_nhat.TabIndex = 6;
+            this.m_cb_cua_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.m_cb_cua_tien_lon_nhat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // label29
             // 
@@ -777,6 +787,7 @@ namespace BKI_DichVuMatDat
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_them);
             this.panel2.Controls.Add(this.m_btn_sua);
             this.panel2.Controls.Add(this.m_btn_xoa);
@@ -785,6 +796,25 @@ namespace BKI_DichVuMatDat
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(961, 53);
             this.panel2.TabIndex = 4;
+            // 
+            // m_btn_luu
+            // 
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_luu.Appearance.Options.UseBackColor = true;
+            this.m_btn_luu.Appearance.Options.UseFont = true;
+            this.m_btn_luu.Appearance.Options.UseForeColor = true;
+            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_luu.Location = new System.Drawing.Point(416, 0);
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
+            this.m_btn_luu.TabIndex = 34;
+            this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Visible = false;
             // 
             // m_btn_them
             // 
@@ -886,9 +916,9 @@ namespace BKI_DichVuMatDat
             this.panel15.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit21.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit20.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit19.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -943,13 +973,13 @@ namespace BKI_DichVuMatDat
         private GroupBox groupBox13;
         private Panel panel15;
         private GroupBox groupBox20;
-        private DevExpress.XtraEditors.TextEdit textEdit21;
-        private DevExpress.XtraEditors.TextEdit textEdit20;
-        private DevExpress.XtraEditors.TextEdit textEdit19;
-        private RadioButton radioButton2;
-        private RadioButton radioButton3;
-        private ComboBox comboBox1;
-        private ComboBox comboBox3;
+        private DevExpress.XtraEditors.TextEdit m_txt_so_tien_doan_phi;
+        private DevExpress.XtraEditors.TextEdit m_txt_ti_le_tien_lon_nhat;
+        private DevExpress.XtraEditors.TextEdit m_txt_ti_le_doan_phi;
+        private RadioButton m_rd_ti_le_doan_phi;
+        private RadioButton m_rd_so_tien_doan_phi;
+        private ComboBox m_cb_cua_tien;
+        private ComboBox m_cb_cua_tien_lon_nhat;
         private Label label29;
         private Label label30;
         private Label label32;
@@ -963,5 +993,6 @@ namespace BKI_DichVuMatDat
         private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
         private TabPage tab_phucap;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
+        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
     }
 }

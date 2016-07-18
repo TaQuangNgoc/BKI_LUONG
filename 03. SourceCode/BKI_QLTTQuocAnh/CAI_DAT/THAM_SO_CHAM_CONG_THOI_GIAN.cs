@@ -439,6 +439,31 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
                 v_f.dislay_for_update(v_us);
                 load_du_lieu_vao_bang_loai_ngay_cong();
             }
+        }   
+
+        private void tab_Control1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (tab_Control1.SelectedTab.Name == "tab_doanphi")
+            {
+                load_data_to_tab_doan_phi();
+                m_btn_luu.Visible = true;
+                m_btn_sua.Visible = false;
+                m_btn_them.Visible = false;
+                m_btn_xoa.Visible = false;
+            }
+            else
+            {
+                m_btn_luu.Visible = false;
+                m_btn_sua.Visible = true;
+                m_btn_them.Visible = true;
+                m_btn_xoa.Visible = true;
+            }
+        }
+
+        private void load_data_to_tab_doan_phi()
+        {
+            
         }
 
       
