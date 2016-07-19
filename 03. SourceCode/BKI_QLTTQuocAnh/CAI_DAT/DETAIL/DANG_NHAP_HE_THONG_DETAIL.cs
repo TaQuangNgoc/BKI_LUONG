@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,9 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
     public partial class DANG_NHAP_HE_THONG_DETAIL : Form
     {
+        ToolTip m_tooltip_username = new ToolTip();
+        ToolTip m_tooltip_password = new ToolTip();
+        ToolTip m_tooltip_password_confirm = new ToolTip();
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;
         US_HT_USER m_us = new US_HT_USER();
         public DANG_NHAP_HE_THONG_DETAIL()
@@ -26,12 +30,31 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             try
             {
-                if (m_txt_username.Text==""|| m_txt_password.Text=="")
+                if (m_txt_username.Text.Trim() == "")
                 {
+
+                    setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
+                    return;
+
                     XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+
                 }
-                else
+
+                if (m_txt_password.Text=="")
                 {
+                    setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
+                    return;
+                }
+
+                if (m_txt_password.Text != m_txt_password_confirm.Text)
+                {
+                    setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
+                    return;
+                }
+                
+                {
+                    m_tooltip_username.Hide(m_txt_username);
+                    m_tooltip_password.Hide(m_txt_password);
                     form_to_us();
                     if (m_e_form_mode == DataEntryFormMode.InsertDataState)
                     {
@@ -71,6 +94,22 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
         }
 
+        private void setTooltip(ToolTip ip_tooltip, Control ip_control, ToolTipIcon toolTipIcon, string ip_txt_tieu_de, string ip_txt_noi_dung)
+        {
+            ip_tooltip.SetToolTip(ip_control, ip_txt_tieu_de);
+            ip_tooltip.ToolTipIcon = toolTipIcon;
+            ip_tooltip.ToolTipTitle = ip_txt_tieu_de;
+            ip_tooltip.Show(ip_txt_noi_dung, ip_control);
+        }
+
+        private void changeColor(Color color, DevExpress.XtraEditors.TextEdit textbox)
+        {
+            Graphics g = CreateGraphics();
+            System.Drawing.Rectangle rect = textbox.DisplayRectangle;
+            rect.Inflate(1, 3);
+            System.Windows.Forms.ControlPaint.DrawBorder(g, rect, color, ButtonBorderStyle.Solid);
+        }
+
         private void form_to_us()
         {
            m_us.strUSERNAME= m_txt_username.Text;
@@ -99,6 +138,43 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             m_txt_username.Text = v_us.strUSERNAME;
             m_txt_password.Text = v_us.strPASSWORD;
+        }
+
+        private void m_txt_username_Leave(object sender, EventArgs e)
+        {
+            
+            if (m_txt_username.Text == "")
+            {
+                setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
+            }
+            else
+            {
+                m_tooltip_username.Hide(m_txt_username);
+            }
+        }
+
+        private void m_txt_password_Leave(object sender, EventArgs e)
+        {
+            if (m_txt_password.Text == "")
+            {
+                setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
+            }
+            else
+            {
+                m_tooltip_password.Hide(m_txt_password);
+            }
+        }
+
+        private void m_txt_password_confirm_Leave(object sender, EventArgs e)
+        {
+            if (m_txt_password.Text != m_txt_password_confirm.Text)
+            {
+                setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
+            }
+            else
+            {
+                m_tooltip_password_confirm.Hide(m_txt_password_confirm);
+            }
         }
     }
 }

@@ -445,7 +445,7 @@
     <Compile Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.Designer.cs">
+    <Compile Include="CAI_DAT\DETAIL\DANG_NHAP_HE_THONG_DETAIL.designer.cs">
       <DependentUpon>DANG_NHAP_HE_THONG_DETAIL.cs</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\DETAIL\LAM_THEM_GIO_DETAIL.cs">
