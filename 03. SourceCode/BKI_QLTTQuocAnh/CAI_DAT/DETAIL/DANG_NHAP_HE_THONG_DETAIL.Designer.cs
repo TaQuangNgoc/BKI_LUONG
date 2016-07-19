@@ -71,6 +71,7 @@
             this.m_txt_password_confirm.Name = "m_txt_password_confirm";
             this.m_txt_password_confirm.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.m_txt_password_confirm.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_password_confirm.Properties.PasswordChar = '*';
             this.m_txt_password_confirm.Size = new System.Drawing.Size(296, 24);
             this.m_txt_password_confirm.TabIndex = 95;
             this.m_txt_password_confirm.Leave += new System.EventHandler(this.m_txt_password_confirm_Leave);
@@ -81,6 +82,7 @@
             this.m_txt_password.Name = "m_txt_password";
             this.m_txt_password.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.m_txt_password.Properties.Appearance.Options.UseFont = true;
+            this.m_txt_password.Properties.PasswordChar = '*';
             this.m_txt_password.Size = new System.Drawing.Size(296, 24);
             this.m_txt_password.TabIndex = 94;
             this.m_txt_password.Leave += new System.EventHandler(this.m_txt_password_Leave);
