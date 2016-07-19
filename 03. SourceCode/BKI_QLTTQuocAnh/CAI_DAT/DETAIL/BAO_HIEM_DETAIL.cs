@@ -34,7 +34,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             {
                 if (m_txt_ma_bao_hiem.Text==""|| m_txt_ten_bao_hiem.Text=="" || m_txt_lcd.Text=="")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                    XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 }
                 else
                 {
@@ -44,13 +44,13 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Insert();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception )
                         {
                             //  MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
-                            MessageBox.Show("mã bảo hiểm đã tồn tại. Bạn vui lòng nhập lại thông tin!");
+                            XtraMessageBox.Show("mã bảo hiểm đã tồn tại. Bạn vui lòng nhập lại thông tin!");
 
                         }
 
@@ -60,12 +60,12 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Update();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
+                            XtraMessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
                         }
                     }
                 }

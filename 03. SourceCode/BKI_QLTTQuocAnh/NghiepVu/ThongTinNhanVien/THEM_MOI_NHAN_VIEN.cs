@@ -154,7 +154,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập chẵn số tiền!");
+                XtraMessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
 
@@ -197,7 +197,7 @@ namespace BKI_DichVuMatDat
                     luu_phu_cap();
                     Insert_luu_thong_tin_luong_theo_thoi_gian();
                     Insert_luu_thong_tin_luong_khac();
-                    MessageBox.Show("Lưu thành công thông tin nhân viên!");
+                    XtraMessageBox.Show("Lưu thành công thông tin nhân viên!");
                 }
                 else
                 {
@@ -208,7 +208,7 @@ namespace BKI_DichVuMatDat
                     Update_luu_phu_cap();
                     Update_luu_thong_tin_luong_theo_thoi_gian();
                     Update_luu_thong_tin_khac();
-                    MessageBox.Show("Cập nhật dữ liệu thành công!");
+                    XtraMessageBox.Show("Cập nhật dữ liệu thành công!");
                 }
             }
         }
@@ -228,7 +228,7 @@ namespace BKI_DichVuMatDat
         {
             if (m_cb_luong_ngay.Checked == true && m_grv_luong_ngay.DataRowCount == 0)
             {
-                MessageBox.Show("Điền thông tin về lương ngày cho nhân viên");
+                XtraMessageBox.Show("Điền thông tin về lương ngày cho nhân viên");
                 return false;
             }
             return true;
@@ -238,7 +238,7 @@ namespace BKI_DichVuMatDat
         {
             if (m_cb_luong_theo_thoi_gian.Checked == true && m_grv_luong.DataRowCount == 0)
             {
-                MessageBox.Show("Điền thông tin về lương theo thời gian cho nhân viên");
+                XtraMessageBox.Show("Điền thông tin về lương theo thời gian cho nhân viên");
                 return false;
             }
             return true;
@@ -248,7 +248,7 @@ namespace BKI_DichVuMatDat
         {
             if (m_cb_luong_ngay.Checked == true && m_cb_luong_theo_thoi_gian.Checked == true)
             {
-                MessageBox.Show("1 nhân viên không thể có đồng thời 2 hình thức tính lương theo thời gian và lương ngày. Vui lòng bỏ check 1 trong 2 loại kể trên!");
+                XtraMessageBox.Show("1 nhân viên không thể có đồng thời 2 hình thức tính lương theo thời gian và lương ngày. Vui lòng bỏ check 1 trong 2 loại kể trên!");
                 return false;
             }
             return true;
@@ -270,7 +270,7 @@ namespace BKI_DichVuMatDat
             //trạng thái thêm, và bảng >0 dòng, trạng thái sửa, và dòng 0 khác với ma_nv thì cảnh báo
             if ((v_ds.Tables[0].Rows.Count>0 && m_e== DataEntryFormMode.InsertDataState)||(m_e==DataEntryFormMode.UpdateDataState && m_id_nhan_vien!= decimal.Parse(v_ds.Tables[0].Rows[0]["ID"].ToString())))
             {
-                MessageBox.Show("Đã tồn tại mã nhân viên "+ m_txt_ma_nhan_vien.Text);
+                XtraMessageBox.Show("Đã tồn tại mã nhân viên " + m_txt_ma_nhan_vien.Text);
                 return false;
             }
             return true;
@@ -280,7 +280,7 @@ namespace BKI_DichVuMatDat
         {
             if (m_txt_ho_dem.Text != "" && m_txt_ten.Text != "" && m_txt_ma_nhan_vien.Text != "")
                 return true;
-            MessageBox.Show("Vui lòng điền đầy đủ thông tin!");
+            XtraMessageBox.Show("Vui lòng điền đầy đủ thông tin!");
             return false;
         }
 
@@ -579,7 +579,7 @@ namespace BKI_DichVuMatDat
             WinFormControls.Convert_gridcontrol_to_datatable(m_grv_luong, dt);
             if (m_txt_lcd.Text == "" && m_txt_lns.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!");
+                XtraMessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!");
             }
             else
             {
@@ -625,14 +625,14 @@ namespace BKI_DichVuMatDat
                 return true;
             else if( v_dr["DEN_NGAY"].ToString()=="")
             {
-                MessageBox.Show("Bạn phải đổi Đến ngày của mốc thời gian trước về một thời điểm xác định.");
+                XtraMessageBox.Show("Bạn phải đổi Đến ngày của mốc thời gian trước về một thời điểm xác định.");
                 return false;
             }
               
             else if
                 ((Convert.ToDateTime(v_dr["DEN_NGAY"].ToString()).AddDays(1)) < tu_ngay)
                 return true;
-            MessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+            XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
             return false;
         }
 
@@ -671,7 +671,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                MessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!");
+                XtraMessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!");
             }
            
         }
@@ -757,7 +757,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                MessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!");
+                XtraMessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!");
             }
            
         }

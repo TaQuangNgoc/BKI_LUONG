@@ -15,6 +15,7 @@ using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
 using BKI_DichVuMatDat.CAI_DAT;
 
+
 namespace BKI_DichVuMatDat
 {
     public partial class FORM_MENU : Form
@@ -148,6 +149,46 @@ namespace BKI_DichVuMatDat
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);
             }
+
+            if (info.Node == CHAM_CONG_THEO_TG)
+            {
+                BKI_DichVuMatDat.FORM_CHO.FORM_CHO_CHAM_CONG_THEO_THOI_GIAN v_f = new BKI_DichVuMatDat.FORM_CHO.FORM_CHO_CHAM_CONG_THEO_THOI_GIAN();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+            if (info.Node == NHAP_LIEU)
+            {
+                BKI_DichVuMatDat.FORM_CHO.FORM_CHO_NHAP_LIEU v_f = new BKI_DichVuMatDat.FORM_CHO.FORM_CHO_NHAP_LIEU();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+            if (info.Node == THONG_TIN_NHAN_VIEN)
+            {
+                BKI_DichVuMatDat.FORM_CHO.FORM_CHO_THONG_TIN_NHAN_VIEN v_f = new BKI_DichVuMatDat.FORM_CHO.FORM_CHO_THONG_TIN_NHAN_VIEN();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
+            if (info.Node == CHAM_CONG_TU_EXCEL)
+            {
+                BKI_DichVuMatDat.FORM_CHO.FORM_CHO_CHAM_CONG_TU_EXCEL v_f = new BKI_DichVuMatDat.FORM_CHO.FORM_CHO_CHAM_CONG_TU_EXCEL();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+            if (info.Node ==BAO_CAO)
+            {
+                BKI_DichVuMatDat.FORM_CHO.FORM_CHO_BAO_CAO v_f = new BKI_DichVuMatDat.FORM_CHO.FORM_CHO_BAO_CAO();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+           
+           
+            
             if (info.Node == DANG_NHAP_HE_THONG)
             {
                 BKI_DichVuMatDat.CAI_DAT.DANG_NHAP_HE_THONG v_f = new BKI_DichVuMatDat.CAI_DAT.DANG_NHAP_HE_THONG();
@@ -278,6 +319,11 @@ namespace BKI_DichVuMatDat
                // ShowForm(v_f);
                 panel1.Visible = true;
             }
+        }
+
+        private void ShowForm(FORM_CHO_CHAM_CONG_THEO_THOI_GIAN v_f)
+        {
+            throw new NotImplementedException();
         }
 
         private void ShowForUpdateForm(BKI_DichVuMatDat.THEM_MOI_NHAN_VIEN v_f, decimal m_id_nhan_vien)

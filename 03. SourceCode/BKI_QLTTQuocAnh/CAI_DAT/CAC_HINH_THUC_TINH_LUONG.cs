@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -80,11 +81,11 @@ namespace BKI_DichVuMatDat
 
                     v_us.active_hinh_thuc_tinh_luong_cho_cong_ty(ListActive[i]);
                 }
-                MessageBox.Show("Lưu thành công thông tin về các hình thức tính lương cho công ty!");
+                XtraMessageBox.Show("Lưu thành công thông tin về các hình thức tính lương cho công ty!");
             }
             else
             {
-                MessageBox.Show("Bạn phải lựa chọn ít nhất 1 trong các hình thức tính lương cho công ty!");
+                XtraMessageBox.Show("Bạn phải lựa chọn ít nhất 1 trong các hình thức tính lương cho công ty!");
             }
         }
     }

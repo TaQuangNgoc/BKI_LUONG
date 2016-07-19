@@ -484,7 +484,7 @@
             // 
             // gridColumn8
             // 
-            this.gridColumn8.Caption = "Mã làm thêm";
+            this.gridColumn8.Caption = "MÃ LÀM THÊM";
             this.gridColumn8.FieldName = "MA_LAM_THEM";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
@@ -492,7 +492,7 @@
             // 
             // gridColumn9
             // 
-            this.gridColumn9.Caption = "Tỉ lệ";
+            this.gridColumn9.Caption = "TỈ LỆ";
             this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn9.FieldName = "TI_LE";
             this.gridColumn9.Name = "gridColumn9";
@@ -501,7 +501,7 @@
             // 
             // gridColumn10
             // 
-            this.gridColumn10.Caption = "Tên loại làm thêm";
+            this.gridColumn10.Caption = "TÊN LOẠI LÀM THÊM";
             this.gridColumn10.FieldName = "TEN_LOAI_LAM_THEM";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;

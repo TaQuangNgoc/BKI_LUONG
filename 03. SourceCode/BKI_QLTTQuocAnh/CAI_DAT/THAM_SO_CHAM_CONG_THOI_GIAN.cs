@@ -118,7 +118,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập chẵn số tiền!");
+                XtraMessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
 
@@ -207,14 +207,14 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                DialogResult dialogresult = XtraMessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
             if (dialogresult == DialogResult.Yes)
             {
                 DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_PHU_CAP v_us = new US_DM_PHU_CAP(v_id);
                 v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + " !");
                 load_du_lieu_vao_bang_phu_cap();
             }
             }
@@ -229,28 +229,28 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
 
         private void thue_delete()
         {
-            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            DialogResult dialogresult = XtraMessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
             if (dialogresult == DialogResult.Yes)
             {
                 DataRow v_dr = m_grv_thue.GetDataRow(m_grv_thue.FocusedRowHandle);
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_THUE v_us = new US_DM_THUE(v_id);
                 v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + " !");
                 load_du_lieu_vao_bang_thue();
             }
         }
 
         private void bao_hiem_delete()
         {
-            DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+            DialogResult dialogresult = XtraMessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
             if (dialogresult == DialogResult.Yes)
             {
                 DataRow v_dr = m_grv_bao_hiem.GetDataRow(m_grv_bao_hiem.FocusedRowHandle);
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_BAO_HIEM v_us = new US_DM_BAO_HIEM(v_id);
                 v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_BH"] + " !");
+                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_BH"] + " !");
                 load_du_lieu_vao_bang_bao_hiem();
             }
         }
@@ -259,14 +259,14 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
         {
             try
             {
-                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                DialogResult dialogresult = XtraMessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
                 if (dialogresult == DialogResult.Yes)
                 {
                     DataRow v_dr = m_grv_lam_them_gio.GetDataRow(m_grv_lam_them_gio.FocusedRowHandle);
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_TI_LE_LAM_THEM v_us = new US_DM_TI_LE_LAM_THEM(v_id);
                     v_us.Delete();
-                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
                     load_du_lieu_vao_bang_Lam_them_gio();
                 }
             }
@@ -282,14 +282,14 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
         {
             try
             {
-                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
+                DialogResult dialogresult = XtraMessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
                 if (dialogresult == DialogResult.Yes)
                 {
                     DataRow v_dr = m_grv_ngay_cong.GetDataRow(m_grv_ngay_cong.FocusedRowHandle);
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_LOAI_NGAY_CONG v_us = new US_DM_LOAI_NGAY_CONG(v_id);
                     v_us.Delete();
-                    MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_NGAY_CONG"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_NGAY_CONG"] + " !");
                     load_du_lieu_vao_bang_loai_ngay_cong();
                 }
             }
@@ -341,11 +341,11 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
             var v_count_thue = m_grv_thue.SelectedRowsCount;
             if (v_count_thue == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count_thue > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -362,11 +362,11 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
             var v_count_bao_hiem = m_grv_bao_hiem.SelectedRowsCount;
             if (v_count_bao_hiem == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count_bao_hiem > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -383,11 +383,11 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
             var v_count_phu_cap = m_grv_phu_cap.SelectedRowsCount;
             if (v_count_phu_cap == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count_phu_cap > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -404,11 +404,11 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
             var v_count_lam_them_gio = m_grv_lam_them_gio.SelectedRowsCount;
             if (v_count_lam_them_gio == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count_lam_them_gio > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -425,11 +425,11 @@ DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoà
             var v_count_loai_ngay_cong = m_grv_ngay_cong.SelectedRowsCount;
             if (v_count_loai_ngay_cong == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count_loai_ngay_cong > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {

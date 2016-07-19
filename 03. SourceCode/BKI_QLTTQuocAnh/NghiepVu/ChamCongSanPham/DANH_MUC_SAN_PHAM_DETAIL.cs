@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using IP.Core.IPCommon;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
@@ -53,7 +54,7 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
             {
                 if (m_txt_ma_san_pham.Text == "" || m_txt_ten_san_pham.Text == "")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                    XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 }
                 else
                 {
@@ -63,12 +64,12 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
                         try
                         {
                             m_us.Insert();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
+                            XtraMessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
 
                         }
 
@@ -78,12 +79,12 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
                         try
                         {
                             m_us.Update();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
+                            XtraMessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
                         }
                     }
                 }

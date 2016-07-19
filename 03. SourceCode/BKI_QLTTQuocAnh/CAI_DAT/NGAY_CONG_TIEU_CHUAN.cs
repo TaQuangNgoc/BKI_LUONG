@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
 using IP.Core.IPCommon;
+using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT
 {
@@ -76,7 +77,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
                     int so_luong_loai_nv_thuc_te_cua_nam = get_so_luong_loai_nv_thuc_te_cua_nam(v_ds_loai_nv_thuc_te_cua_nam);
                     if (so_luong_loai_nv_tren_danh_muc > so_luong_loai_nv_thuc_te_cua_nam)
                     {
-                        DialogResult dialogResult = MessageBox.Show("Xuất hiện loại nhân viên mới chưa có trong danh sách hiện thời của năm "+ m_txt_nam.Text +". \n Bạn có muốn thêm những loại nhân viên mới này vào danh sách hiện có của năm "+ m_txt_nam.Text+", đồng thời thêm số ngày công tiêu chuẩn cho những loại mới này? ", "Thông báo", MessageBoxButtons.YesNo);
+                        DialogResult dialogResult = XtraMessageBox.Show("Xuất hiện loại nhân viên mới chưa có trong danh sách hiện thời của năm " + m_txt_nam.Text + ". \n Bạn có muốn thêm những loại nhân viên mới này vào danh sách hiện có của năm " + m_txt_nam.Text + ", đồng thời thêm số ngày công tiêu chuẩn cho những loại mới này? ", "Thông báo", MessageBoxButtons.YesNo);
                         if (dialogResult == DialogResult.Yes)
                         {
                             load_du_lieu_bo_sung_len_grid_loai_ngay_cong(v_ds_loai_nv_tren_danh_muc);
@@ -93,7 +94,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng điền năm trước khi tiếp tục!");
+                    XtraMessageBox.Show("Vui lòng điền năm trước khi tiếp tục!");
                 }
             }
             catch (Exception v_e)
@@ -253,11 +254,11 @@ namespace BKI_DichVuMatDat.CAI_DAT
             {
                 xoa_du_lieu_bang_gd_cu();
                 them_du_lieu_cho_cac_loai_nv();
-                MessageBox.Show("Lưu dữ liệu thành công!");
+                XtraMessageBox.Show("Lưu dữ liệu thành công!");
             }
             catch (Exception)
             {
-                MessageBox.Show("Lỗi hệ thống!");            
+                XtraMessageBox.Show("Lỗi hệ thống!");            
             }
            
             
@@ -297,7 +298,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
                     decimal result;
                     if (!decimal.TryParse(v_dr[j].ToString(), out result))
                     {
-                        MessageBox.Show("Số ngày làm việc tiêu chuẩn phải là số. Vui lòng nhập chính xác thông tin!");
+                        XtraMessageBox.Show("Số ngày làm việc tiêu chuẩn phải là số. Vui lòng nhập chính xác thông tin!");
                         return false;
                     }
                 }
@@ -334,11 +335,11 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 var v_count_loai_nhan_vien= m_grv_loai_nv.SelectedRowsCount;
                 if (v_count_loai_nhan_vien == 0)
                 {
-                    MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                    XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
                 }
                 else if (v_count_loai_nhan_vien > 1)
                 {
-                    MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                    XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
                 }
                 else
                 {
@@ -364,7 +365,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(v_id);
                     v_us.Delete();
-                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_NHAN_VIEN"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_NHAN_VIEN"] + " !");
                     load_data_to_grid_loai_nhan_vien();
                 }
             }

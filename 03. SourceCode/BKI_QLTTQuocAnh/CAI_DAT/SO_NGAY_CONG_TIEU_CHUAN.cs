@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BKI_DichVuMatDat.US;
+using DevExpress.XtraEditors;
 namespace BKI_DichVuMatDat
 {
     public partial class SO_NGAY_CONG_TIEU_CHUAN : Form
@@ -42,7 +43,7 @@ namespace BKI_DichVuMatDat
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập năm!");
+                XtraMessageBox.Show("Vui lòng nhập năm!");
             }
         }
 
@@ -163,7 +164,7 @@ namespace BKI_DichVuMatDat
             }
             else
             {
-                MessageBox.Show("Vui lòng điền tên loại nhân viên!");
+                XtraMessageBox.Show("Vui lòng điền tên loại nhân viên!");
             }
         }
 
@@ -189,7 +190,7 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = m_grv.GetDataRow(m_grv.FocusedRowHandle);
             v_dr.Delete();
             m_txt_ten_loai_nhan_vien.Text = "";
-            MessageBox.Show("Nhấn nút Lưu để Lưu lại kết quả vừa thực hiện!");
+            XtraMessageBox.Show("Nhấn nút Lưu để Lưu lại kết quả vừa thực hiện!");
         }
 
         private void m_btn_luu_Click(object sender, EventArgs e)
@@ -207,7 +208,7 @@ namespace BKI_DichVuMatDat
                 {
                     them_du_lieu_cho_cac_loai_nv_tuy_chon();
                 }
-                MessageBox.Show("Lưu dữ liệu thành công!");
+                XtraMessageBox.Show("Lưu dữ liệu thành công!");
             }
         }
 

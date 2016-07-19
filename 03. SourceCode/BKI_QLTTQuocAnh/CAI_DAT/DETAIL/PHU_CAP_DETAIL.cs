@@ -72,7 +72,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             {
                 if (!is_check_not_ok())
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                    XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 }
                 else
                 {
@@ -82,13 +82,13 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Insert();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception )
                         {
                             //  MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
-                            MessageBox.Show("mã phụ cấp đã tồn tại. Bạn vui lòng nhập lại thông tin!");
+                            XtraMessageBox.Show("mã phụ cấp đã tồn tại. Bạn vui lòng nhập lại thông tin!");
 
                         }
 
@@ -98,12 +98,12 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Update();
-                            MessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!");
                             this.Close();
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
+                            XtraMessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
                         }
                     }
                 }
@@ -160,7 +160,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập chẵn số tiền!");
+                XtraMessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
 

@@ -225,7 +225,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "Mã ngày công";
+            this.gridColumn1.Caption = "MÃ NGÀY CÔNG";
             this.gridColumn1.FieldName = "MA_NGAY_CONG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
@@ -233,7 +233,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Tên ngày công";
+            this.gridColumn2.Caption = "TÊN NGÀY CÔNG";
             this.gridColumn2.FieldName = "TEN_NGAY_CONG";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -241,7 +241,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn3
             // 
-            this.gridColumn3.Caption = "Tỉ lệ LNS";
+            this.gridColumn3.Caption = "TỈ LỆ LNS";
             this.gridColumn3.FieldName = "TI_LE_LNS";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -249,7 +249,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Tỉ lệ LCD";
+            this.gridColumn4.Caption = "TỈ LỆ LCD";
             this.gridColumn4.FieldName = "TI_LE_LCD";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -304,7 +304,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "Mã loại làm thêm";
+            this.gridColumn5.Caption = "MÃ LOẠI LÀM THÊM";
             this.gridColumn5.FieldName = "MA_LAM_THEM";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -312,7 +312,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn6
             // 
-            this.gridColumn6.Caption = "Tên loại làm thêm";
+            this.gridColumn6.Caption = "TÊN LOẠI LÀM THÊM";
             this.gridColumn6.FieldName = "TEN_LOAI_LAM_THEM";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -375,7 +375,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn8
             // 
-            this.gridColumn8.Caption = "Tên phụ cấp";
+            this.gridColumn8.Caption = "TÊN PHỤ CẤP";
             this.gridColumn8.FieldName = "TEN_PHU_CAP";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
@@ -383,7 +383,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn9
             // 
-            this.gridColumn9.Caption = "Đối tượng hưởng";
+            this.gridColumn9.Caption = "ĐỐI TƯỢNG HƯỞNG";
             this.gridColumn9.FieldName = "DOI_TUONG_HUONG_PHU_CAP";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
@@ -391,7 +391,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn10
             // 
-            this.gridColumn10.Caption = "Tỉ lệ";
+            this.gridColumn10.Caption = "TỈ LỆ";
             this.gridColumn10.FieldName = "TI_LE";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
@@ -399,7 +399,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn11
             // 
-            this.gridColumn11.Caption = "Của tiền";
+            this.gridColumn11.Caption = "CỦA TIỀN";
             this.gridColumn11.FieldName = "TEN";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
@@ -407,7 +407,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn12
             // 
-            this.gridColumn12.Caption = "Số tiền";
+            this.gridColumn12.Caption = "SỐ TIỀN";
             this.gridColumn12.DisplayFormat.FormatString = "n0";
             this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "SO_TIEN";
@@ -417,7 +417,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn13
             // 
-            this.gridColumn13.Caption = "Phụ thuộc số ngày đi làm";
+            this.gridColumn13.Caption = "PHỤ THUỘC SỐ NGÀY ĐI LÀM";
             this.gridColumn13.FieldName = "PHU_THUOC_SO_NGAY_DI_LAM";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
@@ -480,7 +480,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn14
             // 
-            this.gridColumn14.Caption = "Mã loại bảo hiểm";
+            this.gridColumn14.Caption = "MÃ LOẠI BẢO HIỂM";
             this.gridColumn14.FieldName = "MA_BH";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.Visible = true;
@@ -488,7 +488,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn15
             // 
-            this.gridColumn15.Caption = "Tên loại bảo hiểm";
+            this.gridColumn15.Caption = "TÊN LOẠI BẢO HIỂM";
             this.gridColumn15.FieldName = "TEN_BH";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
@@ -560,7 +560,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn17
             // 
-            this.gridColumn17.Caption = "Chặn dưới";
+            this.gridColumn17.Caption = "CHẶN DƯỚI";
             this.gridColumn17.DisplayFormat.FormatString = "n0";
             this.gridColumn17.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn17.FieldName = "CHAN_DUOI";
@@ -570,7 +570,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn18
             // 
-            this.gridColumn18.Caption = "Chặn trên";
+            this.gridColumn18.Caption = "CHẶN TRÊN";
             this.gridColumn18.DisplayFormat.FormatString = "n0";
             this.gridColumn18.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn18.FieldName = "CHAN_TREN";
@@ -580,7 +580,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn19
             // 
-            this.gridColumn19.Caption = "Tỉ lệ";
+            this.gridColumn19.Caption = "TỈ LỆ";
             this.gridColumn19.FieldName = "TI_LE";
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.Visible = true;
@@ -588,7 +588,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn20
             // 
-            this.gridColumn20.Caption = "Bù trừ";
+            this.gridColumn20.Caption = "BÙ TRỪ";
             this.gridColumn20.DisplayFormat.FormatString = "n0";
             this.gridColumn20.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn20.FieldName = "BU_TRU";

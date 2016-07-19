@@ -115,11 +115,11 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
             var v_count = m_grv_danh_muc_ti_le_lam_them.SelectedRowsCount;
             if (v_count == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -140,11 +140,11 @@ private void danh_muc_san_pham_update()
     var v_count = m_grv_san_pham.SelectedRowsCount;
     if (v_count == 0)
     {
-        MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+        XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
     }
     else if (v_count > 1)
     {
-        MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+        XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
     }
     else
     {
@@ -191,14 +191,14 @@ private void danh_muc_san_pham_update()
             try
             {
 
-                DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = XtraMessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     DataRow v_dr = m_grv_danh_muc_ti_le_lam_them.GetDataRow(m_grv_danh_muc_ti_le_lam_them.FocusedRowHandle);
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM v_us = new US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM(v_id);
                     v_us.Delete();
-                    MessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
                     load_du_lieu_vao_bang_danh_muc_ti_le_lam_them();
                 }
                 
@@ -214,14 +214,14 @@ private void danh_muc_san_pham_update()
         private void danh_muc_san_pham_delete()
         {
 
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = XtraMessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này không?", "Cảnh báo", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 DataRow v_dr = m_grv_san_pham.GetDataRow(m_grv_san_pham.FocusedRowHandle);
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_SAN_PHAM v_us = new US_DM_SAN_PHAM(v_id);
                 v_us.Delete();
-                MessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_SAN_PHAM"] + " !");
+                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_SAN_PHAM"] + " !");
                 load_du_lieu_vao_bang_danh_muc_sp();
             }
                 

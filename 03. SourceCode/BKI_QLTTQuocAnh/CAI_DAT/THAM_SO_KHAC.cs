@@ -37,7 +37,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                MessageBox.Show("Nhập chẵn số tiền!");
+                XtraMessageBox.Show("Nhập chẵn số tiền!");
                 textbox.Text = "";
             }
 
@@ -86,7 +86,7 @@ namespace BKI_DichVuMatDat
                 decimal Luong_toi_thieu_vung = decimal.Parse(m_txt_luong_toi_thieu_vung.Text.ToString().Replace(",", ""));
                 decimal So_thang_tinh_bhxh = decimal.Parse(m_txt_so_thang_tinh_bhxh.Text.ToString().Replace(",", ""));
                 v_us.UpdateThamSoKhac(Giam_tru_gia_canh, Phu_thuoc, Luong_toi_thieu_quy_dinh, Luong_toi_thieu_vung, So_thang_tinh_bhxh);
-                MessageBox.Show("Lưu thành công dữ liệu về 1 số tham số khác!");
+                XtraMessageBox.Show("Lưu thành công dữ liệu về 1 số tham số khác!");
             }
         }
 
@@ -96,7 +96,7 @@ namespace BKI_DichVuMatDat
                 return true;
             else
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!");
+                XtraMessageBox.Show("Vui lòng điền đầy đủ thông tin!");
                 return false;
             }
            

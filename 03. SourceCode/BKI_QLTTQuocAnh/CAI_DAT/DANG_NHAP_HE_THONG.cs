@@ -45,11 +45,11 @@ namespace BKI_DichVuMatDat.CAI_DAT
             var v_count = m_grv_dang_nhap_he_thong.SelectedRowsCount;
             if (v_count == 0)
             {
-                MessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
+                XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
             }
             else if (v_count > 1)
             {
-                MessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
+                XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
             }
             else
             {
@@ -72,7 +72,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_HT_USER v_us = new US_HT_USER(v_id);
                     v_us.Delete();
-                    MessageBox.Show("Đã xóa thành công !");
+                    XtraMessageBox.Show("Đã xóa thành công !");
                     load_du_lieu_vao_bang_dang_nhap_he_thong();
                 }
             }
