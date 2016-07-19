@@ -11,17 +11,20 @@ using System.Windows.Forms;
 using BKI_DichVuMatDat.US;
 using BKI_DichVuMatDat.DS;
 using DevExpress.XtraEditors;
+using MaterialSkin;
 
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
-    public partial class LOAI_NGAY_CONG_DETAIL : Form
+    public partial class LOAI_NGAY_CONG_DETAIL : MaterialSkin.Controls.MaterialForm
     {
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;
         US_DM_LOAI_NGAY_CONG m_us = new US_DM_LOAI_NGAY_CONG();
+
         public LOAI_NGAY_CONG_DETAIL()
         {
             InitializeComponent();
+            
         }
 
         internal void dislay_for_insert()

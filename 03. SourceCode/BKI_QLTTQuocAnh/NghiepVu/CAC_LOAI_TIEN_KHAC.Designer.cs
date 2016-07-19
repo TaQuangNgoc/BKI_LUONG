@@ -387,7 +387,6 @@
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
             this.m_cmd_nhap_cham_cong.Text = "LƯU \r\n";
-           
             // 
             // label2
             // 

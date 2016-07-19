@@ -29,11 +29,11 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tab_Control1 = new System.Windows.Forms.TabControl();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.tab_Control1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tab_loaingaycong = new System.Windows.Forms.TabPage();
             this.m_grc_ngay_cong = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ngay_cong = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -93,13 +93,13 @@ namespace BKI_DichVuMatDat
             this.label33 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_luu = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_them = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_sua = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_xoa = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.tab_Control1.SuspendLayout();
             this.tab_loaingaycong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).BeginInit();
@@ -130,12 +130,13 @@ namespace BKI_DichVuMatDat
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -154,15 +155,17 @@ namespace BKI_DichVuMatDat
             this.label2.TabIndex = 1;
             this.label2.Text = "DANH MỤC THAM SỐ CHẤM CÔNG THEO THỜI GIAN";
             // 
-            // panel3
+            // materialTabSelector1
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.tab_Control1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(961, 525);
-            this.panel3.TabIndex = 5;
+            this.materialTabSelector1.BaseTabControl = this.tab_Control1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 0);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(961, 36);
+            this.materialTabSelector1.TabIndex = 4;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // tab_Control1
             // 
@@ -172,12 +175,14 @@ namespace BKI_DichVuMatDat
             this.tab_Control1.Controls.Add(this.tab_baohiem);
             this.tab_Control1.Controls.Add(this.tab_thue);
             this.tab_Control1.Controls.Add(this.tab_doanphi);
+            this.tab_Control1.Depth = 0;
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tab_Control1.Location = new System.Drawing.Point(0, 0);
+            this.tab_Control1.Location = new System.Drawing.Point(0, 36);
+            this.tab_Control1.MouseState = MaterialSkin.MouseState.HOVER;
             this.tab_Control1.Name = "tab_Control1";
             this.tab_Control1.SelectedIndex = 0;
-            this.tab_Control1.Size = new System.Drawing.Size(961, 525);
+            this.tab_Control1.Size = new System.Drawing.Size(961, 495);
             this.tab_Control1.TabIndex = 0;
             this.tab_Control1.SelectedIndexChanged += new System.EventHandler(this.tab_Control1_SelectedIndexChanged);
             // 
@@ -188,7 +193,7 @@ namespace BKI_DichVuMatDat
             this.tab_loaingaycong.Location = new System.Drawing.Point(4, 27);
             this.tab_loaingaycong.Name = "tab_loaingaycong";
             this.tab_loaingaycong.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 494);
+            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 464);
             this.tab_loaingaycong.TabIndex = 0;
             this.tab_loaingaycong.Text = "LOẠI NGÀY CÔNG";
             this.tab_loaingaycong.UseVisualStyleBackColor = true;
@@ -200,7 +205,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_ngay_cong.Location = new System.Drawing.Point(3, 3);
             this.m_grc_ngay_cong.MainView = this.m_grv_ngay_cong;
             this.m_grc_ngay_cong.Name = "m_grc_ngay_cong";
-            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 488);
+            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 458);
             this.m_grc_ngay_cong.TabIndex = 3;
             this.m_grc_ngay_cong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ngay_cong,
@@ -208,9 +213,26 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_ngay_cong
             // 
-            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_ngay_cong.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_ngay_cong.Appearance.EvenRow.Options.UseFont = true;
+            this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv_ngay_cong.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv_ngay_cong.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_ngay_cong.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_ngay_cong.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_ngay_cong.Appearance.OddRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_ngay_cong.Appearance.OddRow.Options.UseFont = true;
+            this.m_grv_ngay_cong.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10F);
             this.m_grv_ngay_cong.Appearance.Row.Options.UseFont = true;
             this.m_grv_ngay_cong.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
@@ -220,12 +242,22 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.GridControl = this.m_grc_ngay_cong;
             this.m_grv_ngay_cong.Name = "m_grv_ngay_cong";
             this.m_grv_ngay_cong.OptionsBehavior.Editable = false;
+            this.m_grv_ngay_cong.OptionsFind.AllowFindPanel = false;
+            this.m_grv_ngay_cong.OptionsFind.AlwaysVisible = true;
+            this.m_grv_ngay_cong.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_ngay_cong.OptionsSelection.MultiSelect = true;
+            this.m_grv_ngay_cong.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             this.m_grv_ngay_cong.OptionsView.ShowGroupPanel = false;
+            this.m_grv_ngay_cong.PaintStyleName = "UltraFlat";
             // 
             // gridColumn1
             // 
-            this.gridColumn1.Caption = "MÃ NGÀY CÔNG";
+            this.gridColumn1.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(160)))), ((int)(((byte)(71)))));
+            this.gridColumn1.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(160)))), ((int)(((byte)(71)))));
+            this.gridColumn1.AppearanceHeader.Options.UseBackColor = true;
+            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.Caption = "Mã ngày công";
             this.gridColumn1.FieldName = "MA_NGAY_CONG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
@@ -233,7 +265,9 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "TÊN NGÀY CÔNG";
+            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn2.Caption = "Tên ngày công";
             this.gridColumn2.FieldName = "TEN_NGAY_CONG";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -241,7 +275,9 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn3
             // 
-            this.gridColumn3.Caption = "TỈ LỆ LNS";
+            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.Caption = "Tỉ lệ LNS";
             this.gridColumn3.FieldName = "TI_LE_LNS";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -249,7 +285,9 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "TỈ LỆ LCD";
+            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn4.Caption = "Tỉ lệ LCD";
             this.gridColumn4.FieldName = "TI_LE_LCD";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -267,7 +305,7 @@ namespace BKI_DichVuMatDat
             this.tab_lamthemgio.Location = new System.Drawing.Point(4, 27);
             this.tab_lamthemgio.Name = "tab_lamthemgio";
             this.tab_lamthemgio.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 494);
+            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 464);
             this.tab_lamthemgio.TabIndex = 1;
             this.tab_lamthemgio.Text = "LÀM THÊM GIỜ";
             // 
@@ -275,13 +313,13 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
-            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 488);
+            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 458);
             this.m_grc_loai_lam_them_gio.TabIndex = 8;
             this.m_grc_loai_lam_them_gio.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_lam_them_gio,
@@ -338,7 +376,7 @@ namespace BKI_DichVuMatDat
             this.tab_phucap.Location = new System.Drawing.Point(4, 27);
             this.tab_phucap.Name = "tab_phucap";
             this.tab_phucap.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_phucap.Size = new System.Drawing.Size(953, 494);
+            this.tab_phucap.Size = new System.Drawing.Size(953, 464);
             this.tab_phucap.TabIndex = 2;
             this.tab_phucap.Text = "PHỤ CẤP";
             // 
@@ -349,7 +387,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_loai_phu_cap.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_loai_phu_cap.Name = "m_grc_loai_phu_cap";
-            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 488);
+            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 458);
             this.m_grc_loai_phu_cap.TabIndex = 19;
             this.m_grc_loai_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap,
@@ -435,7 +473,7 @@ namespace BKI_DichVuMatDat
             this.tab_baohiem.Location = new System.Drawing.Point(4, 27);
             this.tab_baohiem.Name = "tab_baohiem";
             this.tab_baohiem.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_baohiem.Size = new System.Drawing.Size(953, 494);
+            this.tab_baohiem.Size = new System.Drawing.Size(953, 464);
             this.tab_baohiem.TabIndex = 3;
             this.tab_baohiem.Text = "BẢO HIỂM";
             // 
@@ -446,7 +484,7 @@ namespace BKI_DichVuMatDat
             this.groupBox4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(3, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(947, 488);
+            this.groupBox4.Size = new System.Drawing.Size(947, 458);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             // 
@@ -457,7 +495,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_bao_hiem.Location = new System.Drawing.Point(3, 22);
             this.m_grc_bao_hiem.MainView = this.m_grv_bao_hiem;
             this.m_grc_bao_hiem.Name = "m_grc_bao_hiem";
-            this.m_grc_bao_hiem.Size = new System.Drawing.Size(941, 463);
+            this.m_grc_bao_hiem.Size = new System.Drawing.Size(941, 433);
             this.m_grc_bao_hiem.TabIndex = 17;
             this.m_grc_bao_hiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_bao_hiem,
@@ -514,7 +552,7 @@ namespace BKI_DichVuMatDat
             this.tab_thue.Location = new System.Drawing.Point(4, 27);
             this.tab_thue.Name = "tab_thue";
             this.tab_thue.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_thue.Size = new System.Drawing.Size(953, 494);
+            this.tab_thue.Size = new System.Drawing.Size(953, 464);
             this.tab_thue.TabIndex = 4;
             this.tab_thue.Text = "THUẾ";
             // 
@@ -525,7 +563,7 @@ namespace BKI_DichVuMatDat
             this.groupBox6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(947, 488);
+            this.groupBox6.Size = new System.Drawing.Size(947, 458);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             // 
@@ -536,7 +574,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_thue.Location = new System.Drawing.Point(3, 22);
             this.m_grc_thue.MainView = this.m_grv_thue;
             this.m_grc_thue.Name = "m_grc_thue";
-            this.m_grc_thue.Size = new System.Drawing.Size(941, 463);
+            this.m_grc_thue.Size = new System.Drawing.Size(941, 433);
             this.m_grc_thue.TabIndex = 20;
             this.m_grc_thue.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_thue,
@@ -608,7 +646,7 @@ namespace BKI_DichVuMatDat
             this.tab_doanphi.Location = new System.Drawing.Point(4, 27);
             this.tab_doanphi.Name = "tab_doanphi";
             this.tab_doanphi.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_doanphi.Size = new System.Drawing.Size(953, 494);
+            this.tab_doanphi.Size = new System.Drawing.Size(953, 464);
             this.tab_doanphi.TabIndex = 5;
             this.tab_doanphi.Text = "ĐOÀN PHÍ ";
             // 
@@ -619,7 +657,7 @@ namespace BKI_DichVuMatDat
             this.groupBox13.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(3, 3);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(947, 488);
+            this.groupBox13.Size = new System.Drawing.Size(947, 458);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             // 
@@ -629,7 +667,7 @@ namespace BKI_DichVuMatDat
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(3, 22);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(941, 463);
+            this.panel15.Size = new System.Drawing.Size(941, 433);
             this.panel15.TabIndex = 7;
             // 
             // groupBox20
@@ -786,95 +824,85 @@ namespace BKI_DichVuMatDat
             this.label31.TabIndex = 0;
             this.label31.Text = "Lớn nhất bằng\r\n";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.tab_Control1);
+            this.panel3.Controls.Add(this.materialTabSelector1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(961, 531);
+            this.panel3.TabIndex = 5;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.m_btn_luu);
-            this.panel2.Controls.Add(this.m_btn_them);
-            this.panel2.Controls.Add(this.m_btn_sua);
-            this.panel2.Controls.Add(this.m_btn_xoa);
+            this.panel2.Controls.Add(this.m_cmd_luu);
+            this.panel2.Controls.Add(this.m_cmd_them);
+            this.panel2.Controls.Add(this.m_cmd_sua);
+            this.panel2.Controls.Add(this.m_cmd_xoa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 578);
+            this.panel2.Location = new System.Drawing.Point(0, 584);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(961, 53);
+            this.panel2.Size = new System.Drawing.Size(961, 47);
             this.panel2.TabIndex = 4;
             // 
-            // m_btn_luu
+            // m_cmd_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_luu.Appearance.Options.UseBackColor = true;
-            this.m_btn_luu.Appearance.Options.UseFont = true;
-            this.m_btn_luu.Appearance.Options.UseForeColor = true;
-            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(416, 0);
-            this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 34;
-            this.m_btn_luu.Text = "LƯU";
-            this.m_btn_luu.Visible = false;
-            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            this.m_cmd_luu.Depth = 0;
+            this.m_cmd_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_luu.Location = new System.Drawing.Point(441, 0);
+            this.m_cmd_luu.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_luu.Name = "m_cmd_luu";
+            this.m_cmd_luu.Primary = true;
+            this.m_cmd_luu.Size = new System.Drawing.Size(130, 47);
+            this.m_cmd_luu.TabIndex = 37;
+            this.m_cmd_luu.Text = "Lưu";
+            this.m_cmd_luu.UseVisualStyleBackColor = true;
+            this.m_cmd_luu.Click += new System.EventHandler(this.m_cmd_luu_Click);
             // 
-            // m_btn_them
+            // m_cmd_them
             // 
-            this.m_btn_them.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_btn_them.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_them.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_them.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_them.Appearance.Options.UseBackColor = true;
-            this.m_btn_them.Appearance.Options.UseFont = true;
-            this.m_btn_them.Appearance.Options.UseForeColor = true;
-            this.m_btn_them.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_them.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_them.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_them.Location = new System.Drawing.Point(559, 0);
-            this.m_btn_them.Name = "m_btn_them";
-            this.m_btn_them.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_them.TabIndex = 33;
-            this.m_btn_them.Text = "THÊM";
-            this.m_btn_them.Click += new System.EventHandler(this.m_btn_them_Click);
+            this.m_cmd_them.Depth = 0;
+            this.m_cmd_them.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_them.Location = new System.Drawing.Point(571, 0);
+            this.m_cmd_them.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_them.Name = "m_cmd_them";
+            this.m_cmd_them.Primary = true;
+            this.m_cmd_them.Size = new System.Drawing.Size(130, 47);
+            this.m_cmd_them.TabIndex = 36;
+            this.m_cmd_them.Text = "Thêm";
+            this.m_cmd_them.UseVisualStyleBackColor = true;
+            this.m_cmd_them.Click += new System.EventHandler(this.m_cmd_them_Click);
             // 
-            // m_btn_sua
+            // m_cmd_sua
             // 
-            this.m_btn_sua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_sua.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_sua.Appearance.Options.UseBackColor = true;
-            this.m_btn_sua.Appearance.Options.UseFont = true;
-            this.m_btn_sua.Appearance.Options.UseForeColor = true;
-            this.m_btn_sua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_sua.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_sua.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_sua.Location = new System.Drawing.Point(702, 0);
-            this.m_btn_sua.Name = "m_btn_sua";
-            this.m_btn_sua.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_sua.TabIndex = 31;
-            this.m_btn_sua.Text = "SỬA";
-            this.m_btn_sua.Click += new System.EventHandler(this.m_btn_sua_Click);
+            this.m_cmd_sua.Depth = 0;
+            this.m_cmd_sua.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_sua.Location = new System.Drawing.Point(701, 0);
+            this.m_cmd_sua.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_sua.Name = "m_cmd_sua";
+            this.m_cmd_sua.Primary = true;
+            this.m_cmd_sua.Size = new System.Drawing.Size(130, 47);
+            this.m_cmd_sua.TabIndex = 35;
+            this.m_cmd_sua.Text = "Sửa";
+            this.m_cmd_sua.UseVisualStyleBackColor = true;
+            this.m_cmd_sua.Click += new System.EventHandler(this.m_cmd_sua_Click);
             // 
-            // m_btn_xoa
+            // m_cmd_xoa
             // 
-            this.m_btn_xoa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_xoa.Appearance.Options.UseBackColor = true;
-            this.m_btn_xoa.Appearance.Options.UseFont = true;
-            this.m_btn_xoa.Appearance.Options.UseForeColor = true;
-            this.m_btn_xoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_xoa.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_xoa.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa.Location = new System.Drawing.Point(845, 0);
-            this.m_btn_xoa.Name = "m_btn_xoa";
-            this.m_btn_xoa.Size = new System.Drawing.Size(116, 53);
-            this.m_btn_xoa.TabIndex = 32;
-            this.m_btn_xoa.Text = "XÓA";
-            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
+            this.m_cmd_xoa.Depth = 0;
+            this.m_cmd_xoa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_xoa.Location = new System.Drawing.Point(831, 0);
+            this.m_cmd_xoa.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_xoa.Name = "m_cmd_xoa";
+            this.m_cmd_xoa.Primary = true;
+            this.m_cmd_xoa.Size = new System.Drawing.Size(130, 47);
+            this.m_cmd_xoa.TabIndex = 4;
+            this.m_cmd_xoa.Text = "Xóa";
+            this.m_cmd_xoa.UseVisualStyleBackColor = true;
+            this.m_cmd_xoa.Click += new System.EventHandler(this.m_cmd_xoa_Click);
             // 
             // THAM_SO_CHAM_CONG_THOI_GIAN
             // 
@@ -884,13 +912,11 @@ namespace BKI_DichVuMatDat
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Text = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Load += new System.EventHandler(this.THAM_SO_CHAM_CONG_THOI_GIAN_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.tab_Control1.ResumeLayout(false);
             this.tab_loaingaycong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).EndInit();
@@ -922,6 +948,7 @@ namespace BKI_DichVuMatDat
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -933,10 +960,7 @@ namespace BKI_DichVuMatDat
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private Panel panel2;
-        private DevExpress.XtraEditors.SimpleButton m_btn_them;
-        private DevExpress.XtraEditors.SimpleButton m_btn_sua;
-        private DevExpress.XtraEditors.SimpleButton m_btn_xoa;
-        private TabControl tab_Control1;
+        private MaterialSkin.Controls.MaterialTabControl tab_Control1;
         private TabPage tab_loaingaycong;
         private DevExpress.XtraGrid.GridControl m_grc_ngay_cong;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ngay_cong;
@@ -996,6 +1020,10 @@ namespace BKI_DichVuMatDat
         private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
         private TabPage tab_phucap;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn20;
-        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_luu;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_them;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_sua;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_xoa;
     }
 }

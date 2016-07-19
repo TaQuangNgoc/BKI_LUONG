@@ -2,6 +2,7 @@
 using BKI_DichVuMatDat.US;
 using DevExpress.XtraEditors;
 using IP.Core.IPCommon;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,17 +15,22 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class THAM_SO_CHAM_CONG_THOI_GIAN : Form
+    public partial class THAM_SO_CHAM_CONG_THOI_GIAN : MaterialSkin.Controls.MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
+
         public THAM_SO_CHAM_CONG_THOI_GIAN()
         {
             InitializeComponent();
             tab_Control1.SizeMode = TabSizeMode.Fixed;
             tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
+
             
 
-
-           // tabControl1.Appearance = TabAppearance.FlatButtons;
         }
         private void THAM_SO_CHAM_CONG_THOI_GIAN_Load(object sender, EventArgs e)
         {
@@ -36,6 +42,9 @@ namespace BKI_DichVuMatDat
 
                 load_du_lieu_vao_bang_bao_hiem();
                 load_du_lieu_vao_bang_thue();
+
+                m_grv_ngay_cong.ColumnPanelRowHeight = 40;
+                m_grv_ngay_cong.RowHeight = 35;
             }
             catch (Exception)
             {
@@ -125,7 +134,7 @@ namespace BKI_DichVuMatDat
         }
 
 
-        private void m_btn_them_Click(object sender, EventArgs e)
+        private void m_cmd_them_Click(object sender, EventArgs e)
         {
             try
             {
@@ -169,7 +178,7 @@ namespace BKI_DichVuMatDat
             }
         }
 
-        private void m_btn_xoa_Click(object sender, EventArgs e)
+        private void m_cmd_xoa_Click(object sender, EventArgs e)
         {
             try
             {
@@ -301,7 +310,7 @@ namespace BKI_DichVuMatDat
             
         }
 
-        private void m_btn_sua_Click(object sender, EventArgs e)
+        private void m_cmd_sua_Click(object sender, EventArgs e)
         {
             try
             {
@@ -448,17 +457,17 @@ namespace BKI_DichVuMatDat
             if (tab_Control1.SelectedTab.Name == "tab_doanphi")
             {
                 load_data_to_tab_doan_phi();
-                m_btn_luu.Visible = true;
-                m_btn_sua.Visible = false;
-                m_btn_them.Visible = false;
-                m_btn_xoa.Visible = false;
+                m_cmd_luu.Visible = true;
+                m_cmd_sua.Visible = false;
+                m_cmd_them.Visible = false;
+                m_cmd_xoa.Visible = false;
             }
             else
             {
-                m_btn_luu.Visible = false;
-                m_btn_sua.Visible = true;
-                m_btn_them.Visible = true;
-                m_btn_xoa.Visible = true;
+                m_cmd_luu.Visible = false;
+                m_cmd_sua.Visible = true;
+                m_cmd_them.Visible = true;
+                m_cmd_xoa.Visible = true;
             }
         }
 
@@ -518,7 +527,7 @@ namespace BKI_DichVuMatDat
            // .DataSource = v_ds.Tables[0];
         }
 
-        private void m_btn_luu_Click(object sender, EventArgs e)
+        private void m_cmd_luu_Click(object sender, EventArgs e)
         {
             decimal ti_le,cua_tien,ti_le_max,cua_tien_max,so_tien;
             if (m_rd_ti_le_doan_phi.Checked == true)
