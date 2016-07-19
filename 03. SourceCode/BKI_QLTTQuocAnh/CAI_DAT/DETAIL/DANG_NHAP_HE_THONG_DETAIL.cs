@@ -33,7 +33,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                 if (m_txt_username.Text.Trim() == "")
                 {
 
-                    setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
+                   WinFormControls.setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
                     return;
 
                     XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
@@ -42,13 +42,13 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
                 if (m_txt_password.Text=="")
                 {
-                    setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
+                    WinFormControls.setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
                     return;
                 }
 
                 if (m_txt_password.Text != m_txt_password_confirm.Text)
                 {
-                    setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
+                    WinFormControls.setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
                     return;
                 }
                 
@@ -94,13 +94,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
         }
 
-        private void setTooltip(ToolTip ip_tooltip, Control ip_control, ToolTipIcon toolTipIcon, string ip_txt_tieu_de, string ip_txt_noi_dung)
-        {
-            ip_tooltip.SetToolTip(ip_control, ip_txt_tieu_de);
-            ip_tooltip.ToolTipIcon = toolTipIcon;
-            ip_tooltip.ToolTipTitle = ip_txt_tieu_de;
-            ip_tooltip.Show(ip_txt_noi_dung, ip_control);
-        }
+       
 
         private void changeColor(Color color, DevExpress.XtraEditors.TextEdit textbox)
         {
@@ -145,7 +139,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             
             if (m_txt_username.Text == "")
             {
-                setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
+                WinFormControls.setTooltip(m_tooltip_username, m_txt_username, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Tên đăng nhập\"");
             }
             else
             {
@@ -157,7 +151,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             if (m_txt_password.Text == "")
             {
-                setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
+                WinFormControls.setTooltip(m_tooltip_password, m_txt_password, ToolTipIcon.Error, "Thông báo", "Bạn phải nhập \"Mật khẩu\"");
             }
             else
             {
@@ -169,7 +163,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             if (m_txt_password.Text != m_txt_password_confirm.Text)
             {
-                setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
+                WinFormControls.setTooltip(m_tooltip_password_confirm, m_txt_password_confirm, ToolTipIcon.Error, "Thông báo", "Xác nhận mật khẩu chưa đúng!");
             }
             else
             {

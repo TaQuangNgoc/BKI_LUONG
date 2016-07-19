@@ -99,6 +99,14 @@ namespace BKI_DichVuMatDat
             }
         }
 
+        public static void setTooltip(ToolTip ip_tooltip, Control ip_control, ToolTipIcon toolTipIcon, string ip_txt_tieu_de, string ip_txt_noi_dung)
+        {
+            ip_tooltip.SetToolTip(ip_control, ip_txt_tieu_de);
+            ip_tooltip.ToolTipIcon = toolTipIcon;
+            ip_tooltip.ToolTipTitle = ip_txt_tieu_de;
+            ip_tooltip.Show(ip_txt_noi_dung, ip_control);
+        }
+
         public static void load_data_to_combobox(string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition, eTAT_CA ip_e_tat_ca, System.Windows.Forms.ComboBox ip_cbo)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();

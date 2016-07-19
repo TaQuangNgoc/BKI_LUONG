@@ -62,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 353);
+            this.panel1.Size = new System.Drawing.Size(367, 353);
             this.panel1.TabIndex = 0;
             // 
             // m_txt_password_confirm
@@ -133,7 +133,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 298);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(356, 53);
+            this.panel2.Size = new System.Drawing.Size(365, 53);
             this.panel2.TabIndex = 86;
             // 
             // m_btn_dangnhap
@@ -148,7 +148,7 @@
             this.m_btn_dangnhap.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_dangnhap.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_dangnhap.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_dangnhap.Location = new System.Drawing.Point(123, 0);
+            this.m_btn_dangnhap.Location = new System.Drawing.Point(132, 0);
             this.m_btn_dangnhap.Name = "m_btn_dangnhap";
             this.m_btn_dangnhap.Size = new System.Drawing.Size(117, 53);
             this.m_btn_dangnhap.TabIndex = 15;
@@ -167,7 +167,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(240, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(249, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
             this.m_btn_thoat.TabIndex = 29;
@@ -181,7 +181,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(356, 53);
+            this.panel3.Size = new System.Drawing.Size(365, 53);
             this.panel3.TabIndex = 85;
             // 
             // label2
@@ -201,7 +201,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(358, 353);
+            this.ClientSize = new System.Drawing.Size(367, 353);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DANG_NHAP_HE_THONG_DETAIL";
