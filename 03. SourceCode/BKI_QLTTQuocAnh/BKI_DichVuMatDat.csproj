@@ -472,6 +472,12 @@
     <Compile Include="CAI_DAT\DETAIL\THUE_DETAIL.Designer.cs">
       <DependentUpon>THUE_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="CONFIRM\confirm_cac_loai_tien_khac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIRM\confirm_cac_loai_tien_khac.Designer.cs">
+      <DependentUpon>confirm_cac_loai_tien_khac.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM_CHO\FORM_CHO_BAO_CAO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -731,6 +737,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\THUE_DETAIL.resx">
       <DependentUpon>THUE_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONFIRM\confirm_cac_loai_tien_khac.resx">
+      <DependentUpon>confirm_cac_loai_tien_khac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_CHO\FORM_CHO_BAO_CAO.resx">
       <DependentUpon>FORM_CHO_BAO_CAO.cs</DependentUpon>

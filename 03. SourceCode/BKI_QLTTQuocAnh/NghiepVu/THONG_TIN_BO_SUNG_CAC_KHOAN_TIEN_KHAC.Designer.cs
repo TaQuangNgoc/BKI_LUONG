@@ -28,98 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.m_cb_dong_bao_hiem = new System.Windows.Forms.CheckBox();
-            this.m_cb_giam_tru_thue = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cb_dong_bao_hiem = new DevExpress.XtraEditors.CheckEdit();
+            this.m_cb_giam_tru_thue = new DevExpress.XtraEditors.CheckEdit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_cb_dong_bao_hiem.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_cb_giam_tru_thue.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // m_btn_luu
-            // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_luu.Appearance.Options.UseBackColor = true;
-            this.m_btn_luu.Appearance.Options.UseFont = true;
-            this.m_btn_luu.Appearance.Options.UseForeColor = true;
-            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(403, 0);
-            this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 15;
-            this.m_btn_luu.Text = "TIẾP TỤC";
-            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
-            this.panel2.Controls.Add(this.m_btn_luu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 159);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(546, 53);
-            this.panel2.TabIndex = 37;
-            // 
-            // m_cb_dong_bao_hiem
-            // 
-            this.m_cb_dong_bao_hiem.AutoSize = true;
-            this.m_cb_dong_bao_hiem.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cb_dong_bao_hiem.Location = new System.Drawing.Point(41, 67);
-            this.m_cb_dong_bao_hiem.Name = "m_cb_dong_bao_hiem";
-            this.m_cb_dong_bao_hiem.Size = new System.Drawing.Size(200, 22);
-            this.m_cb_dong_bao_hiem.TabIndex = 38;
-            this.m_cb_dong_bao_hiem.Text = "Phải đóng bảo hiểm xã hội";
-            this.m_cb_dong_bao_hiem.UseVisualStyleBackColor = true;
-            // 
-            // m_cb_giam_tru_thue
-            // 
-            this.m_cb_giam_tru_thue.AutoSize = true;
-            this.m_cb_giam_tru_thue.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cb_giam_tru_thue.Location = new System.Drawing.Point(41, 108);
-            this.m_cb_giam_tru_thue.Name = "m_cb_giam_tru_thue";
-            this.m_cb_giam_tru_thue.Size = new System.Drawing.Size(155, 22);
-            this.m_cb_giam_tru_thue.TabIndex = 39;
-            this.m_cb_giam_tru_thue.Text = "Được giảm trừ thuế";
-            this.m_cb_giam_tru_thue.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 32);
+            this.label1.Location = new System.Drawing.Point(23, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 18);
             this.label1.TabIndex = 40;
             this.label1.Text = "Các khoản tiền này";
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.m_btn_luu);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl1.Location = new System.Drawing.Point(0, 195);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(498, 39);
+            this.panelControl1.TabIndex = 41;
+            // 
+            // m_btn_luu
+            // 
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.Options.UseFont = true;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.Location = new System.Drawing.Point(395, 2);
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Size = new System.Drawing.Size(101, 35);
+            this.m_btn_luu.TabIndex = 0;
+            this.m_btn_luu.Text = "Xác nhận";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            // 
+            // m_cb_dong_bao_hiem
+            // 
+            this.m_cb_dong_bao_hiem.Location = new System.Drawing.Point(40, 97);
+            this.m_cb_dong_bao_hiem.Name = "m_cb_dong_bao_hiem";
+            this.m_cb_dong_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_dong_bao_hiem.Properties.Appearance.Options.UseFont = true;
+            this.m_cb_dong_bao_hiem.Properties.Caption = "Phải đóng bảo hiểm xã hội";
+            this.m_cb_dong_bao_hiem.Size = new System.Drawing.Size(206, 22);
+            this.m_cb_dong_bao_hiem.TabIndex = 42;
+            // 
+            // m_cb_giam_tru_thue
+            // 
+            this.m_cb_giam_tru_thue.Location = new System.Drawing.Point(40, 142);
+            this.m_cb_giam_tru_thue.Name = "m_cb_giam_tru_thue";
+            this.m_cb_giam_tru_thue.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_giam_tru_thue.Properties.Appearance.Options.UseFont = true;
+            this.m_cb_giam_tru_thue.Properties.Caption = "Được giảm trừ thuế";
+            this.m_cb_giam_tru_thue.Size = new System.Drawing.Size(206, 22);
+            this.m_cb_giam_tru_thue.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.m_cb_giam_tru_thue);
+            this.panel1.Controls.Add(this.panelControl1);
+            this.panel1.Controls.Add(this.m_cb_dong_bao_hiem);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(500, 236);
+            this.panel1.TabIndex = 43;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(498, 38);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Lựa chọn các options( nếu phù hợp)";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 212);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.m_cb_giam_tru_thue);
-            this.Controls.Add(this.m_cb_dong_bao_hiem);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(500, 236);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC";
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_cb_dong_bao_hiem.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_cb_giam_tru_thue.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox m_cb_dong_bao_hiem;
-        private System.Windows.Forms.CheckBox m_cb_giam_tru_thue;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
+        private DevExpress.XtraEditors.CheckEdit m_cb_dong_bao_hiem;
+        private DevExpress.XtraEditors.CheckEdit m_cb_giam_tru_thue;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
     }
 }

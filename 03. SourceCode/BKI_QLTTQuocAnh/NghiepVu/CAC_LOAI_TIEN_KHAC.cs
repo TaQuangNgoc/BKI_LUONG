@@ -20,6 +20,7 @@ namespace BKI_DichVuMatDat.NghiepVu
     {
         bool phai_dong_bao_hiem = false;
         bool giam_tru_thue = false;
+        ENUM_CONFIRM_XOA_DU_LIEU_CU v_enum_xoa_du_lieu_cu = new ENUM_CONFIRM_XOA_DU_LIEU_CU();
         #region Public Interface
         public CAC_LOAI_TIEN_KHAC()
         {
@@ -78,9 +79,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                 v_ds.Tables[0].Columns.Add("TEN");
                 v_ds.Tables[0].Columns.Add("THANG");
                 v_ds.Tables[0].Columns.Add("NAM");
-                v_ds.Tables[0].Columns.Add("SO_TIEN");
-                //v_us.get_bang_cham_cong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString());
-                
+                v_ds.Tables[0].Columns.Add("SO_TIEN");           
                 m_grc.DataSource = v_ds.Tables[0];
                 format_gridview();
                 SaveXLSX(ip_file_name, targetPath);
@@ -277,7 +276,11 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Luu du lieu vao db
 
         private void m_bgwk_DoWork(object sender, DoWorkEventArgs e)
-        { 
+        {
+            if (v_enum_xoa_du_lieu_cu == ENUM_CONFIRM_XOA_DU_LIEU_CU.XOA_CU)
+            {
+                xoa_du_lieu_cu_loai_tien_khac();
+            }
             BackgroundWorker worker = sender as BackgroundWorker;
            
             for (int i = 0; i < m_grv.RowCount; i++)
@@ -286,6 +289,14 @@ namespace BKI_DichVuMatDat.NghiepVu
                  worker.ReportProgress((i + 1) * 100 / m_grv.RowCount);
             }
           
+        }
+
+        private void xoa_du_lieu_cu_loai_tien_khac()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds,"DELETE FROM GD_CAC_LOAI_TIEN_KHAC WHERE ID_LOAI_TIEN_KHAC="+ m_sle_loai_tien.EditValue.ToString()+ " AND THANG="+laythang()+ " AND NAM="+ laynam() );
         }
 
         private void m_bgwk_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -298,7 +309,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             this.m_prb.Visible = false;
             this.m_pn.Visible = false;
             this.m_cmd_nhap_cham_cong.Text = "Lưu chấm công";
-            //this.m_cmd_nhap_cham_cong.Enabled = false;
             XtraMessageBox.Show("Lưu thành công!","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
             //m_grc.DataSource = null; 
             
@@ -306,9 +316,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void luuChamCong(DataRow ip_dataRow)
         {
-           // xoa_du_lieu_cham_cong_cu(get_nhan_vien_by_ma_nv(ip_dataRow[0].ToString()));
-            insert_gd_so_tien_khac(ip_dataRow);
-          
+            insert_gd_so_tien_khac(ip_dataRow);        
         }
 
         private void insert_gd_so_tien_khac(DataRow v_dr)
@@ -367,6 +375,16 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         }
 
+     public decimal laythang()
+     {
+         return decimal.Parse(m_dat_chon_thang.DateTime.Month.ToString());
+     }
+
+     public decimal laynam()
+     {
+         return decimal.Parse(m_dat_chon_thang.DateTime.Year.ToString());
+     }
+
         private void m_cmd_nhap_cham_cong_Click(object sender, EventArgs e)
         {
             try
@@ -392,10 +410,12 @@ namespace BKI_DichVuMatDat.NghiepVu
                 else if (m_bgwk.IsBusy)
                     m_bgwk.CancelAsync();
                 else if (check_cham_cong_hop_le())
-                {
-                   
+                {                 
                     THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC v_f = new THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC();
                     v_f.displayForBoSungThongTin(ref phai_dong_bao_hiem, giam_tru_thue);
+                    
+                    BKI_DichVuMatDat.CONFIRM.confirm_cac_loai_tien_khac v_k = new CONFIRM.confirm_cac_loai_tien_khac();
+                    v_enum_xoa_du_lieu_cu = v_k.Display();
                     this.m_pn.Visible = true;
                     this.m_prb.Visible = true;
                     this.m_cmd_nhap_cham_cong.Text = "Đang lưu chấm công ...";
@@ -407,6 +427,13 @@ namespace BKI_DichVuMatDat.NghiepVu
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        public enum ENUM_CONFIRM_XOA_DU_LIEU_CU
+        {
+            XOA_CU = 1,
+            KHONG_XOA_CU = 2
+            
         }
 
         private bool check_bang_luong_da_chot(decimal thang, decimal nam)
@@ -480,7 +507,6 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
             
         }
-
-     
+  
     }
 }

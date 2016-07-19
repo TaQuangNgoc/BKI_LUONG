@@ -38,6 +38,7 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_lbl = new DevExpress.XtraEditors.LabelControl();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -57,7 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2.SuspendLayout();
             this.m_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
@@ -179,6 +179,14 @@
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 3;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "NGÀY NHẬP";
+            this.gridColumn6.FieldName = "NGAY_NHAP";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 4;
             // 
             // m_lbl
             // 
@@ -379,6 +387,7 @@
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
             this.m_cmd_nhap_cham_cong.Text = "LƯU \r\n";
+           
             // 
             // label2
             // 
@@ -400,14 +409,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 53);
             this.panel1.TabIndex = 16;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "NGÀY NHẬP";
-            this.gridColumn6.FieldName = "NGAY_NHAP";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
             // 
             // CAC_LOAI_TIEN_KHAC
             // 
@@ -471,8 +472,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }
 }
