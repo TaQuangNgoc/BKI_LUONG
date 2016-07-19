@@ -41,7 +41,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -100,7 +100,7 @@
             this.m_txt_lcd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd.Size = new System.Drawing.Size(131, 26);
-            this.m_txt_lcd.TabIndex = 76;
+            this.m_txt_lcd.TabIndex = 3;
             this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_bao_hiem
@@ -111,7 +111,7 @@
             this.m_txt_ten_bao_hiem.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ten_bao_hiem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ten_bao_hiem.Size = new System.Drawing.Size(266, 26);
-            this.m_txt_ten_bao_hiem.TabIndex = 75;
+            this.m_txt_ten_bao_hiem.TabIndex = 2;
             // 
             // m_txt_ma_bao_hiem
             // 
@@ -121,7 +121,7 @@
             this.m_txt_ma_bao_hiem.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ma_bao_hiem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ma_bao_hiem.Size = new System.Drawing.Size(266, 26);
-            this.m_txt_ma_bao_hiem.TabIndex = 74;
+            this.m_txt_ma_bao_hiem.TabIndex = 1;
             // 
             // label15
             // 
@@ -167,7 +167,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.m_btn_luu);
-            this.panel3.Controls.Add(this.m_btn_xoa_luong);
+            this.panel3.Controls.Add(this.m_btn_thoat);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 275);
             this.panel3.Name = "panel3";
@@ -189,29 +189,29 @@
             this.m_btn_luu.Location = new System.Drawing.Point(94, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 15;
+            this.m_btn_luu.TabIndex = 4;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
-            // m_btn_xoa_luong
+            // m_btn_thoat
             // 
-            this.m_btn_xoa_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa_luong.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_xoa_luong.Appearance.Options.UseBackColor = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseFont = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseForeColor = true;
-            this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_xoa_luong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_luong.Location = new System.Drawing.Point(237, 0);
-            this.m_btn_xoa_luong.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
-            this.m_btn_xoa_luong.Size = new System.Drawing.Size(78, 53);
-            this.m_btn_xoa_luong.TabIndex = 29;
-            this.m_btn_xoa_luong.Text = "THOÁT";
-            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(237, 0);
+            this.m_btn_thoat.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(78, 53);
+            this.m_btn_thoat.TabIndex = 5;
+            this.m_btn_thoat.Text = "THOÁT";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // BAO_HIEM_DETAIL
             // 
@@ -251,7 +251,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
-        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
 
     }

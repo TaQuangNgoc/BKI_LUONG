@@ -46,7 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_txt_bu_tru.Properties)).BeginInit();
@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(449, 361);
+            this.panel1.Size = new System.Drawing.Size(449, 366);
             this.panel1.TabIndex = 0;
             // 
             // groupBox12
@@ -87,7 +87,7 @@
             this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox12.Location = new System.Drawing.Point(0, 53);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(447, 257);
+            this.groupBox12.Size = new System.Drawing.Size(447, 262);
             this.groupBox12.TabIndex = 73;
             this.groupBox12.TabStop = false;
             // 
@@ -100,7 +100,7 @@
             this.m_txt_bu_tru.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_bu_tru.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_bu_tru.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_bu_tru.TabIndex = 23;
+            this.m_txt_bu_tru.TabIndex = 4;
             this.m_txt_bu_tru.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ti_le
@@ -112,7 +112,7 @@
             this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ti_le.TabIndex = 22;
+            this.m_txt_ti_le.TabIndex = 3;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_chantren
@@ -124,7 +124,7 @@
             this.m_txt_chantren.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_chantren.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_chantren.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_chantren.TabIndex = 21;
+            this.m_txt_chantren.TabIndex = 2;
             this.m_txt_chantren.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_chanduoi
@@ -136,7 +136,7 @@
             this.m_txt_chanduoi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_chanduoi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_chanduoi.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_chanduoi.TabIndex = 20;
+            this.m_txt_chanduoi.TabIndex = 1;
             this.m_txt_chanduoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label28
@@ -245,9 +245,9 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.m_btn_luu);
-            this.panel3.Controls.Add(this.m_btn_xoa_luong);
+            this.panel3.Controls.Add(this.m_btn_thoat);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 310);
+            this.panel3.Location = new System.Drawing.Point(0, 315);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(447, 49);
             this.panel3.TabIndex = 72;
@@ -267,34 +267,34 @@
             this.m_btn_luu.Location = new System.Drawing.Point(186, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 47);
-            this.m_btn_luu.TabIndex = 15;
+            this.m_btn_luu.TabIndex = 5;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
-            // m_btn_xoa_luong
+            // m_btn_thoat
             // 
-            this.m_btn_xoa_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa_luong.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_xoa_luong.Appearance.Options.UseBackColor = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseFont = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseForeColor = true;
-            this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_xoa_luong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_luong.Location = new System.Drawing.Point(329, 0);
-            this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
-            this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 47);
-            this.m_btn_xoa_luong.TabIndex = 29;
-            this.m_btn_xoa_luong.Text = "THOÁT";
-            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(329, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 47);
+            this.m_btn_thoat.TabIndex = 6;
+            this.m_btn_thoat.Text = "THOÁT";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // THUE_DETAIL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 361);
+            this.ClientSize = new System.Drawing.Size(449, 366);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "THUE_DETAIL";
@@ -334,7 +334,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
-        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
 
     }
 }

@@ -46,9 +46,9 @@
             this.m_txt_ten_phucap = new DevExpress.XtraEditors.TextEdit();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.m_txt_doi_tuong_huong = new DevExpress.XtraEditors.TextEdit();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -114,7 +114,7 @@
             this.groupBox5.Location = new System.Drawing.Point(61, 168);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(395, 143);
-            this.groupBox5.TabIndex = 66;
+            this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             // 
             // m_txt_ti_le
@@ -126,7 +126,7 @@
             this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le.Size = new System.Drawing.Size(140, 26);
-            this.m_txt_ti_le.TabIndex = 23;
+            this.m_txt_ti_le.TabIndex = 5;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_so_tien
@@ -138,7 +138,7 @@
             this.m_txt_so_tien.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_so_tien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_so_tien.Size = new System.Drawing.Size(140, 26);
-            this.m_txt_so_tien.TabIndex = 22;
+            this.m_txt_so_tien.TabIndex = 8;
             this.m_txt_so_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_so_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
@@ -148,7 +148,7 @@
             this.m_rd_ti_le.Location = new System.Drawing.Point(6, 16);
             this.m_rd_ti_le.Name = "m_rd_ti_le";
             this.m_rd_ti_le.Size = new System.Drawing.Size(53, 22);
-            this.m_rd_ti_le.TabIndex = 5;
+            this.m_rd_ti_le.TabIndex = 4;
             this.m_rd_ti_le.TabStop = true;
             this.m_rd_ti_le.Text = "Tỉ lệ";
             this.m_rd_ti_le.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@
             this.m_rd_so_tien.Location = new System.Drawing.Point(6, 104);
             this.m_rd_so_tien.Name = "m_rd_so_tien";
             this.m_rd_so_tien.Size = new System.Drawing.Size(70, 22);
-            this.m_rd_so_tien.TabIndex = 5;
+            this.m_rd_so_tien.TabIndex = 7;
             this.m_rd_so_tien.TabStop = true;
             this.m_rd_so_tien.Text = "Số tiền";
             this.m_rd_so_tien.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             this.m_checkb_duocgiamtruthue.Location = new System.Drawing.Point(61, 405);
             this.m_checkb_duocgiamtruthue.Name = "m_checkb_duocgiamtruthue";
             this.m_checkb_duocgiamtruthue.Size = new System.Drawing.Size(155, 22);
-            this.m_checkb_duocgiamtruthue.TabIndex = 63;
+            this.m_checkb_duocgiamtruthue.TabIndex = 11;
             this.m_checkb_duocgiamtruthue.Text = "Được giảm trừ thuế";
             this.m_checkb_duocgiamtruthue.UseVisualStyleBackColor = true;
             // 
@@ -219,7 +219,7 @@
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Location = new System.Drawing.Point(61, 366);
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Name = "m_checkb_tinhvaokhoanphaidong_bhxh";
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Size = new System.Drawing.Size(240, 22);
-            this.m_checkb_tinhvaokhoanphaidong_bhxh.TabIndex = 64;
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.TabIndex = 10;
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Text = "Tính vào khoản phải đóng BHXH";
             this.m_checkb_tinhvaokhoanphaidong_bhxh.UseVisualStyleBackColor = true;
             // 
@@ -230,7 +230,7 @@
             this.m_checkb_phuthuoc_songaydilam.Location = new System.Drawing.Point(61, 327);
             this.m_checkb_phuthuoc_songaydilam.Name = "m_checkb_phuthuoc_songaydilam";
             this.m_checkb_phuthuoc_songaydilam.Size = new System.Drawing.Size(193, 22);
-            this.m_checkb_phuthuoc_songaydilam.TabIndex = 65;
+            this.m_checkb_phuthuoc_songaydilam.TabIndex = 9;
             this.m_checkb_phuthuoc_songaydilam.Text = "Phụ thuộc số ngày đi làm";
             this.m_checkb_phuthuoc_songaydilam.UseVisualStyleBackColor = true;
             // 
@@ -242,7 +242,7 @@
             this.m_txt_ten_phucap.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ten_phucap.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ten_phucap.Size = new System.Drawing.Size(275, 26);
-            this.m_txt_ten_phucap.TabIndex = 68;
+            this.m_txt_ten_phucap.TabIndex = 1;
             // 
             // panel2
             // 
@@ -265,6 +265,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT PHỤ CẤP";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.m_btn_luu);
+            this.panel3.Controls.Add(this.m_btn_thoat);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 461);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(522, 53);
+            this.panel3.TabIndex = 60;
+            // 
             // m_btn_luu
             // 
             this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
@@ -280,39 +291,28 @@
             this.m_btn_luu.Location = new System.Drawing.Point(263, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 15;
+            this.m_btn_luu.TabIndex = 12;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
-            // panel3
+            // m_btn_thoat
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.m_btn_luu);
-            this.panel3.Controls.Add(this.m_btn_xoa_luong);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 461);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(522, 53);
-            this.panel3.TabIndex = 60;
-            // 
-            // m_btn_xoa_luong
-            // 
-            this.m_btn_xoa_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa_luong.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_xoa_luong.Appearance.Options.UseBackColor = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseFont = true;
-            this.m_btn_xoa_luong.Appearance.Options.UseForeColor = true;
-            this.m_btn_xoa_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_xoa_luong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_xoa_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_luong.Location = new System.Drawing.Point(406, 0);
-            this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
-            this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
-            this.m_btn_xoa_luong.TabIndex = 29;
-            this.m_btn_xoa_luong.Text = "THOÁT";
-            this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(406, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
+            this.m_btn_thoat.TabIndex = 13;
+            this.m_btn_thoat.Text = "THOÁT";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // m_txt_doi_tuong_huong
             // 
@@ -322,7 +322,7 @@
             this.m_txt_doi_tuong_huong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_doi_tuong_huong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_doi_tuong_huong.Size = new System.Drawing.Size(275, 26);
-            this.m_txt_doi_tuong_huong.TabIndex = 67;
+            this.m_txt_doi_tuong_huong.TabIndex = 2;
             // 
             // PHU_CAP_DETAIL
             // 
@@ -371,7 +371,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
-        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
         private DevExpress.XtraEditors.TextEdit m_txt_doi_tuong_huong;
 
     }

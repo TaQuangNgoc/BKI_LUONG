@@ -73,7 +73,7 @@
             this.m_txt_password_confirm.Properties.Appearance.Options.UseFont = true;
             this.m_txt_password_confirm.Properties.PasswordChar = '*';
             this.m_txt_password_confirm.Size = new System.Drawing.Size(296, 24);
-            this.m_txt_password_confirm.TabIndex = 95;
+            this.m_txt_password_confirm.TabIndex = 3;
             this.m_txt_password_confirm.Leave += new System.EventHandler(this.m_txt_password_confirm_Leave);
             // 
             // m_txt_password
@@ -84,7 +84,7 @@
             this.m_txt_password.Properties.Appearance.Options.UseFont = true;
             this.m_txt_password.Properties.PasswordChar = '*';
             this.m_txt_password.Size = new System.Drawing.Size(296, 24);
-            this.m_txt_password.TabIndex = 94;
+            this.m_txt_password.TabIndex = 2;
             this.m_txt_password.Leave += new System.EventHandler(this.m_txt_password_Leave);
             // 
             // m_txt_username
@@ -94,7 +94,7 @@
             this.m_txt_username.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.m_txt_username.Properties.Appearance.Options.UseFont = true;
             this.m_txt_username.Size = new System.Drawing.Size(296, 24);
-            this.m_txt_username.TabIndex = 93;
+            this.m_txt_username.TabIndex = 1;
             this.m_txt_username.Leave += new System.EventHandler(this.m_txt_username_Leave);
             // 
             // label1
@@ -153,7 +153,7 @@
             this.m_btn_dangnhap.Location = new System.Drawing.Point(132, 0);
             this.m_btn_dangnhap.Name = "m_btn_dangnhap";
             this.m_btn_dangnhap.Size = new System.Drawing.Size(117, 53);
-            this.m_btn_dangnhap.TabIndex = 15;
+            this.m_btn_dangnhap.TabIndex = 4;
             this.m_btn_dangnhap.Text = "LƯU";
             this.m_btn_dangnhap.Click += new System.EventHandler(this.m_btn_dangnhap_Click);
             // 
@@ -172,7 +172,7 @@
             this.m_btn_thoat.Location = new System.Drawing.Point(249, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
-            this.m_btn_thoat.TabIndex = 29;
+            this.m_btn_thoat.TabIndex = 5;
             this.m_btn_thoat.Text = "THOÁT";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 

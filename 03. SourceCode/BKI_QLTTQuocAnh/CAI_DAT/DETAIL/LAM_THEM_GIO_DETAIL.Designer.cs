@@ -77,7 +77,7 @@
             this.m_txt_lns.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns.Size = new System.Drawing.Size(180, 26);
-            this.m_txt_lns.TabIndex = 46;
+            this.m_txt_lns.TabIndex = 3;
             this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label11
@@ -98,7 +98,7 @@
             this.m_txt_ten_loai_lamthem.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ten_loai_lamthem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ten_loai_lamthem.Size = new System.Drawing.Size(180, 26);
-            this.m_txt_ten_loai_lamthem.TabIndex = 45;
+            this.m_txt_ten_loai_lamthem.TabIndex = 2;
             // 
             // label10
             // 
@@ -118,7 +118,7 @@
             this.m_txt_ma_loai_lamthem.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ma_loai_lamthem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ma_loai_lamthem.Size = new System.Drawing.Size(180, 26);
-            this.m_txt_ma_loai_lamthem.TabIndex = 44;
+            this.m_txt_ma_loai_lamthem.TabIndex = 1;
             // 
             // label9
             // 
@@ -166,7 +166,7 @@
             this.m_btn_luu.Location = new System.Drawing.Point(190, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 47);
-            this.m_btn_luu.TabIndex = 15;
+            this.m_btn_luu.TabIndex = 4;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
@@ -185,7 +185,7 @@
             this.m_btn_xoa_luong.Location = new System.Drawing.Point(333, 0);
             this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 47);
-            this.m_btn_xoa_luong.TabIndex = 29;
+            this.m_btn_xoa_luong.TabIndex = 5;
             this.m_btn_xoa_luong.Text = "THOÁT";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 

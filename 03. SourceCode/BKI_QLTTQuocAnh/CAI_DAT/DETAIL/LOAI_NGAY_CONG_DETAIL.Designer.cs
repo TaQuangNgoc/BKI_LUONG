@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_txt_lcd_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
             this.m_txt_lns_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.m_txt_ten_ngay_cong = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_ma_ngay_cong = new DevExpress.XtraEditors.TextEdit();
@@ -75,17 +75,6 @@
             this.panel1.Size = new System.Drawing.Size(443, 352);
             this.panel1.TabIndex = 0;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(45, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "THÔNG TIN CHI TIẾT LOẠI NGÀY CÔNG";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
@@ -112,7 +101,7 @@
             this.m_btn_luu.Location = new System.Drawing.Point(182, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 15;
+            this.m_btn_luu.TabIndex = 5;
             this.m_btn_luu.Text = "LƯU";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
@@ -131,7 +120,7 @@
             this.m_btn_xoa_luong.Location = new System.Drawing.Point(325, 0);
             this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(116, 53);
-            this.m_btn_xoa_luong.TabIndex = 29;
+            this.m_btn_xoa_luong.TabIndex = 6;
             this.m_btn_xoa_luong.Text = "THOÁT";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
@@ -144,7 +133,7 @@
             this.m_txt_lcd_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lcd_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_lcd_loai_ngay_cong.TabIndex = 51;
+            this.m_txt_lcd_loai_ngay_cong.TabIndex = 4;
             this.m_txt_lcd_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_lns_loai_ngay_cong
@@ -156,7 +145,7 @@
             this.m_txt_lns_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_lns_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_lns_loai_ngay_cong.TabIndex = 48;
+            this.m_txt_lns_loai_ngay_cong.TabIndex = 3;
             this.m_txt_lns_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // panel3
@@ -169,6 +158,17 @@
             this.panel3.Size = new System.Drawing.Size(441, 53);
             this.panel3.TabIndex = 49;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(45, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(331, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "THÔNG TIN CHI TIẾT LOẠI NGÀY CÔNG";
+            // 
             // m_txt_ten_ngay_cong
             // 
             this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(155, 138);
@@ -177,7 +177,7 @@
             this.m_txt_ten_ngay_cong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ten_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ten_ngay_cong.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ten_ngay_cong.TabIndex = 47;
+            this.m_txt_ten_ngay_cong.TabIndex = 2;
             // 
             // label1
             // 
@@ -197,7 +197,7 @@
             this.m_txt_ma_ngay_cong.Properties.Appearance.Options.UseFont = true;
             this.m_txt_ma_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ma_ngay_cong.Size = new System.Drawing.Size(194, 26);
-            this.m_txt_ma_ngay_cong.TabIndex = 46;
+            this.m_txt_ma_ngay_cong.TabIndex = 1;
             // 
             // label7
             // 
