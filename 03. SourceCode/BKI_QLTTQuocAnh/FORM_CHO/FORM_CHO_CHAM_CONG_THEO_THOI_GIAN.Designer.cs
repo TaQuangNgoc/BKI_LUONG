@@ -76,7 +76,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(107, 318);
+            this.label13.Location = new System.Drawing.Point(97, 314);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(194, 19);
             this.label13.TabIndex = 8;

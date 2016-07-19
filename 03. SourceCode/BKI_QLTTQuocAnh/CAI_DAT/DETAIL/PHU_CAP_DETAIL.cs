@@ -23,6 +23,9 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             InitializeComponent();
             fill_combobox_loai_tien_phu_cap();
             m_rd_ti_le.Checked = true;
+            m_rd_so_tien_change();
+            m_rd_ti_le_change();
+           
         }
         
         private void fill_combobox_loai_tien_phu_cap()
@@ -56,13 +59,24 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_txt_ti_le.Text = v_us.dcTI_LE.ToString();
             m_cb_cua_tien.SelectedValue = v_us.dcID_TIEN_TI_LE_PHU_CAP.ToString();
             m_txt_so_tien.Text = v_us.dcSO_TIEN.ToString();
+            if(decimal.Parse(v_us.dcSO_TIEN.ToString())!=0)
+            {
+                m_rd_so_tien.Checked = true;
+            }
+            else
+            {
+                m_rd_ti_le.Checked = true;
+            }
             if (m_us.strGIAM_TRU_THUE_YN =="Y") m_checkb_duocgiamtruthue.Checked =true;
             else m_checkb_duocgiamtruthue.Checked = false;
+
             if (m_us.strPHU_THUOC_SO_NGAY_DI_LAM_YN == "Y") m_checkb_phuthuoc_songaydilam.Checked = true;
             else m_checkb_phuthuoc_songaydilam.Checked = false;
 
             if (m_us.strDONG_BAO_HIEM_YN == "Y") m_checkb_tinhvaokhoanphaidong_bhxh.Checked = true;
             else m_checkb_tinhvaokhoanphaidong_bhxh.Checked = false;
+
+           
        
         }
 
@@ -82,7 +96,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Insert();
-                            XtraMessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!","Thông báo");
                             this.Close();
                         }
                         catch (Exception )
@@ -137,9 +151,6 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
             if (m_checkb_tinhvaokhoanphaidong_bhxh.Checked == true) m_us.strDONG_BAO_HIEM_YN = "Y";
             else m_us.strDONG_BAO_HIEM_YN = "N";
-       
-            
-            
            
         }
 
@@ -168,10 +179,15 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
         private void m_rd_ti_le_CheckedChanged(object sender, EventArgs e)
         {
-            if(m_rd_ti_le.Checked==false)
+            m_rd_ti_le_change();
+        }
+
+        private void m_rd_ti_le_change()
+        {
+            if (m_rd_ti_le.Checked == false)
             {
                 m_cb_cua_tien.Enabled = false;
-                m_txt_ti_le.Enabled= false;
+                m_txt_ti_le.Enabled = false;
 
             }
             else
@@ -180,11 +196,16 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                 m_txt_ti_le.Enabled = true;
 
             }
-            
-
         }
 
         private void m_rd_so_tien_CheckedChanged(object sender, EventArgs e)
+        {
+            m_rd_so_tien_change();
+           
+
+        }
+
+        private void m_rd_so_tien_change()
         {
             if (m_rd_so_tien.Checked == false) m_txt_so_tien.Enabled = false;
             else m_txt_so_tien.Enabled = true;

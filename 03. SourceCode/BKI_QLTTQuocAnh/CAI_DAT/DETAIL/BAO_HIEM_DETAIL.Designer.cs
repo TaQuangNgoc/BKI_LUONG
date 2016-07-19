@@ -101,6 +101,7 @@
             this.m_txt_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd.Size = new System.Drawing.Size(131, 26);
             this.m_txt_lcd.TabIndex = 76;
+            this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ten_bao_hiem
             // 

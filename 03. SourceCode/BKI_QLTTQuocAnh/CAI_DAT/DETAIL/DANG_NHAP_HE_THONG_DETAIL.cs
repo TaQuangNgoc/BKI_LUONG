@@ -61,7 +61,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Insert();
-                            XtraMessageBox.Show("Lưu thành công!");
+                            XtraMessageBox.Show("Lưu thành công!","Thông báo");
                             this.Close();
                         }
                         catch (Exception)

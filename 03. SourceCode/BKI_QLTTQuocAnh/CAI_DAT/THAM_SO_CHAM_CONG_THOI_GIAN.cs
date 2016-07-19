@@ -395,6 +395,7 @@ namespace BKI_DichVuMatDat
                 US_DM_PHU_CAP v_us = new US_DM_PHU_CAP(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 PHU_CAP_DETAIL v_f = new PHU_CAP_DETAIL();
                 v_f.dislay_for_update(v_us);
+               
                 load_du_lieu_vao_bang_phu_cap();
             }
         }
