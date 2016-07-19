@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F401_he_so_bao_cao_luong));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.pRGETTHAMSOBANGLUONGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet3 = new BKI_DichVuMatDat.BKI_LUONGDataSet3();
             this.img_DVMD = new DevExpress.Utils.ImageCollection(this.components);
@@ -55,14 +55,9 @@
             this.colPHAI_DONG_BAO_HIEM = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_gd_tham_so_bang_luong_thang = new DevExpress.XtraGrid.GridControl();
-            this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.bKI_LUONGDataSet5 = new BKI_DichVuMatDat.BKI_LUONGDataSet5();
             this.pRGETTHAMSOBANGLUONGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
+            this.bKI_LUONGDataSet5 = new BKI_DichVuMatDat.BKI_LUONGDataSet5();
+            this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHO_DEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -73,17 +68,22 @@
             this.colPHAI_DONG_DOAN_PHI1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHAI_DONG_BAO_HIEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // pRGETTHAMSOBANGLUONGBindingSource1
@@ -227,6 +227,16 @@
             this.m_gd_tham_so_bang_luong_thang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
             // 
+            // pRGETTHAMSOBANGLUONGBindingSource2
+            // 
+            this.pRGETTHAMSOBANGLUONGBindingSource2.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
+            this.pRGETTHAMSOBANGLUONGBindingSource2.DataSource = this.bKI_LUONGDataSet5;
+            // 
+            // bKI_LUONGDataSet5
+            // 
+            this.bKI_LUONGDataSet5.DataSetName = "BKI_LUONGDataSet5";
+            this.bKI_LUONGDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // m_grv
             // 
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -241,13 +251,13 @@
             this.colPHAI_DONG_BAO_HIEM1,
             this.colSO_LUONG_PHU_THUOC1});
             this.m_grv.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition8,
-            styleFormatCondition9,
-            styleFormatCondition10,
-            styleFormatCondition11,
-            styleFormatCondition12,
-            styleFormatCondition13,
-            styleFormatCondition14});
+            styleFormatCondition1,
+            styleFormatCondition2,
+            styleFormatCondition3,
+            styleFormatCondition4,
+            styleFormatCondition5,
+            styleFormatCondition6,
+            styleFormatCondition7});
             this.m_grv.GridControl = this.m_gd_tham_so_bang_luong_thang;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsBehavior.Editable = false;
@@ -257,6 +267,91 @@
             this.m_grv.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            // 
+            // colID1
+            // 
+            this.colID1.Caption = "ID";
+            this.colID1.FieldName = "ID";
+            this.colID1.Name = "colID1";
+            this.colID1.OptionsColumn.ReadOnly = true;
+            // 
+            // colMA_NV1
+            // 
+            this.colMA_NV1.Caption = "Mã nhân viên";
+            this.colMA_NV1.FieldName = "MA_NV";
+            this.colMA_NV1.Name = "colMA_NV1";
+            this.colMA_NV1.Visible = true;
+            this.colMA_NV1.VisibleIndex = 0;
+            // 
+            // colHO_DEM1
+            // 
+            this.colHO_DEM1.Caption = "Họ đệm";
+            this.colHO_DEM1.FieldName = "HO_DEM";
+            this.colHO_DEM1.Name = "colHO_DEM1";
+            this.colHO_DEM1.Visible = true;
+            this.colHO_DEM1.VisibleIndex = 1;
+            // 
+            // colTEN1
+            // 
+            this.colTEN1.Caption = "Tên";
+            this.colTEN1.FieldName = "TEN";
+            this.colTEN1.Name = "colTEN1";
+            this.colTEN1.Visible = true;
+            this.colTEN1.VisibleIndex = 2;
+            // 
+            // colDA_CHAM_CONG1
+            // 
+            this.colDA_CHAM_CONG1.Caption = "Đã chấm công";
+            this.colDA_CHAM_CONG1.FieldName = "DA_CHAM_CONG";
+            this.colDA_CHAM_CONG1.Name = "colDA_CHAM_CONG1";
+            this.colDA_CHAM_CONG1.OptionsColumn.ReadOnly = true;
+            this.colDA_CHAM_CONG1.Visible = true;
+            this.colDA_CHAM_CONG1.VisibleIndex = 3;
+            // 
+            // colCO_LNS1
+            // 
+            this.colCO_LNS1.Caption = "Có lương năng suất";
+            this.colCO_LNS1.FieldName = "HO_DEM";
+            this.colCO_LNS1.Name = "colCO_LNS1";
+            this.colCO_LNS1.OptionsColumn.ReadOnly = true;
+            this.colCO_LNS1.Visible = true;
+            this.colCO_LNS1.VisibleIndex = 4;
+            // 
+            // colCO_LUONG_CD1
+            // 
+            this.colCO_LUONG_CD1.Caption = "Có lương cố định";
+            this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
+            this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
+            this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
+            this.colCO_LUONG_CD1.Visible = true;
+            this.colCO_LUONG_CD1.VisibleIndex = 5;
+            // 
+            // colPHAI_DONG_DOAN_PHI1
+            // 
+            this.colPHAI_DONG_DOAN_PHI1.Caption = "Phải đóng đoàn phí";
+            this.colPHAI_DONG_DOAN_PHI1.FieldName = "PHAI_DONG_DOAN_PHI";
+            this.colPHAI_DONG_DOAN_PHI1.Name = "colPHAI_DONG_DOAN_PHI1";
+            this.colPHAI_DONG_DOAN_PHI1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_DOAN_PHI1.Visible = true;
+            this.colPHAI_DONG_DOAN_PHI1.VisibleIndex = 6;
+            // 
+            // colPHAI_DONG_BAO_HIEM1
+            // 
+            this.colPHAI_DONG_BAO_HIEM1.Caption = "Phải đóng bảo hiểm";
+            this.colPHAI_DONG_BAO_HIEM1.FieldName = "PHAI_DONG_BAO_HIEM";
+            this.colPHAI_DONG_BAO_HIEM1.Name = "colPHAI_DONG_BAO_HIEM1";
+            this.colPHAI_DONG_BAO_HIEM1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_BAO_HIEM1.Visible = true;
+            this.colPHAI_DONG_BAO_HIEM1.VisibleIndex = 7;
+            // 
+            // colSO_LUONG_PHU_THUOC1
+            // 
+            this.colSO_LUONG_PHU_THUOC1.Caption = "Số lương phụ phuộc";
+            this.colSO_LUONG_PHU_THUOC1.FieldName = "SO_LUONG_PHU_THUOC";
+            this.colSO_LUONG_PHU_THUOC1.Name = "colSO_LUONG_PHU_THUOC1";
+            this.colSO_LUONG_PHU_THUOC1.OptionsColumn.ReadOnly = true;
+            this.colSO_LUONG_PHU_THUOC1.Visible = true;
+            this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
             // 
             // panel3
             // 
@@ -308,94 +403,9 @@
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
-            // bKI_LUONGDataSet5
-            // 
-            this.bKI_LUONGDataSet5.DataSetName = "BKI_LUONGDataSet5";
-            this.bKI_LUONGDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pRGETTHAMSOBANGLUONGBindingSource2
-            // 
-            this.pRGETTHAMSOBANGLUONGBindingSource2.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
-            this.pRGETTHAMSOBANGLUONGBindingSource2.DataSource = this.bKI_LUONGDataSet5;
-            // 
             // pR_GET_THAM_SO_BANG_LUONGTableAdapter2
             // 
             this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2.ClearBeforeFill = true;
-            // 
-            // colID1
-            // 
-            this.colID1.FieldName = "ID";
-            this.colID1.Name = "colID1";
-            this.colID1.OptionsColumn.ReadOnly = true;
-            // 
-            // colMA_NV1
-            // 
-            this.colMA_NV1.FieldName = "MA_NV";
-            this.colMA_NV1.Name = "colMA_NV1";
-            this.colMA_NV1.Visible = true;
-            this.colMA_NV1.VisibleIndex = 0;
-            // 
-            // colHO_DEM1
-            // 
-            this.colHO_DEM1.FieldName = "HO_DEM";
-            this.colHO_DEM1.Name = "colHO_DEM1";
-            this.colHO_DEM1.Visible = true;
-            this.colHO_DEM1.VisibleIndex = 1;
-            // 
-            // colTEN1
-            // 
-            this.colTEN1.FieldName = "TEN";
-            this.colTEN1.Name = "colTEN1";
-            this.colTEN1.Visible = true;
-            this.colTEN1.VisibleIndex = 2;
-            // 
-            // colDA_CHAM_CONG1
-            // 
-            this.colDA_CHAM_CONG1.FieldName = "DA_CHAM_CONG";
-            this.colDA_CHAM_CONG1.Name = "colDA_CHAM_CONG1";
-            this.colDA_CHAM_CONG1.OptionsColumn.ReadOnly = true;
-            this.colDA_CHAM_CONG1.Visible = true;
-            this.colDA_CHAM_CONG1.VisibleIndex = 3;
-            // 
-            // colCO_LNS1
-            // 
-            this.colCO_LNS1.FieldName = "CO_LNS";
-            this.colCO_LNS1.Name = "colCO_LNS1";
-            this.colCO_LNS1.OptionsColumn.ReadOnly = true;
-            this.colCO_LNS1.Visible = true;
-            this.colCO_LNS1.VisibleIndex = 4;
-            // 
-            // colCO_LUONG_CD1
-            // 
-            this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
-            this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
-            this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
-            this.colCO_LUONG_CD1.Visible = true;
-            this.colCO_LUONG_CD1.VisibleIndex = 5;
-            // 
-            // colPHAI_DONG_DOAN_PHI1
-            // 
-            this.colPHAI_DONG_DOAN_PHI1.FieldName = "PHAI_DONG_DOAN_PHI";
-            this.colPHAI_DONG_DOAN_PHI1.Name = "colPHAI_DONG_DOAN_PHI1";
-            this.colPHAI_DONG_DOAN_PHI1.OptionsColumn.ReadOnly = true;
-            this.colPHAI_DONG_DOAN_PHI1.Visible = true;
-            this.colPHAI_DONG_DOAN_PHI1.VisibleIndex = 6;
-            // 
-            // colPHAI_DONG_BAO_HIEM1
-            // 
-            this.colPHAI_DONG_BAO_HIEM1.FieldName = "PHAI_DONG_BAO_HIEM";
-            this.colPHAI_DONG_BAO_HIEM1.Name = "colPHAI_DONG_BAO_HIEM1";
-            this.colPHAI_DONG_BAO_HIEM1.OptionsColumn.ReadOnly = true;
-            this.colPHAI_DONG_BAO_HIEM1.Visible = true;
-            this.colPHAI_DONG_BAO_HIEM1.VisibleIndex = 7;
-            // 
-            // colSO_LUONG_PHU_THUOC1
-            // 
-            this.colSO_LUONG_PHU_THUOC1.FieldName = "SO_LUONG_PHU_THUOC";
-            this.colSO_LUONG_PHU_THUOC1.Name = "colSO_LUONG_PHU_THUOC1";
-            this.colSO_LUONG_PHU_THUOC1.OptionsColumn.ReadOnly = true;
-            this.colSO_LUONG_PHU_THUOC1.Visible = true;
-            this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
             // 
             // F401_he_so_bao_cao_luong
             // 
@@ -415,12 +425,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_gd_tham_so_bang_luong_thang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
