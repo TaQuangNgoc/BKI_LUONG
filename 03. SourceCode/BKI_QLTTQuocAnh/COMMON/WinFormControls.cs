@@ -541,7 +541,12 @@ namespace BKI_DichVuMatDat
             v_cstore.fillDataSetByCommand(this, op_ds);
         }
 
-
+        internal void FillDatasetWithQueryNotReturnDataset( string ip_query)
+        {
+            CStoredProc v_cstore = new CStoredProc("pr_fill_ds_with_query_not_return_dataset");
+            v_cstore.addNVarcharInputParam("@SQL_QUERY", ip_query);
+            v_cstore.ExecuteCommand(this);
+        }
 
 
 
@@ -858,6 +863,22 @@ namespace BKI_DichVuMatDat
             v_sp.addDecimalInputParam("@so_tien", so_tien);
            
             v_sp.ExecuteCommand(this);
+        }
+
+        internal bool CheckDaTinhLuongNhungChuaChot(decimal id_nhan_vien, decimal thang, decimal nam)
+        {
+            CStoredProc v_pr = new CStoredProc("pr_check_da_tinh_luong_cua_nhan_vien");
+            v_pr.addDecimalInputParam("@ID_NHAN_VIEN", thang);
+            v_pr.addDecimalInputParam("@THANG", thang);
+            v_pr.addDecimalInputParam("@NAM", nam);
+            SqlParameter v_para = v_pr.addNVarcharOutputParam("@op_str_lock_yn", "");
+            v_pr.ExecuteCommand(this);
+            return v_para.Value.ToString() == "Y" ? true : false;
+        }
+
+        internal void DeleteRptLuong(decimal p, decimal thang, decimal nam)
+        {
+           
         }
     } 
 }

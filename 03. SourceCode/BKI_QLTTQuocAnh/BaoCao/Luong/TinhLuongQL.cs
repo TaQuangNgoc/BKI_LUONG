@@ -82,6 +82,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             v_dto_luong.LUONG_LAM_THEM_SAN_PHAM= decimal.Parse(v_dr_luong_nv["LUONG_LAM_THEM_SAN_PHAM"].ToString());
             v_dto_luong.PHU_CAP= decimal.Parse(v_dr_luong_nv["PHU_CAP"].ToString());
             v_dto_luong.TRUY_LINH= decimal.Parse(v_dr_luong_nv["TRUY_LINH"].ToString());
+            v_dto_luong.THU_NHAP = decimal.Parse(v_dr_luong_nv["THU_NHAP_KHAC"].ToString());
             v_dto_luong.THU_NHAP= decimal.Parse(v_dr_luong_nv["THU_NHAP"].ToString());
             v_dto_luong.BHXH= decimal.Parse(v_dr_luong_nv["BHXH"].ToString());
             v_dto_luong.BHYT= decimal.Parse(v_dr_luong_nv["BHYT"].ToString());
@@ -96,6 +97,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             v_dto_luong.DOAN_PHI_CD= decimal.Parse(v_dr_luong_nv["DOAN_PHI_CD"].ToString());
             v_dto_luong.THUE= decimal.Parse(v_dr_luong_nv["THUE"].ToString());
             v_dto_luong.TRUY_THU= decimal.Parse(v_dr_luong_nv["TRUY_THU"].ToString());
+            v_dto_luong.PHAI_NOP = decimal.Parse(v_dr_luong_nv["PHAI_NOP_KHAC"].ToString());
             v_dto_luong.PHAI_NOP= decimal.Parse(v_dr_luong_nv["PHAI_NOP"].ToString());
             v_dto_luong.THUC_LINH= decimal.Parse(v_dr_luong_nv["THUC_LINH"].ToString());
             return v_dto_luong;
@@ -220,6 +222,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             v_us_luong.dcLUONG_LAM_THEM_SAN_PHAM = ip_dto_luong.LUONG_LAM_THEM_SAN_PHAM;
             v_us_luong.dcPHU_CAP = ip_dto_luong.PHU_CAP;
             v_us_luong.dcTRUY_LINH = ip_dto_luong.TRUY_LINH;
+            v_us_luong.dcTHU_NHAP_KHAC = ip_dto_luong.THU_NHAP_KHAC;
             v_us_luong.dcTHU_NHAP = ip_dto_luong.THU_NHAP;
             v_us_luong.dcBHXH = ip_dto_luong.BHXH;
             v_us_luong.dcBHYT = ip_dto_luong.BHYT;
@@ -234,6 +237,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             v_us_luong.dcDOAN_PHI_CD = ip_dto_luong.DOAN_PHI_CD;
             v_us_luong.dcTHUE = ip_dto_luong.THUE;
             v_us_luong.dcTRUY_THU = ip_dto_luong.TRUY_THU;
+            v_us_luong.dcPHAI_NOP_KHAC = ip_dto_luong.PHAI_NOP_KHAC;
             v_us_luong.dcPHAI_NOP = ip_dto_luong.PHAI_NOP;
             v_us_luong.dcTHUC_LINH = ip_dto_luong.THUC_LINH;
             

@@ -13,6 +13,8 @@ using BKI_DichVuMatDat.DS;
 using IP.Core.IPCommon;
 using DevExpress.XtraEditors;
 using BKI_DichVuMatDat.DS.CDBNames;
+using BKI_DichVuMatDat.DTO;
+using BKI_DichVuMatDat.NghiepVu.Luong;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
@@ -21,6 +23,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         bool phai_dong_bao_hiem = false;
         bool giam_tru_thue = false;
         ENUM_CONFIRM_XOA_DU_LIEU_CU v_enum_xoa_du_lieu_cu = new ENUM_CONFIRM_XOA_DU_LIEU_CU();
+        
         #region Public Interface
         public CAC_LOAI_TIEN_KHAC()
         {
@@ -365,6 +368,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
             m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
             this.Load += F696_Cham_cong_xls_Load;
+            m_btn_xoa_dong.Enabled = false;
             
         }
 
@@ -460,6 +464,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                 {
                     load_data_2_grid(ip_path);
                     m_cmd_nhap_cham_cong.Enabled = true;
+                    m_btn_xoa_dong.Enabled = false;
                 }
             }
             catch (Exception v_e)
@@ -503,6 +508,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
             else
             {
+
                 m_grv.Columns.Clear();
                 US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
                 DataSet v_ds = new DataSet();
@@ -515,6 +521,8 @@ namespace BKI_DichVuMatDat.NghiepVu
                 m_grv.Columns["NGAY_NHAP"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
                 m_grv.Columns["NGAY_NHAP"].Caption = "Ngày nhập";
                 format_gridview();
+                m_btn_xoa_dong.Enabled = true;
+                m_cmd_nhap_cham_cong.Enabled = false;
             }
 
         }
@@ -522,21 +530,48 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void m_btn_xoa_dong_Click(object sender, EventArgs e)
         {
             DataRow v_dr= m_grv.GetDataRow(m_grv.FocusedRowHandle);
-            if(check_da_tinh_luong_nhung_chua_chot(decimal.Parse(v_dr["ID_NHAN_VIEN"].ToString()), laythang(),laynam()))
-            XtraMessageBox.Show("", "Cảnh báo");
+            var v_confirm = System.Windows.Forms.DialogResult.No;
+            if (check_da_tinh_luong_nhung_chua_chot(decimal.Parse(v_dr["ID_NHAN_VIEN"].ToString()), laythang(), laynam()))
+            {
+                v_confirm = XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã có lương của nhân viên có mã" + v_dr["MA_NV"].ToString()
+                     + "/n. Nếu xóa bản ghi này, phần mềm sẽ tự động tính lại thông tin về lương tháng " + laythang() + "cho nhân viên này."
+                     + "Bạn có chắc chắn muốn thực hiện tác vụ này?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+               
+            }
+            else
+            {
+                v_confirm = XtraMessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            }
+             if (v_confirm == System.Windows.Forms.DialogResult.Yes)
+                {
+
+                    delete_tien_khac(v_dr);
+                    update_rpt_luong(v_dr["ID_NHAN_VIEN"].ToString(), laythang(), laynam());
+                    XtraMessageBox.Show("Xóa thành công!","Thông báo");
+                }
+        }
+
+        private void delete_tien_khac(DataRow v_dr)
+        {
+            US_GD_CAC_LOAI_TIEN_KHAC v_us = new US_GD_CAC_LOAI_TIEN_KHAC(decimal.Parse(v_dr["ID"].ToString()));
+            v_us.Delete();
+        }
+
+        private void update_rpt_luong(string id_nhan_vien, decimal thang , decimal nam)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.FillDatasetWithQueryNotReturnDataset("DELETE FROM RPT_LUONG WHERE THANG=" + thang + " AND NAM=" + nam + " AND ID_NHAN_VIEN=" + id_nhan_vien);
+            v_us.DeleteRptLuong(decimal.Parse(id_nhan_vien), thang, nam);
+            DTO_BANG_LUONG_V2 v_dto_luong = TinhLuongQL.Instance.TinhToanBangLuongNhanVien(decimal.Parse(id_nhan_vien), thang, nam);
+            TinhLuongQL.Instance.InsertBanGhiLuongNhanVien(v_dto_luong);
         }
 
         private bool check_da_tinh_luong_nhung_chua_chot(decimal id_nhan_vien, decimal thang, decimal nam)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            return true;
-            
+            return  v_us.CheckDaTinhLuongNhungChuaChot(id_nhan_vien, thang, nam);           
         }
 
-        private void CAC_LOAI_TIEN_KHAC_Load(object sender, EventArgs e)
-        {
-
-        }
-  
+     
     }
 }

@@ -58,6 +58,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
+            this.m_btn_xoa_dong = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             this.m_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
@@ -238,7 +239,7 @@
             this.m_btn_hien_thi.Name = "m_btn_hien_thi";
             this.m_btn_hien_thi.Size = new System.Drawing.Size(208, 60);
             this.m_btn_hien_thi.TabIndex = 33;
-            this.m_btn_hien_thi.Text = "HIỂN THỊ DỮ LIỆU ĐÃ NHẬP";
+            this.m_btn_hien_thi.Text = "Hiển thị dữ liệu đã nhập\r\n";
             this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);
             // 
             // m_cmd_mo_file_mau
@@ -256,7 +257,7 @@
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
             this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(165, 60);
             this.m_cmd_mo_file_mau.TabIndex = 31;
-            this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
+            this.m_cmd_mo_file_mau.Text = "Tải file excel mẫu\r\n";
             // 
             // m_cmd_chon_du_lieu
             // 
@@ -276,7 +277,7 @@
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
             this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(202, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
-            this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU MỚI";
+            this.m_cmd_chon_du_lieu.Text = "up dữ liệu mới\r\n";
             // 
             // panelControl1
             // 
@@ -363,6 +364,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.m_btn_xoa_dong);
             this.panel3.Controls.Add(this.m_cmd_nhap_cham_cong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 388);
@@ -386,7 +388,7 @@
             this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
-            this.m_cmd_nhap_cham_cong.Text = "LƯU \r\n";
+            this.m_cmd_nhap_cham_cong.Text = "Lưu";
             // 
             // label2
             // 
@@ -408,6 +410,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 53);
             this.panel1.TabIndex = 16;
+            // 
+            // m_btn_xoa_dong
+            // 
+            this.m_btn_xoa_dong.Appearance.BackColor = System.Drawing.Color.Maroon;
+            this.m_btn_xoa_dong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_xoa_dong.Appearance.BorderColor = System.Drawing.Color.White;
+            this.m_btn_xoa_dong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_xoa_dong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_xoa_dong.Appearance.Options.UseBackColor = true;
+            this.m_btn_xoa_dong.Appearance.Options.UseBorderColor = true;
+            this.m_btn_xoa_dong.Appearance.Options.UseFont = true;
+            this.m_btn_xoa_dong.Appearance.Options.UseForeColor = true;
+            this.m_btn_xoa_dong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_xoa_dong.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_xoa_dong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_xoa_dong.Location = new System.Drawing.Point(762, 0);
+            this.m_btn_xoa_dong.Name = "m_btn_xoa_dong";
+            this.m_btn_xoa_dong.Padding = new System.Windows.Forms.Padding(4);
+            this.m_btn_xoa_dong.Size = new System.Drawing.Size(202, 53);
+            this.m_btn_xoa_dong.TabIndex = 33;
+            this.m_btn_xoa_dong.Text = "Xóa dòng\r\n";
+            this.m_btn_xoa_dong.Click += new System.EventHandler(this.m_btn_xoa_dong_Click);
             // 
             // CAC_LOAI_TIEN_KHAC
             // 
@@ -472,6 +496,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraEditors.SimpleButton m_btn_xoa_dong;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 
     }
