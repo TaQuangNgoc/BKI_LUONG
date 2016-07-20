@@ -65,7 +65,7 @@
             // 
             // m_cmd_delete
             // 
-            this.m_cmd_delete.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_delete.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_delete.Appearance.Options.UseFont = true;
             this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_delete.ImageIndex = 8;
@@ -109,7 +109,7 @@
             // 
             // simpleButton9
             // 
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F);
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.Dock = System.Windows.Forms.DockStyle.Left;
             this.simpleButton9.ImageIndex = 5;
@@ -122,7 +122,7 @@
             // 
             // simpleButton6
             // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F);
             this.simpleButton6.Appearance.Options.UseFont = true;
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Left;
             this.simpleButton6.ImageIndex = 1;
@@ -135,7 +135,7 @@
             // 
             // m_cmd_chon_file
             // 
-            this.m_cmd_chon_file.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.m_cmd_chon_file.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F);
             this.m_cmd_chon_file.Appearance.Options.UseFont = true;
             this.m_cmd_chon_file.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_chon_file.ImageIndex = 4;
@@ -148,7 +148,7 @@
             // 
             // m_cmd_xuat_excel
             // 
-            this.m_cmd_xuat_excel.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.m_cmd_xuat_excel.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F);
             this.m_cmd_xuat_excel.Appearance.Options.UseFont = true;
             this.m_cmd_xuat_excel.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_xuat_excel.ImageIndex = 0;
@@ -161,7 +161,7 @@
             // 
             // m_cmd_insert
             // 
-            this.m_cmd_insert.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_insert.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_insert.Appearance.Options.UseFont = true;
             this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_insert.ImageIndex = 7;
@@ -174,7 +174,7 @@
             // 
             // m_cmd_update
             // 
-            this.m_cmd_update.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_update.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_update.Appearance.Options.UseFont = true;
             this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_update.ImageIndex = 9;
@@ -269,7 +269,7 @@
             // 
             // m_cmd_fillter
             // 
-            this.m_cmd_fillter.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_fillter.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_fillter.Appearance.Options.UseFont = true;
             this.m_cmd_fillter.Image = global::BKI_DichVuMatDat.Properties.Resources.file_search1;
             this.m_cmd_fillter.Location = new System.Drawing.Point(240, 43);
@@ -291,7 +291,7 @@
             // 
             // m_cmd_exit
             // 
-            this.m_cmd_exit.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F);
+            this.m_cmd_exit.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F);
             this.m_cmd_exit.Appearance.Options.UseFont = true;
             this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_exit.ImageIndex = 2;
@@ -304,7 +304,7 @@
             // 
             // m_cmd_save
             // 
-            this.m_cmd_save.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_save.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_save.Appearance.Options.UseFont = true;
             this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_save.ImageIndex = 6;
