@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
-    public partial class BAO_HIEM_DETAIL : Form
+    public partial class BAO_HIEM_DETAIL : MaterialSkin.Controls.MaterialForm
     {
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;
         US_DM_BAO_HIEM m_us = new US_DM_BAO_HIEM();

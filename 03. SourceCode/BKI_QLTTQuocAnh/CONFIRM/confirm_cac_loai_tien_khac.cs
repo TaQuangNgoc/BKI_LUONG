@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.CONFIRM
 {
-    public partial class confirm_cac_loai_tien_khac : Form
+    public partial class confirm_cac_loai_tien_khac : MaterialSkin.Controls.MaterialForm
     {
         public confirm_cac_loai_tien_khac()
         {

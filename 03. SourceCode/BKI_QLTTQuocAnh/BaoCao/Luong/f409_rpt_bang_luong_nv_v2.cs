@@ -27,7 +27,7 @@ using BKI_DichVuMatDat.NghiepVu.Luong;
 
 namespace BKI_DichVuMatDat.BaoCao
 {
-    public partial class f409_rpt_bang_luong_nv_v2 : Form
+    public partial class f409_rpt_bang_luong_nv_v2 : MaterialSkin.Controls.MaterialForm
     {
         //Field & Property
         BindingList<DTO_BANG_LUONG_V2> m_lst_luong_v2 = new BindingList<DTO_BANG_LUONG_V2>();
@@ -51,8 +51,8 @@ namespace BKI_DichVuMatDat.BaoCao
         public void Display(decimal ip_dc_thang, decimal ip_dc_nam)
         {
             this.m_grv_main.BestFitColumns(true);
-            m_txt_thang.EditValue = ip_dc_thang;
-            m_txt_nam.EditValue = ip_dc_nam;
+            m_txt_thang.Text = ip_dc_thang.ToString();
+            m_txt_nam.Text = ip_dc_nam.ToString();
             m_txt_thang.Enabled = false;
             m_txt_nam.Enabled = false;
          //   this.TopMost = true;
@@ -437,11 +437,11 @@ namespace BKI_DichVuMatDat.BaoCao
         //Load data
         private decimal lay_thang()
         {
-            return Convert.ToDecimal(m_txt_thang.EditValue);
+            return Convert.ToDecimal(m_txt_thang.Text.Trim());
         }
         private decimal lay_nam()
         {
-            return Convert.ToDecimal(m_txt_nam.EditValue);
+            return Convert.ToDecimal(m_txt_nam.Text.Trim());
         }
 
         private void load_data_2_grid()
@@ -462,7 +462,7 @@ namespace BKI_DichVuMatDat.BaoCao
         }
         private void hien_thi_thong_tin_bang_luong()
         {
-            if(m_txt_thang.EditValue == null || m_txt_nam.EditValue == null)
+            if(m_txt_thang.Text.Trim() == "" || m_txt_nam.Text.Trim() == "")
             {
                 return;
             }
@@ -503,7 +503,7 @@ namespace BKI_DichVuMatDat.BaoCao
 
         private bool kiem_tra_tinh_hop_le_du_lieu_tren_giao_dien()
         {
-            if(m_txt_thang.EditValue == null || m_txt_nam.EditValue == null)
+            if(m_txt_thang.Text.Trim() == null || m_txt_nam.Text.Trim() == null)
             {
                 XtraMessageBox.Show("Bạn nhập tháng & năm trước!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

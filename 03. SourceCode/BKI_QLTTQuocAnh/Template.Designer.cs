@@ -46,7 +46,7 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.m_lbl_header = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.m_cmd_fillter = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
@@ -59,7 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -263,8 +263,7 @@
             // 
             this.textEdit1.Location = new System.Drawing.Point(60, 52);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            
             this.textEdit1.Size = new System.Drawing.Size(100, 26);
             this.textEdit1.TabIndex = 5;
             // 
@@ -338,7 +337,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -359,7 +358,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private System.Windows.Forms.Label m_lbl_header;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField textEdit1;
         private DevExpress.XtraEditors.SimpleButton m_cmd_fillter;
         private DevExpress.Utils.ImageCollection img_DVMD;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;

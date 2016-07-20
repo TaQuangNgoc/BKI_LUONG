@@ -31,8 +31,8 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_confirm = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.m_rdb_luu_lai_toan_bo = new System.Windows.Forms.RadioButton();
-            this.m_rdb_xu_ly_du_lieu = new System.Windows.Forms.RadioButton();
+            this.m_rdb_luu_lai_toan_bo = new MaterialSkin.Controls.MaterialRadioButton();
+            this.m_rdb_xu_ly_du_lieu = new MaterialSkin.Controls.MaterialRadioButton();
             this.m_chk_0_ghi_de = new DevExpress.XtraEditors.CheckEdit();
             this.m_lbl_option_detail1 = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_option_detail2 = new DevExpress.XtraEditors.LabelControl();
@@ -166,8 +166,8 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton m_cmd_confirm;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton m_rdb_luu_lai_toan_bo;
-        private System.Windows.Forms.RadioButton m_rdb_xu_ly_du_lieu;
+        private MaterialSkin.Controls.MaterialRadioButton m_rdb_luu_lai_toan_bo;
+        private MaterialSkin.Controls.MaterialRadioButton m_rdb_xu_ly_du_lieu;
         private DevExpress.XtraEditors.CheckEdit m_chk_0_ghi_de;
         private DevExpress.XtraEditors.LabelControl m_lbl_option_detail1;
         private DevExpress.XtraEditors.LabelControl m_lbl_option_detail2;

@@ -45,6 +45,18 @@ namespace BKI_DichVuMatDat
 
                 m_grv_ngay_cong.ColumnPanelRowHeight = 40;
                 m_grv_ngay_cong.RowHeight = 35;
+
+                m_grv_bao_hiem.ColumnPanelRowHeight = 40;
+                m_grv_bao_hiem.RowHeight = 35;
+
+                m_grv_lam_them_gio.ColumnPanelRowHeight = 40;
+                m_grv_lam_them_gio.RowHeight = 35;
+
+                m_grv_phu_cap.ColumnPanelRowHeight = 40;
+                m_grv_phu_cap.RowHeight = 35;
+
+                m_grv_thue.ColumnPanelRowHeight = 40;
+                m_grv_thue.RowHeight = 35;
             }
             catch (Exception)
             {

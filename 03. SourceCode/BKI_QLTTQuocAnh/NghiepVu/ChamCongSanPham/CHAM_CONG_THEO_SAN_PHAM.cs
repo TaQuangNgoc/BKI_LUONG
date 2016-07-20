@@ -19,7 +19,7 @@ using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
-    public partial class CHAM_CONG_THEO_SAN_PHAM : Form
+    public partial class CHAM_CONG_THEO_SAN_PHAM : MaterialSkin.Controls.MaterialForm
     {
         #region Public Interface
         public CHAM_CONG_THEO_SAN_PHAM()

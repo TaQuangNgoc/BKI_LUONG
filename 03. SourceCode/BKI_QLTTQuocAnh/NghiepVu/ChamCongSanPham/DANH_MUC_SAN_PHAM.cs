@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
-    public partial class DANH_MUC_SAN_PHAM : Form
+    public partial class DANH_MUC_SAN_PHAM : MaterialSkin.Controls.MaterialForm
     {
         public DANH_MUC_SAN_PHAM()
         {

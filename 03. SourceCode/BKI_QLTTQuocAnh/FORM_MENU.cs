@@ -18,7 +18,7 @@ using BKI_DichVuMatDat.CAI_DAT;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class FORM_MENU : Form
+    public partial class FORM_MENU : MaterialSkin.Controls.MaterialForm
     {
         TreeNode CAI_DAT_THAM_SO = new TreeNode("Cài đặt tham số");
         TreeNode NHAP_LIEU = new TreeNode("Nhập liệu");

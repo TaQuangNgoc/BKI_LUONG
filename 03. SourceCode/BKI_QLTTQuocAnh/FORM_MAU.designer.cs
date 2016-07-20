@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_txt_password_confirm = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_password = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_username = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_password_confirm = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_password = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_username = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -41,9 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_password_confirm.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_password.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_username.Properties)).BeginInit();
+            
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -69,8 +67,7 @@
             // 
             this.m_txt_password_confirm.Location = new System.Drawing.Point(29, 244);
             this.m_txt_password_confirm.Name = "m_txt_password_confirm";
-            this.m_txt_password_confirm.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.m_txt_password_confirm.Properties.Appearance.Options.UseFont = true;
+            
             this.m_txt_password_confirm.Size = new System.Drawing.Size(296, 24);
             this.m_txt_password_confirm.TabIndex = 95;
             // 
@@ -78,8 +75,7 @@
             // 
             this.m_txt_password.Location = new System.Drawing.Point(29, 176);
             this.m_txt_password.Name = "m_txt_password";
-            this.m_txt_password.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.m_txt_password.Properties.Appearance.Options.UseFont = true;
+            
             this.m_txt_password.Size = new System.Drawing.Size(296, 24);
             this.m_txt_password.TabIndex = 94;
             // 
@@ -87,8 +83,7 @@
             // 
             this.m_txt_username.Location = new System.Drawing.Point(29, 108);
             this.m_txt_username.Name = "m_txt_username";
-            this.m_txt_username.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.m_txt_username.Properties.Appearance.Options.UseFont = true;
+            
             this.m_txt_username.Size = new System.Drawing.Size(296, 24);
             this.m_txt_username.TabIndex = 93;
             // 
@@ -135,8 +130,8 @@
             // 
             // m_btn_dangnhap
             // 
-            this.m_btn_dangnhap.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_dangnhap.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_dangnhap.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_dangnhap.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_dangnhap.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_dangnhap.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_dangnhap.Appearance.Options.UseBackColor = true;
@@ -171,7 +166,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -201,9 +196,7 @@
             this.Text = "CAC_HINH_THUC_TINH_LUONG";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_password_confirm.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_password.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_username.Properties)).EndInit();
+            
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -214,9 +207,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.TextEdit m_txt_password_confirm;
-        private DevExpress.XtraEditors.TextEdit m_txt_password;
-        private DevExpress.XtraEditors.TextEdit m_txt_username;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_password_confirm;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_password;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label15;

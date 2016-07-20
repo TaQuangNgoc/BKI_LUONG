@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class CAC_HINH_THUC_TINH_LUONG : Form
+    public partial class CAC_HINH_THUC_TINH_LUONG : MaterialSkin.Controls.MaterialForm
     {
         public CAC_HINH_THUC_TINH_LUONG()
         {

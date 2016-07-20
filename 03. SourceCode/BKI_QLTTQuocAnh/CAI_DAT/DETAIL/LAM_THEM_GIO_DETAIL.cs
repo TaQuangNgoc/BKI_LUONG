@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
-    public partial class LAM_THEM_GIO_DETAIL : Form
+    public partial class LAM_THEM_GIO_DETAIL : MaterialSkin.Controls.MaterialForm
     {
 
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;

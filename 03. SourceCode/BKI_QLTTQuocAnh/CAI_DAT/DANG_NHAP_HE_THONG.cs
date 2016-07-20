@@ -15,7 +15,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT
 {
-    public partial class DANG_NHAP_HE_THONG : Form
+    public partial class DANG_NHAP_HE_THONG : MaterialSkin.Controls.MaterialForm
     {
         public DANG_NHAP_HE_THONG()
         {

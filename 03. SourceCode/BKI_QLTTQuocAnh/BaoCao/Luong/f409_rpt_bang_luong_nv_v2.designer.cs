@@ -35,8 +35,8 @@
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.m_txt_nam = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_thang = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_thong_bao = new DevExpress.XtraEditors.LabelControl();
             this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
@@ -103,8 +103,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_thang.Properties)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).BeginInit();
@@ -176,16 +175,6 @@
             // 
             this.m_txt_nam.Location = new System.Drawing.Point(120, 13);
             this.m_txt_nam.Name = "m_txt_nam";
-            this.m_txt_nam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.m_txt_nam.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_nam.Properties.Appearance.Options.UseTextOptions = true;
-            this.m_txt_nam.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.m_txt_nam.Properties.AutoHeight = false;
-            this.m_txt_nam.Properties.Mask.EditMask = "d";
-            this.m_txt_nam.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.m_txt_nam.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.m_txt_nam.Properties.NullText = "Nhập năm";
-            this.m_txt_nam.Properties.NullValuePrompt = "Nhập năm";
             this.m_txt_nam.Size = new System.Drawing.Size(100, 29);
             this.m_txt_nam.TabIndex = 1;
             // 
@@ -193,16 +182,6 @@
             // 
             this.m_txt_thang.Location = new System.Drawing.Point(19, 13);
             this.m_txt_thang.Name = "m_txt_thang";
-            this.m_txt_thang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.m_txt_thang.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_thang.Properties.Appearance.Options.UseTextOptions = true;
-            this.m_txt_thang.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.m_txt_thang.Properties.AutoHeight = false;
-            this.m_txt_thang.Properties.Mask.EditMask = "d";
-            this.m_txt_thang.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.m_txt_thang.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.m_txt_thang.Properties.NullText = "Nhập tháng";
-            this.m_txt_thang.Properties.NullValuePrompt = "Nhập tháng";
             this.m_txt_thang.Size = new System.Drawing.Size(84, 29);
             this.m_txt_thang.TabIndex = 0;
             // 
@@ -873,7 +852,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -1027,8 +1006,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_thang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).EndInit();
@@ -1049,10 +1026,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.TextEdit m_txt_nam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
         private DevExpress.XtraEditors.LabelControl m_lbl_so_luong_nv_tinh_luong;
         private DevExpress.XtraEditors.LabelControl m_lbl_thong_bao;
-        private DevExpress.XtraEditors.TextEdit m_txt_thang;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_thang;
         private System.ComponentModel.BackgroundWorker m_bgwk;
         private DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController spreadsheetBarController1;
         private DevExpress.XtraEditors.ProgressBarControl m_prb;

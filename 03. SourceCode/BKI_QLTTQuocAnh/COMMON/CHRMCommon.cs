@@ -122,9 +122,9 @@ namespace BKI_DichVuMatDat
 
                 switch(typeOfControl)
                 {
-                    case "DevExpress.XtraEditors.TextEdit":
+                    case "MaterialSkin.Controls.MaterialSingleLineTextField":
                         {
-                            var controlTextEdit = control as TextEdit;
+                            var controlTextEdit = control as MaterialSkin.Controls.MaterialSingleLineTextField;
                             isValidated = (controlTextEdit.Text.Trim() != "");
                             break;
                         }

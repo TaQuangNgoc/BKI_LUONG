@@ -17,7 +17,7 @@ using IP.Core.IPCommon;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class THEM_MOI_NHAN_VIEN : Form
+    public partial class THEM_MOI_NHAN_VIEN : MaterialSkin.Controls.MaterialForm
     {
         decimal m_id_nhan_vien;
         DataEntryFormMode m_e = DataEntryFormMode.InsertDataState;

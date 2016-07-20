@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.CAI_DAT
 {
-    public partial class NGAY_CONG_TIEU_CHUAN : Form
+    public partial class NGAY_CONG_TIEU_CHUAN : MaterialSkin.Controls.MaterialForm
     {
         public NGAY_CONG_TIEU_CHUAN()
         {

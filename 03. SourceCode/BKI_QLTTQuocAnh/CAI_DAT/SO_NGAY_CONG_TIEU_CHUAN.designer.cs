@@ -50,18 +50,18 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_txt_ten_loai_nhan_vien = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_loai_nhan_vien = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.m_group_cai_dat = new System.Windows.Forms.GroupBox();
-            this.m_txt_ngay_mac_dinh = new DevExpress.XtraEditors.TextEdit();
-            this.m_rd_mac_dinh = new System.Windows.Forms.RadioButton();
-            this.m_rd_tuy_chinh = new System.Windows.Forms.RadioButton();
+            this.m_txt_ngay_mac_dinh = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_rd_mac_dinh = new MaterialSkin.Controls.MaterialRadioButton();
+            this.m_rd_tuy_chinh = new MaterialSkin.Controls.MaterialRadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.m_txt_nam = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.m_btn_tiep_tuc = new DevExpress.XtraEditors.SimpleButton();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -73,11 +73,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_loai_nhan_vien.Properties)).BeginInit();
+            
             this.m_group_cai_dat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ngay_mac_dinh.Properties)).BeginInit();
+            
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).BeginInit();
+            
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -291,9 +291,6 @@
             // 
             this.m_txt_ten_loai_nhan_vien.Location = new System.Drawing.Point(167, 14);
             this.m_txt_ten_loai_nhan_vien.Name = "m_txt_ten_loai_nhan_vien";
-            this.m_txt_ten_loai_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_ten_loai_nhan_vien.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ten_loai_nhan_vien.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_ten_loai_nhan_vien.Size = new System.Drawing.Size(338, 26);
             this.m_txt_ten_loai_nhan_vien.TabIndex = 4;
             // 
@@ -370,9 +367,7 @@
             // 
             this.m_txt_ngay_mac_dinh.Location = new System.Drawing.Point(170, 21);
             this.m_txt_ngay_mac_dinh.Name = "m_txt_ngay_mac_dinh";
-            this.m_txt_ngay_mac_dinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_ngay_mac_dinh.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ngay_mac_dinh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_ngay_mac_dinh.Size = new System.Drawing.Size(234, 26);
             this.m_txt_ngay_mac_dinh.TabIndex = 3;
             this.m_txt_ngay_mac_dinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -425,9 +420,7 @@
             // 
             this.m_txt_nam.Location = new System.Drawing.Point(170, 15);
             this.m_txt_nam.Name = "m_txt_nam";
-            this.m_txt_nam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_nam.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_nam.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_nam.Size = new System.Drawing.Size(234, 26);
             this.m_txt_nam.TabIndex = 4;
             this.m_txt_nam.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -511,13 +504,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_loai_nhan_vien.Properties)).EndInit();
+
             this.m_group_cai_dat.ResumeLayout(false);
             this.m_group_cai_dat.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ngay_mac_dinh.Properties)).EndInit();
+            
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).EndInit();
+            
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -528,8 +521,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton m_rd_tuy_chinh;
-        private System.Windows.Forms.RadioButton m_rd_mac_dinh;
+        private MaterialSkin.Controls.MaterialRadioButton m_rd_tuy_chinh;
+        private MaterialSkin.Controls.MaterialRadioButton m_rd_mac_dinh;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl m_grc;
@@ -558,9 +551,9 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa;
         private DevExpress.XtraEditors.SimpleButton m_btn_them;
         private DevExpress.XtraEditors.SimpleButton m_btn_tiep_tuc;
-        private DevExpress.XtraEditors.TextEdit m_txt_ten_loai_nhan_vien;
-        private DevExpress.XtraEditors.TextEdit m_txt_ngay_mac_dinh;
-        private DevExpress.XtraEditors.TextEdit m_txt_nam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ten_loai_nhan_vien;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ngay_mac_dinh;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
     }
 }

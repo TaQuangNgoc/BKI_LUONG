@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class LOGIN_DETAIL: Form
+    public partial class LOGIN_DETAIL: MaterialSkin.Controls.MaterialForm
     {
         public LOGIN_DETAIL()
         {

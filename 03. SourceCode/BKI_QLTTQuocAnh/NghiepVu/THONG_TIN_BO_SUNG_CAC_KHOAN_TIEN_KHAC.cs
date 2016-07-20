@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
-    public partial class THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC : Form
+    public partial class THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC : MaterialSkin.Controls.MaterialForm
     {
         public THONG_TIN_BO_SUNG_CAC_KHOAN_TIEN_KHAC()
         {

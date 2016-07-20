@@ -15,7 +15,7 @@ using DevExpress.XtraEditors;
 namespace BKI_DichVuMatDat.BaoCao.Luong
 {
    
-    public partial class NHAN_VIEN_KHONG_CHAM_CONG_THANG : Form
+    public partial class NHAN_VIEN_KHONG_CHAM_CONG_THANG : MaterialSkin.Controls.MaterialForm
     {
         public decimal m_thang;
         public decimal m_nam;

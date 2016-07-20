@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.FORM_CHO
 {
-    public partial class FORM_CHO_CHAM_CONG_TU_EXCEL : Form
+    public partial class FORM_CHO_CHAM_CONG_TU_EXCEL : MaterialSkin.Controls.MaterialForm
     {
         public FORM_CHO_CHAM_CONG_TU_EXCEL()
         {

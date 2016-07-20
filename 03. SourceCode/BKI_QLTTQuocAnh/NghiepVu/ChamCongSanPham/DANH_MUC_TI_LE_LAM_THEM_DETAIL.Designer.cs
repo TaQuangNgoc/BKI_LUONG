@@ -33,24 +33,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.m_txt_lns = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_lns = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label11 = new System.Windows.Forms.Label();
-            this.m_txt_ten_loai_lamthem = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_loai_lamthem = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label10 = new System.Windows.Forms.Label();
-            this.m_txt_ma_loai_lamthem = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ma_loai_lamthem = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_loai_lamthem.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_loai_lamthem.Properties)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -69,7 +67,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -122,9 +120,7 @@
             // 
             this.m_txt_lns.Location = new System.Drawing.Point(203, 207);
             this.m_txt_lns.Name = "m_txt_lns";
-            this.m_txt_lns.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_lns.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_lns.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns.Size = new System.Drawing.Size(180, 26);
             this.m_txt_lns.TabIndex = 46;
@@ -144,9 +140,7 @@
             // 
             this.m_txt_ten_loai_lamthem.Location = new System.Drawing.Point(203, 153);
             this.m_txt_ten_loai_lamthem.Name = "m_txt_ten_loai_lamthem";
-            this.m_txt_ten_loai_lamthem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ten_loai_lamthem.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ten_loai_lamthem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_ten_loai_lamthem.Size = new System.Drawing.Size(180, 26);
             this.m_txt_ten_loai_lamthem.TabIndex = 45;
             // 
@@ -164,9 +158,7 @@
             // 
             this.m_txt_ma_loai_lamthem.Location = new System.Drawing.Point(203, 105);
             this.m_txt_ma_loai_lamthem.Name = "m_txt_ma_loai_lamthem";
-            this.m_txt_ma_loai_lamthem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ma_loai_lamthem.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ma_loai_lamthem.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_ma_loai_lamthem.Size = new System.Drawing.Size(180, 26);
             this.m_txt_ma_loai_lamthem.TabIndex = 44;
             // 
@@ -211,9 +203,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_loai_lamthem.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_loai_lamthem.Properties)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,11 +216,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
-        private DevExpress.XtraEditors.TextEdit m_txt_lns;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_lns;
         private System.Windows.Forms.Label label11;
-        private DevExpress.XtraEditors.TextEdit m_txt_ten_loai_lamthem;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ten_loai_lamthem;
         private System.Windows.Forms.Label label10;
-        private DevExpress.XtraEditors.TextEdit m_txt_ma_loai_lamthem;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ma_loai_lamthem;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
 

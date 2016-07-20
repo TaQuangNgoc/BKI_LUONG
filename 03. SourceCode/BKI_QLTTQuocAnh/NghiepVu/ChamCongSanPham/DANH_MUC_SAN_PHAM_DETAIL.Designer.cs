@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.m_txt_ten_san_pham = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_ma_san_pham = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_san_pham = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_ma_san_pham = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -37,8 +37,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_san_pham.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_san_pham.Properties)).BeginInit();
+            
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,9 +46,7 @@
             // 
             this.m_txt_ten_san_pham.Location = new System.Drawing.Point(166, 162);
             this.m_txt_ten_san_pham.Name = "m_txt_ten_san_pham";
-            this.m_txt_ten_san_pham.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ten_san_pham.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ten_san_pham.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_ten_san_pham.Size = new System.Drawing.Size(319, 26);
             this.m_txt_ten_san_pham.TabIndex = 29;
             // 
@@ -57,9 +54,7 @@
             // 
             this.m_txt_ma_san_pham.Location = new System.Drawing.Point(166, 99);
             this.m_txt_ma_san_pham.Name = "m_txt_ma_san_pham";
-            this.m_txt_ma_san_pham.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ma_san_pham.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ma_san_pham.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_ma_san_pham.Size = new System.Drawing.Size(319, 26);
             this.m_txt_ma_san_pham.TabIndex = 28;
             // 
@@ -85,7 +80,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -117,8 +112,8 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -168,8 +163,7 @@
             this.Name = "DANH_MUC_SAN_PHAM_DETAIL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH_MUC_SAN_PHAM_DETAIL";
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_san_pham.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_san_pham.Properties)).EndInit();
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -180,8 +174,8 @@
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit m_txt_ten_san_pham;
-        private DevExpress.XtraEditors.TextEdit m_txt_ma_san_pham;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ten_san_pham;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ma_san_pham;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;

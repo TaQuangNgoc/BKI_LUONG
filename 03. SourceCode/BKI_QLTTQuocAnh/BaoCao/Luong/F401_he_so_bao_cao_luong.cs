@@ -17,7 +17,7 @@ using DevExpress.XtraSplashScreen;
 
 namespace BKI_DichVuMatDat.BaoCao
 {
-    public partial class F401_he_so_bao_cao_luong : Form
+    public partial class F401_he_so_bao_cao_luong : MaterialSkin.Controls.MaterialForm
     {
         public F401_he_so_bao_cao_luong()
         {

@@ -55,7 +55,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.m_btn_tiep_tuc = new DevExpress.XtraEditors.SimpleButton();
-            this.m_txt_nam = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label6 = new System.Windows.Forms.Label();
             this.tab_danhmucloainhanvien = new System.Windows.Forms.TabPage();
             this.m_grc_loai_nv = new DevExpress.XtraGrid.GridControl();
@@ -80,7 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).BeginInit();
+
             this.tab_danhmucloainhanvien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).BeginInit();
@@ -104,7 +104,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -350,8 +350,8 @@
             // 
             // m_btn_tiep_tuc
             // 
-            this.m_btn_tiep_tuc.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_tiep_tuc.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_tiep_tuc.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_tiep_tuc.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_tiep_tuc.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_tiep_tuc.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_tiep_tuc.Appearance.Options.UseBackColor = true;
@@ -370,9 +370,7 @@
             // 
             this.m_txt_nam.Location = new System.Drawing.Point(170, 27);
             this.m_txt_nam.Name = "m_txt_nam";
-            this.m_txt_nam.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_nam.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_nam.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            
             this.m_txt_nam.Size = new System.Drawing.Size(234, 26);
             this.m_txt_nam.TabIndex = 4;
             // 
@@ -508,7 +506,7 @@
             // m_btn_them
             // 
             this.m_btn_them.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_btn_them.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_them.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_them.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_them.Appearance.Options.UseBackColor = true;
@@ -526,8 +524,8 @@
             // 
             // m_btn_sua
             // 
-            this.m_btn_sua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_sua.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_sua.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_sua.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_sua.Appearance.Options.UseBackColor = true;
@@ -564,8 +562,8 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -602,7 +600,7 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_nam.Properties)).EndInit();
+
             this.tab_danhmucloainhanvien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).EndInit();
@@ -634,7 +632,7 @@
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private System.Windows.Forms.Panel panel6;
-        private DevExpress.XtraEditors.TextEdit m_txt_nam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox m_group_cau_hinh;
         private System.Windows.Forms.Panel panel5;

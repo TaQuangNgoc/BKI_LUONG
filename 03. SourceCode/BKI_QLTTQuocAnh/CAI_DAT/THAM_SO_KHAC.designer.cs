@@ -34,11 +34,11 @@
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.m_txt_so_thang_tinh_bhxh = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_giam_tru_phu_thuoc = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_giam_tru_gia_canh = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_luong_toi_thieu_quy_dinh = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_luong_toi_thieu_vung = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_so_thang_tinh_bhxh = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_giam_tru_phu_thuoc = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_giam_tru_gia_canh = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_luong_toi_thieu_quy_dinh = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_luong_toi_thieu_vung = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,16 +53,11 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_thang_tinh_bhxh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_giam_tru_phu_thuoc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_giam_tru_gia_canh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_luong_toi_thieu_quy_dinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_luong_toi_thieu_vung.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -93,8 +88,8 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -148,9 +143,6 @@
             // 
             this.m_txt_so_thang_tinh_bhxh.Location = new System.Drawing.Point(241, 223);
             this.m_txt_so_thang_tinh_bhxh.Name = "m_txt_so_thang_tinh_bhxh";
-            this.m_txt_so_thang_tinh_bhxh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_so_thang_tinh_bhxh.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_so_thang_tinh_bhxh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_so_thang_tinh_bhxh.Size = new System.Drawing.Size(178, 26);
             this.m_txt_so_thang_tinh_bhxh.TabIndex = 27;
             this.m_txt_so_thang_tinh_bhxh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
@@ -160,9 +152,6 @@
             // 
             this.m_txt_giam_tru_phu_thuoc.Location = new System.Drawing.Point(241, 175);
             this.m_txt_giam_tru_phu_thuoc.Name = "m_txt_giam_tru_phu_thuoc";
-            this.m_txt_giam_tru_phu_thuoc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_giam_tru_phu_thuoc.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_giam_tru_phu_thuoc.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_giam_tru_phu_thuoc.Size = new System.Drawing.Size(178, 26);
             this.m_txt_giam_tru_phu_thuoc.TabIndex = 26;
             this.m_txt_giam_tru_phu_thuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
@@ -172,9 +161,6 @@
             // 
             this.m_txt_giam_tru_gia_canh.Location = new System.Drawing.Point(241, 127);
             this.m_txt_giam_tru_gia_canh.Name = "m_txt_giam_tru_gia_canh";
-            this.m_txt_giam_tru_gia_canh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_giam_tru_gia_canh.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_giam_tru_gia_canh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_giam_tru_gia_canh.Size = new System.Drawing.Size(178, 26);
             this.m_txt_giam_tru_gia_canh.TabIndex = 25;
             this.m_txt_giam_tru_gia_canh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
@@ -184,9 +170,6 @@
             // 
             this.m_txt_luong_toi_thieu_quy_dinh.Location = new System.Drawing.Point(241, 79);
             this.m_txt_luong_toi_thieu_quy_dinh.Name = "m_txt_luong_toi_thieu_quy_dinh";
-            this.m_txt_luong_toi_thieu_quy_dinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_luong_toi_thieu_quy_dinh.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_luong_toi_thieu_quy_dinh.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_luong_toi_thieu_quy_dinh.Size = new System.Drawing.Size(178, 26);
             this.m_txt_luong_toi_thieu_quy_dinh.TabIndex = 24;
             this.m_txt_luong_toi_thieu_quy_dinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
@@ -196,9 +179,6 @@
             // 
             this.m_txt_luong_toi_thieu_vung.Location = new System.Drawing.Point(241, 31);
             this.m_txt_luong_toi_thieu_vung.Name = "m_txt_luong_toi_thieu_vung";
-            this.m_txt_luong_toi_thieu_vung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_luong_toi_thieu_vung.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_luong_toi_thieu_vung.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
             this.m_txt_luong_toi_thieu_vung.Size = new System.Drawing.Size(178, 26);
             this.m_txt_luong_toi_thieu_vung.TabIndex = 23;
             this.m_txt_luong_toi_thieu_vung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
@@ -320,11 +300,6 @@
             this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_thang_tinh_bhxh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_giam_tru_phu_thuoc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_giam_tru_gia_canh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_luong_toi_thieu_quy_dinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_luong_toi_thieu_vung.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -347,10 +322,10 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
-        private DevExpress.XtraEditors.TextEdit m_txt_so_thang_tinh_bhxh;
-        private DevExpress.XtraEditors.TextEdit m_txt_giam_tru_phu_thuoc;
-        private DevExpress.XtraEditors.TextEdit m_txt_giam_tru_gia_canh;
-        private DevExpress.XtraEditors.TextEdit m_txt_luong_toi_thieu_quy_dinh;
-        private DevExpress.XtraEditors.TextEdit m_txt_luong_toi_thieu_vung;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_so_thang_tinh_bhxh;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_giam_tru_phu_thuoc;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_giam_tru_gia_canh;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_luong_toi_thieu_quy_dinh;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_luong_toi_thieu_vung;
     }
 }

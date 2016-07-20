@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.CONFIRM
 {
-    public partial class msg002_confirm_luu_du_lieu_bang_luong : Form
+    public partial class msg002_confirm_luu_du_lieu_bang_luong : MaterialSkin.Controls.MaterialForm
     {
         private ENUM_CONFIRM_LUU_BANG_LUONG _confirm = ENUM_CONFIRM_LUU_BANG_LUONG.NONE;
         public msg002_confirm_luu_du_lieu_bang_luong()

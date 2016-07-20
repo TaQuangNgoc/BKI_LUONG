@@ -60,7 +60,7 @@
             this.m_nud_phu_thuoc = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.m_cb_doan_phi = new System.Windows.Forms.CheckBox();
+            this.m_cb_doan_phi = new MaterialSkin.Controls.MaterialCheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.m_dtp_ngay_bat_dau_lv = new System.Windows.Forms.DateTimePicker();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
@@ -127,7 +127,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.m_cb_luong_theo_thoi_gian = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_theo_thoi_gian = new MaterialSkin.Controls.MaterialCheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -149,9 +149,9 @@
             this.m_dtp_tu_ngay_luong_ngay = new System.Windows.Forms.DateTimePicker();
             this.m_dtp_den_ngay_luong_ngay = new System.Windows.Forms.DateTimePicker();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_ngay = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_khoan = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_theo_san_pham = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -201,8 +201,8 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -220,7 +220,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -398,8 +398,8 @@
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton4.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.simpleButton4.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.simpleButton4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.White;
             this.simpleButton4.Appearance.Options.UseBackColor = true;
@@ -434,8 +434,8 @@
             // 
             // simpleButton6
             // 
-            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.simpleButton6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.simpleButton6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.simpleButton6.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton6.Appearance.ForeColor = System.Drawing.Color.White;
             this.simpleButton6.Appearance.Options.UseBackColor = true;
@@ -827,8 +827,8 @@
             // 
             // m_btn_sua_phan_tram_luong
             // 
-            this.m_btn_sua_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_sua_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_sua_phan_tram_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_sua_phan_tram_luong.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_sua_phan_tram_luong.Appearance.Options.UseBackColor = true;
@@ -863,8 +863,8 @@
             // 
             // m_btn_them_phan_tram_luong
             // 
-            this.m_btn_them_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_them_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_phan_tram_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_them_phan_tram_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_them_phan_tram_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_them_phan_tram_luong.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_them_phan_tram_luong.Appearance.Options.UseBackColor = true;
@@ -1063,8 +1063,8 @@
             // 
             // m_btn_sua_luong
             // 
-            this.m_btn_sua_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_sua_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_sua_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_sua_luong.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_sua_luong.Appearance.Options.UseBackColor = true;
@@ -1117,8 +1117,8 @@
             // 
             // m_btn_them_luong
             // 
-            this.m_btn_them_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_them_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_luong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_them_luong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_them_luong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_them_luong.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_them_luong.Appearance.Options.UseBackColor = true;
@@ -1385,8 +1385,8 @@
             // 
             // m_btn_sua_luong_ngay
             // 
-            this.m_btn_sua_luong_ngay.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_sua_luong_ngay.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_sua_luong_ngay.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_sua_luong_ngay.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_sua_luong_ngay.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_sua_luong_ngay.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_sua_luong_ngay.Appearance.Options.UseBackColor = true;
@@ -1421,8 +1421,8 @@
             // 
             // m_btn_them_luong_ngay
             // 
-            this.m_btn_them_luong_ngay.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_them_luong_ngay.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_them_luong_ngay.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_them_luong_ngay.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_them_luong_ngay.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_them_luong_ngay.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_them_luong_ngay.Appearance.Options.UseBackColor = true;
@@ -1639,7 +1639,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox m_group_cai_dat_luong_ngay;
-        private System.Windows.Forms.CheckBox m_cb_luong_ngay;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_ngay;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.DateTimePicker m_dtp_tu_ngay_luong_ngay;
         private System.Windows.Forms.DateTimePicker m_dtp_den_ngay_luong_ngay;
@@ -1647,8 +1647,8 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.CheckBox m_cb_luong_khoan;
-        private System.Windows.Forms.CheckBox m_cb_luong_theo_san_pham;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_khoan;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_san_pham;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
@@ -1672,7 +1672,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_luong;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.CheckBox m_cb_luong_theo_thoi_gian;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_thoi_gian;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox m_grb_loai_nv;
@@ -1704,7 +1704,7 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_sua_luong;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
         private DevExpress.XtraEditors.SimpleButton m_btn_them_luong;
-        private System.Windows.Forms.CheckBox m_cb_doan_phi;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_doan_phi;
         private System.Windows.Forms.GroupBox m_grb_phu_cap;
         private DevExpress.XtraGrid.GridControl m_grc_phu_cap;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_phu_cap;

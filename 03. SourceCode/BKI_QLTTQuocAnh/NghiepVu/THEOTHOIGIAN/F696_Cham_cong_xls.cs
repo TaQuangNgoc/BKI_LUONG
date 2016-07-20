@@ -22,7 +22,7 @@ using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
-    public partial class F696_Cham_cong_xls : Form
+    public partial class F696_Cham_cong_xls : MaterialSkin.Controls.MaterialForm
     {
         #region Public Interface
         public F696_Cham_cong_xls()

@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 
 namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
 {
-    public partial class DANH_MUC_TI_LE_LAM_THEM_DETAIL : Form
+    public partial class DANH_MUC_TI_LE_LAM_THEM_DETAIL : MaterialSkin.Controls.MaterialForm
     {
 
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;

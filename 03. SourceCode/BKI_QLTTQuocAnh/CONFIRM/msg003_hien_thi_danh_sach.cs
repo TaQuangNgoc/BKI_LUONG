@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using IP.Core.IPCommon;
 namespace BKI_DichVuMatDat.CONFIRM
 {
-    public partial class msg003_hien_thi_danh_sach : Form
+    public partial class msg003_hien_thi_danh_sach : MaterialSkin.Controls.MaterialForm
     {
         public msg003_hien_thi_danh_sach()
         {

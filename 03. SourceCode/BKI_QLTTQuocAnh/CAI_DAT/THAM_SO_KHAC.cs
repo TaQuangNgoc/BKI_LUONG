@@ -11,17 +11,13 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class THAM_SO_KHAC : Form
+    public partial class THAM_SO_KHAC : MaterialSkin.Controls.MaterialForm
     {
         public THAM_SO_KHAC()
         {
             InitializeComponent();
             load_du_lieu();
-            m_txt_giam_tru_gia_canh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            m_txt_giam_tru_phu_thuoc.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            m_txt_luong_toi_thieu_quy_dinh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            m_txt_luong_toi_thieu_vung.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            m_txt_so_thang_tinh_bhxh.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            
         }
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)

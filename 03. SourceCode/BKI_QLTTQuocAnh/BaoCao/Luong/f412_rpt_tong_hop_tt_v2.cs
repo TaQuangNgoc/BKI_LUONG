@@ -19,7 +19,7 @@ using BKI_DichVuMatDat.XtraReport;
 using BKI_DichVuMatDat.NghiepVu.Luong;
 namespace BKI_DichVuMatDat.BaoCao
 {
-    public partial class f412_rpt_tong_hop_tt_v2 : Form
+    public partial class f412_rpt_tong_hop_tt_v2 : MaterialSkin.Controls.MaterialForm
     {
         #region Public Interface
         public f412_rpt_tong_hop_tt_v2()

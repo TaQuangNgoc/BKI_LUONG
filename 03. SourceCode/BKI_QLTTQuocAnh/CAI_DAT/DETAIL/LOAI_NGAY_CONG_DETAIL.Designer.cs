@@ -33,21 +33,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.m_txt_ma_ngay_cong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ma_ngay_cong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
-            this.m_txt_ten_ngay_cong = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_lns_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_lcd_loai_ngay_cong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_ten_ngay_cong = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_lns_loai_ngay_cong = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_lcd_loai_ngay_cong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_luu = new MaterialSkin.Controls.MaterialRaisedButton();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.m_btn_luu = new MaterialSkin.Controls.MaterialRaisedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_ngay_cong.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_ngay_cong.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns_loai_ngay_cong.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd_loai_ngay_cong.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -57,7 +53,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 142);
+            this.label3.Location = new System.Drawing.Point(35, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 18);
             this.label3.TabIndex = 41;
@@ -67,7 +63,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(35, 244);
+            this.label14.Location = new System.Drawing.Point(35, 235);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 18);
             this.label14.TabIndex = 44;
@@ -77,7 +73,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(360, 197);
+            this.label6.Location = new System.Drawing.Point(360, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 18);
             this.label6.TabIndex = 43;
@@ -87,7 +83,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(360, 248);
+            this.label13.Location = new System.Drawing.Point(360, 239);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(28, 18);
             this.label13.TabIndex = 45;
@@ -97,7 +93,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 193);
+            this.label7.Location = new System.Drawing.Point(35, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 18);
             this.label7.TabIndex = 42;
@@ -105,19 +101,24 @@
             // 
             // m_txt_ma_ngay_cong
             // 
-            this.m_txt_ma_ngay_cong.Location = new System.Drawing.Point(155, 87);
+            this.m_txt_ma_ngay_cong.Depth = 0;
+            this.m_txt_ma_ngay_cong.Hint = "";
+            this.m_txt_ma_ngay_cong.Location = new System.Drawing.Point(155, 78);
+            this.m_txt_ma_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ma_ngay_cong.Name = "m_txt_ma_ngay_cong";
-            this.m_txt_ma_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ma_ngay_cong.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ma_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ma_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ma_ngay_cong.PasswordChar = '\0';
+            this.m_txt_ma_ngay_cong.SelectedText = "";
+            this.m_txt_ma_ngay_cong.SelectionLength = 0;
+            this.m_txt_ma_ngay_cong.SelectionStart = 0;
+            this.m_txt_ma_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ma_ngay_cong.TabIndex = 1;
+            this.m_txt_ma_ngay_cong.UseSystemPasswordChar = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(35, 91);
+            this.label1.Location = new System.Drawing.Point(35, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 18);
             this.label1.TabIndex = 40;
@@ -125,36 +126,51 @@
             // 
             // m_txt_ten_ngay_cong
             // 
-            this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(155, 138);
+            this.m_txt_ten_ngay_cong.Depth = 0;
+            this.m_txt_ten_ngay_cong.Hint = "";
+            this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(155, 129);
+            this.m_txt_ten_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ten_ngay_cong.Name = "m_txt_ten_ngay_cong";
-            this.m_txt_ten_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ten_ngay_cong.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ten_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ten_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_ten_ngay_cong.PasswordChar = '\0';
+            this.m_txt_ten_ngay_cong.SelectedText = "";
+            this.m_txt_ten_ngay_cong.SelectionLength = 0;
+            this.m_txt_ten_ngay_cong.SelectionStart = 0;
+            this.m_txt_ten_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ten_ngay_cong.TabIndex = 2;
+            this.m_txt_ten_ngay_cong.UseSystemPasswordChar = false;
             // 
             // m_txt_lns_loai_ngay_cong
             // 
-            this.m_txt_lns_loai_ngay_cong.Location = new System.Drawing.Point(155, 189);
+            this.m_txt_lns_loai_ngay_cong.Depth = 0;
+            this.m_txt_lns_loai_ngay_cong.Hint = "";
+            this.m_txt_lns_loai_ngay_cong.Location = new System.Drawing.Point(155, 180);
+            this.m_txt_lns_loai_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lns_loai_ngay_cong.Name = "m_txt_lns_loai_ngay_cong";
-            this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_lns_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_lns_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lns_loai_ngay_cong.PasswordChar = '\0';
             this.m_txt_lns_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_lns_loai_ngay_cong.SelectedText = "";
+            this.m_txt_lns_loai_ngay_cong.SelectionLength = 0;
+            this.m_txt_lns_loai_ngay_cong.SelectionStart = 0;
+            this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_lns_loai_ngay_cong.TabIndex = 3;
+            this.m_txt_lns_loai_ngay_cong.UseSystemPasswordChar = false;
             this.m_txt_lns_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_lcd_loai_ngay_cong
             // 
-            this.m_txt_lcd_loai_ngay_cong.Location = new System.Drawing.Point(154, 240);
+            this.m_txt_lcd_loai_ngay_cong.Depth = 0;
+            this.m_txt_lcd_loai_ngay_cong.Hint = "";
+            this.m_txt_lcd_loai_ngay_cong.Location = new System.Drawing.Point(154, 231);
+            this.m_txt_lcd_loai_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lcd_loai_ngay_cong.Name = "m_txt_lcd_loai_ngay_cong";
-            this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_lcd_loai_ngay_cong.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_lcd_loai_ngay_cong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_lcd_loai_ngay_cong.PasswordChar = '\0';
             this.m_txt_lcd_loai_ngay_cong.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 26);
+            this.m_txt_lcd_loai_ngay_cong.SelectedText = "";
+            this.m_txt_lcd_loai_ngay_cong.SelectionLength = 0;
+            this.m_txt_lcd_loai_ngay_cong.SelectionStart = 0;
+            this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_lcd_loai_ngay_cong.TabIndex = 4;
+            this.m_txt_lcd_loai_ngay_cong.UseSystemPasswordChar = false;
             this.m_txt_lcd_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // panel2
@@ -167,6 +183,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(443, 53);
             this.panel2.TabIndex = 50;
+            // 
+            // m_btn_luu
+            // 
+            this.m_btn_luu.Depth = 0;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.Location = new System.Drawing.Point(166, 0);
+            this.m_btn_luu.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Primary = true;
+            this.m_btn_luu.Size = new System.Drawing.Size(161, 53);
+            this.m_btn_luu.TabIndex = 38;
+            this.m_btn_luu.Text = "Lưu";
+            this.m_btn_luu.UseVisualStyleBackColor = true;
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // m_btn_xoa_luong
             // 
@@ -229,20 +259,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT LOẠI NGÀY CÔNG";
             // 
-            // m_btn_luu
-            // 
-            this.m_btn_luu.Depth = 0;
-            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.Location = new System.Drawing.Point(166, 0);
-            this.m_btn_luu.MouseState = MaterialSkin.MouseState.HOVER;
-            this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Primary = true;
-            this.m_btn_luu.Size = new System.Drawing.Size(161, 53);
-            this.m_btn_luu.TabIndex = 38;
-            this.m_btn_luu.Text = "Lưu";
-            this.m_btn_luu.UseVisualStyleBackColor = true;
-            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
-            // 
             // LOAI_NGAY_CONG_DETAIL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,10 +270,6 @@
             this.Name = "LOAI_NGAY_CONG_DETAIL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOAI_NGAY_CONG_DETAIL";
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ma_ngay_cong.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_ngay_cong.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lns_loai_ngay_cong.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_lcd_loai_ngay_cong.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -274,11 +286,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
-        private DevExpress.XtraEditors.TextEdit m_txt_ma_ngay_cong;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ma_ngay_cong;
         private System.Windows.Forms.Label label1;
-        private DevExpress.XtraEditors.TextEdit m_txt_ten_ngay_cong;
-        private DevExpress.XtraEditors.TextEdit m_txt_lns_loai_ngay_cong;
-        private DevExpress.XtraEditors.TextEdit m_txt_lcd_loai_ngay_cong;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ten_ngay_cong;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_lns_loai_ngay_cong;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_lcd_loai_ngay_cong;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_luong;
         private System.Windows.Forms.Panel panel1;

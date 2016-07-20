@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
-    public partial class DANG_NHAP_HE_THONG_DETAIL : Form
+    public partial class DANG_NHAP_HE_THONG_DETAIL : MaterialSkin.Controls.MaterialForm
     {
         ToolTip m_tooltip_username = new ToolTip();
         ToolTip m_tooltip_password = new ToolTip();
@@ -96,7 +96,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
        
 
-        private void changeColor(Color color, DevExpress.XtraEditors.TextEdit textbox)
+        private void changeColor(Color color, MaterialSkin.Controls.MaterialSingleLineTextField textbox)
         {
             Graphics g = CreateGraphics();
             System.Drawing.Rectangle rect = textbox.DisplayRectangle;

@@ -32,32 +32,28 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.m_txt_ti_le = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_so_tien = new DevExpress.XtraEditors.TextEdit();
-            this.m_rd_ti_le = new System.Windows.Forms.RadioButton();
-            this.m_rd_so_tien = new System.Windows.Forms.RadioButton();
+            this.m_txt_ti_le = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_so_tien = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_rd_ti_le = new MaterialSkin.Controls.MaterialRadioButton();
+            this.m_rd_so_tien = new MaterialSkin.Controls.MaterialRadioButton();
             this.m_cb_cua_tien = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.m_checkb_duocgiamtruthue = new System.Windows.Forms.CheckBox();
-            this.m_checkb_tinhvaokhoanphaidong_bhxh = new System.Windows.Forms.CheckBox();
-            this.m_checkb_phuthuoc_songaydilam = new System.Windows.Forms.CheckBox();
-            this.m_txt_ten_phucap = new DevExpress.XtraEditors.TextEdit();
+            this.m_checkb_duocgiamtruthue = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_checkb_tinhvaokhoanphaidong_bhxh = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_checkb_phuthuoc_songaydilam = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_txt_ten_phucap = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.m_txt_doi_tuong_huong = new DevExpress.XtraEditors.TextEdit();
+            this.m_txt_doi_tuong_huong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_phucap.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_doi_tuong_huong.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,19 +70,19 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.m_txt_doi_tuong_huong);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(524, 516);
+            this.panel1.Size = new System.Drawing.Size(524, 494);
             this.panel1.TabIndex = 0;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label17.Location = new System.Drawing.Point(58, 89);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 18);
+            this.label17.Size = new System.Drawing.Size(88, 17);
             this.label17.TabIndex = 62;
             this.label17.Text = "Tên phụ cấp";
             // 
@@ -119,35 +115,51 @@
             // 
             // m_txt_ti_le
             // 
+            this.m_txt_ti_le.Depth = 0;
+            this.m_txt_ti_le.Hint = "";
             this.m_txt_ti_le.Location = new System.Drawing.Point(120, 14);
+            this.m_txt_ti_le.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le.Name = "m_txt_ti_le";
-            this.m_txt_ti_le.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_ti_le.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ti_le.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_ti_le.PasswordChar = '\0';
             this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_txt_ti_le.Size = new System.Drawing.Size(140, 26);
+            this.m_txt_ti_le.SelectedText = "";
+            this.m_txt_ti_le.SelectionLength = 0;
+            this.m_txt_ti_le.SelectionStart = 0;
+            this.m_txt_ti_le.Size = new System.Drawing.Size(140, 23);
             this.m_txt_ti_le.TabIndex = 5;
+            this.m_txt_ti_le.UseSystemPasswordChar = false;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_so_tien
             // 
+            this.m_txt_so_tien.Depth = 0;
+            this.m_txt_so_tien.Hint = "";
             this.m_txt_so_tien.Location = new System.Drawing.Point(120, 102);
+            this.m_txt_so_tien.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien.Name = "m_txt_so_tien";
-            this.m_txt_so_tien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_so_tien.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_so_tien.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.m_txt_so_tien.PasswordChar = '\0';
             this.m_txt_so_tien.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_txt_so_tien.Size = new System.Drawing.Size(140, 26);
+            this.m_txt_so_tien.SelectedText = "";
+            this.m_txt_so_tien.SelectionLength = 0;
+            this.m_txt_so_tien.SelectionStart = 0;
+            this.m_txt_so_tien.Size = new System.Drawing.Size(140, 23);
             this.m_txt_so_tien.TabIndex = 8;
+            this.m_txt_so_tien.UseSystemPasswordChar = false;
             this.m_txt_so_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_so_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_rd_ti_le
             // 
             this.m_rd_ti_le.AutoSize = true;
+            this.m_rd_ti_le.Depth = 0;
+            this.m_rd_ti_le.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_rd_ti_le.Location = new System.Drawing.Point(6, 16);
+            this.m_rd_ti_le.Margin = new System.Windows.Forms.Padding(0);
+            this.m_rd_ti_le.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_rd_ti_le.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_rd_ti_le.Name = "m_rd_ti_le";
-            this.m_rd_ti_le.Size = new System.Drawing.Size(53, 22);
+            this.m_rd_ti_le.Ripple = true;
+            this.m_rd_ti_le.Size = new System.Drawing.Size(55, 30);
             this.m_rd_ti_le.TabIndex = 4;
             this.m_rd_ti_le.TabStop = true;
             this.m_rd_ti_le.Text = "Tỉ lệ";
@@ -157,9 +169,15 @@
             // m_rd_so_tien
             // 
             this.m_rd_so_tien.AutoSize = true;
+            this.m_rd_so_tien.Depth = 0;
+            this.m_rd_so_tien.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_rd_so_tien.Location = new System.Drawing.Point(6, 104);
+            this.m_rd_so_tien.Margin = new System.Windows.Forms.Padding(0);
+            this.m_rd_so_tien.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_rd_so_tien.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_rd_so_tien.Name = "m_rd_so_tien";
-            this.m_rd_so_tien.Size = new System.Drawing.Size(70, 22);
+            this.m_rd_so_tien.Ripple = true;
+            this.m_rd_so_tien.Size = new System.Drawing.Size(72, 30);
             this.m_rd_so_tien.TabIndex = 7;
             this.m_rd_so_tien.TabStop = true;
             this.m_rd_so_tien.Text = "Số tiền";
@@ -204,10 +222,15 @@
             // m_checkb_duocgiamtruthue
             // 
             this.m_checkb_duocgiamtruthue.AutoSize = true;
-            this.m_checkb_duocgiamtruthue.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_checkb_duocgiamtruthue.Depth = 0;
+            this.m_checkb_duocgiamtruthue.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_checkb_duocgiamtruthue.Location = new System.Drawing.Point(61, 405);
+            this.m_checkb_duocgiamtruthue.Margin = new System.Windows.Forms.Padding(0);
+            this.m_checkb_duocgiamtruthue.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_checkb_duocgiamtruthue.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_checkb_duocgiamtruthue.Name = "m_checkb_duocgiamtruthue";
-            this.m_checkb_duocgiamtruthue.Size = new System.Drawing.Size(155, 22);
+            this.m_checkb_duocgiamtruthue.Ripple = true;
+            this.m_checkb_duocgiamtruthue.Size = new System.Drawing.Size(149, 30);
             this.m_checkb_duocgiamtruthue.TabIndex = 11;
             this.m_checkb_duocgiamtruthue.Text = "Được giảm trừ thuế";
             this.m_checkb_duocgiamtruthue.UseVisualStyleBackColor = true;
@@ -215,10 +238,15 @@
             // m_checkb_tinhvaokhoanphaidong_bhxh
             // 
             this.m_checkb_tinhvaokhoanphaidong_bhxh.AutoSize = true;
-            this.m_checkb_tinhvaokhoanphaidong_bhxh.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Depth = 0;
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Location = new System.Drawing.Point(61, 366);
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Margin = new System.Windows.Forms.Padding(0);
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Name = "m_checkb_tinhvaokhoanphaidong_bhxh";
-            this.m_checkb_tinhvaokhoanphaidong_bhxh.Size = new System.Drawing.Size(240, 22);
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Ripple = true;
+            this.m_checkb_tinhvaokhoanphaidong_bhxh.Size = new System.Drawing.Size(228, 30);
             this.m_checkb_tinhvaokhoanphaidong_bhxh.TabIndex = 10;
             this.m_checkb_tinhvaokhoanphaidong_bhxh.Text = "Tính vào khoản phải đóng BHXH";
             this.m_checkb_tinhvaokhoanphaidong_bhxh.UseVisualStyleBackColor = true;
@@ -226,27 +254,37 @@
             // m_checkb_phuthuoc_songaydilam
             // 
             this.m_checkb_phuthuoc_songaydilam.AutoSize = true;
-            this.m_checkb_phuthuoc_songaydilam.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_checkb_phuthuoc_songaydilam.Depth = 0;
+            this.m_checkb_phuthuoc_songaydilam.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_checkb_phuthuoc_songaydilam.Location = new System.Drawing.Point(61, 327);
+            this.m_checkb_phuthuoc_songaydilam.Margin = new System.Windows.Forms.Padding(0);
+            this.m_checkb_phuthuoc_songaydilam.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_checkb_phuthuoc_songaydilam.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_checkb_phuthuoc_songaydilam.Name = "m_checkb_phuthuoc_songaydilam";
-            this.m_checkb_phuthuoc_songaydilam.Size = new System.Drawing.Size(193, 22);
+            this.m_checkb_phuthuoc_songaydilam.Ripple = true;
+            this.m_checkb_phuthuoc_songaydilam.Size = new System.Drawing.Size(185, 30);
             this.m_checkb_phuthuoc_songaydilam.TabIndex = 9;
             this.m_checkb_phuthuoc_songaydilam.Text = "Phụ thuộc số ngày đi làm";
             this.m_checkb_phuthuoc_songaydilam.UseVisualStyleBackColor = true;
             // 
             // m_txt_ten_phucap
             // 
+            this.m_txt_ten_phucap.Depth = 0;
+            this.m_txt_ten_phucap.Hint = "";
             this.m_txt_ten_phucap.Location = new System.Drawing.Point(181, 85);
+            this.m_txt_ten_phucap.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ten_phucap.Name = "m_txt_ten_phucap";
-            this.m_txt_ten_phucap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ten_phucap.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ten_phucap.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ten_phucap.Size = new System.Drawing.Size(275, 26);
+            this.m_txt_ten_phucap.PasswordChar = '\0';
+            this.m_txt_ten_phucap.SelectedText = "";
+            this.m_txt_ten_phucap.SelectionLength = 0;
+            this.m_txt_ten_phucap.SelectionStart = 0;
+            this.m_txt_ten_phucap.Size = new System.Drawing.Size(275, 23);
             this.m_txt_ten_phucap.TabIndex = 1;
+            this.m_txt_ten_phucap.UseSystemPasswordChar = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -271,15 +309,15 @@
             this.panel3.Controls.Add(this.m_btn_luu);
             this.panel3.Controls.Add(this.m_btn_thoat);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 461);
+            this.panel3.Location = new System.Drawing.Point(0, 439);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(522, 53);
             this.panel3.TabIndex = 60;
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -316,13 +354,18 @@
             // 
             // m_txt_doi_tuong_huong
             // 
+            this.m_txt_doi_tuong_huong.Depth = 0;
+            this.m_txt_doi_tuong_huong.Hint = "";
             this.m_txt_doi_tuong_huong.Location = new System.Drawing.Point(181, 129);
+            this.m_txt_doi_tuong_huong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_doi_tuong_huong.Name = "m_txt_doi_tuong_huong";
-            this.m_txt_doi_tuong_huong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_doi_tuong_huong.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_doi_tuong_huong.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_doi_tuong_huong.Size = new System.Drawing.Size(275, 26);
+            this.m_txt_doi_tuong_huong.PasswordChar = '\0';
+            this.m_txt_doi_tuong_huong.SelectedText = "";
+            this.m_txt_doi_tuong_huong.SelectionLength = 0;
+            this.m_txt_doi_tuong_huong.SelectionStart = 0;
+            this.m_txt_doi_tuong_huong.Size = new System.Drawing.Size(275, 23);
             this.m_txt_doi_tuong_huong.TabIndex = 2;
+            this.m_txt_doi_tuong_huong.UseSystemPasswordChar = false;
             // 
             // PHU_CAP_DETAIL
             // 
@@ -330,7 +373,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 516);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PHU_CAP_DETAIL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PHU_CAP_DETAIL";
@@ -338,13 +382,9 @@
             this.panel1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ten_phucap.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_doi_tuong_huong.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,24 +395,24 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox5;
-        private DevExpress.XtraEditors.TextEdit m_txt_ti_le;
-        private DevExpress.XtraEditors.TextEdit m_txt_so_tien;
-        private System.Windows.Forms.RadioButton m_rd_ti_le;
-        private System.Windows.Forms.RadioButton m_rd_so_tien;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ti_le;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_so_tien;
+        private MaterialSkin.Controls.MaterialRadioButton m_rd_ti_le;
+        private MaterialSkin.Controls.MaterialRadioButton m_rd_so_tien;
         private System.Windows.Forms.ComboBox m_cb_cua_tien;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox m_checkb_duocgiamtruthue;
-        private System.Windows.Forms.CheckBox m_checkb_tinhvaokhoanphaidong_bhxh;
-        private System.Windows.Forms.CheckBox m_checkb_phuthuoc_songaydilam;
-        private DevExpress.XtraEditors.TextEdit m_txt_ten_phucap;
+        private MaterialSkin.Controls.MaterialCheckBox m_checkb_duocgiamtruthue;
+        private MaterialSkin.Controls.MaterialCheckBox m_checkb_tinhvaokhoanphaidong_bhxh;
+        private MaterialSkin.Controls.MaterialCheckBox m_checkb_phuthuoc_songaydilam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ten_phucap;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
-        private DevExpress.XtraEditors.TextEdit m_txt_doi_tuong_huong;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_doi_tuong_huong;
 
     }
 }

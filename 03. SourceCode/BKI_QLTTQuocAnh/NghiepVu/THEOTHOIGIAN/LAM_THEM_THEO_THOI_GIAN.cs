@@ -17,7 +17,7 @@ using DevExpress.XtraEditors.Controls;
 
 namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 {
-    public partial class LAM_THEM_THEO_THOI_GIAN : Form
+    public partial class LAM_THEM_THEO_THOI_GIAN : MaterialSkin.Controls.MaterialForm
     {
         #region Public Interface
         public LAM_THEM_THEO_THOI_GIAN()

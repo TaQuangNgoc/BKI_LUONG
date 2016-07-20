@@ -11,7 +11,7 @@ using DevExpress.XtraEditors.Controls;
 
 namespace BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien
 {
-    public partial class SEARCH_NHAN_VIEN : Form
+    public partial class SEARCH_NHAN_VIEN : MaterialSkin.Controls.MaterialForm
     {
         decimal m_open_form_thong_tin=-1;
         decimal m_id_nhan_vien = -1;

@@ -18,7 +18,7 @@ using BKI_DichVuMatDat.NghiepVu.Luong;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
-    public partial class CAC_LOAI_TIEN_KHAC : Form
+    public partial class CAC_LOAI_TIEN_KHAC : MaterialSkin.Controls.MaterialForm
     {
         bool phai_dong_bao_hiem = false;
         bool giam_tru_thue = false;

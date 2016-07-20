@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat
 {
-    public partial class Template : Form
+    public partial class Template : MaterialSkin.Controls.MaterialForm
     {
         public Template()
         {

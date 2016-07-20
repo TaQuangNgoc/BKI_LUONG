@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 {
-    public partial class LUA_CHON : Form
+    public partial class LUA_CHON : MaterialSkin.Controls.MaterialForm
     {
         bool m_lua_chon_1 = true;
         public LUA_CHON()

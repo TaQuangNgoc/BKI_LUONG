@@ -24,7 +24,7 @@ using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
 
 namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
 {
-    public partial class CHAM_CONG_THEO_NGAY : Form
+    public partial class CHAM_CONG_THEO_NGAY : MaterialSkin.Controls.MaterialForm
     {
          #region Public Interface
         public CHAM_CONG_THEO_NGAY()

@@ -80,11 +80,11 @@ namespace BKI_DichVuMatDat
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.m_txt_so_tien_doan_phi = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_ti_le_tien_lon_nhat = new DevExpress.XtraEditors.TextEdit();
-            this.m_txt_ti_le_doan_phi = new DevExpress.XtraEditors.TextEdit();
-            this.m_rd_ti_le_doan_phi = new System.Windows.Forms.RadioButton();
-            this.m_rd_so_tien_doan_phi = new System.Windows.Forms.RadioButton();
+            this.m_txt_so_tien_doan_phi = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_ti_le_tien_lon_nhat = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_ti_le_doan_phi = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_rd_ti_le_doan_phi = new MaterialSkin.Controls.MaterialRadioButton();
+            this.m_rd_so_tien_doan_phi = new MaterialSkin.Controls.MaterialRadioButton();
             this.m_cb_cua_tien = new System.Windows.Forms.ComboBox();
             this.m_cb_cua_tien_lon_nhat = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
@@ -127,9 +127,6 @@ namespace BKI_DichVuMatDat
             this.groupBox13.SuspendLayout();
             this.panel15.SuspendLayout();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -220,9 +217,11 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_grv_ngay_cong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseTextOptions = true;
@@ -243,12 +242,11 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Name = "m_grv_ngay_cong";
             this.m_grv_ngay_cong.OptionsBehavior.Editable = false;
             this.m_grv_ngay_cong.OptionsFind.AllowFindPanel = false;
-            this.m_grv_ngay_cong.OptionsFind.AlwaysVisible = true;
             this.m_grv_ngay_cong.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_ngay_cong.OptionsSelection.MultiSelect = true;
             this.m_grv_ngay_cong.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             this.m_grv_ngay_cong.OptionsView.ShowGroupPanel = false;
-            this.m_grv_ngay_cong.PaintStyleName = "UltraFlat";
+            this.m_grv_ngay_cong.PaintStyleName = "Web";
             // 
             // gridColumn1
             // 
@@ -327,8 +325,32 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_lam_them_gio
             // 
+            this.m_grv_lam_them_gio.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.FocusedCell.ForeColor = System.Drawing.Color.White;
+            this.m_grv_lam_them_gio.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.m_grv_lam_them_gio.Appearance.FocusedCell.Options.UseForeColor = true;
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Options.UseFont = true;
             this.m_grv_lam_them_gio.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_grv_lam_them_gio.Appearance.Row.Options.UseFont = true;
             this.m_grv_lam_them_gio.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -339,6 +361,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_lam_them_gio.Name = "m_grv_lam_them_gio";
             this.m_grv_lam_them_gio.OptionsBehavior.Editable = false;
             this.m_grv_lam_them_gio.OptionsView.ShowGroupPanel = false;
+            this.m_grv_lam_them_gio.PaintStyleName = "Web";
             // 
             // gridColumn5
             // 
@@ -395,8 +418,29 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_phu_cap
             // 
+            this.m_grv_phu_cap.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phu_cap.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phu_cap.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_phu_cap.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseFont = true;
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseForeColor = true;
             this.m_grv_phu_cap.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_grv_phu_cap.Appearance.Row.Options.UseFont = true;
             this.m_grv_phu_cap.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -409,7 +453,9 @@ namespace BKI_DichVuMatDat
             this.m_grv_phu_cap.GridControl = this.m_grc_loai_phu_cap;
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
             this.m_grv_phu_cap.OptionsBehavior.Editable = false;
+            this.m_grv_phu_cap.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_phu_cap.OptionsView.ShowGroupPanel = false;
+            this.m_grv_phu_cap.PaintStyleName = "Web";
             // 
             // gridColumn8
             // 
@@ -503,8 +549,36 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_bao_hiem
             // 
+            this.m_grv_bao_hiem.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.FocusedCell.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.m_grv_bao_hiem.Appearance.FocusedCell.Options.UseFont = true;
+            this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_bao_hiem.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseFont = true;
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseForeColor = true;
             this.m_grv_bao_hiem.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_grv_bao_hiem.Appearance.Row.Options.UseFont = true;
             this.m_grv_bao_hiem.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -514,7 +588,9 @@ namespace BKI_DichVuMatDat
             this.m_grv_bao_hiem.GridControl = this.m_grc_bao_hiem;
             this.m_grv_bao_hiem.Name = "m_grv_bao_hiem";
             this.m_grv_bao_hiem.OptionsBehavior.Editable = false;
+            this.m_grv_bao_hiem.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_bao_hiem.OptionsView.ShowGroupPanel = false;
+            this.m_grv_bao_hiem.PaintStyleName = "Web";
             // 
             // gridColumn14
             // 
@@ -582,8 +658,36 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_thue
             // 
+            this.m_grv_thue.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.FocusedCell.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_thue.Appearance.FocusedCell.ForeColor = System.Drawing.Color.White;
+            this.m_grv_thue.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.m_grv_thue.Appearance.FocusedCell.Options.UseFont = true;
+            this.m_grv_thue.Appearance.FocusedCell.Options.UseForeColor = true;
+            this.m_grv_thue.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_thue.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_thue.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_thue.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv_thue.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.m_grv_thue.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_thue.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_thue.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_thue.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.m_grv_thue.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_thue.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_thue.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_thue.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_thue.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_thue.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_thue.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv_thue.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_thue.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.m_grv_thue.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_thue.Appearance.HideSelectionRow.Options.UseFont = true;
             this.m_grv_thue.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11F);
             this.m_grv_thue.Appearance.Row.Options.UseFont = true;
             this.m_grv_thue.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -594,7 +698,9 @@ namespace BKI_DichVuMatDat
             this.m_grv_thue.GridControl = this.m_grc_thue;
             this.m_grv_thue.Name = "m_grv_thue";
             this.m_grv_thue.OptionsBehavior.Editable = false;
+            this.m_grv_thue.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_thue.OptionsView.ShowGroupPanel = false;
+            this.m_grv_thue.PaintStyleName = "Web";
             // 
             // gridColumn17
             // 
@@ -694,36 +800,51 @@ namespace BKI_DichVuMatDat
             // 
             // m_txt_so_tien_doan_phi
             // 
+            this.m_txt_so_tien_doan_phi.Depth = 0;
+            this.m_txt_so_tien_doan_phi.Hint = "";
             this.m_txt_so_tien_doan_phi.Location = new System.Drawing.Point(132, 102);
+            this.m_txt_so_tien_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien_doan_phi.Name = "m_txt_so_tien_doan_phi";
-            this.m_txt_so_tien_doan_phi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_so_tien_doan_phi.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_so_tien_doan_phi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_so_tien_doan_phi.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_so_tien_doan_phi.PasswordChar = '\0';
+            this.m_txt_so_tien_doan_phi.SelectedText = "";
+            this.m_txt_so_tien_doan_phi.SelectionLength = 0;
+            this.m_txt_so_tien_doan_phi.SelectionStart = 0;
+            this.m_txt_so_tien_doan_phi.Size = new System.Drawing.Size(178, 23);
             this.m_txt_so_tien_doan_phi.TabIndex = 18;
+            this.m_txt_so_tien_doan_phi.UseSystemPasswordChar = false;
             this.m_txt_so_tien_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_so_tien_doan_phi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_ti_le_tien_lon_nhat
             // 
+            this.m_txt_ti_le_tien_lon_nhat.Depth = 0;
+            this.m_txt_ti_le_tien_lon_nhat.Hint = "";
             this.m_txt_ti_le_tien_lon_nhat.Location = new System.Drawing.Point(132, 58);
+            this.m_txt_ti_le_tien_lon_nhat.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_tien_lon_nhat.Name = "m_txt_ti_le_tien_lon_nhat";
-            this.m_txt_ti_le_tien_lon_nhat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_ti_le_tien_lon_nhat.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ti_le_tien_lon_nhat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ti_le_tien_lon_nhat.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_ti_le_tien_lon_nhat.PasswordChar = '\0';
+            this.m_txt_ti_le_tien_lon_nhat.SelectedText = "";
+            this.m_txt_ti_le_tien_lon_nhat.SelectionLength = 0;
+            this.m_txt_ti_le_tien_lon_nhat.SelectionStart = 0;
+            this.m_txt_ti_le_tien_lon_nhat.Size = new System.Drawing.Size(178, 23);
             this.m_txt_ti_le_tien_lon_nhat.TabIndex = 17;
+            this.m_txt_ti_le_tien_lon_nhat.UseSystemPasswordChar = false;
             this.m_txt_ti_le_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ti_le_doan_phi
             // 
+            this.m_txt_ti_le_doan_phi.Depth = 0;
+            this.m_txt_ti_le_doan_phi.Hint = "";
             this.m_txt_ti_le_doan_phi.Location = new System.Drawing.Point(132, 14);
+            this.m_txt_ti_le_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_doan_phi.Name = "m_txt_ti_le_doan_phi";
-            this.m_txt_ti_le_doan_phi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.m_txt_ti_le_doan_phi.Properties.Appearance.Options.UseFont = true;
-            this.m_txt_ti_le_doan_phi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.m_txt_ti_le_doan_phi.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_ti_le_doan_phi.PasswordChar = '\0';
+            this.m_txt_ti_le_doan_phi.SelectedText = "";
+            this.m_txt_ti_le_doan_phi.SelectionLength = 0;
+            this.m_txt_ti_le_doan_phi.SelectionStart = 0;
+            this.m_txt_ti_le_doan_phi.Size = new System.Drawing.Size(178, 23);
             this.m_txt_ti_le_doan_phi.TabIndex = 16;
+            this.m_txt_ti_le_doan_phi.UseSystemPasswordChar = false;
             this.m_txt_ti_le_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_rd_ti_le_doan_phi
@@ -945,9 +1066,6 @@ namespace BKI_DichVuMatDat
             this.panel15.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_so_tien_doan_phi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_tien_lon_nhat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_txt_ti_le_doan_phi.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1000,9 +1118,9 @@ namespace BKI_DichVuMatDat
         private GroupBox groupBox13;
         private Panel panel15;
         private GroupBox groupBox20;
-        private DevExpress.XtraEditors.TextEdit m_txt_so_tien_doan_phi;
-        private DevExpress.XtraEditors.TextEdit m_txt_ti_le_tien_lon_nhat;
-        private DevExpress.XtraEditors.TextEdit m_txt_ti_le_doan_phi;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_so_tien_doan_phi;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ti_le_tien_lon_nhat;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_ti_le_doan_phi;
         private RadioButton m_rd_ti_le_doan_phi;
         private RadioButton m_rd_so_tien_doan_phi;
         private ComboBox m_cb_cua_tien;

@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.m_cb_luong_theo_thoi_gian = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_theo_doanh_thu = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_ngay = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_theo_san_pham = new System.Windows.Forms.CheckBox();
-            this.m_cb_luong_khoan = new System.Windows.Forms.CheckBox();
+            this.m_cb_luong_theo_thoi_gian = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_theo_doanh_thu = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_ngay = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_theo_san_pham = new MaterialSkin.Controls.MaterialCheckBox();
+            this.m_cb_luong_khoan = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -145,8 +145,8 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(214)))));
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
@@ -187,11 +187,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.CheckBox m_cb_luong_theo_doanh_thu;
-        private System.Windows.Forms.CheckBox m_cb_luong_khoan;
-        private System.Windows.Forms.CheckBox m_cb_luong_theo_san_pham;
-        private System.Windows.Forms.CheckBox m_cb_luong_ngay;
-        private System.Windows.Forms.CheckBox m_cb_luong_theo_thoi_gian;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_doanh_thu;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_khoan;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_san_pham;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_ngay;
+        private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_thoi_gian;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
     }
