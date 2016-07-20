@@ -50,10 +50,10 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 22);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(474, 367);
+            this.panel1.Size = new System.Drawing.Size(474, 389);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -67,7 +67,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(474, 268);
+            this.panel3.Size = new System.Drawing.Size(474, 290);
             this.panel3.TabIndex = 8;
             // 
             // m_cb_luong_theo_thoi_gian
@@ -176,7 +176,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel4.Controls.Add(this.m_btn_luu);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 321);
+            this.panel4.Location = new System.Drawing.Point(0, 343);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(474, 46);
             this.panel4.TabIndex = 7;

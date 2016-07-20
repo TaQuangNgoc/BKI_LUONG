@@ -58,8 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.groupBox5);
@@ -289,7 +288,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(522, 53);
+            this.panel2.Size = new System.Drawing.Size(524, 53);
             this.panel2.TabIndex = 59;
             // 
             // label2
@@ -305,13 +304,13 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel3.Controls.Add(this.m_btn_luu);
             this.panel3.Controls.Add(this.m_btn_thoat);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 439);
+            this.panel3.Location = new System.Drawing.Point(0, 441);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(522, 53);
+            this.panel3.Size = new System.Drawing.Size(524, 53);
             this.panel3.TabIndex = 60;
             // 
             // m_btn_luu
@@ -326,7 +325,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(263, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(265, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 12;
@@ -345,7 +344,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(406, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(408, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
             this.m_btn_thoat.TabIndex = 13;

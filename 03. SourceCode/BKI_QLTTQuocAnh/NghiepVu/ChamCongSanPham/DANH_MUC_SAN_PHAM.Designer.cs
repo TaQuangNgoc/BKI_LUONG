@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.cM_DM_TU_DIENTableAdapter1 = new IP.Core.IPData.DS_CM_DM_TU_DIENTableAdapters.CM_DM_TU_DIENTableAdapter();
-            this.tab_Control1 = new System.Windows.Forms.TabControl();
+            this.tab_Control1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tab_danhmucsanpham = new System.Windows.Forms.TabPage();
             this.m_grc_san_pham = new DevExpress.XtraGrid.GridControl();
             this.m_grv_san_pham = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -631,7 +631,7 @@
         #endregion
 
         private IP.Core.IPData.DS_CM_DM_TU_DIENTableAdapters.CM_DM_TU_DIENTableAdapter cM_DM_TU_DIENTableAdapter1;
-        private System.Windows.Forms.TabControl tab_Control1;
+        private MaterialSkin.Controls.MaterialTabControl tab_Control1;
         private System.Windows.Forms.TabPage tab_danhmucsanpham;
         private System.Windows.Forms.TabPage tab_dongiasanpham;
         private DevExpress.XtraGrid.GridControl m_grc_san_pham;
