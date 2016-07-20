@@ -839,11 +839,11 @@ namespace BKI_DichVuMatDat
             v_sp.ExecuteCommand(this);
         }
 
-        internal void loadDataToCacLoaiTienKhac(DataSet v_ds, string thang, string nam, decimal id_loai_tien)
+        internal void loadDataToCacLoaiTienKhac(DataSet v_ds, decimal thang, decimal nam, decimal id_loai_tien)
         {
             CStoredProc v_sp = new CStoredProc("PR_LOAD_DATA_CAC_LOAI_TIEN_KHAC");
-            v_sp.addDecimalInputParam("@THANG", decimal.Parse(thang));
-            v_sp.addDecimalInputParam("@NAM", decimal.Parse(nam));
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);
             v_sp.addDecimalInputParam("@ID_LOAI_TIEN_KHAC", id_loai_tien);
             v_sp.fillDataSetByCommand(this, v_ds);
         }

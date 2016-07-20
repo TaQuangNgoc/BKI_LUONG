@@ -117,14 +117,20 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void format_gridview()
         {
             m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            m_grv.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+          //  m_grv.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             
             for (int i = 0; i < m_grv.Columns.Count; i++)
             {
                 m_grv.Columns[i].Width = 120;
-                m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+               // m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
-            m_grc.Refresh();
+            m_grv.Columns["SO_TIEN"].DisplayFormat.FormatString = "n0";
+            m_grv.Columns["SO_TIEN"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            m_grv.Columns["MA_NV"].Caption = "Mã nhân viên";
+            m_grv.Columns["HO_DEM"].Caption = "Họ đệm";
+            m_grv.Columns["TEN"].Caption = "Tên";
+            m_grv.Columns["SO_TIEN"].Caption = "Số tiền";
+            
         }
         #endregion
 
@@ -493,7 +499,7 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             if (m_sle_loai_tien.EditValue == null||  m_sle_loai_tien.EditValue.ToString()=="")
             {
-                XtraMessageBox.Show( "Bạn phải chọn loại tiền mới có thể hiện thị được dữ liệu lên lưới!","Thông báo");    
+                XtraMessageBox.Show( "Bạn phải chọn loại tiền mới có thể hiển thị được dữ liệu lên lưới!","Thông báo");    
             }
             else
             {
@@ -501,11 +507,35 @@ namespace BKI_DichVuMatDat.NghiepVu
                 US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
                 DataSet v_ds = new DataSet();
                 v_ds.Tables.Add(new DataTable());
-                v_us.loadDataToCacLoaiTienKhac(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(), decimal.Parse(m_sle_loai_tien.EditValue.ToString()));
+                v_us.loadDataToCacLoaiTienKhac(v_ds, laythang(), laynam(), decimal.Parse(m_sle_loai_tien.EditValue.ToString()));
                 m_grc.DataSource = v_ds.Tables[0];
+                m_grv.Columns["ID"].Visible = false;
+                m_grv.Columns["ID_NHAN_VIEN"].Visible = false;
+                m_grv.Columns["NGAY_NHAP"].DisplayFormat.FormatString = "dd/MM/yyyy";
+                m_grv.Columns["NGAY_NHAP"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+                m_grv.Columns["NGAY_NHAP"].Caption = "Ngày nhập";
                 format_gridview();
             }
+
+        }
+
+        private void m_btn_xoa_dong_Click(object sender, EventArgs e)
+        {
+            DataRow v_dr= m_grv.GetDataRow(m_grv.FocusedRowHandle);
+            if(check_da_tinh_luong_nhung_chua_chot(decimal.Parse(v_dr["ID_NHAN_VIEN"].ToString()), laythang(),laynam()))
+            XtraMessageBox.Show("", "Cảnh báo");
+        }
+
+        private bool check_da_tinh_luong_nhung_chua_chot(decimal id_nhan_vien, decimal thang, decimal nam)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            return true;
             
+        }
+
+        private void CAC_LOAI_TIEN_KHAC_Load(object sender, EventArgs e)
+        {
+
         }
   
     }

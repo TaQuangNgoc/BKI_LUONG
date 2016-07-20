@@ -159,6 +159,9 @@
     <Reference Include="DevExpress.XtraEditors.v14.1">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraEditors.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="stdole">
       <Name>stdole</Name>
       <HintPath>..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\stdole.dll</HintPath>
@@ -408,6 +411,7 @@
     <None Include="DatasetMsg.xsx">
       <DependentUpon>DatasetMsg.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Users_DataSet.xsx">
       <DependentUpon>Users_DataSet.xsd</DependentUpon>
     </None>

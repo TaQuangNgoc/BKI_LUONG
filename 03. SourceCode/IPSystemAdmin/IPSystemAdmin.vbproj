@@ -129,6 +129,9 @@
       <Name>C1.Win.C1FlexGrid.Classic</Name>
       <HintPath>..\DLL\C1.Win.C1FlexGrid.Classic.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="SiSButton">
       <Name>SiSButton</Name>
       <HintPath>..\DLL\SiSButton.dll</HintPath>
@@ -251,7 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
