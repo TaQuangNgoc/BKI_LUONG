@@ -87,7 +87,7 @@
             // 
             // m_lbl_content
             // 
-            this.m_lbl_content.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.m_lbl_content.Appearance.Font = new System.Drawing.Font("Roboto Medium", 10F, System.Drawing.FontStyle.Bold);
             this.m_lbl_content.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_content.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_content.Name = "m_lbl_content";

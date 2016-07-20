@@ -43,7 +43,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -78,7 +78,7 @@
             this.radioGroup.Location = new System.Drawing.Point(0, 38);
             this.radioGroup.Name = "radioGroup";
             this.radioGroup.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.radioGroup.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioGroup.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioGroup.Properties.Appearance.Options.UseBackColor = true;
             this.radioGroup.Properties.Appearance.Options.UseFont = true;
             this.radioGroup.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;

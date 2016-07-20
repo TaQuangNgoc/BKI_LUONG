@@ -99,7 +99,7 @@
             this.tab_Control1.Controls.Add(this.tab_dongiasanpham);
             this.tab_Control1.Controls.Add(this.tab_danhmuctilelamthem);
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tab_Control1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_Control1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_Control1.Location = new System.Drawing.Point(0, 53);
             this.tab_Control1.Name = "tab_Control1";
             this.tab_Control1.SelectedIndex = 0;
@@ -131,9 +131,9 @@
             // 
             // m_grv_san_pham
             // 
-            this.m_grv_san_pham.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_san_pham.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_san_pham.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv_san_pham.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_san_pham.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_san_pham.Appearance.Row.Options.UseFont = true;
             this.m_grv_san_pham.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
@@ -314,7 +314,7 @@
             this.m_sle_nhan_vien.EditValue = "CHỌN NHÂN VIÊN";
             this.m_sle_nhan_vien.Location = new System.Drawing.Point(156, 32);
             this.m_sle_nhan_vien.Name = "m_sle_nhan_vien";
-            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_nhan_vien.Properties.Appearance.Options.UseFont = true;
             this.m_sle_nhan_vien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -461,17 +461,17 @@
             // 
             // m_grv_danh_muc_ti_le_lam_them
             // 
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButton.Options.UseFont = true;
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButtonActive.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButtonActive.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.ColumnFilterButtonActive.Options.UseFont = true;
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.CustomizationFormHint.Options.UseFont = true;
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.EvenRow.Options.UseFont = true;
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv_danh_muc_ti_le_lam_them.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_danh_muc_ti_le_lam_them.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_danh_muc_ti_le_lam_them.Appearance.Row.Options.UseFont = true;
             this.m_grv_danh_muc_ti_le_lam_them.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn8,
@@ -520,7 +520,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";

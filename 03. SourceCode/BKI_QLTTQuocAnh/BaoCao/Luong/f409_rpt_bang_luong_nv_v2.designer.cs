@@ -146,7 +146,7 @@
             // 
             // m_lbl_trang_thai_bang_luong
             // 
-            this.m_lbl_trang_thai_bang_luong.Appearance.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
+            this.m_lbl_trang_thai_bang_luong.Appearance.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold);
             this.m_lbl_trang_thai_bang_luong.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.m_lbl_trang_thai_bang_luong.Location = new System.Drawing.Point(250, 5);
             this.m_lbl_trang_thai_bang_luong.Name = "m_lbl_trang_thai_bang_luong";
@@ -156,7 +156,7 @@
             // 
             // m_lbl_so_luong_nv_tinh_luong
             // 
-            this.m_lbl_so_luong_nv_tinh_luong.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.m_lbl_so_luong_nv_tinh_luong.Appearance.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.m_lbl_so_luong_nv_tinh_luong.Appearance.ForeColor = System.Drawing.Color.Maroon;
             this.m_lbl_so_luong_nv_tinh_luong.Location = new System.Drawing.Point(520, 53);
             this.m_lbl_so_luong_nv_tinh_luong.Name = "m_lbl_so_luong_nv_tinh_luong";
@@ -187,7 +187,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto Medium", 16F);
             this.labelControl1.Location = new System.Drawing.Point(107, 14);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(8, 25);
@@ -334,7 +334,7 @@
             // 
             // m_grv_main
             // 
-            this.m_grv_main.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.m_grv_main.Appearance.FocusedRow.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.m_grv_main.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_main.Appearance.FocusedRow.Options.UseTextOptions = true;
             this.m_grv_main.Appearance.FocusedRow.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -347,7 +347,7 @@
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.m_grv_main.Appearance.ViewCaption.Font = new System.Drawing.Font("Tahoma", 9.25F, System.Drawing.FontStyle.Bold);
+            this.m_grv_main.Appearance.ViewCaption.Font = new System.Drawing.Font("Roboto Medium", 9.25F, System.Drawing.FontStyle.Bold);
             this.m_grv_main.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_main.Appearance.ViewCaption.Options.UseFont = true;
             this.m_grv_main.Appearance.ViewCaption.Options.UseForeColor = true;
@@ -863,7 +863,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(40, 19);
             this.label1.Name = "label1";
@@ -888,7 +888,7 @@
             // gridBand1
             // 
             this.gridBand1.AppearanceHeader.BackColor = System.Drawing.Color.Maroon;
-            this.gridBand1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand1.AppearanceHeader.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridBand1.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
             this.gridBand1.AppearanceHeader.Options.UseBackColor = true;
             this.gridBand1.AppearanceHeader.Options.UseFont = true;
@@ -907,7 +907,7 @@
             // 
             // gridBand2
             // 
-            this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridBand2.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
             this.gridBand2.AppearanceHeader.Options.UseFont = true;
             this.gridBand2.AppearanceHeader.Options.UseForeColor = true;
@@ -930,7 +930,7 @@
             // 
             // gridBand3
             // 
-            this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridBand3.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
             this.gridBand3.AppearanceHeader.Options.UseFont = true;
             this.gridBand3.AppearanceHeader.Options.UseForeColor = true;
@@ -953,7 +953,7 @@
             // 
             // gridBand4
             // 
-            this.gridBand4.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand4.AppearanceHeader.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridBand4.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
             this.gridBand4.AppearanceHeader.Options.UseFont = true;
             this.gridBand4.AppearanceHeader.Options.UseForeColor = true;
@@ -974,7 +974,7 @@
             // 
             // gridBand5
             // 
-            this.gridBand5.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand5.AppearanceHeader.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridBand5.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
             this.gridBand5.AppearanceHeader.Options.UseFont = true;
             this.gridBand5.AppearanceHeader.Options.UseForeColor = true;

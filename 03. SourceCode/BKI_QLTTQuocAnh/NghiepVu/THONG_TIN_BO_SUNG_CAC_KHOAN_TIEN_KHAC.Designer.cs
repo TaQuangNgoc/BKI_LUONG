@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(23, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 18);
@@ -63,7 +63,7 @@
             // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.Options.UseFont = true;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.Location = new System.Drawing.Point(395, 2);
@@ -77,7 +77,7 @@
             // 
             this.m_cb_dong_bao_hiem.Location = new System.Drawing.Point(40, 97);
             this.m_cb_dong_bao_hiem.Name = "m_cb_dong_bao_hiem";
-            this.m_cb_dong_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_dong_bao_hiem.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cb_dong_bao_hiem.Properties.Appearance.Options.UseFont = true;
             this.m_cb_dong_bao_hiem.Properties.Caption = "Phải đóng bảo hiểm xã hội";
             this.m_cb_dong_bao_hiem.Size = new System.Drawing.Size(206, 22);
@@ -87,7 +87,7 @@
             // 
             this.m_cb_giam_tru_thue.Location = new System.Drawing.Point(40, 142);
             this.m_cb_giam_tru_thue.Name = "m_cb_giam_tru_thue";
-            this.m_cb_giam_tru_thue.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cb_giam_tru_thue.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cb_giam_tru_thue.Properties.Appearance.Options.UseFont = true;
             this.m_cb_giam_tru_thue.Properties.Caption = "Được giảm trừ thuế";
             this.m_cb_giam_tru_thue.Size = new System.Drawing.Size(206, 22);
@@ -111,7 +111,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";

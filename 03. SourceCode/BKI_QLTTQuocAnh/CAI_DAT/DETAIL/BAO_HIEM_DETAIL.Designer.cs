@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.m_txt_lcd);
             this.panel1.Controls.Add(this.m_txt_ten_bao_hiem);
@@ -74,17 +74,17 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 53);
+            this.panel2.Size = new System.Drawing.Size(512, 53);
             this.panel2.TabIndex = 68;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(118, 17);
+            this.label2.Location = new System.Drawing.Point(12, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(270, 19);
+            this.label2.Size = new System.Drawing.Size(263, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT BẢO HIỂM";
             // 
@@ -138,52 +138,52 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(23, 72);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(93, 18);
+            this.label15.Size = new System.Drawing.Size(98, 20);
             this.label15.TabIndex = 70;
             this.label15.Text = "Mã bảo hiểm";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(23, 138);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 18);
+            this.label19.Size = new System.Drawing.Size(103, 20);
             this.label19.TabIndex = 71;
             this.label19.Text = "Tên bảo hiểm";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(23, 204);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 18);
+            this.label18.Size = new System.Drawing.Size(52, 20);
             this.label18.TabIndex = 72;
             this.label18.Text = "% LCD";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(453, 201);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(28, 18);
+            this.label16.Size = new System.Drawing.Size(24, 20);
             this.label16.TabIndex = 73;
             this.label16.Text = "% ";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel3.Controls.Add(this.m_btn_luu);
             this.panel3.Controls.Add(this.m_btn_thoat);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 251);
+            this.panel3.Location = new System.Drawing.Point(0, 253);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(510, 53);
+            this.panel3.Size = new System.Drawing.Size(512, 53);
             this.panel3.TabIndex = 69;
             // 
             // m_btn_luu
@@ -198,7 +198,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(289, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(291, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 4;
@@ -217,7 +217,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(432, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(434, 0);
             this.m_btn_thoat.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(78, 53);

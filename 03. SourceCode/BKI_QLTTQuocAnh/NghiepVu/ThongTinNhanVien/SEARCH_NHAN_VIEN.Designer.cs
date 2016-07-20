@@ -45,7 +45,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(22, 54);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(73, 18);
@@ -57,7 +57,7 @@
             this.m_sle_nhan_vien.EditValue = "CHỌN NHÂN VIÊN";
             this.m_sle_nhan_vien.Location = new System.Drawing.Point(117, 51);
             this.m_sle_nhan_vien.Name = "m_sle_nhan_vien";
-            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_nhan_vien.Properties.Appearance.Options.UseFont = true;
             this.m_sle_nhan_vien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});

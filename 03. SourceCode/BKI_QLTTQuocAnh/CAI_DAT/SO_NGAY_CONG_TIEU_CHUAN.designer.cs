@@ -94,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(148, 17);
             this.label2.Name = "label2";
@@ -119,7 +119,7 @@
             this.m_group_cau_hinh.Controls.Add(this.panel5);
             this.m_group_cau_hinh.Controls.Add(this.panel4);
             this.m_group_cau_hinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_group_cau_hinh.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_group_cau_hinh.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_group_cau_hinh.Location = new System.Drawing.Point(0, 168);
             this.m_group_cau_hinh.Name = "m_group_cau_hinh";
             this.m_group_cau_hinh.Size = new System.Drawing.Size(884, 322);
@@ -298,7 +298,7 @@
             // 
             this.m_btn_xoa.Appearance.BackColor = System.Drawing.Color.Silver;
             this.m_btn_xoa.Appearance.BackColor2 = System.Drawing.Color.Gray;
-            this.m_btn_xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_xoa.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_xoa.Appearance.ForeColor = System.Drawing.Color.Transparent;
             this.m_btn_xoa.Appearance.Options.UseBackColor = true;
             this.m_btn_xoa.Appearance.Options.UseFont = true;
@@ -317,7 +317,7 @@
             // 
             this.m_btn_them.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.m_btn_them.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.m_btn_them.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_them.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_them.Appearance.Options.UseBackColor = true;
             this.m_btn_them.Appearance.Options.UseFont = true;
             this.m_btn_them.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -356,7 +356,7 @@
             this.m_group_cai_dat.Controls.Add(this.m_rd_tuy_chinh);
             this.m_group_cai_dat.Controls.Add(this.label4);
             this.m_group_cai_dat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_group_cai_dat.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_group_cai_dat.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_group_cai_dat.Location = new System.Drawing.Point(0, 55);
             this.m_group_cai_dat.Name = "m_group_cai_dat";
             this.m_group_cai_dat.Size = new System.Drawing.Size(884, 113);
@@ -429,7 +429,7 @@
             // 
             this.m_btn_tiep_tuc.Appearance.BackColor = System.Drawing.Color.Green;
             this.m_btn_tiep_tuc.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.m_btn_tiep_tuc.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_tiep_tuc.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_tiep_tuc.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_btn_tiep_tuc.Appearance.Options.UseBackColor = true;
             this.m_btn_tiep_tuc.Appearance.Options.UseFont = true;
@@ -447,7 +447,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(29, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 18);
@@ -468,7 +468,7 @@
             // 
             this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.CornflowerBlue;
             this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.Blue;
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.Transparent;
             this.m_btn_luu.Appearance.Options.UseBackColor = true;
             this.m_btn_luu.Appearance.Options.UseFont = true;
