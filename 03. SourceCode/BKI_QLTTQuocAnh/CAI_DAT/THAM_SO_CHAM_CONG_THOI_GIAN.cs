@@ -17,17 +17,14 @@ namespace BKI_DichVuMatDat
 {
     public partial class THAM_SO_CHAM_CONG_THOI_GIAN : MaterialSkin.Controls.MaterialForm
     {
-        private readonly MaterialSkinManager materialSkinManager;
+        
 
         public THAM_SO_CHAM_CONG_THOI_GIAN()
         {
             InitializeComponent();
             tab_Control1.SizeMode = TabSizeMode.Fixed;
             tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
-            materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
+            
 
             
 

@@ -239,6 +239,25 @@
             // 
             // m_grv
             // 
+            this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.m_grv.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.HideSelectionRow.Options.UseForeColor = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID1,
             this.colMA_NV1,
@@ -263,10 +282,12 @@
             this.m_grv.OptionsBehavior.Editable = false;
             this.m_grv.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDownFocused;
             this.m_grv.OptionsBehavior.ReadOnly = true;
+            this.m_grv.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv.OptionsView.ColumnAutoWidth = false;
             this.m_grv.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.m_grv.PaintStyleName = "Web";
             // 
             // colID1
             // 
@@ -370,7 +391,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(40, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(520, 19);
+            this.label1.Size = new System.Drawing.Size(510, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "RÀ SOÁT DỮ LIỆU NHÂN VIÊN TRONG THÁNG ĐỂ TÍNH LƯƠNG";
             // 
@@ -415,7 +436,6 @@
             this.Controls.Add(this.m_gd_tham_so_bang_luong_thang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F401_he_so_bao_cao_luong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F401 - Rà soát dữ liệu nhân viên trong tháng để tính lương";

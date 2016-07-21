@@ -475,6 +475,12 @@
     <Compile Include="CAI_DAT\DETAIL\THUE_DETAIL.Designer.cs">
       <DependentUpon>THUE_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\F100_NgayCongTieuChuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\F100_NgayCongTieuChuan.Designer.cs">
+      <DependentUpon>F100_NgayCongTieuChuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="CONFIRM\confirm_cac_loai_tien_khac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -734,6 +740,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\THUE_DETAIL.resx">
       <DependentUpon>THUE_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\F100_NgayCongTieuChuan.resx">
+      <DependentUpon>F100_NgayCongTieuChuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CONFIRM\confirm_cac_loai_tien_khac.resx">
       <DependentUpon>confirm_cac_loai_tien_khac.cs</DependentUpon>

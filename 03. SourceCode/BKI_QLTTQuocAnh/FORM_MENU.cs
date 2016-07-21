@@ -14,12 +14,15 @@ using BKI_DichVuMatDat.NghiepVu.THEONGAY;
 using BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien;
 using DevExpress.XtraEditors;
 using BKI_DichVuMatDat.CAI_DAT;
+using MaterialSkin;
 
 
 namespace BKI_DichVuMatDat
 {
+    
     public partial class FORM_MENU : MaterialSkin.Controls.MaterialForm
     {
+        private readonly MaterialSkinManager materialSkinManager;
         TreeNode CAI_DAT_THAM_SO = new TreeNode("Cài đặt tham số");
         TreeNode NHAP_LIEU = new TreeNode("Nhập liệu");
         TreeNode BAO_CAO = new TreeNode("Báo cáo");
@@ -62,7 +65,10 @@ namespace BKI_DichVuMatDat
             Init_tree_view();
             this.WindowState = FormWindowState.Maximized;
             //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
-           
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
         }
 
         private void Init_tree_view()
@@ -207,7 +213,7 @@ namespace BKI_DichVuMatDat
 
             if (info.Node == SO_NGAY_CONG_TIEU_CHUAN)
             {
-                NGAY_CONG_TIEU_CHUAN v_f = new NGAY_CONG_TIEU_CHUAN();
+                F100_NgayCongTieuChuan v_f = new F100_NgayCongTieuChuan();
                 v_f.TopLevel = false;
                 panel2.Controls.Add(v_f);
                 ShowForm(v_f);
