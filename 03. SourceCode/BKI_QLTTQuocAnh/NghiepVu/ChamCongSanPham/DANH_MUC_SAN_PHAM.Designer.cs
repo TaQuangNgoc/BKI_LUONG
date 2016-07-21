@@ -45,7 +45,7 @@
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.m_txt_so_tien_luong_ngay = new System.Windows.Forms.TextBox();
+            this.m_txt_so_tien_luong_ngay = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -666,7 +666,7 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private System.Windows.Forms.TextBox m_txt_so_tien_luong_ngay;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_so_tien_luong_ngay;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TabPage tab_danhmuctilelamthem;
         private DevExpress.XtraGrid.GridControl m_grc_danh_muc_ti_le_lam_them;

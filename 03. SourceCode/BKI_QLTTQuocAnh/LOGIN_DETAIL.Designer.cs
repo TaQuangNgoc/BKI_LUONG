@@ -37,8 +37,8 @@
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_txt_username = new System.Windows.Forms.TextBox();
-            this.m_txt_password = new System.Windows.Forms.TextBox();
+            this.m_txt_username = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_password = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -193,7 +193,7 @@
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox m_txt_username;
-        private System.Windows.Forms.TextBox m_txt_password;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_username;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_password;
     }
 }

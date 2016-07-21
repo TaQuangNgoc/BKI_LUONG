@@ -29,7 +29,7 @@ namespace BKI_DichVuMatDat
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
@@ -307,9 +307,9 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grc_loai_lam_them_gio.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_lam_them_gio.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_loai_lam_them_gio.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
@@ -859,6 +859,7 @@ namespace BKI_DichVuMatDat
             // 
             // m_cb_cua_tien
             // 
+            this.m_cb_cua_tien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cb_cua_tien.FormattingEnabled = true;
             this.m_cb_cua_tien.Location = new System.Drawing.Point(487, 15);
             this.m_cb_cua_tien.Name = "m_cb_cua_tien";
@@ -869,6 +870,7 @@ namespace BKI_DichVuMatDat
             // 
             // m_cb_cua_tien_lon_nhat
             // 
+            this.m_cb_cua_tien_lon_nhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cb_cua_tien_lon_nhat.FormattingEnabled = true;
             this.m_cb_cua_tien_lon_nhat.Location = new System.Drawing.Point(487, 59);
             this.m_cb_cua_tien_lon_nhat.Name = "m_cb_cua_tien_lon_nhat";

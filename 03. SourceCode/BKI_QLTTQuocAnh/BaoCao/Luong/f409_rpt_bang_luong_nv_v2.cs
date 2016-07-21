@@ -24,6 +24,7 @@ using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.Utils;
 using BKI_DichVuMatDat.NghiepVu.Luong;
+using System.Threading;
 
 namespace BKI_DichVuMatDat.BaoCao
 {
@@ -206,6 +207,7 @@ namespace BKI_DichVuMatDat.BaoCao
                 clear_grid();
                 hide_grid();
                 show_progress_bar();
+                Thread.Sleep(1000);
                 m_bgwk.RunWorkerAsync();
             }
             catch(Exception v_e)
@@ -279,7 +281,7 @@ namespace BKI_DichVuMatDat.BaoCao
             try
             {
                 //this.m_prb.Text = (e.ProgressPercentage.ToString() + "%");
-                this.m_prb.EditValue = e.ProgressPercentage;
+              this.m_prb.EditValue = e.ProgressPercentage;
             }
             catch(Exception)
             {

@@ -124,7 +124,7 @@
             this.m_txt_ti_le.SelectedText = "";
             this.m_txt_ti_le.SelectionLength = 0;
             this.m_txt_ti_le.SelectionStart = 0;
-            this.m_txt_ti_le.Size = new System.Drawing.Size(140, 23);
+            this.m_txt_ti_le.Size = new System.Drawing.Size(186, 23);
             this.m_txt_ti_le.TabIndex = 5;
             this.m_txt_ti_le.UseSystemPasswordChar = false;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -141,7 +141,7 @@
             this.m_txt_so_tien.SelectedText = "";
             this.m_txt_so_tien.SelectionLength = 0;
             this.m_txt_so_tien.SelectionStart = 0;
-            this.m_txt_so_tien.Size = new System.Drawing.Size(140, 23);
+            this.m_txt_so_tien.Size = new System.Drawing.Size(186, 23);
             this.m_txt_so_tien.TabIndex = 8;
             this.m_txt_so_tien.UseSystemPasswordChar = false;
             this.m_txt_so_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
@@ -185,16 +185,18 @@
             // 
             // m_cb_cua_tien
             // 
+            this.m_cb_cua_tien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.m_cb_cua_tien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cb_cua_tien.FormattingEnabled = true;
             this.m_cb_cua_tien.Location = new System.Drawing.Point(120, 59);
             this.m_cb_cua_tien.Name = "m_cb_cua_tien";
-            this.m_cb_cua_tien.Size = new System.Drawing.Size(183, 28);
+            this.m_cb_cua_tien.Size = new System.Drawing.Size(227, 28);
             this.m_cb_cua_tien.TabIndex = 6;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(266, 106);
+            this.label34.Location = new System.Drawing.Point(312, 105);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(40, 20);
             this.label34.TabIndex = 0;
@@ -203,7 +205,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 18);
+            this.label4.Location = new System.Drawing.Point(323, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(24, 20);
             this.label4.TabIndex = 0;
