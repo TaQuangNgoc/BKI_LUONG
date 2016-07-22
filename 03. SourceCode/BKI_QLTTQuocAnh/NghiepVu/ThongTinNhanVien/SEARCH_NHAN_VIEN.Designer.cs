@@ -37,15 +37,17 @@
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_sle_nhan_vien
             // 
             this.m_sle_nhan_vien.EditValue = "CHỌN NHÂN VIÊN";
-            this.m_sle_nhan_vien.Location = new System.Drawing.Point(133, 88);
+            this.m_sle_nhan_vien.Location = new System.Drawing.Point(131, 27);
             this.m_sle_nhan_vien.Name = "m_sle_nhan_vien";
             this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_nhan_vien.Properties.Appearance.Options.UseFont = true;
@@ -155,11 +157,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 91);
+            this.label1.Location = new System.Drawing.Point(34, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 18);
             this.label1.TabIndex = 35;
             this.label1.Text = "Nhân viên\r\n";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.m_sle_nhan_vien);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 63);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 84);
+            this.panel1.TabIndex = 35;
             // 
             // SEARCH_NHAN_VIEN
             // 
@@ -167,8 +179,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.ClientSize = new System.Drawing.Size(464, 200);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.m_sle_nhan_vien);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "SEARCH_NHAN_VIEN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -176,8 +187,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -192,5 +204,6 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
