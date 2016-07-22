@@ -129,6 +129,8 @@ namespace BKI_DichVuMatDat
             m_dtp_den_ngay_ti_le.EditValue = null;
             m_dtp_den_ngay_luong_ngay.EditValue = null;
             m_dtp_den_ngay_lcd.EditValue = null;
+            m_grv_phu_cap.ColumnPanelRowHeight = 35;
+            m_grv_phu_cap.RowHeight = 30;
         }
 
         private void auto_scroll_tabControl()
@@ -559,15 +561,13 @@ namespace BKI_DichVuMatDat
             if (m_cb_luong_theo_thoi_gian.Checked == false)
             {          
                 m_grb_loai_nv.Enabled = false;
-                m_grb_phan_tram_luong.Enabled = false;
-                m_grb_phu_cap.Enabled = false;
+                m_grb_phan_tram_luong.Enabled = false;              
                 m_grb_thong_tin_ve_luong.Enabled = false;
             }
             else
             {
                 m_grb_loai_nv.Enabled = true;
                 m_grb_phan_tram_luong.Enabled = true;
-                m_grb_phu_cap.Enabled = true;
                 m_grb_thong_tin_ve_luong.Enabled = true;
             }
         }
@@ -992,6 +992,7 @@ namespace BKI_DichVuMatDat
             }
         }
 
+       
        
     }
 
