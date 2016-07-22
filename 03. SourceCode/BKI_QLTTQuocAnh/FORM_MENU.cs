@@ -89,7 +89,7 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[0].Nodes[1].Nodes.Add(DANH_MUC);
             treeView1.Nodes[0].Nodes[1].Nodes.Add(SO_NGAY_CONG_TIEU_CHUAN);
             treeView1.Nodes[0].Nodes[1].Nodes.Add(THAM_SO_KHAC);
-            treeView1.Nodes[0].Nodes.Add(DANH_MUC_SAN_PHAM);
+          //  treeView1.Nodes[0].Nodes.Add(DANH_MUC_SAN_PHAM);
             treeView1.Nodes[0].Nodes.Add(DANG_NHAP_HE_THONG);
             treeView1.ItemHeight = 35;
 
@@ -108,8 +108,8 @@ namespace BKI_DichVuMatDat
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(LAM_THEM_THEO_THOI_GIAN);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(THEO_NGAY);
-            treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_SAN_PHAM);
-            treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_LAM_THEM_SAN_PHAM);
+         //   treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_SAN_PHAM);
+         //   treeView1.Nodes[1].Nodes[1].Nodes.Add(CHAM_CONG_LAM_THEM_SAN_PHAM);
             treeView1.Nodes[1].Nodes[1].Nodes.Add(CAC_LOAI_TIEN_KHAC);
 
             //NODE CON CỦA THEO SẢN PHẨM

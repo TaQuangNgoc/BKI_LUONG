@@ -90,6 +90,7 @@
             // 
             this.m_cb_luong_theo_doanh_thu.AutoSize = true;
             this.m_cb_luong_theo_doanh_thu.Depth = 0;
+            this.m_cb_luong_theo_doanh_thu.Enabled = false;
             this.m_cb_luong_theo_doanh_thu.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_theo_doanh_thu.Location = new System.Drawing.Point(28, 182);
             this.m_cb_luong_theo_doanh_thu.Margin = new System.Windows.Forms.Padding(0);
@@ -122,6 +123,7 @@
             // 
             this.m_cb_luong_theo_san_pham.AutoSize = true;
             this.m_cb_luong_theo_san_pham.Depth = 0;
+            this.m_cb_luong_theo_san_pham.Enabled = false;
             this.m_cb_luong_theo_san_pham.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_theo_san_pham.Location = new System.Drawing.Point(28, 102);
             this.m_cb_luong_theo_san_pham.Margin = new System.Windows.Forms.Padding(0);
@@ -133,11 +135,13 @@
             this.m_cb_luong_theo_san_pham.TabIndex = 0;
             this.m_cb_luong_theo_san_pham.Text = "Tính lương theo sản phẩm";
             this.m_cb_luong_theo_san_pham.UseVisualStyleBackColor = true;
+            this.m_cb_luong_theo_san_pham.Click += new System.EventHandler(this.m_cb_luong_theo_san_pham_Click);
             // 
             // m_cb_luong_khoan
             // 
             this.m_cb_luong_khoan.AutoSize = true;
             this.m_cb_luong_khoan.Depth = 0;
+            this.m_cb_luong_khoan.Enabled = false;
             this.m_cb_luong_khoan.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_khoan.Location = new System.Drawing.Point(28, 144);
             this.m_cb_luong_khoan.Margin = new System.Windows.Forms.Padding(0);
@@ -163,11 +167,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(7, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(455, 21);
+            this.label1.Size = new System.Drawing.Size(480, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "LỰA CHỌN CÁC HÌNH THỨC TÍNH LƯƠNG CỦA CÔNG TY";
             // 

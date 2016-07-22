@@ -13,10 +13,14 @@ namespace BKI_DichVuMatDat
 {
     public partial class CAC_HINH_THUC_TINH_LUONG : MaterialSkin.Controls.MaterialForm
     {
+        ToolTip m_tooltip_cham_cong_theo_thoi_gian = new ToolTip();
         public CAC_HINH_THUC_TINH_LUONG()
         {
             InitializeComponent();
             load_cac_hinh_thuc_tinh_luong_cua_cong_ty();
+           
+           
+
         }
 
         private void load_cac_hinh_thuc_tinh_luong_cua_cong_ty()
@@ -87,6 +91,11 @@ namespace BKI_DichVuMatDat
             {
                 XtraMessageBox.Show("Bạn phải lựa chọn ít nhất 1 trong các hình thức tính lương cho công ty!");
             }
+        }
+
+        private void m_cb_luong_theo_san_pham_Click(object sender, EventArgs e)
+        {
+            WinFormControls.setTooltip(m_tooltip_cham_cong_theo_thoi_gian, m_cb_luong_theo_san_pham, ToolTipIcon.Error, "Thông báo", "Module này sẽ được hoàn thiện trong thời gian tới!");
         }
     }
 }
