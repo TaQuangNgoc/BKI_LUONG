@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 
 namespace BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien
@@ -34,9 +35,18 @@ namespace BKI_DichVuMatDat.NghiepVu.ThongTinNhanVien
 
         private void m_btn_luu_Click(object sender, EventArgs e)
         {
-            this.m_open_form_thong_tin = 1;
-            this.m_id_nhan_vien = decimal.Parse(m_sle_nhan_vien.EditValue.ToString());
-            this.Close();
+            try
+            {
+                this.m_open_form_thong_tin = 1;
+                this.m_id_nhan_vien = decimal.Parse(m_sle_nhan_vien.EditValue.ToString());
+                this.Close();
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Vui lòng chọn nhân viên để có thể sửa thông tin nhân viên!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                
+            }
+            
         }
 
         internal void Show_for_search(ref decimal m_open_form_thong_tin, ref decimal m_id_nhan_vien)

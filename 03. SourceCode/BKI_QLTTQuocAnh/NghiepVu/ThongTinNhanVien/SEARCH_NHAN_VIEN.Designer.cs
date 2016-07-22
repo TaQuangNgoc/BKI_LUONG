@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label16 = new System.Windows.Forms.Label();
             this.m_sle_nhan_vien = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -37,27 +36,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(22, 54);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(73, 18);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Nhân viên";
-            // 
             // m_sle_nhan_vien
             // 
             this.m_sle_nhan_vien.EditValue = "CHỌN NHÂN VIÊN";
-            this.m_sle_nhan_vien.Location = new System.Drawing.Point(117, 51);
+            this.m_sle_nhan_vien.Location = new System.Drawing.Point(133, 88);
             this.m_sle_nhan_vien.Name = "m_sle_nhan_vien";
-            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_nhan_vien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_nhan_vien.Properties.Appearance.Options.UseFont = true;
             this.m_sle_nhan_vien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -69,6 +59,17 @@
             // 
             // searchLookUpEdit1View
             // 
+            this.searchLookUpEdit1View.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.searchLookUpEdit1View.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.searchLookUpEdit1View.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.searchLookUpEdit1View.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.searchLookUpEdit1View.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.searchLookUpEdit1View.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.searchLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -77,6 +78,7 @@
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            this.searchLookUpEdit1View.PaintStyleName = "Web";
             // 
             // gridColumn1
             // 
@@ -102,11 +104,11 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_xoa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 134);
+            this.panel2.Location = new System.Drawing.Point(0, 147);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(464, 53);
             this.panel2.TabIndex = 34;
@@ -149,16 +151,25 @@
             this.m_btn_xoa.Text = "THOÁT";
             this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 18);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Nhân viên\r\n";
+            // 
             // SEARCH_NHAN_VIEN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(464, 187);
-            this.Controls.Add(this.label16);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.ClientSize = new System.Drawing.Size(464, 200);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.m_sle_nhan_vien);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SEARCH_NHAN_VIEN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHỌN NHÂN VIÊN";
@@ -174,12 +185,12 @@
 
         private DevExpress.XtraEditors.SearchLookUpEdit m_sle_nhan_vien;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
-        private System.Windows.Forms.Label label16;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa;
+        private System.Windows.Forms.Label label1;
     }
 }
