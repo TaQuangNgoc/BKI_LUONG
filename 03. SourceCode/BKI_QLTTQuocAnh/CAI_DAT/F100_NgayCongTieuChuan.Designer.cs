@@ -153,6 +153,8 @@
             // 
             // m_grv_loai_nv
             // 
+            this.m_grv_loai_nv.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_loai_nv.Appearance.ColumnFilterButton.Options.UseFont = true;
             this.m_grv_loai_nv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_loai_nv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_loai_nv.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;

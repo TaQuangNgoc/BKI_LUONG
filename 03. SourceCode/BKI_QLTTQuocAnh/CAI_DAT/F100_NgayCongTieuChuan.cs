@@ -32,6 +32,8 @@ namespace BKI_DichVuMatDat.CAI_DAT
             m_btn_xoa.Visible = true;
             m_btn_luu.Visible = false;
             m_group_cau_hinh.Visible = false;
+            m_grv_loai_nv.ColumnPanelRowHeight = 35;
+            m_grv_loai_nv.RowHeight = 30;
         }
 
         private void load_data_to_grid_loai_nhan_vien()

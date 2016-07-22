@@ -355,11 +355,16 @@
             this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phu_cap.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phu_cap.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_phu_cap.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_phu_cap.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_phu_cap.Appearance.Row.Options.UseFont = true;
             this.m_grv_phu_cap.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -911,6 +916,21 @@
             // 
             // m_grv_phan_tram
             // 
+            this.m_grv_phan_tram.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_phan_tram.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.m_grv_phan_tram.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phan_tram.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phan_tram.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_phan_tram.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phan_tram.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phan_tram.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phan_tram.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_phan_tram.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phan_tram.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_phan_tram.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_phan_tram.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn5,
             this.gridColumn6,
@@ -918,7 +938,9 @@
             this.m_grv_phan_tram.GridControl = this.m_grc_phan_tram;
             this.m_grv_phan_tram.Name = "m_grv_phan_tram";
             this.m_grv_phan_tram.OptionsBehavior.Editable = false;
+            this.m_grv_phan_tram.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_phan_tram.OptionsView.ShowGroupPanel = false;
+            this.m_grv_phan_tram.PaintStyleName = "Web";
             this.m_grv_phan_tram.Click += new System.EventHandler(this.m_grv_phan_tram_Click);
             // 
             // gridColumn5
@@ -1153,7 +1175,9 @@
             // 
             this.m_grv_luong.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_luong.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.m_grv_luong.Appearance.ColumnFilterButton.Options.UseFont = true;
             this.m_grv_luong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1167,8 +1191,10 @@
             this.m_grv_luong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_luong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_luong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_luong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_luong.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_luong.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_luong.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_luong.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.HideSelectionRow.Options.UseBackColor = true;
