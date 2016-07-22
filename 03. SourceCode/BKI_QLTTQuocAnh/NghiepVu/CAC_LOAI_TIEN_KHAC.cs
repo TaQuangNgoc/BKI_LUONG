@@ -413,7 +413,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                     return;
                 }
 
-                else if (check_bang_luong_da_chot(decimal.Parse(m_dat_chon_thang.DateTime.Month.ToString()),decimal.Parse(m_dat_chon_thang.DateTime.Year.ToString())))
+                else if (check_bang_luong_da_chot(laythang(),laynam()))
                 {
                     CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
                 }
@@ -477,9 +477,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             try
             {
-                //if (int.Parse(m_txt_thang.Text) <= 0 || int.Parse(m_txt_thang.Text) > 12 || int.Parse(m_txt_nam.Text) < 0)
-                //    XtraMessageBox.Show("Vui lòng nhập tháng và năm chấm công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //else tao_file_mau("Chấm công tháng " + m_txt_thang.Text + "-" + m_txt_nam.Text + ".xls");
                 if (m_dat_chon_thang.EditValue == null)
                 {
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm!");
@@ -533,9 +530,9 @@ namespace BKI_DichVuMatDat.NghiepVu
             var v_confirm = System.Windows.Forms.DialogResult.No;
             if (check_da_tinh_luong_nhung_chua_chot(decimal.Parse(v_dr["ID_NHAN_VIEN"].ToString()), laythang(), laynam()))
             {
-                v_confirm = XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã có lương của nhân viên có mã" + v_dr["MA_NV"].ToString()
-                     + "/n. Nếu xóa bản ghi này, phần mềm sẽ tự động tính lại thông tin về lương tháng " + laythang() + "cho nhân viên này."
-                     + "Bạn có chắc chắn muốn thực hiện tác vụ này?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                v_confirm = XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã có lương của nhân viên với mã là " + v_dr["MA_NV"].ToString()
+                     + "\n. Nếu xóa bản ghi này, phần mềm sẽ tự động tính lại thông tin về lương tháng " + laythang() + "cho nhân viên này."
+                     + "\nBạn có chắc chắn muốn thực hiện tác vụ này?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                
             }
             else
@@ -561,7 +558,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             v_us.FillDatasetWithQueryNotReturnDataset("DELETE FROM RPT_LUONG WHERE THANG=" + thang + " AND NAM=" + nam + " AND ID_NHAN_VIEN=" + id_nhan_vien);
-            v_us.DeleteRptLuong(decimal.Parse(id_nhan_vien), thang, nam);
             DTO_BANG_LUONG_V2 v_dto_luong = TinhLuongQL.Instance.TinhToanBangLuongNhanVien(decimal.Parse(id_nhan_vien), thang, nam);
             TinhLuongQL.Instance.InsertBanGhiLuongNhanVien(v_dto_luong);
         }

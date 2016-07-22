@@ -33,31 +33,37 @@
             this.m_rd_load_dung = new MaterialSkin.Controls.MaterialRadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Controls.Add(this.m_rd_load_them);
             this.groupBox1.Controls.Add(this.m_rd_load_dung);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(748, 148);
+            this.groupBox1.Size = new System.Drawing.Size(748, 153);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Chọn 1 trong các options sau";
             // 
             // m_rd_load_them
             // 
             this.m_rd_load_them.AutoSize = true;
-            this.m_rd_load_them.Location = new System.Drawing.Point(33, 65);
+            this.m_rd_load_them.Depth = 0;
+            this.m_rd_load_them.Font = new System.Drawing.Font("Roboto", 10F);
+            this.m_rd_load_them.Location = new System.Drawing.Point(33, 72);
+            this.m_rd_load_them.Margin = new System.Windows.Forms.Padding(0);
+            this.m_rd_load_them.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_rd_load_them.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_rd_load_them.Name = "m_rd_load_them";
-            this.m_rd_load_them.Size = new System.Drawing.Size(663, 58);
+            this.m_rd_load_them.Ripple = true;
+            this.m_rd_load_them.Size = new System.Drawing.Size(623, 30);
             this.m_rd_load_them.TabIndex = 1;
             this.m_rd_load_them.TabStop = true;
             this.m_rd_load_them.Text = "\r\nLoad dữ liệu từ file lên, danh sách chấm công được bổ sung thêm những người cũn" +
@@ -68,9 +74,16 @@
             // m_rd_load_dung
             // 
             this.m_rd_load_dung.AutoSize = true;
-            this.m_rd_load_dung.Location = new System.Drawing.Point(33, 37);
+            this.m_rd_load_dung.Depth = 0;
+            this.m_rd_load_dung.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.m_rd_load_dung.Font = new System.Drawing.Font("Roboto", 10F);
+            this.m_rd_load_dung.Location = new System.Drawing.Point(33, 20);
+            this.m_rd_load_dung.Margin = new System.Windows.Forms.Padding(0);
+            this.m_rd_load_dung.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.m_rd_load_dung.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_rd_load_dung.Name = "m_rd_load_dung";
-            this.m_rd_load_dung.Size = new System.Drawing.Size(192, 22);
+            this.m_rd_load_dung.Ripple = true;
+            this.m_rd_load_dung.Size = new System.Drawing.Size(189, 30);
             this.m_rd_load_dung.TabIndex = 0;
             this.m_rd_load_dung.TabStop = true;
             this.m_rd_load_dung.Text = "Chỉ load dữ liệu từ file lên.";
@@ -78,12 +91,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 148);
+            this.panel2.Location = new System.Drawing.Point(0, 216);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(748, 53);
+            this.panel2.Size = new System.Drawing.Size(748, 47);
             this.panel2.TabIndex = 35;
             // 
             // m_btn_luu
@@ -100,20 +113,33 @@
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_luu.Location = new System.Drawing.Point(605, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 47);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "TIẾP TỤC";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(0, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(748, 38);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Lựa chọn hình thức load dữ liệu\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LUA_CHON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(748, 201);
+            this.ClientSize = new System.Drawing.Size(748, 263);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LUA_CHON";
             this.Text = "LUA_CHON";
             this.groupBox1.ResumeLayout(false);
@@ -130,5 +156,6 @@
         private MaterialSkin.Controls.MaterialRadioButton m_rd_load_dung;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
+        private System.Windows.Forms.Label label1;
     }
 }

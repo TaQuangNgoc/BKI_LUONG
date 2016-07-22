@@ -636,6 +636,18 @@
     <Compile Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.Designer.cs">
       <DependentUpon>CHAM_CONG_THEO_NGAY.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_DA_NHAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_DA_NHAP.Designer.cs">
+      <DependentUpon>CHAM_CONG_DA_NHAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_LAM_THEM_DA_NHAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_LAM_THEM_DA_NHAP.Designer.cs">
+      <DependentUpon>CHAM_CONG_LAM_THEM_DA_NHAP.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -800,6 +812,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\THEONGAY\CHAM_CONG_THEO_NGAY.resx">
       <DependentUpon>CHAM_CONG_THEO_NGAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_DA_NHAP.resx">
+      <DependentUpon>CHAM_CONG_DA_NHAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\CHAM_CONG_LAM_THEM_DA_NHAP.resx">
+      <DependentUpon>CHAM_CONG_LAM_THEM_DA_NHAP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\F696_Cham_cong_xls.resx">
       <DependentUpon>F696_Cham_cong_xls.cs</DependentUpon>

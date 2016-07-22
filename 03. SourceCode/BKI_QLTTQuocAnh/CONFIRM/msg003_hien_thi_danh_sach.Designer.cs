@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(msg003_hien_thi_danh_sach));
             this.m_memo_content = new DevExpress.XtraEditors.MemoEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection = new DevExpress.Utils.ImageCollection();
+            this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.m_lbl_content = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.m_memo_content.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -87,12 +88,12 @@
             // 
             // m_lbl_content
             // 
-            this.m_lbl_content.Appearance.Font = new System.Drawing.Font("Roboto Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.m_lbl_content.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.m_lbl_content.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_lbl_content.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_content.Name = "m_lbl_content";
             this.m_lbl_content.Padding = new System.Windows.Forms.Padding(7, 5, 0, 10);
-            this.m_lbl_content.Size = new System.Drawing.Size(92, 31);
+            this.m_lbl_content.Size = new System.Drawing.Size(99, 31);
             this.m_lbl_content.TabIndex = 2;
             this.m_lbl_content.Text = "labelControl1";
             // 

@@ -53,6 +53,7 @@
             this.m_pn = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.m_btn_hien_thi = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).BeginInit();
@@ -87,16 +88,16 @@
             this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
-            this.m_cmd_nhap_cham_cong.Text = "LƯU CHẤM CÔNG";
+            this.m_cmd_nhap_cham_cong.Text = "Lưu chấm công\r\n";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(456, 19);
+            this.label2.Size = new System.Drawing.Size(478, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "CHẤM CÔNG LÀM THÊM THEO THỜI GIAN BẰNG EXCEL";
             // 
@@ -105,7 +106,7 @@
             this.m_dat_chon_thang.EditValue = null;
             this.m_dat_chon_thang.Location = new System.Drawing.Point(90, 15);
             this.m_dat_chon_thang.Name = "m_dat_chon_thang";
-            this.m_dat_chon_thang.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_dat_chon_thang.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_dat_chon_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Green;
             this.m_dat_chon_thang.Properties.Appearance.Options.UseFont = true;
             this.m_dat_chon_thang.Properties.Appearance.Options.UseForeColor = true;
@@ -122,10 +123,10 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Location = new System.Drawing.Point(28, 18);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(42, 18);
+            this.labelControl1.Size = new System.Drawing.Size(41, 18);
             this.labelControl1.TabIndex = 20;
             this.labelControl1.Text = "Tháng";
             // 
@@ -157,11 +158,11 @@
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
             this.m_cmd_mo_file_mau.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_mo_file_mau.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(775, 18);
+            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(957, 13);
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
-            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(231, 60);
+            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(166, 60);
             this.m_cmd_mo_file_mau.TabIndex = 31;
-            this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
+            this.m_cmd_mo_file_mau.Text = "Tải file excel mẫu";
             // 
             // m_bgwk
             // 
@@ -184,12 +185,12 @@
             this.m_cmd_chon_du_lieu.Appearance.Options.UseForeColor = true;
             this.m_cmd_chon_du_lieu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_chon_du_lieu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(526, 18);
+            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(755, 13);
             this.m_cmd_chon_du_lieu.Name = "m_cmd_chon_du_lieu";
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
-            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(252, 60);
+            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(207, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
-            this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU CHẤM CÔNG";
+            this.m_cmd_chon_du_lieu.Text = "Up dữ liệu\r\n";
             // 
             // panelControl1
             // 
@@ -211,7 +212,7 @@
             this.m_sle_loai_lam_them.EditValue = "";
             this.m_sle_loai_lam_them.Location = new System.Drawing.Point(243, 54);
             this.m_sle_loai_lam_them.Name = "m_sle_loai_lam_them";
-            this.m_sle_loai_lam_them.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_loai_lam_them.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_loai_lam_them.Properties.Appearance.Options.UseFont = true;
             this.m_sle_loai_lam_them.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -267,20 +268,20 @@
             // m_lbl_trang_thai_cham_cong
             // 
             this.m_lbl_trang_thai_cham_cong.AutoSize = true;
-            this.m_lbl_trang_thai_cham_cong.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_trang_thai_cham_cong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl_trang_thai_cham_cong.ForeColor = System.Drawing.Color.Green;
             this.m_lbl_trang_thai_cham_cong.Location = new System.Drawing.Point(243, 20);
             this.m_lbl_trang_thai_cham_cong.Name = "m_lbl_trang_thai_cham_cong";
-            this.m_lbl_trang_thai_cham_cong.Size = new System.Drawing.Size(268, 16);
+            this.m_lbl_trang_thai_cham_cong.Size = new System.Drawing.Size(283, 16);
             this.m_lbl_trang_thai_cham_cong.TabIndex = 23;
             this.m_lbl_trang_thai_cham_cong.Text = "Đã chấm công làm thêm cho 0 nhân viên";
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Location = new System.Drawing.Point(28, 57);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(125, 18);
+            this.labelControl4.Size = new System.Drawing.Size(128, 18);
             this.labelControl4.TabIndex = 20;
             this.labelControl4.Text = "Chọn loại làm thêm";
             // 
@@ -310,11 +311,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 18);
+            this.label1.Size = new System.Drawing.Size(300, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Đang lưu dữ liệu. Vui lòng chờ trong giây lát...";
             // 
@@ -354,6 +355,7 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.m_btn_hien_thi);
             this.panel7.Controls.Add(this.m_cmd_mo_file_mau);
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
             this.panel7.Controls.Add(this.panelControl1);
@@ -362,6 +364,24 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1135, 91);
             this.panel7.TabIndex = 11;
+            // 
+            // m_btn_hien_thi
+            // 
+            this.m_btn_hien_thi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_hien_thi.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_hien_thi.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_hien_thi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_hien_thi.Appearance.Options.UseBackColor = true;
+            this.m_btn_hien_thi.Appearance.Options.UseFont = true;
+            this.m_btn_hien_thi.Appearance.Options.UseForeColor = true;
+            this.m_btn_hien_thi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_hien_thi.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_hien_thi.Location = new System.Drawing.Point(551, 13);
+            this.m_btn_hien_thi.Name = "m_btn_hien_thi";
+            this.m_btn_hien_thi.Size = new System.Drawing.Size(208, 60);
+            this.m_btn_hien_thi.TabIndex = 35;
+            this.m_btn_hien_thi.Text = "Hiển thị dữ liệu đã nhập\r\n";
+            this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);
             // 
             // panel1
             // 
@@ -434,5 +454,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
     }
 }

@@ -19,6 +19,8 @@ using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Columns;
 using IP.Core.IPSystemAdmin;
 using BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN;
+using BKI_DichVuMatDat.DTO;
+using BKI_DichVuMatDat.NghiepVu.Luong;
 
 namespace BKI_DichVuMatDat.NghiepVu
 {
@@ -194,7 +196,8 @@ namespace BKI_DichVuMatDat.NghiepVu
             int v_so_nv_da_cham_cong = check_db_da_cham_cong();
             if (v_so_nv_da_cham_cong != 0)
             {
-                string v_str_confirm = "Hiện có " + v_so_nv_da_cham_cong + "/" + m_grv.RowCount + " nhân viên trong bảng chấm công đã có dữ liệu. \nBạn có muốn xóa dữ liệu cũ của những nhân viên này và nhập lại?";
+                string v_str_confirm = "Hiện có " + v_so_nv_da_cham_cong + "/" + m_grv.RowCount + " nhân viên trong bảng chấm công đã có dữ liệu. \nBạn có muốn xóa dữ liệu cũ của những nhân viên này và nhập lại?"
+                    +"\n Lưu ý khi nhập lại chấm công: Dữ liệu bảng lương tháng "+ laythang()+"/"+ laynam()+ " (nếu có) cũng sẽ bị xóa toàn bộ. \nMuốn tính lại lương, bạn vui lòng vào mục Báo Cáo rồi làm theo trình tự để tính lại lương tháng.";
                 DialogResult v_dialog = XtraMessageBox.Show(v_str_confirm, "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (v_dialog == DialogResult.No)
                     return false;
@@ -408,6 +411,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
                     v_us.UseTransOfUSObject(m_us_gd_cham_cong);
                     v_us.Insert();
+                  // update_rpt_luong(v_us.dcID_NHAN_VIEN);
                 }
                 catch (Exception v_e)
                 {
@@ -415,6 +419,17 @@ namespace BKI_DichVuMatDat.NghiepVu
                 }
             }
         }
+
+        //private void update_rpt_luong(decimal id_nhan_vien)
+        //{
+        //    US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+        //    if (v_us.CheckDaTinhLuongNhungChuaChot(id_nhan_vien, laythang(), laynam()))
+        //    {
+        //        v_us.FillDatasetWithQueryNotReturnDataset("DELETE FROM RPT_LUONG WHERE THANG=" + laythang() + " AND NAM=" + laynam() + " AND ID_NHAN_VIEN=" + id_nhan_vien);          
+        //        DTO_BANG_LUONG_V2 v_dto_luong = TinhLuongQL.Instance.TinhToanBangLuongNhanVien(id_nhan_vien, laythang(), laynam());
+        //        TinhLuongQL.Instance.InsertBanGhiLuongNhanVien(v_dto_luong);
+        //    }
+        //}
 
 
         private void set_trang_thai_cham_cong()
@@ -448,19 +463,27 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         }
 
+        private decimal laythang()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Month.ToString());
+        }
+
+        private decimal laynam()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Year.ToString());
+        }
+
+
         private void m_cmd_nhap_cham_cong_Click(object sender, EventArgs e)
         {
             try
             {
-                //if (int.Parse(m_txt_thang.Text) <= 0 || int.Parse(m_txt_thang.Text) > 12 || int.Parse(m_txt_nam.Text) < 0)
-                //    XtraMessageBox.Show("Vui lòng nhập tháng và năm chấm công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //else if (check_bang_luong_da_chot(m_txt_thang.Text, m_txt_nam.Text))
-                //    XtraMessageBox.Show("Tháng đã chốt bảng lương. \nVui lòng ko cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 if (m_dat_chon_thang.EditValue == null)
                 {
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
                     return;
                 }
+                 
                 string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
                
                 if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
@@ -468,11 +491,12 @@ namespace BKI_DichVuMatDat.NghiepVu
                     XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo");
                     return;
                 }
+                else if (check_bang_luong_da_chot(laythang(), laynam()))
+                {
+                    XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã chốt. \nVui lòng ko cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
                 
-                //else if(check_bang_luong_da_chot(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString()))
-                //{
-                //    CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
-                //}
                 else if (m_bgwk.IsBusy)
                     m_bgwk.CancelAsync();
                 else if (check_cham_cong_hop_le())
@@ -488,6 +512,14 @@ namespace BKI_DichVuMatDat.NghiepVu
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private bool check_bang_luong_da_chot(decimal thang, decimal nam)
+        {
+            US_RPT_CHOT_BANG_LUONG v_us = new US_RPT_CHOT_BANG_LUONG();
+            if (v_us.IsLockBangLuong(thang, nam))
+                return true;
+            return false;
         }
 
         private void m_cmd_chon_du_lieu_Click(object sender, EventArgs e)
@@ -530,6 +562,12 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void m_dat_chon_thang_EditValueChanged(object sender, EventArgs e)
         {
             set_trang_thai_cham_cong();
+        }
+
+        private void m_btn_hien_thi_Click(object sender, EventArgs e)
+        {
+            CHAM_CONG_DA_NHAP v_f = new CHAM_CONG_DA_NHAP();
+            v_f.Display(laythang(), laynam());
         }
 
        

@@ -534,6 +534,23 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         }
 
 
+        private decimal laythang()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Month.ToString());
+        }
+
+        private decimal laynam()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Year.ToString());
+        }
+
+        private void m_btn_hien_thi_Click(object sender, EventArgs e)
+        {
+            CHAM_CONG_LAM_THEM_DA_NHAP v_f = new CHAM_CONG_LAM_THEM_DA_NHAP();
+            v_f.Display(laythang(), laynam(), decimal.Parse(m_sle_loai_lam_them.EditValue.ToString()));
+        }
+
+
        
     }
 }

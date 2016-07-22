@@ -35,5 +35,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             this.Close();
         }
 
+      
+
     }
 }

@@ -876,9 +876,23 @@ namespace BKI_DichVuMatDat
             return v_para.Value.ToString() == "Y" ? true : false;
         }
 
-        internal void DeleteRptLuong(decimal p, decimal thang, decimal nam)
+
+
+        internal void FillDatasetLoadChamCong(DataSet v_ds, decimal thang , decimal nam)
         {
-           
+            CStoredProc v_sp = new CStoredProc("[PR_LOAD_CHAM_CONG]");
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);
+            v_sp.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void FillDatasetLoadChamCongLamThem(DataSet v_ds, decimal thang, decimal nam, decimal id_loai_lam_them)
+        {
+            CStoredProc v_sp = new CStoredProc("[PR_LOAD_CHAM_CONG_LAM_THEM]");
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);
+            v_sp.addDecimalInputParam("@ID_LOAI_LAM_THEM", id_loai_lam_them);
+            v_sp.fillDataSetByCommand(this, v_ds);
         }
     } 
 }
