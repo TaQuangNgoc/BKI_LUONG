@@ -51,10 +51,10 @@
             this.panel1.Controls.Add(this.m_grc_dang_nhap_he_thong);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 23);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(709, 392);
+            this.panel1.Size = new System.Drawing.Size(709, 415);
             this.panel1.TabIndex = 0;
             // 
             // m_grc_dang_nhap_he_thong
@@ -64,16 +64,16 @@
             this.m_grc_dang_nhap_he_thong.Location = new System.Drawing.Point(0, 53);
             this.m_grc_dang_nhap_he_thong.MainView = this.m_grv_dang_nhap_he_thong;
             this.m_grc_dang_nhap_he_thong.Name = "m_grc_dang_nhap_he_thong";
-            this.m_grc_dang_nhap_he_thong.Size = new System.Drawing.Size(709, 286);
+            this.m_grc_dang_nhap_he_thong.Size = new System.Drawing.Size(709, 309);
             this.m_grc_dang_nhap_he_thong.TabIndex = 16;
             this.m_grc_dang_nhap_he_thong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dang_nhap_he_thong});
             // 
             // m_grv_dang_nhap_he_thong
             // 
-            this.m_grv_dang_nhap_he_thong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_dang_nhap_he_thong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_dang_nhap_he_thong.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv_dang_nhap_he_thong.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_dang_nhap_he_thong.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_dang_nhap_he_thong.Appearance.Row.Options.UseFont = true;
             this.m_grv_dang_nhap_he_thong.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.USERNAME,
@@ -105,7 +105,7 @@
             this.panel2.Controls.Add(this.m_btn_sua);
             this.panel2.Controls.Add(this.m_btn_xoa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 339);
+            this.panel2.Location = new System.Drawing.Point(0, 362);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(709, 53);
             this.panel2.TabIndex = 15;
@@ -180,11 +180,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 21);
+            this.label2.Size = new System.Drawing.Size(250, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "QUẢN LÝ DANH SÁCH USER";
             // 

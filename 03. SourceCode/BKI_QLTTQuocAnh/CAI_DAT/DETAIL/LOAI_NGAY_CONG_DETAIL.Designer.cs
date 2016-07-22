@@ -66,7 +66,7 @@
             this.label14.Location = new System.Drawing.Point(30, 241);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(55, 18);
-            this.label14.TabIndex = 44;
+            this.label14.TabIndex = 43;
             this.label14.Text = "% LCD";
             // 
             // label6

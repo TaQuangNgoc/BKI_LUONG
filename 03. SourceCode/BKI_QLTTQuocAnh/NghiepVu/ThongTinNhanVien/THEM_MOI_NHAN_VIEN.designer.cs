@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -330,9 +330,9 @@
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode4});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -448,7 +448,7 @@
             this.m_dtp_den_ngay_phu_cap.Properties.DisplayFormat.FormatString = "MM/yyyy";
             this.m_dtp_den_ngay_phu_cap.Properties.Mask.EditMask = "MM/yyyy";
             this.m_dtp_den_ngay_phu_cap.Size = new System.Drawing.Size(132, 24);
-            this.m_dtp_den_ngay_phu_cap.TabIndex = 38;
+            this.m_dtp_den_ngay_phu_cap.TabIndex = 12;
             // 
             // m_dtp_tu_ngay_phu_cap
             // 
@@ -467,7 +467,7 @@
             this.m_dtp_tu_ngay_phu_cap.Properties.DisplayFormat.FormatString = "MM/yyyy";
             this.m_dtp_tu_ngay_phu_cap.Properties.Mask.EditMask = "MM/yyyy";
             this.m_dtp_tu_ngay_phu_cap.Size = new System.Drawing.Size(132, 24);
-            this.m_dtp_tu_ngay_phu_cap.TabIndex = 23;
+            this.m_dtp_tu_ngay_phu_cap.TabIndex = 11;
             // 
             // m_btn_sua_phu_cap
             // 
@@ -483,7 +483,7 @@
             this.m_btn_sua_phu_cap.Location = new System.Drawing.Point(305, 132);
             this.m_btn_sua_phu_cap.Name = "m_btn_sua_phu_cap";
             this.m_btn_sua_phu_cap.Size = new System.Drawing.Size(82, 43);
-            this.m_btn_sua_phu_cap.TabIndex = 35;
+            this.m_btn_sua_phu_cap.TabIndex = 14;
             this.m_btn_sua_phu_cap.Text = "Sửa";
             this.m_btn_sua_phu_cap.Click += new System.EventHandler(this.m_btn_sua_phu_cap_Click);
             // 
@@ -501,7 +501,7 @@
             this.m_btn_xoa_phu_cap.Location = new System.Drawing.Point(417, 132);
             this.m_btn_xoa_phu_cap.Name = "m_btn_xoa_phu_cap";
             this.m_btn_xoa_phu_cap.Size = new System.Drawing.Size(86, 43);
-            this.m_btn_xoa_phu_cap.TabIndex = 34;
+            this.m_btn_xoa_phu_cap.TabIndex = 15;
             this.m_btn_xoa_phu_cap.Text = "Xóa";
             this.m_btn_xoa_phu_cap.Click += new System.EventHandler(this.m_btn_xoa_phu_cap_Click);
             // 
@@ -519,7 +519,7 @@
             this.m_btn_them_phu_cap.Location = new System.Drawing.Point(193, 132);
             this.m_btn_them_phu_cap.Name = "m_btn_them_phu_cap";
             this.m_btn_them_phu_cap.Size = new System.Drawing.Size(87, 43);
-            this.m_btn_them_phu_cap.TabIndex = 33;
+            this.m_btn_them_phu_cap.TabIndex = 13;
             this.m_btn_them_phu_cap.Text = "Thêm";
             this.m_btn_them_phu_cap.Click += new System.EventHandler(this.m_btn_them_phu_cap_Click);
             // 
@@ -530,7 +530,7 @@
             this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(152, 16);
             this.m_cbo_loai_phu_cap.Name = "m_cbo_loai_phu_cap";
             this.m_cbo_loai_phu_cap.Size = new System.Drawing.Size(390, 26);
-            this.m_cbo_loai_phu_cap.TabIndex = 13;
+            this.m_cbo_loai_phu_cap.TabIndex = 10;
             // 
             // label36
             // 
@@ -587,7 +587,7 @@
             this.m_nud_phu_thuoc.SelectionLength = 0;
             this.m_nud_phu_thuoc.SelectionStart = 0;
             this.m_nud_phu_thuoc.Size = new System.Drawing.Size(139, 23);
-            this.m_nud_phu_thuoc.TabIndex = 40;
+            this.m_nud_phu_thuoc.TabIndex = 7;
             this.m_nud_phu_thuoc.UseSystemPasswordChar = false;
             // 
             // m_dtp_ngay_bat_dau_lv
@@ -607,7 +607,7 @@
             this.m_dtp_ngay_bat_dau_lv.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_ngay_bat_dau_lv.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_ngay_bat_dau_lv.Size = new System.Drawing.Size(194, 24);
-            this.m_dtp_ngay_bat_dau_lv.TabIndex = 22;
+            this.m_dtp_ngay_bat_dau_lv.TabIndex = 8;
             // 
             // label10
             // 
@@ -639,7 +639,7 @@
             this.m_cb_doan_phi.Name = "m_cb_doan_phi";
             this.m_cb_doan_phi.Ripple = true;
             this.m_cb_doan_phi.Size = new System.Drawing.Size(218, 30);
-            this.m_cb_doan_phi.TabIndex = 16;
+            this.m_cb_doan_phi.TabIndex = 9;
             this.m_cb_doan_phi.Text = "Phải đóng Đoàn phí công đoàn";
             this.m_cb_doan_phi.UseVisualStyleBackColor = true;
             // 
@@ -690,7 +690,7 @@
             this.m_dtp_ngay_sinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_ngay_sinh.Properties.Mask.EditMask = "dd/MM/yyy";
             this.m_dtp_ngay_sinh.Size = new System.Drawing.Size(194, 24);
-            this.m_dtp_ngay_sinh.TabIndex = 39;
+            this.m_dtp_ngay_sinh.TabIndex = 3;
             // 
             // label27
             // 
@@ -876,7 +876,7 @@
             this.m_cbo_loai_nhan_vien.Location = new System.Drawing.Point(151, 26);
             this.m_cbo_loai_nhan_vien.Name = "m_cbo_loai_nhan_vien";
             this.m_cbo_loai_nhan_vien.Size = new System.Drawing.Size(257, 24);
-            this.m_cbo_loai_nhan_vien.TabIndex = 13;
+            this.m_cbo_loai_nhan_vien.TabIndex = 19;
             // 
             // label19
             // 
@@ -903,9 +903,9 @@
             // 
             this.m_grc_phan_tram.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phan_tram.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_phan_tram.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 18);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
@@ -989,7 +989,7 @@
             this.panel7.Location = new System.Drawing.Point(3, 18);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(729, 184);
-            this.panel7.TabIndex = 15;
+            this.panel7.TabIndex = 12;
             // 
             // m_dtp_den_ngay_ti_le
             // 
@@ -1008,7 +1008,7 @@
             this.m_dtp_den_ngay_ti_le.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_ti_le.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_den_ngay_ti_le.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_den_ngay_ti_le.TabIndex = 35;
+            this.m_dtp_den_ngay_ti_le.TabIndex = 15;
             // 
             // m_dtp_tu_ngay_ti_le
             // 
@@ -1027,7 +1027,7 @@
             this.m_dtp_tu_ngay_ti_le.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_ti_le.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_ti_le.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_tu_ngay_ti_le.TabIndex = 34;
+            this.m_dtp_tu_ngay_ti_le.TabIndex = 14;
             // 
             // m_btn_sua_phan_tram_luong
             // 
@@ -1043,7 +1043,7 @@
             this.m_btn_sua_phan_tram_luong.Location = new System.Drawing.Point(315, 77);
             this.m_btn_sua_phan_tram_luong.Name = "m_btn_sua_phan_tram_luong";
             this.m_btn_sua_phan_tram_luong.Size = new System.Drawing.Size(90, 43);
-            this.m_btn_sua_phan_tram_luong.TabIndex = 32;
+            this.m_btn_sua_phan_tram_luong.TabIndex = 17;
             this.m_btn_sua_phan_tram_luong.Text = "Sửa";
             this.m_btn_sua_phan_tram_luong.Click += new System.EventHandler(this.m_btn_sua_phan_tram_luong_Click);
             // 
@@ -1061,7 +1061,7 @@
             this.m_btn_xoa_phan_tram_luong.Location = new System.Drawing.Point(432, 77);
             this.m_btn_xoa_phan_tram_luong.Name = "m_btn_xoa_phan_tram_luong";
             this.m_btn_xoa_phan_tram_luong.Size = new System.Drawing.Size(87, 43);
-            this.m_btn_xoa_phan_tram_luong.TabIndex = 31;
+            this.m_btn_xoa_phan_tram_luong.TabIndex = 18;
             this.m_btn_xoa_phan_tram_luong.Text = "Xóa";
             this.m_btn_xoa_phan_tram_luong.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
             // 
@@ -1079,7 +1079,7 @@
             this.m_btn_them_phan_tram_luong.Location = new System.Drawing.Point(195, 77);
             this.m_btn_them_phan_tram_luong.Name = "m_btn_them_phan_tram_luong";
             this.m_btn_them_phan_tram_luong.Size = new System.Drawing.Size(89, 43);
-            this.m_btn_them_phan_tram_luong.TabIndex = 30;
+            this.m_btn_them_phan_tram_luong.TabIndex = 16;
             this.m_btn_them_phan_tram_luong.Text = "Thêm";
             this.m_btn_them_phan_tram_luong.Click += new System.EventHandler(this.m_btn_them_phan_tram_luong_Click);
             // 
@@ -1095,7 +1095,7 @@
             this.m_txt_ti_le.SelectionLength = 0;
             this.m_txt_ti_le.SelectionStart = 0;
             this.m_txt_ti_le.Size = new System.Drawing.Size(136, 23);
-            this.m_txt_ti_le.TabIndex = 5;
+            this.m_txt_ti_le.TabIndex = 13;
             this.m_txt_ti_le.UseSystemPasswordChar = false;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -1160,9 +1160,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode2});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
@@ -1281,7 +1281,7 @@
             this.panel6.Location = new System.Drawing.Point(3, 18);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(729, 213);
-            this.panel6.TabIndex = 14;
+            this.panel6.TabIndex = 2;
             // 
             // m_dtp_tu_ngay_lns
             // 
@@ -1300,7 +1300,7 @@
             this.m_dtp_tu_ngay_lns.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lns.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lns.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_tu_ngay_lns.TabIndex = 33;
+            this.m_dtp_tu_ngay_lns.TabIndex = 4;
             // 
             // m_dtp_den_ngay_lns
             // 
@@ -1319,7 +1319,7 @@
             this.m_dtp_den_ngay_lns.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lns.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lns.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_den_ngay_lns.TabIndex = 32;
+            this.m_dtp_den_ngay_lns.TabIndex = 5;
             // 
             // m_dtp_den_ngay_lcd
             // 
@@ -1338,7 +1338,7 @@
             this.m_dtp_den_ngay_lcd.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lcd.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lcd.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_den_ngay_lcd.TabIndex = 31;
+            this.m_dtp_den_ngay_lcd.TabIndex = 8;
             // 
             // m_dtp_tu_ngay_lcd
             // 
@@ -1357,7 +1357,7 @@
             this.m_dtp_tu_ngay_lcd.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lcd.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lcd.Size = new System.Drawing.Size(107, 24);
-            this.m_dtp_tu_ngay_lcd.TabIndex = 30;
+            this.m_dtp_tu_ngay_lcd.TabIndex = 7;
             // 
             // m_btn_sua_luong
             // 
@@ -1373,7 +1373,7 @@
             this.m_btn_sua_luong.Location = new System.Drawing.Point(327, 136);
             this.m_btn_sua_luong.Name = "m_btn_sua_luong";
             this.m_btn_sua_luong.Size = new System.Drawing.Size(89, 43);
-            this.m_btn_sua_luong.TabIndex = 29;
+            this.m_btn_sua_luong.TabIndex = 10;
             this.m_btn_sua_luong.Text = "Sửa";
             this.m_btn_sua_luong.Click += new System.EventHandler(this.m_btn_sua_luong_Click);
             // 
@@ -1400,7 +1400,7 @@
             this.m_btn_xoa_luong.Location = new System.Drawing.Point(443, 136);
             this.m_btn_xoa_luong.Name = "m_btn_xoa_luong";
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(88, 43);
-            this.m_btn_xoa_luong.TabIndex = 28;
+            this.m_btn_xoa_luong.TabIndex = 11;
             this.m_btn_xoa_luong.Text = "Xóa";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
@@ -1427,7 +1427,7 @@
             this.m_btn_them_luong.Location = new System.Drawing.Point(207, 136);
             this.m_btn_them_luong.Name = "m_btn_them_luong";
             this.m_btn_them_luong.Size = new System.Drawing.Size(89, 43);
-            this.m_btn_them_luong.TabIndex = 27;
+            this.m_btn_them_luong.TabIndex = 9;
             this.m_btn_them_luong.Text = "Thêm";
             this.m_btn_them_luong.Click += new System.EventHandler(this.m_btn_them_luong_Click);
             // 
@@ -1470,7 +1470,7 @@
             this.m_txt_lcd.SelectionLength = 0;
             this.m_txt_lcd.SelectionStart = 0;
             this.m_txt_lcd.Size = new System.Drawing.Size(137, 23);
-            this.m_txt_lcd.TabIndex = 5;
+            this.m_txt_lcd.TabIndex = 6;
             this.m_txt_lcd.UseSystemPasswordChar = false;
             this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_lcd.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -1496,7 +1496,7 @@
             this.m_txt_lns.SelectionLength = 0;
             this.m_txt_lns.SelectionStart = 0;
             this.m_txt_lns.Size = new System.Drawing.Size(137, 23);
-            this.m_txt_lns.TabIndex = 5;
+            this.m_txt_lns.TabIndex = 3;
             this.m_txt_lns.UseSystemPasswordChar = false;
             this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_lns.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);

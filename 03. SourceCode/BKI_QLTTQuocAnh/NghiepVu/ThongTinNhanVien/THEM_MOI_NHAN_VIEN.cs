@@ -131,6 +131,10 @@ namespace BKI_DichVuMatDat
             m_dtp_den_ngay_lcd.EditValue = null;
             m_grv_phu_cap.ColumnPanelRowHeight = 35;
             m_grv_phu_cap.RowHeight = 30;
+            m_grv_luong.ColumnPanelRowHeight = 35;
+            m_grv_luong.RowHeight = 30;
+            m_grv_phan_tram.ColumnPanelRowHeight = 35;
+            m_grv_phan_tram.RowHeight = 30;
         }
 
         private void auto_scroll_tabControl()
