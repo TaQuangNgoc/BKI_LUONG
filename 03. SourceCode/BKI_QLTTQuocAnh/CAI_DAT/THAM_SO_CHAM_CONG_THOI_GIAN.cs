@@ -232,7 +232,7 @@ namespace BKI_DichVuMatDat
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_PHU_CAP v_us = new US_DM_PHU_CAP(v_id);
                 v_us.Delete();
-                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                XtraMessageBox.Show("Đã xóa thành công tên phụ cấp : " + v_dr["TEN_PHU_CAP"] +" !");
                 load_du_lieu_vao_bang_phu_cap();
             }
             }
@@ -254,7 +254,7 @@ namespace BKI_DichVuMatDat
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_THUE v_us = new US_DM_THUE(v_id);
                 v_us.Delete();
-                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + " !");
+                XtraMessageBox.Show("Đã xóa thành công " + " !");
                 load_du_lieu_vao_bang_thue();
             }
         }
@@ -268,7 +268,7 @@ namespace BKI_DichVuMatDat
                 decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                 US_DM_BAO_HIEM v_us = new US_DM_BAO_HIEM(v_id);
                 v_us.Delete();
-                XtraMessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_BH"] + " !");
+                XtraMessageBox.Show("Đã xóa thành công mã loại bảo hiểm " + v_dr["MA_BH"] + " !");
                 load_du_lieu_vao_bang_bao_hiem();
             }
         }
@@ -284,7 +284,7 @@ namespace BKI_DichVuMatDat
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_TI_LE_LAM_THEM v_us = new US_DM_TI_LE_LAM_THEM(v_id);
                     v_us.Delete();
-                    XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_LAM_THEM"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công mã loại làm thêm " + v_dr["MA_LAM_THEM"] + " !");
                     load_du_lieu_vao_bang_Lam_them_gio();
                 }
             }
@@ -307,7 +307,7 @@ namespace BKI_DichVuMatDat
                     decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
                     US_DM_LOAI_NGAY_CONG v_us = new US_DM_LOAI_NGAY_CONG(v_id);
                     v_us.Delete();
-                    XtraMessageBox.Show("Đã xóa thành công sản phẩm " + v_dr["TEN_NGAY_CONG"] + " !");
+                    XtraMessageBox.Show("Đã xóa thành công mã ngày công " + v_dr["MA_NGAY_CONG"] + " !");
                     load_du_lieu_vao_bang_loai_ngay_cong();
                 }
             }
@@ -600,6 +600,11 @@ namespace BKI_DichVuMatDat
             {
                 m_txt_so_tien_doan_phi.Enabled = false;
             }
+        }
+
+        private void materialTabSelector1_Click(object sender, EventArgs e)
+        {
+
         }
     
      

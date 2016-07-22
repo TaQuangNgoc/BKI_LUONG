@@ -116,7 +116,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
@@ -128,7 +128,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         }
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
-            TextEdit textbox = (TextEdit)sender;
+            TextBox textbox = (TextBox)sender;
             try
             {
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");

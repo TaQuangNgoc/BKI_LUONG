@@ -98,8 +98,9 @@
             this.m_txt_bu_tru.SelectionLength = 0;
             this.m_txt_bu_tru.SelectionStart = 0;
             this.m_txt_bu_tru.Size = new System.Drawing.Size(194, 23);
-            this.m_txt_bu_tru.TabIndex = 76;
+            this.m_txt_bu_tru.TabIndex = 4;
             this.m_txt_bu_tru.UseSystemPasswordChar = false;
+            this.m_txt_bu_tru.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_ti_le
             // 
@@ -114,8 +115,9 @@
             this.m_txt_ti_le.SelectionLength = 0;
             this.m_txt_ti_le.SelectionStart = 0;
             this.m_txt_ti_le.Size = new System.Drawing.Size(194, 23);
-            this.m_txt_ti_le.TabIndex = 75;
+            this.m_txt_ti_le.TabIndex = 3;
             this.m_txt_ti_le.UseSystemPasswordChar = false;
+            this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_chantren
             // 
@@ -130,8 +132,9 @@
             this.m_txt_chantren.SelectionLength = 0;
             this.m_txt_chantren.SelectionStart = 0;
             this.m_txt_chantren.Size = new System.Drawing.Size(194, 23);
-            this.m_txt_chantren.TabIndex = 74;
+            this.m_txt_chantren.TabIndex = 2;
             this.m_txt_chantren.UseSystemPasswordChar = false;
+            this.m_txt_chantren.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // m_txt_chanduoi
             // 
@@ -146,86 +149,87 @@
             this.m_txt_chanduoi.SelectionLength = 0;
             this.m_txt_chanduoi.SelectionStart = 0;
             this.m_txt_chanduoi.Size = new System.Drawing.Size(194, 23);
-            this.m_txt_chanduoi.TabIndex = 73;
+            this.m_txt_chanduoi.TabIndex = 1;
             this.m_txt_chanduoi.UseSystemPasswordChar = false;
+            this.m_txt_chanduoi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(363, 137);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(40, 20);
+            this.label28.Size = new System.Drawing.Size(39, 18);
             this.label28.TabIndex = 77;
             this.label28.Text = "VND";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(363, 241);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(40, 20);
+            this.label27.Size = new System.Drawing.Size(39, 18);
             this.label27.TabIndex = 78;
             this.label27.Text = "VND";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(363, 85);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(40, 20);
+            this.label25.Size = new System.Drawing.Size(39, 18);
             this.label25.TabIndex = 79;
             this.label25.Text = "VND";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(47, 85);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(80, 20);
+            this.label20.Size = new System.Drawing.Size(75, 18);
             this.label20.TabIndex = 80;
             this.label20.Text = "Chặn dưới";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(47, 137);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 20);
+            this.label21.Size = new System.Drawing.Size(72, 18);
             this.label21.TabIndex = 81;
             this.label21.Text = "Chặn trên";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(47, 189);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 20);
+            this.label22.Size = new System.Drawing.Size(35, 18);
             this.label22.TabIndex = 82;
             this.label22.Text = "Tỉ lệ";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(47, 241);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(51, 20);
+            this.label24.Size = new System.Drawing.Size(47, 18);
             this.label24.TabIndex = 84;
             this.label24.Text = "Bù trừ";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(363, 189);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(24, 20);
+            this.label23.Size = new System.Drawing.Size(25, 18);
             this.label23.TabIndex = 83;
             this.label23.Text = "% ";
             // 
@@ -242,11 +246,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(3, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 21);
+            this.label2.Size = new System.Drawing.Size(236, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT THUẾ";
             // 

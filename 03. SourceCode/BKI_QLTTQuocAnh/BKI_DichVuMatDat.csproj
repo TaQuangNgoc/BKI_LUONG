@@ -469,6 +469,7 @@
     <Compile Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.Designer.cs">
       <DependentUpon>PHU_CAP_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\DETAIL\TextField.cs" />
     <Compile Include="CAI_DAT\DETAIL\THUE_DETAIL.cs">
       <SubType>Form</SubType>
     </Compile>

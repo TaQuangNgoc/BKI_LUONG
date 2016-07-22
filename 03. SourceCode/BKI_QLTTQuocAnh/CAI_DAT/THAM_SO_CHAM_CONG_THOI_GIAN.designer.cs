@@ -140,11 +140,11 @@ namespace BKI_DichVuMatDat
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 21);
+            this.label2.Size = new System.Drawing.Size(448, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "DANH MỤC THAM SỐ CHẤM CÔNG THEO THỜI GIAN";
             // 
@@ -159,6 +159,7 @@ namespace BKI_DichVuMatDat
             this.materialTabSelector1.Size = new System.Drawing.Size(961, 36);
             this.materialTabSelector1.TabIndex = 4;
             this.materialTabSelector1.Text = "materialTabSelector1";
+            this.materialTabSelector1.Click += new System.EventHandler(this.materialTabSelector1_Click);
             // 
             // tab_Control1
             // 
@@ -170,7 +171,7 @@ namespace BKI_DichVuMatDat
             this.tab_Control1.Controls.Add(this.tab_doanphi);
             this.tab_Control1.Depth = 0;
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tab_Control1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_Control1.Location = new System.Drawing.Point(0, 36);
             this.tab_Control1.MouseState = MaterialSkin.MouseState.HOVER;
             this.tab_Control1.Name = "tab_Control1";
@@ -182,11 +183,11 @@ namespace BKI_DichVuMatDat
             // tab_loaingaycong
             // 
             this.tab_loaingaycong.Controls.Add(this.m_grc_ngay_cong);
-            this.tab_loaingaycong.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tab_loaingaycong.Location = new System.Drawing.Point(4, 29);
+            this.tab_loaingaycong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_loaingaycong.Location = new System.Drawing.Point(4, 27);
             this.tab_loaingaycong.Name = "tab_loaingaycong";
             this.tab_loaingaycong.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 462);
+            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 464);
             this.tab_loaingaycong.TabIndex = 0;
             this.tab_loaingaycong.Text = "LOẠI NGÀY CÔNG";
             this.tab_loaingaycong.UseVisualStyleBackColor = true;
@@ -198,7 +199,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_ngay_cong.Location = new System.Drawing.Point(3, 3);
             this.m_grc_ngay_cong.MainView = this.m_grv_ngay_cong;
             this.m_grc_ngay_cong.Name = "m_grc_ngay_cong";
-            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 456);
+            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 458);
             this.m_grc_ngay_cong.TabIndex = 3;
             this.m_grc_ngay_cong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ngay_cong,
@@ -206,7 +207,7 @@ namespace BKI_DichVuMatDat
             // 
             // m_grv_ngay_cong
             // 
-            this.m_grv_ngay_cong.Appearance.EvenRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_ngay_cong.Appearance.EvenRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_ngay_cong.Appearance.EvenRow.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
@@ -214,7 +215,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_ngay_cong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -225,9 +226,9 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_ngay_cong.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_ngay_cong.Appearance.HideSelectionRow.Options.UseBackColor = true;
-            this.m_grv_ngay_cong.Appearance.OddRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_ngay_cong.Appearance.OddRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_ngay_cong.Appearance.OddRow.Options.UseFont = true;
-            this.m_grv_ngay_cong.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_ngay_cong.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_ngay_cong.Appearance.Row.Options.UseFont = true;
             this.m_grv_ngay_cong.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
@@ -296,10 +297,10 @@ namespace BKI_DichVuMatDat
             // 
             this.tab_lamthemgio.BackColor = System.Drawing.Color.White;
             this.tab_lamthemgio.Controls.Add(this.m_grc_loai_lam_them_gio);
-            this.tab_lamthemgio.Location = new System.Drawing.Point(4, 29);
+            this.tab_lamthemgio.Location = new System.Drawing.Point(4, 27);
             this.tab_lamthemgio.Name = "tab_lamthemgio";
             this.tab_lamthemgio.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 462);
+            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 464);
             this.tab_lamthemgio.TabIndex = 1;
             this.tab_lamthemgio.Text = "LÀM THÊM GIỜ";
             // 
@@ -313,7 +314,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
-            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 456);
+            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 458);
             this.m_grc_loai_lam_them_gio.TabIndex = 8;
             this.m_grc_loai_lam_them_gio.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_lam_them_gio,
@@ -328,13 +329,13 @@ namespace BKI_DichVuMatDat
             this.m_grv_lam_them_gio.Appearance.FocusedCell.Options.UseForeColor = true;
             this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_lam_them_gio.Appearance.FocusedRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_lam_them_gio.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -344,10 +345,10 @@ namespace BKI_DichVuMatDat
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_lam_them_gio.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_lam_them_gio.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_lam_them_gio.Appearance.HideSelectionRow.Options.UseFont = true;
-            this.m_grv_lam_them_gio.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_lam_them_gio.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_lam_them_gio.Appearance.Row.Options.UseFont = true;
             this.m_grv_lam_them_gio.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn5,
@@ -361,7 +362,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "MÃ LOẠI LÀM THÊM";
+            this.gridColumn5.Caption = "Mã loại làm thêm";
             this.gridColumn5.FieldName = "MA_LAM_THEM";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -369,7 +370,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn6
             // 
-            this.gridColumn6.Caption = "TÊN LOẠI LÀM THÊM";
+            this.gridColumn6.Caption = "Tên loại làm thêm";
             this.gridColumn6.FieldName = "TEN_LOAI_LAM_THEM";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -392,10 +393,10 @@ namespace BKI_DichVuMatDat
             // 
             this.tab_phucap.BackColor = System.Drawing.Color.White;
             this.tab_phucap.Controls.Add(this.m_grc_loai_phu_cap);
-            this.tab_phucap.Location = new System.Drawing.Point(4, 29);
+            this.tab_phucap.Location = new System.Drawing.Point(4, 27);
             this.tab_phucap.Name = "tab_phucap";
             this.tab_phucap.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_phucap.Size = new System.Drawing.Size(953, 462);
+            this.tab_phucap.Size = new System.Drawing.Size(953, 464);
             this.tab_phucap.TabIndex = 2;
             this.tab_phucap.Text = "PHỤ CẤP";
             // 
@@ -406,7 +407,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_loai_phu_cap.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_loai_phu_cap.Name = "m_grc_loai_phu_cap";
-            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 456);
+            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 458);
             this.m_grc_loai_phu_cap.TabIndex = 19;
             this.m_grc_loai_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap,
@@ -416,13 +417,13 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grv_phu_cap.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_phu_cap.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_phu_cap.Appearance.FocusedRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_phu_cap.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phu_cap.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_phu_cap.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_phu_cap.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_phu_cap.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -432,12 +433,12 @@ namespace BKI_DichVuMatDat
             this.m_grv_phu_cap.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_phu_cap.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_phu_cap.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_phu_cap.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_phu_cap.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseFont = true;
             this.m_grv_phu_cap.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_phu_cap.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_phu_cap.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_phu_cap.Appearance.Row.Options.UseFont = true;
             this.m_grv_phu_cap.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn8,
@@ -455,7 +456,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn8
             // 
-            this.gridColumn8.Caption = "TÊN PHỤ CẤP";
+            this.gridColumn8.Caption = "Tên phụ cấp";
             this.gridColumn8.FieldName = "TEN_PHU_CAP";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
@@ -463,7 +464,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn9
             // 
-            this.gridColumn9.Caption = "ĐỐI TƯỢNG HƯỞNG";
+            this.gridColumn9.Caption = "Đối tượng hưởng";
             this.gridColumn9.FieldName = "DOI_TUONG_HUONG_PHU_CAP";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
@@ -471,7 +472,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn10
             // 
-            this.gridColumn10.Caption = "TỈ LỆ";
+            this.gridColumn10.Caption = "Tỉ lệ";
             this.gridColumn10.FieldName = "TI_LE";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
@@ -479,7 +480,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn11
             // 
-            this.gridColumn11.Caption = "CỦA TIỀN";
+            this.gridColumn11.Caption = "Của tiền";
             this.gridColumn11.FieldName = "TEN";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
@@ -487,7 +488,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn12
             // 
-            this.gridColumn12.Caption = "SỐ TIỀN";
+            this.gridColumn12.Caption = "Số tiền";
             this.gridColumn12.DisplayFormat.FormatString = "n0";
             this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "SO_TIEN";
@@ -497,7 +498,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn13
             // 
-            this.gridColumn13.Caption = "PHỤ THUỘC SỐ NGÀY ĐI LÀM";
+            this.gridColumn13.Caption = "Phụ thuộc số ngày đi làm";
             this.gridColumn13.FieldName = "PHU_THUOC_SO_NGAY_DI_LAM";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
@@ -512,10 +513,10 @@ namespace BKI_DichVuMatDat
             // 
             this.tab_baohiem.BackColor = System.Drawing.Color.White;
             this.tab_baohiem.Controls.Add(this.m_grc_bao_hiem);
-            this.tab_baohiem.Location = new System.Drawing.Point(4, 29);
+            this.tab_baohiem.Location = new System.Drawing.Point(4, 27);
             this.tab_baohiem.Name = "tab_baohiem";
             this.tab_baohiem.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_baohiem.Size = new System.Drawing.Size(953, 462);
+            this.tab_baohiem.Size = new System.Drawing.Size(953, 464);
             this.tab_baohiem.TabIndex = 3;
             this.tab_baohiem.Text = "BẢO HIỂM";
             // 
@@ -526,7 +527,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_bao_hiem.Location = new System.Drawing.Point(3, 3);
             this.m_grc_bao_hiem.MainView = this.m_grv_bao_hiem;
             this.m_grc_bao_hiem.Name = "m_grc_bao_hiem";
-            this.m_grc_bao_hiem.Size = new System.Drawing.Size(947, 456);
+            this.m_grc_bao_hiem.Size = new System.Drawing.Size(947, 458);
             this.m_grc_bao_hiem.TabIndex = 17;
             this.m_grc_bao_hiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_bao_hiem,
@@ -536,12 +537,12 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grv_bao_hiem.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_bao_hiem.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_bao_hiem.Appearance.FocusedCell.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_bao_hiem.Appearance.FocusedCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_bao_hiem.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_bao_hiem.Appearance.FocusedCell.Options.UseFont = true;
             this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_bao_hiem.Appearance.FocusedRow.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_bao_hiem.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseFont = true;
@@ -549,7 +550,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_bao_hiem.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_bao_hiem.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_bao_hiem.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_bao_hiem.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_bao_hiem.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_bao_hiem.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_bao_hiem.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -559,12 +560,12 @@ namespace BKI_DichVuMatDat
             this.m_grv_bao_hiem.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_bao_hiem.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseFont = true;
             this.m_grv_bao_hiem.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_bao_hiem.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_bao_hiem.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_bao_hiem.Appearance.Row.Options.UseFont = true;
             this.m_grv_bao_hiem.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn14,
@@ -579,7 +580,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn14
             // 
-            this.gridColumn14.Caption = "MÃ LOẠI BẢO HIỂM";
+            this.gridColumn14.Caption = "Mã loại bảo hiểm";
             this.gridColumn14.FieldName = "MA_BH";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.Visible = true;
@@ -587,7 +588,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn15
             // 
-            this.gridColumn15.Caption = "TÊN LOẠI BẢO HIỂM";
+            this.gridColumn15.Caption = "Tên loại bảo hiểm";
             this.gridColumn15.FieldName = "TEN_BH";
             this.gridColumn15.Name = "gridColumn15";
             this.gridColumn15.Visible = true;
@@ -610,10 +611,10 @@ namespace BKI_DichVuMatDat
             // 
             this.tab_thue.BackColor = System.Drawing.Color.White;
             this.tab_thue.Controls.Add(this.m_grc_thue);
-            this.tab_thue.Location = new System.Drawing.Point(4, 29);
+            this.tab_thue.Location = new System.Drawing.Point(4, 27);
             this.tab_thue.Name = "tab_thue";
             this.tab_thue.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_thue.Size = new System.Drawing.Size(953, 462);
+            this.tab_thue.Size = new System.Drawing.Size(953, 464);
             this.tab_thue.TabIndex = 4;
             this.tab_thue.Text = "THUẾ";
             // 
@@ -624,7 +625,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_thue.Location = new System.Drawing.Point(3, 3);
             this.m_grc_thue.MainView = this.m_grv_thue;
             this.m_grc_thue.Name = "m_grc_thue";
-            this.m_grc_thue.Size = new System.Drawing.Size(947, 456);
+            this.m_grc_thue.Size = new System.Drawing.Size(947, 458);
             this.m_grc_thue.TabIndex = 20;
             this.m_grc_thue.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_thue,
@@ -634,14 +635,14 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grv_thue.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_thue.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_thue.Appearance.FocusedCell.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_thue.Appearance.FocusedCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_thue.Appearance.FocusedCell.ForeColor = System.Drawing.Color.White;
             this.m_grv_thue.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_thue.Appearance.FocusedCell.Options.UseFont = true;
             this.m_grv_thue.Appearance.FocusedCell.Options.UseForeColor = true;
             this.m_grv_thue.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_thue.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_thue.Appearance.FocusedRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_thue.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_thue.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_thue.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_thue.Appearance.FocusedRow.Options.UseFont = true;
@@ -649,7 +650,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_thue.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_thue.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_thue.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_thue.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_thue.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_thue.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_thue.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_thue.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -659,10 +660,10 @@ namespace BKI_DichVuMatDat
             this.m_grv_thue.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_thue.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_thue.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_thue.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.m_grv_thue.Appearance.HideSelectionRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.m_grv_thue.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_thue.Appearance.HideSelectionRow.Options.UseFont = true;
-            this.m_grv_thue.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11F);
+            this.m_grv_thue.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.m_grv_thue.Appearance.Row.Options.UseFont = true;
             this.m_grv_thue.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn17,
@@ -678,7 +679,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn17
             // 
-            this.gridColumn17.Caption = "CHẶN DƯỚI";
+            this.gridColumn17.Caption = "Chặn dưới";
             this.gridColumn17.DisplayFormat.FormatString = "n0";
             this.gridColumn17.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn17.FieldName = "CHAN_DUOI";
@@ -688,7 +689,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn18
             // 
-            this.gridColumn18.Caption = "CHẶN TRÊN";
+            this.gridColumn18.Caption = "Chặn trên";
             this.gridColumn18.DisplayFormat.FormatString = "n0";
             this.gridColumn18.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn18.FieldName = "CHAN_TREN";
@@ -698,7 +699,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn19
             // 
-            this.gridColumn19.Caption = "TỈ LỆ";
+            this.gridColumn19.Caption = "Tỉ lệ";
             this.gridColumn19.FieldName = "TI_LE";
             this.gridColumn19.Name = "gridColumn19";
             this.gridColumn19.Visible = true;
@@ -706,7 +707,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn20
             // 
-            this.gridColumn20.Caption = "BÙ TRỪ";
+            this.gridColumn20.Caption = "Bù trừ";
             this.gridColumn20.DisplayFormat.FormatString = "n0";
             this.gridColumn20.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn20.FieldName = "BU_TRU";
@@ -723,10 +724,10 @@ namespace BKI_DichVuMatDat
             // 
             this.tab_doanphi.BackColor = System.Drawing.Color.White;
             this.tab_doanphi.Controls.Add(this.groupBox13);
-            this.tab_doanphi.Location = new System.Drawing.Point(4, 29);
+            this.tab_doanphi.Location = new System.Drawing.Point(4, 27);
             this.tab_doanphi.Name = "tab_doanphi";
             this.tab_doanphi.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_doanphi.Size = new System.Drawing.Size(953, 462);
+            this.tab_doanphi.Size = new System.Drawing.Size(953, 464);
             this.tab_doanphi.TabIndex = 5;
             this.tab_doanphi.Text = "ĐOÀN PHÍ ";
             // 
@@ -734,10 +735,10 @@ namespace BKI_DichVuMatDat
             // 
             this.groupBox13.Controls.Add(this.panel15);
             this.groupBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox13.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(3, 3);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(947, 456);
+            this.groupBox13.Size = new System.Drawing.Size(947, 458);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             // 
@@ -745,9 +746,9 @@ namespace BKI_DichVuMatDat
             // 
             this.panel15.Controls.Add(this.groupBox20);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(3, 23);
+            this.panel15.Location = new System.Drawing.Point(3, 20);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(941, 430);
+            this.panel15.Size = new System.Drawing.Size(941, 435);
             this.panel15.TabIndex = 7;
             // 
             // groupBox20
@@ -863,7 +864,7 @@ namespace BKI_DichVuMatDat
             this.m_cb_cua_tien.FormattingEnabled = true;
             this.m_cb_cua_tien.Location = new System.Drawing.Point(487, 15);
             this.m_cb_cua_tien.Name = "m_cb_cua_tien";
-            this.m_cb_cua_tien.Size = new System.Drawing.Size(279, 28);
+            this.m_cb_cua_tien.Size = new System.Drawing.Size(279, 26);
             this.m_cb_cua_tien.TabIndex = 6;
             this.m_cb_cua_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_cb_cua_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -874,7 +875,7 @@ namespace BKI_DichVuMatDat
             this.m_cb_cua_tien_lon_nhat.FormattingEnabled = true;
             this.m_cb_cua_tien_lon_nhat.Location = new System.Drawing.Point(487, 59);
             this.m_cb_cua_tien_lon_nhat.Name = "m_cb_cua_tien_lon_nhat";
-            this.m_cb_cua_tien_lon_nhat.Size = new System.Drawing.Size(279, 28);
+            this.m_cb_cua_tien_lon_nhat.Size = new System.Drawing.Size(279, 26);
             this.m_cb_cua_tien_lon_nhat.TabIndex = 6;
             this.m_cb_cua_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_cb_cua_tien_lon_nhat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -884,7 +885,7 @@ namespace BKI_DichVuMatDat
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(325, 18);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(24, 20);
+            this.label29.Size = new System.Drawing.Size(25, 18);
             this.label29.TabIndex = 0;
             this.label29.Text = "% ";
             // 
@@ -893,7 +894,7 @@ namespace BKI_DichVuMatDat
             this.label30.AutoSize = true;
             this.label30.Location = new System.Drawing.Point(325, 62);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(24, 20);
+            this.label30.Size = new System.Drawing.Size(25, 18);
             this.label30.TabIndex = 0;
             this.label30.Text = "% ";
             // 
@@ -902,7 +903,7 @@ namespace BKI_DichVuMatDat
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(377, 18);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(66, 20);
+            this.label32.Size = new System.Drawing.Size(62, 18);
             this.label32.TabIndex = 0;
             this.label32.Text = "Của tiền";
             // 
@@ -911,7 +912,7 @@ namespace BKI_DichVuMatDat
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(325, 106);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(40, 20);
+            this.label33.Size = new System.Drawing.Size(39, 18);
             this.label33.TabIndex = 0;
             this.label33.Text = "VND";
             // 
@@ -920,7 +921,7 @@ namespace BKI_DichVuMatDat
             this.label26.AutoSize = true;
             this.label26.Location = new System.Drawing.Point(377, 62);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(66, 20);
+            this.label26.Size = new System.Drawing.Size(62, 18);
             this.label26.TabIndex = 0;
             this.label26.Text = "Của tiền";
             // 
@@ -929,7 +930,7 @@ namespace BKI_DichVuMatDat
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(21, 62);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(109, 20);
+            this.label31.Size = new System.Drawing.Size(101, 18);
             this.label31.TabIndex = 0;
             this.label31.Text = "Lớn nhất bằng\r\n";
             // 
@@ -969,6 +970,7 @@ namespace BKI_DichVuMatDat
             this.m_cmd_luu.TabIndex = 37;
             this.m_cmd_luu.Text = "Lưu";
             this.m_cmd_luu.UseVisualStyleBackColor = true;
+            this.m_cmd_luu.Visible = false;
             this.m_cmd_luu.Click += new System.EventHandler(this.m_cmd_luu_Click);
             // 
             // m_cmd_them

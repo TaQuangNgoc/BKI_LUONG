@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using MaterialSkin.Controls;
 
 namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 {
@@ -108,7 +109,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }

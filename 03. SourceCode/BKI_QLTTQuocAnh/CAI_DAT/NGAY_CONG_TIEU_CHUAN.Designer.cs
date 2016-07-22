@@ -80,7 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-
             this.tab_danhmucloainhanvien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).BeginInit();
@@ -94,11 +93,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(593, 19);
+            this.label2.Size = new System.Drawing.Size(614, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "CÀI ĐẶT SỐ NGÀY CÔNG TIÊU CHUẨN ỨNG VỚI TỪNG LOẠI NHÂN VIÊN";
             // 
@@ -133,7 +132,7 @@
             this.m_group_cau_hinh.Controls.Add(this.panel5);
             this.m_group_cau_hinh.Controls.Add(this.panel4);
             this.m_group_cau_hinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_group_cau_hinh.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_group_cau_hinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_group_cau_hinh.Location = new System.Drawing.Point(3, 74);
             this.m_group_cau_hinh.Name = "m_group_cau_hinh";
             this.m_group_cau_hinh.Size = new System.Drawing.Size(909, 280);
@@ -145,9 +144,9 @@
             // 
             this.panel5.Controls.Add(this.m_grc);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 84);
+            this.panel5.Location = new System.Drawing.Point(3, 82);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(903, 193);
+            this.panel5.Size = new System.Drawing.Size(903, 195);
             this.panel5.TabIndex = 9;
             // 
             // m_grc
@@ -157,16 +156,16 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(903, 193);
+            this.m_grc.Size = new System.Drawing.Size(903, 195);
             this.m_grc.TabIndex = 7;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
             // 
             // m_grv
             // 
-            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.Row.Options.UseFont = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn3,
@@ -322,7 +321,7 @@
             // 
             this.panel4.Controls.Add(this.label5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 22);
+            this.panel4.Location = new System.Drawing.Point(3, 20);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(903, 62);
             this.panel4.TabIndex = 8;
@@ -332,7 +331,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(26, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(656, 18);
+            this.label5.Size = new System.Drawing.Size(643, 18);
             this.label5.TabIndex = 2;
             this.label5.Text = "Điền số ngày công tiêu chuẩn của mỗi tháng tương ứng với từng loại nhân viên vào " +
     "bảng dưới đây:";
@@ -368,19 +367,26 @@
             // 
             // m_txt_nam
             // 
+            this.m_txt_nam.Depth = 0;
+            this.m_txt_nam.Hint = "";
             this.m_txt_nam.Location = new System.Drawing.Point(170, 27);
+            this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_nam.Name = "m_txt_nam";
-            
-            this.m_txt_nam.Size = new System.Drawing.Size(234, 26);
+            this.m_txt_nam.PasswordChar = '\0';
+            this.m_txt_nam.SelectedText = "";
+            this.m_txt_nam.SelectionLength = 0;
+            this.m_txt_nam.SelectionStart = 0;
+            this.m_txt_nam.Size = new System.Drawing.Size(234, 23);
             this.m_txt_nam.TabIndex = 4;
+            this.m_txt_nam.UseSystemPasswordChar = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(29, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 18);
+            this.label6.Size = new System.Drawing.Size(77, 18);
             this.label6.TabIndex = 2;
             this.label6.Text = "Chọn năm";
             // 
@@ -400,7 +406,7 @@
             // 
             this.m_grc_loai_nv.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_loai_nv.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_loai_nv.Location = new System.Drawing.Point(3, 112);
+            this.m_grc_loai_nv.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_nv.MainView = this.m_grv_loai_nv;
             this.m_grc_loai_nv.Name = "m_grc_loai_nv";
             this.m_grc_loai_nv.Size = new System.Drawing.Size(909, 242);
@@ -410,20 +416,28 @@
             // 
             // m_grv_loai_nv
             // 
-            this.m_grv_loai_nv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_loai_nv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_loai_nv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_loai_nv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.White;
+            this.m_grv_loai_nv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_loai_nv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_loai_nv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_loai_nv.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_loai_nv.Appearance.HeaderPanel.Options.UseFont = true;
-            this.m_grv_loai_nv.Appearance.Row.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_loai_nv.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_loai_nv.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_loai_nv.Appearance.Row.Options.UseFont = true;
             this.m_grv_loai_nv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
             this.m_grv_loai_nv.GridControl = this.m_grc_loai_nv;
             this.m_grv_loai_nv.Name = "m_grv_loai_nv";
-            this.m_grv_loai_nv.OptionsFind.AlwaysVisible = true;
             this.m_grv_loai_nv.OptionsFind.FindDelay = 100;
             this.m_grv_loai_nv.OptionsFind.FindNullPrompt = "Nhập từ khóa để tìm kiếm...";
+            this.m_grv_loai_nv.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_loai_nv.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             this.m_grv_loai_nv.OptionsView.ShowGroupPanel = false;
+            this.m_grv_loai_nv.PaintStyleName = "Web";
             // 
             // gridColumn1
             // 
@@ -444,9 +458,9 @@
             // m_group_cai_dat
             // 
             this.m_group_cai_dat.Controls.Add(this.label3);
-            this.m_group_cai_dat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_group_cai_dat.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_group_cai_dat.Location = new System.Drawing.Point(3, 3);
+            this.m_group_cai_dat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_group_cai_dat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_group_cai_dat.Location = new System.Drawing.Point(3, 245);
             this.m_group_cai_dat.Name = "m_group_cai_dat";
             this.m_group_cai_dat.Size = new System.Drawing.Size(909, 109);
             this.m_group_cai_dat.TabIndex = 10;
@@ -457,7 +471,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(32, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(583, 54);
+            this.label3.Size = new System.Drawing.Size(580, 54);
             this.label3.TabIndex = 2;
             this.label3.Text = "Loại nhân viên khác nhau sẽ có số ngày công tiêu chuẩn trong các tháng là  khác n" +
     "hau.\r\nĐiền thông tin về loại nhân viên, và chỉnh sửa số ngày công tiêu chuẩn ở t" +
@@ -472,7 +486,7 @@
             this.tab_Control1.Controls.Add(this.tab_danhmucloainhanvien);
             this.tab_Control1.Controls.Add(this.tab_so_ngay_cong_tieu_chuan);
             this.tab_Control1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tab_Control1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tab_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tab_Control1.Location = new System.Drawing.Point(0, 53);
             this.tab_Control1.Name = "tab_Control1";
             this.tab_Control1.SelectedIndex = 0;
@@ -600,7 +614,6 @@
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-
             this.tab_danhmucloainhanvien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_loai_nv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_loai_nv)).EndInit();
