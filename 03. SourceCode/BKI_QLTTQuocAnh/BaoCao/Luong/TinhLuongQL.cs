@@ -30,6 +30,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             }
         }
         #endregion
+
        
         public DTO_THONG_TIN_BANG_LUONG LayThongTinBangLuong(decimal ip_dc_thang, decimal ip_dc_nam)
         {

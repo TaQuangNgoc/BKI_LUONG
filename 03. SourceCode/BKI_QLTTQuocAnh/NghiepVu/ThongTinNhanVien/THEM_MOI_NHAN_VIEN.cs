@@ -717,9 +717,9 @@ namespace BKI_DichVuMatDat
                     {
                         m_txt_lns.Text =v_dr["SO_TIEN"].ToString();
                         m_txt_lcd.Text = "";
-                        m_dtp_tu_ngay_lns.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                        m_dtp_tu_ngay_lns.EditValue = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                      if(   v_dr["DEN_NGAY"].ToString()!="")
-                         m_dtp_den_ngay_lns.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                         m_dtp_den_ngay_lns.EditValue = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
                      else
                      {
                          m_dtp_den_ngay_lns.EditValue = null;
@@ -729,9 +729,9 @@ namespace BKI_DichVuMatDat
                     {
                         m_txt_lcd.Text = v_dr["SO_TIEN"].ToString();
                         m_txt_lns.Text = "";
-                        m_dtp_tu_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                        m_dtp_tu_ngay_lcd.EditValue = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                         if (v_dr["DEN_NGAY"].ToString() != "")
-                            m_dtp_den_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                            m_dtp_den_ngay_lcd.EditValue = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
                         else
                         {
                             m_dtp_den_ngay_lcd.EditValue = null;
@@ -831,9 +831,9 @@ namespace BKI_DichVuMatDat
 
                 m_txt_ti_le.Text = v_dr["TI_LE"].ToString();
 
-                m_dtp_tu_ngay_ti_le.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                m_dtp_tu_ngay_ti_le.EditValue = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                 if (v_dr["DEN_NGAY"].ToString() != "")
-                    m_dtp_den_ngay_ti_le.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                    m_dtp_den_ngay_ti_le.EditValue = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
                 else
                 {
                     m_dtp_den_ngay_ti_le.EditValue = null;
@@ -892,9 +892,9 @@ namespace BKI_DichVuMatDat
             {
                 DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
                 m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
-                m_dtp_tu_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                m_dtp_tu_ngay_phu_cap.EditValue = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                 if (v_dr["DEN_NGAY"].ToString() != "")
-                    m_dtp_den_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                    m_dtp_den_ngay_phu_cap.EditValue = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
                 else
                 {
                     m_dtp_den_ngay_phu_cap.EditValue = null;
@@ -980,9 +980,9 @@ namespace BKI_DichVuMatDat
                 DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
 
                 m_txt_so_tien_luong_ngay.Text = v_dr["SO_TIEN"].ToString();
-                m_dtp_tu_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                m_dtp_tu_ngay_luong_ngay.EditValue = CIPConvert.ToDatetime(v_dr["TU_NGAY"].ToString());
                 if (v_dr["DEN_NGAY"].ToString() != "")
-                    m_dtp_den_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                    m_dtp_den_ngay_luong_ngay.EditValue = CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString());
                 else
                 {
                     m_dtp_den_ngay_luong_ngay.EditValue = null;
