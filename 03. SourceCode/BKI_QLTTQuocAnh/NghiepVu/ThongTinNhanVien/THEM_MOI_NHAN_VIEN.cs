@@ -639,14 +639,42 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = dt.Select(ten_truong_filter + "= " + gia_tri_filter).LastOrDefault();
             if (v_dr == null)
                 return true;
-            else if( v_dr["DEN_NGAY"].ToString()=="")
+            else
             {
-                XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return false;
+                if (v_dr["DEN_NGAY"].ToString() == "")
+                {
+                    XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                if (v_dr["DEN_NGAY"].ToString().Length == 10)
+                {
+                    if ((CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+                    }
+                }
+                if (v_dr["DEN_NGAY"].ToString().Length < 10)
+                {
+                    int thang = int.Parse(v_dr["DEN_NGAY"].ToString().Substring(0, 2));
+                    int nam = int.Parse(v_dr["DEN_NGAY"].ToString().Substring(3, 4));
+                    DateTime firstOfNextMonth = new DateTime(nam, thang, 1).AddMonths(1);
+                    DateTime lastOfThisMonth = firstOfNextMonth.AddDays(-1);
+
+                    if (lastOfThisMonth < tu_ngay)
+                        return true;
+                    else
+                    {
+                        XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+                    }
+
+                }
+
             }
-            else if ((CIPConvert.ToDatetime(v_dr["DEN_NGAY"], "dd/MM/yyyy")) < tu_ngay)
-                return true;
-            else XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           
             return false;
         }
 
@@ -655,16 +683,42 @@ namespace BKI_DichVuMatDat
             DataRow v_dr = dt.Select().LastOrDefault();
             if (v_dr == null)
                 return true;
-            else if (v_dr["DEN_NGAY"].ToString() == "")
+            else
             {
-                XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
+                 if (v_dr["DEN_NGAY"].ToString() == "")
+                {
+                    XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }        
+                if( v_dr["DEN_NGAY"].ToString().Length==10)
+                {
+                    if((CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+                    }
+                }                 
+                if(v_dr["DEN_NGAY"].ToString().Length<10)
+	            {
+                    int thang = int.Parse(v_dr["DEN_NGAY"].ToString().Substring(0, 2));
+                    int nam = int.Parse(v_dr["DEN_NGAY"].ToString().Substring(3, 4));
+                    DateTime firstOfNextMonth = new DateTime(nam, thang, 1).AddMonths(1);
+                    DateTime lastOfThisMonth = firstOfNextMonth.AddDays(-1);
 
-            else if
-                ((CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
-                return true;
-            else XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+                    if (lastOfThisMonth < tu_ngay)
+                        return true;
+                    else
+                    {
+                        XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+                    }
+
+	            }
+                   
+            }
+           
             return false;
         }
 
@@ -892,16 +946,28 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-               
                 DataTable dt = new DataTable();
                 WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
-                dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, ((DateTime)m_dtp_tu_ngay_phu_cap.EditValue).ToString("MM/yyyy"), ((DateTime)m_dtp_den_ngay_phu_cap.EditValue).ToString("MM/yyyy"));
-                m_grc_phu_cap.DataSource = dt;
+                if (m_dtp_tu_ngay_phu_cap.EditValue == null)
+                {
+                    XtraMessageBox.Show("Vui lòng điền thông tin về ngày tháng của phụ cấp được hưởng của nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                if (m_dtp_den_ngay_phu_cap.EditValue != null && (DateTime)m_dtp_den_ngay_phu_cap.EditValue < (DateTime)m_dtp_tu_ngay_phu_cap.EditValue)
+                {
+                    XtraMessageBox.Show("Từ ngày phải nhỏ hơn hoặc bằng Đến ngày!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (check_ngay_thang_is_ok(dt,"ID_PHU_CAP",int.Parse(m_cbo_loai_phu_cap.SelectedValue.ToString()), (DateTime)m_dtp_tu_ngay_phu_cap.EditValue))
+                {
+                    if (m_dtp_den_ngay_phu_cap.EditValue != null)
+                        dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, ((DateTime)m_dtp_tu_ngay_phu_cap.EditValue).ToString("MM/yyyy"), ((DateTime)m_dtp_den_ngay_phu_cap.EditValue).ToString("MM/yyyy"));
+                    else
+                        dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, ((DateTime)m_dtp_tu_ngay_phu_cap.EditValue).ToString("MM/yyyy"), System.Convert.DBNull);
+                    m_grc_phu_cap.DataSource = dt;
+                }
             }
-            catch (Exception)
+            catch (Exception v_e)
             {
-                
-                
+                throw v_e;
             }
            
 
@@ -951,15 +1017,14 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-
+                DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+                v_dr.Delete();
             }
             catch (Exception)
-            {
-                
+            {           
                  XtraMessageBox.Show("Click vào dòng bạn muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-            v_dr.Delete();
+           
         }
 
         private void m_btn_them_luong_ngay_Click(object sender, EventArgs e)
