@@ -179,7 +179,7 @@
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_xoa_luong);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 302);
+            this.panel2.Location = new System.Drawing.Point(0, 280);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(443, 50);
             this.panel2.TabIndex = 9;
@@ -232,10 +232,10 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(443, 352);
+            this.panel1.Size = new System.Drawing.Size(443, 330);
             this.panel1.TabIndex = 0;
             // 
             // panel3

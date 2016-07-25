@@ -860,6 +860,7 @@ namespace BKI_DichVuMatDat
             // 
             // m_cb_cua_tien
             // 
+            this.m_cb_cua_tien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.m_cb_cua_tien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cb_cua_tien.FormattingEnabled = true;
             this.m_cb_cua_tien.Location = new System.Drawing.Point(487, 15);
@@ -871,6 +872,7 @@ namespace BKI_DichVuMatDat
             // 
             // m_cb_cua_tien_lon_nhat
             // 
+            this.m_cb_cua_tien_lon_nhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.m_cb_cua_tien_lon_nhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cb_cua_tien_lon_nhat.FormattingEnabled = true;
             this.m_cb_cua_tien_lon_nhat.Location = new System.Drawing.Point(487, 59);

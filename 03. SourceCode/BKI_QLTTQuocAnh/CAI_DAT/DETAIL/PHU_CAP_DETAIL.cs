@@ -85,9 +85,9 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
         {
             try
             {
-                if (!is_check_not_ok())
+                if (is_check_not_ok())
                 {
-                    XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+
                 }
                 else
                 {
@@ -97,13 +97,14 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                         try
                         {
                             m_us.Insert();
-                            XtraMessageBox.Show("Lưu thành công!","Thông báo");
+                            XtraMessageBox.Show("Lưu thành công!", "Thông báo");
                             this.Close();
                         }
-                        catch (Exception )
+                        catch (Exception ve)
                         {
+                            throw ve;
                             //  MessageBox.Show("Đã tồn tại mã sản phẩm này. Vui lòng kiểm tra lại thông tin!");
-                            XtraMessageBox.Show("mã phụ cấp đã tồn tại. Bạn vui lòng nhập lại thông tin!");
+                           // XtraMessageBox.Show("mã phụ cấp đã tồn tại. Bạn vui lòng nhập lại thông tin!");
 
                         }
 
@@ -123,6 +124,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
                     }
                 }
             }
+
             catch (Exception v_e)
             {
 
@@ -157,7 +159,29 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
 
         private bool is_check_not_ok()
         {
-            return true;
+            if (m_txt_ten_phucap.Text == "")
+            {
+                XtraMessageBox.Show("Bạn phải nhập tên phụ cấp !");
+                return true; 
+            }
+            if (m_txt_doi_tuong_huong.Text == "")
+            {
+                XtraMessageBox.Show("Bạn phải nhập  đối tượng hưởng phụ cấp !");
+                return true;
+            }
+            if ((m_rd_ti_le.Checked == true) && m_txt_ti_le.Text == "")
+            {
+                XtraMessageBox.Show("Bạn phải nhập tỉ lệ !");
+                return true;
+            }
+            if ((m_rd_so_tien.Checked == true) && m_txt_so_tien.Text == "")
+            {
+                XtraMessageBox.Show("Bạn phải nhập số tiền !");
+                return true;
+            }
+            
+           return false;
+            
         }
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
@@ -172,8 +196,14 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Nhập chẵn số tiền!");
-                textbox.Text = "";
+                
+                //XtraMessageBox.Show("Nhập chẵn số tiền!");
+                if (textbox.Text != "")
+                {
+                    // textbox.Text = "";
+                    textbox.Text = textbox.Text.Substring(0, textbox.Text.Length - 1);
+                    textbox.Select(textbox.Text.Length, 0);
+                }
             }
 
         }

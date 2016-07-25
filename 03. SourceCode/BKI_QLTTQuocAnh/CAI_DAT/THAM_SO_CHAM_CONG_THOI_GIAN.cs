@@ -117,7 +117,7 @@ namespace BKI_DichVuMatDat
             }
 
             // only allow one decimal point
-            if ((e.KeyChar == '.') && ((sender as TextEdit).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;
             }
@@ -125,7 +125,7 @@ namespace BKI_DichVuMatDat
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
-            TextEdit textbox = (TextEdit)sender;
+            TextBox textbox = (TextBox)sender;
             try
             {
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
@@ -238,7 +238,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! ");
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này!\n Bạn không thể xóa phụ cấp này ");
                 
             }
             
@@ -291,7 +291,7 @@ namespace BKI_DichVuMatDat
             catch (Exception)
             {
 
-                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! ");
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này!\n Bạn không thể xóa loại làm thêm này ");
             }
             
         }
@@ -313,7 +313,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này! "  );
+                XtraMessageBox.Show("Đã tồn tại ngày chấm công chứa mã ngày công này!\n Bạn không thể xóa loại ngày công này ");
                 
             }
             
