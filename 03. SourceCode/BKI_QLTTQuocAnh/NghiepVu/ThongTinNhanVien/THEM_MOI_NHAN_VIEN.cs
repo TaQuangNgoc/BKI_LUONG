@@ -662,7 +662,7 @@ namespace BKI_DichVuMatDat
             }
 
             else if
-                ((Convert.ToDateTime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
+                ((CIPConvert.ToDatetime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
                 return true;
             else XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
             return false;
@@ -675,29 +675,43 @@ namespace BKI_DichVuMatDat
                 DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
                 if (v_dr["ID_LOAI_LUONG"].ToString() == "760")
                 {
-                    v_dr["SO_TIEN"] = m_txt_lns.Text;
-                    v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_lns.EditValue).ToString("dd/MM/yyyy");
-                    if (m_dtp_den_ngay_lns.EditValue != null)
+                    if (m_txt_lns.Text != "")
                     {
-                        v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_lns.EditValue).ToString("dd/MM/yyyy");
+                        v_dr["SO_TIEN"] = m_txt_lns.Text;
+                        v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_lns.EditValue).ToString("dd/MM/yyyy");
+                        if (m_dtp_den_ngay_lns.EditValue != null)
+                        {
+                            v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_lns.EditValue).ToString("dd/MM/yyyy");
+                        }
+                        else
+                        {
+                            v_dr["DEN_NGAY"] = System.Convert.DBNull; ;
+                        }
                     }
                     else
                     {
-                        v_dr["DEN_NGAY"] = System.Convert.DBNull; ;
+                        XtraMessageBox.Show("Click vào dòng bạn muốn sửa trên lưới, sửa thông tin trước khi nhấn nút Sửa!");
                     }
                 }
 
                 if (v_dr["ID_LOAI_LUONG"].ToString() == "761")
                 {
-                    v_dr["SO_TIEN"] = m_txt_lcd.Text;
-                    v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_lcd.EditValue).ToString("dd/MM/yyyy");
-                    if (m_dtp_den_ngay_lcd.EditValue != null)
+                    if (m_txt_lcd.Text != "")
                     {
-                        v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_lcd.EditValue).ToString("dd/MM/yyyy");
+                        v_dr["SO_TIEN"] = m_txt_lcd.Text;
+                        v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_lcd.EditValue).ToString("dd/MM/yyyy");
+                        if (m_dtp_den_ngay_lcd.EditValue != null)
+                        {
+                            v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_lcd.EditValue).ToString("dd/MM/yyyy");
+                        }
+                        else
+                        {
+                            v_dr["DEN_NGAY"] = System.Convert.DBNull;
+                        }
                     }
                     else
                     {
-                        v_dr["DEN_NGAY"] = System.Convert.DBNull; ;
+                        XtraMessageBox.Show("Click vào dòng bạn muốn sửa trên lưới, sửa thông tin trước khi nhấn nút Sửa!");
                     }
                 }
             }
@@ -804,16 +818,23 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
-                v_dr["TI_LE"] = m_txt_ti_le.Text;
-                v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_ti_le.EditValue).ToString("dd/MM/yyyy");
-                if (m_dtp_den_ngay_ti_le.EditValue != null)
+                if (m_txt_ti_le.Text != "")
                 {
-                    v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_ti_le.EditValue).ToString("dd/MM/yyyy");
+                    DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
+                    v_dr["TI_LE"] = m_txt_ti_le.Text;
+                    v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_ti_le.EditValue).ToString("dd/MM/yyyy");
+                    if (m_dtp_den_ngay_ti_le.EditValue != null)
+                    {
+                        v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_ti_le.EditValue).ToString("dd/MM/yyyy");
+                    }
+                    else
+                    {
+                        v_dr["DEN_NGAY"] = System.Convert.DBNull;
+                    }
                 }
                 else
                 {
-                    v_dr["DEN_NGAY"] = System.Convert.DBNull;
+                    XtraMessageBox.Show("Click vào dòng bạn muốn sửa, sửa thông tin trước khi nhấn lưu");
                 }
             }
             catch (Exception)
@@ -911,6 +932,7 @@ namespace BKI_DichVuMatDat
 
         private void m_btn_sua_phu_cap_Click(object sender, EventArgs e)
         {
+            
             DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
             v_dr["ID_PHU_CAP"] = m_cbo_loai_phu_cap.SelectedValue;
             v_dr["TEN_PHU_CAP"] = m_cbo_loai_phu_cap.Text;
@@ -999,16 +1021,23 @@ namespace BKI_DichVuMatDat
 
         private void m_btn_sua_luong_ngay_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
-            v_dr["SO_TIEN"] = m_txt_so_tien_luong_ngay.Text;
-            v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy");
-            if (m_dtp_den_ngay_luong_ngay.EditValue != null)
+            if (m_txt_so_tien_luong_ngay.Text != "")
             {
-                v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy");
+                DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
+                v_dr["SO_TIEN"] = m_txt_so_tien_luong_ngay.Text;
+                v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy");
+                if (m_dtp_den_ngay_luong_ngay.EditValue != null)
+                {
+                    v_dr["DEN_NGAY"] = ((DateTime)m_dtp_den_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy");
+                }
+                else
+                {
+                    v_dr["DEN_NGAY"] = System.Convert.DBNull; ;
+                }
             }
             else
             {
-                v_dr["DEN_NGAY"] = System.Convert.DBNull;;
+                XtraMessageBox.Show("Click vào dòng bạn muốn sửa, sửa thông tin trước khi nhấn lưu");
             }
         }
 
