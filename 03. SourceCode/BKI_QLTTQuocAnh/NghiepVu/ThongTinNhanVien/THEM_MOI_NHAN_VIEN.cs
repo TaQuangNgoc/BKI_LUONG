@@ -19,6 +19,7 @@ namespace BKI_DichVuMatDat
 {
     public partial class THEM_MOI_NHAN_VIEN : MaterialSkin.Controls.MaterialForm
     {
+        DevExpress.Utils.ToolTipController m_tooltip_m_grv_phu_cap = new DevExpress.Utils.ToolTipController();
         decimal m_id_nhan_vien;
         DataEntryFormMode m_e = DataEntryFormMode.InsertDataState;
         public THEM_MOI_NHAN_VIEN()
@@ -135,6 +136,8 @@ namespace BKI_DichVuMatDat
             m_grv_luong.RowHeight = 30;
             m_grv_phan_tram.ColumnPanelRowHeight = 35;
             m_grv_phan_tram.RowHeight = 30;
+            m_grv_luong_ngay.ColumnPanelRowHeight = 35;
+            m_grv_luong_ngay.RowHeight = 30;
         }
 
         private void auto_scroll_tabControl()
@@ -583,13 +586,22 @@ namespace BKI_DichVuMatDat
             WinFormControls.Convert_gridcontrol_to_datatable(m_grv_luong, dt);
             if (m_txt_lcd.Text == "" && m_txt_lns.Text == "")
             {
-                XtraMessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!");
+                XtraMessageBox.Show("Vui lòng nhập thông tin về lương cho nhân viên!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+           
+            else if ((m_dtp_tu_ngay_lns.EditValue == null && m_txt_lns.Text != "") || (m_dtp_tu_ngay_lcd.EditValue == null && m_txt_lcd.Text != ""))
+            {
+                XtraMessageBox.Show("Vui lòng điền thông tin về ngày tháng của lương!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 if (m_txt_lns.Text != "")
                 {
-                    if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 760, (DateTime)m_dtp_tu_ngay_lns.EditValue))
+                    if (m_dtp_den_ngay_lns.EditValue != null && (DateTime)m_dtp_den_ngay_lns.EditValue < (DateTime)m_dtp_tu_ngay_lns.EditValue)
+                        {
+                            XtraMessageBox.Show("Từ ngày phải nhỏ hơn hoặc bằng Đến ngày!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    else if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 760, (DateTime)m_dtp_tu_ngay_lns.EditValue))
                     {
                         if (m_dtp_den_ngay_lns.EditValue != null)
                             dt.Rows.Add("Lương năng suất", m_txt_lns.Text, ((DateTime)m_dtp_tu_ngay_lns.EditValue).ToString("dd/MM/yyyy"), ((DateTime)m_dtp_den_ngay_lns.EditValue).ToString("dd/MM/yyyy"), 760);
@@ -602,7 +614,12 @@ namespace BKI_DichVuMatDat
                 }
                 if (m_txt_lcd.Text != "")
                 {
-                    if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 761, (DateTime)m_dtp_tu_ngay_lcd.EditValue))
+
+                    if (m_dtp_den_ngay_lcd.EditValue != null && (DateTime)m_dtp_den_ngay_lcd.EditValue < (DateTime)m_dtp_tu_ngay_lcd.EditValue)
+                    {
+                        XtraMessageBox.Show("Từ ngày phải nhỏ hơn hoặc bằng Đến ngày!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 761, (DateTime)m_dtp_tu_ngay_lcd.EditValue))
                     {
                         if (m_dtp_den_ngay_lcd.EditValue != null)
                             dt.Rows.Add("Lương chế độ", m_txt_lcd.Text, ((DateTime)m_dtp_tu_ngay_lcd.EditValue).ToString("dd/MM/yyyy"), ((DateTime)m_dtp_den_ngay_lcd.EditValue).ToString("dd/MM/yyyy"), 761);
@@ -612,31 +629,42 @@ namespace BKI_DichVuMatDat
                         m_txt_lcd.Text = "";
                     }
 
-                }
-               
-              
+                }             
             }
-            //760 LÀ LNS, 761 LÀ LCD
-           
-           
-          
+            //760 LÀ LNS, 761 LÀ LCD      
         }
 
         private bool check_ngay_thang_is_ok(DataTable dt, string ten_truong_filter, int gia_tri_filter, DateTime tu_ngay)
         {
-            DataRow v_dr = dt.Select(ten_truong_filter + " =" + gia_tri_filter).LastOrDefault();
+            DataRow v_dr = dt.Select(ten_truong_filter + "= " + gia_tri_filter).LastOrDefault();
             if (v_dr == null)
                 return true;
             else if( v_dr["DEN_NGAY"].ToString()=="")
             {
-                XtraMessageBox.Show("Bạn phải đổi Đến ngày của mốc thời gian trước về một thời điểm xác định.");
+                XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return false;
             }
-              
-            else if
-                ((Convert.ToDateTime(v_dr["DEN_NGAY"].ToString()).AddDays(1)) < tu_ngay)
+            else if ((CIPConvert.ToDatetime(v_dr["DEN_NGAY"], "dd/MM/yyyy")) < tu_ngay)
                 return true;
-            XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
+            else XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+        }
+
+        private bool check_ngay_thang_is_ok(DataTable dt, DateTime tu_ngay)
+        {
+            DataRow v_dr = dt.Select().LastOrDefault();
+            if (v_dr == null)
+                return true;
+            else if (v_dr["DEN_NGAY"].ToString() == "")
+            {
+                XtraMessageBox.Show("Bạn phải đổi Đến ngày của dòng thông tin trước về một thời điểm xác định, \n và nhỏ hơn Từ ngày của dòng thông tin muốn thêm, trước khi thêm mới!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            else if
+                ((Convert.ToDateTime(v_dr["DEN_NGAY"].ToString())) < tu_ngay)
+                return true;
+            else XtraMessageBox.Show("Nhập Từ ngày của mốc thời gian sau phải lớn hơn Đến ngày của mốc thời gian trước đó!");
             return false;
         }
 
@@ -682,43 +710,61 @@ namespace BKI_DichVuMatDat
 
         private void m_grv_luong_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
-            if (v_dr["ID_LOAI_LUONG"].ToString() == "760")
+            try
             {
-                m_txt_lns.Text =((decimal)v_dr["SO_TIEN"]).ToString("N0");
-                m_txt_lcd.Text = "";
-                m_dtp_tu_ngay_lns.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
-             if(   v_dr["DEN_NGAY"].ToString()!="")
-                 m_dtp_den_ngay_lns.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
-             else
-             {
-                 m_dtp_den_ngay_lns.EditValue = null;
-             }
+                 DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
+                    if (v_dr["ID_LOAI_LUONG"].ToString() == "760")
+                    {
+                        m_txt_lns.Text =v_dr["SO_TIEN"].ToString();
+                        m_txt_lcd.Text = "";
+                        m_dtp_tu_ngay_lns.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                     if(   v_dr["DEN_NGAY"].ToString()!="")
+                         m_dtp_den_ngay_lns.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                     else
+                     {
+                         m_dtp_den_ngay_lns.EditValue = null;
+                     }
+                    }
+                    if (v_dr["ID_LOAI_LUONG"].ToString() == "761")
+                    {
+                        m_txt_lcd.Text = v_dr["SO_TIEN"].ToString();
+                        m_txt_lns.Text = "";
+                        m_dtp_tu_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                        if (v_dr["DEN_NGAY"].ToString() != "")
+                            m_dtp_den_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                        else
+                        {
+                            m_dtp_den_ngay_lcd.EditValue = null;
+                        }
+                    }
             }
-
-            if (v_dr["ID_LOAI_LUONG"].ToString() == "761")
+            
+            catch (Exception )
             {
-                m_txt_lcd.Text = ((decimal)v_dr["SO_TIEN"]).ToString("N0");
-                m_txt_lns.Text = "";
-                m_dtp_tu_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
-                if (v_dr["DEN_NGAY"].ToString() != "")
-                    m_dtp_den_ngay_lcd.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
-                else
-                {
-                    m_dtp_den_ngay_lcd.EditValue = null;
-                }
-            }
-            tabControl1.TabPages[1].HorizontalScroll.Value = 0;
-          
+                
+                XtraMessageBox.Show("Click vào dòng bạn muốn biết thông tin chi tiết!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }     
         }
 
         private void m_btn_xoa_luong_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
+                v_dr.Delete();
+                m_txt_lcd.Text = "";
+                m_txt_lns.Text = "";
+                m_dtp_tu_ngay_lns.EditValue = null;
+                m_dtp_tu_ngay_lcd.EditValue = null;
+                m_dtp_den_ngay_lcd.EditValue = null;
+                m_dtp_den_ngay_lns.EditValue = null;
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Click vào dòng bạn muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
            
-            DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
-            v_dr.Delete();
-            m_txt_lcd.Text = "";
-            m_txt_lns.Text = "";
         }
 
         private void m_btn_them_phan_tram_luong_Click(object sender, EventArgs e)
@@ -728,7 +774,15 @@ namespace BKI_DichVuMatDat
 
             if (m_txt_ti_le.Text != "")
             {
-                if (check_ngay_thang_is_ok(dt, "TI_LE !", 0, (DateTime)m_dtp_tu_ngay_ti_le.EditValue))
+                if (m_dtp_tu_ngay_ti_le.EditValue == null)
+                {
+                    XtraMessageBox.Show("Vui lòng điền thông tin về ngày tháng của tỉ lệ phần trăm lương hưởng của nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (m_dtp_den_ngay_ti_le.EditValue != null && (DateTime)m_dtp_den_ngay_ti_le.EditValue < (DateTime)m_dtp_tu_ngay_ti_le.EditValue)
+                {
+                    XtraMessageBox.Show("Từ ngày phải nhỏ hơn hoặc bằng Đến ngày!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (check_ngay_thang_is_ok(dt, (DateTime)m_dtp_tu_ngay_ti_le.EditValue))
                 {
                     if (m_dtp_den_ngay_ti_le.EditValue != null)
                         dt.Rows.Add(m_txt_ti_le.Text, ((DateTime)m_dtp_tu_ngay_ti_le.EditValue).ToString("dd/MM/yyyy"), ((DateTime)m_dtp_den_ngay_ti_le.EditValue).ToString("dd/MM/yyyy"));
@@ -739,6 +793,10 @@ namespace BKI_DichVuMatDat
 
                 }
             }
+            else
+            {
+                XtraMessageBox.Show("Vui lòng nhập thông tin về phần trăm lương hưởng cho nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
@@ -747,7 +805,6 @@ namespace BKI_DichVuMatDat
             try
             {
                 DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
-
                 v_dr["TI_LE"] = m_txt_ti_le.Text;
                 v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_ti_le.EditValue).ToString("dd/MM/yyyy");
                 if (m_dtp_den_ngay_ti_le.EditValue != null)
@@ -761,57 +818,95 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!");
+                XtraMessageBox.Show("Vui lòng click vào 1 dòng thông tin trong bảng để có thể sửa!","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
            
         }
 
         private void m_grv_phan_tram_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
+            try
+            {
+                DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
 
-            m_txt_ti_le.Text = ((decimal)v_dr["TI_LE"]).ToString("N0");
+                m_txt_ti_le.Text = v_dr["TI_LE"].ToString();
 
                 m_dtp_tu_ngay_ti_le.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
-             if(   v_dr["DEN_NGAY"].ToString()!="")
-                 m_dtp_den_ngay_ti_le.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
-             else
-             {
-                 m_dtp_den_ngay_ti_le.EditValue = null;
-             }
-             tabControl1.TabPages[1].HorizontalScroll.Value = 0;
+                if (v_dr["DEN_NGAY"].ToString() != "")
+                    m_dtp_den_ngay_ti_le.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                else
+                {
+                    m_dtp_den_ngay_ti_le.EditValue = null;
+                }
+            
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Click vào dòng bạn muốn biết thông tin chi tiết!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
         }
 
         private void m_btn_xoa_phan_tram_luong_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
-            v_dr.Delete();   
-            m_txt_ti_le.Text = "";
+            try
+            {
+                DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
+                v_dr.Delete();
+                m_txt_ti_le.Text = "";
+                m_dtp_tu_ngay_ti_le.EditValue = null;
+                m_dtp_den_ngay_ti_le.EditValue = null;
+            }
+            catch (Exception)
+            {
+                
+               XtraMessageBox.Show("Click vào dòng bạn muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
         }
 
         //phụ cấp
 
         private void m_btn_them_phu_cap_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
-            dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, ((DateTime)m_dtp_tu_ngay_phu_cap.EditValue).ToString("MM/yyyy"), ((DateTime)m_dtp_den_ngay_phu_cap.EditValue).ToString("MM/yyyy"));        
-            m_grc_phu_cap.DataSource = dt;
+            try
+            {
+               
+                DataTable dt = new DataTable();
+                WinFormControls.Convert_gridcontrol_to_datatable(m_grv_phu_cap, dt);
+                dt.Rows.Add(m_cbo_loai_phu_cap.SelectedValue, m_cbo_loai_phu_cap.Text, ((DateTime)m_dtp_tu_ngay_phu_cap.EditValue).ToString("MM/yyyy"), ((DateTime)m_dtp_den_ngay_phu_cap.EditValue).ToString("MM/yyyy"));
+                m_grc_phu_cap.DataSource = dt;
+            }
+            catch (Exception)
+            {
+                
+                
+            }
+           
 
         }
 
         private void m_grv_phu_cap_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-            m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
-            m_dtp_tu_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
-            if (v_dr["DEN_NGAY"].ToString() != "")
-                m_dtp_den_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
-            else
+            try
             {
-                m_dtp_den_ngay_phu_cap.EditValue = null;
-            }
+                DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+                m_cbo_loai_phu_cap.SelectedValue = int.Parse(v_dr["ID_PHU_CAP"].ToString());
+                m_dtp_tu_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                if (v_dr["DEN_NGAY"].ToString() != "")
+                    m_dtp_den_ngay_phu_cap.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                else
+                {
+                    m_dtp_den_ngay_phu_cap.EditValue = null;
+                }
           
+            }
+            catch (Exception)
+            {
+                 XtraMessageBox.Show("Click vào dòng bạn muốn biết thông tin chi tiết!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            
         }
 
         private void m_btn_sua_phu_cap_Click(object sender, EventArgs e)
@@ -832,6 +927,15 @@ namespace BKI_DichVuMatDat
 
         private void m_btn_xoa_phu_cap_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                
+                 XtraMessageBox.Show("Click vào dòng bạn muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
             v_dr.Delete();
         }
@@ -843,13 +947,24 @@ namespace BKI_DichVuMatDat
 
             if (m_txt_so_tien_luong_ngay.Text != "")
             {
+                 if (m_dtp_tu_ngay_luong_ngay.EditValue == null)
+                {
+                    XtraMessageBox.Show("Vui lòng điền thông tin về ngày tháng của lương ngày của nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                     else if( m_dtp_den_ngay_luong_ngay.EditValue!=null && (DateTime)m_dtp_den_ngay_luong_ngay.EditValue<(DateTime)m_dtp_tu_ngay_luong_ngay.EditValue)
+	            {
+                    XtraMessageBox.Show("Từ ngày phải nhỏ hơn hoặc bằng Đến ngày!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+	            }
+                 else if (check_ngay_thang_is_ok(dt, (DateTime)m_dtp_tu_ngay_luong_ngay.EditValue))
+                 {
 
-                if (m_dtp_den_ngay_ti_le.EditValue != null)
-                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"), ((DateTime)m_dtp_den_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"));
-                else
-                    dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"), System.Convert.DBNull);
-                m_grc_luong_ngay.DataSource = dt;
-                m_txt_so_tien_luong_ngay.Text = "";
+                     if (m_dtp_den_ngay_ti_le.EditValue != null)
+                         dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"), ((DateTime)m_dtp_den_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"));
+                     else
+                         dt.Rows.Add(m_txt_so_tien_luong_ngay.Text, ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy"), System.Convert.DBNull);
+                     m_grc_luong_ngay.DataSource = dt;
+                     m_txt_so_tien_luong_ngay.Text = "";
+                 }
 
             }
             else
@@ -860,23 +975,31 @@ namespace BKI_DichVuMatDat
 
         private void m_grv_luong_ngay_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
-
-            m_txt_so_tien_luong_ngay.Text = ((decimal)v_dr["SO_TIEN"]).ToString("N0");
-            m_dtp_tu_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
-            if (v_dr["DEN_NGAY"].ToString() != "")
-                m_dtp_den_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
-            else
+            try
             {
-                m_dtp_den_ngay_luong_ngay.EditValue = null;
+                DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
+
+                m_txt_so_tien_luong_ngay.Text = v_dr["SO_TIEN"].ToString();
+                m_dtp_tu_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
+                if (v_dr["DEN_NGAY"].ToString() != "")
+                    m_dtp_den_ngay_luong_ngay.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                else
+                {
+                    m_dtp_den_ngay_luong_ngay.EditValue = null;
+                }
             }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Click vào dòng bạn muốn biết thông tin chi tiết!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+           
            
         }
 
         private void m_btn_sua_luong_ngay_Click(object sender, EventArgs e)
         {
             DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
-
             v_dr["SO_TIEN"] = m_txt_so_tien_luong_ngay.Text;
             v_dr["TU_NGAY"] = ((DateTime)m_dtp_tu_ngay_luong_ngay.EditValue).ToString("dd/MM/yyyy");
             if (m_dtp_den_ngay_luong_ngay.EditValue != null)
@@ -891,9 +1014,20 @@ namespace BKI_DichVuMatDat
 
         private void m_btn_xoa_luong_ngay_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
-            v_dr.Delete();
-            m_txt_so_tien_luong_ngay.Text = "";
+            try
+            {
+                DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
+                v_dr.Delete();
+                m_txt_so_tien_luong_ngay.Text = "";
+                m_dtp_tu_ngay_luong_ngay.EditValue = null;
+                m_dtp_den_ngay_luong_ngay.EditValue = null;
+            }
+            catch (Exception)
+            {
+                
+                XtraMessageBox.Show("Click vào dòng bạn muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
         }
 
         internal void ShowForUpdateInform(decimal m_id_nhan_vien)
@@ -996,6 +1130,9 @@ namespace BKI_DichVuMatDat
             }
         }
 
+    
+
+       
        
        
     }

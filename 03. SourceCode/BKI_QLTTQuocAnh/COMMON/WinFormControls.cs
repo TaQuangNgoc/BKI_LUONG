@@ -107,6 +107,7 @@ namespace BKI_DichVuMatDat
             ip_tooltip.Show(ip_txt_noi_dung, ip_control);
         }
 
+        
         public static void load_data_to_combobox(string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition, eTAT_CA ip_e_tat_ca, System.Windows.Forms.ComboBox ip_cbo)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();

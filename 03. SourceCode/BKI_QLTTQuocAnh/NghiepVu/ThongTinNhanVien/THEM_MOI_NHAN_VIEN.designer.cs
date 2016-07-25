@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -240,6 +240,8 @@
             this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
             this.m_btn_luu.TabIndex = 15;
             this.m_btn_luu.Text = "Lưu";
+            this.m_btn_luu.ToolTip = "Nhấn Lưu khi điền đủ thông tin ở các tab!";
+            this.m_btn_luu.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // panel1
@@ -312,7 +314,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1037, 578);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ĐIỀN ĐẦY ĐỦ THÔNG TIN NHÂN VIÊN";
+            this.groupBox1.Text = "Điền đầy đủ thông tin nhân viên";
             // 
             // m_grb_phu_cap
             // 
@@ -324,15 +326,15 @@
             this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 234);
             this.m_grb_phu_cap.TabIndex = 22;
             this.m_grb_phu_cap.TabStop = false;
-            this.m_grb_phu_cap.Text = "CÁC LOẠI PHỤ CẤP ĐƯỢC HƯỞNG";
+            this.m_grb_phu_cap.Text = "Các loại phụ cấp được hưởng";
             // 
             // m_grc_phu_cap
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode4.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode4});
+            gridLevelNode1});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -525,6 +527,7 @@
             // 
             // m_cbo_loai_phu_cap
             // 
+            this.m_cbo_loai_phu_cap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.m_cbo_loai_phu_cap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.m_cbo_loai_phu_cap.FormattingEnabled = true;
             this.m_cbo_loai_phu_cap.Location = new System.Drawing.Point(152, 16);
@@ -573,7 +576,7 @@
             this.groupBox15.Size = new System.Drawing.Size(1031, 141);
             this.groupBox15.TabIndex = 15;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "THÔNG TIN BỔ SUNG";
+            this.groupBox15.Text = "Thông tin bổ sung";
             // 
             // m_nud_phu_thuoc
             // 
@@ -589,6 +592,7 @@
             this.m_nud_phu_thuoc.Size = new System.Drawing.Size(139, 23);
             this.m_nud_phu_thuoc.TabIndex = 7;
             this.m_nud_phu_thuoc.UseSystemPasswordChar = false;
+            this.m_nud_phu_thuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             // 
             // m_dtp_ngay_bat_dau_lv
             // 
@@ -608,6 +612,10 @@
             this.m_dtp_ngay_bat_dau_lv.Properties.Mask.EditMask = "dd/MM/yyyy";
             this.m_dtp_ngay_bat_dau_lv.Size = new System.Drawing.Size(194, 24);
             this.m_dtp_ngay_bat_dau_lv.TabIndex = 8;
+            this.m_dtp_ngay_bat_dau_lv.ToolTip = "Nhân viên nào phải đóng BHXH phải điền trường này!\r\nLưu ý: Khi thay đổi hợp đồng " +
+    "lao động, phải thay đổi\r\nNgày vào làm cho phù hợp để việc tính BHXH được chính x" +
+    "ác.";
+            this.m_dtp_ngay_bat_dau_lv.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             // 
             // label10
             // 
@@ -866,7 +874,7 @@
             this.m_grb_loai_nv.Size = new System.Drawing.Size(1031, 69);
             this.m_grb_loai_nv.TabIndex = 17;
             this.m_grb_loai_nv.TabStop = false;
-            this.m_grb_loai_nv.Text = "LOẠI NHÂN VIÊN";
+            this.m_grb_loai_nv.Text = "Loại nhân viên";
             // 
             // m_cbo_loai_nhan_vien
             // 
@@ -897,15 +905,15 @@
             this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 205);
             this.m_grb_phan_tram_luong.TabIndex = 14;
             this.m_grb_phan_tram_luong.TabStop = false;
-            this.m_grb_phan_tram_luong.Text = "PHẦN TRĂM LƯƠNG ĐƯỢC HƯỞNG";
+            this.m_grb_phan_tram_luong.Text = "Phần trăm lương được hưởng";
             // 
             // m_grc_phan_tram
             // 
             this.m_grc_phan_tram.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phan_tram.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_phan_tram.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 18);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
@@ -924,9 +932,11 @@
             this.m_grv_phan_tram.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phan_tram.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_phan_tram.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_phan_tram.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_phan_tram.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_phan_tram.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_phan_tram.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_phan_tram.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
@@ -945,7 +955,7 @@
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "TỈ LỆ";
+            this.gridColumn5.Caption = "Tỉ lệ";
             this.gridColumn5.DisplayFormat.FormatString = "n0";
             this.gridColumn5.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn5.FieldName = "TI_LE";
@@ -955,7 +965,7 @@
             // 
             // gridColumn6
             // 
-            this.gridColumn6.Caption = "TỪ NGÀY";
+            this.gridColumn6.Caption = "Từ ngày";
             this.gridColumn6.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.gridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn6.FieldName = "TU_NGAY";
@@ -965,7 +975,7 @@
             // 
             // gridColumn7
             // 
-            this.gridColumn7.Caption = "ĐẾN NGÀY";
+            this.gridColumn7.Caption = "Đến ngày";
             this.gridColumn7.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn7.FieldName = "DEN_NGAY";
@@ -1040,7 +1050,7 @@
             this.m_btn_sua_phan_tram_luong.Appearance.Options.UseForeColor = true;
             this.m_btn_sua_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_sua_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_sua_phan_tram_luong.Location = new System.Drawing.Point(315, 77);
+            this.m_btn_sua_phan_tram_luong.Location = new System.Drawing.Point(327, 80);
             this.m_btn_sua_phan_tram_luong.Name = "m_btn_sua_phan_tram_luong";
             this.m_btn_sua_phan_tram_luong.Size = new System.Drawing.Size(90, 43);
             this.m_btn_sua_phan_tram_luong.TabIndex = 17;
@@ -1058,9 +1068,9 @@
             this.m_btn_xoa_phan_tram_luong.Appearance.Options.UseForeColor = true;
             this.m_btn_xoa_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_xoa_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa_phan_tram_luong.Location = new System.Drawing.Point(432, 77);
+            this.m_btn_xoa_phan_tram_luong.Location = new System.Drawing.Point(443, 80);
             this.m_btn_xoa_phan_tram_luong.Name = "m_btn_xoa_phan_tram_luong";
-            this.m_btn_xoa_phan_tram_luong.Size = new System.Drawing.Size(87, 43);
+            this.m_btn_xoa_phan_tram_luong.Size = new System.Drawing.Size(88, 43);
             this.m_btn_xoa_phan_tram_luong.TabIndex = 18;
             this.m_btn_xoa_phan_tram_luong.Text = "Xóa";
             this.m_btn_xoa_phan_tram_luong.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
@@ -1076,7 +1086,7 @@
             this.m_btn_them_phan_tram_luong.Appearance.Options.UseForeColor = true;
             this.m_btn_them_phan_tram_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_them_phan_tram_luong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_them_phan_tram_luong.Location = new System.Drawing.Point(195, 77);
+            this.m_btn_them_phan_tram_luong.Location = new System.Drawing.Point(207, 80);
             this.m_btn_them_phan_tram_luong.Name = "m_btn_them_phan_tram_luong";
             this.m_btn_them_phan_tram_luong.Size = new System.Drawing.Size(89, 43);
             this.m_btn_them_phan_tram_luong.TabIndex = 16;
@@ -1145,7 +1155,7 @@
             this.m_grb_thong_tin_ve_luong.Size = new System.Drawing.Size(1031, 234);
             this.m_grb_thong_tin_ve_luong.TabIndex = 12;
             this.m_grb_thong_tin_ve_luong.TabStop = false;
-            this.m_grb_thong_tin_ve_luong.Text = "THÔNG TIN VỀ LƯƠNG";
+            this.m_grb_thong_tin_ve_luong.Text = "Thông tin về lương";
             // 
             // panel5
             // 
@@ -1160,9 +1170,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode3});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
@@ -1175,14 +1185,18 @@
             // 
             this.m_grv_luong.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_luong.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.m_grv_luong.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
             this.m_grv_luong.Appearance.ColumnFilterButton.Options.UseFont = true;
             this.m_grv_luong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_luong.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_luong.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_luong.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_luong.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_luong.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_luong.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_grv_luong.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
@@ -1190,9 +1204,11 @@
             this.m_grv_luong.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_luong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_luong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_luong.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_luong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_luong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_luong.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_luong.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_luong.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_luong.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_luong.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
@@ -1606,6 +1622,24 @@
             // 
             // m_grv_luong_ngay
             // 
+            this.m_grv_luong_ngay.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong_ngay.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong_ngay.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_luong_ngay.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_luong_ngay.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_luong_ngay.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_luong_ngay.Appearance.FocusedRow.Options.UseBorderColor = true;
+            this.m_grv_luong_ngay.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv_luong_ngay.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv_luong_ngay.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_luong_ngay.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn12,
             this.gridColumn13,
@@ -1613,12 +1647,14 @@
             this.m_grv_luong_ngay.GridControl = this.m_grc_luong_ngay;
             this.m_grv_luong_ngay.Name = "m_grv_luong_ngay";
             this.m_grv_luong_ngay.OptionsBehavior.Editable = false;
+            this.m_grv_luong_ngay.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv_luong_ngay.OptionsView.ShowGroupPanel = false;
+            this.m_grv_luong_ngay.PaintStyleName = "Web";
             this.m_grv_luong_ngay.Click += new System.EventHandler(this.m_grv_luong_ngay_Click);
             // 
             // gridColumn12
             // 
-            this.gridColumn12.Caption = "SỐ TIỀN";
+            this.gridColumn12.Caption = "Số tiền";
             this.gridColumn12.DisplayFormat.FormatString = "n0";
             this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "SO_TIEN";
@@ -1628,7 +1664,7 @@
             // 
             // gridColumn13
             // 
-            this.gridColumn13.Caption = "TỪ NGÀY";
+            this.gridColumn13.Caption = "Từ ngày";
             this.gridColumn13.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.gridColumn13.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn13.FieldName = "TU_NGAY";
@@ -1638,7 +1674,7 @@
             // 
             // gridColumn14
             // 
-            this.gridColumn14.Caption = "ĐẾN NGÀY";
+            this.gridColumn14.Caption = "Đến ngày";
             this.gridColumn14.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.gridColumn14.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn14.FieldName = "DEN_NGAY";
@@ -1850,6 +1886,7 @@
             this.m_cb_luong_khoan.TabIndex = 0;
             this.m_cb_luong_khoan.Text = "Lương khoán";
             this.m_cb_luong_khoan.UseVisualStyleBackColor = true;
+            this.m_cb_luong_khoan.Visible = false;
             // 
             // m_cb_luong_theo_san_pham
             // 
@@ -1866,6 +1903,7 @@
             this.m_cb_luong_theo_san_pham.TabIndex = 0;
             this.m_cb_luong_theo_san_pham.Text = "Lương theo sản phẩm";
             this.m_cb_luong_theo_san_pham.UseVisualStyleBackColor = true;
+            this.m_cb_luong_theo_san_pham.Visible = false;
             // 
             // materialTabSelector1
             // 
