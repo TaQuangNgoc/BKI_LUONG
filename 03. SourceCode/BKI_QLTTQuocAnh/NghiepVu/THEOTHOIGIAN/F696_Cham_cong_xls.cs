@@ -132,6 +132,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             for (int i = 0; i < 3; i++)
             {
                 m_grv.Columns[i].Fixed = FixedStyle.Left;
+                m_grv.Columns[i].Width = 100;
             }      
             format_gridview();
             splashScreenManager1.CloseWaitForm();
@@ -142,11 +143,14 @@ namespace BKI_DichVuMatDat.NghiepVu
             m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             m_grv.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             m_grv.Columns[1].Width = 120;
-            for (int i = 2; i < m_grv.Columns.Count; i++)
+            for (int i = 3; i < m_grv.Columns.Count; i++)
             {
                 m_grv.Columns[i].Width = 50;
                 m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
+            m_grv.Columns[0].Caption = "Mã nhân viên";
+            m_grv.Columns[1].Caption = "Họ đệm";
+            m_grv.Columns[2].Caption = "Tên";
             m_grv.ColumnPanelRowHeight = 35;
             m_grv.RowHeight = 30;
             m_grc.Refresh();

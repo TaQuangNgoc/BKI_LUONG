@@ -80,9 +80,9 @@
             this.panel2.Controls.Add(this.m_pn);
             this.panel2.Controls.Add(this.m_grc);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 144);
+            this.panel2.Location = new System.Drawing.Point(0, 138);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1174, 244);
+            this.panel2.Size = new System.Drawing.Size(1174, 250);
             this.panel2.TabIndex = 14;
             // 
             // m_pn
@@ -127,13 +127,23 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(1174, 244);
+            this.m_grc.Size = new System.Drawing.Size(1174, 250);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
             // 
             // m_grv
             // 
+            this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn3,
@@ -143,11 +153,10 @@
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsBehavior.Editable = false;
-            this.m_grv.OptionsFind.AllowFindPanel = false;
-            this.m_grv.OptionsFind.AlwaysVisible = true;
             this.m_grv.OptionsView.ColumnAutoWidth = false;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.m_grv.PaintStyleName = "Web";
             // 
             // gridColumn1
             // 
@@ -214,6 +223,7 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel7.Controls.Add(this.m_btn_hien_thi);
             this.panel7.Controls.Add(this.m_cmd_mo_file_mau);
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
@@ -221,7 +231,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 53);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1174, 91);
+            this.panel7.Size = new System.Drawing.Size(1174, 85);
             this.panel7.TabIndex = 15;
             // 
             // m_btn_hien_thi
@@ -278,11 +288,13 @@
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
             this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(202, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
-            this.m_cmd_chon_du_lieu.Text = "up dữ liệu mới\r\n";
+            this.m_cmd_chon_du_lieu.Text = "Up dữ liệu mới\r\n";
             this.m_cmd_chon_du_lieu.Click += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
             // 
             // panelControl1
             // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.m_sle_loai_tien);
             this.panelControl1.Controls.Add(this.m_dat_chon_thang);
@@ -292,7 +304,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(430, 91);
+            this.panelControl1.Size = new System.Drawing.Size(430, 85);
             this.panelControl1.TabIndex = 1;
             // 
             // m_sle_loai_tien
@@ -365,7 +377,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel3.Controls.Add(this.m_btn_xoa_dong);
             this.panel3.Controls.Add(this.m_cmd_nhap_cham_cong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;

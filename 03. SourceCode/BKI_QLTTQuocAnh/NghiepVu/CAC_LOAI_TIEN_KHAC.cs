@@ -133,6 +133,8 @@ namespace BKI_DichVuMatDat.NghiepVu
             m_grv.Columns["HO_DEM"].Caption = "Họ đệm";
             m_grv.Columns["TEN"].Caption = "Tên";
             m_grv.Columns["SO_TIEN"].Caption = "Số tiền";
+            m_grv.ColumnPanelRowHeight = 35;
+            m_grv.RowHeight = 30;
             
         }
         #endregion
@@ -397,16 +399,16 @@ namespace BKI_DichVuMatDat.NghiepVu
             try
             {
                 
-                if (m_dat_chon_thang.EditValue == null)
+                if (m_dat_chon_thang.EditValue == null|| m_dat_chon_thang.Text=="")
                 {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
+                    XtraMessageBox.Show("Bạn chưa chọn tháng, năm! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
                     return;
                 }
                 string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
                
-                if (m_sle_loai_tien.Text=="")
+                if (m_sle_loai_tien.Text==""|| m_sle_loai_tien.EditValue==null)
                 {
-                    XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. /nVui lòng kiểm tra lại thông tin!", "Thông báo");
+                    XtraMessageBox.Show("Bạn chưa chọn loại tiền! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
                     return;
                 }
 
@@ -474,13 +476,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             try
             {
-                if (m_dat_chon_thang.EditValue == null)
+                if (m_dat_chon_thang.EditValue == null || m_dat_chon_thang.Text=="")
                 {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm!");
+                    XtraMessageBox.Show("Bạn chưa chọn tháng, năm! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
                 }
-                if (m_sle_loai_tien.EditValue == null)
+                if (m_sle_loai_tien.EditValue == null|| m_sle_loai_tien.Text=="")
                 {
-                    XtraMessageBox.Show("Vui lòng chọn loại tiền cần import trước khi tải file về!");
+                    XtraMessageBox.Show("Bạn chưa chọn loại tiền! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
                 }
                 else
                 {
@@ -498,7 +500,11 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             if (m_sle_loai_tien.EditValue == null||  m_sle_loai_tien.EditValue.ToString()=="")
             {
-                XtraMessageBox.Show( "Bạn phải chọn loại tiền mới có thể hiển thị được dữ liệu lên lưới!","Thông báo");    
+                XtraMessageBox.Show( "Bạn phải chọn loại tiền trước khi nhấn hiển thị!","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);    
+            }
+            else if (m_dat_chon_thang.EditValue == null || m_dat_chon_thang.Text == null)
+            {
+                XtraMessageBox.Show("Bạn phải chọn tháng, năm trước khi nhấn hiển thị!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
             }
             else
             {

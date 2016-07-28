@@ -139,8 +139,6 @@
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsBehavior.Editable = false;
-            this.m_grv.OptionsFind.AllowFindPanel = false;
-            this.m_grv.OptionsFind.AlwaysVisible = true;
             this.m_grv.OptionsView.ColumnAutoWidth = false;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;

@@ -130,13 +130,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 m_grc.DataSource = dt;
 
             }
-            m_grv.Columns["Ghi chú"].Visible = false;
            
-            WinFormControls.make_stt_indicator(m_grv);
-            for (int i = 0; i < 3; i++)
-            {
-                m_grv.Columns[i].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
-            }      
             format_gridview();
             splashScreenManager1.CloseWaitForm();
         }
@@ -146,11 +140,24 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             m_grv.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             m_grv.Columns[1].Width = 120;
-            for (int i = 2; i < m_grv.Columns.Count; i++)
+            for (int i = 3; i < m_grv.Columns.Count; i++)
             {
                 m_grv.Columns[i].Width = 50;
                 m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
+            m_grv.Columns["Ghi chú"].Visible = false;
+
+            WinFormControls.make_stt_indicator(m_grv);
+            for (int i = 0; i < 3; i++)
+            {
+                m_grv.Columns[i].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
+                m_grv.Columns[i].Width = 100;
+            }
+            m_grv.Columns[0].Caption = "Mã nhân viên";
+            m_grv.Columns[1].Caption = "Họ đệm";
+            m_grv.Columns[2].Caption = "Tên";
+            m_grv.ColumnPanelRowHeight = 35;
+            m_grv.RowHeight = 30;
             m_grc.Refresh();
         }
         #endregion
@@ -440,20 +447,20 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 
                 if (m_dat_chon_thang.EditValue == null)
                 {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
+                    XtraMessageBox.Show("Bạn chưa chọn tháng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
                
                 if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
                 {
-                    XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo");
+                    XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
                     return;
                 }
                
                 if (m_sle_loai_lam_them.Text=="")
                 {
-                    XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. /nVui lòng kiểm tra lại thông tin!", "Thông báo");
+                    XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 
@@ -504,11 +511,15 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 //else tao_file_mau("Chấm công tháng " + m_txt_thang.Text + "-" + m_txt_nam.Text + ".xls");
                 if (m_dat_chon_thang.EditValue == null)
                 {
-                    CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm!");
+                    XtraMessageBox.Show("Bạn chưa chọn tháng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if(m_sle_loai_lam_them.Text=="")
+                {
+                    XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    tao_file_mau("Chấm công làm thêm tháng " + m_dat_chon_thang.DateTime.Month.ToString() + "-" + m_dat_chon_thang.DateTime.Year.ToString() + ".xls");
+                    tao_file_mau("Chấm công "+ m_sle_loai_lam_them.Text+" tháng " + m_dat_chon_thang.DateTime.Month.ToString() + "-" + m_dat_chon_thang.DateTime.Year.ToString() + ".xls");
                 }
             }
             catch (Exception v_e)
@@ -543,8 +554,24 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 
         private void m_btn_hien_thi_Click(object sender, EventArgs e)
         {
-            CHAM_CONG_LAM_THEM_DA_NHAP v_f = new CHAM_CONG_LAM_THEM_DA_NHAP();
-            v_f.Display(laythang(), laynam(), decimal.Parse(m_sle_loai_lam_them.EditValue.ToString()));
+            try
+            {
+                if (m_dat_chon_thang.EditValue == null || m_sle_loai_lam_them.EditValue == null|| m_sle_loai_lam_them.Text==""|| m_dat_chon_thang.Text=="")
+                {
+                    XtraMessageBox.Show("Vui lòng chọn tháng, và loại làm thêm trước khi nhấn nút Hiển thị!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                else
+                {
+                    CHAM_CONG_LAM_THEM_DA_NHAP v_f = new CHAM_CONG_LAM_THEM_DA_NHAP();
+                    v_f.Display(laythang(), laynam(), decimal.Parse(m_sle_loai_lam_them.EditValue.ToString()));
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
         }
 
 
