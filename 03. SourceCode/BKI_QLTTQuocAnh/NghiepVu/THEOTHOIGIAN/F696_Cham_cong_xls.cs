@@ -147,6 +147,8 @@ namespace BKI_DichVuMatDat.NghiepVu
                 m_grv.Columns[i].Width = 50;
                 m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
+            m_grv.ColumnPanelRowHeight = 35;
+            m_grv.RowHeight = 30;
             m_grc.Refresh();
         }
         #endregion
