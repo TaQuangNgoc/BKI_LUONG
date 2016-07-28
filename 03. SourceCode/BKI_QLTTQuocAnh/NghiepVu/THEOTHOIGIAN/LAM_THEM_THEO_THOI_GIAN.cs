@@ -411,9 +411,6 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         #region Events Handle
         private void set_define_events()
         {
-            m_cmd_mo_file_mau.Click += m_cmd_mo_file_mau_Click;
-            m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
-            m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
             this.Load += F696_Cham_cong_xls_Load;
             //m_txt_thang.EditValueChanged += m_txt_thang_EditValueChanged;
             //m_txt_nam.EditValueChanged += m_txt_nam_EditValueChanged;
