@@ -76,6 +76,13 @@ namespace BKI_DichVuMatDat.BaoCao
             m_cmd_export_excel.Click += m_cmd_export_excel_Click;
             m_grv_main.MouseWheel += m_grv_main_MouseWheel;
             m_cmd_kiem_tra_du_lieu.Click += m_cmd_kiem_tra_du_lieu_Click;
+            format_grid();
+        }
+
+        private void format_grid()
+        {
+            m_grv_main.ColumnPanelRowHeight = 35;
+            m_grv_main.RowHeight = 30;
         }
 
         void m_cmd_kiem_tra_du_lieu_Click(object sender, EventArgs e)

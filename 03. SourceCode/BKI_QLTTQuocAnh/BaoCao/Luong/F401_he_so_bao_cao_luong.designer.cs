@@ -222,7 +222,7 @@
             this.m_gd_tham_so_bang_luong_thang.Location = new System.Drawing.Point(0, 57);
             this.m_gd_tham_so_bang_luong_thang.MainView = this.m_grv;
             this.m_gd_tham_so_bang_luong_thang.Name = "m_gd_tham_so_bang_luong_thang";
-            this.m_gd_tham_so_bang_luong_thang.Size = new System.Drawing.Size(1154, 468);
+            this.m_gd_tham_so_bang_luong_thang.Size = new System.Drawing.Size(1154, 501);
             this.m_gd_tham_so_bang_luong_thang.TabIndex = 2;
             this.m_gd_tham_so_bang_luong_thang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -241,15 +241,19 @@
             // 
             this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -387,22 +391,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(40, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(510, 21);
+            this.label1.Size = new System.Drawing.Size(540, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "RÀ SOÁT DỮ LIỆU NHÂN VIÊN TRONG THÁNG ĐỂ TÍNH LƯƠNG";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_thoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 525);
+            this.panel2.Location = new System.Drawing.Point(0, 558);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1154, 41);
+            this.panel2.Size = new System.Drawing.Size(1154, 53);
             this.panel2.TabIndex = 17;
             // 
             // m_btn_thoat
@@ -419,7 +423,7 @@
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_thoat.Location = new System.Drawing.Point(1038, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
-            this.m_btn_thoat.Size = new System.Drawing.Size(116, 41);
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
             this.m_btn_thoat.TabIndex = 30;
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
@@ -432,7 +436,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 566);
+            this.ClientSize = new System.Drawing.Size(1154, 611);
             this.Controls.Add(this.m_gd_tham_so_bang_luong_thang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

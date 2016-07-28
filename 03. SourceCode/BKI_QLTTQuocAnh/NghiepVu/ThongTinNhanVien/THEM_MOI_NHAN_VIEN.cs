@@ -818,14 +818,18 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
-                v_dr.Delete();
-                m_txt_lcd.Text = "";
-                m_txt_lns.Text = "";
-                m_dtp_tu_ngay_lns.EditValue = null;
-                m_dtp_tu_ngay_lcd.EditValue = null;
-                m_dtp_den_ngay_lcd.EditValue = null;
-                m_dtp_den_ngay_lns.EditValue = null;
+                var v_dgl=  XtraMessageBox.Show("Khi xóa thông tin nào đó của nhân viên, phần mềm sẽ không tự động tính lại lương các tháng \n giữa 2 mốc thời gian bạn định xóa. Muốn tính lại, vui lòng vào mục Báo cáo-> Bảng lương tháng, và làm theo trình tự!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (v_dgl == System.Windows.Forms.DialogResult.OK)
+                {
+                    DataRow v_dr = m_grv_luong.GetDataRow(m_grv_luong.FocusedRowHandle);
+                    v_dr.Delete();
+                    m_txt_lcd.Text = "";
+                    m_txt_lns.Text = "";
+                    m_dtp_tu_ngay_lns.EditValue = null;
+                    m_dtp_tu_ngay_lcd.EditValue = null;
+                    m_dtp_den_ngay_lcd.EditValue = null;
+                    m_dtp_den_ngay_lns.EditValue = null;
+                }
             }
             catch (Exception)
             {
@@ -926,11 +930,15 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
-                v_dr.Delete();
-                m_txt_ti_le.Text = "";
-                m_dtp_tu_ngay_ti_le.EditValue = null;
-                m_dtp_den_ngay_ti_le.EditValue = null;
+                var v_dgl=  XtraMessageBox.Show("Khi xóa thông tin nào đó của nhân viên, phần mềm sẽ không tự động tính lại lương các tháng \n giữa 2 mốc thời gian bạn định xóa. Muốn tính lại, vui lòng vào mục Báo cáo-> Bảng lương tháng, và làm theo trình tự!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (v_dgl == System.Windows.Forms.DialogResult.OK)
+                {
+                    DataRow v_dr = m_grv_phan_tram.GetDataRow(m_grv_phan_tram.FocusedRowHandle);
+                    v_dr.Delete();
+                    m_txt_ti_le.Text = "";
+                    m_dtp_tu_ngay_ti_le.EditValue = null;
+                    m_dtp_den_ngay_ti_le.EditValue = null;
+                }
             }
             catch (Exception)
             {
@@ -1017,8 +1025,12 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
-                v_dr.Delete();
+               var v_dgl=  XtraMessageBox.Show("Khi xóa thông tin nào đó của nhân viên, phần mềm sẽ không tự động tính lại lương các tháng \n giữa 2 mốc thời gian bạn định xóa. Muốn tính lại, vui lòng vào mục Báo cáo-> Bảng lương tháng, và làm theo trình tự!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+               if (v_dgl == System.Windows.Forms.DialogResult.OK)
+               {
+                   DataRow v_dr = m_grv_phu_cap.GetDataRow(m_grv_phu_cap.FocusedRowHandle);
+                   v_dr.Delete();
+               }
             }
             catch (Exception)
             {           
@@ -1110,11 +1122,15 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
-                v_dr.Delete();
-                m_txt_so_tien_luong_ngay.Text = "";
-                m_dtp_tu_ngay_luong_ngay.EditValue = null;
-                m_dtp_den_ngay_luong_ngay.EditValue = null;
+                var v_dgl=  XtraMessageBox.Show("Khi xóa thông tin nào đó của nhân viên, phần mềm sẽ không tự động tính lại lương các tháng \n giữa 2 mốc thời gian bạn định xóa. Muốn tính lại, vui lòng vào mục Báo cáo-> Bảng lương tháng, và làm theo trình tự!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (v_dgl == System.Windows.Forms.DialogResult.OK)
+                {
+                    DataRow v_dr = m_grv_luong_ngay.GetDataRow(m_grv_luong_ngay.FocusedRowHandle);
+                    v_dr.Delete();
+                    m_txt_so_tien_luong_ngay.Text = "";
+                    m_dtp_tu_ngay_luong_ngay.EditValue = null;
+                    m_dtp_den_ngay_luong_ngay.EditValue = null;
+                }
             }
             catch (Exception)
             {

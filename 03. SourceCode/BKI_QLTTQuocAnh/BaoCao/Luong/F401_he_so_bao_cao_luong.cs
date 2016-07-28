@@ -42,11 +42,19 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             //FormatControl.SetVisibleSimpleButton(this);
             set_define_events();
+            format_grid();
             this.KeyPreview = true;
+        }
+
+        private void format_grid()
+        {
+            m_grv.ColumnPanelRowHeight = 35;
+            m_grv.RowHeight = 30;
         }
        
         private void load_data_2_grid(decimal ip_dc_thang, decimal ip_dc_nam)
         {
+            
             try
             {
                 SplashScreenManager.ShowForm(typeof(F_wait_form));

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f412_rpt_tong_hop_tt_v2));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_dat_thang = new DevExpress.XtraEditors.DateEdit();
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
@@ -106,7 +105,7 @@
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_thang.Properties.CalendarTimeProperties)).BeginInit();
@@ -130,33 +129,24 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panelControl2);
-            this.panel1.Controls.Add(this.panelControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 53);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(1002, 88);
-            this.panel1.TabIndex = 7;
-            // 
             // panelControl2
             // 
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl2.Controls.Add(this.m_dat_thang);
             this.panelControl2.Controls.Add(this.m_lbl_trang_thai_bang_luong);
             this.panelControl2.Controls.Add(this.m_lbl_so_luong_nv_tinh_luong);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl2.Location = new System.Drawing.Point(5, 5);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl2.Location = new System.Drawing.Point(0, 65);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(992, 52);
+            this.panelControl2.Size = new System.Drawing.Size(1047, 52);
             this.panelControl2.TabIndex = 26;
             // 
             // m_dat_thang
             // 
             this.m_dat_thang.EditValue = null;
-            this.m_dat_thang.Location = new System.Drawing.Point(7, 8);
+            this.m_dat_thang.Location = new System.Drawing.Point(3, 7);
             this.m_dat_thang.Name = "m_dat_thang";
             this.m_dat_thang.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.m_dat_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
@@ -206,21 +196,22 @@
             this.panelControl1.Controls.Add(this.m_cmd_tinh_lai_nhan_vien);
             this.panelControl1.Controls.Add(this.m_cmd_soan_thao_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_view);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl1.Location = new System.Drawing.Point(5, 57);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 117);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(992, 26);
+            this.panelControl1.Size = new System.Drawing.Size(1047, 40);
             this.panelControl1.TabIndex = 25;
             // 
             // m_btn_huy_chot_bang_luong
             // 
+            this.m_btn_huy_chot_bang_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_huy_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_btn_huy_chot_bang_luong.Image = global::BKI_DichVuMatDat.Properties.Resources.delete_24;
+            this.m_btn_huy_chot_bang_luong.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_huy_chot_bang_luong.Image")));
             this.m_btn_huy_chot_bang_luong.ImageIndex = 2;
             this.m_btn_huy_chot_bang_luong.ImageList = this.imageCollection;
-            this.m_btn_huy_chot_bang_luong.Location = new System.Drawing.Point(590, 0);
+            this.m_btn_huy_chot_bang_luong.Location = new System.Drawing.Point(660, 0);
             this.m_btn_huy_chot_bang_luong.Name = "m_btn_huy_chot_bang_luong";
-            this.m_btn_huy_chot_bang_luong.Size = new System.Drawing.Size(202, 26);
+            this.m_btn_huy_chot_bang_luong.Size = new System.Drawing.Size(202, 40);
             this.m_btn_huy_chot_bang_luong.TabIndex = 25;
             this.m_btn_huy_chot_bang_luong.Text = "3.1. HỦY CHỐT BẢNG LƯƠNG";
             this.m_btn_huy_chot_bang_luong.ToolTip = "Hủy chốt bảng lương có thể ảnh lưởng đến kết quả tính lương lần sau.\r\nChú ý  nếu " +
@@ -247,12 +238,13 @@
             // 
             // m_cmd_chot_bang_luong
             // 
+            this.m_cmd_chot_bang_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_chot_bang_luong.ImageIndex = 2;
             this.m_cmd_chot_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(451, 0);
+            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(495, 0);
             this.m_cmd_chot_bang_luong.Name = "m_cmd_chot_bang_luong";
-            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(139, 26);
+            this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(165, 40);
             this.m_cmd_chot_bang_luong.TabIndex = 24;
             this.m_cmd_chot_bang_luong.Text = "3. CHỐT BẢNG LƯƠNG";
             this.m_cmd_chot_bang_luong.ToolTip = resources.GetString("m_cmd_chot_bang_luong.ToolTip");
@@ -260,60 +252,65 @@
             // 
             // m_cmd_delete_luong
             // 
+            this.m_cmd_delete_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_delete_luong.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_delete_luong.ImageIndex = 3;
             this.m_cmd_delete_luong.ImageList = this.imageCollection;
-            this.m_cmd_delete_luong.Location = new System.Drawing.Point(323, 0);
+            this.m_cmd_delete_luong.Location = new System.Drawing.Point(367, 0);
             this.m_cmd_delete_luong.Name = "m_cmd_delete_luong";
-            this.m_cmd_delete_luong.Size = new System.Drawing.Size(128, 26);
+            this.m_cmd_delete_luong.Size = new System.Drawing.Size(128, 40);
             this.m_cmd_delete_luong.TabIndex = 23;
             this.m_cmd_delete_luong.Text = "2.1. XÓA LƯƠNG";
             this.m_cmd_delete_luong.Click += new System.EventHandler(this.m_cmd_delete_luong_Click);
             // 
             // m_cmd_luu_bang_luong
             // 
+            this.m_cmd_luu_bang_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_luu_bang_luong.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_luu_bang_luong.ImageIndex = 1;
             this.m_cmd_luu_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_luu_bang_luong.Location = new System.Drawing.Point(891, 0);
+            this.m_cmd_luu_bang_luong.Location = new System.Drawing.Point(946, 0);
             this.m_cmd_luu_bang_luong.Name = "m_cmd_luu_bang_luong";
-            this.m_cmd_luu_bang_luong.Size = new System.Drawing.Size(101, 26);
+            this.m_cmd_luu_bang_luong.Size = new System.Drawing.Size(101, 40);
             this.m_cmd_luu_bang_luong.TabIndex = 22;
             this.m_cmd_luu_bang_luong.Text = "Trích xuất";
             this.m_cmd_luu_bang_luong.Click += new System.EventHandler(this.m_cmd_luu_bang_luong_Click);
             // 
             // m_cmd_tinh_lai_nhan_vien
             // 
+            this.m_cmd_tinh_lai_nhan_vien.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_tinh_lai_nhan_vien.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_tinh_lai_nhan_vien.ImageIndex = 3;
             this.m_cmd_tinh_lai_nhan_vien.ImageList = this.imageCollection;
-            this.m_cmd_tinh_lai_nhan_vien.Location = new System.Drawing.Point(195, 0);
+            this.m_cmd_tinh_lai_nhan_vien.Location = new System.Drawing.Point(239, 0);
             this.m_cmd_tinh_lai_nhan_vien.Name = "m_cmd_tinh_lai_nhan_vien";
-            this.m_cmd_tinh_lai_nhan_vien.Size = new System.Drawing.Size(128, 26);
+            this.m_cmd_tinh_lai_nhan_vien.Size = new System.Drawing.Size(128, 40);
             this.m_cmd_tinh_lai_nhan_vien.TabIndex = 19;
             this.m_cmd_tinh_lai_nhan_vien.Text = "2. TÍNH LẠI LƯƠNG";
             this.m_cmd_tinh_lai_nhan_vien.Click += new System.EventHandler(this.m_cmd_tinh_lai_nhan_vien_Click);
             // 
             // m_cmd_soan_thao_bang_luong
             // 
+            this.m_cmd_soan_thao_bang_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_soan_thao_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_soan_thao_bang_luong.ImageIndex = 12;
             this.m_cmd_soan_thao_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_soan_thao_bang_luong.Location = new System.Drawing.Point(88, 0);
+            this.m_cmd_soan_thao_bang_luong.Location = new System.Drawing.Point(106, 0);
             this.m_cmd_soan_thao_bang_luong.Name = "m_cmd_soan_thao_bang_luong";
-            this.m_cmd_soan_thao_bang_luong.Size = new System.Drawing.Size(107, 26);
+            this.m_cmd_soan_thao_bang_luong.Size = new System.Drawing.Size(133, 40);
             this.m_cmd_soan_thao_bang_luong.TabIndex = 13;
             this.m_cmd_soan_thao_bang_luong.Text = "1. SOẠN THẢO";
             this.m_cmd_soan_thao_bang_luong.Click += new System.EventHandler(this.m_cmd_soan_thao_bang_luong_Click);
             // 
             // m_cmd_view
             // 
+            this.m_cmd_view.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_view.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_view.ImageIndex = 11;
             this.m_cmd_view.ImageList = this.imageCollection;
             this.m_cmd_view.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_view.Name = "m_cmd_view";
-            this.m_cmd_view.Size = new System.Drawing.Size(88, 26);
+            this.m_cmd_view.Size = new System.Drawing.Size(106, 40);
             this.m_cmd_view.TabIndex = 10;
             this.m_cmd_view.Text = "XEM";
             this.m_cmd_view.Click += new System.EventHandler(this.m_cmd_view_Click);
@@ -360,28 +357,48 @@
             // 
             this.m_grc_tong_hop.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_tong_hop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 141);
+            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 157);
             this.m_grc_tong_hop.MainView = this.m_adv_tong_hop;
             this.m_grc_tong_hop.Name = "m_grc_tong_hop";
             this.m_grc_tong_hop.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemMemoEdit1,
             this.repoBtnXoaLuong,
             this.repositoryItemTextEditTien});
-            this.m_grc_tong_hop.Size = new System.Drawing.Size(1002, 298);
+            this.m_grc_tong_hop.Size = new System.Drawing.Size(1047, 282);
             this.m_grc_tong_hop.TabIndex = 11;
             this.m_grc_tong_hop.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_adv_tong_hop});
             // 
             // m_adv_tong_hop
             // 
-            this.m_adv_tong_hop.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.m_adv_tong_hop.Appearance.BandPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.BandPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.BandPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.BandPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_adv_tong_hop.Appearance.BandPanel.ForeColor = System.Drawing.Color.White;
+            this.m_adv_tong_hop.Appearance.BandPanel.Options.UseBackColor = true;
+            this.m_adv_tong_hop.Appearance.BandPanel.Options.UseBorderColor = true;
+            this.m_adv_tong_hop.Appearance.BandPanel.Options.UseFont = true;
+            this.m_adv_tong_hop.Appearance.BandPanel.Options.UseForeColor = true;
+            this.m_adv_tong_hop.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_adv_tong_hop.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseTextOptions = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-            this.m_adv_tong_hop.Appearance.HeaderPanel.BackColor = System.Drawing.Color.White;
-            this.m_adv_tong_hop.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.White;
-            this.m_adv_tong_hop.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Maroon;
+            this.m_adv_tong_hop.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_adv_tong_hop.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_adv_tong_hop.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_adv_tong_hop.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_adv_tong_hop.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_adv_tong_hop.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_adv_tong_hop.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_adv_tong_hop.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.m_adv_tong_hop.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -467,22 +484,24 @@
             this.m_adv_tong_hop.OptionsBehavior.AutoExpandAllGroups = true;
             this.m_adv_tong_hop.OptionsBehavior.CopyToClipboardWithColumnHeaders = false;
             this.m_adv_tong_hop.OptionsBehavior.ReadOnly = true;
-            this.m_adv_tong_hop.OptionsFind.AlwaysVisible = true;
             this.m_adv_tong_hop.OptionsFind.FindDelay = 100;
             this.m_adv_tong_hop.OptionsFind.FindNullPrompt = "Tìm kiếm...";
             this.m_adv_tong_hop.OptionsPrint.AllowMultilineHeaders = true;
             this.m_adv_tong_hop.OptionsPrint.PrintHeader = false;
+            this.m_adv_tong_hop.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_adv_tong_hop.OptionsView.ColumnAutoWidth = false;
             this.m_adv_tong_hop.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_adv_tong_hop.OptionsView.ShowFooter = true;
             this.m_adv_tong_hop.OptionsView.ShowGroupPanel = false;
+            this.m_adv_tong_hop.PaintStyleName = "Flat";
             this.m_adv_tong_hop.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.m_adv_tong_hop_MouseWheel);
             // 
             // gridBand1
             // 
-            this.gridBand1.AppearanceHeader.BackColor = System.Drawing.Color.Maroon;
+            this.gridBand1.AppearanceHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.gridBand1.AppearanceHeader.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.gridBand1.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridBand1.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
+            this.gridBand1.AppearanceHeader.ForeColor = System.Drawing.Color.White;
             this.gridBand1.AppearanceHeader.Options.UseBackColor = true;
             this.gridBand1.AppearanceHeader.Options.UseFont = true;
             this.gridBand1.AppearanceHeader.Options.UseForeColor = true;
@@ -522,7 +541,7 @@
             // gridBand2
             // 
             this.gridBand2.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridBand2.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
+            this.gridBand2.AppearanceHeader.ForeColor = System.Drawing.Color.White;
             this.gridBand2.AppearanceHeader.Options.UseFont = true;
             this.gridBand2.AppearanceHeader.Options.UseForeColor = true;
             this.gridBand2.AppearanceHeader.Options.UseTextOptions = true;
@@ -659,8 +678,8 @@
             // 
             // gridBand3
             // 
-            this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridBand3.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
+            this.gridBand3.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand3.AppearanceHeader.ForeColor = System.Drawing.Color.White;
             this.gridBand3.AppearanceHeader.Options.UseFont = true;
             this.gridBand3.AppearanceHeader.Options.UseForeColor = true;
             this.gridBand3.AppearanceHeader.Options.UseTextOptions = true;
@@ -802,8 +821,8 @@
             // 
             // gridBand4
             // 
-            this.gridBand4.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridBand4.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
+            this.gridBand4.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand4.AppearanceHeader.ForeColor = System.Drawing.Color.White;
             this.gridBand4.AppearanceHeader.Options.UseFont = true;
             this.gridBand4.AppearanceHeader.Options.UseForeColor = true;
             this.gridBand4.AppearanceHeader.Options.UseTextOptions = true;
@@ -907,8 +926,8 @@
             // 
             // gridBand5
             // 
-            this.gridBand5.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridBand5.AppearanceHeader.ForeColor = System.Drawing.Color.Maroon;
+            this.gridBand5.AppearanceHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridBand5.AppearanceHeader.ForeColor = System.Drawing.Color.White;
             this.gridBand5.AppearanceHeader.Options.UseFont = true;
             this.gridBand5.AppearanceHeader.Options.UseForeColor = true;
             this.gridBand5.AppearanceHeader.Options.UseTextOptions = true;
@@ -1017,12 +1036,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_thoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 439);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1002, 46);
+            this.panel2.Size = new System.Drawing.Size(1047, 46);
             this.panel2.TabIndex = 14;
             // 
             // m_btn_thoat
@@ -1037,7 +1056,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(886, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(931, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
             this.m_btn_thoat.TabIndex = 30;
@@ -1051,7 +1070,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1002, 53);
+            this.panel3.Size = new System.Drawing.Size(1047, 65);
             this.panel3.TabIndex = 15;
             // 
             // label1
@@ -1069,16 +1088,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 485);
+            this.ClientSize = new System.Drawing.Size(1047, 485);
             this.Controls.Add(this.m_grc_tong_hop);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelControl1);
+            this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.m_panel);
             this.Name = "f412_rpt_tong_hop_tt_v2";
             this.Text = "F412 - Tổng hợp dữ liệu lương";
             this.Load += new System.EventHandler(this.f413_rpt_tong_hop_thong_tin_Load);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
@@ -1109,7 +1128,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.ComponentModel.BackgroundWorker m_bgwk;
         private System.Windows.Forms.Panel m_panel;
         private System.Windows.Forms.Label label3;
@@ -1177,12 +1195,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton m_btn_huy_chot_bang_luong;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
     }
 }

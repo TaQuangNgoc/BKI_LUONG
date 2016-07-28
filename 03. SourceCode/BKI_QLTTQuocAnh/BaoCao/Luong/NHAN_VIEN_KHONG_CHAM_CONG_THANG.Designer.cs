@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NHAN_VIEN_KHONG_CHAM_CONG_THANG));
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition8 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition9 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition10 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition11 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition12 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition13 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition14 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             this.pRGETTHAMSOBANGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet2 = new BKI_DichVuMatDat.BKI_LUONGDataSet2();
@@ -228,23 +228,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(40, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(520, 19);
+            this.label1.Size = new System.Drawing.Size(542, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "CHỌN NHỮNG NHÂN VIÊN KHÔNG ĐƯỢC CHẤM LƯƠNG THÁNG";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_thoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 526);
+            this.panel2.Location = new System.Drawing.Point(0, 550);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(593, 46);
+            this.panel2.Size = new System.Drawing.Size(593, 54);
             this.panel2.TabIndex = 5;
             // 
             // m_btn_luu
@@ -261,7 +261,7 @@
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_luu.Location = new System.Drawing.Point(334, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 54);
             this.m_btn_luu.TabIndex = 14;
             this.m_btn_luu.Text = "Lưu";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
@@ -280,7 +280,7 @@
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_thoat.Location = new System.Drawing.Point(477, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
-            this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 54);
             this.m_btn_thoat.TabIndex = 30;
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
@@ -296,7 +296,7 @@
             this.m_grc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
             this.repositoryItemCheckEdit2});
-            this.m_grc.Size = new System.Drawing.Size(593, 473);
+            this.m_grc.Size = new System.Drawing.Size(593, 497);
             this.m_grc.TabIndex = 6;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -313,6 +313,26 @@
             // 
             // m_grv
             // 
+            this.m_grv.Appearance.ColumnFilterButton.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.ColumnFilterButton.Options.UseFont = true;
+            this.m_grv.Appearance.ColumnFilterButton.Options.UseForeColor = true;
+            this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseBorderColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID_NHAN_VIEN,
             this.colMA_NV1,
@@ -320,19 +340,21 @@
             this.colTEN1,
             this.colKHONG_CHAM_LUONG_THANG});
             this.m_grv.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition8,
-            styleFormatCondition9,
-            styleFormatCondition10,
-            styleFormatCondition11,
-            styleFormatCondition12,
-            styleFormatCondition13,
-            styleFormatCondition14});
+            styleFormatCondition1,
+            styleFormatCondition2,
+            styleFormatCondition3,
+            styleFormatCondition4,
+            styleFormatCondition5,
+            styleFormatCondition6,
+            styleFormatCondition7});
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
+            this.m_grv.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv.OptionsView.ColumnAutoWidth = false;
             this.m_grv.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_grv.OptionsView.ShowFooter = true;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.m_grv.PaintStyleName = "Web";
             // 
             // colID_NHAN_VIEN
             // 
@@ -342,6 +364,7 @@
             // 
             // colMA_NV1
             // 
+            this.colMA_NV1.Caption = "Mã nhân viên";
             this.colMA_NV1.FieldName = "MA_NV";
             this.colMA_NV1.Name = "colMA_NV1";
             this.colMA_NV1.Visible = true;
@@ -349,6 +372,7 @@
             // 
             // colHO_DEM1
             // 
+            this.colHO_DEM1.Caption = "Họ đệm";
             this.colHO_DEM1.FieldName = "HO_DEM";
             this.colHO_DEM1.Name = "colHO_DEM1";
             this.colHO_DEM1.Visible = true;
@@ -356,6 +380,7 @@
             // 
             // colTEN1
             // 
+            this.colTEN1.Caption = "Tên";
             this.colTEN1.FieldName = "TEN";
             this.colTEN1.Name = "colTEN1";
             this.colTEN1.Visible = true;
@@ -363,6 +388,7 @@
             // 
             // colKHONG_CHAM_LUONG_THANG
             // 
+            this.colKHONG_CHAM_LUONG_THANG.Caption = "Không chấm lương tháng";
             this.colKHONG_CHAM_LUONG_THANG.FieldName = "KHONG_CHAM_LUONG_THANG";
             this.colKHONG_CHAM_LUONG_THANG.Name = "colKHONG_CHAM_LUONG_THANG";
             this.colKHONG_CHAM_LUONG_THANG.Visible = true;
@@ -389,11 +415,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 572);
+            this.ClientSize = new System.Drawing.Size(593, 604);
             this.Controls.Add(this.m_grc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NHAN_VIEN_KHONG_CHAM_CONG_THANG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NHAN_VIEN_KHONG_CHAM_CONG_THANG";

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -332,9 +332,9 @@
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode4});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -487,6 +487,10 @@
             this.m_btn_sua_phu_cap.Size = new System.Drawing.Size(82, 43);
             this.m_btn_sua_phu_cap.TabIndex = 14;
             this.m_btn_sua_phu_cap.Text = "Sửa";
+            this.m_btn_sua_phu_cap.ToolTip = "Click vào dòng muốn sửa trong bảng, sau đó, sửa các thông tin trên các ô detail.\r" +
+    "\nLưu ý: Phần mềm chỉ hỗ trợ bạn sửa mốc thời gian gần nhất( dòng cuối cùng)\r\nnên" +
+    " khi nhập bạn phải hết sức cẩn thận.";
+            this.m_btn_sua_phu_cap.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.m_btn_sua_phu_cap.Click += new System.EventHandler(this.m_btn_sua_phu_cap_Click);
             // 
             // m_btn_xoa_phu_cap
@@ -505,6 +509,7 @@
             this.m_btn_xoa_phu_cap.Size = new System.Drawing.Size(86, 43);
             this.m_btn_xoa_phu_cap.TabIndex = 15;
             this.m_btn_xoa_phu_cap.Text = "Xóa";
+            this.m_btn_xoa_phu_cap.ToolTip = "Click vào dòng muốn xóa trên bảng, rồi nhấn Xóa.";
             this.m_btn_xoa_phu_cap.Click += new System.EventHandler(this.m_btn_xoa_phu_cap_Click);
             // 
             // m_btn_them_phu_cap
@@ -523,6 +528,8 @@
             this.m_btn_them_phu_cap.Size = new System.Drawing.Size(87, 43);
             this.m_btn_them_phu_cap.TabIndex = 13;
             this.m_btn_them_phu_cap.Text = "Thêm";
+            this.m_btn_them_phu_cap.ToolTip = "Chọn loại phụ cấp, từ tháng được hưởng, đến tháng được hưởng rồi nhấn thêm.\r\nLưu " +
+    "ý: Nếu mốc Đến ngày chưa rõ thì để trống!";
             this.m_btn_them_phu_cap.Click += new System.EventHandler(this.m_btn_them_phu_cap_Click);
             // 
             // m_cbo_loai_phu_cap
@@ -911,9 +918,9 @@
             // 
             this.m_grc_phan_tram.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phan_tram.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_phan_tram.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 18);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
@@ -1055,6 +1062,10 @@
             this.m_btn_sua_phan_tram_luong.Size = new System.Drawing.Size(90, 43);
             this.m_btn_sua_phan_tram_luong.TabIndex = 17;
             this.m_btn_sua_phan_tram_luong.Text = "Sửa";
+            this.m_btn_sua_phan_tram_luong.ToolTip = "Click vào dòng muốn sửa trong bảng, sau đó, sửa các thông tin trên các ô detail.\r" +
+    "\nLưu ý: Phần mềm chỉ hỗ trợ sửa thông tin gần đây nhất( dòng cuối cùng trong bản" +
+    "g)\r\nnên bạn phải rất cẩn thận.";
+            this.m_btn_sua_phan_tram_luong.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.m_btn_sua_phan_tram_luong.Click += new System.EventHandler(this.m_btn_sua_phan_tram_luong_Click);
             // 
             // m_btn_xoa_phan_tram_luong
@@ -1073,6 +1084,7 @@
             this.m_btn_xoa_phan_tram_luong.Size = new System.Drawing.Size(88, 43);
             this.m_btn_xoa_phan_tram_luong.TabIndex = 18;
             this.m_btn_xoa_phan_tram_luong.Text = "Xóa";
+            this.m_btn_xoa_phan_tram_luong.ToolTip = "Click vào dòng muốn xóa trên bảng, rồi nhấn Xóa.";
             this.m_btn_xoa_phan_tram_luong.Click += new System.EventHandler(this.m_btn_xoa_phan_tram_luong_Click);
             // 
             // m_btn_them_phan_tram_luong
@@ -1170,9 +1182,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode2});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
@@ -1391,6 +1403,9 @@
             this.m_btn_sua_luong.Size = new System.Drawing.Size(89, 43);
             this.m_btn_sua_luong.TabIndex = 10;
             this.m_btn_sua_luong.Text = "Sửa";
+            this.m_btn_sua_luong.ToolTip = "Click vào dòng muốn sửa trong bảng, sau đó, sửa các thông tin trên các ô detail.\r" +
+    "\nLưu ý: Phần mềm chỉ hỗ trợ sửa thông tin gần nhất của mỗi loại lương.";
+            this.m_btn_sua_luong.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.m_btn_sua_luong.Click += new System.EventHandler(this.m_btn_sua_luong_Click);
             // 
             // label8
@@ -1418,6 +1433,7 @@
             this.m_btn_xoa_luong.Size = new System.Drawing.Size(88, 43);
             this.m_btn_xoa_luong.TabIndex = 11;
             this.m_btn_xoa_luong.Text = "Xóa";
+            this.m_btn_xoa_luong.ToolTip = "Click vào dòng muốn xóa trên bảng, rồi nhấn Xóa.";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
             // label5
@@ -1445,6 +1461,8 @@
             this.m_btn_them_luong.Size = new System.Drawing.Size(89, 43);
             this.m_btn_them_luong.TabIndex = 9;
             this.m_btn_them_luong.Text = "Thêm";
+            this.m_btn_them_luong.ToolTip = "Điền đầy đủ thông tin rồi nhấn Thêm.\r\nLưu ý: Mốc thời gian Đến ngày nếu chưa rõ t" +
+    "hì để trống.\r\n";
             this.m_btn_them_luong.Click += new System.EventHandler(this.m_btn_them_luong_Click);
             // 
             // label9
@@ -1754,6 +1772,7 @@
             this.m_btn_sua_luong_ngay.Size = new System.Drawing.Size(89, 43);
             this.m_btn_sua_luong_ngay.TabIndex = 29;
             this.m_btn_sua_luong_ngay.Text = "Sửa";
+            this.m_btn_sua_luong_ngay.ToolTip = "Click vào dòng muốn sửa trong bảng, sau đó, sửa các thông tin trên các ô detail.";
             this.m_btn_sua_luong_ngay.Click += new System.EventHandler(this.m_btn_sua_luong_ngay_Click);
             // 
             // m_btn_xoa_luong_ngay
@@ -1772,6 +1791,7 @@
             this.m_btn_xoa_luong_ngay.Size = new System.Drawing.Size(86, 43);
             this.m_btn_xoa_luong_ngay.TabIndex = 28;
             this.m_btn_xoa_luong_ngay.Text = "Xóa";
+            this.m_btn_xoa_luong_ngay.ToolTip = "Click vào dòng muốn xóa trên bảng, rồi nhấn Xóa.";
             this.m_btn_xoa_luong_ngay.Click += new System.EventHandler(this.m_btn_xoa_luong_ngay_Click);
             // 
             // m_btn_them_luong_ngay

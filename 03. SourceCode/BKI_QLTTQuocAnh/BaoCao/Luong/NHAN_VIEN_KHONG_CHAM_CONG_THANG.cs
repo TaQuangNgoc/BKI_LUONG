@@ -33,6 +33,8 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             {
                 m_grv.Columns[i].Width = 130;
             }
+            m_grv.ColumnPanelRowHeight = 35;
+            m_grv.RowHeight = 30;
         }
 
         internal void hienThiDanhSach(decimal thang, decimal nam)

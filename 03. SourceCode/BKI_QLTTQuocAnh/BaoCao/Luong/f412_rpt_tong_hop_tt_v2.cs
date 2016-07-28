@@ -17,6 +17,7 @@ using DevExpress.Utils;
 using DevExpress.XtraGrid;
 using BKI_DichVuMatDat.XtraReport;
 using BKI_DichVuMatDat.NghiepVu.Luong;
+using DevExpress.XtraSplashScreen;
 namespace BKI_DichVuMatDat.BaoCao
 {
     public partial class f412_rpt_tong_hop_tt_v2 : MaterialSkin.Controls.MaterialForm
@@ -45,25 +46,41 @@ namespace BKI_DichVuMatDat.BaoCao
         }
         private void load_data_2_grid()
         {
-            WinFormControls.make_stt_indicator(m_adv_tong_hop);
+            SplashScreenManager.ShowForm(typeof(F_wait_form));
+            try
+            {
+                WinFormControls.make_stt_indicator(m_adv_tong_hop);
                 //.make_stt(m_adv_tong_hop);
-            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            DataSet v_ds = new DataSet();
-            v_ds.Tables.Add(new DataTable());
-            v_us.HienThiBangLuong(v_ds, lay_thang(), lay_nam());
-            m_grc_tong_hop.DataSource = v_ds.Tables[0];
-            m_grc_tong_hop.RefreshDataSource();
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                DataSet v_ds = new DataSet();
+                v_ds.Tables.Add(new DataTable());
+                v_us.HienThiBangLuong(v_ds, lay_thang(), lay_nam());
+                m_grc_tong_hop.DataSource = v_ds.Tables[0];
+                m_grc_tong_hop.RefreshDataSource();
+
+                format_grid_columns_width();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally {
+                SplashScreenManager.CloseForm();
+            }
            
-            format_grid_columns_width();
         }
 
         private void format_grid_columns_width()
         {
             for (int i = 0; i < m_adv_tong_hop.Columns.Count; i++)
             {
-                m_adv_tong_hop.Columns[i].Width = 90;
+                m_adv_tong_hop.Columns[i].Width = 100;
             }
             m_adv_tong_hop.BandPanelRowHeight = 40;
+            m_adv_tong_hop.ColumnPanelRowHeight = 35;
+            m_adv_tong_hop.RowHeight = 30;
+            
         }
         private void resetText()
         {
