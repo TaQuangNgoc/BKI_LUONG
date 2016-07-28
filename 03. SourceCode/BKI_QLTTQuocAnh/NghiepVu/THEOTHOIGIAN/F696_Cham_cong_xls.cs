@@ -443,9 +443,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Events Handle
         private void set_define_events()
         {
-            m_cmd_mo_file_mau.Click += m_cmd_mo_file_mau_Click;
-            m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
-            m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
             this.Load += F696_Cham_cong_xls_Load;
            
         }
@@ -566,8 +563,16 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void m_btn_hien_thi_Click(object sender, EventArgs e)
         {
-            CHAM_CONG_DA_NHAP v_f = new CHAM_CONG_DA_NHAP();
-            v_f.Display(laythang(), laynam());
+            if (m_dat_chon_thang.EditValue == null)
+            {
+                XtraMessageBox.Show("Vui lòng chọn tháng để hiện thị thông tin","Lỗi",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                CHAM_CONG_DA_NHAP v_f = new CHAM_CONG_DA_NHAP();
+                v_f.Display(laythang(), laynam());
+            }
+            
         }
 
        

@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
+            this.colNgayChamCong = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.rowMaNV = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.DataMaNgayCong = new DevExpress.XtraPivotGrid.PivotGridField();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.colNgayChamCong = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.rowMaNV = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.DataMaNgayCong = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -91,80 +91,6 @@
             this.pivotGridControl1.Size = new System.Drawing.Size(570, 340);
             this.pivotGridControl1.TabIndex = 70;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel2.Controls.Add(this.m_txt_nam);
-            this.panel2.Controls.Add(this.labelControl1);
-            this.panel2.Controls.Add(this.m_txt_thang);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(570, 53);
-            this.panel2.TabIndex = 68;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "BẢNG CHẤM CÔNG THÁNG";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
-            this.panel3.Controls.Add(this.m_btn_luu);
-            this.panel3.Controls.Add(this.m_btn_thoat);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 393);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 53);
-            this.panel3.TabIndex = 69;
-            // 
-            // m_btn_luu
-            // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_luu.Appearance.Options.UseBackColor = true;
-            this.m_btn_luu.Appearance.Options.UseFont = true;
-            this.m_btn_luu.Appearance.Options.UseForeColor = true;
-            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(308, 0);
-            this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
-            this.m_btn_luu.TabIndex = 4;
-            this.m_btn_luu.Text = "LƯU";
-            this.m_btn_luu.Visible = false;
-            // 
-            // m_btn_thoat
-            // 
-            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
-            this.m_btn_thoat.Appearance.Options.UseFont = true;
-            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
-            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(451, 0);
-            this.m_btn_thoat.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.m_btn_thoat.Name = "m_btn_thoat";
-            this.m_btn_thoat.Size = new System.Drawing.Size(119, 53);
-            this.m_btn_thoat.TabIndex = 5;
-            this.m_btn_thoat.Text = "THOÁT";
-            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
-            // 
             // colNgayChamCong
             // 
             this.colNgayChamCong.Appearance.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -208,22 +134,18 @@
             this.DataMaNgayCong.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Max;
             this.DataMaNgayCong.Width = 300;
             // 
-            // m_txt_thang
+            // panel2
             // 
-            this.m_txt_thang.Depth = 0;
-            this.m_txt_thang.ForeColor = System.Drawing.Color.White;
-            this.m_txt_thang.Hint = "";
-            this.m_txt_thang.Location = new System.Drawing.Point(263, 11);
-            this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
-            this.m_txt_thang.Name = "m_txt_thang";
-            this.m_txt_thang.PasswordChar = '\0';
-            this.m_txt_thang.SelectedText = "";
-            this.m_txt_thang.SelectionLength = 0;
-            this.m_txt_thang.SelectionStart = 0;
-            this.m_txt_thang.Size = new System.Drawing.Size(84, 23);
-            this.m_txt_thang.TabIndex = 3;
-            this.m_txt_thang.Text = "THANG";
-            this.m_txt_thang.UseSystemPasswordChar = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel2.Controls.Add(this.m_txt_nam);
+            this.panel2.Controls.Add(this.labelControl1);
+            this.panel2.Controls.Add(this.m_txt_thang);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(570, 53);
+            this.panel2.TabIndex = 68;
             // 
             // m_txt_nam
             // 
@@ -250,6 +172,85 @@
             this.labelControl1.Size = new System.Drawing.Size(6, 25);
             this.labelControl1.TabIndex = 20;
             this.labelControl1.Text = "/";
+            // 
+            // m_txt_thang
+            // 
+            this.m_txt_thang.Depth = 0;
+            this.m_txt_thang.ForeColor = System.Drawing.Color.White;
+            this.m_txt_thang.Hint = "";
+            this.m_txt_thang.Location = new System.Drawing.Point(263, 11);
+            this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_thang.Name = "m_txt_thang";
+            this.m_txt_thang.PasswordChar = '\0';
+            this.m_txt_thang.SelectedText = "";
+            this.m_txt_thang.SelectionLength = 0;
+            this.m_txt_thang.SelectionStart = 0;
+            this.m_txt_thang.Size = new System.Drawing.Size(84, 23);
+            this.m_txt_thang.TabIndex = 3;
+            this.m_txt_thang.Text = "THANG";
+            this.m_txt_thang.UseSystemPasswordChar = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "BẢNG CHẤM CÔNG THÁNG";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel3.Controls.Add(this.m_btn_luu);
+            this.panel3.Controls.Add(this.m_btn_thoat);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 393);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(570, 53);
+            this.panel3.TabIndex = 69;
+            // 
+            // m_btn_luu
+            // 
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_luu.Appearance.Options.UseBackColor = true;
+            this.m_btn_luu.Appearance.Options.UseFont = true;
+            this.m_btn_luu.Appearance.Options.UseForeColor = true;
+            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_luu.Location = new System.Drawing.Point(308, 0);
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 53);
+            this.m_btn_luu.TabIndex = 4;
+            this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Visible = false;
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            // 
+            // m_btn_thoat
+            // 
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(451, 0);
+            this.m_btn_thoat.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(119, 53);
+            this.m_btn_thoat.TabIndex = 5;
+            this.m_btn_thoat.Text = "THOÁT";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
             // CHAM_CONG_DA_NHAP
             // 

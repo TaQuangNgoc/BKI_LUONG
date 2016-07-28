@@ -48,6 +48,11 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             this.Close();
         }
 
+        private void m_btn_luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 

@@ -54,11 +54,11 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.m_bgwk = new System.ComponentModel.BackgroundWorker();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.m_btn_xoa_dong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_nhap_cham_cong = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
-            this.m_btn_xoa_dong = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             this.m_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_prb.Properties)).BeginInit();
@@ -100,11 +100,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 18);
+            this.label1.Size = new System.Drawing.Size(300, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Đang lưu dữ liệu. Vui lòng chờ trong giây lát...";
             // 
@@ -191,10 +191,10 @@
             // 
             // m_lbl
             // 
-            this.m_lbl.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl.Location = new System.Drawing.Point(25, 15);
             this.m_lbl.Name = "m_lbl";
-            this.m_lbl.Size = new System.Drawing.Size(86, 18);
+            this.m_lbl.Size = new System.Drawing.Size(90, 18);
             this.m_lbl.TabIndex = 20;
             this.m_lbl.Text = "Chọn loại tiền\r\n";
             // 
@@ -258,6 +258,7 @@
             this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(165, 60);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "Tải file excel mẫu\r\n";
+            this.m_cmd_mo_file_mau.Click += new System.EventHandler(this.m_cmd_mo_file_mau_Click);
             // 
             // m_cmd_chon_du_lieu
             // 
@@ -278,6 +279,7 @@
             this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(202, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
             this.m_cmd_chon_du_lieu.Text = "up dữ liệu mới\r\n";
+            this.m_cmd_chon_du_lieu.Click += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
             // 
             // panelControl1
             // 
@@ -298,7 +300,7 @@
             this.m_sle_loai_tien.EditValue = "";
             this.m_sle_loai_tien.Location = new System.Drawing.Point(138, 12);
             this.m_sle_loai_tien.Name = "m_sle_loai_tien";
-            this.m_sle_loai_tien.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_loai_tien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_loai_tien.Properties.Appearance.Options.UseFont = true;
             this.m_sle_loai_tien.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -323,7 +325,7 @@
             this.m_dat_chon_thang.EditValue = null;
             this.m_dat_chon_thang.Location = new System.Drawing.Point(138, 51);
             this.m_dat_chon_thang.Name = "m_dat_chon_thang";
-            this.m_dat_chon_thang.Properties.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_dat_chon_thang.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_dat_chon_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Green;
             this.m_dat_chon_thang.Properties.Appearance.Options.UseFont = true;
             this.m_dat_chon_thang.Properties.Appearance.Options.UseForeColor = true;
@@ -339,10 +341,10 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Roboto Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Location = new System.Drawing.Point(25, 57);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(42, 18);
+            this.labelControl1.Size = new System.Drawing.Size(41, 18);
             this.labelControl1.TabIndex = 20;
             this.labelControl1.Text = "Tháng";
             // 
@@ -372,45 +374,6 @@
             this.panel3.Size = new System.Drawing.Size(1174, 53);
             this.panel3.TabIndex = 17;
             // 
-            // m_cmd_nhap_cham_cong
-            // 
-            this.m_cmd_nhap_cham_cong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_cmd_nhap_cham_cong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_cmd_nhap_cham_cong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_nhap_cham_cong.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_cmd_nhap_cham_cong.Appearance.Options.UseBackColor = true;
-            this.m_cmd_nhap_cham_cong.Appearance.Options.UseFont = true;
-            this.m_cmd_nhap_cham_cong.Appearance.Options.UseForeColor = true;
-            this.m_cmd_nhap_cham_cong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_cmd_nhap_cham_cong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_nhap_cham_cong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_nhap_cham_cong.Location = new System.Drawing.Point(964, 0);
-            this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
-            this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
-            this.m_cmd_nhap_cham_cong.TabIndex = 15;
-            this.m_cmd_nhap_cham_cong.Text = "Lưu";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(199, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(344, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NHẬP CÁC LOẠI TIỀN KHÁC BẰNG EXCEL";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1174, 53);
-            this.panel1.TabIndex = 16;
-            // 
             // m_btn_xoa_dong
             // 
             this.m_btn_xoa_dong.Appearance.BackColor = System.Drawing.Color.Maroon;
@@ -432,6 +395,46 @@
             this.m_btn_xoa_dong.TabIndex = 33;
             this.m_btn_xoa_dong.Text = "Xóa dòng\r\n";
             this.m_btn_xoa_dong.Click += new System.EventHandler(this.m_btn_xoa_dong_Click);
+            // 
+            // m_cmd_nhap_cham_cong
+            // 
+            this.m_cmd_nhap_cham_cong.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_cmd_nhap_cham_cong.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_cmd_nhap_cham_cong.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_nhap_cham_cong.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_cmd_nhap_cham_cong.Appearance.Options.UseBackColor = true;
+            this.m_cmd_nhap_cham_cong.Appearance.Options.UseFont = true;
+            this.m_cmd_nhap_cham_cong.Appearance.Options.UseForeColor = true;
+            this.m_cmd_nhap_cham_cong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_cmd_nhap_cham_cong.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_nhap_cham_cong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_cmd_nhap_cham_cong.Location = new System.Drawing.Point(964, 0);
+            this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
+            this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
+            this.m_cmd_nhap_cham_cong.TabIndex = 15;
+            this.m_cmd_nhap_cham_cong.Text = "Lưu";
+            this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(199, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(360, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NHẬP CÁC LOẠI TIỀN KHÁC BẰNG EXCEL";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1174, 53);
+            this.panel1.TabIndex = 16;
             // 
             // CAC_LOAI_TIEN_KHAC
             // 

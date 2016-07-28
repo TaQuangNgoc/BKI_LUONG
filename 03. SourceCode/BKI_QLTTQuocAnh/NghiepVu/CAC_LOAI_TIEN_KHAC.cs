@@ -364,9 +364,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         #region Events Handle
         private void set_define_events()
         {
-            m_cmd_mo_file_mau.Click += m_cmd_mo_file_mau_Click;
-            m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
-            m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
             this.Load += F696_Cham_cong_xls_Load;
             m_btn_xoa_dong.Enabled = false;
             
@@ -565,8 +562,10 @@ namespace BKI_DichVuMatDat.NghiepVu
         private bool check_da_tinh_luong_nhung_chua_chot(decimal id_nhan_vien, decimal thang, decimal nam)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            return  v_us.CheckDaTinhLuongNhungChuaChot(id_nhan_vien, thang, nam);           
+            return  v_us.CheckDaTinhLuongNhungChuaChot(id_nhan_vien, thang, nam);
         }
+
+       
 
      
     }

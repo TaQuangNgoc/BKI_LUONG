@@ -185,6 +185,7 @@
             this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(236, 50);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "Tải file Excel mẫu";
+            this.m_cmd_mo_file_mau.Click += new System.EventHandler(this.m_cmd_mo_file_mau_Click);
             // 
             // m_cmd_chon_du_lieu
             // 
@@ -205,6 +206,7 @@
             this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(251, 50);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
             this.m_cmd_chon_du_lieu.Text = "Up dữ liệu chấm công";
+            this.m_cmd_chon_du_lieu.Click += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
             // 
             // panelControl1
             // 
