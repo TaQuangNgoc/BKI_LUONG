@@ -63,11 +63,17 @@
             // 
             this.searchLookUpEdit1View.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.searchLookUpEdit1View.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.searchLookUpEdit1View.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchLookUpEdit1View.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.searchLookUpEdit1View.Appearance.FocusedRow.Options.UseFont = true;
             this.searchLookUpEdit1View.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.searchLookUpEdit1View.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchLookUpEdit1View.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseFont = true;
             this.searchLookUpEdit1View.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.searchLookUpEdit1View.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.searchLookUpEdit1View.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));

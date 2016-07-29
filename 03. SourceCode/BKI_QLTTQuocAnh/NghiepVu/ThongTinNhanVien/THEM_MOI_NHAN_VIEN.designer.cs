@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -324,7 +324,7 @@
             this.m_grb_phu_cap.Location = new System.Drawing.Point(3, 341);
             this.m_grb_phu_cap.Name = "m_grb_phu_cap";
             this.m_grb_phu_cap.Size = new System.Drawing.Size(1031, 234);
-            this.m_grb_phu_cap.TabIndex = 22;
+            this.m_grb_phu_cap.TabIndex = 32;
             this.m_grb_phu_cap.TabStop = false;
             this.m_grb_phu_cap.Text = "Các loại phụ cấp được hưởng";
             // 
@@ -332,9 +332,9 @@
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode4.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode4});
+            gridLevelNode3});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -449,6 +449,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_den_ngay_phu_cap.Properties.DisplayFormat.FormatString = "MM/yyyy";
             this.m_dtp_den_ngay_phu_cap.Properties.Mask.EditMask = "MM/yyyy";
+            this.m_dtp_den_ngay_phu_cap.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_den_ngay_phu_cap.Size = new System.Drawing.Size(132, 24);
             this.m_dtp_den_ngay_phu_cap.TabIndex = 12;
             // 
@@ -468,6 +469,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_tu_ngay_phu_cap.Properties.DisplayFormat.FormatString = "MM/yyyy";
             this.m_dtp_tu_ngay_phu_cap.Properties.Mask.EditMask = "MM/yyyy";
+            this.m_dtp_tu_ngay_phu_cap.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_tu_ngay_phu_cap.Size = new System.Drawing.Size(132, 24);
             this.m_dtp_tu_ngay_phu_cap.TabIndex = 11;
             // 
@@ -548,7 +550,7 @@
             this.label36.Location = new System.Drawing.Point(56, 19);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(92, 18);
-            this.label36.TabIndex = 0;
+            this.label36.TabIndex = 30;
             this.label36.Text = "Loại phụ cấp";
             // 
             // label18
@@ -557,7 +559,7 @@
             this.label18.Location = new System.Drawing.Point(59, 71);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 18);
-            this.label18.TabIndex = 0;
+            this.label18.TabIndex = 31;
             this.label18.Text = "Từ tháng";
             // 
             // label23
@@ -566,7 +568,7 @@
             this.label23.Location = new System.Drawing.Point(307, 71);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(75, 18);
-            this.label23.TabIndex = 0;
+            this.label23.TabIndex = 33;
             this.label23.Text = "Đến tháng";
             // 
             // groupBox15
@@ -581,7 +583,7 @@
             this.groupBox15.Location = new System.Drawing.Point(3, 200);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(1031, 141);
-            this.groupBox15.TabIndex = 15;
+            this.groupBox15.TabIndex = 26;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Thông tin bổ sung";
             // 
@@ -593,6 +595,7 @@
             this.m_nud_phu_thuoc.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_nud_phu_thuoc.Name = "m_nud_phu_thuoc";
             this.m_nud_phu_thuoc.PasswordChar = '\0';
+            this.m_nud_phu_thuoc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_nud_phu_thuoc.SelectedText = "";
             this.m_nud_phu_thuoc.SelectionLength = 0;
             this.m_nud_phu_thuoc.SelectionStart = 0;
@@ -617,6 +620,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_ngay_bat_dau_lv.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_ngay_bat_dau_lv.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_ngay_bat_dau_lv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_ngay_bat_dau_lv.Size = new System.Drawing.Size(194, 24);
             this.m_dtp_ngay_bat_dau_lv.TabIndex = 8;
             this.m_dtp_ngay_bat_dau_lv.ToolTip = "Nhân viên nào phải đóng BHXH phải điền trường này!\r\nLưu ý: Khi thay đổi hợp đồng " +
@@ -630,7 +634,7 @@
             this.label10.Location = new System.Drawing.Point(356, 43);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 18);
-            this.label10.TabIndex = 19;
+            this.label10.TabIndex = 28;
             this.label10.Text = "người";
             // 
             // label15
@@ -639,7 +643,7 @@
             this.label15.Location = new System.Drawing.Point(59, 43);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(136, 18);
-            this.label15.TabIndex = 20;
+            this.label15.TabIndex = 27;
             this.label15.Text = "Số lượng phụ thuộc";
             // 
             // m_cb_doan_phi
@@ -664,7 +668,7 @@
             this.label14.Location = new System.Drawing.Point(59, 93);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(98, 18);
-            this.label14.TabIndex = 9;
+            this.label14.TabIndex = 29;
             this.label14.Text = "Ngày vào làm";
             // 
             // groupBox14
@@ -704,6 +708,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_ngay_sinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_ngay_sinh.Properties.Mask.EditMask = "dd/MM/yyy";
+            this.m_dtp_ngay_sinh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_ngay_sinh.Size = new System.Drawing.Size(194, 24);
             this.m_dtp_ngay_sinh.TabIndex = 3;
             // 
@@ -713,7 +718,7 @@
             this.label27.Location = new System.Drawing.Point(568, 25);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(95, 18);
-            this.label27.TabIndex = 0;
+            this.label27.TabIndex = 23;
             this.label27.Text = "Mã nhân viên";
             // 
             // label28
@@ -722,7 +727,7 @@
             this.label28.Location = new System.Drawing.Point(568, 133);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(45, 18);
-            this.label28.TabIndex = 0;
+            this.label28.TabIndex = 25;
             this.label28.Text = "Email";
             // 
             // label26
@@ -731,7 +736,7 @@
             this.label26.Location = new System.Drawing.Point(568, 77);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(94, 18);
-            this.label26.TabIndex = 0;
+            this.label26.TabIndex = 24;
             this.label26.Text = "Số điện thoại";
             // 
             // label1
@@ -740,7 +745,7 @@
             this.label1.Location = new System.Drawing.Point(59, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 20;
             this.label1.Text = "Họ đệm";
             // 
             // label3
@@ -749,7 +754,7 @@
             this.label3.Location = new System.Drawing.Point(59, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 18);
-            this.label3.TabIndex = 0;
+            this.label3.TabIndex = 21;
             this.label3.Text = "Tên ";
             // 
             // label7
@@ -758,7 +763,7 @@
             this.label7.Location = new System.Drawing.Point(59, 133);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 18);
-            this.label7.TabIndex = 6;
+            this.label7.TabIndex = 22;
             this.label7.Text = "Ngày sinh";
             // 
             // m_txt_email
@@ -910,7 +915,7 @@
             this.m_grb_phan_tram_luong.Location = new System.Drawing.Point(0, 274);
             this.m_grb_phan_tram_luong.Name = "m_grb_phan_tram_luong";
             this.m_grb_phan_tram_luong.Size = new System.Drawing.Size(1031, 205);
-            this.m_grb_phan_tram_luong.TabIndex = 14;
+            this.m_grb_phan_tram_luong.TabIndex = 12;
             this.m_grb_phan_tram_luong.TabStop = false;
             this.m_grb_phan_tram_luong.Text = "Phần trăm lương được hưởng";
             // 
@@ -918,9 +923,9 @@
             // 
             this.m_grc_phan_tram.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phan_tram.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_phan_tram.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_phan_tram.Location = new System.Drawing.Point(732, 18);
             this.m_grc_phan_tram.MainView = this.m_grv_phan_tram;
             this.m_grc_phan_tram.Name = "m_grc_phan_tram";
@@ -1024,6 +1029,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_den_ngay_ti_le.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_ti_le.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_den_ngay_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_den_ngay_ti_le.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_den_ngay_ti_le.TabIndex = 15;
             // 
@@ -1043,6 +1049,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_tu_ngay_ti_le.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_ti_le.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_tu_ngay_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_tu_ngay_ti_le.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_tu_ngay_ti_le.TabIndex = 14;
             // 
@@ -1113,6 +1120,7 @@
             this.m_txt_ti_le.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le.Name = "m_txt_ti_le";
             this.m_txt_ti_le.PasswordChar = '\0';
+            this.m_txt_ti_le.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le.SelectedText = "";
             this.m_txt_ti_le.SelectionLength = 0;
             this.m_txt_ti_le.SelectionStart = 0;
@@ -1165,7 +1173,7 @@
             this.m_grb_thong_tin_ve_luong.Location = new System.Drawing.Point(0, 40);
             this.m_grb_thong_tin_ve_luong.Name = "m_grb_thong_tin_ve_luong";
             this.m_grb_thong_tin_ve_luong.Size = new System.Drawing.Size(1031, 234);
-            this.m_grb_thong_tin_ve_luong.TabIndex = 12;
+            this.m_grb_thong_tin_ve_luong.TabIndex = 20;
             this.m_grb_thong_tin_ve_luong.TabStop = false;
             this.m_grb_thong_tin_ve_luong.Text = "Thông tin về lương";
             // 
@@ -1182,9 +1190,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";
@@ -1327,6 +1335,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_tu_ngay_lns.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lns.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_tu_ngay_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_tu_ngay_lns.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_tu_ngay_lns.TabIndex = 4;
             // 
@@ -1346,6 +1355,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_den_ngay_lns.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lns.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_den_ngay_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_den_ngay_lns.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_den_ngay_lns.TabIndex = 5;
             // 
@@ -1365,6 +1375,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_den_ngay_lcd.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_lcd.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_den_ngay_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_den_ngay_lcd.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_den_ngay_lcd.TabIndex = 8;
             // 
@@ -1384,6 +1395,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_tu_ngay_lcd.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_lcd.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_tu_ngay_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_tu_ngay_lcd.Size = new System.Drawing.Size(107, 24);
             this.m_dtp_tu_ngay_lcd.TabIndex = 7;
             // 
@@ -1500,6 +1512,7 @@
             this.m_txt_lcd.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lcd.Name = "m_txt_lcd";
             this.m_txt_lcd.PasswordChar = '\0';
+            this.m_txt_lcd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lcd.SelectedText = "";
             this.m_txt_lcd.SelectionLength = 0;
             this.m_txt_lcd.SelectionStart = 0;
@@ -1526,6 +1539,7 @@
             this.m_txt_lns.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lns.Name = "m_txt_lns";
             this.m_txt_lns.PasswordChar = '\0';
+            this.m_txt_lns.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_lns.SelectedText = "";
             this.m_txt_lns.SelectionLength = 0;
             this.m_txt_lns.SelectionStart = 0;
@@ -1734,6 +1748,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_den_ngay_luong_ngay.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_den_ngay_luong_ngay.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_den_ngay_luong_ngay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_den_ngay_luong_ngay.Size = new System.Drawing.Size(153, 24);
             this.m_dtp_den_ngay_luong_ngay.TabIndex = 35;
             // 
@@ -1753,6 +1768,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.m_dtp_tu_ngay_luong_ngay.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
             this.m_dtp_tu_ngay_luong_ngay.Properties.Mask.EditMask = "dd/MM/yyyy";
+            this.m_dtp_tu_ngay_luong_ngay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dtp_tu_ngay_luong_ngay.Size = new System.Drawing.Size(153, 24);
             this.m_dtp_tu_ngay_luong_ngay.TabIndex = 34;
             // 
@@ -1820,6 +1836,7 @@
             this.m_txt_so_tien_luong_ngay.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien_luong_ngay.Name = "m_txt_so_tien_luong_ngay";
             this.m_txt_so_tien_luong_ngay.PasswordChar = '\0';
+            this.m_txt_so_tien_luong_ngay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_so_tien_luong_ngay.SelectedText = "";
             this.m_txt_so_tien_luong_ngay.SelectionLength = 0;
             this.m_txt_so_tien_luong_ngay.SelectionStart = 0;
