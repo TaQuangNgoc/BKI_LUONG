@@ -895,5 +895,14 @@ namespace BKI_DichVuMatDat
             v_sp.addDecimalInputParam("@ID_LOAI_LAM_THEM", id_loai_lam_them);
             v_sp.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void FillDatasetLoadChamCongLuongNgay(DataSet v_ds, decimal thang, decimal nam)
+        {
+
+            CStoredProc v_sp = new CStoredProc("[PR_LOAD_CHAM_CONG_LUONG_NGAY]");
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);
+            v_sp.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }

@@ -150,18 +150,18 @@
             // 
             // m_cmd_mo_file_mau
             // 
-            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
             this.m_cmd_mo_file_mau.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_cmd_mo_file_mau.Appearance.Options.UseBackColor = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseFont = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
             this.m_cmd_mo_file_mau.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_mo_file_mau.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(957, 13);
+            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(870, 13);
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
-            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(166, 60);
+            this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(153, 60);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "Tải file excel mẫu";
             this.m_cmd_mo_file_mau.Click += new System.EventHandler(this.m_cmd_mo_file_mau_Click);
@@ -176,21 +176,21 @@
             // 
             // m_cmd_chon_du_lieu
             // 
-            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
             this.m_cmd_chon_du_lieu.Appearance.BorderColor = System.Drawing.Color.White;
             this.m_cmd_chon_du_lieu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.Black;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBackColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBorderColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseFont = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseForeColor = true;
             this.m_cmd_chon_du_lieu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_chon_du_lieu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(755, 13);
+            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(722, 13);
             this.m_cmd_chon_du_lieu.Name = "m_cmd_chon_du_lieu";
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
-            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(207, 60);
+            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(152, 60);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
             this.m_cmd_chon_du_lieu.Text = "Up dữ liệu\r\n";
             this.m_cmd_chon_du_lieu.Click += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
@@ -395,7 +395,7 @@
             this.m_btn_hien_thi.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_hien_thi.Location = new System.Drawing.Point(551, 13);
             this.m_btn_hien_thi.Name = "m_btn_hien_thi";
-            this.m_btn_hien_thi.Size = new System.Drawing.Size(208, 60);
+            this.m_btn_hien_thi.Size = new System.Drawing.Size(174, 60);
             this.m_btn_hien_thi.TabIndex = 35;
             this.m_btn_hien_thi.Text = "Hiển thị dữ liệu đã nhập\r\n";
             this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);

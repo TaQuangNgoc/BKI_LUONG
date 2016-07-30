@@ -55,6 +55,9 @@
             this.colPHAI_DONG_BAO_HIEM = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
@@ -218,23 +221,70 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.m_txt_nam);
+            this.panel1.Controls.Add(this.m_txt_thang);
+            this.panel1.Controls.Add(this.labelControl1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 53);
+            this.panel1.Size = new System.Drawing.Size(712, 53);
             this.panel1.TabIndex = 4;
+            // 
+            // m_txt_nam
+            // 
+            this.m_txt_nam.Depth = 0;
+            this.m_txt_nam.ForeColor = System.Drawing.Color.White;
+            this.m_txt_nam.Hint = "";
+            this.m_txt_nam.Location = new System.Drawing.Point(633, 19);
+            this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_nam.Name = "m_txt_nam";
+            this.m_txt_nam.PasswordChar = '\0';
+            this.m_txt_nam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_nam.SelectedText = "";
+            this.m_txt_nam.SelectionLength = 0;
+            this.m_txt_nam.SelectionStart = 0;
+            this.m_txt_nam.Size = new System.Drawing.Size(67, 23);
+            this.m_txt_nam.TabIndex = 23;
+            this.m_txt_nam.UseSystemPasswordChar = false;
+            // 
+            // m_txt_thang
+            // 
+            this.m_txt_thang.Depth = 0;
+            this.m_txt_thang.ForeColor = System.Drawing.Color.White;
+            this.m_txt_thang.Hint = "";
+            this.m_txt_thang.Location = new System.Drawing.Point(550, 17);
+            this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_thang.Name = "m_txt_thang";
+            this.m_txt_thang.PasswordChar = '\0';
+            this.m_txt_thang.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_thang.SelectedText = "";
+            this.m_txt_thang.SelectionLength = 0;
+            this.m_txt_thang.SelectionStart = 0;
+            this.m_txt_thang.Size = new System.Drawing.Size(64, 23);
+            this.m_txt_thang.TabIndex = 22;
+            this.m_txt_thang.UseSystemPasswordChar = false;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Location = new System.Drawing.Point(620, 20);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(6, 25);
+            this.labelControl1.TabIndex = 24;
+            this.labelControl1.Text = "/";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(542, 20);
+            this.label1.Size = new System.Drawing.Size(532, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CHỌN NHỮNG NHÂN VIÊN KHÔNG ĐƯỢC CHẤM LƯƠNG THÁNG";
+            this.label1.Text = "CHỌN NHỮNG NHÂN VIÊN KHÔNG ĐƯỢC TÍNH LƯƠNG THÁNG";
             // 
             // panel2
             // 
@@ -244,7 +294,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 550);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(593, 54);
+            this.panel2.Size = new System.Drawing.Size(712, 54);
             this.panel2.TabIndex = 5;
             // 
             // m_btn_luu
@@ -259,7 +309,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(334, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(453, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 54);
             this.m_btn_luu.TabIndex = 14;
@@ -278,7 +328,7 @@
             this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(477, 0);
+            this.m_btn_thoat.Location = new System.Drawing.Point(596, 0);
             this.m_btn_thoat.Name = "m_btn_thoat";
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 54);
             this.m_btn_thoat.TabIndex = 30;
@@ -296,7 +346,7 @@
             this.m_grc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
             this.repositoryItemCheckEdit2});
-            this.m_grc.Size = new System.Drawing.Size(593, 497);
+            this.m_grc.Size = new System.Drawing.Size(712, 497);
             this.m_grc.TabIndex = 6;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -415,7 +465,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 604);
+            this.ClientSize = new System.Drawing.Size(712, 604);
             this.Controls.Add(this.m_grc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -476,5 +526,8 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
         private BKI_LUONGDataSet4TableAdapters.PR_NV_KHONG_CHAM_LUONG_THANGTableAdapter pR_NV_KHONG_CHAM_LUONG_THANGTableAdapter;
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_thang;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

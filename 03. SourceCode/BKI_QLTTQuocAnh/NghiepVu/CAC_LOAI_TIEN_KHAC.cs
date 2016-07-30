@@ -434,7 +434,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
             catch (Exception v_e)
             {
-                CSystemLog_301.ExceptionHandle(v_e);
+                XtraMessageBox.Show("Không có dữ liệu trên bảng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

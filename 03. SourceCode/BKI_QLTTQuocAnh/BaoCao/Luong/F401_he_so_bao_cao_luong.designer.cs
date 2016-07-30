@@ -58,11 +58,6 @@
             this.pRGETTHAMSOBANGLUONGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet5 = new BKI_DichVuMatDat.BKI_LUONGDataSet5();
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             this.colID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHO_DEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -73,6 +68,14 @@
             this.colPHAI_DONG_DOAN_PHI1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHAI_DONG_BAO_HIEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).BeginInit();
@@ -293,60 +296,6 @@
             this.m_grv.OptionsView.ShowGroupPanel = false;
             this.m_grv.PaintStyleName = "Web";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1154, 57);
-            this.panel3.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(40, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(540, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "RÀ SOÁT DỮ LIỆU NHÂN VIÊN TRONG THÁNG ĐỂ TÍNH LƯƠNG";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
-            this.panel2.Controls.Add(this.m_btn_thoat);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 558);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1154, 53);
-            this.panel2.TabIndex = 17;
-            // 
-            // m_btn_thoat
-            // 
-            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
-            this.m_btn_thoat.Appearance.Options.UseFont = true;
-            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
-            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_thoat.Location = new System.Drawing.Point(1038, 0);
-            this.m_btn_thoat.Name = "m_btn_thoat";
-            this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
-            this.m_btn_thoat.TabIndex = 30;
-            this.m_btn_thoat.Text = "Thoát";
-            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
-            // 
-            // pR_GET_THAM_SO_BANG_LUONGTableAdapter2
-            // 
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2.ClearBeforeFill = true;
-            // 
             // colID1
             // 
             this.colID1.FieldName = "ID";
@@ -431,6 +380,107 @@
             this.colSO_LUONG_PHU_THUOC1.Visible = true;
             this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel3.Controls.Add(this.m_txt_nam);
+            this.panel3.Controls.Add(this.m_txt_thang);
+            this.panel3.Controls.Add(this.labelControl1);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1154, 57);
+            this.panel3.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(40, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(402, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RÀ SOÁT DỮ LIỆU NHÂN VIÊN TRONG THÁNG \r\n";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel2.Controls.Add(this.m_btn_thoat);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 558);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1154, 53);
+            this.panel2.TabIndex = 17;
+            // 
+            // m_btn_thoat
+            // 
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(1038, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 53);
+            this.m_btn_thoat.TabIndex = 30;
+            this.m_btn_thoat.Text = "Thoát";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
+            // 
+            // pR_GET_THAM_SO_BANG_LUONGTableAdapter2
+            // 
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2.ClearBeforeFill = true;
+            // 
+            // m_txt_nam
+            // 
+            this.m_txt_nam.Depth = 0;
+            this.m_txt_nam.ForeColor = System.Drawing.Color.White;
+            this.m_txt_nam.Hint = "";
+            this.m_txt_nam.Location = new System.Drawing.Point(561, 16);
+            this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_nam.Name = "m_txt_nam";
+            this.m_txt_nam.PasswordChar = '\0';
+            this.m_txt_nam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_nam.SelectedText = "";
+            this.m_txt_nam.SelectionLength = 0;
+            this.m_txt_nam.SelectionStart = 0;
+            this.m_txt_nam.Size = new System.Drawing.Size(100, 23);
+            this.m_txt_nam.TabIndex = 20;
+            this.m_txt_nam.UseSystemPasswordChar = false;
+            // 
+            // m_txt_thang
+            // 
+            this.m_txt_thang.Depth = 0;
+            this.m_txt_thang.ForeColor = System.Drawing.Color.White;
+            this.m_txt_thang.Hint = "";
+            this.m_txt_thang.Location = new System.Drawing.Point(460, 16);
+            this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_thang.Name = "m_txt_thang";
+            this.m_txt_thang.PasswordChar = '\0';
+            this.m_txt_thang.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_thang.SelectedText = "";
+            this.m_txt_thang.SelectionLength = 0;
+            this.m_txt_thang.SelectionStart = 0;
+            this.m_txt_thang.Size = new System.Drawing.Size(84, 23);
+            this.m_txt_thang.TabIndex = 19;
+            this.m_txt_thang.UseSystemPasswordChar = false;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Location = new System.Drawing.Point(548, 17);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(6, 25);
+            this.labelControl1.TabIndex = 21;
+            this.labelControl1.Text = "/";
+            // 
             // F401_he_so_bao_cao_luong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,5 +546,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_DOAN_PHI1;
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_BAO_HIEM1;
         private DevExpress.XtraGrid.Columns.GridColumn colSO_LUONG_PHU_THUOC1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
+        private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_thang;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

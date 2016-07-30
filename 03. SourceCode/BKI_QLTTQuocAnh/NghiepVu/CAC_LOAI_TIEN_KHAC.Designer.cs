@@ -254,10 +254,10 @@
             // 
             // m_cmd_mo_file_mau
             // 
-            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
             this.m_cmd_mo_file_mau.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_cmd_mo_file_mau.Appearance.Options.UseBackColor = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseFont = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
@@ -272,11 +272,11 @@
             // 
             // m_cmd_chon_du_lieu
             // 
-            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
             this.m_cmd_chon_du_lieu.Appearance.BorderColor = System.Drawing.Color.White;
             this.m_cmd_chon_du_lieu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.Black;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBackColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBorderColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseFont = true;

@@ -46,6 +46,7 @@
             this.m_grc = new DevExpress.XtraGrid.GridControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.m_btn_hien_thi = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).BeginInit();
@@ -79,6 +80,7 @@
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
             this.m_cmd_nhap_cham_cong.Text = "LƯU CHẤM CÔNG";
+            this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
             // 
             // label2
             // 
@@ -183,20 +185,21 @@
             // 
             // m_cmd_mo_file_mau
             // 
-            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
+            this.m_cmd_mo_file_mau.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
             this.m_cmd_mo_file_mau.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_mo_file_mau.Appearance.ForeColor = System.Drawing.Color.White;
             this.m_cmd_mo_file_mau.Appearance.Options.UseBackColor = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseFont = true;
             this.m_cmd_mo_file_mau.Appearance.Options.UseForeColor = true;
             this.m_cmd_mo_file_mau.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_mo_file_mau.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(531, 6);
+            this.m_cmd_mo_file_mau.Location = new System.Drawing.Point(678, 5);
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
             this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(236, 50);
             this.m_cmd_mo_file_mau.TabIndex = 31;
             this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
+            this.m_cmd_mo_file_mau.Click += new System.EventHandler(this.m_cmd_mo_file_mau_Click);
             // 
             // m_bgwk
             // 
@@ -208,23 +211,24 @@
             // 
             // m_cmd_chon_du_lieu
             // 
-            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
+            this.m_cmd_chon_du_lieu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(199)))), ((int)(((byte)(4)))));
             this.m_cmd_chon_du_lieu.Appearance.BorderColor = System.Drawing.Color.White;
             this.m_cmd_chon_du_lieu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_cmd_chon_du_lieu.Appearance.ForeColor = System.Drawing.Color.Black;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBackColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseBorderColor = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseFont = true;
             this.m_cmd_chon_du_lieu.Appearance.Options.UseForeColor = true;
             this.m_cmd_chon_du_lieu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_chon_du_lieu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(280, 6);
+            this.m_cmd_chon_du_lieu.Location = new System.Drawing.Point(466, 5);
             this.m_cmd_chon_du_lieu.Name = "m_cmd_chon_du_lieu";
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
-            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(251, 50);
+            this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(217, 50);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
             this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU CHẤM CÔNG";
+            this.m_cmd_chon_du_lieu.ClientSizeChanged += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
             // 
             // panelControl1
             // 
@@ -291,6 +295,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel7.Controls.Add(this.m_btn_hien_thi);
             this.panel7.Controls.Add(this.m_cmd_mo_file_mau);
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
             this.panel7.Controls.Add(this.panelControl1);
@@ -299,6 +304,24 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(980, 70);
             this.panel7.TabIndex = 11;
+            // 
+            // m_btn_hien_thi
+            // 
+            this.m_btn_hien_thi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_hien_thi.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_hien_thi.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_hien_thi.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_hien_thi.Appearance.Options.UseBackColor = true;
+            this.m_btn_hien_thi.Appearance.Options.UseFont = true;
+            this.m_btn_hien_thi.Appearance.Options.UseForeColor = true;
+            this.m_btn_hien_thi.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_hien_thi.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_hien_thi.Location = new System.Drawing.Point(297, 5);
+            this.m_btn_hien_thi.Name = "m_btn_hien_thi";
+            this.m_btn_hien_thi.Size = new System.Drawing.Size(174, 50);
+            this.m_btn_hien_thi.TabIndex = 36;
+            this.m_btn_hien_thi.Text = "Hiển thị dữ liệu đã nhập\r\n";
+            this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);
             // 
             // panel1
             // 
@@ -361,6 +384,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
     }
 }

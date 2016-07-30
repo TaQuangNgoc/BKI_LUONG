@@ -31,7 +31,7 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
         {
             for (int i = 0; i < m_grv.Columns.Count; i++)
             {
-                m_grv.Columns[i].Width = 130;
+                m_grv.Columns[i].Width = 140;
             }
             m_grv.ColumnPanelRowHeight = 35;
             m_grv.RowHeight = 30;
@@ -47,6 +47,9 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             v_us.LoadDanhSachNhanVienKhongDuocTinhLuong(v_ds, thang, nam);
             m_grc.DataSource = v_ds.Tables[0];
             lay_danh_sach_id_nv_duoc_cham_cong(v_ds);
+            m_txt_thang.Text = thang.ToString();
+            m_txt_nam.Text = nam.ToString();
+           
             this.ShowDialog();
         }
 

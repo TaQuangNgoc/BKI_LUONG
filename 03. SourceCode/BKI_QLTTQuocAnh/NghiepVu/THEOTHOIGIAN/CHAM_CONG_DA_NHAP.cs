@@ -29,8 +29,14 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             pivotGridControl1.DataSource = v_ds.Tables[0];
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
+            format_grid();
            
            
+        }
+
+        private void format_grid()
+        {
+            pivotGridControl1.Width = 100;
         }
 
        
@@ -53,6 +59,25 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 
         }
 
+
+        internal void DisplayLuongNgay(decimal thang, decimal nam)
+        {
+            m_txt_nam.Text = nam.ToString();
+            m_txt_thang.Text = thang.ToString();
+            load_data_to_pivot_grid_luong_ngay(thang, nam);
+            this.ShowDialog();
+        }
+
+        private void load_data_to_pivot_grid_luong_ngay(decimal thang, decimal nam)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetLoadChamCongLuongNgay(v_ds, thang, nam);
+            pivotGridControl1.DataSource = v_ds.Tables[0];
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
 

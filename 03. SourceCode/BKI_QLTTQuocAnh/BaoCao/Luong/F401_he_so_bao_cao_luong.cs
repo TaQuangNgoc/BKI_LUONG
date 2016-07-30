@@ -28,7 +28,8 @@ namespace BKI_DichVuMatDat.BaoCao
         public void hien_thi_ra_soat_tinh_luong(decimal ip_dc_thang, decimal ip_dc_nam)
         {
             load_data_2_grid(ip_dc_thang, ip_dc_nam);
-            
+            m_txt_thang.Text = ip_dc_thang.ToString();
+            m_txt_nam.Text = ip_dc_nam.ToString();         
             ShowDialog();
         }
         #region Members

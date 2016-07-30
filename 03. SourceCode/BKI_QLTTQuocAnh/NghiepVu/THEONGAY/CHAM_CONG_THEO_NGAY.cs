@@ -430,11 +430,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
         #region Events Handle
         private void set_define_events()
         {
-            m_cmd_mo_file_mau.Click += m_cmd_mo_file_mau_Click;
-            m_cmd_chon_du_lieu.Click += m_cmd_chon_du_lieu_Click;
-            m_cmd_nhap_cham_cong.Click += m_cmd_nhap_cham_cong_Click;
-            this.Load += F696_Cham_cong_xls_Load;
-           
+            this.Load += F696_Cham_cong_xls_Load;          
         }
 
         private void F696_Cham_cong_xls_Load(object sender, EventArgs e)
@@ -480,7 +476,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
             }
             catch (Exception v_e)
             {
-                CSystemLog_301.ExceptionHandle(v_e);
+                XtraMessageBox.Show("Không có dữ liệu trên bảng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -525,6 +521,30 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
         {
             set_trang_thai_cham_cong();
         }
+        private decimal laythang()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Month.ToString());
+        }
+
+        private decimal laynam()
+        {
+            return decimal.Parse(m_dat_chon_thang.DateTime.Year.ToString());
+        }
+
+        private void m_btn_hien_thi_Click(object sender, EventArgs e)
+        {
+            if (m_dat_chon_thang.EditValue == null)
+            {
+                XtraMessageBox.Show("Vui lòng chọn tháng để hiện thị thông tin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                CHAM_CONG_DA_NHAP v_f = new CHAM_CONG_DA_NHAP();
+                v_f.DisplayLuongNgay(laythang(), laynam());
+            }
+        }
+
+       
 
     }
 }

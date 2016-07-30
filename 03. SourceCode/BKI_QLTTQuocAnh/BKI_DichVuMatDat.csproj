@@ -949,8 +949,8 @@
     <None Include="Resources\dvmd_download.png" />
     <None Include="Resources\dvmd_upload.png" />
     <None Include="Resources\dvmd_info.png" />
-    <None Include="Resources\Roboto-Medium.ttf" />
-    <None Include="Resources\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Roboto-Medium.ttf" />
+    <EmbeddedResource Include="Resources\Roboto-Regular.ttf" />
     <None Include="Resources\trash.png" />
     <None Include="Resources\trash1.png" />
     <None Include="Resources\1459414125_Department.ico" />

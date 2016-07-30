@@ -64,23 +64,46 @@
             // 
             // pivotGridControl1
             // 
+            this.pivotGridControl1.Appearance.Cell.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pivotGridControl1.Appearance.Cell.Options.UseFont = true;
             this.pivotGridControl1.Appearance.ColumnHeaderArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.pivotGridControl1.Appearance.ColumnHeaderArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.pivotGridControl1.Appearance.ColumnHeaderArea.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.pivotGridControl1.Appearance.ColumnHeaderArea.Options.UseBackColor = true;
             this.pivotGridControl1.Appearance.ColumnHeaderArea.Options.UseFont = true;
+            this.pivotGridControl1.Appearance.DataHeaderArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.DataHeaderArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.DataHeaderArea.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pivotGridControl1.Appearance.DataHeaderArea.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.DataHeaderArea.Options.UseFont = true;
             this.pivotGridControl1.Appearance.FieldHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.pivotGridControl1.Appearance.FieldHeader.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.pivotGridControl1.Appearance.FieldHeader.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pivotGridControl1.Appearance.FieldHeader.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.FieldHeader.Options.UseFont = true;
+            this.pivotGridControl1.Appearance.FieldValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.FieldValue.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.FieldValue.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pivotGridControl1.Appearance.FieldValue.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.FieldValue.Options.UseFont = true;
             this.pivotGridControl1.Appearance.HeaderArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.pivotGridControl1.Appearance.HeaderArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.pivotGridControl1.Appearance.HeaderArea.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pivotGridControl1.Appearance.HeaderArea.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.HeaderArea.Options.UseFont = true;
+            this.pivotGridControl1.Appearance.HeaderGroupLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.HeaderGroupLine.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.pivotGridControl1.Appearance.HeaderGroupLine.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pivotGridControl1.Appearance.HeaderGroupLine.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.HeaderGroupLine.Options.UseFont = true;
             this.pivotGridControl1.Appearance.Lines.BackColor = System.Drawing.Color.LightGray;
             this.pivotGridControl1.Appearance.Lines.BackColor2 = System.Drawing.Color.LightGray;
             this.pivotGridControl1.Appearance.Lines.Options.UseBackColor = true;
             this.pivotGridControl1.Appearance.RowHeaderArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.pivotGridControl1.Appearance.RowHeaderArea.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.pivotGridControl1.Appearance.RowHeaderArea.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pivotGridControl1.Appearance.RowHeaderArea.Options.UseBackColor = true;
+            this.pivotGridControl1.Appearance.RowHeaderArea.Options.UseFont = true;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
             this.colNgayChamCong,
