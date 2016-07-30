@@ -67,15 +67,12 @@ namespace BKI_DichVuMatDat.BaoCao
         private void set_define_events()
         {
             FormClosed += f409_rpt_bang_luong_FormClosed;
-            Load += f409_rpt_bang_luong_Load;
-            m_cmd_tinh_bang_luong.Click += m_cmd_tinh_bang_luong_Click;
-            m_cmd_luu_du_lieu.Click += m_cmd_luu_du_lieu_Click;
+            Load += f409_rpt_bang_luong_Load;         
             m_txt_thang.Leave += m_txt_thang_Leave;
             m_txt_nam.Leave += m_txt_nam_Leave;
           //  m_cmd_import_excel.Click += m_cmd_import_excel_Click;
             m_cmd_export_excel.Click += m_cmd_export_excel_Click;
-            m_grv_main.MouseWheel += m_grv_main_MouseWheel;
-            m_cmd_kiem_tra_du_lieu.Click += m_cmd_kiem_tra_du_lieu_Click;
+            m_grv_main.MouseWheel += m_grv_main_MouseWheel;          
             format_grid();
         }
 
@@ -357,53 +354,7 @@ namespace BKI_DichVuMatDat.BaoCao
             }
         }
         #endregion
-
-        #region Data Structure
-        enum e_col_thu_tu_bang_luong
-        {
-            MA_NV = 0,
-
-            HO_TEN = 1,
-            DON_VI = 2,
-            CHUC_VU = 3,
-
-            LUONG_NS = 4,
-            LUONG_CHE_DO = 5,
-            AN_CA = 6,
-            PHU_CAP_TN = 7,
-            LAM_THEM_150 = 8,
-            THU_NHAP_KHAC_TRONG_LUONG = 9,
-            TONG_THU_NHAP_TRONG_LUONG = 10,
-            THUONG = 11,
-            THUONG_ATHK = 12,
-            THUONG_LE_TET = 13,
-            BO_SUNG_LUONG = 14,
-            THU_NHAP_KHAC_NGOAI_LUONG = 15,
-            TONG_THU_NHAP_NGOAI_LUONG = 16,
-            TONG_THU_NHAP = 17,
-            TONG_THU_NHAP_CHIU_THUE = 18,
-            //GIAM_TRU_AN_CA = 19,
-            GIAM_TRU_BHXH = 19,
-            GIAM_TRU_BHYT = 20,
-            GIAM_TRU_BHTN = 21,
-            GIAM_TRU_LAM_THEM = 22,
-            GIAM_TRU_GIA_CANH = 23,
-            GIAM_TRU_PHU_THUOC = 24,
-            GIAM_TRU_KHAC = 25,
-            TONG_GIAM_TRU_THUE = 26,
-            THU_NHAP_TINH_THUE = 27,
-            PHAI_THU_BHXH = 28,
-            PHAI_THU_BHYT = 29,
-            PHAI_THU_BHTN = 30,
-            DOAN_PHI = 31,
-            THUE_TNCN = 32,
-            PHAI_THU_KHAC = 33,
-            DA_NOP_THUE_TNCN = 34,
-            TONG_PHAI_NOP = 35,
-            THUC_LINH = 36
-        }
-        #endregion
-
+        
         #region Private Methods
         //Setup Form
         private void format_controls()
@@ -741,6 +692,8 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             this.Close();
         }
+
+        
 
        
     }

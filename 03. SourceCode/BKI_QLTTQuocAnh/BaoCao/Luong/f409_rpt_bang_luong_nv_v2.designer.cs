@@ -297,6 +297,7 @@
             this.m_cmd_luu_du_lieu.TabIndex = 15;
             this.m_cmd_luu_du_lieu.Text = "Bước 4: Lưu bảng lương";
             this.m_cmd_luu_du_lieu.ToolTip = "Lưu dữ liệu lương nhân viên đã tính toán, chỉnh sửa";
+            this.m_cmd_luu_du_lieu.Click += new System.EventHandler(this.m_cmd_luu_du_lieu_Click);
             // 
             // m_cmd_tinh_bang_luong
             // 
@@ -311,6 +312,7 @@
             this.m_cmd_tinh_bang_luong.Text = "Bước 3: Soạn thảo bảng lương";
             this.m_cmd_tinh_bang_luong.ToolTip = "Tính toán dữ liệu lương của nhân viên (Việc này chưa lưu vào bảng lương phần mềm)" +
     "";
+            this.m_cmd_tinh_bang_luong.Click += new System.EventHandler(this.m_cmd_tinh_bang_luong_Click);
             // 
             // m_cmd_kiem_tra_du_lieu
             // 
@@ -325,6 +327,7 @@
             this.m_cmd_kiem_tra_du_lieu.Text = "Bước 2: Rà soát dữ liệu tính lương";
             this.m_cmd_kiem_tra_du_lieu.ToolTip = "Chốt bảng lương chỉ thực hiện khi đã chắc chắn về dữ liệu lương tháng" +
     ". ";
+            this.m_cmd_kiem_tra_du_lieu.Click += new System.EventHandler(this.m_cmd_kiem_tra_du_lieu_Click);
             // 
             // m_btn_khong_tinh_luong
             // 
@@ -546,7 +549,7 @@
             this.gridBand2.Columns.Add(this.colTHU_NHAP);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 722;
+            this.gridBand2.Width = 558;
             // 
             // colLUONG_NS
             // 
@@ -593,7 +596,6 @@
             this.colLUONG_SAN_PHAM.Name = "colLUONG_SAN_PHAM";
             this.colLUONG_SAN_PHAM.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LUONG_SAN_PHAM", "{0:n0}")});
-            this.colLUONG_SAN_PHAM.Visible = true;
             this.colLUONG_SAN_PHAM.Width = 106;
             // 
             // colLAM_THEM
@@ -617,7 +619,6 @@
             this.colLUONG_LAM_THEM_SAN_PHAM.Name = "colLUONG_LAM_THEM_SAN_PHAM";
             this.colLUONG_LAM_THEM_SAN_PHAM.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LUONG_LAM_THEM_SAN_PHAM", "{0:n0}")});
-            this.colLUONG_LAM_THEM_SAN_PHAM.Visible = true;
             this.colLUONG_LAM_THEM_SAN_PHAM.Width = 58;
             // 
             // colPHU_CAP
@@ -689,7 +690,7 @@
             this.gridBand3.Columns.Add(this.colGIAM_TRU);
             this.gridBand3.Name = "gridBand3";
             this.gridBand3.VisibleIndex = 2;
-            this.gridBand3.Width = 288;
+            this.gridBand3.Width = 260;
             // 
             // colBHXH
             // 
@@ -784,7 +785,6 @@
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Name = "colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE";
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LAM_THEM_SAN_PHAM_GIAM_TRU_THUE", "{0:n0}")});
-            this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Visible = true;
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Width = 28;
             // 
             // colCAC_LOAI_TIEN_KHAC_GIAM_TRU_THUE
@@ -839,7 +839,7 @@
             // 
             // colBHXH_PHAI_NOP
             // 
-            this.colBHXH_PHAI_NOP.Caption = "Bảo hiểm xã hội phải nộp";
+            this.colBHXH_PHAI_NOP.Caption = "Bảo hiểm xã hội ";
             this.colBHXH_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHXH_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHXH_PHAI_NOP.FieldName = "BHXH";
@@ -850,7 +850,7 @@
             // 
             // colBHYT_PHAI_NOP
             // 
-            this.colBHYT_PHAI_NOP.Caption = "Bảo hiểm y tế phải nôpk";
+            this.colBHYT_PHAI_NOP.Caption = "Bảo hiểm y tế ";
             this.colBHYT_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHYT_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHYT_PHAI_NOP.FieldName = "BHYT";
@@ -861,7 +861,7 @@
             // 
             // colBHTN_PHAI_NOP
             // 
-            this.colBHTN_PHAI_NOP.Caption = "Bảo hiểm thất nghiệp phải nộp";
+            this.colBHTN_PHAI_NOP.Caption = "Bảo hiểm thất nghiệp ";
             this.colBHTN_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHTN_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHTN_PHAI_NOP.FieldName = "BHTN";
@@ -1152,11 +1152,11 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

@@ -39,9 +39,8 @@
             this.m_btn_huy_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_delete_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_luu_bang_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_tinh_lai_nhan_vien = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_bat_tinh_nang_sua = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_soan_thao_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_view = new DevExpress.XtraEditors.SimpleButton();
             this.m_bgwk = new System.ComponentModel.BackgroundWorker();
@@ -102,6 +101,7 @@
             this.bkI_LUONGDataSet11 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
             this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -191,9 +191,8 @@
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.m_btn_huy_chot_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_chot_bang_luong);
-            this.panelControl1.Controls.Add(this.m_cmd_delete_luong);
             this.panelControl1.Controls.Add(this.m_cmd_luu_bang_luong);
-            this.panelControl1.Controls.Add(this.m_cmd_tinh_lai_nhan_vien);
+            this.panelControl1.Controls.Add(this.m_btn_bat_tinh_nang_sua);
             this.panelControl1.Controls.Add(this.m_cmd_soan_thao_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_view);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -209,7 +208,7 @@
             this.m_btn_huy_chot_bang_luong.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_huy_chot_bang_luong.Image")));
             this.m_btn_huy_chot_bang_luong.ImageIndex = 2;
             this.m_btn_huy_chot_bang_luong.ImageList = this.imageCollection;
-            this.m_btn_huy_chot_bang_luong.Location = new System.Drawing.Point(660, 0);
+            this.m_btn_huy_chot_bang_luong.Location = new System.Drawing.Point(618, 0);
             this.m_btn_huy_chot_bang_luong.Name = "m_btn_huy_chot_bang_luong";
             this.m_btn_huy_chot_bang_luong.Size = new System.Drawing.Size(202, 40);
             this.m_btn_huy_chot_bang_luong.TabIndex = 25;
@@ -242,26 +241,13 @@
             this.m_cmd_chot_bang_luong.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_cmd_chot_bang_luong.ImageIndex = 2;
             this.m_cmd_chot_bang_luong.ImageList = this.imageCollection;
-            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(495, 0);
+            this.m_cmd_chot_bang_luong.Location = new System.Drawing.Point(453, 0);
             this.m_cmd_chot_bang_luong.Name = "m_cmd_chot_bang_luong";
             this.m_cmd_chot_bang_luong.Size = new System.Drawing.Size(165, 40);
             this.m_cmd_chot_bang_luong.TabIndex = 24;
             this.m_cmd_chot_bang_luong.Text = "3. CHỐT BẢNG LƯƠNG";
             this.m_cmd_chot_bang_luong.ToolTip = resources.GetString("m_cmd_chot_bang_luong.ToolTip");
             this.m_cmd_chot_bang_luong.Click += new System.EventHandler(this.m_cmd_chot_bang_luong_Click);
-            // 
-            // m_cmd_delete_luong
-            // 
-            this.m_cmd_delete_luong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_cmd_delete_luong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_delete_luong.ImageIndex = 3;
-            this.m_cmd_delete_luong.ImageList = this.imageCollection;
-            this.m_cmd_delete_luong.Location = new System.Drawing.Point(367, 0);
-            this.m_cmd_delete_luong.Name = "m_cmd_delete_luong";
-            this.m_cmd_delete_luong.Size = new System.Drawing.Size(128, 40);
-            this.m_cmd_delete_luong.TabIndex = 23;
-            this.m_cmd_delete_luong.Text = "2.1. XÓA LƯƠNG";
-            this.m_cmd_delete_luong.Click += new System.EventHandler(this.m_cmd_delete_luong_Click);
             // 
             // m_cmd_luu_bang_luong
             // 
@@ -276,18 +262,21 @@
             this.m_cmd_luu_bang_luong.Text = "Trích xuất";
             this.m_cmd_luu_bang_luong.Click += new System.EventHandler(this.m_cmd_luu_bang_luong_Click);
             // 
-            // m_cmd_tinh_lai_nhan_vien
+            // m_btn_bat_tinh_nang_sua
             // 
-            this.m_cmd_tinh_lai_nhan_vien.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_cmd_tinh_lai_nhan_vien.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_tinh_lai_nhan_vien.ImageIndex = 3;
-            this.m_cmd_tinh_lai_nhan_vien.ImageList = this.imageCollection;
-            this.m_cmd_tinh_lai_nhan_vien.Location = new System.Drawing.Point(239, 0);
-            this.m_cmd_tinh_lai_nhan_vien.Name = "m_cmd_tinh_lai_nhan_vien";
-            this.m_cmd_tinh_lai_nhan_vien.Size = new System.Drawing.Size(128, 40);
-            this.m_cmd_tinh_lai_nhan_vien.TabIndex = 19;
-            this.m_cmd_tinh_lai_nhan_vien.Text = "2. TÍNH LẠI LƯƠNG";
-            this.m_cmd_tinh_lai_nhan_vien.Click += new System.EventHandler(this.m_cmd_tinh_lai_nhan_vien_Click);
+            this.m_btn_bat_tinh_nang_sua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_bat_tinh_nang_sua.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_btn_bat_tinh_nang_sua.ImageIndex = 3;
+            this.m_btn_bat_tinh_nang_sua.ImageList = this.imageCollection;
+            this.m_btn_bat_tinh_nang_sua.Location = new System.Drawing.Point(239, 0);
+            this.m_btn_bat_tinh_nang_sua.Name = "m_btn_bat_tinh_nang_sua";
+            this.m_btn_bat_tinh_nang_sua.Size = new System.Drawing.Size(214, 40);
+            this.m_btn_bat_tinh_nang_sua.TabIndex = 19;
+            this.m_btn_bat_tinh_nang_sua.Text = "BẬT TÍNH NĂNG SỬA BẢNG LƯƠNG";
+            this.m_btn_bat_tinh_nang_sua.ToolTip = "Khi bật tính năng sửa bảng lương, có thể sửa chữa thông tin lương trực tiếp trên " +
+    "các ô trong bảng.\r\nLưu ý: Khi thực hiện xong, nhấn Lưu để Lưu lại kết quả.";
+            this.m_btn_bat_tinh_nang_sua.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
+            this.m_btn_bat_tinh_nang_sua.Click += new System.EventHandler(this.m_btn_bat_tinh_nang_sua_Click);
             // 
             // m_cmd_soan_thao_bang_luong
             // 
@@ -483,17 +472,17 @@
             this.m_adv_tong_hop.Name = "m_adv_tong_hop";
             this.m_adv_tong_hop.OptionsBehavior.AutoExpandAllGroups = true;
             this.m_adv_tong_hop.OptionsBehavior.CopyToClipboardWithColumnHeaders = false;
-            this.m_adv_tong_hop.OptionsBehavior.ReadOnly = true;
+            this.m_adv_tong_hop.OptionsBehavior.Editable = false;
             this.m_adv_tong_hop.OptionsFind.FindDelay = 100;
             this.m_adv_tong_hop.OptionsFind.FindNullPrompt = "Tìm kiếm...";
             this.m_adv_tong_hop.OptionsPrint.AllowMultilineHeaders = true;
             this.m_adv_tong_hop.OptionsPrint.PrintHeader = false;
-            this.m_adv_tong_hop.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_adv_tong_hop.OptionsView.ColumnAutoWidth = false;
             this.m_adv_tong_hop.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_adv_tong_hop.OptionsView.ShowFooter = true;
             this.m_adv_tong_hop.OptionsView.ShowGroupPanel = false;
             this.m_adv_tong_hop.PaintStyleName = "Flat";
+            this.m_adv_tong_hop.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.m_adv_tong_hop_CellValueChanged);
             this.m_adv_tong_hop.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.m_adv_tong_hop_MouseWheel);
             // 
             // gridBand1
@@ -522,6 +511,7 @@
             this.colMA_NV.Caption = "Mã nhân viên";
             this.colMA_NV.FieldName = "MA_NV";
             this.colMA_NV.Name = "colMA_NV";
+            this.colMA_NV.OptionsColumn.AllowEdit = false;
             this.colMA_NV.Visible = true;
             // 
             // colHO_DEM
@@ -529,6 +519,7 @@
             this.colHO_DEM.Caption = "Họ đệm";
             this.colHO_DEM.FieldName = "HO_DEM";
             this.colHO_DEM.Name = "colHO_DEM";
+            this.colHO_DEM.OptionsColumn.AllowEdit = false;
             this.colHO_DEM.Visible = true;
             // 
             // colTEN
@@ -536,6 +527,7 @@
             this.colTEN.Caption = "Tên";
             this.colTEN.FieldName = "TEN";
             this.colTEN.Name = "colTEN";
+            this.colTEN.OptionsColumn.AllowEdit = false;
             this.colTEN.Visible = true;
             // 
             // gridBand2
@@ -559,7 +551,7 @@
             this.gridBand2.Columns.Add(this.colTHU_NHAP);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 802;
+            this.gridBand2.Width = 564;
             // 
             // colLUONG_NS
             // 
@@ -575,7 +567,7 @@
             // 
             // colLUONG_CD
             // 
-            this.colLUONG_CD.Caption = "Lương cố định";
+            this.colLUONG_CD.Caption = "Lương chế độ";
             this.colLUONG_CD.DisplayFormat.FormatString = "n0";
             this.colLUONG_CD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colLUONG_CD.FieldName = "LUONG_CD";
@@ -606,12 +598,11 @@
             this.colLUONG_SAN_PHAM.Name = "colLUONG_SAN_PHAM";
             this.colLUONG_SAN_PHAM.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LUONG_SAN_PHAM", "{0:n0}")});
-            this.colLUONG_SAN_PHAM.Visible = true;
             this.colLUONG_SAN_PHAM.Width = 106;
             // 
             // colLAM_THEM
             // 
-            this.colLAM_THEM.Caption = "làm thêm";
+            this.colLAM_THEM.Caption = "Làm thêm";
             this.colLAM_THEM.DisplayFormat.FormatString = "n0";
             this.colLAM_THEM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colLAM_THEM.FieldName = "LAM_THEM";
@@ -630,12 +621,11 @@
             this.colLUONG_LAM_THEM_SAN_PHAM.Name = "colLUONG_LAM_THEM_SAN_PHAM";
             this.colLUONG_LAM_THEM_SAN_PHAM.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LUONG_LAM_THEM_SAN_PHAM", "{0:n0}")});
-            this.colLUONG_LAM_THEM_SAN_PHAM.Visible = true;
             this.colLUONG_LAM_THEM_SAN_PHAM.Width = 132;
             // 
             // colPHU_CAP
             // 
-            this.colPHU_CAP.Caption = "phụ cấp";
+            this.colPHU_CAP.Caption = "Phụ cấp";
             this.colPHU_CAP.DisplayFormat.FormatString = "n0";
             this.colPHU_CAP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colPHU_CAP.FieldName = "PHU_CAP";
@@ -660,6 +650,8 @@
             // colTHU_NHAP_KHAC
             // 
             this.colTHU_NHAP_KHAC.Caption = "Thu nhập khác";
+            this.colTHU_NHAP_KHAC.DisplayFormat.FormatString = "n0";
+            this.colTHU_NHAP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTHU_NHAP_KHAC.FieldName = "THU_NHAP_KHAC";
             this.colTHU_NHAP_KHAC.Name = "colTHU_NHAP_KHAC";
             this.colTHU_NHAP_KHAC.Visible = true;
@@ -697,7 +689,7 @@
             this.gridBand3.Columns.Add(this.colGIAM_TRU);
             this.gridBand3.Name = "gridBand3";
             this.gridBand3.VisibleIndex = 2;
-            this.gridBand3.Width = 288;
+            this.gridBand3.Width = 260;
             // 
             // colBHXH
             // 
@@ -792,7 +784,6 @@
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Name = "colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE";
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "LAM_THEM_SAN_PHAM_GIAM_TRU_THUE", "{0:n0}")});
-            this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Visible = true;
             this.colLAM_THEM_SAN_PHAM_GIAM_TRU_THUE.Width = 28;
             // 
             // colCAC_LOAI_TIEN_KHAC_GIAM_TRU_THUE
@@ -842,7 +833,7 @@
             // 
             // colBHXH_PHAI_NOP
             // 
-            this.colBHXH_PHAI_NOP.Caption = "Bảo hiểm xã hội phải nộp";
+            this.colBHXH_PHAI_NOP.Caption = "Bảo hiểm xã hội ";
             this.colBHXH_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHXH_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHXH_PHAI_NOP.FieldName = "BHXH";
@@ -853,7 +844,7 @@
             // 
             // colBHYT_PHAI_NOP
             // 
-            this.colBHYT_PHAI_NOP.Caption = "Bảo hiểm y tế phải nộp";
+            this.colBHYT_PHAI_NOP.Caption = "Bảo hiểm y tế ";
             this.colBHYT_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHYT_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHYT_PHAI_NOP.FieldName = "BHYT";
@@ -864,7 +855,7 @@
             // 
             // colBHTN_PHAI_NOP
             // 
-            this.colBHTN_PHAI_NOP.Caption = "Bảo hiểm thất nghiệp phải nộp";
+            this.colBHTN_PHAI_NOP.Caption = "Bảo hiểm thất nghiệp";
             this.colBHTN_PHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colBHTN_PHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHTN_PHAI_NOP.FieldName = "BHTN";
@@ -909,6 +900,8 @@
             // colPHAI_NOP_KHAC
             // 
             this.colPHAI_NOP_KHAC.Caption = "Phải nộp khác";
+            this.colPHAI_NOP_KHAC.DisplayFormat.FormatString = "n0";
+            this.colPHAI_NOP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colPHAI_NOP_KHAC.FieldName = "PHAI_NOP_KHAC";
             this.colPHAI_NOP_KHAC.Name = "colPHAI_NOP_KHAC";
             this.colPHAI_NOP_KHAC.Visible = true;
@@ -1037,12 +1030,33 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Controls.Add(this.m_btn_thoat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 439);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1047, 46);
             this.panel2.TabIndex = 14;
+            // 
+            // m_btn_luu
+            // 
+            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
+            this.m_btn_luu.Appearance.Options.UseBackColor = true;
+            this.m_btn_luu.Appearance.Options.UseFont = true;
+            this.m_btn_luu.Appearance.Options.UseForeColor = true;
+            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_luu.Enabled = false;
+            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_luu.Location = new System.Drawing.Point(788, 0);
+            this.m_btn_luu.Name = "m_btn_luu";
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
+            this.m_btn_luu.TabIndex = 31;
+            this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // m_btn_thoat
             // 
@@ -1145,9 +1159,8 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_view;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu_bang_luong;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_tinh_lai_nhan_vien;
+        private DevExpress.XtraEditors.SimpleButton m_btn_bat_tinh_nang_sua;
         private DevExpress.XtraEditors.DateEdit m_dat_thang;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_delete_luong;
         private DevExpress.XtraEditors.SimpleButton m_cmd_chot_bang_luong;
         private BKI_DVMDDataSet bKI_DVMDDataSet;
         private System.Windows.Forms.BindingSource bKIDVMDDataSetBindingSource;
@@ -1202,6 +1215,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
     }
 }

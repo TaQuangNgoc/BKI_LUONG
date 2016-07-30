@@ -18,6 +18,7 @@ using DevExpress.XtraGrid;
 using BKI_DichVuMatDat.XtraReport;
 using BKI_DichVuMatDat.NghiepVu.Luong;
 using DevExpress.XtraSplashScreen;
+using BKI_DichVuMatDat.DTO;
 namespace BKI_DichVuMatDat.BaoCao
 {
     public partial class f412_rpt_tong_hop_tt_v2 : MaterialSkin.Controls.MaterialForm
@@ -33,6 +34,7 @@ namespace BKI_DichVuMatDat.BaoCao
         #endregion
 
         #region Member
+        public List<int> m_lst_index = new List<int>();
         #endregion
 
         #region Private Method
@@ -113,8 +115,8 @@ namespace BKI_DichVuMatDat.BaoCao
                 m_lbl_so_luong_nv_tinh_luong.Text = v_dto_thong_tin_bang_luong.SO_LUONG_NHAN_VIEN_DA_TINH.ToString() + " NV ";
 
                 m_cmd_soan_thao_bang_luong.Enabled = false;
-                m_cmd_tinh_lai_nhan_vien.Enabled = false;
-                m_cmd_delete_luong.Enabled = false;
+                m_btn_bat_tinh_nang_sua.Enabled = false;
+                m_btn_bat_tinh_nang_sua.Enabled = false;
                 m_cmd_chot_bang_luong.Enabled = false;
                 m_btn_huy_chot_bang_luong.Enabled = true;
             }
@@ -134,8 +136,8 @@ namespace BKI_DichVuMatDat.BaoCao
                                                     + v_dto_thong_tin_bang_luong.SO_LUONG_NHAN_VIEN_CAN_TINH.ToString() + " NV ";
 
                 m_cmd_soan_thao_bang_luong.Enabled = true;
-                m_cmd_tinh_lai_nhan_vien.Enabled = true;
-                m_cmd_delete_luong.Enabled = true;
+                m_btn_bat_tinh_nang_sua.Enabled = true;
+                m_btn_bat_tinh_nang_sua.Enabled = true;
                 m_cmd_chot_bang_luong.Enabled = true;
             }
         }
@@ -363,10 +365,54 @@ namespace BKI_DichVuMatDat.BaoCao
         private void Enable_button_chot_bang_luong()
         {
             m_cmd_soan_thao_bang_luong.Enabled = true;
-            m_cmd_tinh_lai_nhan_vien.Enabled = true;
-            m_cmd_delete_luong.Enabled = true;
+            m_btn_bat_tinh_nang_sua.Enabled = true;
             m_cmd_chot_bang_luong.Enabled = true;
+            m_btn_bat_tinh_nang_sua.Enabled = true;
             m_btn_huy_chot_bang_luong.Enabled = false;
+        }
+
+        private void m_btn_bat_tinh_nang_sua_Click(object sender, EventArgs e)
+        {
+            m_adv_tong_hop.OptionsBehavior.Editable = true;
+            m_btn_bat_tinh_nang_sua.Appearance.BackColor = Color.Gray;
+            m_btn_bat_tinh_nang_sua.Appearance.ForeColor = Color.White;
+            m_btn_luu.Enabled = true;
+        }
+
+        private void m_btn_luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                luu_du_lieu_thay_doi();
+                 XtraMessageBox.Show("Lưu thành công thông tin bảng lương tháng "+ lay_thang()+"/"+ lay_nam()+"!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception v_e)
+            {
+                
+                throw v_e;
+            }
+        }
+
+        private void luu_du_lieu_thay_doi()
+        {
+            foreach (var item in m_lst_index)
+            {
+                var v_dto_bang_luong_v2 = (DTO_BANG_LUONG_V2)m_adv_tong_hop.GetRow(item);
+                TinhLuongQL.Instance.ReplaceBanGhiLuongNhanVien(v_dto_bang_luong_v2);
+               
+            }
+        }
+
+       
+        private void m_adv_tong_hop_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            
+            if (!m_lst_index.Exists(x => x == e.Column.ColumnHandle))
+            {
+                m_lst_index.Add(e.Column.ColumnHandle);
+            }
+        
+
         }
 
         

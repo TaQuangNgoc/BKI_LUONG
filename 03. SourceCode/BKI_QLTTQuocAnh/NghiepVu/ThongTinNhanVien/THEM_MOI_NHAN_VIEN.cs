@@ -1229,13 +1229,7 @@ namespace BKI_DichVuMatDat
             {
                 m_group_cai_dat_luong_ngay.Enabled = false;
             }
-        }
-
-    
-
-       
-       
-       
+        }     
     }
 
 }

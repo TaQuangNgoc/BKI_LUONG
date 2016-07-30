@@ -58,6 +58,11 @@
             this.pRGETTHAMSOBANGLUONGBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet5 = new BKI_DichVuMatDat.BKI_LUONGDataSet5();
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             this.colID1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHO_DEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -68,11 +73,6 @@
             this.colPHAI_DONG_DOAN_PHI1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPHAI_DONG_BAO_HIEM1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2 = new BKI_DichVuMatDat.BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).BeginInit();
@@ -293,91 +293,6 @@
             this.m_grv.OptionsView.ShowGroupPanel = false;
             this.m_grv.PaintStyleName = "Web";
             // 
-            // colID1
-            // 
-            this.colID1.Caption = "ID";
-            this.colID1.FieldName = "ID";
-            this.colID1.Name = "colID1";
-            this.colID1.OptionsColumn.ReadOnly = true;
-            // 
-            // colMA_NV1
-            // 
-            this.colMA_NV1.Caption = "Mã nhân viên";
-            this.colMA_NV1.FieldName = "MA_NV";
-            this.colMA_NV1.Name = "colMA_NV1";
-            this.colMA_NV1.Visible = true;
-            this.colMA_NV1.VisibleIndex = 0;
-            // 
-            // colHO_DEM1
-            // 
-            this.colHO_DEM1.Caption = "Họ đệm";
-            this.colHO_DEM1.FieldName = "HO_DEM";
-            this.colHO_DEM1.Name = "colHO_DEM1";
-            this.colHO_DEM1.Visible = true;
-            this.colHO_DEM1.VisibleIndex = 1;
-            // 
-            // colTEN1
-            // 
-            this.colTEN1.Caption = "Tên";
-            this.colTEN1.FieldName = "TEN";
-            this.colTEN1.Name = "colTEN1";
-            this.colTEN1.Visible = true;
-            this.colTEN1.VisibleIndex = 2;
-            // 
-            // colDA_CHAM_CONG1
-            // 
-            this.colDA_CHAM_CONG1.Caption = "Đã chấm công";
-            this.colDA_CHAM_CONG1.FieldName = "DA_CHAM_CONG";
-            this.colDA_CHAM_CONG1.Name = "colDA_CHAM_CONG1";
-            this.colDA_CHAM_CONG1.OptionsColumn.ReadOnly = true;
-            this.colDA_CHAM_CONG1.Visible = true;
-            this.colDA_CHAM_CONG1.VisibleIndex = 3;
-            // 
-            // colCO_LNS1
-            // 
-            this.colCO_LNS1.Caption = "Có lương năng suất";
-            this.colCO_LNS1.FieldName = "HO_DEM";
-            this.colCO_LNS1.Name = "colCO_LNS1";
-            this.colCO_LNS1.OptionsColumn.ReadOnly = true;
-            this.colCO_LNS1.Visible = true;
-            this.colCO_LNS1.VisibleIndex = 4;
-            // 
-            // colCO_LUONG_CD1
-            // 
-            this.colCO_LUONG_CD1.Caption = "Có lương cố định";
-            this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
-            this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
-            this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
-            this.colCO_LUONG_CD1.Visible = true;
-            this.colCO_LUONG_CD1.VisibleIndex = 5;
-            // 
-            // colPHAI_DONG_DOAN_PHI1
-            // 
-            this.colPHAI_DONG_DOAN_PHI1.Caption = "Phải đóng đoàn phí";
-            this.colPHAI_DONG_DOAN_PHI1.FieldName = "PHAI_DONG_DOAN_PHI";
-            this.colPHAI_DONG_DOAN_PHI1.Name = "colPHAI_DONG_DOAN_PHI1";
-            this.colPHAI_DONG_DOAN_PHI1.OptionsColumn.ReadOnly = true;
-            this.colPHAI_DONG_DOAN_PHI1.Visible = true;
-            this.colPHAI_DONG_DOAN_PHI1.VisibleIndex = 6;
-            // 
-            // colPHAI_DONG_BAO_HIEM1
-            // 
-            this.colPHAI_DONG_BAO_HIEM1.Caption = "Phải đóng bảo hiểm";
-            this.colPHAI_DONG_BAO_HIEM1.FieldName = "PHAI_DONG_BAO_HIEM";
-            this.colPHAI_DONG_BAO_HIEM1.Name = "colPHAI_DONG_BAO_HIEM1";
-            this.colPHAI_DONG_BAO_HIEM1.OptionsColumn.ReadOnly = true;
-            this.colPHAI_DONG_BAO_HIEM1.Visible = true;
-            this.colPHAI_DONG_BAO_HIEM1.VisibleIndex = 7;
-            // 
-            // colSO_LUONG_PHU_THUOC1
-            // 
-            this.colSO_LUONG_PHU_THUOC1.Caption = "Số lương phụ phuộc";
-            this.colSO_LUONG_PHU_THUOC1.FieldName = "SO_LUONG_PHU_THUOC";
-            this.colSO_LUONG_PHU_THUOC1.Name = "colSO_LUONG_PHU_THUOC1";
-            this.colSO_LUONG_PHU_THUOC1.OptionsColumn.ReadOnly = true;
-            this.colSO_LUONG_PHU_THUOC1.Visible = true;
-            this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -431,6 +346,90 @@
             // pR_GET_THAM_SO_BANG_LUONGTableAdapter2
             // 
             this.pR_GET_THAM_SO_BANG_LUONGTableAdapter2.ClearBeforeFill = true;
+            // 
+            // colID1
+            // 
+            this.colID1.FieldName = "ID";
+            this.colID1.Name = "colID1";
+            this.colID1.OptionsColumn.ReadOnly = true;
+            // 
+            // colMA_NV1
+            // 
+            this.colMA_NV1.Caption = "Mã nhân viên";
+            this.colMA_NV1.FieldName = "MA_NV";
+            this.colMA_NV1.Name = "colMA_NV1";
+            this.colMA_NV1.Visible = true;
+            this.colMA_NV1.VisibleIndex = 0;
+            // 
+            // colHO_DEM1
+            // 
+            this.colHO_DEM1.Caption = "Họ đệm";
+            this.colHO_DEM1.FieldName = "HO_DEM";
+            this.colHO_DEM1.Name = "colHO_DEM1";
+            this.colHO_DEM1.Visible = true;
+            this.colHO_DEM1.VisibleIndex = 1;
+            // 
+            // colTEN1
+            // 
+            this.colTEN1.Caption = "Tên";
+            this.colTEN1.FieldName = "TEN";
+            this.colTEN1.Name = "colTEN1";
+            this.colTEN1.Visible = true;
+            this.colTEN1.VisibleIndex = 2;
+            // 
+            // colDA_CHAM_CONG1
+            // 
+            this.colDA_CHAM_CONG1.Caption = "Đã chấm công";
+            this.colDA_CHAM_CONG1.FieldName = "DA_CHAM_CONG";
+            this.colDA_CHAM_CONG1.Name = "colDA_CHAM_CONG1";
+            this.colDA_CHAM_CONG1.OptionsColumn.ReadOnly = true;
+            this.colDA_CHAM_CONG1.Visible = true;
+            this.colDA_CHAM_CONG1.VisibleIndex = 3;
+            // 
+            // colCO_LNS1
+            // 
+            this.colCO_LNS1.Caption = "Có LNS";
+            this.colCO_LNS1.FieldName = "CO_LNS";
+            this.colCO_LNS1.Name = "colCO_LNS1";
+            this.colCO_LNS1.OptionsColumn.ReadOnly = true;
+            this.colCO_LNS1.Visible = true;
+            this.colCO_LNS1.VisibleIndex = 4;
+            // 
+            // colCO_LUONG_CD1
+            // 
+            this.colCO_LUONG_CD1.Caption = "Có LCD";
+            this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
+            this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
+            this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
+            this.colCO_LUONG_CD1.Visible = true;
+            this.colCO_LUONG_CD1.VisibleIndex = 5;
+            // 
+            // colPHAI_DONG_DOAN_PHI1
+            // 
+            this.colPHAI_DONG_DOAN_PHI1.Caption = "Phải đóng Đoàn phí ";
+            this.colPHAI_DONG_DOAN_PHI1.FieldName = "PHAI_DONG_DOAN_PHI";
+            this.colPHAI_DONG_DOAN_PHI1.Name = "colPHAI_DONG_DOAN_PHI1";
+            this.colPHAI_DONG_DOAN_PHI1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_DOAN_PHI1.Visible = true;
+            this.colPHAI_DONG_DOAN_PHI1.VisibleIndex = 6;
+            // 
+            // colPHAI_DONG_BAO_HIEM1
+            // 
+            this.colPHAI_DONG_BAO_HIEM1.Caption = "Phải đóng BHXH";
+            this.colPHAI_DONG_BAO_HIEM1.FieldName = "PHAI_DONG_BAO_HIEM";
+            this.colPHAI_DONG_BAO_HIEM1.Name = "colPHAI_DONG_BAO_HIEM1";
+            this.colPHAI_DONG_BAO_HIEM1.OptionsColumn.ReadOnly = true;
+            this.colPHAI_DONG_BAO_HIEM1.Visible = true;
+            this.colPHAI_DONG_BAO_HIEM1.VisibleIndex = 7;
+            // 
+            // colSO_LUONG_PHU_THUOC1
+            // 
+            this.colSO_LUONG_PHU_THUOC1.Caption = "Số lượng phụ thuộc";
+            this.colSO_LUONG_PHU_THUOC1.FieldName = "SO_LUONG_PHU_THUOC";
+            this.colSO_LUONG_PHU_THUOC1.Name = "colSO_LUONG_PHU_THUOC1";
+            this.colSO_LUONG_PHU_THUOC1.OptionsColumn.ReadOnly = true;
+            this.colSO_LUONG_PHU_THUOC1.Visible = true;
+            this.colSO_LUONG_PHU_THUOC1.VisibleIndex = 8;
             // 
             // F401_he_so_bao_cao_luong
             // 
@@ -486,6 +485,7 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
         private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource2;
         private BKI_LUONGDataSet5 bKI_LUONGDataSet5;
+        private BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter2;
         private DevExpress.XtraGrid.Columns.GridColumn colID1;
         private DevExpress.XtraGrid.Columns.GridColumn colMA_NV1;
         private DevExpress.XtraGrid.Columns.GridColumn colHO_DEM1;
@@ -496,6 +496,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_DOAN_PHI1;
         private DevExpress.XtraGrid.Columns.GridColumn colPHAI_DONG_BAO_HIEM1;
         private DevExpress.XtraGrid.Columns.GridColumn colSO_LUONG_PHU_THUOC1;
-        private BKI_LUONGDataSet5TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter2;
     }
 }
