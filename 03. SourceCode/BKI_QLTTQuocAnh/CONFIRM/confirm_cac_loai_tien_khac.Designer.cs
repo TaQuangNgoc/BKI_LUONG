@@ -103,7 +103,7 @@
             this.ClientSize = new System.Drawing.Size(595, 200);
             this.Controls.Add(this.panel1);
             this.Name = "confirm_cac_loai_tien_khac";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "confirm_cac_loai_tien_khac";
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup.Properties)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -77,7 +77,7 @@
             // 
             this.m_rdb_luu_lai_toan_bo.AutoSize = true;
             this.m_rdb_luu_lai_toan_bo.Depth = 0;
-            this.m_rdb_luu_lai_toan_bo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_rdb_luu_lai_toan_bo.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_rdb_luu_lai_toan_bo.Location = new System.Drawing.Point(12, 65);
             this.m_rdb_luu_lai_toan_bo.Margin = new System.Windows.Forms.Padding(0);
             this.m_rdb_luu_lai_toan_bo.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -96,7 +96,7 @@
             // 
             this.m_rdb_xu_ly_du_lieu.AutoSize = true;
             this.m_rdb_xu_ly_du_lieu.Depth = 0;
-            this.m_rdb_xu_ly_du_lieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_rdb_xu_ly_du_lieu.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_rdb_xu_ly_du_lieu.Location = new System.Drawing.Point(12, 88);
             this.m_rdb_xu_ly_du_lieu.Margin = new System.Windows.Forms.Padding(0);
             this.m_rdb_xu_ly_du_lieu.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -113,7 +113,7 @@
             // 
             // m_chk_0_ghi_de
             // 
-            this.m_chk_0_ghi_de.Location = new System.Drawing.Point(66, 174);
+            this.m_chk_0_ghi_de.Location = new System.Drawing.Point(66, 201);
             this.m_chk_0_ghi_de.Name = "m_chk_0_ghi_de";
             this.m_chk_0_ghi_de.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_chk_0_ghi_de.Properties.Appearance.Options.UseFont = true;
@@ -125,7 +125,7 @@
             // m_lbl_option_detail1
             // 
             this.m_lbl_option_detail1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_option_detail1.Location = new System.Drawing.Point(51, 111);
+            this.m_lbl_option_detail1.Location = new System.Drawing.Point(51, 121);
             this.m_lbl_option_detail1.Name = "m_lbl_option_detail1";
             this.m_lbl_option_detail1.Size = new System.Drawing.Size(213, 16);
             this.m_lbl_option_detail1.TabIndex = 8;
@@ -134,7 +134,7 @@
             // m_lbl_option_detail2
             // 
             this.m_lbl_option_detail2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_option_detail2.Location = new System.Drawing.Point(51, 155);
+            this.m_lbl_option_detail2.Location = new System.Drawing.Point(51, 179);
             this.m_lbl_option_detail2.Name = "m_lbl_option_detail2";
             this.m_lbl_option_detail2.Size = new System.Drawing.Size(200, 16);
             this.m_lbl_option_detail2.TabIndex = 8;
@@ -142,7 +142,7 @@
             // 
             // m_chk_1_ghi_moi
             // 
-            this.m_chk_1_ghi_moi.Location = new System.Drawing.Point(66, 130);
+            this.m_chk_1_ghi_moi.Location = new System.Drawing.Point(66, 143);
             this.m_chk_1_ghi_moi.Name = "m_chk_1_ghi_moi";
             this.m_chk_1_ghi_moi.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_chk_1_ghi_moi.Properties.Appearance.Options.UseFont = true;
@@ -156,7 +156,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel1.Controls.Add(this.m_cmd_confirm);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 210);
+            this.panel1.Location = new System.Drawing.Point(0, 227);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(563, 37);
             this.panel1.TabIndex = 9;
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 247);
+            this.ClientSize = new System.Drawing.Size(563, 264);
             this.Controls.Add(this.m_lbl_option_detail2);
             this.Controls.Add(this.m_lbl_option_detail1);
             this.Controls.Add(this.m_chk_1_ghi_moi);
