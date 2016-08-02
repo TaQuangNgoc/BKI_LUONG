@@ -215,19 +215,13 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
 
         private int check_db_da_cham_cong()
         {
-            int v_so_nv_da_cham_cong = 0;
+            
             DS_GD_CHAM_CONG v_ds = new DS_GD_CHAM_CONG();
             US_GD_CHAM_CONG v_us = new US_GD_CHAM_CONG();
             //v_us.FillDatasetChamCong(v_ds, m_txt_thang.Text, m_txt_nam.Text);
-            v_us.FillDatasetChamCong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString());
-            for (int i = 0; i < m_grv.RowCount; i++)
-            {
-                var v_dr = m_grv.GetDataRow(i);
-                DataRow[] v_dr_1_nv = v_ds.Tables[0].Select("MA_NV ='" + v_dr[0].ToString() + "'");
-                if (v_dr_1_nv.Count() != 0)
-                    v_so_nv_da_cham_cong++;
-            }
-            return v_so_nv_da_cham_cong;
+            v_us.FillDatasetChamCongOutputSoLuong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),2);
+
+            return v_ds.Tables[0].Rows.Count;
         }
 
         private bool checkBangChamCong()
@@ -408,7 +402,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
                     else
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
-                    v_us.UseTransOfUSObject(m_us_gd_cham_cong);
+                   
                     v_us.Insert();
                 }
                 catch (Exception v_e)

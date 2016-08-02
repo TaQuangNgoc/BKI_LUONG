@@ -128,7 +128,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                     
                 }
                 m_grc.DataSource = dt;
-
+                m_grv.Columns["Ghi chú"].Visible = false;
             }
            
             format_gridview();
@@ -145,7 +145,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 m_grv.Columns[i].Width = 50;
                 m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
-            m_grv.Columns["Ghi chú"].Visible = false;
+           
 
             WinFormControls.make_stt_indicator(m_grv);
             for (int i = 0; i < 3; i++)
@@ -211,19 +211,12 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 
         private int check_db_da_cham_cong()
         {
-            int v_so_nv_da_cham_cong = 0;
+           
             DS_GD_CHAM_CONG v_ds = new DS_GD_CHAM_CONG();
             US_GD_CHAM_CONG v_us = new US_GD_CHAM_CONG();
             //v_us.FillDatasetChamCong(v_ds, m_txt_thang.Text, m_txt_nam.Text);
-            v_us.FillDatasetChamCong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString());
-            for (int i = 0; i < m_grv.RowCount; i++)
-            {
-                var v_dr = m_grv.GetDataRow(i);
-                DataRow[] v_dr_1_nv = v_ds.Tables[0].Select("MA_NV ='" + v_dr[0].ToString() + "'");
-                if (v_dr_1_nv.Count() != 0)
-                    v_so_nv_da_cham_cong++;
-            }
-            return v_so_nv_da_cham_cong;
+            v_us.FillDatasetChamCongOutputSoLuong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),1);
+            return v_ds.Tables[0].Rows.Count;
         }
 
         private bool checkBangChamCong()
@@ -257,9 +250,9 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 {
                     bool trung_loi = false;      
                         decimal result;
-                        if (!decimal.TryParse(v_dr[j].ToString().Trim(), out result) )
+                        if (decimal.TryParse(v_dr[j].ToString().Trim(), out result) )
                             trung_loi = true;
-                        if (j == 3) trung_loi = false;     
+                        if (j == 3 && !decimal.TryParse(v_dr[j].ToString().Trim(), out result)) trung_loi = false;     
                     if (trung_loi == false)
                     {  
                             trang_thai = false;
@@ -283,7 +276,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 
         private void check_ma_nv_trong(DataRow v_dr, ref bool trang_thai)
         {
-            if (v_dr["MA_NV"].ToString() == "")
+            if (v_dr["Mã nhân viên"].ToString() == "")
             {
                 trang_thai = false;
                 v_dr["Ghi chú"] += get_text_by_enum(Loi.TrongMaNV);
@@ -299,7 +292,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 var v_drow = m_grv.GetDataRow(i);
                 v_dt.Rows.Add(v_drow[0]);
             }
-            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["MA_NV"].ToString()).ToList().Count;
+            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["Mã nhân viên"].ToString()).ToList().Count;
             if (v_count > 1)
             {
                 trang_thai = false;
@@ -395,7 +388,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                         v_us.datNGAY_CHAM_CONG = new DateTime(nam, v_thang_cham_cong, v_ngay_cham_cong);
                         v_us.dcID_LOAI_LAM_THEM = (decimal)m_sle_loai_lam_them.EditValue;
                         v_us.dcSO_GIO_LAM_THEM = so_gio_lam_them;
-                        v_us.UseTransOfUSObject(m_us_gd_cham_cong);
+                        
                         v_us.Insert();
                     }
                 }

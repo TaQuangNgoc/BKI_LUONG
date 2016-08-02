@@ -82,11 +82,23 @@ namespace BKI_DichVuMatDat.NghiepVu
                 v_ds.Tables[0].Columns.Add("TEN");
                 v_ds.Tables[0].Columns.Add("THANG");
                 v_ds.Tables[0].Columns.Add("NAM");
-                v_ds.Tables[0].Columns.Add("SO_TIEN");           
+                v_ds.Tables[0].Columns.Add("SO_TIEN");
+               
                 m_grc.DataSource = v_ds.Tables[0];
+                format_lan_dau();
                 format_gridview();
                 SaveXLSX(ip_file_name, targetPath);
             }           
+        }
+
+        private void format_lan_dau()
+        {
+            m_grv.Columns["MA_NV"].Caption = "Mã nhân viên";
+            m_grv.Columns["HO_DEM"].Caption = "Họ đệm";
+            m_grv.Columns["TEN"].Caption = "Tên";
+            m_grv.Columns["THANG"].Caption = "Tháng";
+            m_grv.Columns["NAM"].Caption = "Năm";
+            m_grv.Columns["SO_TIEN"].Caption = "Số tiền";
         }
 
         private void SaveXLSX(string ip_file_name, string targetPath)
@@ -127,12 +139,10 @@ namespace BKI_DichVuMatDat.NghiepVu
                 m_grv.Columns[i].Width = 120;
                // m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }
-            m_grv.Columns["SO_TIEN"].DisplayFormat.FormatString = "n0";
-            m_grv.Columns["SO_TIEN"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            m_grv.Columns["MA_NV"].Caption = "Mã nhân viên";
-            m_grv.Columns["HO_DEM"].Caption = "Họ đệm";
-            m_grv.Columns["TEN"].Caption = "Tên";
-            m_grv.Columns["SO_TIEN"].Caption = "Số tiền";
+            
+            m_grv.Columns["Số tiền"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            m_grv.Columns["Số tiền"].DisplayFormat.FormatString = "n0";
+           
             m_grv.ColumnPanelRowHeight = 35;
             m_grv.RowHeight = 30;
             
@@ -227,7 +237,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void check_ma_nv_trong(DataRow v_dr, ref bool trang_thai)
         {
-            if (v_dr["MA_NV"].ToString() == "")
+            if (v_dr["Mã nhân viên"].ToString() == "")
             {
                 trang_thai = false;
                 v_dr["Ghi chú"] += get_text_by_enum(Loi.TrongMaNV);
@@ -243,7 +253,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                 var v_drow = m_grv.GetDataRow(i);
                 v_dt.Rows.Add(v_drow[0]);
             }
-            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["MA_NV"].ToString()).ToList().Count;
+            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["Mã nhân viên"].ToString()).ToList().Count;
             if (v_count > 1)
             {
                 trang_thai = false;

@@ -189,6 +189,12 @@ namespace BKI_DichVuMatDat.NghiepVu
                                                    select row;
 
             return CIPConvert.ToDecimal(res.First()[DM_LOAI_NGAY_CONG.ID].ToString());
+            //US_DUNG_CHUNG v_us= new US_DUNG_CHUNG();
+            //DataSet v_ds= new DataSet();
+            //v_ds.Tables.Add(new DataTable());
+            //v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM DM_LOAI_NGAY_CONG WHERE MA_NGAY_CONG='" + ip_ma_ngay_cong + "'");
+            //return decimal.Parse(v_ds.Tables[0].Rows[0][0].ToString());
+
         }
         #endregion
 
@@ -199,7 +205,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             LayDuLieuNhanVien();
             if (!checkBangChamCong())
                 return false;
-            int v_so_nv_da_cham_cong = check_db_da_cham_cong();
+            decimal v_so_nv_da_cham_cong = get_so_luong_cham_cong();
             if (v_so_nv_da_cham_cong != 0)
             {
                 string v_str_confirm = "Hiện có " + v_so_nv_da_cham_cong + "/" + m_grv.RowCount + " nhân viên trong bảng chấm công đã có dữ liệu. \nBạn có muốn xóa dữ liệu cũ của những nhân viên này và nhập lại?"
@@ -211,30 +217,17 @@ namespace BKI_DichVuMatDat.NghiepVu
             return true;
         }
 
-        private decimal get_so_luong_cham_cong()
-        {
-            DataSet v_ds = new DataSet();
-            v_ds.Tables.Add(new DataTable());
-            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            v_us.FillDatasetChamCongTheoIdHinhThuc(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(), 1);
-            return decimal.Parse(v_ds.Tables[0].Rows[0]["SO_LUONG"].ToString());
-        }
+       
 
         private int check_db_da_cham_cong()
         {
-            int v_so_nv_da_cham_cong = 0;
+            
             DS_GD_CHAM_CONG v_ds = new DS_GD_CHAM_CONG();
             US_GD_CHAM_CONG v_us = new US_GD_CHAM_CONG();
             //v_us.FillDatasetChamCong(v_ds, m_txt_thang.Text, m_txt_nam.Text);
-            v_us.FillDatasetChamCong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString());
-            for (int i = 0; i < m_grv.RowCount; i++)
-            {
-                var v_dr = m_grv.GetDataRow(i);
-                DataRow[] v_dr_1_nv = v_ds.Tables[0].Select("MA_NV ='" + v_dr[0].ToString() + "'");
-                if (v_dr_1_nv.Count() != 0)
-                    v_so_nv_da_cham_cong++;
-            }
-            return v_so_nv_da_cham_cong;
+            v_us.FillDatasetChamCongOutputSoLuong(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),1);
+
+            return v_ds.Tables[0].Rows.Count;
         }
 
         private bool checkBangChamCong()
@@ -303,7 +296,7 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void check_ma_nv_trong(DataRow v_dr, ref bool trang_thai)
         {
-            if (v_dr["MA_NV"].ToString() == "")
+            if (v_dr["Mã nhân viên"].ToString() == "")
             {
                 trang_thai = false;
                 v_dr["Ghi chú"] += get_text_by_enum(Loi.TrongMaNV);
@@ -313,13 +306,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void check_ma_nv_duplicate(DataRow v_dr, ref bool trang_thai)
         {
             DataTable v_dt = new DataTable();
-            v_dt.Columns.Add();
+            v_dt.Columns.Add("MA_NV", typeof(string));
             for (int i = 0; i < m_grv.RowCount; i++)
             {
                 var v_drow = m_grv.GetDataRow(i);
                 v_dt.Rows.Add(v_drow[0]);
             }
-            int v_count = v_dt.AsEnumerable().Where(x => x["Column1"].ToString() == v_dr["MA_NV"].ToString()).ToList().Count;
+            int v_count = v_dt.AsEnumerable().Where(x => x["MA_NV"].ToString() == v_dr["Mã nhân viên"].ToString()).ToList().Count;
             if (v_count > 1)
             {
                 trang_thai = false;
@@ -356,13 +349,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void m_bgwk_DoWork(object sender, DoWorkEventArgs e)
         { 
             BackgroundWorker worker = sender as BackgroundWorker;
-            m_us_gd_cham_cong.BeginTransaction();
+           
             for (int i = 0; i < m_grv.RowCount; i++)
             {
                 luuChamCong(m_grv.GetDataRow(i));
                  worker.ReportProgress((i + 1) * 100 / m_grv.RowCount);
             }
-            m_us_gd_cham_cong.CommitTransaction();
+          
         }
 
         private void m_bgwk_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -391,7 +384,6 @@ namespace BKI_DichVuMatDat.NghiepVu
         private void xoa_du_lieu_cham_cong_cu(decimal ip_dc_id_nv)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            //v_us.xoa_du_lieu_cham_cong(ip_dc_id_nv, m_txt_thang.Text, m_txt_nam.Text);
             v_us.xoaDuLieuChamCongByID(ip_dc_id_nv, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(),1);
         }
 
@@ -415,7 +407,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
                     else
                         v_us.dcID_LOAI_NGAY_CONG = get_loai_ngay_cong(ip_dataRow[i].ToString());
-                    v_us.UseTransOfUSObject(m_us_gd_cham_cong);
+                   
                     v_us.Insert();
                   // update_rpt_luong(v_us.dcID_NHAN_VIEN);
                 }
@@ -523,6 +515,15 @@ namespace BKI_DichVuMatDat.NghiepVu
             if (v_us.IsLockBangLuong(thang, nam))
                 return true;
             return false;
+        }
+
+        private decimal get_so_luong_cham_cong()
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.FillDatasetChamCongTheoIdHinhThuc(v_ds, m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString(), 1);
+            return decimal.Parse(v_ds.Tables[0].Rows[0]["SO_LUONG"].ToString());
         }
 
         private void m_cmd_chon_du_lieu_Click(object sender, EventArgs e)

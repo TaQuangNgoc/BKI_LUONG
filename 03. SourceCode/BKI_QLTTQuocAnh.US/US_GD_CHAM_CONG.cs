@@ -284,11 +284,12 @@ namespace BKI_DichVuMatDat.US
         }
 
 
-        public void FillDatasetChamCong(DataSet v_ds, string ip_str_thang, string ip_str_nam)
+        public void FillDatasetChamCongOutputSoLuong(DataSet v_ds, string ip_str_thang, string ip_str_nam, decimal ID_HINH_THUC)
         {
             CStoredProc v_cstore = new CStoredProc("pr_GET_DU_LIEU_CHAM_CONG");
             v_cstore.addDecimalInputParam("@thang", CIPConvert.ToDecimal(ip_str_thang));
             v_cstore.addDecimalInputParam("@nam", CIPConvert.ToDecimal(ip_str_nam));
+            v_cstore.addDecimalInputParam("@ID_HINH_THUC", ID_HINH_THUC);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
