@@ -53,7 +53,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(474, 389);
+            this.panel1.Size = new System.Drawing.Size(584, 389);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -67,7 +67,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(474, 290);
+            this.panel3.Size = new System.Drawing.Size(584, 290);
             this.panel3.TabIndex = 8;
             // 
             // m_cb_luong_theo_thoi_gian
@@ -156,12 +156,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(474, 53);
+            this.panel2.Size = new System.Drawing.Size(584, 53);
             this.panel2.TabIndex = 6;
             // 
             // label1
@@ -169,7 +169,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Location = new System.Drawing.Point(74, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(480, 20);
             this.label1.TabIndex = 0;
@@ -182,7 +182,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 343);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(474, 46);
+            this.panel4.Size = new System.Drawing.Size(584, 46);
             this.panel4.TabIndex = 7;
             // 
             // m_btn_luu
@@ -197,7 +197,7 @@
             this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(331, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(441, 0);
             this.m_btn_luu.Name = "m_btn_luu";
             this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
             this.m_btn_luu.TabIndex = 14;
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 389);
+            this.ClientSize = new System.Drawing.Size(584, 389);
             this.Controls.Add(this.panel1);
             this.Name = "CAC_HINH_THUC_TINH_LUONG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

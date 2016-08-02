@@ -65,10 +65,10 @@
             this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_btn_them = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_sua = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.m_btn_luu = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_them = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_sua = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.m_cmd_xoa = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -272,8 +272,20 @@
             // 
             // m_grv
             // 
-            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseFont = true;
+            this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.Row.Options.UseFont = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -294,7 +306,9 @@
             this.gridColumn15});
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
+            this.m_grv.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_grv.OptionsView.ShowGroupPanel = false;
+            this.m_grv.PaintStyleName = "Web";
             // 
             // gridColumn3
             // 
@@ -467,9 +481,9 @@
             this.m_btn_tiep_tuc.Appearance.Options.UseForeColor = true;
             this.m_btn_tiep_tuc.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_btn_tiep_tuc.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_tiep_tuc.Location = new System.Drawing.Point(410, 16);
+            this.m_btn_tiep_tuc.Location = new System.Drawing.Point(440, 15);
             this.m_btn_tiep_tuc.Name = "m_btn_tiep_tuc";
-            this.m_btn_tiep_tuc.Size = new System.Drawing.Size(203, 46);
+            this.m_btn_tiep_tuc.Size = new System.Drawing.Size(203, 34);
             this.m_btn_tiep_tuc.TabIndex = 32;
             this.m_btn_tiep_tuc.Text = "TIẾP TỤC";
             this.m_btn_tiep_tuc.Click += new System.EventHandler(this.m_btn_tiep_tuc_Click);
@@ -493,99 +507,80 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 31);
+            this.label6.Location = new System.Drawing.Point(16, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 18);
+            this.label6.Size = new System.Drawing.Size(139, 18);
             this.label6.TabIndex = 2;
-            this.label6.Text = "Chọn năm";
+            this.label6.Text = "Chọn năm( điền số)";
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.m_btn_them);
-            this.panel4.Controls.Add(this.m_btn_sua);
-            this.panel4.Controls.Add(this.m_btn_xoa);
             this.panel4.Controls.Add(this.m_btn_luu);
+            this.panel4.Controls.Add(this.m_cmd_them);
+            this.panel4.Controls.Add(this.m_cmd_sua);
+            this.panel4.Controls.Add(this.m_cmd_xoa);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 533);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(952, 41);
             this.panel4.TabIndex = 13;
             // 
-            // m_btn_them
-            // 
-            this.m_btn_them.Appearance.BackColor = System.Drawing.Color.Maroon;
-            this.m_btn_them.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_them.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_them.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_them.Appearance.Options.UseBackColor = true;
-            this.m_btn_them.Appearance.Options.UseFont = true;
-            this.m_btn_them.Appearance.Options.UseForeColor = true;
-            this.m_btn_them.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_them.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_them.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_them.Location = new System.Drawing.Point(425, 0);
-            this.m_btn_them.Name = "m_btn_them";
-            this.m_btn_them.Size = new System.Drawing.Size(136, 41);
-            this.m_btn_them.TabIndex = 34;
-            this.m_btn_them.Text = "THÊM";
-            this.m_btn_them.Click += new System.EventHandler(this.m_btn_them_Click);
-            // 
-            // m_btn_sua
-            // 
-            this.m_btn_sua.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_sua.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_sua.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_sua.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_sua.Appearance.Options.UseBackColor = true;
-            this.m_btn_sua.Appearance.Options.UseFont = true;
-            this.m_btn_sua.Appearance.Options.UseForeColor = true;
-            this.m_btn_sua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_sua.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_sua.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_sua.Location = new System.Drawing.Point(561, 0);
-            this.m_btn_sua.Name = "m_btn_sua";
-            this.m_btn_sua.Size = new System.Drawing.Size(133, 41);
-            this.m_btn_sua.TabIndex = 32;
-            this.m_btn_sua.Text = "SỬA";
-            this.m_btn_sua.Click += new System.EventHandler(this.m_btn_sua_Click);
-            // 
-            // m_btn_xoa
-            // 
-            this.m_btn_xoa.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.m_btn_xoa.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_btn_xoa.Appearance.Options.UseBackColor = true;
-            this.m_btn_xoa.Appearance.Options.UseFont = true;
-            this.m_btn_xoa.Appearance.Options.UseForeColor = true;
-            this.m_btn_xoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.m_btn_xoa.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_xoa.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_xoa.Location = new System.Drawing.Point(694, 0);
-            this.m_btn_xoa.Name = "m_btn_xoa";
-            this.m_btn_xoa.Size = new System.Drawing.Size(132, 41);
-            this.m_btn_xoa.TabIndex = 33;
-            this.m_btn_xoa.Text = "XÓA";
-            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
-            // 
             // m_btn_luu
             // 
-            this.m_btn_luu.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_luu.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_btn_luu.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Appearance.ForeColor = System.Drawing.Color.White;
-            this.m_btn_luu.Appearance.Options.UseBackColor = true;
-            this.m_btn_luu.Appearance.Options.UseFont = true;
-            this.m_btn_luu.Appearance.Options.UseForeColor = true;
-            this.m_btn_luu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_luu.Depth = 0;
             this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.m_btn_luu.Location = new System.Drawing.Point(826, 0);
+            this.m_btn_luu.Location = new System.Drawing.Point(432, 0);
+            this.m_btn_luu.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(126, 41);
-            this.m_btn_luu.TabIndex = 35;
-            this.m_btn_luu.Text = "LƯU";
+            this.m_btn_luu.Primary = true;
+            this.m_btn_luu.Size = new System.Drawing.Size(130, 41);
+            this.m_btn_luu.TabIndex = 40;
+            this.m_btn_luu.Text = "Lưu";
+            this.m_btn_luu.UseVisualStyleBackColor = true;
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            // 
+            // m_cmd_them
+            // 
+            this.m_cmd_them.Depth = 0;
+            this.m_cmd_them.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_them.Location = new System.Drawing.Point(562, 0);
+            this.m_cmd_them.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_them.Name = "m_cmd_them";
+            this.m_cmd_them.Primary = true;
+            this.m_cmd_them.Size = new System.Drawing.Size(130, 41);
+            this.m_cmd_them.TabIndex = 38;
+            this.m_cmd_them.Text = "Thêm";
+            this.m_cmd_them.UseVisualStyleBackColor = true;
+            this.m_cmd_them.Click += new System.EventHandler(this.m_cmd_them_Click);
+            // 
+            // m_cmd_sua
+            // 
+            this.m_cmd_sua.Depth = 0;
+            this.m_cmd_sua.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_sua.Location = new System.Drawing.Point(692, 0);
+            this.m_cmd_sua.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_sua.Name = "m_cmd_sua";
+            this.m_cmd_sua.Primary = true;
+            this.m_cmd_sua.Size = new System.Drawing.Size(130, 41);
+            this.m_cmd_sua.TabIndex = 37;
+            this.m_cmd_sua.Text = "Sửa";
+            this.m_cmd_sua.UseVisualStyleBackColor = true;
+            this.m_cmd_sua.Click += new System.EventHandler(this.m_cmd_sua_Click);
+            // 
+            // m_cmd_xoa
+            // 
+            this.m_cmd_xoa.Depth = 0;
+            this.m_cmd_xoa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_xoa.Location = new System.Drawing.Point(822, 0);
+            this.m_cmd_xoa.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_cmd_xoa.Name = "m_cmd_xoa";
+            this.m_cmd_xoa.Primary = true;
+            this.m_cmd_xoa.Size = new System.Drawing.Size(130, 41);
+            this.m_cmd_xoa.TabIndex = 39;
+            this.m_cmd_xoa.Text = "Xóa";
+            this.m_cmd_xoa.UseVisualStyleBackColor = true;
+            this.m_cmd_xoa.Visible = false;
+            this.m_cmd_xoa.Click += new System.EventHandler(this.m_cmd_xoa_Click);
             // 
             // panel3
             // 
@@ -610,7 +605,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -674,10 +669,6 @@
         private MaterialSkin.Controls.MaterialTabControl tab_Control1;
         private System.Windows.Forms.TabPage tab_danhmucloainhanvien;
         private System.Windows.Forms.TabPage tab_so_ngay_cong_tieu_chuan;
-        private DevExpress.XtraEditors.SimpleButton m_btn_them;
-        private DevExpress.XtraEditors.SimpleButton m_btn_sua;
-        private DevExpress.XtraEditors.SimpleButton m_btn_xoa;
-        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private System.Windows.Forms.GroupBox m_group_cau_hinh;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraGrid.GridControl m_grc;
@@ -709,5 +700,9 @@
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_loai_nv;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_them;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_sua;
+        private MaterialSkin.Controls.MaterialRaisedButton m_cmd_xoa;
+        private MaterialSkin.Controls.MaterialRaisedButton m_btn_luu;
     }
 }

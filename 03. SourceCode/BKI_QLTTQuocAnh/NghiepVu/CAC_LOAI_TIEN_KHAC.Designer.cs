@@ -141,9 +141,11 @@
             this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn3,

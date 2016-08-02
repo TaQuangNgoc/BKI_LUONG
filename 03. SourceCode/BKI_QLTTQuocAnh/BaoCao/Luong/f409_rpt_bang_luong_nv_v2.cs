@@ -33,6 +33,7 @@ namespace BKI_DichVuMatDat.BaoCao
         //Field & Property
         BindingList<DTO_BANG_LUONG_V2> m_lst_luong_v2 = new BindingList<DTO_BANG_LUONG_V2>();
         BindingList<string> m_lst_nhan_vien_khong_ton_tai = new BindingList<string>();
+        ENUM_CONFIRM_TINH_BANG_LUONG v_dlg_confirm = ENUM_CONFIRM_TINH_BANG_LUONG.NONE;
 
         #region Public Interface
         ~f409_rpt_bang_luong_nv_v2()
@@ -212,7 +213,8 @@ namespace BKI_DichVuMatDat.BaoCao
                 hide_grid();
                 show_progress_bar();
                 Thread.Sleep(1000);
-                m_bgwk.RunWorkerAsync();
+                start_tinh_bang_luong_process();
+               
             }
             catch(Exception v_e)
             {
@@ -231,7 +233,9 @@ namespace BKI_DichVuMatDat.BaoCao
                     e.Cancel = true;
                     return;
                 }
-                start_tinh_bang_luong_process();
+                var v_ds_danh_sach_nhan_vien = TinhLuongQL.Instance.LayDanhSachNhanVienCanTinhLuong(v_dlg_confirm, lay_thang(), lay_nam());
+                tinh_bang_luong_tu_dong(v_ds_danh_sach_nhan_vien);
+                
                 if (worker.CancellationPending)
                 {
                     e.Cancel = true;
@@ -487,14 +491,14 @@ namespace BKI_DichVuMatDat.BaoCao
         private void start_tinh_bang_luong_process()
         {
 
-            var v_dlg_confirm = confirm_cach_tinh_bang_luong_tu_nguoi_dung();
+             v_dlg_confirm = confirm_cach_tinh_bang_luong_tu_nguoi_dung();
             if(v_dlg_confirm == ENUM_CONFIRM_TINH_BANG_LUONG.NONE)
             {
-                m_bgwk.CancelAsync();
+               // m_bgwk.CancelAsync();
                 return;
             }
-            var v_ds_danh_sach_nhan_vien = TinhLuongQL.Instance.LayDanhSachNhanVienCanTinhLuong(v_dlg_confirm, lay_thang(), lay_nam());
-            tinh_bang_luong_tu_dong(v_ds_danh_sach_nhan_vien);
+            m_bgwk.RunWorkerAsync();
+           
         }
         private ENUM_CONFIRM_TINH_BANG_LUONG confirm_cach_tinh_bang_luong_tu_nguoi_dung()
         {

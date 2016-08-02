@@ -116,7 +116,7 @@
             this.Controls.Add(this.radioGroup);
             this.Controls.Add(this.panelControl2);
             this.Name = "msg001_confirm_tinh_bang_luong";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Msg001 - Xác nhận cách tính bảng lương";
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();

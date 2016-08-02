@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -246,7 +246,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -332,9 +332,9 @@
             // 
             this.m_grc_phu_cap.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.m_grc_phu_cap.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode3});
+            gridLevelNode1});
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
@@ -1190,9 +1190,9 @@
             // 
             this.m_grc_luong.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_luong.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode3.RelationName = "Level1";
             this.m_grc_luong.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode3});
             this.m_grc_luong.Location = new System.Drawing.Point(0, 0);
             this.m_grc_luong.MainView = this.m_grv_luong;
             this.m_grc_luong.Name = "m_grc_luong";

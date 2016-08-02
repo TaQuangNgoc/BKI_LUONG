@@ -519,7 +519,6 @@
     <Compile Include="CAI_DAT\THAM_SO_KHAC.designer.cs">
       <DependentUpon>THAM_SO_KHAC.cs</DependentUpon>
     </Compile>
-    <Compile Include="CAI_DAT\US_DM_LOAI_NHA_VIEN.cs" />
     <Compile Include="COMMON\CHRMCommon.cs" />
     <Compile Include="COMMON\FTP.cs" />
     <Compile Include="CONFIRM\msg003_hien_thi_danh_sach.cs">

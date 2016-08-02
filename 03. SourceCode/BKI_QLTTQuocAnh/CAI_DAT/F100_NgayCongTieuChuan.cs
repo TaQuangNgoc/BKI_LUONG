@@ -27,9 +27,9 @@ namespace BKI_DichVuMatDat.CAI_DAT
             tab_Control1.SizeMode = TabSizeMode.Fixed;
             tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
             tab_Control1.Appearance = TabAppearance.Buttons;
-            m_btn_them.Visible = true;
-            m_btn_sua.Visible = true;
-            m_btn_xoa.Visible = true;
+            m_cmd_them.Visible = true;
+            m_cmd_sua.Visible = true;
+            m_cmd_xoa.Visible = true;
             m_btn_luu.Visible = false;
             m_group_cau_hinh.Visible = false;
             m_grv_loai_nv.ColumnPanelRowHeight = 35;
@@ -49,16 +49,16 @@ namespace BKI_DichVuMatDat.CAI_DAT
         {
             if (tab_Control1.SelectedTab.Name == "tab_so_ngay_cong_tieu_chuan")
             {
-                m_btn_them.Visible = false;
-                m_btn_sua.Visible = false;
-                m_btn_xoa.Visible = false;
+                m_cmd_them.Visible = false;
+                m_cmd_sua.Visible = false;
+                m_cmd_xoa.Visible = false;
                 m_btn_luu.Visible = true;
             }
             else
             {
-                m_btn_them.Visible = true;
-                m_btn_sua.Visible = true;
-                m_btn_xoa.Visible = true;
+                m_cmd_them.Visible = true;
+                m_cmd_sua.Visible = true;
+                m_cmd_xoa.Visible = true;
                 m_btn_luu.Visible = false;
             }
         }
@@ -67,8 +67,15 @@ namespace BKI_DichVuMatDat.CAI_DAT
         {
             try
             {
+                
                 if (m_txt_nam.Text != "")
                 {
+                    decimal nam;
+                    if (!decimal.TryParse(m_txt_nam.Text, out nam))
+                    {
+                        XtraMessageBox.Show("Năm phải ở dạng số! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     m_group_cau_hinh.Visible = true;
                     DataSet v_ds_loai_nv_tren_danh_muc = new DataSet();
                     v_ds_loai_nv_tren_danh_muc.Tables.Add(new DataTable());
@@ -95,13 +102,13 @@ namespace BKI_DichVuMatDat.CAI_DAT
                 }
                 else
                 {
-                    XtraMessageBox.Show("Vui lòng điền năm trước khi tiếp tục!");
+                    XtraMessageBox.Show("Vui lòng điền năm trước khi tiếp tục!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
             catch (Exception v_e)
             {
-
-                throw v_e;
+                XtraMessageBox.Show("Năm phải ở dang số! \n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              //  throw v_e;
             }
         }
 
@@ -307,69 +314,86 @@ namespace BKI_DichVuMatDat.CAI_DAT
             return true;
         }
 
-        private void m_btn_them_Click(object sender, EventArgs e)
+       
+
+        private void m_cmd_them_Click(object sender, EventArgs e)
         {
             try
             {
                 if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
                 {
 
-                    //DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f_danh_muc_loai_nhan_vien = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
-                    //v_f_danh_muc_loai_nhan_vien.dislay_for_insert();
-                    //load_data_to_grid_loai_nhan_vien();
-                }
-
-            }
-
-
-            catch (Exception v_e)
-            {
-
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
-        private void m_btn_sua_Click(object sender, EventArgs e)
-        {
-            if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
-            {
-                var v_count_loai_nhan_vien = m_grv_loai_nv.SelectedRowsCount;
-                if (v_count_loai_nhan_vien == 0)
-                {
-                    XtraMessageBox.Show("Bạn phải chọn 1 sản phẩm mới có thể cập nhật!");
-                }
-                else if (v_count_loai_nhan_vien > 1)
-                {
-                    XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 sản phẩm để cập nhật!");
-                }
-                else
-                {
-                    DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
-                    US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                    //DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
-                    //v_f.dislay_for_update(v_us);
-                    //load_data_to_grid_loai_nhan_vien();
-                }
-            }
-        }
-
-        private void m_btn_xoa_Click(object sender, EventArgs e)
-        {
-
-            if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
-            {
-
-                DialogResult dialogresult = MessageBox.Show("bạn có chắc chắn muốn hoàn thành tác vụ này không?", "cảnh báo", MessageBoxButtons.YesNo);
-                if (dialogresult == DialogResult.Yes)
-                {
-                    DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
-                    decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
-                    US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(v_id);
-                    v_us.Delete();
-                    XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_NHAN_VIEN"] + " !");
+                    DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f_danh_muc_loai_nhan_vien = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                    v_f_danh_muc_loai_nhan_vien.dislay_for_insert();
                     load_data_to_grid_loai_nhan_vien();
                 }
             }
+            catch (Exception)
+            {
+                
+                XtraMessageBox.Show("Trùng mã loại nhân viên!\n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+        }
+
+        private void m_cmd_sua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
+                {
+                    var v_count_loai_nhan_vien = m_grv_loai_nv.SelectedRowsCount;
+                    if (v_count_loai_nhan_vien == 0)
+                    {
+                        XtraMessageBox.Show("Bạn phải chọn 1 loại nhân viên có thể cập nhật!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    else if (v_count_loai_nhan_vien > 1)
+                    {
+                        XtraMessageBox.Show("Vui lòng chỉ lựa chọn 1 loại nhân viên để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
+                        US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                        DANH_MUC_LOAI_NHAN_VIEN_DETAIL v_f = new DANH_MUC_LOAI_NHAN_VIEN_DETAIL();
+                        v_f.dislay_for_update(v_us);
+                        load_data_to_grid_loai_nhan_vien();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Trùng mã loại nhân viên!\n Vui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
+        }
+
+        private void m_cmd_xoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tab_Control1.SelectedTab.Name == "tab_danhmucloainhanvien")
+                {
+
+                    DialogResult dialogresult = MessageBox.Show("Bạn có chắc chắn muốn thực hiện tác vụ này ?", "cảnh báo", MessageBoxButtons.YesNo);
+                    if (dialogresult == DialogResult.Yes)
+                    {
+                        DataRow v_dr = m_grv_loai_nv.GetDataRow(m_grv_loai_nv.FocusedRowHandle);
+                        decimal v_id = CIPConvert.ToDecimal(v_dr["ID"].ToString());
+                        US_DM_LOAI_NHAN_VIEN v_us = new US_DM_LOAI_NHAN_VIEN(v_id);
+                        v_us.Delete();
+                        XtraMessageBox.Show("Đã xóa thành công  " + v_dr["TEN_LOAI_NHAN_VIEN"] + " !","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        load_data_to_grid_loai_nhan_vien();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Đã tồn tại nhân viên thuộc loại nhân viên này nên không thể xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            
         }
     }
 }
