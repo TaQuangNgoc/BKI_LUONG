@@ -79,7 +79,7 @@ namespace BKI_DichVuMatDat
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             //  v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=5");
-            v_us.FillDatasetCBO(v_ds, "CM_DM_TU_DIEN", "ID", "TEN", "WHERE ID_LOAI_TU_DIEN=21");
+            v_us.FillDatasetCBO(v_ds, "DM_LOAI_NHAN_VIEN","ID","TEN_LOAI_NHAN_VIEN","");
             m_cbo_loai_nhan_vien.DataSource = v_ds.Tables[0];
             m_cbo_loai_nhan_vien.DisplayMember = "TEN";
             m_cbo_loai_nhan_vien.ValueMember = "ID";
@@ -458,7 +458,7 @@ namespace BKI_DichVuMatDat
                 var v_dr = m_grv_phan_tram.GetDataRow(i);
                 US_GD_PHAN_TRAM_LUONG v_us = new US_GD_PHAN_TRAM_LUONG();
                 v_us.dcID_NHAN_VIEN = m_id_nhan_vien;
-                v_us.dcPHAN_TRAM_LUONG_DUOC_HUONG = decimal.Parse(v_dr["TI_LE"].ToString())/100;
+                v_us.dcPHAN_TRAM_LUONG_DUOC_HUONG = decimal.Parse(v_dr["TI_LE"].ToString());
                 v_us.datTU_NGAY = (DateTime)v_dr["TU_NGAY"];
                 if (v_dr["DEN_NGAY"].ToString() != "")
                     v_us.datDEN_NGAY = (DateTime)v_dr["DEN_NGAY"];
@@ -1172,7 +1172,7 @@ namespace BKI_DichVuMatDat
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "SELECT PHAN_TRAM_LUONG_DUOC_HUONG*100 AS TI_LE, TU_NGAY,DEN_NGAY FROM GD_PHAN_TRAM_LUONG WHERE ID_NHAN_VIEN="+ m_id_nhan_vien);
+            v_us.FillDatasetWithQuery(v_ds, "SELECT PHAN_TRAM_LUONG_DUOC_HUONG AS TI_LE, TU_NGAY,DEN_NGAY FROM GD_PHAN_TRAM_LUONG WHERE ID_NHAN_VIEN="+ m_id_nhan_vien);
             m_grc_phan_tram.DataSource = v_ds.Tables[0];
         }
 
