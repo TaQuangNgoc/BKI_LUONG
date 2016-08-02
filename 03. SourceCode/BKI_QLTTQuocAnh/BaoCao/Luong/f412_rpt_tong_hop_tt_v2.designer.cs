@@ -655,6 +655,8 @@
             this.colTHU_NHAP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTHU_NHAP_KHAC.FieldName = "THU_NHAP_KHAC";
             this.colTHU_NHAP_KHAC.Name = "colTHU_NHAP_KHAC";
+            this.colTHU_NHAP_KHAC.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "THU_NHAP_KHAC", "{0:n0}")});
             this.colTHU_NHAP_KHAC.Visible = true;
             // 
             // colTHU_NHAP
@@ -905,6 +907,8 @@
             this.colPHAI_NOP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colPHAI_NOP_KHAC.FieldName = "PHAI_NOP_KHAC";
             this.colPHAI_NOP_KHAC.Name = "colPHAI_NOP_KHAC";
+            this.colPHAI_NOP_KHAC.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "PHAI_NOP_KHAC", "{0:n0}")});
             this.colPHAI_NOP_KHAC.Visible = true;
             // 
             // colPHAI_NOP

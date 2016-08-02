@@ -232,7 +232,7 @@ namespace BKI_DichVuMatDat.BaoCao
                     return;
                 }
                 start_tinh_bang_luong_process();
-                if(worker.CancellationPending)
+                if (worker.CancellationPending)
                 {
                     e.Cancel = true;
                     worker.CancelAsync();
@@ -617,7 +617,7 @@ namespace BKI_DichVuMatDat.BaoCao
                 for(int v_i_row = 0; v_i_row < v_i_row_count; v_i_row++)
                 {
                     v_dto_bang_luong_v2 = (DTO_BANG_LUONG_V2)m_grv_main.GetRow(v_i_row);
-                    //v_us_rpt_luong_v2 = transfer_dto_2_us_object(v_dto_bang_luong_v2);
+                  //  v_us_rpt_luong_v2 = transfer_dto_2_us_object(v_dto_bang_luong_v2);
 
                     var v_bol_nv_co_trong_bang_luong_chua = TinhLuongQL.Instance.KiemTraNhanVienCoTrongBangLuongChua(v_dto_bang_luong_v2);
                     switch(ip_confirm_save)

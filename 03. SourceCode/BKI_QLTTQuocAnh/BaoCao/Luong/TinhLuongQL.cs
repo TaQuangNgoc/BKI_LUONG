@@ -66,7 +66,7 @@ namespace BKI_DichVuMatDat.NghiepVu.Luong
             return transfer_data_row_db_luong_2_object(ip_dc_id_nhan_vien,v_dr_luong_nv, ip_dc_thang, ip_dc_nam);
         }
 
-        private DTO_BANG_LUONG_V2 transfer_data_row_db_luong_2_object(decimal ip_dc_id_nhan_vien,DataRow v_dr_luong_nv,decimal ip_dc_thang,decimal ip_dc_nam)
+        public DTO_BANG_LUONG_V2 transfer_data_row_db_luong_2_object(decimal ip_dc_id_nhan_vien,DataRow v_dr_luong_nv,decimal ip_dc_thang,decimal ip_dc_nam)
         {
  	         DTO_BANG_LUONG_V2 v_dto_luong = new DTO_BANG_LUONG_V2();
             v_dto_luong.ID_NHAN_VIEN = ip_dc_id_nhan_vien;

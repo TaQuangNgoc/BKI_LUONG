@@ -384,11 +384,11 @@ namespace BKI_DichVuMatDat.BaoCao
             try
             {
                 luu_du_lieu_thay_doi();
-                 XtraMessageBox.Show("Lưu thành công thông tin bảng lương tháng "+ lay_thang()+"/"+ lay_nam()+"!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                 XtraMessageBox.Show("Lưu thành công thay đổi cho bảng lương tháng "+ lay_thang()+"/"+ lay_nam()+"!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception v_e)
             {
-                
+                XtraMessageBox.Show("Vui lòng nhập số, không nhập chữ, và các kí tự khác! ","THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 throw v_e;
             }
         }
@@ -397,7 +397,9 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             foreach (var item in m_lst_index)
             {
-                var v_dto_bang_luong_v2 = (DTO_BANG_LUONG_V2)m_adv_tong_hop.GetRow(item);
+                DTO_BANG_LUONG_V2 v_dto_bang_luong_v2 = new DTO_BANG_LUONG_V2();
+                DataRow v_dr = m_adv_tong_hop.GetDataRow(item);
+                v_dto_bang_luong_v2= TinhLuongQL.Instance.transfer_data_row_db_luong_2_object(decimal.Parse(v_dr["ID"].ToString()), v_dr, lay_thang(), lay_nam());
                 TinhLuongQL.Instance.ReplaceBanGhiLuongNhanVien(v_dto_bang_luong_v2);
                
             }
@@ -407,9 +409,9 @@ namespace BKI_DichVuMatDat.BaoCao
         private void m_adv_tong_hop_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
             
-            if (!m_lst_index.Exists(x => x == e.Column.ColumnHandle))
+            if (!m_lst_index.Exists(x => x == e.RowHandle))
             {
-                m_lst_index.Add(e.Column.ColumnHandle);
+                m_lst_index.Add(e.RowHandle);
             }
         
 
