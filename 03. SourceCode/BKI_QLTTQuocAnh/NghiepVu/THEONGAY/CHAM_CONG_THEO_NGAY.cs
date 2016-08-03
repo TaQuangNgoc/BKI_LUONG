@@ -436,6 +436,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
         {
             try
             {
+                string string_thang = m_grv.Columns[3].Name.ToString().Substring(6, 2);
                 //if (int.Parse(m_txt_thang.Text) <= 0 || int.Parse(m_txt_thang.Text) > 12 || int.Parse(m_txt_nam.Text) < 0)
                 //    XtraMessageBox.Show("Vui lòng nhập tháng và năm chấm công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 //else if (check_bang_luong_da_chot(m_txt_thang.Text, m_txt_nam.Text))
@@ -445,18 +446,17 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
                     CHRM_BaseMessages.MsgBox_Error("Chưa chọn tháng và năm chấm công");
                     return;
                 }
-                string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
-               
-                if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
+                            
+                else if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
                 {
                     XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo");
                     return;
                 }
-                
-                //else if(check_bang_luong_da_chot(m_dat_chon_thang.DateTime.Month.ToString(), m_dat_chon_thang.DateTime.Year.ToString()))
-                //{
-                //    CHRM_BaseMessages.MsgBox_Error("Tháng đã chốt bảng lương. Vui lòng không cập nhật");
-                //}
+                else if (check_bang_luong_da_chot(laythang(), laynam()))
+                {
+                    XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã chốt. \nVui lòng ko cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
                 else if (m_bgwk.IsBusy)
                     m_bgwk.CancelAsync();
                 else if (check_cham_cong_hop_le())
@@ -472,6 +472,14 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
             {
                 XtraMessageBox.Show("Không có dữ liệu trên bảng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private bool check_bang_luong_da_chot(decimal thang, decimal nam)
+        {
+            US_RPT_CHOT_BANG_LUONG v_us = new US_RPT_CHOT_BANG_LUONG();
+            if (v_us.IsLockBangLuong(thang, nam))
+                return true;
+            return false;
         }
 
         private void m_cmd_chon_du_lieu_Click(object sender, EventArgs e)

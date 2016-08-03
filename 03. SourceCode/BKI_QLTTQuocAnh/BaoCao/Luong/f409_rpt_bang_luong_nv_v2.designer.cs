@@ -65,6 +65,7 @@
             this.colLAM_THEM = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colLUONG_LAM_THEM_SAN_PHAM = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colPHU_CAP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colThuong = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTRUY_LINH = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTHU_NHAP_KHAC = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTHU_NHAP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -375,8 +376,10 @@
             this.m_grv_main.Appearance.BandPanel.Options.UseForeColor = true;
             this.m_grv_main.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_main.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_main.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_main.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_main.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_main.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_main.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_main.Appearance.FocusedRow.Options.UseTextOptions = true;
             this.m_grv_main.Appearance.FocusedRow.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -439,7 +442,8 @@
             this.colBHYT_PHAI_NOP,
             this.colBHTN_PHAI_NOP,
             this.colTHU_NHAP_KHAC,
-            this.colPHAI_NOP_KHAC});
+            this.colPHAI_NOP_KHAC,
+            this.colThuong});
             this.m_grv_main.GridControl = this.m_grc_main;
             this.m_grv_main.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TONG_THU_NHAP", null, "{0:n0}"),
@@ -481,7 +485,7 @@
             this.m_grv_main.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_grv_main.OptionsView.ShowFooter = true;
             this.m_grv_main.OptionsView.ShowGroupPanel = false;
-            this.m_grv_main.PaintStyleName = "UltraFlat";
+            this.m_grv_main.PaintStyleName = "Flat";
             // 
             // gridBand1
             // 
@@ -546,12 +550,13 @@
             this.gridBand2.Columns.Add(this.colLAM_THEM);
             this.gridBand2.Columns.Add(this.colLUONG_LAM_THEM_SAN_PHAM);
             this.gridBand2.Columns.Add(this.colPHU_CAP);
+            this.gridBand2.Columns.Add(this.colThuong);
             this.gridBand2.Columns.Add(this.colTRUY_LINH);
             this.gridBand2.Columns.Add(this.colTHU_NHAP_KHAC);
             this.gridBand2.Columns.Add(this.colTHU_NHAP);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 558;
+            this.gridBand2.Width = 633;
             // 
             // colLUONG_NS
             // 
@@ -567,7 +572,7 @@
             // 
             // colLUONG_CD
             // 
-            this.colLUONG_CD.Caption = "Lương cố định";
+            this.colLUONG_CD.Caption = "Lương chế độ";
             this.colLUONG_CD.DisplayFormat.FormatString = "n0";
             this.colLUONG_CD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colLUONG_CD.FieldName = "LUONG_CD";
@@ -635,6 +640,17 @@
             this.colPHU_CAP.Visible = true;
             this.colPHU_CAP.Width = 20;
             // 
+            // colThuong
+            // 
+            this.colThuong.Caption = "Thưởng";
+            this.colThuong.DisplayFormat.FormatString = "n0";
+            this.colThuong.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colThuong.FieldName = "THUONG";
+            this.colThuong.Name = "colThuong";
+            this.colThuong.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "THUONG", "{0:n0}")});
+            this.colThuong.Visible = true;
+            // 
             // colTRUY_LINH
             // 
             this.colTRUY_LINH.Caption = "Truy lĩnh";
@@ -650,6 +666,8 @@
             // colTHU_NHAP_KHAC
             // 
             this.colTHU_NHAP_KHAC.Caption = "Thu nhập khác";
+            this.colTHU_NHAP_KHAC.DisplayFormat.FormatString = "n0";
+            this.colTHU_NHAP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colTHU_NHAP_KHAC.FieldName = "THU_NHAP_KHAC";
             this.colTHU_NHAP_KHAC.Name = "colTHU_NHAP_KHAC";
             this.colTHU_NHAP_KHAC.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -658,6 +676,9 @@
             // 
             // colTHU_NHAP
             // 
+            this.colTHU_NHAP.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHU_NHAP.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHU_NHAP.AppearanceCell.Options.UseBackColor = true;
             this.colTHU_NHAP.Caption = "Thu nhập";
             this.colTHU_NHAP.DisplayFormat.FormatString = "n0";
             this.colTHU_NHAP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -805,6 +826,9 @@
             // 
             // colGIAM_TRU
             // 
+            this.colGIAM_TRU.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colGIAM_TRU.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colGIAM_TRU.AppearanceCell.Options.UseBackColor = true;
             this.colGIAM_TRU.Caption = "Giảm trừ";
             this.colGIAM_TRU.DisplayFormat.FormatString = "n0";
             this.colGIAM_TRU.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -910,6 +934,8 @@
             // colPHAI_NOP_KHAC
             // 
             this.colPHAI_NOP_KHAC.Caption = "Phải nộp khác";
+            this.colPHAI_NOP_KHAC.DisplayFormat.FormatString = "n0";
+            this.colPHAI_NOP_KHAC.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colPHAI_NOP_KHAC.FieldName = "PHAI_NOP_KHAC";
             this.colPHAI_NOP_KHAC.Name = "colPHAI_NOP_KHAC";
             this.colPHAI_NOP_KHAC.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -918,6 +944,9 @@
             // 
             // colPHAI_NOP
             // 
+            this.colPHAI_NOP.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colPHAI_NOP.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colPHAI_NOP.AppearanceCell.Options.UseBackColor = true;
             this.colPHAI_NOP.Caption = "Phải nộp";
             this.colPHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colPHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -949,6 +978,9 @@
             // 
             // colTHUC_LINH
             // 
+            this.colTHUC_LINH.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHUC_LINH.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHUC_LINH.AppearanceCell.Options.UseBackColor = true;
             this.colTHUC_LINH.Caption = "Thực lĩnh";
             this.colTHUC_LINH.DisplayFormat.FormatString = "n0";
             this.colTHUC_LINH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -1158,11 +1190,12 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colThuong;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

@@ -118,6 +118,7 @@ namespace BKI_DichVuMatDat.BaoCao
                 m_btn_bat_tinh_nang_sua.Enabled = false;
                 m_btn_bat_tinh_nang_sua.Enabled = false;
                 m_cmd_chot_bang_luong.Enabled = false;
+                m_btn_luu.Enabled = false;
                 m_btn_huy_chot_bang_luong.Enabled = true;
             }
             else
@@ -139,6 +140,7 @@ namespace BKI_DichVuMatDat.BaoCao
                 m_btn_bat_tinh_nang_sua.Enabled = true;
                 m_btn_bat_tinh_nang_sua.Enabled = true;
                 m_cmd_chot_bang_luong.Enabled = true;
+                m_btn_luu.Enabled = true;
             }
         }
         private bool kiem_tra_da_tinh_het_luong_nhan_vien_chua()
@@ -369,6 +371,7 @@ namespace BKI_DichVuMatDat.BaoCao
             m_cmd_chot_bang_luong.Enabled = true;
             m_btn_bat_tinh_nang_sua.Enabled = true;
             m_btn_huy_chot_bang_luong.Enabled = false;
+            m_btn_luu.Enabled = true;
         }
 
         private void m_btn_bat_tinh_nang_sua_Click(object sender, EventArgs e)

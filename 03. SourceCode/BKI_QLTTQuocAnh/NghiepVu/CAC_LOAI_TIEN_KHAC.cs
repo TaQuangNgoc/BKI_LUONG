@@ -509,19 +509,24 @@ namespace BKI_DichVuMatDat.NghiepVu
             }
             else
             {
-
-                m_grv.Columns.Clear();
-                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-                DataSet v_ds = new DataSet();
-                v_ds.Tables.Add(new DataTable());
-                v_us.loadDataToCacLoaiTienKhac(v_ds, laythang(), laynam(), decimal.Parse(m_sle_loai_tien.EditValue.ToString()));
-                m_grc.DataSource = v_ds.Tables[0];             
-                format_grid_luc_hien_thi();
-                format_gridview();
-                m_btn_xoa_dong.Enabled = true;
-                m_cmd_nhap_cham_cong.Enabled = false;
+                load_data_2_grid();
+               
             }
 
+        }
+
+        private void load_data_2_grid()
+        {
+            m_grv.Columns.Clear();
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.loadDataToCacLoaiTienKhac(v_ds, laythang(), laynam(), decimal.Parse(m_sle_loai_tien.EditValue.ToString()));
+            m_grc.DataSource = v_ds.Tables[0];
+            format_grid_luc_hien_thi();
+            format_gridview();
+            m_btn_xoa_dong.Enabled = true;
+            m_cmd_nhap_cham_cong.Enabled = false;
         }
 
         private void format_grid_luc_hien_thi()
@@ -558,6 +563,7 @@ namespace BKI_DichVuMatDat.NghiepVu
                     delete_tien_khac(v_dr);
                     update_rpt_luong(v_dr["ID_NHAN_VIEN"].ToString(), laythang(), laynam());
                     XtraMessageBox.Show("Xóa thành công!","Thông báo");
+                    load_data_2_grid();
                 }
         }
 

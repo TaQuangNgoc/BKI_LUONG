@@ -414,6 +414,7 @@ namespace BKI_DichVuMatDat.BaoCao
             m_grc_main.DataSource = m_lst_luong_v2;
             show_grid();
             format_grid_columns_width();
+            WinFormControls.make_stt_indicator(m_grv_main);
         }
 
         private void format_grid_columns_width()

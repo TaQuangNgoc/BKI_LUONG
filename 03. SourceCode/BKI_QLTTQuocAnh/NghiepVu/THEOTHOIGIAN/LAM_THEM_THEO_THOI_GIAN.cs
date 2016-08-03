@@ -437,23 +437,29 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         {
             try
             {
-                
+                string string_thang = m_grv.Columns[3].Name.ToString().Substring(6, 2);
                 if (m_dat_chon_thang.EditValue == null)
                 {
                     XtraMessageBox.Show("Bạn chưa chọn tháng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                string string_thang = m_grv.Columns[3].Name.ToString().Substring(6,2);
+                
                
-                if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
+                else if (Convert.ToInt16(m_dat_chon_thang.DateTime.Month) != int.Parse(string_thang)) 
                 {
                     XtraMessageBox.Show( "Tháng đã chọn và tháng ở file excel up lên khác nhau. \nVui lòng kiểm tra lại thông tin!","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);
                     return;
                 }
+
                
-                if (m_sle_loai_lam_them.Text=="")
+                else if (m_sle_loai_lam_them.Text=="")
                 {
                     XtraMessageBox.Show("Bạn chưa chọn loại làm thêm. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (check_bang_luong_da_chot(laythang(), laynam()))
+                {
+                    XtraMessageBox.Show("Bảng lương tháng " + laythang() + "/" + laynam() + " đã chốt. \nVui lòng ko cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     return;
                 }
                 
@@ -476,6 +482,14 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             {
                 XtraMessageBox.Show("Không có dữ liệu trên bảng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private bool check_bang_luong_da_chot(decimal thang, decimal nam)
+        {
+            US_RPT_CHOT_BANG_LUONG v_us = new US_RPT_CHOT_BANG_LUONG();
+            if (v_us.IsLockBangLuong(thang, nam))
+                return true;
+            return false;
         }
 
         private void m_cmd_chon_du_lieu_Click(object sender, EventArgs e)

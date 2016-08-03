@@ -21,6 +21,7 @@ namespace BKI_DichVuMatDat.DTO
         public decimal LUONG_SAN_PHAM { get; set; }
         public decimal LAM_THEM { get; set; }
         public decimal LUONG_LAM_THEM_SAN_PHAM { get; set; }
+        public decimal THUONG { get; set; }
         public decimal PHU_CAP { get; set; }
         public decimal TRUY_LINH { get; set; }
         public decimal THU_NHAP_KHAC { get; set; }

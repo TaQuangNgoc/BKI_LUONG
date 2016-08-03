@@ -61,6 +61,7 @@
             this.colLAM_THEM = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colLUONG_LAM_THEM_SAN_PHAM = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colPHU_CAP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colThuong = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTRUY_LINH = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTHU_NHAP_KHAC = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colTHU_NHAP = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -440,7 +441,8 @@
             this.colBHYT_PHAI_NOP,
             this.colBHTN_PHAI_NOP,
             this.colTHU_NHAP_KHAC,
-            this.colPHAI_NOP_KHAC});
+            this.colPHAI_NOP_KHAC,
+            this.colThuong});
             this.m_adv_tong_hop.GridControl = this.m_grc_tong_hop;
             this.m_adv_tong_hop.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "TONG_THU_NHAP", null, "{0:n0}"),
@@ -547,12 +549,13 @@
             this.gridBand2.Columns.Add(this.colLAM_THEM);
             this.gridBand2.Columns.Add(this.colLUONG_LAM_THEM_SAN_PHAM);
             this.gridBand2.Columns.Add(this.colPHU_CAP);
+            this.gridBand2.Columns.Add(this.colThuong);
             this.gridBand2.Columns.Add(this.colTRUY_LINH);
             this.gridBand2.Columns.Add(this.colTHU_NHAP_KHAC);
             this.gridBand2.Columns.Add(this.colTHU_NHAP);
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 1;
-            this.gridBand2.Width = 564;
+            this.gridBand2.Width = 639;
             // 
             // colLUONG_NS
             // 
@@ -636,6 +639,17 @@
             this.colPHU_CAP.Visible = true;
             this.colPHU_CAP.Width = 28;
             // 
+            // colThuong
+            // 
+            this.colThuong.Caption = "Thưởng";
+            this.colThuong.DisplayFormat.FormatString = "n0";
+            this.colThuong.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colThuong.FieldName = "THUONG";
+            this.colThuong.Name = "colThuong";
+            this.colThuong.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "THUONG", "{0:n0}")});
+            this.colThuong.Visible = true;
+            // 
             // colTRUY_LINH
             // 
             this.colTRUY_LINH.Caption = "Truy lĩnh";
@@ -661,6 +675,9 @@
             // 
             // colTHU_NHAP
             // 
+            this.colTHU_NHAP.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHU_NHAP.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHU_NHAP.AppearanceCell.Options.UseBackColor = true;
             this.colTHU_NHAP.Caption = "Thu nhập";
             this.colTHU_NHAP.DisplayFormat.FormatString = "n0";
             this.colTHU_NHAP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -708,7 +725,7 @@
             // 
             // colBHYT
             // 
-            this.colBHYT.Caption = "bảo hiểm y tế";
+            this.colBHYT.Caption = "Bảo hiểm y tế";
             this.colBHYT.DisplayFormat.FormatString = "n0";
             this.colBHYT.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBHYT.FieldName = "BHYT";
@@ -803,6 +820,9 @@
             // 
             // colGIAM_TRU
             // 
+            this.colGIAM_TRU.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colGIAM_TRU.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colGIAM_TRU.AppearanceCell.Options.UseBackColor = true;
             this.colGIAM_TRU.Caption = "Giảm trừ";
             this.colGIAM_TRU.DisplayFormat.FormatString = "n0";
             this.colGIAM_TRU.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -869,7 +889,7 @@
             // 
             // colDOAN_PHI_CD
             // 
-            this.colDOAN_PHI_CD.Caption = "Đoàn phí cố định";
+            this.colDOAN_PHI_CD.Caption = "Đoàn phí công đoàn";
             this.colDOAN_PHI_CD.DisplayFormat.FormatString = "n0";
             this.colDOAN_PHI_CD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colDOAN_PHI_CD.FieldName = "DOAN_PHI_CD";
@@ -913,6 +933,9 @@
             // 
             // colPHAI_NOP
             // 
+            this.colPHAI_NOP.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colPHAI_NOP.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colPHAI_NOP.AppearanceCell.Options.UseBackColor = true;
             this.colPHAI_NOP.Caption = "Phải nộp";
             this.colPHAI_NOP.DisplayFormat.FormatString = "n0";
             this.colPHAI_NOP.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -939,6 +962,9 @@
             // 
             // colTHUC_LINH
             // 
+            this.colTHUC_LINH.AppearanceCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHUC_LINH.AppearanceCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.colTHUC_LINH.AppearanceCell.Options.UseBackColor = true;
             this.colTHUC_LINH.Caption = "Thực lĩnh";
             this.colTHUC_LINH.DisplayFormat.FormatString = "n0";
             this.colTHUC_LINH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
@@ -951,6 +977,8 @@
             // colID
             // 
             this.colID.Caption = "ID";
+            this.colID.DisplayFormat.FormatString = "n0";
+            this.colID.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
             this.colID.OptionsColumn.ReadOnly = true;
@@ -1215,12 +1243,13 @@
         private DevExpress.XtraEditors.SimpleButton m_btn_huy_chot_bang_luong;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
+        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colThuong;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
-        private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
     }
 }
