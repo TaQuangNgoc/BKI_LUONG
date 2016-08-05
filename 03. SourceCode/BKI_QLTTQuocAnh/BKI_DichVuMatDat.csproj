@@ -385,7 +385,19 @@
     <Compile Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.Designer.cs">
       <DependentUpon>NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaoCao\Luong\PHIEU_LUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\PHIEU_LUONG.Designer.cs">
+      <DependentUpon>PHIEU_LUONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaoCao\Luong\TinhLuongQL.cs" />
+    <Compile Include="BaoCao\Luong\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao\Luong\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaoCao\SplashScreen1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -723,6 +735,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.resx">
       <DependentUpon>NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\PHIEU_LUONG.resx">
+      <DependentUpon>PHIEU_LUONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\Luong\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>

@@ -904,5 +904,14 @@ namespace BKI_DichVuMatDat
             v_sp.addDecimalInputParam("@NAM", nam);
             v_sp.fillDataSetByCommand(this, v_ds);
         }
+
+        internal void FillDatasetLuong1NV( DataSet v_ds,decimal id_nhan_vien, decimal thang, decimal nam)
+        {
+            CStoredProc v_sp = new CStoredProc("[PR_LOAD_LUONG_1_NV]");
+            v_sp.addDecimalInputParam("@id_nhan_vien", id_nhan_vien);
+            v_sp.addDecimalInputParam("@THANG", thang);
+            v_sp.addDecimalInputParam("@NAM", nam);        
+            v_sp.fillDataSetByCommand(this, v_ds);
+        }
     } 
 }

@@ -85,11 +85,11 @@ namespace BKI_DichVuMatDat
 
                     v_us.active_hinh_thuc_tinh_luong_cho_cong_ty(ListActive[i]);
                 }
-                XtraMessageBox.Show("Lưu thành công thông tin về các hình thức tính lương cho công ty!");
+                XtraMessageBox.Show("Lưu thành công thông tin về các hình thức tính lương cho công ty!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             else
             {
-                XtraMessageBox.Show("Bạn phải lựa chọn ít nhất 1 trong các hình thức tính lương cho công ty!");
+                XtraMessageBox.Show("Bạn phải lựa chọn ít nhất 1 trong các hình thức tính lương cho công ty!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 

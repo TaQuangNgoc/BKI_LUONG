@@ -781,6 +781,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_so_tien_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien_doan_phi.Name = "m_txt_so_tien_doan_phi";
             this.m_txt_so_tien_doan_phi.PasswordChar = '\0';
+            this.m_txt_so_tien_doan_phi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_so_tien_doan_phi.SelectedText = "";
             this.m_txt_so_tien_doan_phi.SelectionLength = 0;
             this.m_txt_so_tien_doan_phi.SelectionStart = 0;
@@ -798,6 +799,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_tien_lon_nhat.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_tien_lon_nhat.Name = "m_txt_ti_le_tien_lon_nhat";
             this.m_txt_ti_le_tien_lon_nhat.PasswordChar = '\0';
+            this.m_txt_ti_le_tien_lon_nhat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le_tien_lon_nhat.SelectedText = "";
             this.m_txt_ti_le_tien_lon_nhat.SelectionLength = 0;
             this.m_txt_ti_le_tien_lon_nhat.SelectionStart = 0;
@@ -814,6 +816,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_doan_phi.Name = "m_txt_ti_le_doan_phi";
             this.m_txt_ti_le_doan_phi.PasswordChar = '\0';
+            this.m_txt_ti_le_doan_phi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_ti_le_doan_phi.SelectedText = "";
             this.m_txt_ti_le_doan_phi.SelectionLength = 0;
             this.m_txt_ti_le_doan_phi.SelectionStart = 0;

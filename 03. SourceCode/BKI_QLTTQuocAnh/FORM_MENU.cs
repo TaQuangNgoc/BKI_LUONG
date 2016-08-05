@@ -57,6 +57,7 @@ namespace BKI_DichVuMatDat
 
         //NODE CON CỦA BÁO CÁO
         TreeNode BANG_LUONG = new TreeNode("Bảng lương");
+        TreeNode PHIEU_LUONG = new TreeNode("Phiếu lương");
 
 
         public FORM_MENU()
@@ -117,7 +118,7 @@ namespace BKI_DichVuMatDat
 
             //NODE CON CỦA BÁO CÁO
             treeView1.Nodes[2].Nodes.Add(BANG_LUONG);
-          
+            treeView1.Nodes[2].Nodes.Add(PHIEU_LUONG);
 
             treeView1.ImageList = m_img_list;
 
@@ -325,6 +326,15 @@ namespace BKI_DichVuMatDat
                // ShowForm(v_f);
                 panel1.Visible = true;
             }
+
+            if (info.Node == PHIEU_LUONG)
+            {
+                BKI_DichVuMatDat.BaoCao.Luong.PHIEU_LUONG v_f = new BaoCao.Luong.PHIEU_LUONG();
+                v_f.TopLevel = false;
+                panel2.Controls.Add(v_f);
+                ShowForm(v_f);
+            }
+
         }
 
         private void ShowForm(FORM_CHO_CHAM_CONG_THEO_THOI_GIAN v_f)

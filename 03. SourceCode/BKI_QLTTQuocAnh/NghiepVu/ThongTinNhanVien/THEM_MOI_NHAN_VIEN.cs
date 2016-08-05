@@ -81,7 +81,7 @@ namespace BKI_DichVuMatDat
             //  v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=5");
             v_us.FillDatasetCBO(v_ds, "DM_LOAI_NHAN_VIEN","ID","TEN_LOAI_NHAN_VIEN","");
             m_cbo_loai_nhan_vien.DataSource = v_ds.Tables[0];
-            m_cbo_loai_nhan_vien.DisplayMember = "TEN";
+            m_cbo_loai_nhan_vien.DisplayMember = "TEN_LOAI_NHAN_VIEN";
             m_cbo_loai_nhan_vien.ValueMember = "ID";
         }
 

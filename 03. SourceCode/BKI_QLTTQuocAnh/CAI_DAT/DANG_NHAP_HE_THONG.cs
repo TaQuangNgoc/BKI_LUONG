@@ -31,6 +31,8 @@ namespace BKI_DichVuMatDat.CAI_DAT
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "HT_USER");
             m_grc_dang_nhap_he_thong.DataSource = v_ds.Tables[0];
+            m_grv_dang_nhap_he_thong.ColumnPanelRowHeight = 40;
+            m_grv_dang_nhap_he_thong.RowHeight = 35;
         }
 
         private void m_btn_them_Click(object sender, EventArgs e)

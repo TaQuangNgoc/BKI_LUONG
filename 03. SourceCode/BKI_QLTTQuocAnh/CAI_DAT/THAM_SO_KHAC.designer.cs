@@ -68,11 +68,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(148, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 19);
+            this.label2.Size = new System.Drawing.Size(288, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "CÀI ĐẶT MỘT SỐ THAM SỐ KHÁC";
             // 
@@ -141,46 +141,91 @@
             // 
             // m_txt_so_thang_tinh_bhxh
             // 
+            this.m_txt_so_thang_tinh_bhxh.Depth = 0;
+            this.m_txt_so_thang_tinh_bhxh.Hint = "";
             this.m_txt_so_thang_tinh_bhxh.Location = new System.Drawing.Point(241, 223);
+            this.m_txt_so_thang_tinh_bhxh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_thang_tinh_bhxh.Name = "m_txt_so_thang_tinh_bhxh";
-            this.m_txt_so_thang_tinh_bhxh.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_so_thang_tinh_bhxh.PasswordChar = '\0';
+            this.m_txt_so_thang_tinh_bhxh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_so_thang_tinh_bhxh.SelectedText = "";
+            this.m_txt_so_thang_tinh_bhxh.SelectionLength = 0;
+            this.m_txt_so_thang_tinh_bhxh.SelectionStart = 0;
+            this.m_txt_so_thang_tinh_bhxh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_so_thang_tinh_bhxh.TabIndex = 27;
+            this.m_txt_so_thang_tinh_bhxh.UseSystemPasswordChar = false;
             this.m_txt_so_thang_tinh_bhxh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_so_thang_tinh_bhxh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_giam_tru_phu_thuoc
             // 
+            this.m_txt_giam_tru_phu_thuoc.Depth = 0;
+            this.m_txt_giam_tru_phu_thuoc.Hint = "";
             this.m_txt_giam_tru_phu_thuoc.Location = new System.Drawing.Point(241, 175);
+            this.m_txt_giam_tru_phu_thuoc.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_giam_tru_phu_thuoc.Name = "m_txt_giam_tru_phu_thuoc";
-            this.m_txt_giam_tru_phu_thuoc.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_giam_tru_phu_thuoc.PasswordChar = '\0';
+            this.m_txt_giam_tru_phu_thuoc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_giam_tru_phu_thuoc.SelectedText = "";
+            this.m_txt_giam_tru_phu_thuoc.SelectionLength = 0;
+            this.m_txt_giam_tru_phu_thuoc.SelectionStart = 0;
+            this.m_txt_giam_tru_phu_thuoc.Size = new System.Drawing.Size(178, 23);
             this.m_txt_giam_tru_phu_thuoc.TabIndex = 26;
+            this.m_txt_giam_tru_phu_thuoc.UseSystemPasswordChar = false;
             this.m_txt_giam_tru_phu_thuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_giam_tru_phu_thuoc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_giam_tru_gia_canh
             // 
+            this.m_txt_giam_tru_gia_canh.Depth = 0;
+            this.m_txt_giam_tru_gia_canh.Hint = "";
             this.m_txt_giam_tru_gia_canh.Location = new System.Drawing.Point(241, 127);
+            this.m_txt_giam_tru_gia_canh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_giam_tru_gia_canh.Name = "m_txt_giam_tru_gia_canh";
-            this.m_txt_giam_tru_gia_canh.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_giam_tru_gia_canh.PasswordChar = '\0';
+            this.m_txt_giam_tru_gia_canh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_giam_tru_gia_canh.SelectedText = "";
+            this.m_txt_giam_tru_gia_canh.SelectionLength = 0;
+            this.m_txt_giam_tru_gia_canh.SelectionStart = 0;
+            this.m_txt_giam_tru_gia_canh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_giam_tru_gia_canh.TabIndex = 25;
+            this.m_txt_giam_tru_gia_canh.UseSystemPasswordChar = false;
             this.m_txt_giam_tru_gia_canh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_giam_tru_gia_canh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_luong_toi_thieu_quy_dinh
             // 
+            this.m_txt_luong_toi_thieu_quy_dinh.Depth = 0;
+            this.m_txt_luong_toi_thieu_quy_dinh.Hint = "";
             this.m_txt_luong_toi_thieu_quy_dinh.Location = new System.Drawing.Point(241, 79);
+            this.m_txt_luong_toi_thieu_quy_dinh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_luong_toi_thieu_quy_dinh.Name = "m_txt_luong_toi_thieu_quy_dinh";
-            this.m_txt_luong_toi_thieu_quy_dinh.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_luong_toi_thieu_quy_dinh.PasswordChar = '\0';
+            this.m_txt_luong_toi_thieu_quy_dinh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_luong_toi_thieu_quy_dinh.SelectedText = "";
+            this.m_txt_luong_toi_thieu_quy_dinh.SelectionLength = 0;
+            this.m_txt_luong_toi_thieu_quy_dinh.SelectionStart = 0;
+            this.m_txt_luong_toi_thieu_quy_dinh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_luong_toi_thieu_quy_dinh.TabIndex = 24;
+            this.m_txt_luong_toi_thieu_quy_dinh.UseSystemPasswordChar = false;
             this.m_txt_luong_toi_thieu_quy_dinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_luong_toi_thieu_quy_dinh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
             // m_txt_luong_toi_thieu_vung
             // 
+            this.m_txt_luong_toi_thieu_vung.Depth = 0;
+            this.m_txt_luong_toi_thieu_vung.Hint = "";
             this.m_txt_luong_toi_thieu_vung.Location = new System.Drawing.Point(241, 31);
+            this.m_txt_luong_toi_thieu_vung.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_luong_toi_thieu_vung.Name = "m_txt_luong_toi_thieu_vung";
-            this.m_txt_luong_toi_thieu_vung.Size = new System.Drawing.Size(178, 26);
+            this.m_txt_luong_toi_thieu_vung.PasswordChar = '\0';
+            this.m_txt_luong_toi_thieu_vung.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_txt_luong_toi_thieu_vung.SelectedText = "";
+            this.m_txt_luong_toi_thieu_vung.SelectionLength = 0;
+            this.m_txt_luong_toi_thieu_vung.SelectionStart = 0;
+            this.m_txt_luong_toi_thieu_vung.Size = new System.Drawing.Size(178, 23);
             this.m_txt_luong_toi_thieu_vung.TabIndex = 23;
+            this.m_txt_luong_toi_thieu_vung.UseSystemPasswordChar = false;
             this.m_txt_luong_toi_thieu_vung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_luong_toi_thieu_vung.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
             // 
