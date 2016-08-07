@@ -371,13 +371,14 @@
             this.m_adv_tong_hop.Appearance.BandPanel.Options.UseBorderColor = true;
             this.m_adv_tong_hop.Appearance.BandPanel.Options.UseFont = true;
             this.m_adv_tong_hop.Appearance.BandPanel.Options.UseForeColor = true;
+            this.m_adv_tong_hop.Appearance.FocusedCell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.FocusedCell.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_adv_tong_hop.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_adv_tong_hop.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_adv_tong_hop.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_adv_tong_hop.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_adv_tong_hop.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseBackColor = true;
-            this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseFont = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_adv_tong_hop.Appearance.FocusedRow.Options.UseTextOptions = true;
@@ -395,6 +396,9 @@
             this.m_adv_tong_hop.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_adv_tong_hop.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.m_adv_tong_hop.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.m_adv_tong_hop.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_adv_tong_hop.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_adv_tong_hop.Appearance.ViewCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.m_adv_tong_hop.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.m_adv_tong_hop.Appearance.ViewCaption.Options.UseFont = true;
@@ -480,6 +484,7 @@
             this.m_adv_tong_hop.OptionsFind.FindNullPrompt = "Tìm kiếm...";
             this.m_adv_tong_hop.OptionsPrint.AllowMultilineHeaders = true;
             this.m_adv_tong_hop.OptionsPrint.PrintHeader = false;
+            this.m_adv_tong_hop.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.m_adv_tong_hop.OptionsView.ColumnAutoWidth = false;
             this.m_adv_tong_hop.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_adv_tong_hop.OptionsView.ShowFooter = true;

@@ -58,6 +58,8 @@ namespace BKI_DichVuMatDat
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn22 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tab_baohiem = new System.Windows.Forms.TabPage();
             this.m_grc_bao_hiem = new DevExpress.XtraGrid.GridControl();
@@ -211,11 +213,13 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Appearance.EvenRow.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_ngay_cong.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.m_grv_ngay_cong.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_ngay_cong.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -446,7 +450,9 @@ namespace BKI_DichVuMatDat
             this.gridColumn10,
             this.gridColumn11,
             this.gridColumn12,
-            this.gridColumn13});
+            this.gridColumn13,
+            this.gridColumn21,
+            this.gridColumn22});
             this.m_grv_phu_cap.GridControl = this.m_grc_loai_phu_cap;
             this.m_grv_phu_cap.Name = "m_grv_phu_cap";
             this.m_grv_phu_cap.OptionsBehavior.Editable = false;
@@ -503,6 +509,22 @@ namespace BKI_DichVuMatDat
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 5;
+            // 
+            // gridColumn21
+            // 
+            this.gridColumn21.Caption = "Phải đóng bảo hiểm ";
+            this.gridColumn21.FieldName = "DONG_BAO_HIEM";
+            this.gridColumn21.Name = "gridColumn21";
+            this.gridColumn21.Visible = true;
+            this.gridColumn21.VisibleIndex = 6;
+            // 
+            // gridColumn22
+            // 
+            this.gridColumn22.Caption = "Được giảm trừ thuế";
+            this.gridColumn22.FieldName = "GIAM_TRU_THUE";
+            this.gridColumn22.Name = "gridColumn22";
+            this.gridColumn22.Visible = true;
+            this.gridColumn22.VisibleIndex = 7;
             // 
             // gridView4
             // 
@@ -1134,5 +1156,7 @@ namespace BKI_DichVuMatDat
         private MaterialSkin.Controls.MaterialRaisedButton m_cmd_xoa;
         private MaterialSkin.Controls.MaterialRadioButton m_rd_ti_le_doan_phi;
         private MaterialSkin.Controls.MaterialRadioButton m_rd_so_tien_doan_phi;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn21;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
     }
 }

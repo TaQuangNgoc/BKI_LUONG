@@ -118,6 +118,7 @@
             this.m_dat_chon_thang.Properties.DisplayFormat.FormatString = "MM/yyyy";
             this.m_dat_chon_thang.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.m_dat_chon_thang.Properties.Mask.EditMask = "MM/yyyy";
+            this.m_dat_chon_thang.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_dat_chon_thang.Size = new System.Drawing.Size(127, 24);
             this.m_dat_chon_thang.TabIndex = 21;
             this.m_dat_chon_thang.EditValueChanged += new System.EventHandler(this.m_dat_chon_thang_EditValueChanged);

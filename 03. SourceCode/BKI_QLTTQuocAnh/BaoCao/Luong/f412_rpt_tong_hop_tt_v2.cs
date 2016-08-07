@@ -19,6 +19,7 @@ using BKI_DichVuMatDat.XtraReport;
 using BKI_DichVuMatDat.NghiepVu.Luong;
 using DevExpress.XtraSplashScreen;
 using BKI_DichVuMatDat.DTO;
+using System.IO;
 namespace BKI_DichVuMatDat.BaoCao
 {
     public partial class f412_rpt_tong_hop_tt_v2 : MaterialSkin.Controls.MaterialForm
@@ -77,12 +78,12 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             for (int i = 0; i < m_adv_tong_hop.Columns.Count; i++)
             {
-                m_adv_tong_hop.Columns[i].Width = 100;
+                m_adv_tong_hop.Columns[i].Width = 99;
             }
             m_adv_tong_hop.BandPanelRowHeight = 40;
             m_adv_tong_hop.ColumnPanelRowHeight = 35;
             m_adv_tong_hop.RowHeight = 30;
-            
+           
         }
         private void resetText()
         {
@@ -212,7 +213,31 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             try
             {
-                ReportHelper.ExportXLS(m_grc_tong_hop, "BÁO CÁO TỔNG HỢP LƯƠNG", gen_ten_bang_luong());
+
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Filter = "xls files (*.xls)|*.xls|All files (*.*)|*.*";
+                saveFileDialog1.FileName = gen_ten_bang_luong();
+                saveFileDialog1.RestoreDirectory = true;
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    m_adv_tong_hop.OptionsView.ShowViewCaption = true;
+                    m_adv_tong_hop.ViewCaption = "Báo cáo bảng lương tháng " + lay_thang() + "/ " + lay_nam();
+
+                    //m_adv_tong_hop.Bands[0].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.None;
+                   
+                    //m_adv_tong_hop.Bands["gridBand5"].Fixed = DevExpress.XtraGrid.Columns.FixedStyle.None;
+                    //m_adv_tong_hop.OptionsView.ColumnAutoWidth = true;
+                    //m_adv_tong_hop.OptionsView.ColumnAutoWidth = true;
+                   
+                    //format_grid_columns_width();
+                    m_adv_tong_hop.ExportToXls(saveFileDialog1.FileName);
+                    XtraMessageBox.Show("Lưu báo cáo thành công", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //var fileInfo = new FileInfo(saveFileDialog1.FileName);
+                    //fileInfo.IsReadOnly = true;
+                    //fileInfo.OpenRead();
+                }
+
+               // ReportHelper.ExportXLS(m_grc_tong_hop, "BÁO CÁO TỔNG HỢP LƯƠNG", gen_ten_bang_luong());
             }
             catch(Exception v_e)
             {

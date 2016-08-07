@@ -72,7 +72,7 @@ namespace BKI_DichVuMatDat.BaoCao
             m_txt_thang.Leave += m_txt_thang_Leave;
             m_txt_nam.Leave += m_txt_nam_Leave;
           //  m_cmd_import_excel.Click += m_cmd_import_excel_Click;
-            m_cmd_export_excel.Click += m_cmd_export_excel_Click;
+          
             m_grv_main.MouseWheel += m_grv_main_MouseWheel;          
             format_grid();
         }
@@ -421,7 +421,7 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             for (int i = 0; i < m_grv_main.Columns.Count; i++)
             {
-                m_grv_main.Columns[i].Width = 90;
+                m_grv_main.Columns[i].Width = 99;
             }
             m_grv_main.BandPanelRowHeight = 40;
         }
@@ -697,6 +697,8 @@ namespace BKI_DichVuMatDat.BaoCao
         {
             this.Close();
         }
+
+       
 
         
 

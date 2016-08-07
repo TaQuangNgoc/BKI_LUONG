@@ -245,6 +245,7 @@
             this.m_cmd_export_excel.TabIndex = 2;
             this.m_cmd_export_excel.Text = "Trích xuất dữ liệu";
             this.m_cmd_export_excel.ToolTip = "Xuất dữ liệu trên lưới ra file excel";
+            this.m_cmd_export_excel.Click += new System.EventHandler(this.m_cmd_export_excel_Click);
             // 
             // imageCollection
             // 
@@ -376,10 +377,8 @@
             this.m_grv_main.Appearance.BandPanel.Options.UseForeColor = true;
             this.m_grv_main.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_main.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_main.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_main.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_main.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_main.Appearance.FocusedRow.Options.UseBackColor = true;
-            this.m_grv_main.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_main.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_main.Appearance.FocusedRow.Options.UseTextOptions = true;
             this.m_grv_main.Appearance.FocusedRow.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
@@ -396,6 +395,9 @@
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.m_grv_main.Appearance.HeaderPanel.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.m_grv_main.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_main.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv_main.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_main.Appearance.ViewCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
             this.m_grv_main.Appearance.ViewCaption.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_main.Appearance.ViewCaption.Options.UseFont = true;
@@ -1190,12 +1192,12 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;
-        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colThuong;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager;
     }
 }

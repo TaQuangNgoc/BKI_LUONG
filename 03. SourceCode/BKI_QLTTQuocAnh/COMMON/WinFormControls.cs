@@ -337,6 +337,7 @@ namespace BKI_DichVuMatDat
                 e.Menu.Items.Clear();
                 e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
             }
+           
         }
 
         public static DXMenuItem CreateRowSubMenu(GridView view, int rowHandle)

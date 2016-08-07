@@ -179,6 +179,7 @@
             this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_nam.Name = "m_txt_nam";
             this.m_txt_nam.PasswordChar = '\0';
+            this.m_txt_nam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_nam.SelectedText = "";
             this.m_txt_nam.SelectionLength = 0;
             this.m_txt_nam.SelectionStart = 0;
@@ -205,6 +206,7 @@
             this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_thang.Name = "m_txt_thang";
             this.m_txt_thang.PasswordChar = '\0';
+            this.m_txt_thang.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_txt_thang.SelectedText = "";
             this.m_txt_thang.SelectionLength = 0;
             this.m_txt_thang.SelectionStart = 0;
