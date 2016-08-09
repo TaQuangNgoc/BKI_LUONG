@@ -150,7 +150,7 @@
             this.m_dat_thang.Location = new System.Drawing.Point(3, 7);
             this.m_dat_thang.Name = "m_dat_thang";
             this.m_dat_thang.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.m_dat_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Maroon;
+            this.m_dat_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Green;
             this.m_dat_thang.Properties.Appearance.Options.UseFont = true;
             this.m_dat_thang.Properties.Appearance.Options.UseForeColor = true;
             this.m_dat_thang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {

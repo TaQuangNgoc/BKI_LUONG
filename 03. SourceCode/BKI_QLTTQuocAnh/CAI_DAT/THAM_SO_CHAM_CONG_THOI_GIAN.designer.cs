@@ -213,7 +213,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_ngay_cong.Appearance.EvenRow.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_ngay_cong.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_ngay_cong.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv_ngay_cong.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_ngay_cong.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_ngay_cong.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -333,7 +333,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_lam_them_gio.Appearance.FocusedCell.Options.UseForeColor = true;
             this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_lam_them_gio.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_lam_them_gio.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.m_grv_lam_them_gio.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_lam_them_gio.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_lam_them_gio.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -421,7 +421,7 @@ namespace BKI_DichVuMatDat
             // 
             this.m_grv_phu_cap.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_phu_cap.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_phu_cap.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.m_grv_phu_cap.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_phu_cap.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv_phu_cap.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -564,7 +564,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_bao_hiem.Appearance.FocusedCell.Options.UseFont = true;
             this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_bao_hiem.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_bao_hiem.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.m_grv_bao_hiem.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.m_grv_bao_hiem.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_bao_hiem.Appearance.FocusedRow.Options.UseFont = true;
@@ -664,7 +664,7 @@ namespace BKI_DichVuMatDat
             this.m_grv_thue.Appearance.FocusedCell.Options.UseForeColor = true;
             this.m_grv_thue.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv_thue.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv_thue.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.m_grv_thue.Appearance.FocusedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.m_grv_thue.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_thue.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_thue.Appearance.FocusedRow.Options.UseFont = true;

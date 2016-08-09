@@ -79,7 +79,7 @@
             this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
             this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
-            this.m_cmd_nhap_cham_cong.Text = "LƯU CHẤM CÔNG";
+            this.m_cmd_nhap_cham_cong.Text = "Lưu chấm công";
             this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
             // 
             // label2
@@ -199,7 +199,7 @@
             this.m_cmd_mo_file_mau.Name = "m_cmd_mo_file_mau";
             this.m_cmd_mo_file_mau.Size = new System.Drawing.Size(236, 50);
             this.m_cmd_mo_file_mau.TabIndex = 31;
-            this.m_cmd_mo_file_mau.Text = "TẢI FILE EXCEL MẪU";
+            this.m_cmd_mo_file_mau.Text = "Tải file Excel mẫu";
             this.m_cmd_mo_file_mau.Click += new System.EventHandler(this.m_cmd_mo_file_mau_Click);
             // 
             // m_bgwk
@@ -228,7 +228,7 @@
             this.m_cmd_chon_du_lieu.Padding = new System.Windows.Forms.Padding(4);
             this.m_cmd_chon_du_lieu.Size = new System.Drawing.Size(217, 50);
             this.m_cmd_chon_du_lieu.TabIndex = 32;
-            this.m_cmd_chon_du_lieu.Text = "UP DỮ LIỆU CHẤM CÔNG";
+            this.m_cmd_chon_du_lieu.Text = "Up dữ liệu chấm công ngày";
             this.m_cmd_chon_du_lieu.ClientSizeChanged += new System.EventHandler(this.m_cmd_chon_du_lieu_Click);
             // 
             // panelControl1
@@ -250,7 +250,7 @@
             // 
             this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
-            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));

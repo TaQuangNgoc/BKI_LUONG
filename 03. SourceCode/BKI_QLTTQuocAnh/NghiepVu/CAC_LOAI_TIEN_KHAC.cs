@@ -128,12 +128,13 @@ namespace BKI_DichVuMatDat.NghiepVu
         {
             m_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
           //  m_grv.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            
+
             for (int i = 0; i < m_grv.Columns.Count; i++)
             {
-                m_grv.Columns[i].Width = 120;
-               // m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+                m_grv.Columns[i].Width = 150;
+                // m_grv.Columns[i].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             }         
+           
             m_grv.ColumnPanelRowHeight = 35;
             m_grv.RowHeight = 30;
             

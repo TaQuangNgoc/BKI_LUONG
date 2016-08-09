@@ -69,7 +69,7 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
       
         private void m_btn_luu_Click(object sender, EventArgs e)
         {
-            XtraMessageBox.Show("Phần mềm sẽ xóa dữ liệu cũ của những người không được tính lương trong tháng "+m_thang+"/"+ m_nam+", đồng thời  lưu lại thông tin bạn vừa chọn!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            XtraMessageBox.Show("Phần mềm sẽ xóa dữ liệu cũ của những người không được tính lương trong tháng "+m_thang+"/"+ m_nam+", đồng thời  lưu lại danh sách mới bạn vừa chọn!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             xoa_thong_tin_cu(m_thang,m_nam);
             luu_thong_tin();
         }

@@ -34,11 +34,6 @@
             this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
             this.m_grc = new DevExpress.XtraGrid.GridControl();
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_lbl = new DevExpress.XtraEditors.LabelControl();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -136,7 +131,9 @@
             // 
             this.m_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
             this.m_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            this.m_grv.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv.Appearance.FocusedRow.Options.UseFont = true;
             this.m_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
             this.m_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
@@ -146,12 +143,6 @@
             this.m_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.m_grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn3,
-            this.gridColumn5,
-            this.gridColumn8,
-            this.gridColumn6});
             this.m_grv.GridControl = this.m_grc;
             this.m_grv.Name = "m_grv";
             this.m_grv.OptionsBehavior.Editable = false;
@@ -161,50 +152,10 @@
             this.m_grv.OptionsView.ShowGroupPanel = false;
             this.m_grv.PaintStyleName = "Web";
             // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "MÃ NHÂN VIÊN";
-            this.gridColumn1.FieldName = "MA_NV";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "HỌ ĐỆM";
-            this.gridColumn3.FieldName = "HO_DEM";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "TÊN";
-            this.gridColumn5.FieldName = "TEN";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 2;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "SỐ TIỀN";
-            this.gridColumn8.FieldName = "SO_TIEN";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 3;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "NGÀY NHẬP";
-            this.gridColumn6.FieldName = "NGAY_NHAP";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
-            // 
             // m_lbl
             // 
             this.m_lbl.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl.Location = new System.Drawing.Point(25, 15);
+            this.m_lbl.Location = new System.Drawing.Point(31, 54);
             this.m_lbl.Name = "m_lbl";
             this.m_lbl.Size = new System.Drawing.Size(90, 18);
             this.m_lbl.TabIndex = 20;
@@ -313,7 +264,7 @@
             // m_sle_loai_tien
             // 
             this.m_sle_loai_tien.EditValue = "";
-            this.m_sle_loai_tien.Location = new System.Drawing.Point(138, 12);
+            this.m_sle_loai_tien.Location = new System.Drawing.Point(136, 51);
             this.m_sle_loai_tien.Name = "m_sle_loai_tien";
             this.m_sle_loai_tien.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_loai_tien.Properties.Appearance.Options.UseFont = true;
@@ -338,7 +289,7 @@
             // m_dat_chon_thang
             // 
             this.m_dat_chon_thang.EditValue = null;
-            this.m_dat_chon_thang.Location = new System.Drawing.Point(138, 51);
+            this.m_dat_chon_thang.Location = new System.Drawing.Point(136, 12);
             this.m_dat_chon_thang.Name = "m_dat_chon_thang";
             this.m_dat_chon_thang.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_dat_chon_thang.Properties.Appearance.ForeColor = System.Drawing.Color.Green;
@@ -358,7 +309,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(25, 57);
+            this.labelControl1.Location = new System.Drawing.Point(31, 15);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(41, 18);
             this.labelControl1.TabIndex = 20;
@@ -510,11 +461,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_dong;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
 

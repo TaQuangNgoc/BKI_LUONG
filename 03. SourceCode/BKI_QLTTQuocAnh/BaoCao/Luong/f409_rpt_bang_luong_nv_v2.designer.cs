@@ -478,6 +478,8 @@
             this.m_grv_main.Name = "m_grv_main";
             this.m_grv_main.OptionsBehavior.AutoExpandAllGroups = true;
             this.m_grv_main.OptionsBehavior.CopyToClipboardWithColumnHeaders = false;
+            this.m_grv_main.OptionsBehavior.Editable = false;
+            this.m_grv_main.OptionsBehavior.ReadOnly = true;
             this.m_grv_main.OptionsFind.FindDelay = 100;
             this.m_grv_main.OptionsFind.FindNullPrompt = "Tìm kiếm...";
             this.m_grv_main.OptionsPrint.AllowMultilineHeaders = true;
