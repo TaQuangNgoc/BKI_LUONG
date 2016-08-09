@@ -35,7 +35,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 FORM_MENU v_f = new FORM_MENU();
-               // LOGIN_DETAIL v_f = new LOGIN_DETAIL();
+              // LOGIN_DETAIL v_f = new LOGIN_DETAIL();
 
 
                 v_f.ShowDialog();

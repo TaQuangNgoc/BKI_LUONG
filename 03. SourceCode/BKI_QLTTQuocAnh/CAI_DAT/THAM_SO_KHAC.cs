@@ -22,7 +22,7 @@ namespace BKI_DichVuMatDat
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)
         {
-            TextEdit textbox = (TextEdit)sender;
+            TextBox textbox = (TextBox)sender;
             try
             {
                 System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
