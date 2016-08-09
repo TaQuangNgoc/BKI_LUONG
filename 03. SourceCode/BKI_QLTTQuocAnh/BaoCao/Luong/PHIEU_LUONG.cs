@@ -60,7 +60,7 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
                     v_us.FillDatasetLuong1NV(v_ds,decimal.Parse(m_sle_nhan_vien.EditValue.ToString()),laythang(),laynam());
                     if (v_ds.Tables[0].Rows.Count == 0)
                     {
-                        XtraMessageBox.Show("Tháng + " +laythang()+"/"+laynam()+" chưa được tính lương!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        XtraMessageBox.Show("Tháng " +laythang()+"/"+laynam()+" chưa được tính lương!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {

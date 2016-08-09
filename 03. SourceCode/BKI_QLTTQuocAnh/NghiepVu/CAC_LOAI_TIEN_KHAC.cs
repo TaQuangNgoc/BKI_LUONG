@@ -499,6 +499,15 @@ namespace BKI_DichVuMatDat.NghiepVu
 
         private void m_btn_hien_thi_Click(object sender, EventArgs e)
         {
+             if(check_bang_luong_da_chot(laythang(),laynam()))
+            {
+                m_btn_xoa_dong.Visible = false;
+            }
+             else
+             {
+                 m_btn_xoa_dong.Visible = true;
+            }
+             
             if (m_sle_loai_tien.EditValue == null||  m_sle_loai_tien.EditValue.ToString()=="")
             {
                 XtraMessageBox.Show( "Bạn phải chọn loại tiền trước khi nhấn hiển thị!","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Information);    
@@ -507,6 +516,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             {
                 XtraMessageBox.Show("Bạn phải chọn tháng, năm trước khi nhấn hiển thị!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
             }
+            
             else
             {
                 load_data_2_grid();
