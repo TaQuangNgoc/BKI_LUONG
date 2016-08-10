@@ -501,6 +501,12 @@
     <Compile Include="CONFIRM\confirm_cac_loai_tien_khac.Designer.cs">
       <DependentUpon>confirm_cac_loai_tien_khac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Document.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document.Designer.cs">
+      <DependentUpon>Document.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORM_CHO\FORM_CHO_BAO_CAO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -778,6 +784,9 @@
     <EmbeddedResource Include="CONFIRM\confirm_cac_loai_tien_khac.resx">
       <DependentUpon>confirm_cac_loai_tien_khac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Document.resx">
+      <DependentUpon>Document.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORM_CHO\FORM_CHO_BAO_CAO.resx">
       <DependentUpon>FORM_CHO_BAO_CAO.cs</DependentUpon>
     </EmbeddedResource>
@@ -985,6 +994,7 @@
     <None Include="Resources\file_edit1.png" />
     <None Include="Resources\file_delete1.png" />
     <None Include="Resources\file_search1.png" />
+    <None Include="Resources\question %281%29.png" />
     <Content Include="vi\DevExpress.Charts.Designer.v14.1.resources.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
