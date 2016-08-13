@@ -102,7 +102,7 @@ namespace BKI_DichVuMatDat
             //node thông tin nhân viên
             treeView1.Nodes[1].Nodes[0].Nodes.Add(THEM_MOI_NHAN_VIEN);
             treeView1.Nodes[1].Nodes[0].Nodes.Add(SUA_NHAN_VIEN);
-            treeView1.Nodes[1].Nodes[0].Nodes.Add(XOA_NHAN_VIEN);
+          //  treeView1.Nodes[1].Nodes[0].Nodes.Add(XOA_NHAN_VIEN);
 
             //NODE CHAM CÔNG TỪ EXCEL
 
