@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE HelpIndex SYSTEM "MS-Help://Hx/Resources/HelpIndex.DTD">
+<HelpIndex Name = "K"
+           DTDVersion = "1.0"
+           Visible = "Yes"
+           LangId = "1033">
+<Keyword Term = "Bảng lương">
+<Jump Url = "Ba.html"/>
+
+ </Keyword>
+
+<Keyword Term = "B&#225;o c&#225;o">
+<Jump Url = "Báo cáo.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Bảo hiểm">
+<Jump Url = "B.html"/>
+
+ </Keyword>
+
+<Keyword Term = "B&#226;t t&#237;nh năng sửa bảng lương">
+<Jump Url = "Bâ.html"/>
+
+ </Keyword>
+
+<Keyword Term = "C&#225;c h&#236;nh thức t&#237;nh lương">
+<Jump Url = "Các hình th.html"/>
+
+ </Keyword>
+
+<Keyword Term = "C&#225;c loại lương kh&#225;c">
+<Jump Url = "Các lo.html"/>
+
+ </Keyword>
+
+<Keyword Term = "C&#225;c loại tiền kh&#225;c">
+<Jump Url = "Các loa.html"/>
+
+ </Keyword>
+
+<Keyword Term = "C&#224;i đặt tham số ">
+<Jump Url = "Cài .html"/>
+
+ </Keyword>
+
+<Keyword Term = "Chấm c&#244;ng theo thời gian">
+<Jump Url = "Ch.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Chấm c&#244;ng từ excel">
+<Jump Url = "Châ.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Chốt bảng lương">
+<Jump Url = "Chô.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Đăng nhập hệ thống">
+<Jump Url = "NewTopic.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Danh mục">
+<Jump Url = "Danh m.html"/>
+
+ </Keyword>
+
+<Keyword Term = "danh mục loại nh&#226;n vi&#234;n">
+<Jump Url = "danh mu.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Đo&#224;n ph&#237;">
+<Jump Url = "D.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Hủy chốt bảng lương">
+<Jump Url = "H.html"/>
+
+ </Keyword>
+
+<Keyword Term = "L&#224;m th&#234;m giờ">
+<Jump Url = "Làm thêm gi.html"/>
+
+ </Keyword>
+
+<Keyword Term = "L&#224;m th&#234;m theo thời gian">
+<Jump Url = "Làm thêm theo th.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Loại ng&#224;y c&#244;ng">
+<Jump Url = "Lo.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Lương theo thời gian">
+<Jump Url = "L.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Nhập liệu">
+<Jump Url = "Nh.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Phiếu lương">
+<Jump Url = "Phi.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Phụ cấp">
+<Jump Url = "Ph.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Số ng&#224;y c&#244;ng ti&#234;u chuẩn">
+<Jump Url = "S.html"/>
+
+<Jump Url = "SNewTopic.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Soạn thảo">
+<Jump Url = "So.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Sửa th&#244;ng tin nh&#226;n vi&#234;n">
+<Jump Url = "Su.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Tham số kh&#225;c">
+<Jump Url = "Tham s.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Th&#234;m mới nh&#226;n vi&#234;n">
+<Jump Url = "Thêm m.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Theo ng&#224;y">
+<Jump Url = "Theo ngày.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Theo thời gian">
+<Jump Url = "Theo th.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Th&#244;ng tin chung">
+<Jump Url = "Thông tin chung.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Th&#244;ng tin nh&#226;n vi&#234;n">
+<Jump Url = "Thông tin nhân viên.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Thuế">
+<Jump Url = "Thu.html"/>
+
+ </Keyword>
+
+<Keyword Term = "Xem">
+<Jump Url = "Xem.html"/>
+
+ </Keyword>
+
+
+</HelpIndex>

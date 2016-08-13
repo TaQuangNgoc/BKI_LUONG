@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE HelpTOC SYSTEM "MS-Help://Hx/Resources/HelpTOC.DTD">
+<HelpTOC DTDVersion = "1.0"
+         LangId = "1033"
+         ParentNodeIcon = "Book">
+<HelpTOCNode Title = "C&#224;i đặt tham số " Url = "C&#224;i .html">
+<HelpTOCNode Title = "C&#225;c h&#236;nh thức t&#237;nh lương" Url = "C&#225;c h&#236;nh th.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Chấm c&#244;ng theo thời gian" Url = "Ch.html">
+<HelpTOCNode Title = "Danh mục" Url = "Danh m.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Số ng&#224;y c&#244;ng ti&#234;u chuẩn" Url = "SNewTopic.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Tham số kh&#225;c" Url = "Tham s.html">
+</HelpTOCNode>
+</HelpTOCNode>
+<HelpTOCNode Title = "Đăng nhập hệ thống" Url = "NewTopic.html">
+</HelpTOCNode>
+</HelpTOCNode>
+<HelpTOCNode Title = "Nhập liệu" Url = "Nh.html">
+<HelpTOCNode Title = "Th&#244;ng tin nh&#226;n vi&#234;n" Url = "Th&#244;ng tin nh&#226;n vi&#234;n.html">
+<HelpTOCNode Title = "Th&#234;m mới nh&#226;n vi&#234;n" Url = "Th&#234;m m.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Sửa th&#244;ng tin nh&#226;n vi&#234;n" Url = "Su.html">
+</HelpTOCNode>
+</HelpTOCNode>
+<HelpTOCNode Title = "Chấm c&#244;ng từ excel" Url = "Ch&#226;.html">
+<HelpTOCNode Title = "Theo thời gian" Url = "Theo th.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "L&#224;m th&#234;m theo thời gian" Url = "L&#224;m th&#234;m theo th.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Theo ng&#224;y" Url = "Theo ng&#224;y.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "C&#225;c loại tiền kh&#225;c" Url = "C&#225;c loa.html">
+</HelpTOCNode>
+</HelpTOCNode>
+</HelpTOCNode>
+<HelpTOCNode Title = "B&#225;o c&#225;o" Url = "B&#225;o c&#225;o.html">
+<HelpTOCNode Title = "Bảng lương" Url = "Ba.html">
+</HelpTOCNode>
+<HelpTOCNode Title = "Phiếu lương" Url = "Phi.html">
+</HelpTOCNode>
+</HelpTOCNode>
+
+	<ToolData Name="MSTOCEXPST" Value="Expanded"/>
+</HelpTOC>
