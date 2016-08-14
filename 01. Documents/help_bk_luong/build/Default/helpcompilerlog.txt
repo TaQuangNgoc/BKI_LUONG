@@ -1,11 +1,11 @@
-﻿-- Compile started at Saturday, 13 August 2016 09:34:02
+﻿-- Compile started at Sunday, 14 August 2016 13:55:41
 Info: Building output file C:\Users\ThanhHuyen\Documents\HelpStudio\help_bk_luong\Default.hxs.
 Error: HXC3023: Failed to open file stylesheets/customstyles.css. [C:\Users\ThanhHuyen\Documents\HelpStudio\help_bk_luong\build\Default\Default.HxF line 0 col 0]
 Info: Parsing topic  1: /Cài .html
 Info: Parsing topic  2: /Các hình th.html
 Info: Parsing topic  3: /Ch.html
 Info: Parsing topic  4: /Danh m.html
-Info: Parsing topic  5: /SNewTopic.html
+Info: Parsing topic  5: /S.html
 Info: Parsing topic  6: /Tham s.html
 Info: Parsing topic  7: /NewTopic.html
 Info: Parsing topic  8: /Nh.html
@@ -21,27 +21,11 @@ Info: Parsing topic  17: /Báo cáo.html
 Info: Parsing topic  18: /Ba.html
 Info: Parsing topic  19: /Phi.html
 Info: Parsing topic  20: /resolveh2link.html
-Info: Parsing topic  21: /Lo.html
-Info: Parsing topic  22: /Làm thêm gi.html
-Info: Parsing topic  23: /Ph.html
-Info: Parsing topic  24: /B.html
-Info: Parsing topic  25: /Thu.html
-Info: Parsing topic  26: /D.html
-Info: Parsing topic  27: /S.html
-Info: Parsing topic  28: /danh mu.html
-Info: Parsing topic  29: /Thông tin chung.html
-Info: Parsing topic  30: /L.html
-Info: Parsing topic  31: /Các lo.html
-Info: Parsing topic  32: /Xem.html
-Info: Parsing topic  33: /So.html
-Info: Parsing topic  34: /Bâ.html
-Info: Parsing topic  35: /Chô.html
-Info: Parsing topic  36: /H.html
 Info: Saving topic 1: /Cài .html
 Info: Saving topic 2: /Các hình th.html
 Info: Saving topic 3: /Ch.html
 Info: Saving topic 4: /Danh m.html
-Info: Saving topic 5: /SNewTopic.html
+Info: Saving topic 5: /S.html
 Info: Saving topic 6: /Tham s.html
 Info: Saving topic 7: /NewTopic.html
 Info: Saving topic 8: /Nh.html
@@ -137,11 +121,23 @@ Info: Saving file: /images/theo thời gian.png
 Info: Saving file: /images/chọn tháng làm thêm theo thời gian.png
 Info: Saving file: /images/hiển thị dữ liệu đã nhập.png
 Info: Saving file: /images/upload dữ liệu chấm công theo thời gian gian.png
-Info: Saving file: /images/các loại lương khác.png
-Info: Saving file: /images/thêm_các loại lương khác.png
-Info: Saving file: /images/sửa_các loại lương khác.png
-Info: Saving file: /images/xóa_các loại lương khác.png
+Info: Saving file: /images/phiếu lương2.png
+Info: Saving file: /images/upload 2.png
+Info: Saving file: /images/upload_làm thêm theo thời gian.png
+Info: Saving file: /images/upload dữ liệu.png
+Info: Saving file: /images/tải file chấm công_theo ngày.png
+Info: Saving file: /images/tải file excel 1.png
+Info: Saving file: /images/tải file excel mẫu.png
+Info: Saving file: /images/tải file excel mẫu_làm thêm theo thời gian.png
+Info: Saving file: /images/tải file làm thêm theo thời gian.png
+Info: Saving file: /images/làm them theo thời gian.png
+Info: Saving file: /images/hiển thị dữ liệu nhập_làm thêm theo thơi gian.png
+Info: Saving file: /images/hiển thị dữ liệu của các loại tiền khác.png
+Info: Saving file: /images/theo ngày.png
+Info: Saving file: /images/các loại tiền khác.png
+Info: Saving file: /images/Báo cáo.png
 Info: Saving file: /images/bảng lương tháng.png
+Info: Saving file: /images/phiếu lương.png
 Info: Saving file: /images/hs-collapsed.gif
 Info: Saving file: /images/hs-expanded.gif
 Info: Saving file: /images/hs-simpletableft.png
@@ -207,22 +203,6 @@ Info: Saving file: /script/webutility.js
 Info: Saving file: /script/themes/default/d.png
 Info: Saving file: /stylesheets/jquery.layout.css
 Info: Saving file: /stylesheets/responsive.webindex.css
-Info: Saving topic 21: /Lo.html
-Info: Saving topic 22: /Làm thêm gi.html
-Info: Saving topic 23: /Ph.html
-Info: Saving topic 24: /B.html
-Info: Saving topic 25: /Thu.html
-Info: Saving topic 26: /D.html
-Info: Saving topic 27: /S.html
-Info: Saving topic 28: /danh mu.html
-Info: Saving topic 29: /Thông tin chung.html
-Info: Saving topic 30: /L.html
-Info: Saving topic 31: /Các lo.html
-Info: Saving topic 32: /Xem.html
-Info: Saving topic 33: /So.html
-Info: Saving topic 34: /Bâ.html
-Info: Saving topic 35: /Chô.html
-Info: Saving topic 36: /H.html
 Info: Saving file: /Default.HxC
 Info: Saving file: Default.hxc
 Info: Saving file: Default.HxF
@@ -232,7 +212,7 @@ Info: Saving file: Default_F.HxK
 Info: Saving file: Default_N.HxK
 Info: Saving file: Default_A.HxK
 Info: Saving file: Default_D.HxK
-Info: Number of Topics: 36.
-Info: Number of URLs: 36.
+Info: Number of Topics: 20.
+Info: Number of URLs: 20.
 Info: Processing complete.
--- Compile completed on 08/13/2016 09:34:18
+-- Compile completed on 08/14/2016 13:55:58
