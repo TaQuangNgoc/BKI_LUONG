@@ -78,6 +78,22 @@
       <OtherFile Id="0c1d4f6c-9c65-494e-8cf4-e8e97e945262" FileName="images\hiển thị dữ liệu đã nhập.png" SourceData="" BuildFlags="" />
       <OtherFile Id="c49ab776-6303-4689-b613-f23db8d11ee4" FileName="images\upload dữ liệu chấm công theo thời gian gian.png" SourceData="" BuildFlags="" />
       <OtherFile Id="16df9228-e186-402c-a8f7-c7f0de4f0a69" FileName="images\phiếu lương2.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="7fdbf85e-dbb1-4ea1-b87d-4c575b6965c6" FileName="images\upload 2.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="8e20309c-a06d-49d1-85f1-f767369d2bb3" FileName="images\upload_làm thêm theo thời gian.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="8bf4ceef-1553-4ad0-a1c2-5cdacc9cb277" FileName="images\upload dữ liệu.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="64b1575f-9b80-4e73-9d5b-760fb1d08683" FileName="images\tải file chấm công_theo ngày.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="37a3dfb2-80b6-49e9-8cfe-512aa36672ce" FileName="images\tải file excel 1.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="cd163e11-4722-41f4-9648-bcfb784fa908" FileName="images\tải file excel mẫu.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="e141da90-9568-4f03-b812-6a34ab6b10ee" FileName="images\tải file excel mẫu_làm thêm theo thời gian.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="7cf741d4-dfe0-4f36-8737-6ddbf52a312f" FileName="images\tải file làm thêm theo thời gian.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="c8e13bfa-1696-44f4-a488-e66155ec0e5a" FileName="images\làm them theo thời gian.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="52670f9e-a986-467a-9cae-ce7a49c4cafb" FileName="images\hiển thị dữ liệu nhập_làm thêm theo thơi gian.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="0eb888aa-0465-4b09-aae1-2f4f745ac927" FileName="images\hiển thị dữ liệu của các loại tiền khác.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="effdc910-68a2-4864-a54e-ec5bafa78cc6" FileName="images\theo ngày.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="00336b0b-ca4c-4e07-9017-85cf29369532" FileName="images\các loại tiền khác.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="4141177c-f46b-45d4-b6fa-373480bf1961" FileName="images\Báo cáo.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="d72466c0-73bf-40a4-b0a8-07d6f501bbeb" FileName="images\bảng lương tháng.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="a5cda9c4-bd8f-42c8-94fa-5bcdb58aa999" FileName="images\phiếu lương.png" SourceData="" BuildFlags="" />
     </OtherFiles>
     <DefaultStylesheet>stylesheets\customstyles.css</DefaultStylesheet>
     <DefaultCaptureDirectory></DefaultCaptureDirectory>
@@ -112,10 +128,10 @@
                   <TargetItemId>8674f207-3c55-4d1b-9e05-5cf79a341af9</TargetItemId>
                   <TargetItemBookmark></TargetItemBookmark>
                 </TocNode>
-                <TocNode Name="" Id="bf39878c-3301-41d0-8fe2-813e186cc5ac" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+                <TocNode Name="" Id="2f07c8c9-a505-4273-a11a-8f7bc65cd182" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
                   <CaptionTemplate />
                   <ChildNodes />
-                  <TargetItemId>47454991-b253-42a9-98f7-1a62e817d19a</TargetItemId>
+                  <TargetItemId>01783418-b8ea-4cd3-b60a-d81774151750</TargetItemId>
                   <TargetItemBookmark></TargetItemBookmark>
                 </TocNode>
                 <TocNode Name="" Id="70f74f06-a0e8-46b1-9365-01ad60ef2824" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
@@ -146,26 +162,7 @@
               <ChildNodes>
                 <TocNode Name="" Id="6635dea9-3f6d-43b2-acc7-0162b667235b" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
                   <CaptionTemplate />
-                  <ChildNodes>
-                    <TocNode Name="" Id="27da4fde-ef0b-4934-a1b9-20ebed60fee2" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                      <CaptionTemplate />
-                      <ChildNodes />
-                      <TargetItemId>918c4a92-1e1f-4ac8-9339-458ab604ee0d</TargetItemId>
-                      <TargetItemBookmark></TargetItemBookmark>
-                    </TocNode>
-                    <TocNode Name="" Id="d305c3c9-18b7-404a-a8d4-4694b12f7b4f" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                      <CaptionTemplate />
-                      <ChildNodes />
-                      <TargetItemId>ce50f48d-acf9-44c9-8e09-09fbf38f72d8</TargetItemId>
-                      <TargetItemBookmark></TargetItemBookmark>
-                    </TocNode>
-                    <TocNode Name="" Id="5ce3323f-2070-4493-83e0-8b8d7b90a0cf" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                      <CaptionTemplate />
-                      <ChildNodes />
-                      <TargetItemId>eeb7d28a-8d59-4a56-a574-c2360c1e316d</TargetItemId>
-                      <TargetItemBookmark></TargetItemBookmark>
-                    </TocNode>
-                  </ChildNodes>
+                  <ChildNodes />
                   <TargetItemId>cea28739-2082-4fe1-b774-149420ccfdd1</TargetItemId>
                   <TargetItemBookmark></TargetItemBookmark>
                 </TocNode>
@@ -219,38 +216,7 @@
           <ChildNodes>
             <TocNode Name="" Id="1c34df48-817a-49b6-a254-9f7aeb8197c8" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
               <CaptionTemplate />
-              <ChildNodes>
-                <TocNode Name="" Id="daf23dde-9f1a-4874-9794-1e62c2f8a0a8" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                  <CaptionTemplate />
-                  <ChildNodes />
-                  <TargetItemId>138732f0-fa46-4d8d-a769-45a7da0946f9</TargetItemId>
-                  <TargetItemBookmark></TargetItemBookmark>
-                </TocNode>
-                <TocNode Name="" Id="91abc7a9-c1b8-4df9-bedd-bce3895779f0" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                  <CaptionTemplate />
-                  <ChildNodes />
-                  <TargetItemId>5948ecf7-0a6a-489f-a66e-87581ab9a015</TargetItemId>
-                  <TargetItemBookmark></TargetItemBookmark>
-                </TocNode>
-                <TocNode Name="" Id="28262e7b-b349-418f-b70e-095c722d1c41" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                  <CaptionTemplate />
-                  <ChildNodes />
-                  <TargetItemId>ae1fd319-ea5c-4754-ac7e-b44d67f89274</TargetItemId>
-                  <TargetItemBookmark></TargetItemBookmark>
-                </TocNode>
-                <TocNode Name="" Id="ad347a76-e568-49f9-afc4-debbb588a2b0" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                  <CaptionTemplate />
-                  <ChildNodes />
-                  <TargetItemId>7e93a619-0099-4988-b905-4ac86b59e0e9</TargetItemId>
-                  <TargetItemBookmark></TargetItemBookmark>
-                </TocNode>
-                <TocNode Name="" Id="3e81c347-d966-4b34-8740-28513093c80a" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
-                  <CaptionTemplate />
-                  <ChildNodes />
-                  <TargetItemId>1f470447-d5b0-4e4a-b9a9-7420eed126e7</TargetItemId>
-                  <TargetItemBookmark></TargetItemBookmark>
-                </TocNode>
-              </ChildNodes>
+              <ChildNodes />
               <TargetItemId>83e85af2-4719-49ec-aafc-aec9f6addef9</TargetItemId>
               <TargetItemBookmark></TargetItemBookmark>
             </TocNode>
@@ -325,36 +291,17 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="8674f207-3c55-4d1b-9e05-5cf79a341af9" Status="New Topic" CreatedOn="2016-08-11T15:46:06.508291Z" ModifiedOn="2016-08-12T15:35:38.4712555Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Danh m" BuildFlags="">
+          <Topic Id="8674f207-3c55-4d1b-9e05-5cf79a341af9" Status="New Topic" CreatedOn="2016-08-11T15:46:06.508291Z" ModifiedOn="2016-08-14T04:57:43.2337624Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Danh m" BuildFlags="">
             <Title m="2016-08-11T15:46:21.0524917Z">Danh mục</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T15:35:38.4712555Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Danh mục.png"&gt;&lt;/P&gt;
+                <Content m="2016-08-14T04:57:43.2337624Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Danh mục.png"&gt;&lt;/P&gt;
 &lt;P&gt;Tham số chấm&amp;nbsp; công theo thời gian có 6 danh mục:&lt;/P&gt;
-&lt;P&gt;-&lt;A href="d83ef2f3-2186-4119-9e08-97e990d33c0e"&gt;Loại ngày công&lt;/A&gt;&lt;/P&gt;
-&lt;P&gt;-&lt;A href="2f14d8bb-27d7-4680-97b6-be8cbb13fa4c"&gt;Làm thêm giờ&lt;/A&gt;&lt;/P&gt;
-&lt;P&gt;-&lt;A href="59d8c492-023e-4a43-bad2-d6b5a93ba006"&gt;Phụ cấp&lt;/A&gt;&lt;/P&gt;
-&lt;P&gt;-&lt;A href="1b6ce81a-6c68-409a-b3d4-0dc788eb8350"&gt;Bảo hiểm&lt;/A&gt;&lt;/P&gt;
-&lt;P&gt;-&lt;A href="2e5d3096-9353-4822-9b5a-10bf44bae785"&gt;Đoàn phí&lt;/A&gt;&lt;/P&gt;
-&lt;P&gt;Bạn có thể xem,Thêm, sửa ,xóa từng danh mục trên bằng cách chọn danh mục muốn thao tác&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="d83ef2f3-2186-4119-9e08-97e990d33c0e" Status="New Topic" CreatedOn="2016-08-11T15:50:35.326913Z" ModifiedOn="2016-08-12T15:40:21.6562818Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Lo" BuildFlags="">
-            <Title m="2016-08-11T15:51:10.9077584Z">Loại ngày công</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T15:40:21.6562818Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/loại ngày công.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;I. Loại ngày công&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/loại ngày công.png"&gt;&lt;/P&gt;
 &lt;P&gt;1. Bạn có thể xem các hạng mục của loại ngày công bao gồm:&lt;/P&gt;
 &lt;P&gt;-Mã ngày công&lt;/P&gt;
 &lt;P&gt;-Tên ngày công&lt;/P&gt;
@@ -377,21 +324,11 @@
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="2f14d8bb-27d7-4680-97b6-be8cbb13fa4c" Status="New Topic" CreatedOn="2016-08-11T16:14:28.0036336Z" ModifiedOn="2016-08-12T15:44:38.7662747Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Làm thêm gi" BuildFlags="">
-            <Title m="2016-08-11T16:14:55.5790378Z">Làm thêm giờ</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T15:44:38.7662747Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Làm thêm giờ.png"&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;II. Làm thêm giờ&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/Làm thêm giờ.png"&gt;&lt;/P&gt;
 &lt;P&gt;1. Bạn có thể xem các hạng mục của&amp;nbsp;làm thêm giờ&amp;nbsp;bao gồm:&lt;/P&gt;
 &lt;P&gt;-Mã loại làm thêm&lt;/P&gt;
 &lt;P&gt;-Tên loại làm thêm&lt;/P&gt;
@@ -412,21 +349,11 @@
 &lt;P&gt;-Chọn mục bạn muốn Xóa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
-&lt;P&gt;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="59d8c492-023e-4a43-bad2-d6b5a93ba006" Status="New Topic" CreatedOn="2016-08-11T16:16:54.4809335Z" ModifiedOn="2016-08-12T16:07:46.9760323Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Ph" BuildFlags="">
-            <Title m="2016-08-11T16:24:46.1694159Z">Phụ cấp</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:07:46.9760323Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/phụ cấp.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;III. Phụ cấp&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/phụ cấp.png"&gt;&lt;/P&gt;
 &lt;P&gt;1. Bạn có thể xem các hạng mục của phụ cấp bao gồm:&lt;/P&gt;
 &lt;P&gt;-Tên ngphụ cấp&lt;/P&gt;
 &lt;P&gt;-Đối tượng phụ cấp&lt;/P&gt;
@@ -452,78 +379,45 @@
 &lt;P&gt;-Chọn mục bạn muốn Xóa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
-&lt;P&gt;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="1b6ce81a-6c68-409a-b3d4-0dc788eb8350" Status="New Topic" CreatedOn="2016-08-11T16:38:10.3953061Z" ModifiedOn="2016-08-12T16:22:06.5486578Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="B" BuildFlags="">
-            <Title m="2016-08-11T16:38:21.316743Z">Bảo hiểm</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:22:06.5486578Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Bảo hiểm.png"&gt;&lt;/P&gt;
-&lt;P&gt;1. Bạn có thể xem các hạng mục của bảo hiểm&amp;nbsp;gồm:&lt;/P&gt;
-&lt;P&gt;-Mã bảo hiểm&lt;/P&gt;
-&lt;P&gt;-Tên bảo hiểm&lt;/P&gt;
-&lt;P&gt;-%LCD (phần Trăm Lương cố định)&lt;/P&gt;
-&lt;P&gt;2. Bạn muốn THÊM&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/Thêm_ bảo hiểm.png"&gt;&lt;/P&gt;
-&lt;P&gt;-chọn nút "Thêm"&lt;/P&gt;
-&lt;P&gt;-&amp;nbsp;form Thông tin chi tiết bảo hiểmhiện ra, bạn điền các thông tin tương ứng vào form hợp lệ,sau đó nhấn nút lưu=&amp;gt;Bạn đã thêm mới thành công&lt;/P&gt;
-&lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
-&lt;P&gt;3. Bạn muốn SỬA&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/Sửa_bảo hiểm.png"&gt;&lt;/P&gt;
-&lt;P&gt;-Chọn mục bạn muốn sửa&lt;/P&gt;
-&lt;P&gt;-Nhấn nút "sửa"&lt;/P&gt;
-&lt;P&gt;-Form hiện ra, bạn viết các thông tin cần sửa tương ứng với các mục, sau đó nhấn nút lưu=&amp;gt;Bạn đã sửa thành công&lt;/P&gt;
-&lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
-&lt;P&gt;4.Bạn muốn "Xóa"&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/xóa_bảo hiểm.png"&gt;&lt;/P&gt;
-&lt;P&gt;-Chọn mục bạn muốn Xóa&lt;/P&gt;
-&lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
-&lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
-&lt;P&gt;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="2fba1336-673d-4470-95e5-29b3b50c5b68" Status="New Topic" CreatedOn="2016-08-11T16:43:38.8468721Z" ModifiedOn="2016-08-12T16:26:23.6578082Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Thu" BuildFlags="">
-            <Title m="2016-08-11T16:43:55.1455872Z">Thuế</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:26:23.6578082Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/thuế.png"&gt;&lt;/P&gt;
-&lt;P&gt;1. Bạn có thể xem các hạng mục của&amp;nbsp;Thuế bao gồm:&lt;/P&gt;
-&lt;P&gt;-Chặn dưới&lt;/P&gt;
-&lt;P&gt;-Chặn trên&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;IV. Bảo hiểm&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/phụ cấp.png"&gt;&lt;/P&gt;
+&lt;P&gt;1. Bạn có thể xem các hạng mục của phụ cấp bao gồm:&lt;/P&gt;
+&lt;P&gt;-Tên ngphụ cấp&lt;/P&gt;
+&lt;P&gt;-Đối tượng phụ cấp&lt;/P&gt;
 &lt;P&gt;-Tỉ lệ&lt;/P&gt;
-&lt;P&gt;-Bù trừ&lt;/P&gt;
+&lt;P&gt;-Của tiền&lt;/P&gt;
+&lt;P&gt;-Số tiền&lt;/P&gt;
+&lt;P&gt;-Phụ thuộc số ngày đi làm&lt;/P&gt;
+&lt;P&gt;-Phải đóng bảo hiểm&lt;/P&gt;
+&lt;P&gt;-Được giảm trừ thuế&lt;/P&gt;
 &lt;P&gt;2. Bạn muốn THÊM&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/thêm_thuế.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/thêm_phụ cấp.png"&gt;&lt;/P&gt;
 &lt;P&gt;-chọn nút "Thêm"&lt;/P&gt;
-&lt;P&gt;-&amp;nbsp;form Thông tin chi tiết loại ngày công hiện ra, bạn điền các thông tin tương ứng vào form hợp lệ,sau đó nhấn nút lưu=&amp;gt;Bạn đã thêm mới thành công&lt;/P&gt;
+&lt;P&gt;-&amp;nbsp;form Thông tin chi tiết&amp;nbsp;phụ cấp&amp;nbsp;hiện ra, bạn điền các thông tin tương ứng vào form hợp lệ,sau đó nhấn nút lưu=&amp;gt;Bạn đã thêm mới thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
 &lt;P&gt;3. Bạn muốn SỬA&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/sửa_thuế.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/sửa_phụ cấp.png"&gt;&lt;/P&gt;
 &lt;P&gt;-Chọn mục bạn muốn sửa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút "sửa"&lt;/P&gt;
 &lt;P&gt;-Form hiện ra, bạn viết các thông tin cần sửa tương ứng với các mục, sau đó nhấn nút lưu=&amp;gt;Bạn đã sửa thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
 &lt;P&gt;4.Bạn muốn "Xóa"&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/xóa_thuế.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/xóa_phụ cấp.png"&gt;&lt;/P&gt;
 &lt;P&gt;-Chọn mục bạn muốn Xóa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
-&lt;P&gt;&lt;/P&gt;</Content>
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;V. Đoàn phí&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/đoàn phí.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn có thể điều chỉnh các tham số của đoàn phí bằng cách thay đổi trực tiếp ở các mục&lt;/P&gt;
+&lt;P&gt;Bạn có thể xem,Thêm, sửa ,xóa từng danh mục trên bằng cách chọn danh mục muốn thao tác&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
             <TopicLinks />
@@ -531,86 +425,46 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="2e5d3096-9353-4822-9b5a-10bf44bae785" Status="New Topic" CreatedOn="2016-08-11T16:46:40.2811755Z" ModifiedOn="2016-08-12T16:29:58.3759825Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="D" BuildFlags="">
-            <Title m="2016-08-11T16:46:58.5062172Z">Đoàn phí</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:29:58.3759825Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/đoàn phí.png"&gt;&lt;/P&gt;
-&lt;P&gt;Bạn có thể điều chỉnh các tham số của đoàn phí bằng cách thay đổi trực tiếp ở các mục&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="01783418-b8ea-4cd3-b60a-d81774151750" Status="New Topic" CreatedOn="2016-08-12T03:13:14.423043Z" ModifiedOn="2016-08-12T16:31:19.4234751Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="S" BuildFlags="">
+          <Topic Id="01783418-b8ea-4cd3-b60a-d81774151750" Status="New Topic" CreatedOn="2016-08-12T03:13:14.423043Z" ModifiedOn="2016-08-14T06:51:40.9549951Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="S" BuildFlags="">
             <Title m="2016-08-12T03:13:46.5062328Z">Số ngày công tiêu chuẩn</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:31:19.4234751Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn.png"&gt;&lt;/P&gt;
+                <Content m="2016-08-14T06:51:40.9549951Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn.png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn có thể cài đặt số ngày công tiêu chuẩn ứng với từng nhân viên. Cụ thể:&lt;/P&gt;
-&lt;P&gt;-Với Danh mục loại nhân viên, bạn có thể thêm,sửa,xóa&lt;/P&gt;
-&lt;P&gt;-Với Số ngày công tiêu chuẩn, bạn có thể cài đặt số ngày tiêu chuẩn theo từng tháng của mỗi năm.&lt;/P&gt;
-&lt;P&gt;Lưu Ý: Hai mục này làm song song với nhau&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="1f621766-51f3-4bf4-9901-39aa33f3de57" Status="New Topic" CreatedOn="2016-08-12T03:18:51.8753037Z" ModifiedOn="2016-08-12T16:35:42.6579006Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="danh mu" BuildFlags="">
-            <Title m="2016-08-12T03:19:23.5071416Z">danh mục loại nhân viên</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:35:42.6579006Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn (2).png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;I. Danh mục loại nhân viên&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn (2).png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;1. Bạn có thể xem các hạng mục của danh mục loại nhân viên bao gồm:&lt;/P&gt;
 &lt;P&gt;-Mã loại nhân viên&lt;/P&gt;
 &lt;P&gt;-Tên loại nhân viên&lt;/P&gt;
 &lt;P&gt;2. Bạn muốn THÊM&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm_danh mục loại nhân viên.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;-chọn nút "Thêm"&lt;/P&gt;
 &lt;P&gt;-&amp;nbsp;form Thông tin&amp;nbsp; chi tiết danh mục loại nhân viên hiện ra, bạn điền các thông tin tương ứng vào form hợp lệ,sau đó nhấn nút lưu=&amp;gt;Bạn đã thêm mới thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
 &lt;P&gt;3. Bạn muốn SỬA&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/sửa_danh mục loại nhân viên.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/sửa_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;-Chọn mục bạn muốn sửa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút "sửa"&lt;/P&gt;
 &lt;P&gt;-Form hiện ra, bạn viết các thông tin cần sửa tương ứng với các mục, sau đó nhấn nút lưu=&amp;gt;Bạn đã sửa thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
 &lt;P&gt;4.Bạn muốn "Xóa"&lt;/P&gt;
-&lt;P&gt;&lt;IMG border=0 alt="" src="images/xóa _danh mục loại nhân viên.png"&gt;&lt;/P&gt;
-&lt;P&gt;-Chọn mục bạn muốn Xóa&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/xóa _danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;-&lt;/STRONG&gt;Chọn mục bạn muốn Xóa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="47454991-b253-42a9-98f7-1a62e817d19a" Status="New Topic" CreatedOn="2016-08-12T03:22:41.1664036Z" ModifiedOn="2016-08-12T16:36:54.940434Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="SNewTopic" BuildFlags="">
-            <Title m="2016-08-12T03:23:16.7496012Z">Số ngày công tiêu chuẩn</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T16:36:54.940434Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn 1.png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;II.&amp;nbsp;Số ngày công tiêu chuẩn&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn 1.png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn chọn năm cần cài đặt số ngày công tiêu chuẩn. Ví dụ :2016&lt;/P&gt;
 &lt;P&gt;Sau đó ấn nút "Tiếp tục"&lt;/P&gt;
 &lt;P&gt;Form hiện ra, bạn điền số ngày công tiêu chuẩn của từng tháng,cho từng loại nhân viên&lt;/P&gt;
-&lt;P&gt;ấn nút "Lưu", bạn đã hoàn thành công việc thiết lập của mình&lt;/P&gt;</Content>
+&lt;P&gt;ấn nút "Lưu", bạn đã hoàn thành công việc thiết lập của mình&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;Lưu Ý:&lt;/STRONG&gt; Hai mục này làm song song với nhau&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
             <TopicLinks />
@@ -702,31 +556,17 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="cea28739-2082-4fe1-b774-149420ccfdd1" Status="New Topic" CreatedOn="2016-08-12T03:31:56.9426948Z" ModifiedOn="2016-08-12T17:06:31.2314242Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Thêm m" BuildFlags="">
+          <Topic Id="cea28739-2082-4fe1-b774-149420ccfdd1" Status="New Topic" CreatedOn="2016-08-12T03:31:56.9426948Z" ModifiedOn="2016-08-14T05:04:28.1461513Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Thêm m" BuildFlags="">
             <Title m="2016-08-12T03:32:11.6611509Z">Thêm mới nhân viên</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T17:06:31.2314242Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm mới nhân viên.png"&gt;&lt;/P&gt;
+                <Content m="2016-08-14T05:04:28.1461513Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm mới nhân viên.png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn có thể thêm mới nhân viên qua các mục:&lt;/P&gt;
-&lt;P&gt;1. Thông tin chung&lt;/P&gt;
-&lt;P&gt;2. lương theo thời gian&lt;/P&gt;
-&lt;P&gt;3. Các loại lương khác&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="918c4a92-1e1f-4ac8-9339-458ab604ee0d" Status="New Topic" CreatedOn="2016-08-12T07:29:34.8602157Z" ModifiedOn="2016-08-12T17:14:45.7878904Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Thông tin chung" BuildFlags="">
-            <Title />
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T17:14:45.7878904Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/thông tin chung (2).png"&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;I. Thông tin chung&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/thông tin chung (2).png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn điều đầy đủ các thông tin vào các mục:&lt;/P&gt;
 &lt;P&gt;1. Điền đầy đủ thông tin nhân viên&lt;/P&gt;
 &lt;P&gt;2. Thông tin bổ sung&lt;/P&gt;
@@ -741,21 +581,10 @@
 &lt;P&gt;+Sửa thông tin đó=&amp;gt; chọn mục cần sửa trên form,thông tin sẽ được hiển thị lên các mục tương ứng, Bạn điền thông tin cần thay thế&amp;nbsp;,ấn nút "sửa"&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&lt;IMG border=0 alt="" src="images/xóa_ thông tin chung.png"&gt;&lt;/P&gt;
 &lt;P&gt;+Xóa thông tin đó=&amp;gt; chọn mục cần xóa trên form, ấn nút" xóa", Form hiện lên,nếu bạn muốn xóa nhấn Ok. ngược lại nhấn Cencel&lt;/P&gt;
-&lt;P&gt;, sau đó nhấn nút lưu&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="ce50f48d-acf9-44c9-8e09-09fbf38f72d8" Status="New Topic" CreatedOn="2016-08-12T07:39:12.9808624Z" ModifiedOn="2016-08-12T17:27:56.4608591Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="L" BuildFlags="">
-            <Title m="2016-08-12T07:39:43.1122738Z">Lương theo thời gian</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T17:27:56.4608591Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/lương theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;, sau đó nhấn nút lưu&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;&lt;STRONG&gt;II. lương theo thời gian&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/lương theo thời gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;1. Điền thông tin về lương&lt;/P&gt;
 &lt;P&gt;Bạn có thể Thêm,sửa, xóa bằng cách:&lt;/P&gt;
 &lt;P&gt;&lt;IMG border=0 alt="" src="images/thêm_thông tin về lương.png"&gt;&lt;/P&gt;
@@ -776,27 +605,16 @@
 &lt;P&gt;Bạn chọn loại nhân viên&lt;/P&gt;
 &lt;P&gt;Sau đó ấn nút Lưu&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="eeb7d28a-8d59-4a56-a574-c2360c1e316d" Status="New Topic" CreatedOn="2016-08-12T07:56:45.706923Z" ModifiedOn="2016-08-12T08:48:41.7849145Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Các lo" BuildFlags="">
-            <Title m="2016-08-12T07:57:02.7998459Z">Các loại lương khác</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7849145Z">&lt;P&gt;Tích vào lương ngày&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;&lt;STRONG&gt;III. Các loại lương khác&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;Tích vào lương ngày&lt;/P&gt;
 &lt;P&gt;Bạn có thể Thêm,sửa, xóa bằng cách:&lt;/P&gt;
 &lt;P&gt;-Thêm thông tin: Bạn điền thông tin cần điền vào các hạng mục, sau đó ấn nút thêm, thông tin đó sẽ được hiển thị ở form bên cạnh&lt;/P&gt;
 &lt;P&gt;-Sửa thông tin:&amp;nbsp; chọn mục cần sửa trên form,thông tin sẽ được hiển thị lên các mục tương ứng, Bạn điền thông tin cần thay thế và ấn nút "sửa"&lt;/P&gt;
 &lt;P&gt;-Xóa thông tin: chọn mục cần xóa trên form, ấn nút" xóa", Form hiện lên,nếu bạn muốn xóa nhấn Ok. ngược lại nhấn Cencel&lt;/P&gt;
 &lt;P&gt;Ấn nút "Lưu"&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
@@ -805,13 +623,14 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="982a3711-f168-466b-944a-e16289cae5e1" Status="New Topic" CreatedOn="2016-08-12T08:01:28.7709125Z" ModifiedOn="2016-08-12T08:48:41.7869164Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Su" BuildFlags="">
+          <Topic Id="982a3711-f168-466b-944a-e16289cae5e1" Status="New Topic" CreatedOn="2016-08-12T08:01:28.7709125Z" ModifiedOn="2016-08-14T06:54:32.3249996Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Su" BuildFlags="">
             <Title m="2016-08-12T08:02:34.0606907Z">Sửa thông tin nhân viên</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7869164Z">&lt;P&gt;Bạn chọn tên nhân viên cẩn sửa tại mục nhân viên&lt;/P&gt;
+                <Content m="2016-08-14T06:54:32.3249996Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/sửa thông tin  nhân viên.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tên nhân viên cẩn sửa tại mục nhân viên&lt;/P&gt;
 &lt;P&gt;Nhấn nút "tiếp tục"&lt;/P&gt;
 &lt;P&gt;Sau đó form "Thông tin nhân viên "được hiển thị ra&lt;/P&gt;
 &lt;P&gt;Bạn sửa thông tin nhân viên như các bước tại" thêm mới nhân viên"&lt;/P&gt;</Content>
@@ -822,13 +641,84 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="5bc460dd-d0bb-41ed-87c0-dd02c5b92252" Status="New Topic" CreatedOn="2016-08-12T08:06:11.3552061Z" ModifiedOn="2016-08-12T08:48:41.7889169Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Châ" BuildFlags="">
+          <Topic Id="5bc460dd-d0bb-41ed-87c0-dd02c5b92252" Status="New Topic" CreatedOn="2016-08-12T08:06:11.3552061Z" ModifiedOn="2016-08-14T06:32:05.8088674Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Châ" BuildFlags="">
             <Title m="2016-08-12T08:06:53.8035465Z">Chấm công từ excel</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7889169Z">&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
+                <Content m="2016-08-14T06:32:05.8088674Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/chấm công từ excel.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn có thể làm việc với các danh mục sau:&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;I. Theo Thời gian&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
+&lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu đã nhập.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
+&lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/upload dữ liệu.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
+&lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/tải file excel mẫu.png"&gt;&lt;/P&gt;
+&lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
+&lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;II. Làm thêm theo thời gian&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/Làm thêm giờ.png"&gt; Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng", chọn loại làm thêm tại mục "chọn loại làm thêm".Sau đó, nếu bạn muốn:&lt;/P&gt;
+&lt;P&gt;1. Xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu nhập_làm thêm theo thơi gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
+&lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
+&lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/tải file excel mẫu_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
+&lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;III. Theo ngày&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/theo ngày.png"&gt; Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
+&lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu đã nhập.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
+&lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
+&lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
+&lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;IV. Các loại tiền khác&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/các loại tiền khác.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng" và&amp;nbsp; chon loại tiền tại mục"chọn loại tiền". Sau đó, nếu bạn muốn:&lt;/P&gt;
+&lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu của các loại tiền khác.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
+&lt;P&gt;Nếu bạn muốn xóa dữ liệu nào đó, chọn dòng cần xóa trên form, nhấn nút "Xóa dòng",form hiện lên, bạn nhấn "Yes "để xóa, ngược lại nhấn "No"&lt;/P&gt;
+&lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload dữ liệu.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
+&lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/tải file excel mẫu.png"&gt;&lt;/P&gt;
+&lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
+&lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
+&lt;P&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
             <TopicLinks />
@@ -836,22 +726,26 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="c003045f-24ac-4fec-8e92-5a068ac08857" Status="New Topic" CreatedOn="2016-08-12T08:07:05.3461992Z" ModifiedOn="2016-08-12T08:48:41.7909183Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Theo th" BuildFlags="">
+          <Topic Id="c003045f-24ac-4fec-8e92-5a068ac08857" Status="New Topic" CreatedOn="2016-08-12T08:07:05.3461992Z" ModifiedOn="2016-08-14T06:07:19.8599611Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Theo th" BuildFlags="">
             <Title m="2016-08-12T08:07:22.2906585Z">Theo thời gian</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7909183Z">&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
+                <Content m="2016-08-14T06:07:19.8599611Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/theo thời gian.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
 &lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu đã nhập.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
 &lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/upload dữ liệu.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
 &lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
 &lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/tải file excel mẫu.png"&gt;&lt;/P&gt;
 &lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
 &lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
-&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công" &lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
               </TopicSection>
@@ -861,22 +755,25 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="8e6ff8d7-0439-48e4-b2f7-16791035992a" Status="New Topic" CreatedOn="2016-08-12T08:13:25.4789024Z" ModifiedOn="2016-08-12T08:48:41.7929202Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Làm thêm theo th" BuildFlags="">
+          <Topic Id="8e6ff8d7-0439-48e4-b2f7-16791035992a" Status="New Topic" CreatedOn="2016-08-12T08:13:25.4789024Z" ModifiedOn="2016-08-14T06:17:35.991158Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Làm thêm theo th" BuildFlags="">
             <Title m="2016-08-12T08:13:42.4839125Z">Làm thêm theo thời gian</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7929202Z">&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng", chọn loại làm thêm tại mục "chọn loại làm thêm".Sau đó, nếu bạn muốn:&lt;/P&gt;
+                <Content m="2016-08-14T06:17:35.991158Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Làm thêm giờ.png"&gt; Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng", chọn loại làm thêm tại mục "chọn loại làm thêm".Sau đó, nếu bạn muốn:&lt;/P&gt;
 &lt;P&gt;1. Xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu nhập_làm thêm theo thơi gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
 &lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
 &lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
 &lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/tải file excel mẫu_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
 &lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
-&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công" &lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
@@ -885,22 +782,25 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="eb38b561-99bf-46b2-984a-17f0abc87c80" Status="New Topic" CreatedOn="2016-08-12T08:15:51.1861744Z" ModifiedOn="2016-08-12T08:48:41.7949216Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Theo ngày" BuildFlags="">
+          <Topic Id="eb38b561-99bf-46b2-984a-17f0abc87c80" Status="New Topic" CreatedOn="2016-08-12T08:15:51.1861744Z" ModifiedOn="2016-08-14T06:27:15.0932002Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Theo ngày" BuildFlags="">
             <Title />
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7949216Z">&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
+                <Content m="2016-08-14T06:27:15.0932002Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/theo ngày.png"&gt; Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng". Sau đó, nếu bạn muốn:&lt;/P&gt;
 &lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu đã nhập.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
 &lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
 &lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
 &lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload_làm thêm theo thời gian.png"&gt;&lt;/P&gt;
 &lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
 &lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
-&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công" &lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
 &lt;P&gt;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
@@ -909,23 +809,27 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="51fec7da-a684-48e2-a9d8-d8eca6aba51c" Status="New Topic" CreatedOn="2016-08-12T08:16:21.6076705Z" ModifiedOn="2016-08-12T08:48:41.7969221Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Các loa" BuildFlags="">
+          <Topic Id="51fec7da-a684-48e2-a9d8-d8eca6aba51c" Status="New Topic" CreatedOn="2016-08-12T08:16:21.6076705Z" ModifiedOn="2016-08-14T06:31:28.1558387Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Các loa" BuildFlags="">
             <Title m="2016-08-12T08:16:44.1028522Z">Các loại tiền khác</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7969221Z">&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng" và&amp;nbsp; chon loại tiền tại mục"chọn loại tiền". Sau đó, nếu bạn muốn:&lt;/P&gt;
+                <Content m="2016-08-14T06:31:28.1558387Z">&lt;P&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/các loại tiền khác.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tháng&amp;nbsp; cần chấm công tại&amp;nbsp; mục "tháng" và&amp;nbsp; chon loại tiền tại mục"chọn loại tiền". Sau đó, nếu bạn muốn:&lt;/P&gt;
 &lt;P&gt;1. xem dữ liệu đã được cập nhật&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/hiển thị dữ liệu của các loại tiền khác.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn&amp;nbsp; nút hiển thị dữ liệu đã được cập nhật , muốn thoát nhấn nút "thoát"&lt;/P&gt;
 &lt;P&gt;Nếu bạn muốn xóa dữ liệu nào đó, chọn dòng cần xóa trên form, nhấn nút "Xóa dòng",form hiện lên, bạn nhấn "Yes "để xóa, ngược lại nhấn "No"&lt;/P&gt;
 &lt;P&gt;2. Upload dữ liệu chấm công&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/upload dữ liệu.png"&gt;&lt;/P&gt;
 &lt;P&gt;Nhấn vào nút upload dữ liệu chấm công&lt;/P&gt;
 &lt;P&gt;Chọn file cần thao tác, nhấn Open&lt;/P&gt;
 &lt;P&gt;3. Tải file excel mẫu&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/tải file excel mẫu.png"&gt;&lt;/P&gt;
 &lt;P&gt;Chọn nơi lưu file excel, nhấn save&lt;/P&gt;
 &lt;P&gt;Mở file ra và điền các thông tin tương ứng&lt;/P&gt;
-&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công" &lt;/P&gt;
+&lt;P&gt;=&amp;gt;Nhấn nút "Lưu chấm công"&lt;/P&gt;
 &lt;P&gt;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
@@ -934,13 +838,13 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="600c3b82-b653-4f7c-9be3-b669af0fa3b2" Status="New Topic" CreatedOn="2016-08-12T08:20:46.9228042Z" ModifiedOn="2016-08-12T08:20:50.7927374Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Báo cáo" BuildFlags="">
+          <Topic Id="600c3b82-b653-4f7c-9be3-b669af0fa3b2" Status="New Topic" CreatedOn="2016-08-12T08:20:46.9228042Z" ModifiedOn="2016-08-14T06:33:02.7739199Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Báo cáo" BuildFlags="">
             <Title />
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:20:46.9228042Z">&lt;p&gt; &lt;/p&gt;</Content>
+                <Content m="2016-08-14T06:33:02.7739199Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/Báo cáo.png"&gt;&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
             <TopicLinks />
@@ -948,51 +852,18 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="83e85af2-4719-49ec-aafc-aec9f6addef9" Status="New Topic" CreatedOn="2016-08-12T08:22:38.753536Z" ModifiedOn="2016-08-12T08:48:41.798924Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Ba" BuildFlags="">
+          <Topic Id="83e85af2-4719-49ec-aafc-aec9f6addef9" Status="New Topic" CreatedOn="2016-08-12T08:22:38.753536Z" ModifiedOn="2016-08-14T06:37:05.3433493Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Ba" BuildFlags="">
             <Title m="2016-08-12T08:22:52.2060244Z">Bảng lương</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.798924Z">&lt;P&gt;Form "Tổng hợp bảng lương tháng " hiện lên.bạn có thể thực hiện các thao tác như sau:&lt;/P&gt;
+                <Content m="2016-08-14T06:37:05.3433493Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/bảng lương tháng.png"&gt;&lt;/P&gt;
+&lt;P&gt;Form "Tổng hợp bảng lương tháng " hiện lên.bạn có thể thực hiện các thao tác như sau:&lt;/P&gt;
 &lt;P&gt;1. Nếu trạng thái của bảng lương là chưa chốt thì bạn có thể:&lt;/P&gt;
-&lt;P&gt;-Xem bảng lương&lt;/P&gt;
-&lt;P&gt;-Xoạn Thảo&lt;/P&gt;
-&lt;P&gt;-Bật tính năng sửa bảng tính&lt;/P&gt;
-&lt;P&gt;-Chốt bảng lương&lt;/P&gt;
-&lt;P&gt;2. Nếu&amp;nbsp;trạng thái của bảng lương là&amp;nbsp;đã chốt thì bạn chỉ có thể &lt;/P&gt;
-&lt;P&gt;-xem bảng lương&amp;nbsp; &lt;/P&gt;
-&lt;P&gt;-Hủy chốt bảng lương&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="138732f0-fa46-4d8d-a769-45a7da0946f9" Status="New Topic" CreatedOn="2016-08-12T08:29:56.3397937Z" ModifiedOn="2016-08-12T08:48:41.8009268Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Xem" BuildFlags="">
-            <Title />
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.8009268Z">&lt;P&gt;bạn có thể xem toàn bộ các thông tin của bảng lương&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="5948ecf7-0a6a-489f-a66e-87581ab9a015" Status="New Topic" CreatedOn="2016-08-12T08:31:49.2517525Z" ModifiedOn="2016-08-12T08:48:41.8029264Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="So" BuildFlags="">
-            <Title m="2016-08-12T08:32:07.3790192Z">Soạn thảo</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.8029264Z">&lt;P&gt;Bạn làm theo các bước:&lt;/P&gt;
+&lt;P&gt;a. Xem bảng lương&lt;/P&gt;
+&lt;P&gt;b. Soạn Thảo&lt;/P&gt;
+&lt;P&gt;Bạn làm theo các bước:&lt;/P&gt;
 &lt;P&gt;Bước 1: Chọn nhân viên không được tính lương&lt;/P&gt;
 &lt;P&gt;Bước 2: Rà soát dữ liệu nhân viên trong tháng&lt;/P&gt;
 &lt;P&gt;Bước 3: Soạn thảo bảng lương&lt;/P&gt;
@@ -1002,51 +873,18 @@
 &lt;P&gt;Bước 4: Lưu bảng lương&lt;/P&gt;
 &lt;P&gt;Nhấn nút xác nhận&lt;/P&gt;
 &lt;P&gt;Thoát&lt;/P&gt;
+&lt;P&gt;c. Bật tính năng sửa bảng tính&lt;/P&gt;
+&lt;P&gt;Bạn chọn bất kì dữ liệu nào cần sửa trên form, rồi sửa theo ý của bạn&lt;/P&gt;
+&lt;P&gt;Nhấn nút "lưu" để lưu kết quả&lt;/P&gt;
+&lt;P&gt;d. Chốt bảng lương&lt;/P&gt;
+&lt;P&gt;Form hiện ra, bạn muốn chốt bảng lương nhấn "Yes" ngược lại nhấn "No"&lt;/P&gt;
+&lt;P&gt;2. Nếu&amp;nbsp;trạng thái của bảng lương là&amp;nbsp;đã chốt thì bạn chỉ có thể&lt;/P&gt;
+&lt;P&gt;a. xem bảng lương&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;b. Hủy chốt bảng lương&lt;/P&gt;
+&lt;P&gt;Danh mục này được sử dụng khi bạn đã chốt bảng lương&lt;/P&gt;
+&lt;P&gt;Nhấn Ok để hoàn tất tác vụ này.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="ae1fd319-ea5c-4754-ac7e-b44d67f89274" Status="New Topic" CreatedOn="2016-08-12T08:43:17.3210474Z" ModifiedOn="2016-08-12T08:48:41.8049297Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Bâ" BuildFlags="">
-            <Title m="2016-08-12T08:43:58.8361785Z">Bât tính năng sửa bảng lương</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.8049297Z">&lt;P&gt;Bạn chọn bất kì dữ liệu nào cần sửa trên form, rồi sửa theo ý của bạn&lt;/P&gt;
-&lt;P&gt;Nhấn nút "lưu" để lưu kết quả&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="7e93a619-0099-4988-b905-4ac86b59e0e9" Status="New Topic" CreatedOn="2016-08-12T08:45:29.6282501Z" ModifiedOn="2016-08-12T08:48:41.8069316Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Chô" BuildFlags="">
-            <Title m="2016-08-12T08:45:44.9201254Z">Chốt bảng lương</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.8069316Z">&lt;P&gt;Form hiện ra, bạn muốn chốt bảng lương nhấn "Yes" ngược lại nhấn "No"&lt;/P&gt;</Content>
-              </TopicSection>
-            </TopicSections>
-            <TopicLinks />
-            <TopicKeywords />
-            <PropertyDefinitionValues />
-            <ExcludedOtherFiles />
-          </Topic>
-          <Topic Id="1f470447-d5b0-4e4a-b9a9-7420eed126e7" Status="New Topic" CreatedOn="2016-08-12T08:46:38.8658369Z" ModifiedOn="2016-08-12T08:48:41.8089129Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="H" BuildFlags="">
-            <Title m="2016-08-12T08:46:59.275463Z">Hủy chốt bảng lương</Title>
-            <ContentsTitle />
-            <Notes></Notes>
-            <TopicSections>
-              <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.8089129Z">&lt;P&gt;Danh mục này được sử dụng khi bạn đã chốt bảng lương&lt;/P&gt;
-&lt;P&gt;Nhấn Ok để hoàn tất tác vụ này.&lt;/P&gt;</Content>
               </TopicSection>
             </TopicSections>
             <TopicLinks />
@@ -1088,7 +926,7 @@
     <IncludeTopicNameInTitle>false</IncludeTopicNameInTitle>
     <TopicEditorState>
       <Attributes>
-        <Attribute key="scrollPosition" valuetype="integer">0</Attribute>
+        <Attribute key="scrollPosition" valuetype="integer">379</Attribute>
       </Attributes>
     </TopicEditorState>
   </TopicsProjectPlugin>

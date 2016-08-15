@@ -1,4 +1,4 @@
-﻿-- Compile started at Sunday, 14 August 2016 13:55:41
+﻿-- Compile started at Monday, 15 August 2016 13:03:02
 Info: Building output file C:\Users\ThanhHuyen\Documents\HelpStudio\help_bk_luong\Default.hxs.
 Error: HXC3023: Failed to open file stylesheets/customstyles.css. [C:\Users\ThanhHuyen\Documents\HelpStudio\help_bk_luong\build\Default\Default.HxF line 0 col 0]
 Info: Parsing topic  1: /Cài .html
@@ -215,4 +215,4 @@ Info: Saving file: Default_D.HxK
 Info: Number of Topics: 20.
 Info: Number of URLs: 20.
 Info: Processing complete.
--- Compile completed on 08/14/2016 13:55:58
+-- Compile completed on 08/15/2016 13:03:19

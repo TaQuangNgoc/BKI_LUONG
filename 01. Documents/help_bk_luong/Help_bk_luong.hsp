@@ -128,10 +128,10 @@
                   <TargetItemId>8674f207-3c55-4d1b-9e05-5cf79a341af9</TargetItemId>
                   <TargetItemBookmark></TargetItemBookmark>
                 </TocNode>
-                <TocNode Name="" Id="bf39878c-3301-41d0-8fe2-813e186cc5ac" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+                <TocNode Name="" Id="2f07c8c9-a505-4273-a11a-8f7bc65cd182" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
                   <CaptionTemplate />
                   <ChildNodes />
-                  <TargetItemId>47454991-b253-42a9-98f7-1a62e817d19a</TargetItemId>
+                  <TargetItemId>01783418-b8ea-4cd3-b60a-d81774151750</TargetItemId>
                   <TargetItemBookmark></TargetItemBookmark>
                 </TocNode>
                 <TocNode Name="" Id="70f74f06-a0e8-46b1-9365-01ad60ef2824" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
@@ -425,39 +425,40 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="01783418-b8ea-4cd3-b60a-d81774151750" Status="New Topic" CreatedOn="2016-08-12T03:13:14.423043Z" ModifiedOn="2016-08-14T05:01:17.6280219Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="S" BuildFlags="">
+          <Topic Id="01783418-b8ea-4cd3-b60a-d81774151750" Status="New Topic" CreatedOn="2016-08-12T03:13:14.423043Z" ModifiedOn="2016-08-14T06:51:40.9549951Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="S" BuildFlags="">
             <Title m="2016-08-12T03:13:46.5062328Z">Số ngày công tiêu chuẩn</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-14T05:01:17.6270212Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn.png"&gt;&lt;/P&gt;
+                <Content m="2016-08-14T06:51:40.9549951Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn.png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn có thể cài đặt số ngày công tiêu chuẩn ứng với từng nhân viên. Cụ thể:&lt;/P&gt;
 &lt;P&gt;&lt;STRONG&gt;I. Danh mục loại nhân viên&lt;/STRONG&gt;&lt;/P&gt;
-&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn (2).png"&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn (2).png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;1. Bạn có thể xem các hạng mục của danh mục loại nhân viên bao gồm:&lt;/P&gt;
 &lt;P&gt;-Mã loại nhân viên&lt;/P&gt;
 &lt;P&gt;-Tên loại nhân viên&lt;/P&gt;
-&lt;P&gt;2. Bạn muốn THÊM&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
-&lt;P&gt;&lt;STRONG&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;2. Bạn muốn THÊM&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&amp;nbsp;&lt;IMG border=0 alt="" src="images/thêm_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;-chọn nút "Thêm"&lt;/P&gt;
 &lt;P&gt;-&amp;nbsp;form Thông tin&amp;nbsp; chi tiết danh mục loại nhân viên hiện ra, bạn điền các thông tin tương ứng vào form hợp lệ,sau đó nhấn nút lưu=&amp;gt;Bạn đã thêm mới thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
-&lt;P&gt;3. Bạn muốn SỬA&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
-&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/sửa_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;3. Bạn muốn SỬA&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/sửa_danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;-Chọn mục bạn muốn sửa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút "sửa"&lt;/P&gt;
 &lt;P&gt;-Form hiện ra, bạn viết các thông tin cần sửa tương ứng với các mục, sau đó nhấn nút lưu=&amp;gt;Bạn đã sửa thành công&lt;/P&gt;
 &lt;P&gt;-Ngược lại bạn muốn thoát , nhấn nút thoát hoặc dấu x bên trên của form&lt;/P&gt;
-&lt;P&gt;4.Bạn muốn "Xóa"&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
-&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/xóa _danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;4.Bạn muốn "Xóa"&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;IMG border=0 alt="" src="images/xóa _danh mục loại nhân viên.png"&gt;&lt;/STRONG&gt;&lt;/P&gt;
 &lt;P&gt;&lt;STRONG&gt;-&lt;/STRONG&gt;Chọn mục bạn muốn Xóa&lt;/P&gt;
 &lt;P&gt;-Nhấn nút xóa&lt;/P&gt;
 &lt;P&gt;-Hệ thống sẽ hỏi bạn muốn xóa hay không, nhấn "yes"=&amp;gt;bạn đã xóa thành công, ngược lại nhấn "no"&lt;/P&gt;
-&lt;P&gt;&amp;nbsp;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
-&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&lt;/P&gt;
 &lt;P&gt;&lt;STRONG&gt;II.&amp;nbsp;Số ngày công tiêu chuẩn&lt;/STRONG&gt;&lt;/P&gt;
+&lt;P&gt;&lt;STRONG&gt;&lt;/STRONG&gt;&amp;nbsp;&lt;/P&gt;
 &lt;P&gt;&lt;IMG border=0 alt="" src="images/số ngày công tiêu chuẩn 1.png"&gt;&lt;/P&gt;
 &lt;P&gt;Bạn chọn năm cần cài đặt số ngày công tiêu chuẩn. Ví dụ :2016&lt;/P&gt;
 &lt;P&gt;Sau đó ấn nút "Tiếp tục"&lt;/P&gt;
@@ -622,13 +623,14 @@
             <PropertyDefinitionValues />
             <ExcludedOtherFiles />
           </Topic>
-          <Topic Id="982a3711-f168-466b-944a-e16289cae5e1" Status="New Topic" CreatedOn="2016-08-12T08:01:28.7709125Z" ModifiedOn="2016-08-12T08:48:41.7869164Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Su" BuildFlags="">
+          <Topic Id="982a3711-f168-466b-944a-e16289cae5e1" Status="New Topic" CreatedOn="2016-08-12T08:01:28.7709125Z" ModifiedOn="2016-08-14T06:54:32.3249996Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Su" BuildFlags="">
             <Title m="2016-08-12T08:02:34.0606907Z">Sửa thông tin nhân viên</Title>
             <ContentsTitle />
             <Notes></Notes>
             <TopicSections>
               <TopicSection Name="BodyText">
-                <Content m="2016-08-12T08:48:41.7869164Z">&lt;P&gt;Bạn chọn tên nhân viên cẩn sửa tại mục nhân viên&lt;/P&gt;
+                <Content m="2016-08-14T06:54:32.3249996Z">&lt;P&gt;&lt;IMG border=0 alt="" src="images/sửa thông tin  nhân viên.png"&gt;&lt;/P&gt;
+&lt;P&gt;Bạn chọn tên nhân viên cẩn sửa tại mục nhân viên&lt;/P&gt;
 &lt;P&gt;Nhấn nút "tiếp tục"&lt;/P&gt;
 &lt;P&gt;Sau đó form "Thông tin nhân viên "được hiển thị ra&lt;/P&gt;
 &lt;P&gt;Bạn sửa thông tin nhân viên như các bước tại" thêm mới nhân viên"&lt;/P&gt;</Content>
@@ -924,7 +926,7 @@
     <IncludeTopicNameInTitle>false</IncludeTopicNameInTitle>
     <TopicEditorState>
       <Attributes>
-        <Attribute key="scrollPosition" valuetype="integer">0</Attribute>
+        <Attribute key="scrollPosition" valuetype="integer">442</Attribute>
       </Attributes>
     </TopicEditorState>
   </TopicsProjectPlugin>
