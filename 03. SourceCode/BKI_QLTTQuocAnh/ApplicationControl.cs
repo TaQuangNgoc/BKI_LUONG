@@ -38,7 +38,7 @@ namespace BKI_DichVuMatDat
               // LOGIN_DETAIL v_f = new LOGIN_DETAIL();
 
 
-                v_f.ShowDialog();
+              v_f.ShowDialog();
                
 
                // m_grc_ngay_cong.DataSource = v_ds.Tables[0];

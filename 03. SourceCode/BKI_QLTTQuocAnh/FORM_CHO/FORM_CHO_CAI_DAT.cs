@@ -22,7 +22,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
         {
             FileStream fs = new FileStream("./Default/webframe.html", FileMode.Open, FileAccess.Read);
             //  MessageBox.Show(fs.Name);
-            Uri uri = new Uri(fs.Name + "#tôi là tôi.html");
+            Uri uri = new Uri(fs.Name + "#Cài.html");
             Document v_f = new Document();
             v_f.Display(uri);
         }
