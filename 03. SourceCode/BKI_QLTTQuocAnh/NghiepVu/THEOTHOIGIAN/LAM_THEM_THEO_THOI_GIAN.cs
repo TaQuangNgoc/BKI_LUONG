@@ -14,6 +14,7 @@ using BKI_DichVuMatDat.DS;
 using DevExpress.XtraVerticalGrid.Rows;
 using BKI_DichVuMatDat.DS.CDBNames;
 using DevExpress.XtraEditors.Controls;
+using System.IO;
 
 namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 {
@@ -579,6 +580,15 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 throw;
             }
             
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("./Default/webframe.html", FileMode.Open, FileAccess.Read);
+            //  MessageBox.Show(fs.Name);
+            Uri uri = new Uri(fs.Name + "#Làm thêm theo th.html");
+            Document v_f = new Document();
+            v_f.Display(uri);
         }
 
 

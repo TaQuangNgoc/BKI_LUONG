@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -67,7 +68,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(584, 290);
+            this.panel3.Size = new System.Drawing.Size(584, 273);
             this.panel3.TabIndex = 8;
             // 
             // m_cb_luong_theo_thoi_gian
@@ -178,11 +179,12 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.m_btn_luu);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 343);
+            this.panel4.Location = new System.Drawing.Point(0, 326);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(584, 46);
+            this.panel4.Size = new System.Drawing.Size(584, 63);
             this.panel4.TabIndex = 7;
             // 
             // m_btn_luu
@@ -199,10 +201,21 @@
             this.m_btn_luu.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_btn_luu.Location = new System.Drawing.Point(441, 0);
             this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(143, 46);
+            this.m_btn_luu.Size = new System.Drawing.Size(143, 63);
             this.m_btn_luu.TabIndex = 14;
             this.m_btn_luu.Text = "Lưu";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(65, 63);
+            this.panel6.TabIndex = 38;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // CAC_HINH_THUC_TINH_LUONG
             // 
@@ -236,6 +249,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
+        private System.Windows.Forms.Panel panel6;
 
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -96,6 +97,15 @@ namespace BKI_DichVuMatDat
         private void m_cb_luong_theo_san_pham_Click(object sender, EventArgs e)
         {
             WinFormControls.setTooltip(m_tooltip_cham_cong_theo_thoi_gian, m_cb_luong_theo_san_pham, ToolTipIcon.Error, "Thông báo", "Module này sẽ được hoàn thiện trong thời gian tới!");
+        }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("./Default/webframe.html", FileMode.Open, FileAccess.Read);
+            //  MessageBox.Show(fs.Name);
+            Uri uri = new Uri(fs.Name + "#Các hình th.html");
+            Document v_f = new Document();
+            v_f.Display(uri);
         }
     }
 }

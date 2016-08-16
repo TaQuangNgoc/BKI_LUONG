@@ -546,6 +546,15 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
             }
         }
 
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("./Default/webframe.html", FileMode.Open, FileAccess.Read);
+            //  MessageBox.Show(fs.Name);
+            Uri uri = new Uri(fs.Name + "#Theo ngày.html");
+            Document v_f = new Document();
+            v_f.Display(uri);
+        }
+
        
 
     }

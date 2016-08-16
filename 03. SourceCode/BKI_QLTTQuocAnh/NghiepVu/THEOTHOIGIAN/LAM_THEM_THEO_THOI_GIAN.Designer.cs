@@ -56,6 +56,7 @@
             this.m_btn_hien_thi = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
+            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties)).BeginInit();
             this.panel3.SuspendLayout();
@@ -86,7 +87,7 @@
             this.m_cmd_nhap_cham_cong.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.m_cmd_nhap_cham_cong.Location = new System.Drawing.Point(925, 0);
             this.m_cmd_nhap_cham_cong.Name = "m_cmd_nhap_cham_cong";
-            this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 53);
+            this.m_cmd_nhap_cham_cong.Size = new System.Drawing.Size(210, 63);
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
             this.m_cmd_nhap_cham_cong.Text = "Lưu chấm công\r\n";
             this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
@@ -142,11 +143,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.m_cmd_nhap_cham_cong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 386);
+            this.panel3.Location = new System.Drawing.Point(0, 376);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1135, 53);
+            this.panel3.Size = new System.Drawing.Size(1135, 63);
             this.panel3.TabIndex = 13;
             // 
             // m_cmd_mo_file_mau
@@ -321,7 +323,7 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(1135, 242);
+            this.m_grc.Size = new System.Drawing.Size(1135, 232);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -368,7 +370,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 144);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1135, 242);
+            this.panel2.Size = new System.Drawing.Size(1135, 232);
             this.panel2.TabIndex = 10;
             // 
             // panel7
@@ -411,6 +413,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1135, 53);
             this.panel1.TabIndex = 12;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(65, 63);
+            this.panel6.TabIndex = 40;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // LAM_THEM_THEO_THOI_GIAN
             // 
@@ -473,6 +486,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
+        private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
     }
 }

@@ -79,7 +79,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(64, 65);
+            this.panel2.Size = new System.Drawing.Size(65, 65);
             this.panel2.TabIndex = 32;
             this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
