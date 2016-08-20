@@ -20,6 +20,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
         public DANG_NHAP_HE_THONG()
         {
             InitializeComponent();
+            WinFormControls.formatGridView(m_grv_dang_nhap_he_thong);
             load_du_lieu_vao_bang_dang_nhap_he_thong();
         }
 

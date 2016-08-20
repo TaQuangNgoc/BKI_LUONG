@@ -35,6 +35,44 @@ namespace BKI_DichVuMatDat
             // TODO: Add constructor logic here
             //
         }
+
+        public static void formatGridView(DevExpress.XtraGrid.Views.Grid.GridView ip_grv) {
+            ip_grv.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.FocusedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Wheat;
+            ip_grv.Appearance.FocusedRow.Options.UseBackColor = true;
+            ip_grv.Appearance.FocusedRow.Options.UseForeColor = true;
+            ip_grv.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            ip_grv.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            ip_grv.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
+            ip_grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ip_grv.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            ip_grv.Appearance.HeaderPanel.Options.UseBackColor = true;
+            ip_grv.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            ip_grv.Appearance.HeaderPanel.Options.UseFont = true;
+            ip_grv.Appearance.HeaderPanel.Options.UseForeColor = true;
+            ip_grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            ip_grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            ip_grv.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            ip_grv.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.HideSelectionRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            ip_grv.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            ip_grv.Appearance.HideSelectionRow.Options.UseForeColor = true;
+            ip_grv.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ip_grv.Appearance.Row.Options.UseFont = true;
+            ip_grv.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.SelectedRow.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(187)))), ((int)(((byte)(102)))));
+            ip_grv.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
+            ip_grv.Appearance.SelectedRow.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            ip_grv.Appearance.SelectedRow.Options.UseBackColor = true;
+            ip_grv.Appearance.SelectedRow.Options.UseForeColor = true;
+            ip_grv.OptionsBehavior.Editable = false;
+            ip_grv.OptionsSelection.EnableAppearanceFocusedCell = false;
+            ip_grv.OptionsView.ShowGroupPanel = false;
+            ip_grv.PaintStyleName = "Web";
+        }
+
         public enum eTAT_CA
         {
             YES,
