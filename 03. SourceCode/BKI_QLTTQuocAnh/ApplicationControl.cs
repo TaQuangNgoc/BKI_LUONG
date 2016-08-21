@@ -34,7 +34,7 @@ namespace BKI_DichVuMatDat
            
             try
             {
-                FORM_MENU v_f = new FORM_MENU();
+                Form1 v_f = new Form1();
               // LOGIN_DETAIL v_f = new LOGIN_DETAIL();
 
 
