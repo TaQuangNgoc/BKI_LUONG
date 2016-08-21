@@ -489,7 +489,7 @@
             this.m_grv_main.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.m_grv_main.OptionsView.ShowFooter = true;
             this.m_grv_main.OptionsView.ShowGroupPanel = false;
-            this.m_grv_main.PaintStyleName = "Flat";
+            this.m_grv_main.PaintStyleName = "UltraFlat";
             // 
             // gridBand1
             // 

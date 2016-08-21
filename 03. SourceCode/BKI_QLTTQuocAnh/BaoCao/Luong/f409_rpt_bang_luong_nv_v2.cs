@@ -363,6 +363,7 @@ namespace BKI_DichVuMatDat.BaoCao
         //Setup Form
         private void format_controls()
         {
+            WinFormControls.formatGridView(m_grv_main);
             set_define_events();
         }
         private void set_initial_form_load()
