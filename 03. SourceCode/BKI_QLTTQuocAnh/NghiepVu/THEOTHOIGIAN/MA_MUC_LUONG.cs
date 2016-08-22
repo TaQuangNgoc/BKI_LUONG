@@ -22,11 +22,23 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         {
             InitializeComponent();
             fill_data_to_sle();
-            fill_data_to_grid_muc();
+            fill_data_to_sle_muc();
+           
             WinFormControls.formatGridView(m_grv_ma);
             WinFormControls.formatGridView(m_grv_muc);
             WinFormControls.formatGridView(m_grv_ma_muc);
             WinFormControls.formatGridView(m_grv_ma_muc_lcd);
+        }
+
+        private void fill_data_to_sle_muc()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            DataTable v_dt = new DataTable();
+            v_ds.Tables.Add(v_dt);
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_LOAI_TD WHERE ID IN(2,4)");
+            m_sle_loai_muc.Properties.DataSource = v_ds.Tables[0];
+            m_sle_loai_muc.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
         }
 
        
@@ -50,12 +62,12 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             m_grc_ma.DataSource = v_ds.Tables[0];
         }
 
-         private void fill_data_to_grid_muc()
+        private void fill_data_to_grid_muc(int id_loai_muc)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=2");
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN="+ id_loai_muc);
             m_grc_muc.DataSource = v_ds.Tables[0];
         }
 
@@ -64,8 +76,10 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         {
            // fill_data_to_grid_ma();
             m_sle_luong.EditValueChanged += m_sle_luong_EditValueChanged;
-            fill_data_to_grid_ma_muc(760);
-            fill_data_to_grid_ma_muc(761);
+            m_sle_loai_muc.EditValueChanged += m_sle_loai_muc_EditValueChanged;
+           // fill_data_to_grid_ma_muc(760);
+           // fill_data_to_grid_ma_muc(761);
+          //  fill_data_to_grid_muc(int.Parse(m_sle_loai_muc.EditValue.ToString()));
 
         }
 
@@ -108,8 +122,8 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
 
                     case "tab_danhmucmuc":
                       MUC_LUONG_DETAIL v_f_muc= new MUC_LUONG_DETAIL();
-                        v_f_muc.dislay_for_insert();
-                        fill_data_to_grid_muc();
+                      v_f_muc.dislay_for_insert(int.Parse(m_sle_loai_muc.EditValue.ToString()));
+                        fill_data_to_grid_muc(int.Parse(m_sle_loai_muc.EditValue.ToString()));
                         break;
 
                     case "tab_sotien":
@@ -228,8 +242,8 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 DataRow v_dr = m_grv_muc.GetDataRow(m_grv_muc.FocusedRowHandle);
                 var v_us = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 var  v_f = new MUC_LUONG_DETAIL();
-                v_f.dislay_for_update(v_us);
-                  fill_data_to_grid_muc();
+                v_f.dislay_for_update(v_us, int.Parse(m_sle_loai_muc.EditValue.ToString()));
+                fill_data_to_grid_muc(int.Parse(m_sle_loai_muc.EditValue.ToString()));
             }
         }
 
@@ -252,6 +266,11 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
                 v_f.dislay_for_update(v_us,int.Parse(m_sle_luong.EditValue.ToString()));
                   fill_data_to_grid_ma(int.Parse(m_sle_luong.EditValue.ToString()));
             }
+        }
+
+        private void m_sle_loai_muc_EditValueChanged(object sender, EventArgs e)
+        {
+            fill_data_to_grid_muc(int.Parse(m_sle_loai_muc.EditValue.ToString()));
         }
 
 

@@ -36,6 +36,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             m_us = v_us;
             us_to_form(v_us);
+            this.ShowDialog();
         }
 
         private void us_to_form(US_CM_DM_TU_DIEN v_us)
@@ -105,5 +106,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_us.dcID_LOAI_TU_DIEN = decimal.Parse(m_ma_loai_luong.ToString());
 
         }
+
+       
     }
 }

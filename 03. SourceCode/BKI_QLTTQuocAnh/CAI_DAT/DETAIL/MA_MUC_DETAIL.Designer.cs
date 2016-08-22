@@ -29,30 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_sle_muc = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_sle_ma = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.m_txt_so_tien = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_xoa_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.m_txt_so_tien = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.m_sle_ma = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.m_sle_muc = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_sle_ma.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_muc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sle_ma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,10 +69,90 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 29);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(587, 293);
             this.panel1.TabIndex = 2;
+            // 
+            // m_sle_muc
+            // 
+            this.m_sle_muc.EditValue = "";
+            this.m_sle_muc.Location = new System.Drawing.Point(160, 144);
+            this.m_sle_muc.Name = "m_sle_muc";
+            this.m_sle_muc.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_muc.Properties.Appearance.Options.UseFont = true;
+            this.m_sle_muc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.m_sle_muc.Properties.DisplayMember = "MA_TU_DIEN";
+            this.m_sle_muc.Properties.ValueMember = "ID";
+            this.m_sle_muc.Properties.View = this.gridView1;
+            this.m_sle_muc.Size = new System.Drawing.Size(263, 24);
+            this.m_sle_muc.TabIndex = 70;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn4});
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Mức";
+            this.gridColumn1.FieldName = "MA_TU_DIEN";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "ID";
+            this.gridColumn2.FieldName = "ID";
+            this.gridColumn2.Name = "gridColumn2";
+            // 
+            // m_sle_ma
+            // 
+            this.m_sle_ma.EditValue = "";
+            this.m_sle_ma.Location = new System.Drawing.Point(160, 97);
+            this.m_sle_ma.Name = "m_sle_ma";
+            this.m_sle_ma.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_ma.Properties.Appearance.Options.UseFont = true;
+            this.m_sle_ma.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.m_sle_ma.Properties.DisplayMember = "MA_TU_DIEN";
+            this.m_sle_ma.Properties.ValueMember = "ID";
+            this.m_sle_ma.Properties.View = this.gridView2;
+            this.m_sle_ma.Size = new System.Drawing.Size(263, 24);
+            this.m_sle_ma.TabIndex = 70;
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn3});
+            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Mã";
+            this.gridColumn5.FieldName = "MA_TU_DIEN";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 0;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "ID";
+            this.gridColumn6.FieldName = "ID";
+            this.gridColumn6.Name = "gridColumn6";
             // 
             // panel3
             // 
@@ -92,6 +174,35 @@
             this.label2.Size = new System.Drawing.Size(560, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT SỐ TIỀN CỦA MÃ - MỨC LƯƠNG NĂNG SUẤT";
+            // 
+            // m_txt_so_tien
+            // 
+            this.m_txt_so_tien.Depth = 0;
+            this.m_txt_so_tien.Hint = "";
+            this.m_txt_so_tien.Location = new System.Drawing.Point(160, 193);
+            this.m_txt_so_tien.MaxLength = 32767;
+            this.m_txt_so_tien.MouseState = MaterialSkin.MouseState.HOVER;
+            this.m_txt_so_tien.Name = "m_txt_so_tien";
+            this.m_txt_so_tien.PasswordChar = '\0';
+            this.m_txt_so_tien.SelectedText = "";
+            this.m_txt_so_tien.SelectionLength = 0;
+            this.m_txt_so_tien.SelectionStart = 0;
+            this.m_txt_so_tien.Size = new System.Drawing.Size(263, 23);
+            this.m_txt_so_tien.TabIndex = 2;
+            this.m_txt_so_tien.TabStop = false;
+            this.m_txt_so_tien.UseSystemPasswordChar = false;
+            this.m_txt_so_tien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
+            this.m_txt_so_tien.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 18);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Số tiền";
             // 
             // label9
             // 
@@ -162,126 +273,40 @@
             this.m_btn_xoa_luong.Text = "THOÁT";
             this.m_btn_xoa_luong.Click += new System.EventHandler(this.m_btn_xoa_luong_Click);
             // 
-            // label1
+            // gridColumn3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 198);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 18);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Số tiền";
+            this.gridColumn3.Caption = "TÊN";
+            this.gridColumn3.FieldName = "TEN";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 1;
             // 
-            // m_txt_so_tien
+            // gridColumn4
             // 
-            this.m_txt_so_tien.Depth = 0;
-            this.m_txt_so_tien.Hint = "";
-            this.m_txt_so_tien.Location = new System.Drawing.Point(160, 193);
-            this.m_txt_so_tien.MouseState = MaterialSkin.MouseState.HOVER;
-            this.m_txt_so_tien.Name = "m_txt_so_tien";
-            this.m_txt_so_tien.PasswordChar = '\0';
-            this.m_txt_so_tien.SelectedText = "";
-            this.m_txt_so_tien.SelectionLength = 0;
-            this.m_txt_so_tien.SelectionStart = 0;
-            this.m_txt_so_tien.Size = new System.Drawing.Size(263, 23);
-            this.m_txt_so_tien.TabIndex = 2;
-            this.m_txt_so_tien.UseSystemPasswordChar = false;
-            // 
-            // m_sle_ma
-            // 
-            this.m_sle_ma.EditValue = "";
-            this.m_sle_ma.Location = new System.Drawing.Point(160, 97);
-            this.m_sle_ma.Name = "m_sle_ma";
-            this.m_sle_ma.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_sle_ma.Properties.Appearance.Options.UseFont = true;
-            this.m_sle_ma.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.m_sle_ma.Properties.DisplayMember = "TEN_LOAI";
-            this.m_sle_ma.Properties.ValueMember = "ID";
-            this.m_sle_ma.Properties.View = this.gridView2;
-            this.m_sle_ma.Size = new System.Drawing.Size(263, 24);
-            this.m_sle_ma.TabIndex = 70;
-            // 
-            // gridView2
-            // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn5,
-            this.gridColumn6});
-            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            // 
-            // m_sle_muc
-            // 
-            this.m_sle_muc.EditValue = "";
-            this.m_sle_muc.Location = new System.Drawing.Point(160, 144);
-            this.m_sle_muc.Name = "m_sle_muc";
-            this.m_sle_muc.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_sle_muc.Properties.Appearance.Options.UseFont = true;
-            this.m_sle_muc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.m_sle_muc.Properties.DisplayMember = "TEN_LOAI";
-            this.m_sle_muc.Properties.ValueMember = "ID";
-            this.m_sle_muc.Properties.View = this.gridView1;
-            this.m_sle_muc.Size = new System.Drawing.Size(263, 24);
-            this.m_sle_muc.TabIndex = 70;
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2});
-            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "LƯƠNG";
-            this.gridColumn1.FieldName = "TEN_LOAI";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "ID";
-            this.gridColumn2.FieldName = "ID";
-            this.gridColumn2.Name = "gridColumn2";
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "LƯƠNG";
-            this.gridColumn5.FieldName = "TEN_LOAI";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 0;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "ID";
-            this.gridColumn6.FieldName = "ID";
-            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn4.Caption = "Tên";
+            this.gridColumn4.FieldName = "TEN";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 1;
             // 
             // MA_MUC_DETAIL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 319);
+            this.ClientSize = new System.Drawing.Size(587, 322);
             this.Controls.Add(this.panel1);
             this.Name = "MA_MUC_DETAIL";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MA_MUC_DETAIL";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sle_muc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sle_ma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_sle_ma.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_sle_muc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +331,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
     }
 }

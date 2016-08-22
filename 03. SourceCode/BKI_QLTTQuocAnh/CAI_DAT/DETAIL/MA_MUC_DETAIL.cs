@@ -24,6 +24,41 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             InitializeComponent();
             load_data_to_sle_ma();
             Load_data_to_sle_muc();
+            
+        }
+
+        private  void text_box_format_numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private  void text_box_key_up_format_currency(object sender, KeyEventArgs e)
+        {
+            TextBox textbox = (TextBox)sender;
+            try
+            {
+                System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+                double valueBefore = Double.Parse(textbox.Text, System.Globalization.NumberStyles.AllowThousands);
+                textbox.Text = String.Format(culture, "{0:N0}", valueBefore);
+                textbox.Select(textbox.Text.Length, 0);
+
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Nhập chẵn số tiền!");
+                textbox.Text = "";
+            }
+
         }
 
         private void load_data_to_sle_ma()
@@ -58,13 +93,16 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             m_us = v_us;
             us_to_form(v_us);
+            m_sle_ma.Enabled = false;
+            m_sle_muc.Enabled = false;
+            this.ShowDialog();
         }
 
         private void us_to_form(US_DM_THANG_LUONG_NS v_us)
         {
             m_sle_ma.EditValue = v_us.dcID_MA_LNS;
             m_sle_muc.EditValue = v_us.dcID_MUC_LNS;
-            m_txt_so_tien.Text = v_us.dcSO_TIEN.ToString() ;
+            m_txt_so_tien.Text = ((decimal)v_us.dcSO_TIEN).ToString("n0");
         }
 
         private void m_btn_xoa_luong_Click(object sender, EventArgs e)

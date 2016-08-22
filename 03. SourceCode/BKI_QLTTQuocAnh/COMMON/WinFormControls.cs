@@ -95,6 +95,8 @@ namespace BKI_DichVuMatDat
             DM_CA_HOC
         }
 
+       
+
         public static void Convert_gridcontrol_to_datatable(GridView gridview, DataTable datatable)
         {
             foreach (GridColumn column in gridview.Columns)

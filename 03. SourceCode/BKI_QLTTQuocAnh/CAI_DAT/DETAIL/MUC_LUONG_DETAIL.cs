@@ -17,22 +17,25 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
     {
         DataEntryFormMode m_e_form_mode = DataEntryFormMode.InsertDataState;
         US_CM_DM_TU_DIEN m_us = new US_CM_DM_TU_DIEN();
+        int m_ma_loai_luong;
         public MUC_LUONG_DETAIL()
         {
             InitializeComponent();
         }
 
-        internal void dislay_for_insert()
+        internal void dislay_for_insert(int ma_loai_luong)
         {
+            m_ma_loai_luong = ma_loai_luong;
             this.ShowDialog();
         }
 
-        internal void dislay_for_update(US.US_CM_DM_TU_DIEN v_us)
+        internal void dislay_for_update(US.US_CM_DM_TU_DIEN v_us, int ma_loai_luong)
         {
-            
+            this.m_ma_loai_luong = ma_loai_luong;
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             m_us = v_us;
             us_to_form(v_us);
+            this.ShowDialog();
         }
 
         private void us_to_form(US_CM_DM_TU_DIEN v_us)
@@ -99,7 +102,7 @@ namespace BKI_DichVuMatDat.CAI_DAT.DETAIL
             m_us.strMA_TU_DIEN = m_txt_muc_luong.Text;
             m_us.strTEN = m_txt_ten_muc_luong.Text;
             m_us.strTEN_NGAN = m_txt_ten_muc_luong.Text;
-            m_us.dcID_LOAI_TU_DIEN = 2;
+            m_us.dcID_LOAI_TU_DIEN = m_ma_loai_luong;
 
         }
 

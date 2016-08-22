@@ -73,6 +73,14 @@
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.m_sle_loai_muc = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn13 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -96,6 +104,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc_lcd)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sle_loai_muc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -115,9 +128,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(614, 20);
+            this.label2.Size = new System.Drawing.Size(212, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "CÀI ĐẶT SỐ NGÀY CÔNG TIÊU CHUẨN ỨNG VỚI TỪNG LOẠI NHÂN VIÊN";
+            this.label2.Text = "CÀI ĐẶT THANG LƯƠNG";
             // 
             // panel4
             // 
@@ -217,7 +230,7 @@
             this.tab_danhmucma.Padding = new System.Windows.Forms.Padding(3);
             this.tab_danhmucma.Size = new System.Drawing.Size(899, 286);
             this.tab_danhmucma.TabIndex = 0;
-            this.tab_danhmucma.Text = "DANH MỤC MÃ_MỨC";
+            this.tab_danhmucma.Text = "DANH MỤC MÃ";
             // 
             // m_grc_ma
             // 
@@ -307,7 +320,7 @@
             // m_sle_luong
             // 
             this.m_sle_luong.EditValue = "";
-            this.m_sle_luong.Location = new System.Drawing.Point(182, 17);
+            this.m_sle_luong.Location = new System.Drawing.Point(124, 17);
             this.m_sle_luong.Name = "m_sle_luong";
             this.m_sle_luong.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_sle_luong.Properties.Appearance.Options.UseFont = true;
@@ -348,9 +361,9 @@
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Location = new System.Drawing.Point(28, 20);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(103, 18);
+            this.labelControl4.Size = new System.Drawing.Size(67, 18);
             this.labelControl4.TabIndex = 20;
-            this.labelControl4.Text = "Chọn loại lương";
+            this.labelControl4.Text = "Chọn loại ";
             // 
             // labelControl2
             // 
@@ -362,6 +375,7 @@
             // tab_danhmucmuc
             // 
             this.tab_danhmucmuc.Controls.Add(this.m_grc_muc);
+            this.tab_danhmucmuc.Controls.Add(this.panel6);
             this.tab_danhmucmuc.Location = new System.Drawing.Point(4, 22);
             this.tab_danhmucmuc.Name = "tab_danhmucmuc";
             this.tab_danhmucmuc.Size = new System.Drawing.Size(899, 286);
@@ -373,10 +387,10 @@
             // 
             this.m_grc_muc.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_muc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_muc.Location = new System.Drawing.Point(0, 0);
+            this.m_grc_muc.Location = new System.Drawing.Point(0, 54);
             this.m_grc_muc.MainView = this.m_grv_muc;
             this.m_grc_muc.Name = "m_grc_muc";
-            this.m_grc_muc.Size = new System.Drawing.Size(899, 286);
+            this.m_grc_muc.Size = new System.Drawing.Size(899, 232);
             this.m_grc_muc.TabIndex = 15;
             this.m_grc_muc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_muc});
@@ -528,6 +542,8 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "Số tiền";
+            this.gridColumn7.DisplayFormat.FormatString = "n0";
+            this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn7.FieldName = "SO_TIEN";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
@@ -628,6 +644,8 @@
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Số tiền";
+            this.gridColumn12.DisplayFormat.FormatString = "n0";
+            this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.gridColumn12.FieldName = "SO_TIEN";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
@@ -653,6 +671,83 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(907, 312);
             this.panel5.TabIndex = 14;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
+            this.panel6.Controls.Add(this.panelControl2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(899, 54);
+            this.panel6.TabIndex = 16;
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl2.Controls.Add(this.m_sle_loai_muc);
+            this.panelControl2.Controls.Add(this.labelControl1);
+            this.panelControl2.Controls.Add(this.labelControl3);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(520, 54);
+            this.panelControl2.TabIndex = 1;
+            // 
+            // m_sle_loai_muc
+            // 
+            this.m_sle_loai_muc.EditValue = "";
+            this.m_sle_loai_muc.Location = new System.Drawing.Point(124, 17);
+            this.m_sle_loai_muc.Name = "m_sle_loai_muc";
+            this.m_sle_loai_muc.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_sle_loai_muc.Properties.Appearance.Options.UseFont = true;
+            this.m_sle_loai_muc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.m_sle_loai_muc.Properties.DisplayMember = "TEN_LOAI";
+            this.m_sle_loai_muc.Properties.ValueMember = "ID";
+            this.m_sle_loai_muc.Properties.View = this.gridView1;
+            this.m_sle_loai_muc.Size = new System.Drawing.Size(263, 24);
+            this.m_sle_loai_muc.TabIndex = 24;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn13,
+            this.gridColumn14});
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn13
+            // 
+            this.gridColumn13.Caption = "LƯƠNG";
+            this.gridColumn13.FieldName = "TEN_LOAI";
+            this.gridColumn13.Name = "gridColumn13";
+            this.gridColumn13.Visible = true;
+            this.gridColumn13.VisibleIndex = 0;
+            // 
+            // gridColumn14
+            // 
+            this.gridColumn14.Caption = "ID";
+            this.gridColumn14.FieldName = "ID";
+            this.gridColumn14.Name = "gridColumn14";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Location = new System.Drawing.Point(28, 20);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(67, 18);
+            this.labelControl1.TabIndex = 20;
+            this.labelControl1.Text = "Chọn loại ";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(28, 20);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(0, 13);
+            this.labelControl3.TabIndex = 19;
             // 
             // MA_MUC_LUONG
             // 
@@ -688,6 +783,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc_lcd)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sle_loai_muc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -739,5 +840,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
+        private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SearchLookUpEdit m_sle_loai_muc;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }
