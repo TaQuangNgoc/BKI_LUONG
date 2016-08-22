@@ -63,8 +63,6 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.tab_sotienmamuclcd = new System.Windows.Forms.TabPage();
             this.m_grc_ma_muc_lcd = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ma_muc_lcd = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -73,6 +71,8 @@
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,11 +91,11 @@
             this.tab_sotien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ma_muc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.tab_sotienmamuclcd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ma_muc_lcd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc_lcd)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -170,7 +170,6 @@
             this.m_cmd_xoa.TabIndex = 39;
             this.m_cmd_xoa.Text = "Xóa";
             this.m_cmd_xoa.UseVisualStyleBackColor = true;
-            this.m_cmd_xoa.Visible = false;
             // 
             // panel3
             // 
@@ -534,27 +533,6 @@
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 4;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(907, 446);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.tab_Control1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 93);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(907, 312);
-            this.panel5.TabIndex = 14;
-            // 
             // tab_sotienmamuclcd
             // 
             this.tab_sotienmamuclcd.Controls.Add(this.m_grc_ma_muc_lcd);
@@ -655,6 +633,27 @@
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 4;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(907, 446);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.tab_Control1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 93);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(907, 312);
+            this.panel5.TabIndex = 14;
+            // 
             // MA_MUC_LUONG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -684,11 +683,11 @@
             this.tab_sotien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ma_muc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.tab_sotienmamuclcd.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ma_muc_lcd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ma_muc_lcd)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

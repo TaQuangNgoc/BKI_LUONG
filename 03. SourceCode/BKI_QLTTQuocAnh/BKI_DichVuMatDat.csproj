@@ -533,18 +533,6 @@
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_BAO_CAO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_BAO_CAO.Designer.cs">
-      <DependentUpon>FORM_CHO_BAO_CAO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_CAI_DAT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_CAI_DAT.Designer.cs">
-      <DependentUpon>FORM_CHO_CAI_DAT.cs</DependentUpon>
-    </Compile>
     <Compile Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -574,30 +562,6 @@
     <Compile Include="DTO\DTO_BANG_LUONG_V2.cs" />
     <Compile Include="DTO\DTO_QUY_THU_NHAP_KHAC.cs" />
     <Compile Include="DTO\DTO_THONG_TIN_BANG_LUONG.cs" />
-    <Compile Include="FORM_CHO\FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.Designer.cs">
-      <DependentUpon>FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_CHAM_CONG_TU_EXCEL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_CHAM_CONG_TU_EXCEL.Designer.cs">
-      <DependentUpon>FORM_CHO_CHAM_CONG_TU_EXCEL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_NHAP_LIEU.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_NHAP_LIEU.Designer.cs">
-      <DependentUpon>FORM_CHO_NHAP_LIEU.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_THONG_TIN_NHAN_VIEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM_CHO\FORM_CHO_THONG_TIN_NHAN_VIEN.Designer.cs">
-      <DependentUpon>FORM_CHO_THONG_TIN_NHAN_VIEN.cs</DependentUpon>
-    </Compile>
     <Compile Include="FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.cs" />
     <Compile Include="FORM_MAU.cs">
       <SubType>Form</SubType>
@@ -834,12 +798,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_BAO_CAO.resx">
-      <DependentUpon>FORM_CHO_BAO_CAO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_CAI_DAT.resx">
-      <DependentUpon>FORM_CHO_CAI_DAT.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.resx">
       <DependentUpon>NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>
     </EmbeddedResource>
@@ -848,18 +806,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\THAM_SO_KHAC.resx">
       <DependentUpon>THAM_SO_KHAC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.resx">
-      <DependentUpon>FORM_CHO_CHAM_CONG_THEO_THOI_GIAN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_CHAM_CONG_TU_EXCEL.resx">
-      <DependentUpon>FORM_CHO_CHAM_CONG_TU_EXCEL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_NHAP_LIEU.resx">
-      <DependentUpon>FORM_CHO_NHAP_LIEU.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM_CHO\FORM_CHO_THONG_TIN_NHAN_VIEN.resx">
-      <DependentUpon>FORM_CHO_THONG_TIN_NHAN_VIEN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM_MAU.resx">
       <DependentUpon>FORM_MAU.cs</DependentUpon>
@@ -1049,6 +995,8 @@
     <None Include="Resources\calendar-check.png" />
     <None Include="Resources\different-currencies.png" />
     <None Include="Resources\admin-with-cogwheels.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\exit.png" />
     <Content Include="vi\DevExpress.Charts.Designer.v14.1.resources.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

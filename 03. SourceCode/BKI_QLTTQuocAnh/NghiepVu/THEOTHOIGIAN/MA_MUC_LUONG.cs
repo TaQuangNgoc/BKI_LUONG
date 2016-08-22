@@ -22,7 +22,11 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
         {
             InitializeComponent();
             fill_data_to_sle();
-           
+            fill_data_to_grid_muc();
+            WinFormControls.formatGridView(m_grv_ma);
+            WinFormControls.formatGridView(m_grv_muc);
+            WinFormControls.formatGridView(m_grv_ma_muc);
+            WinFormControls.formatGridView(m_grv_ma_muc_lcd);
         }
 
        
@@ -32,7 +36,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             DataSet v_ds = new DataSet();
             DataTable v_dt = new DataTable();
             v_ds.Tables.Add(v_dt);
-            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_LOAI_TU_DIEN WHERE ID IN(1,3)");
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_LOAI_TD WHERE ID IN(1,3)");
             m_sle_luong.Properties.DataSource = v_ds.Tables[0];
             m_sle_luong.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
         }
@@ -80,7 +84,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
             if(id_loai_luong==760)
             {
                 v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_NS");
-                 m_grc_ma.DataSource = v_ds.Tables[0];
+                 m_grc_ma_muc.DataSource = v_ds.Tables[0];
             }
             else
             {

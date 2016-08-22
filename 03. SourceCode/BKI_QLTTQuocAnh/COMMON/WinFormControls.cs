@@ -71,6 +71,8 @@ namespace BKI_DichVuMatDat
             ip_grv.OptionsSelection.EnableAppearanceFocusedCell = false;
             ip_grv.OptionsView.ShowGroupPanel = false;
             ip_grv.PaintStyleName = "Web";
+            ip_grv.ColumnPanelRowHeight = 40;
+            ip_grv.RowHeight = 35;
         }
 
         public enum eTAT_CA

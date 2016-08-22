@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 namespace BKI_DichVuMatDat 
 { 
     public partial class Form1 : MaterialSkin.Controls.MaterialForm
@@ -274,6 +275,36 @@ namespace BKI_DichVuMatDat
             {
                 DevExpress.XtraEditors.XtraMessageBox.Show(v_e.Message);
             }
+        }
+
+        private void danhmucmamuc_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            try
+            {
+                MA_MUC_LUONG v_f = new MA_MUC_LUONG();
+                m_lbl_formname.Text = "Thang lương".ToUpper();
+                v_f.TopLevel = false;
+                v_f.Dock = DockStyle.Fill;
+                m_pn_form.Controls.Add(v_f);
+                v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                v_f.WindowState = FormWindowState.Maximized;
+                v_f.Show();
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
+            }
+            catch (Exception v_e)
+            {
+                DevExpress.XtraEditors.XtraMessageBox.Show(v_e.Message);
+            }
+        }
+
+        private void thoat_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+           var msg=   XtraMessageBox.Show("Bạn có chắc chắn muốn thoát khỏi phần mềm tính lương?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+           if (msg == System.Windows.Forms.DialogResult.Yes)
+           {
+               Application.Exit();
+           }
         }
     } 
 }
