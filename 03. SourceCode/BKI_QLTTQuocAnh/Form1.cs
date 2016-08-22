@@ -33,7 +33,7 @@ namespace BKI_DichVuMatDat
         private void cachinhthuctinhluong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             CAC_HINH_THUC_TINH_LUONG v_f = new CAC_HINH_THUC_TINH_LUONG();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Các hình thức tính lương".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -47,7 +47,7 @@ namespace BKI_DichVuMatDat
         private void danhmucngaycong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             THAM_SO_CHAM_CONG_THOI_GIAN v_f = new THAM_SO_CHAM_CONG_THOI_GIAN();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Cài đặt các tham số tính lương".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -61,7 +61,7 @@ namespace BKI_DichVuMatDat
         private void caidatngaycongtieuchuan_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             F100_NgayCongTieuChuan v_f = new F100_NgayCongTieuChuan();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Cài đặt số ngày công tiêu chuẩn các tháng trong năm".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -75,7 +75,7 @@ namespace BKI_DichVuMatDat
         private void thamsokhac_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             THAM_SO_KHAC v_f = new THAM_SO_KHAC();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Cài đặt một số tham số khác".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -89,7 +89,7 @@ namespace BKI_DichVuMatDat
         private void themmoinhanvien_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             THEM_MOI_NHAN_VIEN v_f = new THEM_MOI_NHAN_VIEN();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Thêm mới nhân viên".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -110,7 +110,7 @@ namespace BKI_DichVuMatDat
             if (m_open_form_thong_tin == 1)
             {
                 THEM_MOI_NHAN_VIEN v_f_them_moi_nv = new THEM_MOI_NHAN_VIEN();
-                m_lbl_formname.Text = v_f_them_moi_nv.Text.ToUpper();
+                m_lbl_formname.Text = "Sửa thông tin nhân viên".ToUpper();
                 v_f_them_moi_nv.TopLevel = false;
                 v_f_them_moi_nv.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f_them_moi_nv);
@@ -133,7 +133,7 @@ namespace BKI_DichVuMatDat
         private void chamcong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             F696_Cham_cong_xls v_f = new F696_Cham_cong_xls();
-            m_lbl_formname.Text = v_f.Text.ToUpper();
+            m_lbl_formname.Text = "Chấm công".ToUpper();
             v_f.TopLevel = false;
             v_f.Dock = DockStyle.Fill;
             m_pn_form.Controls.Add(v_f);
@@ -149,7 +149,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 LAM_THEM_THEO_THOI_GIAN v_f = new LAM_THEM_THEO_THOI_GIAN();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Chấm công làm thêm".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);
@@ -170,7 +170,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 BKI_DichVuMatDat.BaoCao.f412_rpt_tong_hop_tt_v2 v_f = new BaoCao.f412_rpt_tong_hop_tt_v2();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Bảng lương".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);
@@ -191,7 +191,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 BKI_DichVuMatDat.BaoCao.Luong.PHIEU_LUONG v_f = new BaoCao.Luong.PHIEU_LUONG();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Phiếu lương".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);
@@ -218,7 +218,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 DANG_NHAP_HE_THONG v_f = new DANG_NHAP_HE_THONG();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Quản trị hệ thống".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);
@@ -239,7 +239,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 CAC_LOAI_TIEN_KHAC v_f = new CAC_LOAI_TIEN_KHAC();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Các loại thu nhập khác".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);
@@ -260,7 +260,7 @@ namespace BKI_DichVuMatDat
             try
             {
                 CHAM_CONG_THEO_NGAY v_f = new CHAM_CONG_THEO_NGAY();
-                m_lbl_formname.Text = v_f.Text.ToUpper();
+                m_lbl_formname.Text = "Chấm công theo ngày".ToUpper();
                 v_f.TopLevel = false;
                 v_f.Dock = DockStyle.Fill;
                 m_pn_form.Controls.Add(v_f);

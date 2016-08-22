@@ -346,7 +346,7 @@
             // 
             // colCO_LUONG_CD1
             // 
-            this.colCO_LUONG_CD1.Caption = "Có LCD";
+            this.colCO_LUONG_CD1.Caption = "Có Lương đóng bảo hiểm";
             this.colCO_LUONG_CD1.FieldName = "CO_LUONG_CD";
             this.colCO_LUONG_CD1.Name = "colCO_LUONG_CD1";
             this.colCO_LUONG_CD1.OptionsColumn.ReadOnly = true;
@@ -399,6 +399,7 @@
             this.m_txt_nam.ForeColor = System.Drawing.Color.White;
             this.m_txt_nam.Hint = "";
             this.m_txt_nam.Location = new System.Drawing.Point(561, 16);
+            this.m_txt_nam.MaxLength = 32767;
             this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_nam.Name = "m_txt_nam";
             this.m_txt_nam.PasswordChar = '\0';
@@ -408,6 +409,7 @@
             this.m_txt_nam.SelectionStart = 0;
             this.m_txt_nam.Size = new System.Drawing.Size(100, 23);
             this.m_txt_nam.TabIndex = 20;
+            this.m_txt_nam.TabStop = false;
             this.m_txt_nam.UseSystemPasswordChar = false;
             // 
             // m_txt_thang
@@ -416,6 +418,7 @@
             this.m_txt_thang.ForeColor = System.Drawing.Color.White;
             this.m_txt_thang.Hint = "";
             this.m_txt_thang.Location = new System.Drawing.Point(460, 16);
+            this.m_txt_thang.MaxLength = 32767;
             this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_thang.Name = "m_txt_thang";
             this.m_txt_thang.PasswordChar = '\0';
@@ -425,6 +428,7 @@
             this.m_txt_thang.SelectionStart = 0;
             this.m_txt_thang.Size = new System.Drawing.Size(84, 23);
             this.m_txt_thang.TabIndex = 19;
+            this.m_txt_thang.TabStop = false;
             this.m_txt_thang.UseSystemPasswordChar = false;
             // 
             // labelControl1

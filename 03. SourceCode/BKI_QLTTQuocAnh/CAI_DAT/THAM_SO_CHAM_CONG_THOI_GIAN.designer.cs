@@ -146,9 +146,9 @@ namespace BKI_DichVuMatDat
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(199, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(448, 20);
+            this.label2.Size = new System.Drawing.Size(300, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "DANH MỤC THAM SỐ CHẤM CÔNG THEO THỜI GIAN";
+            this.label2.Text = "DANH MỤC THAM SỐ TÍNH LƯƠNG";
             // 
             // materialTabSelector1
             // 
@@ -276,7 +276,7 @@ namespace BKI_DichVuMatDat
             // 
             this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.Caption = "Tỉ lệ LNS";
+            this.gridColumn3.Caption = "Tỉ lệ Lương năng suất";
             this.gridColumn3.FieldName = "TI_LE_LNS";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -286,7 +286,7 @@ namespace BKI_DichVuMatDat
             // 
             this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn4.Caption = "Tỉ lệ LCD";
+            this.gridColumn4.Caption = "Tỉ lệ Lương chế độ";
             this.gridColumn4.FieldName = "TI_LE_LCD";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -382,7 +382,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn7
             // 
-            this.gridColumn7.Caption = "% LNS";
+            this.gridColumn7.Caption = "Tỉ lệ Lương năng suất (%)";
             this.gridColumn7.FieldName = "TI_LE";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
@@ -618,7 +618,7 @@ namespace BKI_DichVuMatDat
             // 
             // gridColumn16
             // 
-            this.gridColumn16.Caption = "% LCD";
+            this.gridColumn16.Caption = "Tỉ lệ Lương chế độ (%)";
             this.gridColumn16.FieldName = "TI_LE";
             this.gridColumn16.Name = "gridColumn16";
             this.gridColumn16.Visible = true;
@@ -800,6 +800,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_so_tien_doan_phi.Depth = 0;
             this.m_txt_so_tien_doan_phi.Hint = "";
             this.m_txt_so_tien_doan_phi.Location = new System.Drawing.Point(132, 102);
+            this.m_txt_so_tien_doan_phi.MaxLength = 32767;
             this.m_txt_so_tien_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien_doan_phi.Name = "m_txt_so_tien_doan_phi";
             this.m_txt_so_tien_doan_phi.PasswordChar = '\0';
@@ -809,6 +810,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_so_tien_doan_phi.SelectionStart = 0;
             this.m_txt_so_tien_doan_phi.Size = new System.Drawing.Size(178, 23);
             this.m_txt_so_tien_doan_phi.TabIndex = 18;
+            this.m_txt_so_tien_doan_phi.TabStop = false;
             this.m_txt_so_tien_doan_phi.UseSystemPasswordChar = false;
             this.m_txt_so_tien_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_so_tien_doan_phi.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -818,6 +820,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_tien_lon_nhat.Depth = 0;
             this.m_txt_ti_le_tien_lon_nhat.Hint = "";
             this.m_txt_ti_le_tien_lon_nhat.Location = new System.Drawing.Point(132, 58);
+            this.m_txt_ti_le_tien_lon_nhat.MaxLength = 32767;
             this.m_txt_ti_le_tien_lon_nhat.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_tien_lon_nhat.Name = "m_txt_ti_le_tien_lon_nhat";
             this.m_txt_ti_le_tien_lon_nhat.PasswordChar = '\0';
@@ -827,6 +830,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_tien_lon_nhat.SelectionStart = 0;
             this.m_txt_ti_le_tien_lon_nhat.Size = new System.Drawing.Size(178, 23);
             this.m_txt_ti_le_tien_lon_nhat.TabIndex = 17;
+            this.m_txt_ti_le_tien_lon_nhat.TabStop = false;
             this.m_txt_ti_le_tien_lon_nhat.UseSystemPasswordChar = false;
             this.m_txt_ti_le_tien_lon_nhat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -835,6 +839,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_doan_phi.Depth = 0;
             this.m_txt_ti_le_doan_phi.Hint = "";
             this.m_txt_ti_le_doan_phi.Location = new System.Drawing.Point(132, 14);
+            this.m_txt_ti_le_doan_phi.MaxLength = 32767;
             this.m_txt_ti_le_doan_phi.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le_doan_phi.Name = "m_txt_ti_le_doan_phi";
             this.m_txt_ti_le_doan_phi.PasswordChar = '\0';
@@ -844,6 +849,7 @@ namespace BKI_DichVuMatDat
             this.m_txt_ti_le_doan_phi.SelectionStart = 0;
             this.m_txt_ti_le_doan_phi.Size = new System.Drawing.Size(178, 23);
             this.m_txt_ti_le_doan_phi.TabIndex = 16;
+            this.m_txt_ti_le_doan_phi.TabStop = false;
             this.m_txt_ti_le_doan_phi.UseSystemPasswordChar = false;
             this.m_txt_ti_le_doan_phi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 

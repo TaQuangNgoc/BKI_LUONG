@@ -65,15 +65,15 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(30, 241);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 18);
+            this.label14.Size = new System.Drawing.Size(168, 18);
             this.label14.TabIndex = 43;
-            this.label14.Text = "% LCD";
+            this.label14.Text = "% Lương đóng bảo hiểm";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(355, 194);
+            this.label6.Location = new System.Drawing.Point(410, 194);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 18);
             this.label6.TabIndex = 43;
@@ -83,7 +83,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(355, 245);
+            this.label13.Location = new System.Drawing.Point(410, 245);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(25, 18);
             this.label13.TabIndex = 45;
@@ -95,15 +95,16 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 190);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 18);
+            this.label7.Size = new System.Drawing.Size(134, 18);
             this.label7.TabIndex = 42;
-            this.label7.Text = "% LNS";
+            this.label7.Text = "% Lương năng suất";
             // 
             // m_txt_ma_ngay_cong
             // 
             this.m_txt_ma_ngay_cong.Depth = 0;
             this.m_txt_ma_ngay_cong.Hint = "";
-            this.m_txt_ma_ngay_cong.Location = new System.Drawing.Point(150, 84);
+            this.m_txt_ma_ngay_cong.Location = new System.Drawing.Point(205, 84);
+            this.m_txt_ma_ngay_cong.MaxLength = 32767;
             this.m_txt_ma_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ma_ngay_cong.Name = "m_txt_ma_ngay_cong";
             this.m_txt_ma_ngay_cong.PasswordChar = '\0';
@@ -112,6 +113,7 @@
             this.m_txt_ma_ngay_cong.SelectionStart = 0;
             this.m_txt_ma_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ma_ngay_cong.TabIndex = 1;
+            this.m_txt_ma_ngay_cong.TabStop = false;
             this.m_txt_ma_ngay_cong.UseSystemPasswordChar = false;
             // 
             // label1
@@ -128,7 +130,8 @@
             // 
             this.m_txt_ten_ngay_cong.Depth = 0;
             this.m_txt_ten_ngay_cong.Hint = "";
-            this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(150, 135);
+            this.m_txt_ten_ngay_cong.Location = new System.Drawing.Point(205, 135);
+            this.m_txt_ten_ngay_cong.MaxLength = 32767;
             this.m_txt_ten_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ten_ngay_cong.Name = "m_txt_ten_ngay_cong";
             this.m_txt_ten_ngay_cong.PasswordChar = '\0';
@@ -137,13 +140,15 @@
             this.m_txt_ten_ngay_cong.SelectionStart = 0;
             this.m_txt_ten_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ten_ngay_cong.TabIndex = 2;
+            this.m_txt_ten_ngay_cong.TabStop = false;
             this.m_txt_ten_ngay_cong.UseSystemPasswordChar = false;
             // 
             // m_txt_lns_loai_ngay_cong
             // 
             this.m_txt_lns_loai_ngay_cong.Depth = 0;
             this.m_txt_lns_loai_ngay_cong.Hint = "";
-            this.m_txt_lns_loai_ngay_cong.Location = new System.Drawing.Point(150, 186);
+            this.m_txt_lns_loai_ngay_cong.Location = new System.Drawing.Point(205, 186);
+            this.m_txt_lns_loai_ngay_cong.MaxLength = 32767;
             this.m_txt_lns_loai_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lns_loai_ngay_cong.Name = "m_txt_lns_loai_ngay_cong";
             this.m_txt_lns_loai_ngay_cong.PasswordChar = '\0';
@@ -153,6 +158,7 @@
             this.m_txt_lns_loai_ngay_cong.SelectionStart = 0;
             this.m_txt_lns_loai_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_lns_loai_ngay_cong.TabIndex = 3;
+            this.m_txt_lns_loai_ngay_cong.TabStop = false;
             this.m_txt_lns_loai_ngay_cong.UseSystemPasswordChar = false;
             this.m_txt_lns_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -160,7 +166,8 @@
             // 
             this.m_txt_lcd_loai_ngay_cong.Depth = 0;
             this.m_txt_lcd_loai_ngay_cong.Hint = "";
-            this.m_txt_lcd_loai_ngay_cong.Location = new System.Drawing.Point(149, 237);
+            this.m_txt_lcd_loai_ngay_cong.Location = new System.Drawing.Point(204, 237);
+            this.m_txt_lcd_loai_ngay_cong.MaxLength = 32767;
             this.m_txt_lcd_loai_ngay_cong.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lcd_loai_ngay_cong.Name = "m_txt_lcd_loai_ngay_cong";
             this.m_txt_lcd_loai_ngay_cong.PasswordChar = '\0';
@@ -170,6 +177,7 @@
             this.m_txt_lcd_loai_ngay_cong.SelectionStart = 0;
             this.m_txt_lcd_loai_ngay_cong.Size = new System.Drawing.Size(194, 23);
             this.m_txt_lcd_loai_ngay_cong.TabIndex = 4;
+            this.m_txt_lcd_loai_ngay_cong.TabStop = false;
             this.m_txt_lcd_loai_ngay_cong.UseSystemPasswordChar = false;
             this.m_txt_lcd_loai_ngay_cong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 

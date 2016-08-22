@@ -178,6 +178,7 @@
             this.m_txt_nam.Depth = 0;
             this.m_txt_nam.Hint = "";
             this.m_txt_nam.Location = new System.Drawing.Point(120, 13);
+            this.m_txt_nam.MaxLength = 32767;
             this.m_txt_nam.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_nam.Name = "m_txt_nam";
             this.m_txt_nam.PasswordChar = '\0';
@@ -187,6 +188,7 @@
             this.m_txt_nam.SelectionStart = 0;
             this.m_txt_nam.Size = new System.Drawing.Size(100, 23);
             this.m_txt_nam.TabIndex = 1;
+            this.m_txt_nam.TabStop = false;
             this.m_txt_nam.UseSystemPasswordChar = false;
             // 
             // m_txt_thang
@@ -194,6 +196,7 @@
             this.m_txt_thang.Depth = 0;
             this.m_txt_thang.Hint = "";
             this.m_txt_thang.Location = new System.Drawing.Point(19, 13);
+            this.m_txt_thang.MaxLength = 32767;
             this.m_txt_thang.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_thang.Name = "m_txt_thang";
             this.m_txt_thang.PasswordChar = '\0';
@@ -203,6 +206,7 @@
             this.m_txt_thang.SelectionStart = 0;
             this.m_txt_thang.Size = new System.Drawing.Size(84, 23);
             this.m_txt_thang.TabIndex = 0;
+            this.m_txt_thang.TabStop = false;
             this.m_txt_thang.UseSystemPasswordChar = false;
             // 
             // labelControl1
@@ -576,7 +580,7 @@
             // 
             // colLUONG_CD
             // 
-            this.colLUONG_CD.Caption = "Lương chế độ";
+            this.colLUONG_CD.Caption = "Lương đóng bảo hiểm";
             this.colLUONG_CD.DisplayFormat.FormatString = "n0";
             this.colLUONG_CD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colLUONG_CD.FieldName = "LUONG_CD";

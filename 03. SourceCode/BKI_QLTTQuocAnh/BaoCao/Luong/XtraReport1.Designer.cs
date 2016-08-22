@@ -532,7 +532,7 @@
             this.m_lbl_luong_cd.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.m_lbl_luong_cd.SizeF = new System.Drawing.SizeF(159.375F, 23F);
             this.m_lbl_luong_cd.StylePriority.UseTextAlignment = false;
-            this.m_lbl_luong_cd.Text = "Lương chế độ";
+            this.m_lbl_luong_cd.Text = "Lương đóng bảo hiểm";
             this.m_lbl_luong_cd.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
             // 
             // m_lbl_so_ngay_lv
@@ -679,7 +679,7 @@
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel6.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel6.Text = "Lương chế độ";
+            this.xrLabel6.Text = "Lương đóng bảo hiểm";
             // 
             // xrLabel5
             // 

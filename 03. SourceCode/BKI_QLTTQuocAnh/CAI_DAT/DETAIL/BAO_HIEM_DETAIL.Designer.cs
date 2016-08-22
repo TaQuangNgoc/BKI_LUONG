@@ -92,7 +92,8 @@
             // 
             this.m_txt_lcd.Depth = 0;
             this.m_txt_lcd.Hint = "";
-            this.m_txt_lcd.Location = new System.Drawing.Point(145, 199);
+            this.m_txt_lcd.Location = new System.Drawing.Point(197, 199);
+            this.m_txt_lcd.MaxLength = 32767;
             this.m_txt_lcd.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lcd.Name = "m_txt_lcd";
             this.m_txt_lcd.PasswordChar = '\0';
@@ -100,8 +101,9 @@
             this.m_txt_lcd.SelectedText = "";
             this.m_txt_lcd.SelectionLength = 0;
             this.m_txt_lcd.SelectionStart = 0;
-            this.m_txt_lcd.Size = new System.Drawing.Size(302, 23);
+            this.m_txt_lcd.Size = new System.Drawing.Size(250, 23);
             this.m_txt_lcd.TabIndex = 3;
+            this.m_txt_lcd.TabStop = false;
             this.m_txt_lcd.UseSystemPasswordChar = false;
             this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -109,30 +111,34 @@
             // 
             this.m_txt_ten_bao_hiem.Depth = 0;
             this.m_txt_ten_bao_hiem.Hint = "";
-            this.m_txt_ten_bao_hiem.Location = new System.Drawing.Point(145, 133);
+            this.m_txt_ten_bao_hiem.Location = new System.Drawing.Point(197, 133);
+            this.m_txt_ten_bao_hiem.MaxLength = 32767;
             this.m_txt_ten_bao_hiem.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ten_bao_hiem.Name = "m_txt_ten_bao_hiem";
             this.m_txt_ten_bao_hiem.PasswordChar = '\0';
             this.m_txt_ten_bao_hiem.SelectedText = "";
             this.m_txt_ten_bao_hiem.SelectionLength = 0;
             this.m_txt_ten_bao_hiem.SelectionStart = 0;
-            this.m_txt_ten_bao_hiem.Size = new System.Drawing.Size(336, 23);
+            this.m_txt_ten_bao_hiem.Size = new System.Drawing.Size(284, 23);
             this.m_txt_ten_bao_hiem.TabIndex = 2;
+            this.m_txt_ten_bao_hiem.TabStop = false;
             this.m_txt_ten_bao_hiem.UseSystemPasswordChar = false;
             // 
             // m_txt_ma_bao_hiem
             // 
             this.m_txt_ma_bao_hiem.Depth = 0;
             this.m_txt_ma_bao_hiem.Hint = "";
-            this.m_txt_ma_bao_hiem.Location = new System.Drawing.Point(145, 67);
+            this.m_txt_ma_bao_hiem.Location = new System.Drawing.Point(197, 67);
+            this.m_txt_ma_bao_hiem.MaxLength = 32767;
             this.m_txt_ma_bao_hiem.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ma_bao_hiem.Name = "m_txt_ma_bao_hiem";
             this.m_txt_ma_bao_hiem.PasswordChar = '\0';
             this.m_txt_ma_bao_hiem.SelectedText = "";
             this.m_txt_ma_bao_hiem.SelectionLength = 0;
             this.m_txt_ma_bao_hiem.SelectionStart = 0;
-            this.m_txt_ma_bao_hiem.Size = new System.Drawing.Size(336, 23);
+            this.m_txt_ma_bao_hiem.Size = new System.Drawing.Size(284, 23);
             this.m_txt_ma_bao_hiem.TabIndex = 1;
+            this.m_txt_ma_bao_hiem.TabStop = false;
             this.m_txt_ma_bao_hiem.UseSystemPasswordChar = false;
             // 
             // label15
@@ -161,9 +167,9 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(23, 204);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(55, 18);
+            this.label18.Size = new System.Drawing.Size(168, 18);
             this.label18.TabIndex = 72;
-            this.label18.Text = "% LCD";
+            this.label18.Text = "% Lương đóng bảo hiểm";
             // 
             // label16
             // 

@@ -7,12 +7,12 @@ namespace BKI_DichVuMatDat
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
@@ -25,16 +25,15 @@ namespace BKI_DichVuMatDat
             this.m_pn_form = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_lbl_formname = new System.Windows.Forms.Label();
-            this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.tileControl1 = new DevExpress.XtraEditors.TileControl();
             this.tileGroup1 = new DevExpress.XtraEditors.TileGroup();
             this.cachinhthuctinhluong = new DevExpress.XtraEditors.TileItem();
+            this.themmoinhanvien = new DevExpress.XtraEditors.TileItem();
+            this.suathongtinnhanvien = new DevExpress.XtraEditors.TileItem();
             this.danhmucngaycong = new DevExpress.XtraEditors.TileItem();
             this.caidatngaycongtieuchuan = new DevExpress.XtraEditors.TileItem();
             this.thamsokhac = new DevExpress.XtraEditors.TileItem();
-            this.themmoinhanvien = new DevExpress.XtraEditors.TileItem();
-            this.suathongtinnhanvien = new DevExpress.XtraEditors.TileItem();
             this.tileGroup5 = new DevExpress.XtraEditors.TileGroup();
             this.chamcong = new DevExpress.XtraEditors.TileItem();
             this.chamconglamthem = new DevExpress.XtraEditors.TileItem();
@@ -45,6 +44,7 @@ namespace BKI_DichVuMatDat
             this.phieuluong = new DevExpress.XtraEditors.TileItem();
             this.tileGroup7 = new DevExpress.XtraEditors.TileGroup();
             this.quantrihethong = new DevExpress.XtraEditors.TileItem();
+            this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
             this.panel1.SuspendLayout();
             this.m_pn_form_chucnang.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -103,10 +103,6 @@ namespace BKI_DichVuMatDat
             this.m_lbl_formname.Text = "label1";
             this.m_lbl_formname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tileGroup3
-            // 
-            this.tileGroup3.Name = "tileGroup3";
-            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -139,9 +135,9 @@ namespace BKI_DichVuMatDat
             // 
             // tileGroup1
             // 
+            this.tileGroup1.Items.Add(this.cachinhthuctinhluong);
             this.tileGroup1.Items.Add(this.themmoinhanvien);
             this.tileGroup1.Items.Add(this.suathongtinnhanvien);
-            this.tileGroup1.Items.Add(this.cachinhthuctinhluong);
             this.tileGroup1.Items.Add(this.danhmucngaycong);
             this.tileGroup1.Items.Add(this.caidatngaycongtieuchuan);
             this.tileGroup1.Items.Add(this.thamsokhac);
@@ -154,14 +150,45 @@ namespace BKI_DichVuMatDat
             this.cachinhthuctinhluong.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
             this.cachinhthuctinhluong.AppearanceItem.Normal.Options.UseBackColor = true;
             this.cachinhthuctinhluong.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement3.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement3.Image")));
-            tileItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement3.Text = "Các hình thức tính lương";
-            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
-            this.cachinhthuctinhluong.Elements.Add(tileItemElement3);
+            tileItemElement1.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement1.Image")));
+            tileItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            tileItemElement1.Text = "Các hình thức tính lương";
+            tileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
+            this.cachinhthuctinhluong.Elements.Add(tileItemElement1);
             this.cachinhthuctinhluong.Id = 8;
             this.cachinhthuctinhluong.Name = "cachinhthuctinhluong";
             this.cachinhthuctinhluong.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.cachinhthuctinhluong_ItemClick);
+            // 
+            // themmoinhanvien
+            // 
+            this.themmoinhanvien.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.themmoinhanvien.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.themmoinhanvien.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.themmoinhanvien.AppearanceItem.Normal.Options.UseBorderColor = true;
+            tileItemElement2.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement2.Image")));
+            tileItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            tileItemElement2.Text = "Thêm mới nhân viên";
+            tileItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
+            this.themmoinhanvien.Elements.Add(tileItemElement2);
+            this.themmoinhanvien.Id = 13;
+            this.themmoinhanvien.Name = "themmoinhanvien";
+            this.themmoinhanvien.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.themmoinhanvien_ItemClick);
+            // 
+            // suathongtinnhanvien
+            // 
+            this.suathongtinnhanvien.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.suathongtinnhanvien.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.suathongtinnhanvien.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.suathongtinnhanvien.AppearanceItem.Normal.Options.UseBorderColor = true;
+            tileItemElement3.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement3.Image")));
+            tileItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            tileItemElement3.Text = "Sửa thông tin nhân viên";
+            tileItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
+            this.suathongtinnhanvien.Elements.Add(tileItemElement3);
+            this.suathongtinnhanvien.Id = 12;
+            this.suathongtinnhanvien.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.suathongtinnhanvien.Name = "suathongtinnhanvien";
+            this.suathongtinnhanvien.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.suathongtinnhanvien_ItemClick);
             // 
             // danhmucngaycong
             // 
@@ -171,7 +198,7 @@ namespace BKI_DichVuMatDat
             this.danhmucngaycong.AppearanceItem.Normal.Options.UseBorderColor = true;
             tileItemElement4.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement4.Image")));
             tileItemElement4.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement4.Text = "Tham số chấm công theo thời gian";
+            tileItemElement4.Text = "Tham số tính lương";
             tileItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
             this.danhmucngaycong.Elements.Add(tileItemElement4);
             this.danhmucngaycong.Id = 3;
@@ -187,7 +214,7 @@ namespace BKI_DichVuMatDat
             this.caidatngaycongtieuchuan.AppearanceItem.Normal.Options.UseBorderColor = true;
             tileItemElement5.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement5.Image")));
             tileItemElement5.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement5.Text = "Cài đặt ngày công tiêu chuẩn";
+            tileItemElement5.Text = "Cài đặt ngày công tiêu chuẩn các tháng trong năm";
             tileItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
             this.caidatngaycongtieuchuan.Elements.Add(tileItemElement5);
             this.caidatngaycongtieuchuan.Id = 10;
@@ -210,37 +237,6 @@ namespace BKI_DichVuMatDat
             this.thamsokhac.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.thamsokhac.Name = "thamsokhac";
             this.thamsokhac.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.thamsokhac_ItemClick);
-            // 
-            // themmoinhanvien
-            // 
-            this.themmoinhanvien.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.themmoinhanvien.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.themmoinhanvien.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.themmoinhanvien.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement1.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement1.Image")));
-            tileItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement1.Text = "Thêm mới nhân viên";
-            tileItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
-            this.themmoinhanvien.Elements.Add(tileItemElement1);
-            this.themmoinhanvien.Id = 13;
-            this.themmoinhanvien.Name = "themmoinhanvien";
-            this.themmoinhanvien.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.themmoinhanvien_ItemClick);
-            // 
-            // suathongtinnhanvien
-            // 
-            this.suathongtinnhanvien.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.suathongtinnhanvien.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.suathongtinnhanvien.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.suathongtinnhanvien.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement2.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement2.Image")));
-            tileItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement2.Text = "Sửa thông tin nhân viên";
-            tileItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
-            this.suathongtinnhanvien.Elements.Add(tileItemElement2);
-            this.suathongtinnhanvien.Id = 12;
-            this.suathongtinnhanvien.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.suathongtinnhanvien.Name = "suathongtinnhanvien";
-            this.suathongtinnhanvien.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.suathongtinnhanvien_ItemClick);
             // 
             // tileGroup5
             // 
@@ -306,7 +302,7 @@ namespace BKI_DichVuMatDat
             this.cacloaitienkhac.AppearanceItem.Normal.Options.UseBorderColor = true;
             tileItemElement10.Image = global::BKI_DichVuMatDat.Properties.Resources.different_currencies;
             tileItemElement10.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement10.Text = "Các loại tiền khác";
+            tileItemElement10.Text = "Các loại thu nhập, phải nộp khác";
             tileItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
             this.cacloaitienkhac.Elements.Add(tileItemElement10);
             this.cacloaitienkhac.Id = 19;
@@ -372,7 +368,12 @@ namespace BKI_DichVuMatDat
             this.quantrihethong.Id = 17;
             this.quantrihethong.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.quantrihethong.Name = "quantrihethong";
+            this.quantrihethong.Visible = false;
             this.quantrihethong.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.quantrihethong_ItemClick);
+            // 
+            // tileGroup3
+            // 
+            this.tileGroup3.Name = "tileGroup3";
             // 
             // Form1
             // 

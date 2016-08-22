@@ -641,9 +641,9 @@ namespace BKI_DichVuMatDat
                     else if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 761, (DateTime)m_dtp_tu_ngay_lcd.EditValue))
                     {
                         if (m_dtp_den_ngay_lcd.EditValue != null)
-                            dt.Rows.Add("Lương chế độ", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), ((DateTime)m_dtp_den_ngay_lcd.EditValue), 761);
+                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), ((DateTime)m_dtp_den_ngay_lcd.EditValue), 761);
                         else
-                            dt.Rows.Add("Lương chế độ", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), System.Convert.DBNull, 761);
+                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), System.Convert.DBNull, 761);
                         m_grc_luong.DataSource = dt;
                         m_txt_lcd.Text = "";
                     }

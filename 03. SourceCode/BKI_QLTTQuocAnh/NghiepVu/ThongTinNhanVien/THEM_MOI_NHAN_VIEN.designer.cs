@@ -592,6 +592,7 @@
             this.m_nud_phu_thuoc.Depth = 0;
             this.m_nud_phu_thuoc.Hint = "";
             this.m_nud_phu_thuoc.Location = new System.Drawing.Point(211, 40);
+            this.m_nud_phu_thuoc.MaxLength = 32767;
             this.m_nud_phu_thuoc.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_nud_phu_thuoc.Name = "m_nud_phu_thuoc";
             this.m_nud_phu_thuoc.PasswordChar = '\0';
@@ -601,6 +602,7 @@
             this.m_nud_phu_thuoc.SelectionStart = 0;
             this.m_nud_phu_thuoc.Size = new System.Drawing.Size(139, 23);
             this.m_nud_phu_thuoc.TabIndex = 7;
+            this.m_nud_phu_thuoc.TabStop = false;
             this.m_nud_phu_thuoc.UseSystemPasswordChar = false;
             this.m_nud_phu_thuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             // 
@@ -649,6 +651,7 @@
             // m_cb_doan_phi
             // 
             this.m_cb_doan_phi.AutoSize = true;
+            this.m_cb_doan_phi.Color = System.Drawing.Color.Empty;
             this.m_cb_doan_phi.Depth = 0;
             this.m_cb_doan_phi.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_doan_phi.Location = new System.Drawing.Point(571, 33);
@@ -771,6 +774,7 @@
             this.m_txt_email.Depth = 0;
             this.m_txt_email.Hint = "";
             this.m_txt_email.Location = new System.Drawing.Point(689, 130);
+            this.m_txt_email.MaxLength = 32767;
             this.m_txt_email.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_email.Name = "m_txt_email";
             this.m_txt_email.PasswordChar = '\0';
@@ -779,6 +783,7 @@
             this.m_txt_email.SelectionStart = 0;
             this.m_txt_email.Size = new System.Drawing.Size(194, 23);
             this.m_txt_email.TabIndex = 6;
+            this.m_txt_email.TabStop = false;
             this.m_txt_email.UseSystemPasswordChar = false;
             // 
             // m_txt_ten
@@ -786,6 +791,7 @@
             this.m_txt_ten.Depth = 0;
             this.m_txt_ten.Hint = "";
             this.m_txt_ten.Location = new System.Drawing.Point(211, 77);
+            this.m_txt_ten.MaxLength = 32767;
             this.m_txt_ten.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ten.Name = "m_txt_ten";
             this.m_txt_ten.PasswordChar = '\0';
@@ -794,6 +800,7 @@
             this.m_txt_ten.SelectionStart = 0;
             this.m_txt_ten.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ten.TabIndex = 2;
+            this.m_txt_ten.TabStop = false;
             this.m_txt_ten.UseSystemPasswordChar = false;
             // 
             // m_txt_sdt
@@ -801,6 +808,7 @@
             this.m_txt_sdt.Depth = 0;
             this.m_txt_sdt.Hint = "";
             this.m_txt_sdt.Location = new System.Drawing.Point(689, 77);
+            this.m_txt_sdt.MaxLength = 32767;
             this.m_txt_sdt.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_sdt.Name = "m_txt_sdt";
             this.m_txt_sdt.PasswordChar = '\0';
@@ -809,6 +817,7 @@
             this.m_txt_sdt.SelectionStart = 0;
             this.m_txt_sdt.Size = new System.Drawing.Size(194, 23);
             this.m_txt_sdt.TabIndex = 5;
+            this.m_txt_sdt.TabStop = false;
             this.m_txt_sdt.UseSystemPasswordChar = false;
             this.m_txt_sdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             // 
@@ -817,6 +826,7 @@
             this.m_txt_ma_nhan_vien.Depth = 0;
             this.m_txt_ma_nhan_vien.Hint = "";
             this.m_txt_ma_nhan_vien.Location = new System.Drawing.Point(689, 25);
+            this.m_txt_ma_nhan_vien.MaxLength = 32767;
             this.m_txt_ma_nhan_vien.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ma_nhan_vien.Name = "m_txt_ma_nhan_vien";
             this.m_txt_ma_nhan_vien.PasswordChar = '\0';
@@ -825,6 +835,7 @@
             this.m_txt_ma_nhan_vien.SelectionStart = 0;
             this.m_txt_ma_nhan_vien.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ma_nhan_vien.TabIndex = 4;
+            this.m_txt_ma_nhan_vien.TabStop = false;
             this.m_txt_ma_nhan_vien.UseSystemPasswordChar = false;
             // 
             // m_txt_ho_dem
@@ -832,6 +843,7 @@
             this.m_txt_ho_dem.Depth = 0;
             this.m_txt_ho_dem.Hint = "";
             this.m_txt_ho_dem.Location = new System.Drawing.Point(211, 30);
+            this.m_txt_ho_dem.MaxLength = 32767;
             this.m_txt_ho_dem.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ho_dem.Name = "m_txt_ho_dem";
             this.m_txt_ho_dem.PasswordChar = '\0';
@@ -840,6 +852,7 @@
             this.m_txt_ho_dem.SelectionStart = 0;
             this.m_txt_ho_dem.Size = new System.Drawing.Size(194, 23);
             this.m_txt_ho_dem.TabIndex = 1;
+            this.m_txt_ho_dem.TabStop = false;
             this.m_txt_ho_dem.UseSystemPasswordChar = false;
             // 
             // tabPage2
@@ -1117,6 +1130,7 @@
             this.m_txt_ti_le.Depth = 0;
             this.m_txt_ti_le.Hint = "";
             this.m_txt_ti_le.Location = new System.Drawing.Point(148, 20);
+            this.m_txt_ti_le.MaxLength = 32767;
             this.m_txt_ti_le.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_ti_le.Name = "m_txt_ti_le";
             this.m_txt_ti_le.PasswordChar = '\0';
@@ -1126,6 +1140,7 @@
             this.m_txt_ti_le.SelectionStart = 0;
             this.m_txt_ti_le.Size = new System.Drawing.Size(136, 23);
             this.m_txt_ti_le.TabIndex = 13;
+            this.m_txt_ti_le.TabStop = false;
             this.m_txt_ti_le.UseSystemPasswordChar = false;
             this.m_txt_ti_le.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             // 
@@ -1425,9 +1440,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(15, 80);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 16);
+            this.label8.Size = new System.Drawing.Size(101, 16);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Lương chế độ( LCD)";
+            this.label8.Text = "Lương đóng BH";
             // 
             // m_btn_xoa_luong
             // 
@@ -1453,9 +1468,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(15, 36);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 16);
+            this.label5.Size = new System.Drawing.Size(106, 16);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Lương năng suất( LNS)";
+            this.label5.Text = "Lương năng suất";
             // 
             // m_btn_them_luong
             // 
@@ -1509,6 +1524,7 @@
             this.m_txt_lcd.Depth = 0;
             this.m_txt_lcd.Hint = "";
             this.m_txt_lcd.Location = new System.Drawing.Point(159, 75);
+            this.m_txt_lcd.MaxLength = 32767;
             this.m_txt_lcd.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lcd.Name = "m_txt_lcd";
             this.m_txt_lcd.PasswordChar = '\0';
@@ -1518,6 +1534,7 @@
             this.m_txt_lcd.SelectionStart = 0;
             this.m_txt_lcd.Size = new System.Drawing.Size(137, 23);
             this.m_txt_lcd.TabIndex = 6;
+            this.m_txt_lcd.TabStop = false;
             this.m_txt_lcd.UseSystemPasswordChar = false;
             this.m_txt_lcd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_lcd.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -1536,6 +1553,7 @@
             this.m_txt_lns.Depth = 0;
             this.m_txt_lns.Hint = "";
             this.m_txt_lns.Location = new System.Drawing.Point(159, 31);
+            this.m_txt_lns.MaxLength = 32767;
             this.m_txt_lns.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_lns.Name = "m_txt_lns";
             this.m_txt_lns.PasswordChar = '\0';
@@ -1545,6 +1563,7 @@
             this.m_txt_lns.SelectionStart = 0;
             this.m_txt_lns.Size = new System.Drawing.Size(137, 23);
             this.m_txt_lns.TabIndex = 3;
+            this.m_txt_lns.TabStop = false;
             this.m_txt_lns.UseSystemPasswordChar = false;
             this.m_txt_lns.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_lns.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -1579,6 +1598,7 @@
             // m_cb_luong_theo_thoi_gian
             // 
             this.m_cb_luong_theo_thoi_gian.AutoSize = true;
+            this.m_cb_luong_theo_thoi_gian.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_theo_thoi_gian.Depth = 0;
             this.m_cb_luong_theo_thoi_gian.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_theo_thoi_gian.Location = new System.Drawing.Point(9, 3);
@@ -1833,6 +1853,7 @@
             this.m_txt_so_tien_luong_ngay.Depth = 0;
             this.m_txt_so_tien_luong_ngay.Hint = "";
             this.m_txt_so_tien_luong_ngay.Location = new System.Drawing.Point(117, 15);
+            this.m_txt_so_tien_luong_ngay.MaxLength = 32767;
             this.m_txt_so_tien_luong_ngay.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_tien_luong_ngay.Name = "m_txt_so_tien_luong_ngay";
             this.m_txt_so_tien_luong_ngay.PasswordChar = '\0';
@@ -1842,6 +1863,7 @@
             this.m_txt_so_tien_luong_ngay.SelectionStart = 0;
             this.m_txt_so_tien_luong_ngay.Size = new System.Drawing.Size(153, 23);
             this.m_txt_so_tien_luong_ngay.TabIndex = 17;
+            this.m_txt_so_tien_luong_ngay.TabStop = false;
             this.m_txt_so_tien_luong_ngay.UseSystemPasswordChar = false;
             this.m_txt_so_tien_luong_ngay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric);
             this.m_txt_so_tien_luong_ngay.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -1894,6 +1916,7 @@
             // m_cb_luong_ngay
             // 
             this.m_cb_luong_ngay.AutoSize = true;
+            this.m_cb_luong_ngay.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_ngay.Depth = 0;
             this.m_cb_luong_ngay.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_ngay.Location = new System.Drawing.Point(46, 22);
@@ -1911,6 +1934,7 @@
             // m_cb_luong_khoan
             // 
             this.m_cb_luong_khoan.AutoSize = true;
+            this.m_cb_luong_khoan.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_khoan.Depth = 0;
             this.m_cb_luong_khoan.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_khoan.Location = new System.Drawing.Point(49, 386);
@@ -1928,6 +1952,7 @@
             // m_cb_luong_theo_san_pham
             // 
             this.m_cb_luong_theo_san_pham.AutoSize = true;
+            this.m_cb_luong_theo_san_pham.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_theo_san_pham.Depth = 0;
             this.m_cb_luong_theo_san_pham.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_theo_san_pham.Location = new System.Drawing.Point(49, 339);

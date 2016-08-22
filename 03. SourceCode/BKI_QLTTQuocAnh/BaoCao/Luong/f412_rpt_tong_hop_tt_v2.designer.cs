@@ -576,7 +576,7 @@
             // 
             // colLUONG_CD
             // 
-            this.colLUONG_CD.Caption = "Lương chế độ";
+            this.colLUONG_CD.Caption = "Lương đóng bảo hiểm";
             this.colLUONG_CD.DisplayFormat.FormatString = "n0";
             this.colLUONG_CD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colLUONG_CD.FieldName = "LUONG_CD";
