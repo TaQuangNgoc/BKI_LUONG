@@ -84,6 +84,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_SAN_PHAM.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_THANG_LUONG_CD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_THANG_LUONG_CD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_THANG_LUONG_NS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_THANG_LUONG_NS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_THUE.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -292,6 +302,28 @@
     </None>
     <None Include="DS_DM_SAN_PHAM.xss">
       <DependentUpon>DS_DM_SAN_PHAM.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_CD.xsc">
+      <DependentUpon>DS_DM_THANG_LUONG_CD.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_CD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_THANG_LUONG_CD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_CD.xss">
+      <DependentUpon>DS_DM_THANG_LUONG_CD.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_NS.xsc">
+      <DependentUpon>DS_DM_THANG_LUONG_NS.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_NS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_THANG_LUONG_NS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_THANG_LUONG_NS.xss">
+      <DependentUpon>DS_DM_THANG_LUONG_NS.xsd</DependentUpon>
     </None>
     <None Include="DS_DM_THUE.xsc">
       <DependentUpon>DS_DM_THUE.xsd</DependentUpon>

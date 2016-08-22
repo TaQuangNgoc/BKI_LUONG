@@ -472,6 +472,30 @@
     <Compile Include="CAI_DAT\DETAIL\LOAI_NGAY_CONG_DETAIL.Designer.cs">
       <DependentUpon>LOAI_NGAY_CONG_DETAIL.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_LUONG_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_LUONG_DETAIL.Designer.cs">
+      <DependentUpon>MA_LUONG_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_MUC_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_MUC_DETAIL.Designer.cs">
+      <DependentUpon>MA_MUC_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_MUC_LUONG_CD_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MA_MUC_LUONG_CD_DETAIL.Designer.cs">
+      <DependentUpon>MA_MUC_LUONG_CD_DETAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MUC_LUONG_DETAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAI_DAT\DETAIL\MUC_LUONG_DETAIL.Designer.cs">
+      <DependentUpon>MUC_LUONG_DETAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -687,6 +711,12 @@
     <Compile Include="NghiepVu\THEOTHOIGIAN\LUA_CHON.Designer.cs">
       <DependentUpon>LUA_CHON.cs</DependentUpon>
     </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\MA_MUC_LUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\THEOTHOIGIAN\MA_MUC_LUONG.Designer.cs">
+      <DependentUpon>MA_MUC_LUONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -774,6 +804,18 @@
     <EmbeddedResource Include="CAI_DAT\DETAIL\LOAI_NGAY_CONG_DETAIL.resx">
       <DependentUpon>LOAI_NGAY_CONG_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\MA_LUONG_DETAIL.resx">
+      <DependentUpon>MA_LUONG_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\MA_MUC_DETAIL.resx">
+      <DependentUpon>MA_MUC_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\MA_MUC_LUONG_CD_DETAIL.resx">
+      <DependentUpon>MA_MUC_LUONG_CD_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAI_DAT\DETAIL\MUC_LUONG_DETAIL.resx">
+      <DependentUpon>MUC_LUONG_DETAIL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\PHU_CAP_DETAIL.resx">
       <DependentUpon>PHU_CAP_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
@@ -860,6 +902,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\LUA_CHON.resx">
       <DependentUpon>LUA_CHON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\THEOTHOIGIAN\MA_MUC_LUONG.resx">
+      <DependentUpon>MA_MUC_LUONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NghiepVu\ThongTinNhanVien\SEARCH_NHAN_VIEN.resx">
       <DependentUpon>SEARCH_NHAN_VIEN.cs</DependentUpon>

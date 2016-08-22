@@ -381,5 +381,16 @@ namespace BKI_DichVuMatDat.DS.Properties {
                 return ((string)(this["BKI_LUONGConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=thaiph-pc;Initial Catalog=BKI_LUONG;Persist Security Info=True;User I" +
+            "D=sa;Password=sa123456")]
+        public string BKI_LUONGConnectionString1 {
+            get {
+                return ((string)(this["BKI_LUONGConnectionString1"]));
+            }
+        }
     }
 }

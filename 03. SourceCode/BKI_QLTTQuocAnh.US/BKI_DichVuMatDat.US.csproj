@@ -59,6 +59,8 @@
     <Compile Include="US_DM_NHAN_VIEN.cs" />
     <Compile Include="US_DM_PHU_CAP.cs" />
     <Compile Include="US_DM_SAN_PHAM.cs" />
+    <Compile Include="US_DM_THANG_LUONG_CD.cs" />
+    <Compile Include="US_DM_THANG_LUONG_NS.cs" />
     <Compile Include="US_DM_THUE.cs" />
     <Compile Include="US_DM_TI_LE_LAM_THEM.cs" />
     <Compile Include="US_DM_TI_LE_LAM_THEM_THEO_SAN_PHAM.cs" />
