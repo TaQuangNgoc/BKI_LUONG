@@ -108,6 +108,7 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn29 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.m_sle_ma_muc_lcd = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -1282,7 +1283,8 @@
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4,
-            this.gridColumn1});
+            this.gridColumn1,
+            this.gridColumn29});
             this.m_grv_luong.GridControl = this.m_grc_luong;
             this.m_grv_luong.Name = "m_grv_luong";
             this.m_grv_luong.OptionsBehavior.Editable = false;
@@ -1335,6 +1337,12 @@
             this.gridColumn1.FieldName = "ID_LOAI_LUONG";
             this.gridColumn1.Name = "gridColumn1";
             // 
+            // gridColumn29
+            // 
+            this.gridColumn29.Caption = "ID MÃ MỨC";
+            this.gridColumn29.FieldName = "ID_MA_MUC";
+            this.gridColumn29.Name = "gridColumn29";
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.m_sle_ma_muc_lcd);
@@ -1380,6 +1388,7 @@
             this.m_sle_ma_muc_lcd.Properties.View = this.gridView1;
             this.m_sle_ma_muc_lcd.Size = new System.Drawing.Size(150, 24);
             this.m_sle_ma_muc_lcd.TabIndex = 72;
+            this.m_sle_ma_muc_lcd.EditValueChanged += new System.EventHandler(this.m_sle_ma_muc_lcd_EditValueChanged);
             // 
             // gridView1
             // 
@@ -1462,6 +1471,7 @@
             this.m_sle_ma_muc_lns.Properties.View = this.gridView2;
             this.m_sle_ma_muc_lns.Size = new System.Drawing.Size(150, 24);
             this.m_sle_ma_muc_lns.TabIndex = 72;
+            this.m_sle_ma_muc_lns.EditValueChanged += new System.EventHandler(this.m_sle_ma_muc_lns_EditValueChanged);
             // 
             // gridView2
             // 
@@ -1729,7 +1739,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(710, 123);
+            this.label9.Location = new System.Drawing.Point(693, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 16);
             this.label9.TabIndex = 0;
@@ -2465,5 +2475,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn22;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn23;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn24;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn29;
     }
 }

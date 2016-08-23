@@ -452,6 +452,8 @@ namespace BKI_DichVuMatDat
                 v_us.datTU_NGAY = (DateTime)v_dr["TU_NGAY"];
                 if (v_dr["DEN_NGAY"].ToString() != "")
                     v_us.datDEN_NGAY = (DateTime)v_dr["DEN_NGAY"];
+                if (v_dr["ID_MA_MUC"].ToString() != "")
+                    v_us.dcID_MA_MUC = decimal.Parse(v_dr["ID_MA_MUC"].ToString());
                 v_us.Insert();
             }
         }
@@ -628,11 +630,12 @@ namespace BKI_DichVuMatDat
                     else if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 760, (DateTime)m_dtp_tu_ngay_lns.EditValue))
                     {
                         if (m_dtp_den_ngay_lns.EditValue != null)
-                            dt.Rows.Add("Lương năng suất",decimal.Parse(m_txt_lns.Text), ((DateTime)m_dtp_tu_ngay_lns.EditValue), ((DateTime)m_dtp_den_ngay_lns.EditValue), 760);
+                            dt.Rows.Add("Lương năng suất",decimal.Parse(m_txt_lns.Text), ((DateTime)m_dtp_tu_ngay_lns.EditValue), ((DateTime)m_dtp_den_ngay_lns.EditValue), 760, m_sle_ma_muc_lns.EditValue);
                         else
-                            dt.Rows.Add("Lương năng suất", decimal.Parse(m_txt_lns.Text), ((DateTime)m_dtp_tu_ngay_lns.EditValue), System.Convert.DBNull, 760);
+                            dt.Rows.Add("Lương năng suất", decimal.Parse(m_txt_lns.Text), ((DateTime)m_dtp_tu_ngay_lns.EditValue), System.Convert.DBNull, 760, m_sle_ma_muc_lns.EditValue);
                         m_grc_luong.DataSource = dt;
                         m_txt_lns.Text = "";
+                        m_sle_ma_muc_lns.EditValue = null;
                     }
 
                 }
@@ -646,11 +649,12 @@ namespace BKI_DichVuMatDat
                     else if (check_ngay_thang_is_ok(dt, "ID_LOAI_LUONG", 761, (DateTime)m_dtp_tu_ngay_lcd.EditValue))
                     {
                         if (m_dtp_den_ngay_lcd.EditValue != null)
-                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), ((DateTime)m_dtp_den_ngay_lcd.EditValue), 761);
+                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), ((DateTime)m_dtp_den_ngay_lcd.EditValue), 761, m_sle_ma_muc_lcd.EditValue);
                         else
-                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), System.Convert.DBNull, 761);
+                            dt.Rows.Add("Lương đóng bảo hiểm", decimal.Parse(m_txt_lcd.Text), ((DateTime)m_dtp_tu_ngay_lcd.EditValue), System.Convert.DBNull, 761, m_sle_ma_muc_lcd.EditValue);
                         m_grc_luong.DataSource = dt;
                         m_txt_lcd.Text = "";
+                        m_sle_ma_muc_lcd.EditValue = null;
                     }
 
                 }             
@@ -732,6 +736,7 @@ namespace BKI_DichVuMatDat
                         {
                             v_dr["DEN_NGAY"] = System.Convert.DBNull; ;
                         }
+                        v_dr["ID_MA_MUC"] = m_sle_ma_muc_lns.EditValue;
                     }
                     else
                     {
@@ -753,6 +758,7 @@ namespace BKI_DichVuMatDat
                         {
                             v_dr["DEN_NGAY"] = System.Convert.DBNull;
                         }
+                        v_dr["ID_MA_MUC"] = m_sle_ma_muc_lcd.EditValue;
                     }
                     else
                     {
@@ -780,9 +786,18 @@ namespace BKI_DichVuMatDat
                         m_dtp_tu_ngay_lns.EditValue = Convert.ToDateTime(v_dr["TU_NGAY"].ToString());
                      if(   v_dr["DEN_NGAY"].ToString()!="")
                          m_dtp_den_ngay_lns.EditValue = Convert.ToDateTime(v_dr["DEN_NGAY"].ToString());
+                        
                      else
                      {
                          m_dtp_den_ngay_lns.EditValue = null;
+                     }
+                     if (v_dr["ID_MA_MUC"].ToString() != "")
+                     {
+                         m_sle_ma_muc_lns.EditValue = int.Parse(v_dr["ID_MA_MUC"].ToString());
+                     }
+                     else
+                     {
+                         m_cb_ma_muc_lns.Checked = false;
                      }
                     }
                     if (v_dr["ID_LOAI_LUONG"].ToString() == "761")
@@ -795,6 +810,14 @@ namespace BKI_DichVuMatDat
                         else
                         {
                             m_dtp_den_ngay_lcd.EditValue = null;
+                        }
+                        if (v_dr["ID_MA_MUC"].ToString() != "")
+                        {
+                            m_sle_ma_muc_lcd.EditValue = int.Parse(v_dr["ID_MA_MUC"].ToString());
+                        }
+                        else
+                        {
+                            m_cb_ma_muc_lcd.Checked = false;
                         }
                     }
             }
@@ -821,6 +844,8 @@ namespace BKI_DichVuMatDat
                     m_dtp_tu_ngay_lcd.EditValue = null;
                     m_dtp_den_ngay_lcd.EditValue = null;
                     m_dtp_den_ngay_lns.EditValue = null;
+                    m_sle_ma_muc_lns.EditValue = null;
+                    m_sle_ma_muc_lcd.EditValue = null;
                 }
             }
             catch (Exception)
@@ -1301,6 +1326,44 @@ namespace BKI_DichVuMatDat
             v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_CD");
             m_sle_ma_muc_lcd.Properties.DataSource = v_ds.Tables[0];
             m_sle_ma_muc_lcd.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
+        }
+
+        private void m_sle_ma_muc_lns_EditValueChanged(object sender, EventArgs e)
+        {
+            if (m_sle_ma_muc_lns.Text != ""&& m_sle_ma_muc_lns.EditValue!=null)
+            {
+                int id_ma_muc = int.Parse(m_sle_ma_muc_lns.EditValue.ToString());
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                DataSet v_ds = new DataSet();
+                DataTable v_dt = new DataTable();
+                v_ds.Tables.Add(v_dt);
+                v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_NS WHERE ID="+ id_ma_muc);
+                m_txt_lns.Text = ((decimal)(v_ds.Tables[0].Rows[0]["SO_TIEN"])).ToString("n0");
+            }
+            else
+            {
+                m_txt_lns.Text = "";
+                m_sle_ma_muc_lns.Text = "";
+            }
+        }
+
+        private void m_sle_ma_muc_lcd_EditValueChanged(object sender, EventArgs e)
+        {
+            if (m_sle_ma_muc_lcd.Text != "" && m_sle_ma_muc_lcd.EditValue != null)
+            {
+                int id_ma_muc = int.Parse(m_sle_ma_muc_lcd.EditValue.ToString());
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                DataSet v_ds = new DataSet();
+                DataTable v_dt = new DataTable();
+                v_ds.Tables.Add(v_dt);
+                v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_CD WHERE ID=" + id_ma_muc);
+                m_txt_lcd.Text = ((decimal)(v_ds.Tables[0].Rows[0]["SO_TIEN"])).ToString("n0");
+            }
+            else
+            {
+                m_txt_lcd.Text = "";
+                m_sle_ma_muc_lcd.Text = "";
+            }
         }     
     }
 

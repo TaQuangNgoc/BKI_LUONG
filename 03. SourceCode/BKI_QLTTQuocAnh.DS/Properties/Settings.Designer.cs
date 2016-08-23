@@ -392,5 +392,16 @@ namespace BKI_DichVuMatDat.DS.Properties {
                 return ((string)(this["BKI_LUONGConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=103.48.80.60\\sqlexpress;Initial Catalog=ISALARY;Persist Security Info" +
+            "=True;User ID=sa;Password=sa@123456")]
+        public string ISALARYConnectionString {
+            get {
+                return ((string)(this["ISALARYConnectionString"]));
+            }
+        }
     }
 }
