@@ -11,6 +11,7 @@ using BKI_DichVuMatDat.BaoCao;
 using BKI_DichVuMatDat.DS;
 using BKI_DichVuMatDat.US;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
@@ -30,6 +31,10 @@ namespace BKI_DichVuMatDat
             auto_scroll_tabControl();
             format_beauty();
             load_data_to_combobox_loai_nhan_vien();
+            m_cb_ma_muc_lns.Checked = true;
+            m_cb_ma_muc_lcd.Checked = true;
+            check_change_cb_ma_muc_lcd();
+            check_change_cb_ma_muc_lns();
            
         }
 
@@ -1234,6 +1239,68 @@ namespace BKI_DichVuMatDat
             {
                 m_group_cai_dat_luong_ngay.Enabled = false;
             }
+        }
+
+        private void m_cb_ma_muc_lns_CheckedChanged(object sender, EventArgs e)
+        {
+            check_change_cb_ma_muc_lns();
+        }
+
+        private void check_change_cb_ma_muc_lns()
+        {
+            if (m_cb_ma_muc_lns.Checked == true)
+            {
+                m_sle_ma_muc_lns.Enabled = true;
+                fill_data_to_sle_ma_muc_lns();
+                m_txt_lns.Enabled = false;
+            }
+            else
+            {
+                m_sle_ma_muc_lns.Enabled = false;
+                m_txt_lns.Enabled = true;
+            }
+        }
+
+        private void fill_data_to_sle_ma_muc_lns()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            DataTable v_dt = new DataTable();
+            v_ds.Tables.Add(v_dt);
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_NS");
+            m_sle_ma_muc_lns.Properties.DataSource = v_ds.Tables[0];
+            m_sle_ma_muc_lns.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
+        }
+
+        private void m_cb_ma_muc_lcd_CheckedChanged(object sender, EventArgs e)
+        {
+            check_change_cb_ma_muc_lcd();
+        }
+
+        private void check_change_cb_ma_muc_lcd()
+        {
+            if (m_cb_ma_muc_lcd.Checked == true)
+            {
+                m_sle_ma_muc_lcd.Enabled = true;
+                fill_data_to_sle_ma_muc_lcd();
+                m_txt_lcd.Enabled = false;
+            }
+            else
+            {
+                m_sle_ma_muc_lcd.Enabled = false;
+                m_txt_lcd.Enabled = true;
+            }
+        }
+
+        private void fill_data_to_sle_ma_muc_lcd()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            DataTable v_dt = new DataTable();
+            v_ds.Tables.Add(v_dt);
+            v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM V_DM_THANG_LUONG_CD");
+            m_sle_ma_muc_lcd.Properties.DataSource = v_ds.Tables[0];
+            m_sle_ma_muc_lcd.Properties.BestFitMode = BestFitMode.BestFitResizePopup;
         }     
     }
 

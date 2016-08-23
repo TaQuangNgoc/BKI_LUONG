@@ -77,8 +77,8 @@ namespace BKI_DichVuMatDat.NghiepVu.THEOTHOIGIAN
            // fill_data_to_grid_ma();
             m_sle_luong.EditValueChanged += m_sle_luong_EditValueChanged;
             m_sle_loai_muc.EditValueChanged += m_sle_loai_muc_EditValueChanged;
-           // fill_data_to_grid_ma_muc(760);
-           // fill_data_to_grid_ma_muc(761);
+            fill_data_to_grid_ma_muc(760);
+            fill_data_to_grid_ma_muc(761);
           //  fill_data_to_grid_muc(int.Parse(m_sle_loai_muc.EditValue.ToString()));
 
         }

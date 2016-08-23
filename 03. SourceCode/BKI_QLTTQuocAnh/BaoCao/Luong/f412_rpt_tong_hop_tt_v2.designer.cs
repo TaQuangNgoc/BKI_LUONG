@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f412_rpt_tong_hop_tt_v2));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -36,7 +37,7 @@
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_btn_huy_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection = new DevExpress.Utils.ImageCollection();
+            this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_luu_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_bat_tinh_nang_sua = new DevExpress.XtraEditors.SimpleButton();
@@ -94,9 +95,9 @@
             this.repoBtnXoaLuong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.bKI_DVMDDataSet = new BKI_DichVuMatDat.BKI_DVMDDataSet();
-            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource();
+            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
-            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource();
+            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rPT_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.bkI_LUONGDataSet11 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
             this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
