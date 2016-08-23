@@ -55,10 +55,10 @@ namespace BKI_DichVuMatDat
                 m_grv_thue.ColumnPanelRowHeight = 40;
                 m_grv_thue.RowHeight = 35;
             }
-            catch (Exception)
+            catch (Exception v_e)
             {
 
-                XtraMessageBox.Show("ngọc bo bo xin kích chào quý khách!");
+                XtraMessageBox.Show(v_e.Message);
             }
            
         }

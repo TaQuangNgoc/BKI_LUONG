@@ -4,7 +4,6 @@ using System.Windows.Forms;
 
 using IP.Core.IPCommon;
 using IP.Core.IPSystemAdmin;
-using IP.Core.IPBusinessService;
 using IP.Core.IPUserService;
 using BKI_DichVuMatDat;
 //using FORM_MENU;
