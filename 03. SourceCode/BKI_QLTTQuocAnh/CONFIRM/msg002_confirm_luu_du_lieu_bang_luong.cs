@@ -197,5 +197,10 @@ namespace BKI_DichVuMatDat.CONFIRM
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

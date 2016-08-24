@@ -60,6 +60,11 @@ namespace BKI_DichVuMatDat.CONFIRM
             }
         }
 
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         
     }
 }

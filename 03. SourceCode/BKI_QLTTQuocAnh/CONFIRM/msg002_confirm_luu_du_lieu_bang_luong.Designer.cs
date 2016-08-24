@@ -37,6 +37,7 @@
             this.m_lbl_option_detail2 = new DevExpress.XtraEditors.LabelControl();
             this.m_chk_1_ghi_moi = new DevExpress.XtraEditors.CheckEdit();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_chk_0_ghi_de.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_chk_1_ghi_moi.Properties)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,9 +53,9 @@
             this.m_cmd_confirm.Appearance.Options.UseForeColor = true;
             this.m_cmd_confirm.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.m_cmd_confirm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_confirm.Location = new System.Drawing.Point(462, 0);
+            this.m_cmd_confirm.Location = new System.Drawing.Point(285, 0);
             this.m_cmd_confirm.Name = "m_cmd_confirm";
-            this.m_cmd_confirm.Size = new System.Drawing.Size(101, 37);
+            this.m_cmd_confirm.Size = new System.Drawing.Size(162, 37);
             this.m_cmd_confirm.TabIndex = 0;
             this.m_cmd_confirm.Text = "Xác nhận";
             this.m_cmd_confirm.Click += new System.EventHandler(this.m_cmd_confirm_Click);
@@ -155,11 +156,31 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel1.Controls.Add(this.m_cmd_confirm);
+            this.panel1.Controls.Add(this.m_btn_thoat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 277);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(563, 37);
             this.panel1.TabIndex = 9;
+            // 
+            // m_btn_thoat
+            // 
+            this.m_btn_thoat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.m_btn_thoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_btn_thoat.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_btn_thoat.Appearance.Options.UseBackColor = true;
+            this.m_btn_thoat.Appearance.Options.UseFont = true;
+            this.m_btn_thoat.Appearance.Options.UseForeColor = true;
+            this.m_btn_thoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.m_btn_thoat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_thoat.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.m_btn_thoat.Location = new System.Drawing.Point(447, 0);
+            this.m_btn_thoat.Name = "m_btn_thoat";
+            this.m_btn_thoat.Size = new System.Drawing.Size(116, 37);
+            this.m_btn_thoat.TabIndex = 31;
+            this.m_btn_thoat.Text = "Thoát";
+            this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
             // msg002_confirm_luu_du_lieu_bang_luong
             // 
@@ -197,6 +218,7 @@
         private DevExpress.XtraEditors.LabelControl m_lbl_option_detail2;
         private DevExpress.XtraEditors.CheckEdit m_chk_1_ghi_moi;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
 
     }
 }

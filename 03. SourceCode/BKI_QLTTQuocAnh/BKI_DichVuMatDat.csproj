@@ -734,6 +734,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\Luong\f412_rpt_tong_hop_tt_v2.resx">
       <DependentUpon>f412_rpt_tong_hop_tt_v2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao\Luong\NHAN_VIEN_KHONG_CHAM_CONG_THANG.resx">
       <DependentUpon>NHAN_VIEN_KHONG_CHAM_CONG_THANG.cs</DependentUpon>
