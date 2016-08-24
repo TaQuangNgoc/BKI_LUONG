@@ -22,8 +22,7 @@ namespace BKI_DichVuMatDat.BaoCao
         public F401_he_so_bao_cao_luong()
         {
             InitializeComponent();
-            format_controls();
-          
+            format_controls();          
         }
         public void hien_thi_ra_soat_tinh_luong(decimal ip_dc_thang, decimal ip_dc_nam)
         {

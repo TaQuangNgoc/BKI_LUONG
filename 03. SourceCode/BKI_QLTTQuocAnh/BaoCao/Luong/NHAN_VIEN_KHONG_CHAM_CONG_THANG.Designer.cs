@@ -1,4 +1,5 @@
-﻿namespace BKI_DichVuMatDat.BaoCao.Luong
+﻿using System.Drawing;
+namespace BKI_DichVuMatDat.BaoCao.Luong
 {
     partial class NHAN_VIEN_KHONG_CHAM_CONG_THANG
     {
@@ -55,8 +56,8 @@
             this.colPHAI_DONG_BAO_HIEM = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSO_LUONG_PHU_THUOC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.m_txt_nam = new MaterialSkin.Controls.MaterialSingleLineTextField(Color.White);
+            this.m_txt_thang = new MaterialSkin.Controls.MaterialSingleLineTextField(Color.White);
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();

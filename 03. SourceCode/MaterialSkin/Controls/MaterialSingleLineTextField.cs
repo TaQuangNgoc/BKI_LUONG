@@ -941,6 +941,7 @@ namespace MaterialSkin.Controls
         private readonly AnimationManager animationManager;
 
         private readonly BaseTextBox baseTextBox;
+
         public MaterialSingleLineTextField()
         {
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.DoubleBuffer, true);
@@ -979,6 +980,46 @@ namespace MaterialSkin.Controls
 			//Fix for tabstop
 			baseTextBox.TabStop = true;
 			this.TabStop = false;
+        }
+
+        public MaterialSingleLineTextField(Color ip_color)
+        {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.DoubleBuffer, true);
+
+            animationManager = new AnimationManager
+            {
+                Increment = 0.06,
+                AnimationType = AnimationType.EaseInOut,
+                InterruptAnimation = false
+            };
+            animationManager.OnAnimationProgress += sender => Invalidate();
+
+            baseTextBox = new BaseTextBox
+            {
+                BorderStyle = BorderStyle.None,
+                Font = SkinManager.ROBOTO_REGULAR_11,
+                ForeColor = SkinManager.GetPrimaryTextColor(),
+                Location = new Point(0, 0),
+                Width = Width,
+                Height = Height - 5
+            };
+
+            if (!Controls.Contains(baseTextBox) && !DesignMode)
+            {
+                Controls.Add(baseTextBox);
+            }
+
+            baseTextBox.GotFocus += (sender, args) => animationManager.StartNewAnimation(AnimationDirection.In);
+            baseTextBox.LostFocus += (sender, args) => animationManager.StartNewAnimation(AnimationDirection.Out);
+            BackColorChanged += (sender, args) =>
+            {
+                baseTextBox.BackColor = BackColor;
+                baseTextBox.ForeColor = ip_color;
+            };
+
+            //Fix for tabstop
+            baseTextBox.TabStop = true;
+            this.TabStop = false;
         }
 
         protected override void OnPaint(PaintEventArgs pevent)
@@ -1023,7 +1064,7 @@ namespace MaterialSkin.Controls
             base.OnCreateControl();
 
             baseTextBox.BackColor = Parent.BackColor;
-            baseTextBox.ForeColor = SkinManager.GetPrimaryTextColor();
+            //baseTextBox.ForeColor = SkinManager.GetPrimaryTextColor();
         }
 
         private class BaseTextBox : TextBox
