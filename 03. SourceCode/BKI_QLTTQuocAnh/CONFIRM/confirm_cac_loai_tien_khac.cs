@@ -20,18 +20,31 @@ namespace BKI_DichVuMatDat.CONFIRM
 
         internal NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU Display()
         {
-            this.ShowDialog();
-            if (Convert.ToDecimal(radioGroup.EditValue) == 1)
-                return NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU.KHONG_XOA_CU;
+            var dgl= this.ShowDialog();
+            if (dgl == System.Windows.Forms.DialogResult.Cancel) 
+            {
+                return NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU.NONE;
+            }
             else
             {
-                return NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU.XOA_CU;
+                if (Convert.ToDecimal(radioGroup.EditValue) == 1)
+                    return NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU.KHONG_XOA_CU;
+                else
+                {
+                    return NghiepVu.CAC_LOAI_TIEN_KHAC.ENUM_CONFIRM_XOA_DU_LIEU_CU.XOA_CU;
+                }
             }
+            
         }
 
         private void m_cmd_confirm_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void m_btn_thoat_Click(object sender, EventArgs e)
+        {
+            DialogResult = System.Windows.Forms.DialogResult.Cancel;
         }
     }
 }

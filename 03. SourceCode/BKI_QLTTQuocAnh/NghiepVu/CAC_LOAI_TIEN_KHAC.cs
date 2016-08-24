@@ -427,21 +427,29 @@ namespace BKI_DichVuMatDat.NghiepVu
                     
                     BKI_DichVuMatDat.CONFIRM.confirm_cac_loai_tien_khac v_k = new CONFIRM.confirm_cac_loai_tien_khac();
                     v_enum_xoa_du_lieu_cu = v_k.Display();
-                    this.m_pn.Visible = true;
-                    this.m_prb.Visible = true;
-                    this.m_cmd_nhap_cham_cong.Text = "Đang lưu chấm công ...";
-                    this.m_cmd_nhap_cham_cong.Enabled = false;
-                    m_bgwk.RunWorkerAsync();
+                    if (v_enum_xoa_du_lieu_cu != ENUM_CONFIRM_XOA_DU_LIEU_CU.NONE)
+                    {
+                        this.m_pn.Visible = true;
+                        this.m_prb.Visible = true;
+                        this.m_cmd_nhap_cham_cong.Text = "Đang lưu chấm công ...";
+                        this.m_cmd_nhap_cham_cong.Enabled = false;
+                        m_bgwk.RunWorkerAsync();
+                    }
+                    else
+                    {
+                        XtraMessageBox.Show("Thao tác đã được hủy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);  
+                    }
                 }
             }
             catch (Exception v_e)
             {
-                XtraMessageBox.Show("Không có dữ liệu trên bảng. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                XtraMessageBox.Show("Không có dữ liệu trên bảng hoặc các trường của file dữ liệu load lên không đúng với Template. \nVui lòng kiểm tra lại thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         public enum ENUM_CONFIRM_XOA_DU_LIEU_CU
         {
+            NONE=0,
             XOA_CU = 1,
             KHONG_XOA_CU = 2
             

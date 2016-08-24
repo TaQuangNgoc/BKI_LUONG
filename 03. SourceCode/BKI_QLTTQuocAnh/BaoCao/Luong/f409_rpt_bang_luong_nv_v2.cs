@@ -211,7 +211,7 @@ namespace BKI_DichVuMatDat.BaoCao
                 }
                 clear_grid();
                 hide_grid();
-                show_progress_bar();
+                
                 Thread.Sleep(1000);
                 start_tinh_bang_luong_process();
                
@@ -499,7 +499,12 @@ namespace BKI_DichVuMatDat.BaoCao
                // m_bgwk.CancelAsync();
                 return;
             }
-            m_bgwk.RunWorkerAsync();
+            else
+            {
+                show_progress_bar();
+                m_bgwk.RunWorkerAsync();
+            }
+           
            
         }
         private ENUM_CONFIRM_TINH_BANG_LUONG confirm_cach_tinh_bang_luong_tu_nguoi_dung()

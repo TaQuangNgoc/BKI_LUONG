@@ -22,7 +22,11 @@ namespace BKI_DichVuMatDat.CONFIRM
         }
         public ENUM_CONFIRM_LUU_BANG_LUONG Display()
         {
-            ShowDialog();
+            var v_dlg = this.ShowDialog();
+            if (v_dlg != System.Windows.Forms.DialogResult.OK)
+            {
+                return ENUM_CONFIRM_LUU_BANG_LUONG.NONE;
+            }
             return _confirm;
         }
 
@@ -159,6 +163,7 @@ namespace BKI_DichVuMatDat.CONFIRM
         {
             try
             {
+                DialogResult = System.Windows.Forms.DialogResult.OK;
                 if(m_rdb_luu_lai_toan_bo.Checked == true)
                 {
                     _confirm = ENUM_CONFIRM_LUU_BANG_LUONG.TINH_LAI_TOAN_BO;
