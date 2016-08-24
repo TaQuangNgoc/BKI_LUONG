@@ -35,21 +35,17 @@
             this.m_cb_luong_ngay = new MaterialSkin.Controls.MaterialCheckBox();
             this.m_cb_luong_theo_san_pham = new MaterialSkin.Controls.MaterialCheckBox();
             this.m_cb_luong_khoan = new MaterialSkin.Controls.MaterialCheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -66,14 +62,15 @@
             this.panel3.Controls.Add(this.m_cb_luong_theo_san_pham);
             this.panel3.Controls.Add(this.m_cb_luong_khoan);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(584, 273);
+            this.panel3.Size = new System.Drawing.Size(584, 326);
             this.panel3.TabIndex = 8;
             // 
             // m_cb_luong_theo_thoi_gian
             // 
             this.m_cb_luong_theo_thoi_gian.AutoSize = true;
+            this.m_cb_luong_theo_thoi_gian.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_theo_thoi_gian.Depth = 0;
             this.m_cb_luong_theo_thoi_gian.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_theo_thoi_gian.Location = new System.Drawing.Point(28, 23);
@@ -90,6 +87,7 @@
             // m_cb_luong_theo_doanh_thu
             // 
             this.m_cb_luong_theo_doanh_thu.AutoSize = true;
+            this.m_cb_luong_theo_doanh_thu.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_theo_doanh_thu.Depth = 0;
             this.m_cb_luong_theo_doanh_thu.Enabled = false;
             this.m_cb_luong_theo_doanh_thu.Font = new System.Drawing.Font("Roboto", 10F);
@@ -107,6 +105,7 @@
             // m_cb_luong_ngay
             // 
             this.m_cb_luong_ngay.AutoSize = true;
+            this.m_cb_luong_ngay.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_ngay.Depth = 0;
             this.m_cb_luong_ngay.Font = new System.Drawing.Font("Roboto", 10F);
             this.m_cb_luong_ngay.Location = new System.Drawing.Point(28, 60);
@@ -123,6 +122,7 @@
             // m_cb_luong_theo_san_pham
             // 
             this.m_cb_luong_theo_san_pham.AutoSize = true;
+            this.m_cb_luong_theo_san_pham.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_theo_san_pham.Depth = 0;
             this.m_cb_luong_theo_san_pham.Enabled = false;
             this.m_cb_luong_theo_san_pham.Font = new System.Drawing.Font("Roboto", 10F);
@@ -141,6 +141,7 @@
             // m_cb_luong_khoan
             // 
             this.m_cb_luong_khoan.AutoSize = true;
+            this.m_cb_luong_khoan.Color = System.Drawing.Color.Empty;
             this.m_cb_luong_khoan.Depth = 0;
             this.m_cb_luong_khoan.Enabled = false;
             this.m_cb_luong_khoan.Font = new System.Drawing.Font("Roboto", 10F);
@@ -155,27 +156,6 @@
             this.m_cb_luong_khoan.Text = "Tính lương khoán";
             this.m_cb_luong_khoan.UseVisualStyleBackColor = true;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(584, 53);
-            this.panel2.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(74, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(480, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LỰA CHỌN CÁC HÌNH THỨC TÍNH LƯƠNG CỦA CÔNG TY";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
@@ -186,6 +166,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(584, 63);
             this.panel4.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(65, 63);
+            this.panel6.TabIndex = 38;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // m_btn_luu
             // 
@@ -206,17 +197,6 @@
             this.m_btn_luu.Text = "Lưu";
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(65, 63);
-            this.panel6.TabIndex = 38;
-            this.panel6.Click += new System.EventHandler(this.panel6_Click);
-            // 
             // CAC_HINH_THUC_TINH_LUONG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,8 +209,6 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -245,8 +223,6 @@
         private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_ngay;
         private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_theo_san_pham;
         private MaterialSkin.Controls.MaterialCheckBox m_cb_luong_khoan;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private System.Windows.Forms.Panel panel6;

@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f412_rpt_tong_hop_tt_v2));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_dat_thang = new DevExpress.XtraEditors.DateEdit();
             this.m_lbl_trang_thai_bang_luong = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_so_luong_nv_tinh_luong = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_btn_huy_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection = new DevExpress.Utils.ImageCollection();
+            this.imageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.m_cmd_chot_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_luu_bang_luong = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_bat_tinh_nang_sua = new DevExpress.XtraEditors.SimpleButton();
@@ -94,17 +95,15 @@
             this.repoBtnXoaLuong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.bKI_DVMDDataSet = new BKI_DichVuMatDat.BKI_DVMDDataSet();
-            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource();
+            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bKI_LUONGDataSet1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
-            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource();
+            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rPT_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.bkI_LUONGDataSet11 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
             this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -126,7 +125,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControl2
@@ -138,7 +136,7 @@
             this.panelControl2.Controls.Add(this.m_lbl_trang_thai_bang_luong);
             this.panelControl2.Controls.Add(this.m_lbl_so_luong_nv_tinh_luong);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 65);
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1047, 52);
             this.panelControl2.TabIndex = 26;
@@ -197,7 +195,7 @@
             this.panelControl1.Controls.Add(this.m_cmd_soan_thao_bang_luong);
             this.panelControl1.Controls.Add(this.m_cmd_view);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 117);
+            this.panelControl1.Location = new System.Drawing.Point(0, 52);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1047, 40);
             this.panelControl1.TabIndex = 25;
@@ -347,14 +345,14 @@
             // 
             this.m_grc_tong_hop.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_tong_hop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 157);
+            this.m_grc_tong_hop.Location = new System.Drawing.Point(0, 92);
             this.m_grc_tong_hop.MainView = this.m_adv_tong_hop;
             this.m_grc_tong_hop.Name = "m_grc_tong_hop";
             this.m_grc_tong_hop.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemMemoEdit1,
             this.repoBtnXoaLuong,
             this.repositoryItemTextEditTien});
-            this.m_grc_tong_hop.Size = new System.Drawing.Size(1047, 282);
+            this.m_grc_tong_hop.Size = new System.Drawing.Size(1047, 347);
             this.m_grc_tong_hop.TabIndex = 11;
             this.m_grc_tong_hop.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_adv_tong_hop});
@@ -1017,7 +1015,7 @@
             // repoBtnXoaLuong
             // 
             this.repoBtnXoaLuong.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("repoBtnXoaLuong.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.repoBtnXoaLuong.Name = "repoBtnXoaLuong";
             this.repoBtnXoaLuong.ReadOnly = true;
             this.repoBtnXoaLuong.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -1114,27 +1112,6 @@
             this.m_btn_thoat.Text = "Thoát";
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1047, 65);
-            this.panel3.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(40, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TỔNG HỢP BẢNG LƯƠNG THÁNG";
-            // 
             // f412_rpt_tong_hop_tt_v2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1143,7 +1120,6 @@
             this.Controls.Add(this.m_grc_tong_hop);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.m_panel);
             this.Name = "f412_rpt_tong_hop_tt_v2";
@@ -1171,8 +1147,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1242,8 +1216,6 @@
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colBHTN_PHAI_NOP;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.SimpleButton m_btn_huy_chot_bang_luong;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHU_NHAP_KHAC;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP_KHAC;

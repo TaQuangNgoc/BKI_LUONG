@@ -33,8 +33,6 @@
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -177,7 +175,6 @@
             this.m_cb_luong_theo_san_pham = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -242,7 +239,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 700);
@@ -271,35 +268,14 @@
             this.m_btn_luu.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
             this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1171, 53);
-            this.panel1.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(199, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "THÔNG TIN NHÂN VIÊN";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.tabControl1);
             this.panel3.Controls.Add(this.materialTabSelector1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1171, 647);
+            this.panel3.Size = new System.Drawing.Size(1171, 700);
             this.panel3.TabIndex = 8;
             // 
             // tabControl1
@@ -314,7 +290,7 @@
             this.tabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1171, 615);
+            this.tabControl1.Size = new System.Drawing.Size(1171, 668);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -325,7 +301,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1163, 584);
+            this.tabPage1.Size = new System.Drawing.Size(1163, 637);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "THÔNG TIN CHUNG";
             // 
@@ -338,7 +314,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1157, 578);
+            this.groupBox1.Size = new System.Drawing.Size(1157, 631);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Điền đầy đủ thông tin nhân viên";
@@ -350,7 +326,7 @@
             this.m_grb_phu_cap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_grb_phu_cap.Location = new System.Drawing.Point(3, 341);
             this.m_grb_phu_cap.Name = "m_grb_phu_cap";
-            this.m_grb_phu_cap.Size = new System.Drawing.Size(1151, 234);
+            this.m_grb_phu_cap.Size = new System.Drawing.Size(1151, 287);
             this.m_grb_phu_cap.TabIndex = 32;
             this.m_grb_phu_cap.TabStop = false;
             this.m_grb_phu_cap.Text = "Các loại phụ cấp được hưởng";
@@ -365,7 +341,7 @@
             this.m_grc_phu_cap.Location = new System.Drawing.Point(571, 20);
             this.m_grc_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_phu_cap.Name = "m_grc_phu_cap";
-            this.m_grc_phu_cap.Size = new System.Drawing.Size(577, 211);
+            this.m_grc_phu_cap.Size = new System.Drawing.Size(577, 264);
             this.m_grc_phu_cap.TabIndex = 17;
             this.m_grc_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap});
@@ -457,7 +433,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 20);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(568, 211);
+            this.panel8.Size = new System.Drawing.Size(568, 264);
             this.panel8.TabIndex = 16;
             // 
             // m_dtp_den_ngay_phu_cap
@@ -889,7 +865,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1163, 584);
+            this.tabPage2.Size = new System.Drawing.Size(1163, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "LƯƠNG THEO THỜI GIAN";
             // 
@@ -900,7 +876,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1157, 578);
+            this.groupBox2.Size = new System.Drawing.Size(1157, 631);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -913,7 +889,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 18);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1151, 557);
+            this.panel4.Size = new System.Drawing.Size(1151, 610);
             this.panel4.TabIndex = 15;
             // 
             // m_grb_loai_nv
@@ -1882,7 +1858,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1163, 584);
+            this.tabPage3.Size = new System.Drawing.Size(1163, 637);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CÁC LOẠI LƯƠNG KHÁC";
             // 
@@ -1893,7 +1869,7 @@
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(3, 3);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1157, 578);
+            this.groupBox7.Size = new System.Drawing.Size(1157, 631);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             // 
@@ -1906,7 +1882,7 @@
             this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox10.Location = new System.Drawing.Point(3, 20);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(1151, 555);
+            this.groupBox10.Size = new System.Drawing.Size(1151, 608);
             this.groupBox10.TabIndex = 11;
             this.groupBox10.TabStop = false;
             // 
@@ -2248,13 +2224,10 @@
             this.ClientSize = new System.Drawing.Size(1171, 753);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "THEM_MOI_NHAN_VIEN";
             this.Text = "THEM_MOI_NHAN_VIEN";
             this.Load += new System.EventHandler(this.THEM_MOI_NHAN_VIEN_Load);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -2332,8 +2305,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private MaterialSkin.Controls.MaterialTabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;

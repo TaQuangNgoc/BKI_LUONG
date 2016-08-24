@@ -154,8 +154,6 @@
             this.commandBarGalleryDropDown4 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
             this.commandBarGalleryDropDown5 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
             this.spreadsheetBarController1 = new DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_sle_nhan_vien = new DevExpress.XtraEditors.SearchLookUpEdit();
@@ -177,7 +175,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_sle_nhan_vien.Properties)).BeginInit();
@@ -403,7 +400,7 @@
             this.documentViewer1.Name = "documentViewer1";
             this.documentViewer1.PageBorderVisibility = DevExpress.DocumentView.PageBorderVisibility.None;
             this.documentViewer1.ShowPageMargins = false;
-            this.documentViewer1.Size = new System.Drawing.Size(859, 328);
+            this.documentViewer1.Size = new System.Drawing.Size(859, 386);
             this.documentViewer1.TabIndex = 0;
             this.documentViewer1.Visible = false;
             // 
@@ -1312,27 +1309,6 @@
             this.commandBarGalleryDropDown5.Manager = this.documentViewerBarManager1;
             this.commandBarGalleryDropDown5.Name = "commandBarGalleryDropDown5";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(129, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(340, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "PHIẾU LƯƠNG THÁNG CỦA NHÂN VIÊN";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(859, 58);
-            this.panel2.TabIndex = 69;
-            // 
             // panelControl2
             // 
             this.panelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
@@ -1344,7 +1320,7 @@
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.m_dat_thang);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 58);
+            this.panelControl2.Location = new System.Drawing.Point(0, 0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(859, 63);
             this.panelControl2.TabIndex = 73;
@@ -1478,9 +1454,9 @@
             // 
             this.m_panel_content.Controls.Add(this.documentViewer1);
             this.m_panel_content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_panel_content.Location = new System.Drawing.Point(0, 121);
+            this.m_panel_content.Location = new System.Drawing.Point(0, 63);
             this.m_panel_content.Name = "m_panel_content";
-            this.m_panel_content.Size = new System.Drawing.Size(859, 328);
+            this.m_panel_content.Size = new System.Drawing.Size(859, 386);
             this.m_panel_content.TabIndex = 74;
             // 
             // PHIEU_LUONG
@@ -1491,7 +1467,6 @@
             this.ClientSize = new System.Drawing.Size(859, 449);
             this.Controls.Add(this.m_panel_content);
             this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -1509,8 +1484,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spreadsheetBarController1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
@@ -1531,8 +1504,6 @@
         private DevExpress.XtraBars.Commands.CommandBarGalleryDropDown commandBarGalleryDropDown4;
         private DevExpress.XtraBars.Commands.CommandBarGalleryDropDown commandBarGalleryDropDown5;
         private DevExpress.XtraSpreadsheet.UI.SpreadsheetBarController spreadsheetBarController1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.DateEdit m_dat_thang;
         private System.Windows.Forms.Panel m_panel_content;

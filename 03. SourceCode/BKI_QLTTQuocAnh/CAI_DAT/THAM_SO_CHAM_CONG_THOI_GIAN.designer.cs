@@ -30,8 +30,6 @@ namespace BKI_DichVuMatDat
         private void InitializeComponent()
         {
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.tab_Control1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tab_loaingaycong = new System.Windows.Forms.TabPage();
@@ -99,7 +97,6 @@ namespace BKI_DichVuMatDat
             this.m_cmd_them = new MaterialSkin.Controls.MaterialRaisedButton();
             this.m_cmd_sua = new MaterialSkin.Controls.MaterialRaisedButton();
             this.m_cmd_xoa = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.panel1.SuspendLayout();
             this.tab_Control1.SuspendLayout();
             this.tab_loaingaycong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).BeginInit();
@@ -129,27 +126,6 @@ namespace BKI_DichVuMatDat
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(142)))), ((int)(((byte)(56)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(961, 53);
-            this.panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(199, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "DANH MỤC THAM SỐ TÍNH LƯƠNG";
-            // 
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.tab_Control1;
@@ -178,7 +154,7 @@ namespace BKI_DichVuMatDat
             this.tab_Control1.MouseState = MaterialSkin.MouseState.HOVER;
             this.tab_Control1.Name = "tab_Control1";
             this.tab_Control1.SelectedIndex = 0;
-            this.tab_Control1.Size = new System.Drawing.Size(961, 495);
+            this.tab_Control1.Size = new System.Drawing.Size(961, 548);
             this.tab_Control1.TabIndex = 0;
             this.tab_Control1.SelectedIndexChanged += new System.EventHandler(this.tab_Control1_SelectedIndexChanged);
             // 
@@ -189,7 +165,7 @@ namespace BKI_DichVuMatDat
             this.tab_loaingaycong.Location = new System.Drawing.Point(4, 27);
             this.tab_loaingaycong.Name = "tab_loaingaycong";
             this.tab_loaingaycong.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 464);
+            this.tab_loaingaycong.Size = new System.Drawing.Size(953, 517);
             this.tab_loaingaycong.TabIndex = 0;
             this.tab_loaingaycong.Text = "LOẠI NGÀY CÔNG";
             this.tab_loaingaycong.UseVisualStyleBackColor = true;
@@ -201,7 +177,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_ngay_cong.Location = new System.Drawing.Point(3, 3);
             this.m_grc_ngay_cong.MainView = this.m_grv_ngay_cong;
             this.m_grc_ngay_cong.Name = "m_grc_ngay_cong";
-            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 458);
+            this.m_grc_ngay_cong.Size = new System.Drawing.Size(947, 511);
             this.m_grc_ngay_cong.TabIndex = 3;
             this.m_grc_ngay_cong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ngay_cong,
@@ -304,7 +280,7 @@ namespace BKI_DichVuMatDat
             this.tab_lamthemgio.Location = new System.Drawing.Point(4, 27);
             this.tab_lamthemgio.Name = "tab_lamthemgio";
             this.tab_lamthemgio.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 464);
+            this.tab_lamthemgio.Size = new System.Drawing.Size(953, 517);
             this.tab_lamthemgio.TabIndex = 1;
             this.tab_lamthemgio.Text = "LÀM THÊM GIỜ";
             // 
@@ -318,7 +294,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_loai_lam_them_gio.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_lam_them_gio.MainView = this.m_grv_lam_them_gio;
             this.m_grc_loai_lam_them_gio.Name = "m_grc_loai_lam_them_gio";
-            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 458);
+            this.m_grc_loai_lam_them_gio.Size = new System.Drawing.Size(947, 511);
             this.m_grc_loai_lam_them_gio.TabIndex = 8;
             this.m_grc_loai_lam_them_gio.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_lam_them_gio,
@@ -400,7 +376,7 @@ namespace BKI_DichVuMatDat
             this.tab_phucap.Location = new System.Drawing.Point(4, 27);
             this.tab_phucap.Name = "tab_phucap";
             this.tab_phucap.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_phucap.Size = new System.Drawing.Size(953, 464);
+            this.tab_phucap.Size = new System.Drawing.Size(953, 517);
             this.tab_phucap.TabIndex = 2;
             this.tab_phucap.Text = "PHỤ CẤP";
             // 
@@ -411,7 +387,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_loai_phu_cap.Location = new System.Drawing.Point(3, 3);
             this.m_grc_loai_phu_cap.MainView = this.m_grv_phu_cap;
             this.m_grc_loai_phu_cap.Name = "m_grc_loai_phu_cap";
-            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 458);
+            this.m_grc_loai_phu_cap.Size = new System.Drawing.Size(947, 511);
             this.m_grc_loai_phu_cap.TabIndex = 19;
             this.m_grc_loai_phu_cap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_phu_cap,
@@ -538,7 +514,7 @@ namespace BKI_DichVuMatDat
             this.tab_baohiem.Location = new System.Drawing.Point(4, 27);
             this.tab_baohiem.Name = "tab_baohiem";
             this.tab_baohiem.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_baohiem.Size = new System.Drawing.Size(953, 464);
+            this.tab_baohiem.Size = new System.Drawing.Size(953, 517);
             this.tab_baohiem.TabIndex = 3;
             this.tab_baohiem.Text = "BẢO HIỂM";
             // 
@@ -549,7 +525,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_bao_hiem.Location = new System.Drawing.Point(3, 3);
             this.m_grc_bao_hiem.MainView = this.m_grv_bao_hiem;
             this.m_grc_bao_hiem.Name = "m_grc_bao_hiem";
-            this.m_grc_bao_hiem.Size = new System.Drawing.Size(947, 458);
+            this.m_grc_bao_hiem.Size = new System.Drawing.Size(947, 511);
             this.m_grc_bao_hiem.TabIndex = 17;
             this.m_grc_bao_hiem.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_bao_hiem,
@@ -636,7 +612,7 @@ namespace BKI_DichVuMatDat
             this.tab_thue.Location = new System.Drawing.Point(4, 27);
             this.tab_thue.Name = "tab_thue";
             this.tab_thue.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_thue.Size = new System.Drawing.Size(953, 464);
+            this.tab_thue.Size = new System.Drawing.Size(953, 517);
             this.tab_thue.TabIndex = 4;
             this.tab_thue.Text = "THUẾ";
             // 
@@ -647,7 +623,7 @@ namespace BKI_DichVuMatDat
             this.m_grc_thue.Location = new System.Drawing.Point(3, 3);
             this.m_grc_thue.MainView = this.m_grv_thue;
             this.m_grc_thue.Name = "m_grc_thue";
-            this.m_grc_thue.Size = new System.Drawing.Size(947, 458);
+            this.m_grc_thue.Size = new System.Drawing.Size(947, 511);
             this.m_grc_thue.TabIndex = 20;
             this.m_grc_thue.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_thue,
@@ -749,7 +725,7 @@ namespace BKI_DichVuMatDat
             this.tab_doanphi.Location = new System.Drawing.Point(4, 27);
             this.tab_doanphi.Name = "tab_doanphi";
             this.tab_doanphi.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_doanphi.Size = new System.Drawing.Size(953, 464);
+            this.tab_doanphi.Size = new System.Drawing.Size(953, 517);
             this.tab_doanphi.TabIndex = 5;
             this.tab_doanphi.Text = "ĐOÀN PHÍ ";
             // 
@@ -760,7 +736,7 @@ namespace BKI_DichVuMatDat
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(3, 3);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(947, 458);
+            this.groupBox13.Size = new System.Drawing.Size(947, 511);
             this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             // 
@@ -770,7 +746,7 @@ namespace BKI_DichVuMatDat
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(3, 20);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(941, 435);
+            this.panel15.Size = new System.Drawing.Size(941, 488);
             this.panel15.TabIndex = 7;
             // 
             // groupBox20
@@ -973,14 +949,14 @@ namespace BKI_DichVuMatDat
             this.panel3.Controls.Add(this.tab_Control1);
             this.panel3.Controls.Add(this.materialTabSelector1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(961, 531);
+            this.panel3.Size = new System.Drawing.Size(961, 584);
             this.panel3.TabIndex = 5;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_cmd_luu);
             this.panel2.Controls.Add(this.m_cmd_them);
             this.panel2.Controls.Add(this.m_cmd_sua);
@@ -1054,13 +1030,10 @@ namespace BKI_DichVuMatDat
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 631);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Text = "THAM_SO_CHAM_CONG_THOI_GIAN";
             this.Load += new System.EventHandler(this.THAM_SO_CHAM_CONG_THOI_GIAN_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tab_Control1.ResumeLayout(false);
             this.tab_loaingaycong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ngay_cong)).EndInit();
@@ -1095,9 +1068,7 @@ namespace BKI_DichVuMatDat
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private Panel panel2;
         private MaterialSkin.Controls.MaterialTabControl tab_Control1;
         private TabPage tab_loaingaycong;

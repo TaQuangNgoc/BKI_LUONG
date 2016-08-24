@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.m_cmd_nhap_cham_cong = new DevExpress.XtraEditors.SimpleButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.m_dat_chon_thang = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.m_lbl_trang_thai_cham_cong = new DevExpress.XtraEditors.LabelControl();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.m_pn = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.m_prb = new DevExpress.XtraEditors.ProgressBarControl();
@@ -47,9 +47,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.m_btn_hien_thi = new DevExpress.XtraEditors.SimpleButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
-            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties)).BeginInit();
             this.panel3.SuspendLayout();
@@ -61,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grc)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_cmd_nhap_cham_cong
@@ -82,17 +79,6 @@
             this.m_cmd_nhap_cham_cong.TabIndex = 15;
             this.m_cmd_nhap_cham_cong.Text = "Lưu chấm công";
             this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(199, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(342, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CHẤM CÔNG THEO NGÀY BẰNG EXCEL";
             // 
             // m_dat_chon_thang
             // 
@@ -150,6 +136,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(980, 66);
             this.panel3.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(65, 66);
+            this.panel6.TabIndex = 39;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
             // 
             // m_pn
             // 
@@ -280,7 +277,7 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(980, 255);
+            this.m_grc.Size = new System.Drawing.Size(980, 308);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -290,9 +287,9 @@
             this.panel2.Controls.Add(this.m_pn);
             this.panel2.Controls.Add(this.m_grc);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 123);
+            this.panel2.Location = new System.Drawing.Point(0, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(980, 255);
+            this.panel2.Size = new System.Drawing.Size(980, 308);
             this.panel2.TabIndex = 10;
             // 
             // panel7
@@ -303,7 +300,7 @@
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
             this.panel7.Controls.Add(this.panelControl1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 53);
+            this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(980, 70);
             this.panel7.TabIndex = 11;
@@ -326,27 +323,6 @@
             this.m_btn_hien_thi.Text = "Hiển thị dữ liệu đã nhập\r\n";
             this.m_btn_hien_thi.Click += new System.EventHandler(this.m_btn_hien_thi_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(980, 53);
-            this.panel1.TabIndex = 12;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = global::BKI_DichVuMatDat.Properties.Resources.question__1_;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(65, 66);
-            this.panel6.TabIndex = 39;
-            this.panel6.Click += new System.EventHandler(this.panel6_Click);
-            // 
             // CHAM_CONG_THEO_NGAY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,7 +331,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel1);
             this.Name = "CHAM_CONG_THEO_NGAY";
             this.Text = "CHAM_CONG_THEO_NGAY";
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).EndInit();
@@ -371,8 +346,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grc)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -380,7 +353,6 @@
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton m_cmd_nhap_cham_cong;
-        private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.DateEdit m_dat_chon_thang;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -397,7 +369,6 @@
         private System.Windows.Forms.Panel m_pn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;

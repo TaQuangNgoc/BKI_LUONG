@@ -51,8 +51,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_xoa_dong = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_nhap_cham_cong = new DevExpress.XtraEditors.SimpleButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::BKI_DichVuMatDat.BaoCao.F_wait_form), true, true);
             this.panel2.SuspendLayout();
             this.m_pn.SuspendLayout();
@@ -67,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -75,9 +72,9 @@
             this.panel2.Controls.Add(this.m_pn);
             this.panel2.Controls.Add(this.m_grc);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 138);
+            this.panel2.Location = new System.Drawing.Point(0, 85);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1174, 250);
+            this.panel2.Size = new System.Drawing.Size(1174, 303);
             this.panel2.TabIndex = 14;
             // 
             // m_pn
@@ -122,7 +119,7 @@
             this.m_grc.Location = new System.Drawing.Point(0, 0);
             this.m_grc.MainView = this.m_grv;
             this.m_grc.Name = "m_grc";
-            this.m_grc.Size = new System.Drawing.Size(1174, 250);
+            this.m_grc.Size = new System.Drawing.Size(1174, 303);
             this.m_grc.TabIndex = 0;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
@@ -183,7 +180,7 @@
             this.panel7.Controls.Add(this.m_cmd_chon_du_lieu);
             this.panel7.Controls.Add(this.panelControl1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 53);
+            this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1174, 85);
             this.panel7.TabIndex = 15;
@@ -382,27 +379,6 @@
             this.m_cmd_nhap_cham_cong.Text = "Lưu";
             this.m_cmd_nhap_cham_cong.Click += new System.EventHandler(this.m_cmd_nhap_cham_cong_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(199, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(360, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "NHẬP CÁC LOẠI TIỀN KHÁC BẰNG EXCEL";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1174, 53);
-            this.panel1.TabIndex = 16;
-            // 
             // CAC_LOAI_TIEN_KHAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +387,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Name = "CAC_LOAI_TIEN_KHAC";
             this.Text = "CAC_LOAI_TIEN_KHAC";
             this.panel2.ResumeLayout(false);
@@ -429,8 +404,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_dat_chon_thang.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -458,8 +431,6 @@
         private System.ComponentModel.BackgroundWorker m_bgwk;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_cmd_nhap_cham_cong;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton m_btn_hien_thi;
         private DevExpress.XtraEditors.SimpleButton m_btn_xoa_dong;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;

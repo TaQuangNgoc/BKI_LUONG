@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -49,36 +47,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(160)))), ((int)(((byte)(67)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(827, 53);
-            this.panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(148, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CÀI ĐẶT MỘT SỐ THAM SỐ KHÁC";
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
             this.panel2.Controls.Add(this.m_btn_luu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 470);
@@ -109,9 +85,9 @@
             // 
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 53);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(827, 417);
+            this.panel3.Size = new System.Drawing.Size(827, 470);
             this.panel3.TabIndex = 5;
             // 
             // groupBox2
@@ -135,7 +111,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(827, 417);
+            this.groupBox2.Size = new System.Drawing.Size(827, 470);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             // 
@@ -144,6 +120,7 @@
             this.m_txt_so_thang_tinh_bhxh.Depth = 0;
             this.m_txt_so_thang_tinh_bhxh.Hint = "";
             this.m_txt_so_thang_tinh_bhxh.Location = new System.Drawing.Point(241, 223);
+            this.m_txt_so_thang_tinh_bhxh.MaxLength = 32767;
             this.m_txt_so_thang_tinh_bhxh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_so_thang_tinh_bhxh.Name = "m_txt_so_thang_tinh_bhxh";
             this.m_txt_so_thang_tinh_bhxh.PasswordChar = '\0';
@@ -153,6 +130,7 @@
             this.m_txt_so_thang_tinh_bhxh.SelectionStart = 0;
             this.m_txt_so_thang_tinh_bhxh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_so_thang_tinh_bhxh.TabIndex = 27;
+            this.m_txt_so_thang_tinh_bhxh.TabStop = false;
             this.m_txt_so_thang_tinh_bhxh.UseSystemPasswordChar = false;
             this.m_txt_so_thang_tinh_bhxh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_so_thang_tinh_bhxh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -162,6 +140,7 @@
             this.m_txt_giam_tru_phu_thuoc.Depth = 0;
             this.m_txt_giam_tru_phu_thuoc.Hint = "";
             this.m_txt_giam_tru_phu_thuoc.Location = new System.Drawing.Point(241, 175);
+            this.m_txt_giam_tru_phu_thuoc.MaxLength = 32767;
             this.m_txt_giam_tru_phu_thuoc.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_giam_tru_phu_thuoc.Name = "m_txt_giam_tru_phu_thuoc";
             this.m_txt_giam_tru_phu_thuoc.PasswordChar = '\0';
@@ -171,6 +150,7 @@
             this.m_txt_giam_tru_phu_thuoc.SelectionStart = 0;
             this.m_txt_giam_tru_phu_thuoc.Size = new System.Drawing.Size(178, 23);
             this.m_txt_giam_tru_phu_thuoc.TabIndex = 26;
+            this.m_txt_giam_tru_phu_thuoc.TabStop = false;
             this.m_txt_giam_tru_phu_thuoc.UseSystemPasswordChar = false;
             this.m_txt_giam_tru_phu_thuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_giam_tru_phu_thuoc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -180,6 +160,7 @@
             this.m_txt_giam_tru_gia_canh.Depth = 0;
             this.m_txt_giam_tru_gia_canh.Hint = "";
             this.m_txt_giam_tru_gia_canh.Location = new System.Drawing.Point(241, 127);
+            this.m_txt_giam_tru_gia_canh.MaxLength = 32767;
             this.m_txt_giam_tru_gia_canh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_giam_tru_gia_canh.Name = "m_txt_giam_tru_gia_canh";
             this.m_txt_giam_tru_gia_canh.PasswordChar = '\0';
@@ -189,6 +170,7 @@
             this.m_txt_giam_tru_gia_canh.SelectionStart = 0;
             this.m_txt_giam_tru_gia_canh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_giam_tru_gia_canh.TabIndex = 25;
+            this.m_txt_giam_tru_gia_canh.TabStop = false;
             this.m_txt_giam_tru_gia_canh.UseSystemPasswordChar = false;
             this.m_txt_giam_tru_gia_canh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_giam_tru_gia_canh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -198,6 +180,7 @@
             this.m_txt_luong_toi_thieu_quy_dinh.Depth = 0;
             this.m_txt_luong_toi_thieu_quy_dinh.Hint = "";
             this.m_txt_luong_toi_thieu_quy_dinh.Location = new System.Drawing.Point(241, 79);
+            this.m_txt_luong_toi_thieu_quy_dinh.MaxLength = 32767;
             this.m_txt_luong_toi_thieu_quy_dinh.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_luong_toi_thieu_quy_dinh.Name = "m_txt_luong_toi_thieu_quy_dinh";
             this.m_txt_luong_toi_thieu_quy_dinh.PasswordChar = '\0';
@@ -207,6 +190,7 @@
             this.m_txt_luong_toi_thieu_quy_dinh.SelectionStart = 0;
             this.m_txt_luong_toi_thieu_quy_dinh.Size = new System.Drawing.Size(178, 23);
             this.m_txt_luong_toi_thieu_quy_dinh.TabIndex = 24;
+            this.m_txt_luong_toi_thieu_quy_dinh.TabStop = false;
             this.m_txt_luong_toi_thieu_quy_dinh.UseSystemPasswordChar = false;
             this.m_txt_luong_toi_thieu_quy_dinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_luong_toi_thieu_quy_dinh.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -216,6 +200,7 @@
             this.m_txt_luong_toi_thieu_vung.Depth = 0;
             this.m_txt_luong_toi_thieu_vung.Hint = "";
             this.m_txt_luong_toi_thieu_vung.Location = new System.Drawing.Point(241, 31);
+            this.m_txt_luong_toi_thieu_vung.MaxLength = 32767;
             this.m_txt_luong_toi_thieu_vung.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_txt_luong_toi_thieu_vung.Name = "m_txt_luong_toi_thieu_vung";
             this.m_txt_luong_toi_thieu_vung.PasswordChar = '\0';
@@ -225,6 +210,7 @@
             this.m_txt_luong_toi_thieu_vung.SelectionStart = 0;
             this.m_txt_luong_toi_thieu_vung.Size = new System.Drawing.Size(178, 23);
             this.m_txt_luong_toi_thieu_vung.TabIndex = 23;
+            this.m_txt_luong_toi_thieu_vung.TabStop = false;
             this.m_txt_luong_toi_thieu_vung.UseSystemPasswordChar = false;
             this.m_txt_luong_toi_thieu_vung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_box_format_numeric_not_contain_point);
             this.m_txt_luong_toi_thieu_vung.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text_box_key_up_format_currency);
@@ -335,12 +321,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 522);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "THAM_SO_KHAC";
             this.Text = "THAM_SO_KHAC";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -351,8 +334,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label12;
