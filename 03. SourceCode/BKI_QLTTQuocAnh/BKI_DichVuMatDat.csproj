@@ -442,10 +442,10 @@
     <Compile Include="CAI_DAT\DANG_NHAP_HE_THONG.Designer.cs">
       <DependentUpon>DANG_NHAP_HE_THONG.cs</DependentUpon>
     </Compile>
-    <Compile Include="CAI_DAT\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs">
+    <Compile Include="CAI_DAT\DETAIL\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CAI_DAT\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.Designer.cs">
+    <Compile Include="CAI_DAT\DETAIL\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.Designer.cs">
       <DependentUpon>DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.cs">
@@ -532,12 +532,6 @@
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.Designer.cs">
-      <DependentUpon>NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\THAM_SO_CHAM_CONG_THOI_GIAN.cs">
       <SubType>Form</SubType>
@@ -754,7 +748,7 @@
     <EmbeddedResource Include="CAI_DAT\DANG_NHAP_HE_THONG.resx">
       <DependentUpon>DANG_NHAP_HE_THONG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CAI_DAT\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.resx">
+    <EmbeddedResource Include="CAI_DAT\DETAIL\DANH_MUC_LOAI_NHAN_VIEN_DETAIL.resx">
       <DependentUpon>DANH_MUC_LOAI_NHAN_VIEN_DETAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\DETAIL\BAO_HIEM_DETAIL.resx">
@@ -798,9 +792,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CAI_DAT\NGAY_CONG_TIEU_CHUAN.resx">
-      <DependentUpon>NGAY_CONG_TIEU_CHUAN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CAI_DAT\THAM_SO_CHAM_CONG_THOI_GIAN.resx">
       <DependentUpon>THAM_SO_CHAM_CONG_THOI_GIAN.cs</DependentUpon>

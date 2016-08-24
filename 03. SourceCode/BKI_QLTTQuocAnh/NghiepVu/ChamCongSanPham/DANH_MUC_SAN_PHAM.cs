@@ -24,6 +24,9 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
             tab_Control1.Appearance = TabAppearance.FlatButtons;
             load_du_lieu_vao_bang_danh_muc_sp();
             load_du_lieu_vao_bang_danh_muc_ti_le_lam_them();
+            WinFormControls.formatGridView(m_grv_danh_muc_ti_le_lam_them);
+            WinFormControls.formatGridView(m_grv_luong_ngay);
+            WinFormControls.formatGridView(m_grv_san_pham);
         }
 
         private void load_du_lieu_vao_bang_danh_muc_ti_le_lam_them()

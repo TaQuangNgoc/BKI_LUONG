@@ -24,10 +24,11 @@ namespace BKI_DichVuMatDat
             InitializeComponent();
             tab_Control1.SizeMode = TabSizeMode.Fixed;
             tab_Control1.ItemSize = new Size(tab_Control1.Width / tab_Control1.TabCount, 40);
-            
-
-            
-
+            WinFormControls.formatGridView(m_grv_bao_hiem);
+            WinFormControls.formatGridView(m_grv_lam_them_gio);
+            WinFormControls.formatGridView(m_grv_ngay_cong);
+            WinFormControls.formatGridView(m_grv_phu_cap);
+            WinFormControls.formatGridView(m_grv_thue);
         }
         private void THAM_SO_CHAM_CONG_THOI_GIAN_Load(object sender, EventArgs e)
         {

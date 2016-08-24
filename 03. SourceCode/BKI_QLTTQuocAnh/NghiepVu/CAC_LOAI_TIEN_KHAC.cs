@@ -32,6 +32,7 @@ namespace BKI_DichVuMatDat.NghiepVu
             this.m_grv.OptionsPrint.AutoWidth = false;
             fill_data_to_sle();
             set_initial_form_load();
+            WinFormControls.formatGridView(m_grv);
         }
 
         private void fill_data_to_sle()

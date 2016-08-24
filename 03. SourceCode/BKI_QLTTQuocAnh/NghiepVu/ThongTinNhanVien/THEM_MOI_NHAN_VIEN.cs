@@ -35,6 +35,10 @@ namespace BKI_DichVuMatDat
             m_cb_ma_muc_lcd.Checked = true;
             check_change_cb_ma_muc_lcd();
             check_change_cb_ma_muc_lns();
+            WinFormControls.formatGridView(m_grv_luong);
+            WinFormControls.formatGridView(m_grv_luong_ngay);
+            WinFormControls.formatGridView(m_grv_phan_tram);
+            WinFormControls.formatGridView(m_grv_phu_cap);
            
         }
 

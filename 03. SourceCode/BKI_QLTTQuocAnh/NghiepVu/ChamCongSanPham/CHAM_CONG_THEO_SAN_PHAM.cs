@@ -29,6 +29,7 @@ namespace BKI_DichVuMatDat.NghiepVu.ChamCongSanPham
             this.m_grv.OptionsPrint.AutoWidth = false;
          
             set_initial_form_load();
+            WinFormControls.formatGridView(m_grv);
         }
 
       

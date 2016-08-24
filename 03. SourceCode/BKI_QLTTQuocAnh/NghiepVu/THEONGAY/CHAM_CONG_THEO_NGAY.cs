@@ -34,6 +34,7 @@ namespace BKI_DichVuMatDat.NghiepVu.THEONGAY
             this.m_grv.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(WinFormControls.m_grv_PopupMenuShowing);
             this.m_grv.OptionsPrint.AutoWidth = false;
             set_initial_form_load();
+            WinFormControls.formatGridView(m_grv);
         }
         private void set_initial_form_load()
         {
