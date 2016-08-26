@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BKI_DichVuMatDat.DS</RootNamespace>
-    <AssemblyName>BKI_DichVuMatDat.DS</AssemblyName>
+    <AssemblyName>ISalary.DS</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

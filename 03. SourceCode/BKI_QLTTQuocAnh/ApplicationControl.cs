@@ -32,18 +32,18 @@ namespace BKI_DichVuMatDat
 
             try
             {
-                DevExpress.Skins.SkinManager.Default.RegisterAssembly(
-                    typeof(DevExpress.UserSkins.MetropolisDark).Assembly
-                    );
+                //DevExpress.Skins.SkinManager.Default.RegisterAssembly(
+                //    typeof(DevExpress.UserSkins.MetropolisDark).Assembly
+                //    );
 
-                DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(
-                    "Metropolis Dark 4 Touch"
-                );
+                //DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(
+                //    "Metropolis Dark 4 Touch"
+                //);
 
-                DevExpress.Skins.SkinManager.EnableFormSkins();
+                //DevExpress.Skins.SkinManager.EnableFormSkins();
 
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
+                //Application.EnableVisualStyles();
+                //Application.SetCompatibleTextRenderingDefault(false);
                 Form1 v_f = new Form1();
                 v_f.ShowDialog();
             }
