@@ -33,6 +33,8 @@ namespace BKI_DichVuMatDat
 
         private void cachinhthuctinhluong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             CAC_HINH_THUC_TINH_LUONG v_f = new CAC_HINH_THUC_TINH_LUONG();
             m_lbl_formname.Text = "Các hình thức tính lương".ToUpper();
             v_f.TopLevel = false;
@@ -41,12 +43,12 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void danhmucngaycong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             THAM_SO_CHAM_CONG_THOI_GIAN v_f = new THAM_SO_CHAM_CONG_THOI_GIAN();
             m_lbl_formname.Text = "Cài đặt các tham số tính lương".ToUpper();
             v_f.TopLevel = false;
@@ -55,12 +57,12 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void caidatngaycongtieuchuan_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             F100_NgayCongTieuChuan v_f = new F100_NgayCongTieuChuan();
             m_lbl_formname.Text = "Cài đặt số ngày công tiêu chuẩn các tháng trong năm".ToUpper();
             v_f.TopLevel = false;
@@ -69,12 +71,12 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void thamsokhac_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             THAM_SO_KHAC v_f = new THAM_SO_KHAC();
             m_lbl_formname.Text = "Cài đặt một số tham số khác".ToUpper();
             v_f.TopLevel = false;
@@ -83,12 +85,12 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void themmoinhanvien_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             THEM_MOI_NHAN_VIEN v_f = new THEM_MOI_NHAN_VIEN();
             m_lbl_formname.Text = "Thêm mới nhân viên".ToUpper();
             v_f.TopLevel = false;
@@ -97,8 +99,6 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void suathongtinnhanvien_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
@@ -110,6 +110,8 @@ namespace BKI_DichVuMatDat
             v_f.Show_for_search(ref m_open_form_thong_tin, ref m_id_nhan_vien);
             if (m_open_form_thong_tin == 1)
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 THEM_MOI_NHAN_VIEN v_f_them_moi_nv = new THEM_MOI_NHAN_VIEN();
                 m_lbl_formname.Text = "Sửa thông tin nhân viên".ToUpper();
                 v_f_them_moi_nv.TopLevel = false;
@@ -118,8 +120,6 @@ namespace BKI_DichVuMatDat
                 v_f_them_moi_nv.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f_them_moi_nv.WindowState = FormWindowState.Maximized;
                 v_f_them_moi_nv.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
                 ShowForUpdateForm(v_f_them_moi_nv, m_id_nhan_vien);
             }
         }
@@ -133,6 +133,8 @@ namespace BKI_DichVuMatDat
 
         private void chamcong_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            m_pn_form_chucnang.Dock = DockStyle.Fill;
+            m_pn_form_chucnang.Visible = true;
             F696_Cham_cong_xls v_f = new F696_Cham_cong_xls();
             m_lbl_formname.Text = "Chấm công".ToUpper();
             v_f.TopLevel = false;
@@ -141,14 +143,14 @@ namespace BKI_DichVuMatDat
             v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             v_f.WindowState = FormWindowState.Maximized;
             v_f.Show();
-            m_pn_form_chucnang.Dock = DockStyle.Fill;
-            m_pn_form_chucnang.Visible = true;
         }
 
         private void chamconglamthem_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 LAM_THEM_THEO_THOI_GIAN v_f = new LAM_THEM_THEO_THOI_GIAN();
                 m_lbl_formname.Text = "Chấm công làm thêm".ToUpper();
                 v_f.TopLevel = false;
@@ -157,8 +159,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -170,6 +170,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 BKI_DichVuMatDat.BaoCao.f412_rpt_tong_hop_tt_v2 v_f = new BaoCao.f412_rpt_tong_hop_tt_v2();
                 m_lbl_formname.Text = "Bảng lương".ToUpper();
                 v_f.TopLevel = false;
@@ -178,8 +180,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -191,6 +191,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 BKI_DichVuMatDat.BaoCao.Luong.PHIEU_LUONG v_f = new BaoCao.Luong.PHIEU_LUONG();
                 m_lbl_formname.Text = "Phiếu lương".ToUpper();
                 v_f.TopLevel = false;
@@ -199,8 +201,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -218,6 +218,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 DANG_NHAP_HE_THONG v_f = new DANG_NHAP_HE_THONG();
                 m_lbl_formname.Text = "Quản trị hệ thống".ToUpper();
                 v_f.TopLevel = false;
@@ -226,8 +228,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -239,6 +239,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 CAC_LOAI_TIEN_KHAC v_f = new CAC_LOAI_TIEN_KHAC();
                 m_lbl_formname.Text = "Các loại thu nhập khác".ToUpper();
                 v_f.TopLevel = false;
@@ -247,8 +249,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -260,6 +260,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 CHAM_CONG_THEO_NGAY v_f = new CHAM_CONG_THEO_NGAY();
                 m_lbl_formname.Text = "Chấm công theo ngày".ToUpper();
                 v_f.TopLevel = false;
@@ -268,8 +270,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {
@@ -281,6 +281,8 @@ namespace BKI_DichVuMatDat
         {
             try
             {
+                m_pn_form_chucnang.Dock = DockStyle.Fill;
+                m_pn_form_chucnang.Visible = true;
                 MA_MUC_LUONG v_f = new MA_MUC_LUONG();
                 m_lbl_formname.Text = "Thang lương".ToUpper();
                 v_f.TopLevel = false;
@@ -289,8 +291,6 @@ namespace BKI_DichVuMatDat
                 v_f.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                 v_f.WindowState = FormWindowState.Maximized;
                 v_f.Show();
-                m_pn_form_chucnang.Dock = DockStyle.Fill;
-                m_pn_form_chucnang.Visible = true;
             }
             catch (Exception v_e)
             {

@@ -398,7 +398,7 @@ namespace BKI_DichVuMatDat
             // thoat
             // 
             this.thoat.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.thoat.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.thoat.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.thoat.AppearanceItem.Normal.Options.UseBackColor = true;
             this.thoat.AppearanceItem.Normal.Options.UseBorderColor = true;
             tileItemElement15.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement15.Image")));

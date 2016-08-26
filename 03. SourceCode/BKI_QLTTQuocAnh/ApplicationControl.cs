@@ -44,7 +44,7 @@ namespace BKI_DichVuMatDat
 
                 //Application.EnableVisualStyles();
                 //Application.SetCompatibleTextRenderingDefault(false);
-                if (DateTime.Now.Date > new DateTime(2016,09,31))
+                if (DateTime.Now.Date > new DateTime(2016,09,30))
                 {
                     MessageBox.Show("Đã hết hạn dùng thử, vui lòng liên hệ với nhà cung cấp để được phục vụ.");
                     return;
