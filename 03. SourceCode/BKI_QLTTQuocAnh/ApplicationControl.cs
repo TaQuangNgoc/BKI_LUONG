@@ -44,14 +44,22 @@ namespace BKI_DichVuMatDat
 
                 //Application.EnableVisualStyles();
                 //Application.SetCompatibleTextRenderingDefault(false);
-                if (DateTime.Now.Date > new DateTime(2016,09,30))
+                LicenseManagerService.LicenseManagerSoapClient v_service = new LicenseManagerService.LicenseManagerSoapClient();
+                if (v_service.checkKey(WinFormControls.getMac()))
                 {
-                    MessageBox.Show("Đã hết hạn dùng thử, vui lòng liên hệ với nhà cung cấp để được phục vụ.");
-                    return;
+                    Form1 v_f = new Form1();
+                    v_f.ShowDialog();
                 }
-
-                Form1 v_f = new Form1();
-                v_f.ShowDialog();
+                else if (v_service.checkTrial(WinFormControls.getMac()))
+                {
+                    Form1 v_f = new Form1();
+                    v_f.ShowDialog();
+                }
+                else
+                {
+                    F999_ActiveForm v_f = new F999_ActiveForm();
+                    v_f.ShowDialog();
+                }
             }
             catch (Exception v_e)
             {

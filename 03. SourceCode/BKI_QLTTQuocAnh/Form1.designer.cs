@@ -22,11 +22,13 @@ namespace BKI_DichVuMatDat
             DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_pn_form_chucnang = new System.Windows.Forms.Panel();
             this.m_pn_form = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_lbl_formname = new System.Windows.Forms.Label();
+            this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.tileControl1 = new DevExpress.XtraEditors.TileControl();
             this.tileGroup1 = new DevExpress.XtraEditors.TileGroup();
@@ -47,8 +49,8 @@ namespace BKI_DichVuMatDat
             this.phieuluong = new DevExpress.XtraEditors.TileItem();
             this.tileGroup7 = new DevExpress.XtraEditors.TileGroup();
             this.quantrihethong = new DevExpress.XtraEditors.TileItem();
+            this.license = new DevExpress.XtraEditors.TileItem();
             this.thoat = new DevExpress.XtraEditors.TileItem();
-            this.tileGroup3 = new DevExpress.XtraEditors.TileGroup();
             this.panel1.SuspendLayout();
             this.m_pn_form_chucnang.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -107,6 +109,10 @@ namespace BKI_DichVuMatDat
             this.m_lbl_formname.Text = "label1";
             this.m_lbl_formname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // tileGroup3
+            // 
+            this.tileGroup3.Name = "tileGroup3";
+            // 
             // simpleButton1
             // 
             this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -133,7 +139,7 @@ namespace BKI_DichVuMatDat
             this.tileControl1.Groups.Add(this.tileGroup6);
             this.tileControl1.Groups.Add(this.tileGroup7);
             this.tileControl1.Location = new System.Drawing.Point(0, 0);
-            this.tileControl1.MaxId = 22;
+            this.tileControl1.MaxId = 23;
             this.tileControl1.Name = "tileControl1";
             this.tileControl1.Size = new System.Drawing.Size(1275, 520);
             this.tileControl1.TabIndex = 0;
@@ -374,6 +380,7 @@ namespace BKI_DichVuMatDat
             // tileGroup7
             // 
             this.tileGroup7.Items.Add(this.quantrihethong);
+            this.tileGroup7.Items.Add(this.license);
             this.tileGroup7.Items.Add(this.thoat);
             this.tileGroup7.Name = "tileGroup7";
             this.tileGroup7.Text = "Thoát";
@@ -395,25 +402,37 @@ namespace BKI_DichVuMatDat
             this.quantrihethong.Visible = false;
             this.quantrihethong.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.quantrihethong_ItemClick);
             // 
+            // license
+            // 
+            this.license.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.license.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
+            this.license.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.license.AppearanceItem.Normal.Options.UseBorderColor = true;
+            tileItemElement15.Image = global::BKI_DichVuMatDat.Properties.Resources.certification_award;
+            tileItemElement15.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            tileItemElement15.Text = "Bản quyền";
+            tileItemElement15.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
+            this.license.Elements.Add(tileItemElement15);
+            this.license.Id = 22;
+            this.license.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.license.Name = "license";
+            this.license.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.license_ItemClick);
+            // 
             // thoat
             // 
             this.thoat.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.thoat.AppearanceItem.Normal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.thoat.AppearanceItem.Normal.Options.UseBackColor = true;
             this.thoat.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement15.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement15.Image")));
-            tileItemElement15.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
-            tileItemElement15.Text = "Thoát";
-            tileItemElement15.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
-            this.thoat.Elements.Add(tileItemElement15);
+            tileItemElement16.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement16.Image")));
+            tileItemElement16.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            tileItemElement16.Text = "Thoát";
+            tileItemElement16.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.BottomLeft;
+            this.thoat.Elements.Add(tileItemElement16);
             this.thoat.Id = 21;
             this.thoat.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.thoat.Name = "thoat";
             this.thoat.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.thoat_ItemClick);
-            // 
-            // tileGroup3
-            // 
-            this.tileGroup3.Name = "tileGroup3";
             // 
             // Form1
             // 
@@ -457,5 +476,6 @@ private DevExpress.XtraEditors.TileItem theongay;
 private DevExpress.XtraEditors.TileItem cacloaitienkhac;
 private DevExpress.XtraEditors.TileItem danhmucmamuc;
 private DevExpress.XtraEditors.TileItem thoat;
+private DevExpress.XtraEditors.TileItem license;
 }
 }

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LICENSE_MANAGERModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="LICENSE_MANAGERModelStoreContainer">
+          <EntitySet Name="DB_ISALARY" EntityType="LICENSE_MANAGERModel.Store.DB_ISALARY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MAC_DB" EntityType="LICENSE_MANAGERModel.Store.MAC_DB" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PRODUCT_KEY" EntityType="LICENSE_MANAGERModel.Store.PRODUCT_KEY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TRAIL_MANAGER" EntityType="LICENSE_MANAGERModel.Store.TRAIL_MANAGER" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="DB_ISALARY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DBNAME" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="USERNAME" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="PASSWORD" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
+          <Property Name="COMPANY" Type="nvarchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="MAC_DB">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MAC" Type="varchar" MaxLength="200" />
+          <Property Name="ID_DB" Type="int" />
+        </EntityType>
+        <EntityType Name="PRODUCT_KEY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MAC" Type="varchar" MaxLength="500" />
+          <Property Name="LICENSE" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="COMPANY" Type="nvarchar" MaxLength="200" />
+          <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
+          <Property Name="ACTIVE_YN" Type="bit" Nullable="false" />
+          <Property Name="ACTIVE_TIME" Type="datetime" />
+          <Property Name="EXPIRY_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="TRAIL_MANAGER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="MAC" Type="varchar" MaxLength="500" />
+          <Property Name="TRAIL_TIME" Type="datetime" />
+          <Property Name="EXPIRY_DATE" Type="datetime" />
+          <Property Name="COMPANY" Type="nvarchar" MaxLength="200" />
+          <Property Name="PHONE" Type="varchar" MaxLength="20" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LICENSE_MANAGERModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LICENSE_MANAGEREntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="PRODUCT_KEY" EntityType="LICENSE_MANAGERModel.PRODUCT_KEY" />
+          <EntitySet Name="TRAIL_MANAGER" EntityType="LICENSE_MANAGERModel.TRAIL_MANAGER" />
+          <EntitySet Name="DB_ISALARY" EntityType="LICENSE_MANAGERModel.DB_ISALARY" />
+          <EntitySet Name="MAC_DB" EntityType="LICENSE_MANAGERModel.MAC_DB" />
+        </EntityContainer>
+        <EntityType Name="PRODUCT_KEY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MAC" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="LICENSE" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="COMPANY" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="CREATE_TIME" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ACTIVE_YN" Type="Boolean" Nullable="false" />
+          <Property Name="ACTIVE_TIME" Type="DateTime" Precision="3" />
+          <Property Type="DateTime" Name="EXPIRY_DATE" Precision="3" />
+        </EntityType>
+        <EntityType Name="TRAIL_MANAGER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MAC" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="TRAIL_TIME" Type="DateTime" Precision="3" />
+          <Property Name="EXPIRY_DATE" Type="DateTime" Precision="3" />
+          <Property Type="String" Name="COMPANY" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PHONE" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DB_ISALARY">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="DBNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="USERNAME" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PASSWORD" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CREATE_TIME" Nullable="false" Precision="3" />
+          <Property Type="String" Name="COMPANY" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MAC_DB">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="MAC" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ID_DB" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LICENSE_MANAGERModelStoreContainer" CdmEntityContainer="LICENSE_MANAGEREntities">
+          <EntitySetMapping Name="PRODUCT_KEY">
+            <EntityTypeMapping TypeName="LICENSE_MANAGERModel.PRODUCT_KEY">
+              <MappingFragment StoreEntitySet="PRODUCT_KEY">
+                <ScalarProperty Name="EXPIRY_DATE" ColumnName="EXPIRY_DATE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="LICENSE" ColumnName="LICENSE" />
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="ACTIVE_YN" ColumnName="ACTIVE_YN" />
+                <ScalarProperty Name="ACTIVE_TIME" ColumnName="ACTIVE_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRAIL_MANAGER">
+            <EntityTypeMapping TypeName="LICENSE_MANAGERModel.TRAIL_MANAGER">
+              <MappingFragment StoreEntitySet="TRAIL_MANAGER">
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="TRAIL_TIME" ColumnName="TRAIL_TIME" />
+                <ScalarProperty Name="EXPIRY_DATE" ColumnName="EXPIRY_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DB_ISALARY">
+            <EntityTypeMapping TypeName="LICENSE_MANAGERModel.DB_ISALARY">
+              <MappingFragment StoreEntitySet="DB_ISALARY">
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="DBNAME" ColumnName="DBNAME" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MAC_DB">
+            <EntityTypeMapping TypeName="LICENSE_MANAGERModel.MAC_DB">
+              <MappingFragment StoreEntitySet="MAC_DB">
+                <ScalarProperty Name="ID_DB" ColumnName="ID_DB" />
+                <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

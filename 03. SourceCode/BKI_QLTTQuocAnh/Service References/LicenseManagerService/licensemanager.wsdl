@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="checkKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkKeyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkTrial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkTrialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkTrialResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkMacTrial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkMacTrialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="checkMacTrialResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="activeKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="activeKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="activeKeyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="activeTrial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="activeTrialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="activeTrialResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="checkKeySoapIn">
+    <wsdl:part name="parameters" element="tns:checkKey" />
+  </wsdl:message>
+  <wsdl:message name="checkKeySoapOut">
+    <wsdl:part name="parameters" element="tns:checkKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkTrialSoapIn">
+    <wsdl:part name="parameters" element="tns:checkTrial" />
+  </wsdl:message>
+  <wsdl:message name="checkTrialSoapOut">
+    <wsdl:part name="parameters" element="tns:checkTrialResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkMacTrialSoapIn">
+    <wsdl:part name="parameters" element="tns:checkMacTrial" />
+  </wsdl:message>
+  <wsdl:message name="checkMacTrialSoapOut">
+    <wsdl:part name="parameters" element="tns:checkMacTrialResponse" />
+  </wsdl:message>
+  <wsdl:message name="activeKeySoapIn">
+    <wsdl:part name="parameters" element="tns:activeKey" />
+  </wsdl:message>
+  <wsdl:message name="activeKeySoapOut">
+    <wsdl:part name="parameters" element="tns:activeKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="activeTrialSoapIn">
+    <wsdl:part name="parameters" element="tns:activeTrial" />
+  </wsdl:message>
+  <wsdl:message name="activeTrialSoapOut">
+    <wsdl:part name="parameters" element="tns:activeTrialResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LicenseManagerSoap">
+    <wsdl:operation name="checkKey">
+      <wsdl:input message="tns:checkKeySoapIn" />
+      <wsdl:output message="tns:checkKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkTrial">
+      <wsdl:input message="tns:checkTrialSoapIn" />
+      <wsdl:output message="tns:checkTrialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkMacTrial">
+      <wsdl:input message="tns:checkMacTrialSoapIn" />
+      <wsdl:output message="tns:checkMacTrialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="activeKey">
+      <wsdl:input message="tns:activeKeySoapIn" />
+      <wsdl:output message="tns:activeKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="activeTrial">
+      <wsdl:input message="tns:activeTrialSoapIn" />
+      <wsdl:output message="tns:activeTrialSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LicenseManagerSoap" type="tns:LicenseManagerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkKey">
+      <soap:operation soapAction="http://tempuri.org/checkKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkTrial">
+      <soap:operation soapAction="http://tempuri.org/checkTrial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkMacTrial">
+      <soap:operation soapAction="http://tempuri.org/checkMacTrial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeKey">
+      <soap:operation soapAction="http://tempuri.org/activeKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeTrial">
+      <soap:operation soapAction="http://tempuri.org/activeTrial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="LicenseManagerSoap12" type="tns:LicenseManagerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkKey">
+      <soap12:operation soapAction="http://tempuri.org/checkKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkTrial">
+      <soap12:operation soapAction="http://tempuri.org/checkTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkMacTrial">
+      <soap12:operation soapAction="http://tempuri.org/checkMacTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeKey">
+      <soap12:operation soapAction="http://tempuri.org/activeKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="activeTrial">
+      <soap12:operation soapAction="http://tempuri.org/activeTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LicenseManager">
+    <wsdl:port name="LicenseManagerSoap" binding="tns:LicenseManagerSoap">
+      <soap:address location="http://103.48.80.60:8088/licensemanager.asmx" />
+    </wsdl:port>
+    <wsdl:port name="LicenseManagerSoap12" binding="tns:LicenseManagerSoap12">
+      <soap12:address location="http://103.48.80.60:8088/licensemanager.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -38,13 +38,13 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition5 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition6 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition7 = new DevExpress.XtraGrid.StyleFormatCondition();
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
-            this.pRGETTHAMSOBANGLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bKI_LUONGDataSet2 = new BKI_DichVuMatDat.BKI_LUONGDataSet2();
+            
+            
+            
             this.img_DVMD = new DevExpress.Utils.ImageCollection(this.components);
-            this.pRGETTHAMSOBANGLUONGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bKI_LUONGDataSet3 = new BKI_DichVuMatDat.BKI_LUONGDataSet3();
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet2TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter();
+            
+            
+            
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHO_DEM = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -64,8 +64,8 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.m_grc = new DevExpress.XtraGrid.GridControl();
-            this.pRNVKHONGCHAMLUONGTHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bKI_LUONGDataSet4 = new BKI_DichVuMatDat.BKI_LUONGDataSet4();
+            
+            
             this.m_grv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID_NHAN_VIEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMA_NV1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -74,35 +74,15 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.colKHONG_CHAM_LUONG_THANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.pR_NV_KHONG_CHAM_LUONG_THANGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet4TableAdapters.PR_NV_KHONG_CHAM_LUONG_THANGTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRNVKHONGCHAMLUONGTHANGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pR_GET_THAM_SO_BANG_LUONGTableAdapter1
-            // 
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter1.ClearBeforeFill = true;
-            // 
-            // pRGETTHAMSOBANGLUONGBindingSource
-            // 
-            this.pRGETTHAMSOBANGLUONGBindingSource.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
-            this.pRGETTHAMSOBANGLUONGBindingSource.DataSource = this.bKI_LUONGDataSet2;
-            // 
-            // bKI_LUONGDataSet2
-            // 
-            this.bKI_LUONGDataSet2.DataSetName = "BKI_LUONGDataSet2";
-            this.bKI_LUONGDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // img_DVMD
             // 
@@ -118,20 +98,6 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.img_DVMD.Images.SetKeyName(8, "file_delete.png");
             this.img_DVMD.Images.SetKeyName(9, "file_edit.png");
             this.img_DVMD.Images.SetKeyName(10, "file_search.png");
-            // 
-            // pRGETTHAMSOBANGLUONGBindingSource1
-            // 
-            this.pRGETTHAMSOBANGLUONGBindingSource1.DataMember = "PR_GET_THAM_SO_BANG_LUONG";
-            this.pRGETTHAMSOBANGLUONGBindingSource1.DataSource = this.bKI_LUONGDataSet3;
-            // 
-            // bKI_LUONGDataSet3
-            // 
-            this.bKI_LUONGDataSet3.DataSetName = "BKI_LUONGDataSet3";
-            this.bKI_LUONGDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pR_GET_THAM_SO_BANG_LUONGTableAdapter
-            // 
-            this.pR_GET_THAM_SO_BANG_LUONGTableAdapter.ClearBeforeFill = true;
             // 
             // colID
             // 
@@ -339,7 +305,6 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             // m_grc
             // 
             this.m_grc.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc.DataSource = this.pRNVKHONGCHAMLUONGTHANGBindingSource;
             this.m_grc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_grc.Location = new System.Drawing.Point(0, 53);
             this.m_grc.MainView = this.m_grv;
@@ -351,16 +316,6 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.m_grc.TabIndex = 6;
             this.m_grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv});
-            // 
-            // pRNVKHONGCHAMLUONGTHANGBindingSource
-            // 
-            this.pRNVKHONGCHAMLUONGTHANGBindingSource.DataMember = "PR_NV_KHONG_CHAM_LUONG_THANG";
-            this.pRNVKHONGCHAMLUONGTHANGBindingSource.DataSource = this.bKI_LUONGDataSet4;
-            // 
-            // bKI_LUONGDataSet4
-            // 
-            this.bKI_LUONGDataSet4.DataSetName = "BKI_LUONGDataSet4";
-            this.bKI_LUONGDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // m_grv
             // 
@@ -461,10 +416,6 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.repositoryItemCheckEdit2.AutoHeight = false;
             this.repositoryItemCheckEdit2.Name = "repositoryItemCheckEdit2";
             // 
-            // pR_NV_KHONG_CHAM_LUONG_THANGTableAdapter
-            // 
-            this.pR_NV_KHONG_CHAM_LUONG_THANGTableAdapter.ClearBeforeFill = true;
-            // 
             // NHAN_VIEN_KHONG_CHAM_CONG_THANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,17 +427,13 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
             this.Name = "NHAN_VIEN_KHONG_CHAM_CONG_THANG";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NHAN_VIEN_KHONG_CHAM_CONG_THANG";
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_DVMD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRGETTHAMSOBANGLUONGBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet3)).EndInit();
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pRNVKHONGCHAMLUONGTHANGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet4)).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.m_grv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit2)).EndInit();
@@ -496,13 +443,8 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
 
         #endregion
 
-        private BKI_LUONGDataSet3TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter1;
-        private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource;
-        private BKI_LUONGDataSet2 bKI_LUONGDataSet2;
+        
         private DevExpress.Utils.ImageCollection img_DVMD;
-        private System.Windows.Forms.BindingSource pRGETTHAMSOBANGLUONGBindingSource1;
-        private BKI_LUONGDataSet3 bKI_LUONGDataSet3;
-        private BKI_LUONGDataSet2TableAdapters.PR_GET_THAM_SO_BANG_LUONGTableAdapter pR_GET_THAM_SO_BANG_LUONGTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colMA_NV;
         private DevExpress.XtraGrid.Columns.GridColumn colHO_DEM;
@@ -518,8 +460,8 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.SimpleButton m_btn_luu;
         private DevExpress.XtraGrid.GridControl m_grc;
-        private System.Windows.Forms.BindingSource pRNVKHONGCHAMLUONGTHANGBindingSource;
-        private BKI_LUONGDataSet4 bKI_LUONGDataSet4;
+        
+        
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv;
         private DevExpress.XtraGrid.Columns.GridColumn colID_NHAN_VIEN;
         private DevExpress.XtraGrid.Columns.GridColumn colMA_NV1;
@@ -528,7 +470,7 @@ namespace BKI_DichVuMatDat.BaoCao.Luong
         private DevExpress.XtraGrid.Columns.GridColumn colKHONG_CHAM_LUONG_THANG;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
-        private BKI_LUONGDataSet4TableAdapters.PR_NV_KHONG_CHAM_LUONG_THANGTableAdapter pR_NV_KHONG_CHAM_LUONG_THANGTableAdapter;
+        
         private DevExpress.XtraEditors.SimpleButton m_btn_thoat;
         private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_nam;
         private MaterialSkin.Controls.MaterialSingleLineTextField m_txt_thang;

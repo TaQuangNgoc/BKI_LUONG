@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="499e4b74577a43228a754267d8f57a6c" Name="Diagram1">
+        <EntityTypeShape EntityType="LICENSE_MANAGERModel.PRODUCT_KEY" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LICENSE_MANAGERModel.TRAIL_MANAGER" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LICENSE_MANAGERModel.DB_ISALARY" Width="1.5" PointX="6.0196877801882511" PointY="3.6820822077254216" />
+        <EntityTypeShape EntityType="LICENSE_MANAGERModel.MAC_DB" Width="1.5" PointX="3.1232980541527731" PointY="21.921427617744275" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -332,6 +332,7 @@
     <Reference Include="System.Security">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web">
       <Private>True</Private>
     </Reference>
@@ -407,36 +408,6 @@
     </Compile>
     <Compile Include="BaoCao\SplashScreen1.Designer.cs">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_LUONGDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="CAI_DAT\CAC_HINH_THUC_TINH_LUONG.cs">
       <SubType>Form</SubType>
@@ -535,6 +506,12 @@
     <Compile Include="Document.Designer.cs">
       <DependentUpon>Document.cs</DependentUpon>
     </Compile>
+    <Compile Include="F999_ActiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F999_ActiveForm.Designer.cs">
+      <DependentUpon>F999_ActiveForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -576,15 +553,6 @@
     </Compile>
     <Compile Include="BaoCao\F_wait_form.Designer.cs">
       <DependentUpon>F_wait_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BKI_DVMDDataSet.cs">
-      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BKI_DVMDDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="COMMON\ExcuteFuntion.cs" />
     <Compile Include="CONFIRM\msg001_confirm_tinh_bang_luong.cs">
@@ -709,6 +677,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Service References\LicenseManagerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -798,6 +771,9 @@
     <EmbeddedResource Include="Document.resx">
       <DependentUpon>Document.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F999_ActiveForm.resx">
+      <DependentUpon>F999_ActiveForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -870,72 +846,6 @@
     <EmbeddedResource Include="XtraReport\rptPhuThuoc.resx">
       <DependentUpon>rptPhuThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BKI_LUONGDataSet.xsc">
-      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet.xss">
-      <DependentUpon>BKI_LUONGDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet1.xsc">
-      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet1.xss">
-      <DependentUpon>BKI_LUONGDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet2.xsc">
-      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet2.xss">
-      <DependentUpon>BKI_LUONGDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet3.xsc">
-      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet3.xss">
-      <DependentUpon>BKI_LUONGDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet4.xsc">
-      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet4.xss">
-      <DependentUpon>BKI_LUONGDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet5.xsc">
-      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_LUONGDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_LUONGDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_LUONGDataSet5.xss">
-      <DependentUpon>BKI_LUONGDataSet5.xsd</DependentUpon>
-    </None>
     <None Include="Resources\1425904361_23923.ico" />
     <None Include="Resources\1425904406_289616.ico" />
     <None Include="Resources\1425904521_438788.ico" />
@@ -997,6 +907,28 @@
     <None Include="Resources\admin-with-cogwheels.png" />
     <None Include="Resources\list.png" />
     <None Include="Resources\exit.png" />
+    <None Include="Service References\LicenseManagerService\BKI_DichVuMatDat.LicenseManagerService.activeKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LicenseManagerService\BKI_DichVuMatDat.LicenseManagerService.activeTrialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LicenseManagerService\BKI_DichVuMatDat.LicenseManagerService.checkKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LicenseManagerService\BKI_DichVuMatDat.LicenseManagerService.checkMacTrialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LicenseManagerService\BKI_DichVuMatDat.LicenseManagerService.checkTrialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LicenseManagerService\configuration91.svcinfo" />
+    <None Include="Service References\LicenseManagerService\configuration.svcinfo" />
+    <None Include="Service References\LicenseManagerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\certification-award.png" />
     <Content Include="vi\DevExpress.Charts.Designer.v14.1.resources.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1352,17 +1284,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="BKI_DVMDDataSet.xsc">
-      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BKI_DVMDDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BKI_DVMDDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BKI_DVMDDataSet.xss">
-      <DependentUpon>BKI_DVMDDataSet.xsd</DependentUpon>
-    </None>
     <None Include="BKI_QLTTQuocAnh_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -1434,6 +1355,7 @@
     <Content Include="Template\IMPORT_HE_SO_LNS.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Service References\LicenseManagerService\licensemanager.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BKI_QLTTQuocAnh.DS\BKI_DichVuMatDat.DS.csproj">
@@ -1991,6 +1913,12 @@
   <ItemGroup>
     <Folder Include="BaoCao\TongHop\" />
     <Folder Include="FormatControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LicenseManagerService\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

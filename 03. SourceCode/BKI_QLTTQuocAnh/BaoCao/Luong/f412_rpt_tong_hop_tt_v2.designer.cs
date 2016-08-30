@@ -94,13 +94,6 @@
             this.repositoryItemMemoEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.repoBtnXoaLuong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.repositoryItemTextEditTien = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
-            this.bKI_DVMDDataSet = new BKI_DichVuMatDat.BKI_DVMDDataSet();
-            this.bKIDVMDDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bKI_LUONGDataSet1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
-            this.rPTLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rPT_LUONGTableAdapter = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
-            this.bkI_LUONGDataSet11 = new BKI_DichVuMatDat.BKI_LUONGDataSet1();
-            this.rpT_LUONGTableAdapter1 = new BKI_DichVuMatDat.BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_btn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.m_btn_thoat = new DevExpress.XtraEditors.SimpleButton();
@@ -119,11 +112,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMDDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKIDVMDDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1029,39 +1017,6 @@
             this.repositoryItemTextEditTien.Mask.UseMaskAsDisplayFormat = true;
             this.repositoryItemTextEditTien.Name = "repositoryItemTextEditTien";
             // 
-            // bKI_DVMDDataSet
-            // 
-            this.bKI_DVMDDataSet.DataSetName = "BKI_DVMDDataSet";
-            this.bKI_DVMDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bKIDVMDDataSetBindingSource
-            // 
-            this.bKIDVMDDataSetBindingSource.DataSource = this.bKI_DVMDDataSet;
-            this.bKIDVMDDataSetBindingSource.Position = 0;
-            // 
-            // bKI_LUONGDataSet1
-            // 
-            this.bKI_LUONGDataSet1.DataSetName = "BKI_LUONGDataSet1";
-            this.bKI_LUONGDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rPTLUONGBindingSource
-            // 
-            this.rPTLUONGBindingSource.DataMember = "RPT_LUONG";
-            this.rPTLUONGBindingSource.DataSource = this.bKI_LUONGDataSet1;
-            // 
-            // rPT_LUONGTableAdapter
-            // 
-            this.rPT_LUONGTableAdapter.ClearBeforeFill = true;
-            // 
-            // bkI_LUONGDataSet11
-            // 
-            this.bkI_LUONGDataSet11.DataSetName = "BKI_LUONGDataSet1";
-            this.bkI_LUONGDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rpT_LUONGTableAdapter1
-            // 
-            this.rpT_LUONGTableAdapter1.ClearBeforeFill = true;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(190)))));
@@ -1110,6 +1065,7 @@
             this.m_btn_thoat.Size = new System.Drawing.Size(116, 46);
             this.m_btn_thoat.TabIndex = 30;
             this.m_btn_thoat.Text = "Thoát";
+            this.m_btn_thoat.Visible = false;
             this.m_btn_thoat.Click += new System.EventHandler(this.m_btn_thoat_Click);
             // 
             // f412_rpt_tong_hop_tt_v2
@@ -1141,11 +1097,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemMemoEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repoBtnXoaLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEditTien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMDDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKIDVMDDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_LUONGDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rPTLUONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bkI_LUONGDataSet11)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1172,13 +1123,7 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu_bang_luong;
         private DevExpress.XtraEditors.SimpleButton m_btn_bat_tinh_nang_sua;
         private DevExpress.XtraEditors.DateEdit m_dat_thang;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_chot_bang_luong;
-        private BKI_DVMDDataSet bKI_DVMDDataSet;
-        private System.Windows.Forms.BindingSource bKIDVMDDataSetBindingSource;
-        private BKI_LUONGDataSet1 bKI_LUONGDataSet1;
-        private System.Windows.Forms.BindingSource rPTLUONGBindingSource;
-        private BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter rPT_LUONGTableAdapter;
-        private BKI_LUONGDataSet1 bkI_LUONGDataSet11;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_chot_bang_luong;        
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colID;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colID_NHAN_VIEN;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHANG;
@@ -1210,7 +1155,7 @@
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTRUY_THU;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colPHAI_NOP;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colTHUC_LINH;
-        private BKI_LUONGDataSet1TableAdapters.RPT_LUONGTableAdapter rpT_LUONGTableAdapter1;
+        
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colBHXH_PHAI_NOP;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colBHYT_PHAI_NOP;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colBHTN_PHAI_NOP;

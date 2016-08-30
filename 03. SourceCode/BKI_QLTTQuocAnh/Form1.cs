@@ -306,5 +306,11 @@ namespace BKI_DichVuMatDat
                Application.Exit();
            }
         }
+
+        private void license_ItemClick(object sender, TileItemEventArgs e)
+        {
+            F999_ActiveForm v_f = new F999_ActiveForm();
+            v_f.showFormForActiveKey();
+        }
     } 
 }

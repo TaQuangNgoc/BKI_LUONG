@@ -30,10 +30,12 @@ Public Class CProvider
         Return cn
     End Function
     Private Shared Function getDBConnectionString(ByVal i_str_db_name As String) As String
+        Dim service As New LicenseManager.LicenseManager()
+        Dim output As LicenseManager.DB_ISALARY = service.getInfoServer(ISCommon.ISCommon.getMac())
         Dim v_strServerName As String = "103.48.80.60\SQLEXPRESS"
-        Dim v_strDatabase As String = "ISALARY"
-        Dim v_strUser As String = "sa"
-        Dim v_strPwd As String = "sa@123456"
+        Dim v_strDatabase As String = output.DBNAME
+        Dim v_strUser As String = output.USERNAME
+        Dim v_strPwd As String = output.PASSWORD
         Dim v_strDatabaseAccessMode As String = "USER_AND_PASSWORD"
 
 
@@ -56,10 +58,13 @@ Public Class CProvider
         Return da
     End Function
     Private Shared Function readConnectionString() As String
+
+        Dim service As New LicenseManager.LicenseManager()
+        Dim output As LicenseManager.DB_ISALARY = service.getInfoServer(ISCommon.ISCommon.getMac())
         Dim v_strServerName As String = "103.48.80.60\SQLEXPRESS"
-        Dim v_strDatabase As String = "ISALARY"
-        Dim v_strUser As String = "sa"
-        Dim v_strPwd As String = "sa@123456"
+        Dim v_strDatabase As String = output.DBNAME
+        Dim v_strUser As String = output.USERNAME
+        Dim v_strPwd As String = output.PASSWORD
         Dim v_strDatabaseAccessMode As String = "USER_AND_PASSWORD"
 
 
