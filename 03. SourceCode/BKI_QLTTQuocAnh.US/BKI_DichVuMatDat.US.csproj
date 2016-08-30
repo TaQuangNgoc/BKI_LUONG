@@ -90,10 +90,6 @@
       <Project>{4AEBA63F-E5B5-4D0C-B1B5-E6BCB13E1B5A}</Project>
       <Name>BKI_DichVuMatDat.DS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">
-      <Project>{73CA732C-2CFB-4A14-B0B9-F43763B1C2F3}</Project>
-      <Name>IPBusinessService</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IPCommon\IPCommon.vbproj">
       <Project>{2A74F1D1-C0EE-41FE-A708-A83B285ACCF2}</Project>
       <Name>IPCommon</Name>
@@ -111,7 +107,7 @@
       <Name>IPSystemAdmin</Name>
     </ProjectReference>
     <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
-      <Project>{B490EA92-2990-4CBB-B58B-12901AFCCCB5}</Project>
+      <Project>{b490ea92-2990-4cbb-b58b-12901afcccb5}</Project>
       <Name>IPUserService</Name>
     </ProjectReference>
   </ItemGroup>
