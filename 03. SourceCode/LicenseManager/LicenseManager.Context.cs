@@ -29,5 +29,6 @@ namespace LicenseManager
         public DbSet<TRAIL_MANAGER> TRAIL_MANAGER { get; set; }
         public DbSet<DB_ISALARY> DB_ISALARY { get; set; }
         public DbSet<MAC_DB> MAC_DB { get; set; }
+        public DbSet<LOG_IS> LOG_IS { get; set; }
     }
 }

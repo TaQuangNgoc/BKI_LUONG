@@ -55,10 +55,8 @@ namespace BKI_DichVuMatDat.BaoCao
        
         private void load_data_2_grid(decimal ip_dc_thang, decimal ip_dc_nam)
         {
-            
             try
             {
-                SplashScreenManager.ShowForm(typeof(F_wait_form));
                 US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
                 DataSet v_ds = new DataSet();
                 v_ds.Tables.Add(new DataTable());
@@ -70,10 +68,6 @@ namespace BKI_DichVuMatDat.BaoCao
             catch(Exception)
             {
                 throw;
-            }
-            finally
-            {
-               SplashScreenManager.CloseForm();
             }
         }
 

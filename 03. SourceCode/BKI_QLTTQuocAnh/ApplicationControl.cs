@@ -44,13 +44,12 @@ namespace BKI_DichVuMatDat
 
                 //Application.EnableVisualStyles();
                 //Application.SetCompatibleTextRenderingDefault(false);
-                LicenseManagerService.LicenseManagerSoapClient v_service = new LicenseManagerService.LicenseManagerSoapClient();
-                if (v_service.checkKey(WinFormControls.getMac()))
+                if (ISCommon.ISCommon.checkKey())
                 {
                     Form1 v_f = new Form1();
                     v_f.ShowDialog();
                 }
-                else if (v_service.checkTrial(WinFormControls.getMac()))
+                else if (ISCommon.ISCommon.checkTrial())
                 {
                     Form1 v_f = new Form1();
                     v_f.ShowDialog();

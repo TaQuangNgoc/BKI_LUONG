@@ -143,6 +143,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LicenseManager.edmx</DependentUpon>
     </Compile>
+    <Compile Include="LOG_IS.cs">
+      <DependentUpon>LicenseManager.tt</DependentUpon>
+    </Compile>
     <Compile Include="MAC_DB.cs">
       <DependentUpon>LicenseManager.tt</DependentUpon>
     </Compile>

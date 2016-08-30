@@ -83,9 +83,7 @@ namespace BKI_DichVuMatDat
             {
                 throw new Exception("Could not read file. Error message: " + v_Ex.Message);
             }
-            finally
-            {
-            }
+
         }
 
         public static void Close()

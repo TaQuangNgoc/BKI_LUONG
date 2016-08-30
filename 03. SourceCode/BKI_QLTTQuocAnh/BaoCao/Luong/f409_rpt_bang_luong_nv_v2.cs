@@ -587,19 +587,11 @@ namespace BKI_DichVuMatDat.BaoCao
             {
                 throw;
             }
-            finally
-            {
-                //progressBarControl1.Visible = false;
-                //progressBarControl1.Hide();
-
-            }
-
         }
       
      
         private void save_data(ENUM_CONFIRM_LUU_BANG_LUONG ip_confirm_save)
         {
-            SplashScreenManager.ShowForm(this, typeof(SplashScreen1), true, true, false);
             string v_str_msg = "";
             try
             {
@@ -667,19 +659,12 @@ namespace BKI_DichVuMatDat.BaoCao
                             throw new Exception("Chưa gán giá trị cho ENUM_CONFIRM_LUU_BANG_LUONG!");
 
                     }
-                    //m_prb.EditValue = (int)((decimal)v_i_row / (decimal)v_i_row_count * 100);
-                    SplashScreenManager.Default.SendCommand(SplashScreen1.SplashScreenCommand.SetProgress, (int)((decimal)v_i_row / (decimal)v_i_row_count * 100));
-                    //progressBarControl1.EditValue = (int)((decimal)v_i_row / (decimal)v_i_row_count * 100);
                 }
                 v_str_msg = "Lưu dữ liệu lương thành công. Có " + v_i_so_luong_ghi_moi + " bản ghi lương nhân viên mới, có " + v_i_so_luong_ghi_de + " bản ghi lương nhân viên ghi đè!";
             }
             catch(Exception)
             {
                 throw;
-            }
-            finally
-            {
-                SplashScreenManager.CloseForm(false);
             }
 
             XtraMessageBox.Show(v_str_msg, "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);

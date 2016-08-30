@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace BKI_DichVuMatDat
 {
     public partial class F999_ActiveForm : MaterialSkin.Controls.MaterialForm
@@ -21,14 +22,13 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                LicenseManagerService.LicenseManagerSoapClient v_lmsc = new LicenseManagerService.LicenseManagerSoapClient();
-                if (v_lmsc.checkMacTrial(WinFormControls.getMac()))
+                if (ISCommon.ISCommon.checkMacTrial())
                 {
                     DevExpress.XtraEditors.XtraMessageBox.Show("Bạn đã hết quyền dùng thử!!!");
                 }
                 else
                 {
-                    var v_result = v_lmsc.activeTrial(WinFormControls.getMac(), txtCompany.Text, txtEmail.Text, txtPhone.Text);
+                    var v_result = ISCommon.ISCommon.activeTrial(txtCompany.Text, txtEmail.Text, txtPhone.Text);
                     if (v_result)
                     {
                         DevExpress.XtraEditors.XtraMessageBox.Show("Bạn đã kích hoạt quyền dùng thử. Bạn được dùng thử đến ngày " + DateTime.Now.Date.AddDays(30).ToString("dd/MM/yyy"));
@@ -52,8 +52,7 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                LicenseManagerService.LicenseManagerSoapClient v_lmsc = new LicenseManagerService.LicenseManagerSoapClient();
-                var v_result = v_lmsc.activeKey(WinFormControls.getMac(), txtCompanyLicense.Text, txtLicense.Text);
+                var v_result = ISCommon.ISCommon.activeKey(txtCompanyLicense.Text, txtLicense.Text);
                 if (v_result)
                 {
                     DevExpress.XtraEditors.XtraMessageBox.Show("Bạn đã kích hoạt thành công bản quyền phần mềm ISalary.\nXin cảm ơn.");
@@ -86,8 +85,7 @@ namespace BKI_DichVuMatDat
 
         internal void showFormForActiveKey()
         {
-            LicenseManagerService.LicenseManagerSoapClient v_lmsc = new LicenseManagerService.LicenseManagerSoapClient();
-            if (v_lmsc.checkKey(WinFormControls.getMac()))
+            if (ISCommon.ISCommon.checkKey())
             {
                 DevExpress.XtraEditors.XtraMessageBox.Show("Bạn đang sử dụng phần mềm ISalary bản quyền. Xin cảm ơn.");
             }

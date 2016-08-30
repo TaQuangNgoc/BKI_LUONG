@@ -38,6 +38,7 @@ namespace BKI_DichVuMatDat.CAI_DAT
             m_grv.RowHeight = 35;
             WinFormControls.formatGridView(m_grv_loai_nv);
             WinFormControls.formatGridView(m_grv);
+            m_grv.OptionsBehavior.Editable = true;
         }
 
         private void load_data_to_grid_loai_nhan_vien()

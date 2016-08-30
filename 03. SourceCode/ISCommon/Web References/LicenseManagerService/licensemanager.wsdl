@@ -77,6 +77,74 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getTrial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTrialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTrialResult" type="tns:CTrial" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CTrial">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EMAIL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PHONE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TRAIL_TIME" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EXPIRY_DATE" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="COMPANY" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLicenseResult" type="tns:CLicense" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CLicense">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="COMPANY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_TIME" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EXPIRY_DATE" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getInfoServer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getInfoServerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getInfoServerResult" type="tns:DB_ISALARY" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DB_ISALARY">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DBNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USERNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PASSWORD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CREATE_TIME" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="COMPANY" type="s:string" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="checkKeySoapIn">
@@ -109,6 +177,24 @@
   <wsdl:message name="activeTrialSoapOut">
     <wsdl:part name="parameters" element="tns:activeTrialResponse" />
   </wsdl:message>
+  <wsdl:message name="getTrialSoapIn">
+    <wsdl:part name="parameters" element="tns:getTrial" />
+  </wsdl:message>
+  <wsdl:message name="getTrialSoapOut">
+    <wsdl:part name="parameters" element="tns:getTrialResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:getLicense" />
+  </wsdl:message>
+  <wsdl:message name="getLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:getLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInfoServerSoapIn">
+    <wsdl:part name="parameters" element="tns:getInfoServer" />
+  </wsdl:message>
+  <wsdl:message name="getInfoServerSoapOut">
+    <wsdl:part name="parameters" element="tns:getInfoServerResponse" />
+  </wsdl:message>
   <wsdl:portType name="LicenseManagerSoap">
     <wsdl:operation name="checkKey">
       <wsdl:input message="tns:checkKeySoapIn" />
@@ -129,6 +215,18 @@
     <wsdl:operation name="activeTrial">
       <wsdl:input message="tns:activeTrialSoapIn" />
       <wsdl:output message="tns:activeTrialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTrial">
+      <wsdl:input message="tns:getTrialSoapIn" />
+      <wsdl:output message="tns:getTrialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLicense">
+      <wsdl:input message="tns:getLicenseSoapIn" />
+      <wsdl:output message="tns:getLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInfoServer">
+      <wsdl:input message="tns:getInfoServerSoapIn" />
+      <wsdl:output message="tns:getInfoServerSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="LicenseManagerSoap" type="tns:LicenseManagerSoap">
@@ -178,6 +276,33 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getTrial">
+      <soap:operation soapAction="http://tempuri.org/getTrial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLicense">
+      <soap:operation soapAction="http://tempuri.org/getLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoServer">
+      <soap:operation soapAction="http://tempuri.org/getInfoServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="LicenseManagerSoap12" type="tns:LicenseManagerSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -219,6 +344,33 @@
     </wsdl:operation>
     <wsdl:operation name="activeTrial">
       <soap12:operation soapAction="http://tempuri.org/activeTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTrial">
+      <soap12:operation soapAction="http://tempuri.org/getTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLicense">
+      <soap12:operation soapAction="http://tempuri.org/getLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInfoServer">
+      <soap12:operation soapAction="http://tempuri.org/getInfoServer" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

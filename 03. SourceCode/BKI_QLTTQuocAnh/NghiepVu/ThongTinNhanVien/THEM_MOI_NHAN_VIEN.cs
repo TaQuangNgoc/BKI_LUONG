@@ -28,7 +28,6 @@ namespace BKI_DichVuMatDat
         public THEM_MOI_NHAN_VIEN()
         {
             InitializeComponent();
-            auto_scroll_tabControl();
             format_beauty();
             load_data_to_combobox_loai_nhan_vien();
             m_cb_ma_muc_lns.Checked = true;
@@ -46,7 +45,6 @@ namespace BKI_DichVuMatDat
         {
             try
             {
-                SplashScreenManager.ShowForm(typeof(F_wait_form));
                 load_data_to_combobox_loai_phu_cap();
 
                 if (m_e == DataEntryFormMode.InsertDataState)
@@ -62,11 +60,7 @@ namespace BKI_DichVuMatDat
             }
             catch (Exception v_e)
             {
-
-                throw v_e;
-            }
-            finally {
-                SplashScreenManager.CloseForm();
+                XtraMessageBox.Show(v_e.Message);
             }
             
            
@@ -87,7 +81,6 @@ namespace BKI_DichVuMatDat
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            //  v_us.FillDatasetWithQuery(v_ds, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN=5");
             v_us.FillDatasetCBO(v_ds, "DM_LOAI_NHAN_VIEN","ID","TEN_LOAI_NHAN_VIEN","");
             m_cbo_loai_nhan_vien.DataSource = v_ds.Tables[0];
             m_cbo_loai_nhan_vien.DisplayMember = "TEN_LOAI_NHAN_VIEN";
@@ -161,16 +154,6 @@ namespace BKI_DichVuMatDat
             m_grv_phan_tram.RowHeight = 30;
             m_grv_luong_ngay.ColumnPanelRowHeight = 35;
             m_grv_luong_ngay.RowHeight = 30;
-        }
-
-        private void auto_scroll_tabControl()
-        {
-            //foreach (TabPage _Page in tabControl1.TabPages)
-            //{
-            //    _Page.AutoScroll = true;
-            //    _Page.AutoScrollMargin = new System.Drawing.Size(0, 100);
-            //    _Page.AutoScrollMinSize = new System.Drawing.Size(_Page.Width, _Page.Height + 100);
-            //}
         }
 
         private void text_box_key_up_format_currency(object sender, KeyEventArgs e)

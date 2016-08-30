@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="LICENSE_MANAGERModel.TRAIL_MANAGER" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LICENSE_MANAGERModel.DB_ISALARY" Width="1.5" PointX="6.0196877801882511" PointY="3.6820822077254216" />
         <EntityTypeShape EntityType="LICENSE_MANAGERModel.MAC_DB" Width="1.5" PointX="3.1232980541527731" PointY="21.921427617744275" />
+        <EntityTypeShape EntityType="LICENSE_MANAGERModel.LOG_IS" Width="1.5" PointX="10.864201196871793" PointY="26.195832130590375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

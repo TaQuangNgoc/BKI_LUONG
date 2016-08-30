@@ -63,16 +63,19 @@ namespace LicenseManager
             var v_t = v_ett.TRAIL_MANAGER.Where(x => x.MAC == macAddress).FirstOrDefault();
             if (v_t == null)
             {
+                writeLog(macAddress + " - return false : null");
                 return false;
             }
             else
             {
                 if (v_t.EXPIRY_DATE < DateTime.Now.Date)
                 {
+                    writeLog(macAddress + " - return false : het han dung thu");
                     return false;
                 }
                 else
                 {
+                    writeLog(macAddress + " - return true : dang dung thu");
                     return true;
                 }
             }
@@ -242,6 +245,15 @@ namespace LicenseManager
                 var m_dbi = v_ett.DB_ISALARY.Where(x => x.ID == v_mdb.ID_DB).First();
                 return m_dbi;
             }
+        }
+
+        private void writeLog(string log) {
+            LICENSE_MANAGEREntities v_ett = new LICENSE_MANAGEREntities();
+            LOG_IS v_log = new LOG_IS();
+            v_log.CREATE_TIME = DateTime.Now;
+            v_log.LOG_RESULT = log;
+            v_ett.LOG_IS.Add(v_log);
+            v_ett.SaveChanges();
         }
     }
 }

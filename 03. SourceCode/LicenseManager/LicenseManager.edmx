@@ -7,6 +7,7 @@
     <Schema Namespace="LICENSE_MANAGERModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="LICENSE_MANAGERModelStoreContainer">
           <EntitySet Name="DB_ISALARY" EntityType="LICENSE_MANAGERModel.Store.DB_ISALARY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LOG_IS" EntityType="LICENSE_MANAGERModel.Store.LOG_IS" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="MAC_DB" EntityType="LICENSE_MANAGERModel.Store.MAC_DB" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="PRODUCT_KEY" EntityType="LICENSE_MANAGERModel.Store.PRODUCT_KEY" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="TRAIL_MANAGER" EntityType="LICENSE_MANAGERModel.Store.TRAIL_MANAGER" store:Type="Tables" Schema="dbo" />
@@ -21,6 +22,14 @@
           <Property Name="PASSWORD" Type="varchar" Nullable="false" MaxLength="20" />
           <Property Name="CREATE_TIME" Type="datetime" Nullable="false" />
           <Property Name="COMPANY" Type="nvarchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="LOG_IS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LOG_RESULT" Type="nvarchar" MaxLength="500" />
+          <Property Name="CREATE_TIME" Type="datetime" />
         </EntityType>
         <EntityType Name="MAC_DB">
           <Key>
@@ -64,6 +73,7 @@
           <EntitySet Name="TRAIL_MANAGER" EntityType="LICENSE_MANAGERModel.TRAIL_MANAGER" />
           <EntitySet Name="DB_ISALARY" EntityType="LICENSE_MANAGERModel.DB_ISALARY" />
           <EntitySet Name="MAC_DB" EntityType="LICENSE_MANAGERModel.MAC_DB" />
+          <EntitySet Name="LOG_IS" EntityType="LICENSE_MANAGERModel.LOG_IS" />
         </EntityContainer>
         <EntityType Name="PRODUCT_KEY">
           <Key>
@@ -108,6 +118,14 @@
           <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="MAC" MaxLength="200" FixedLength="false" Unicode="false" />
           <Property Type="Int32" Name="ID_DB" />
+        </EntityType>
+        <EntityType Name="LOG_IS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="LOG_RESULT" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CREATE_TIME" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -159,6 +177,15 @@
               <MappingFragment StoreEntitySet="MAC_DB">
                 <ScalarProperty Name="ID_DB" ColumnName="ID_DB" />
                 <ScalarProperty Name="MAC" ColumnName="MAC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LOG_IS">
+            <EntityTypeMapping TypeName="LICENSE_MANAGERModel.LOG_IS">
+              <MappingFragment StoreEntitySet="LOG_IS">
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="LOG_RESULT" ColumnName="LOG_RESULT" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
